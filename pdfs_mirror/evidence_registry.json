@@ -1,5 +1,29 @@
 [
   {
+    "id": "NODE-AUDIT-9306",
+    "status": "Anchored",
+    "file": "final_audit_report.txt",
+    "title": "Forensic Report: 9,306 Files"
+  },
+  {
+    "id": "NODE-APOSTILLE-EN",
+    "status": "Verified",
+    "file": "Actor_Apostille_Archive_EN.pdf",
+    "title": "Apostille Archive (EN Version)"
+  },
+  {
+    "id": "NODE-FISCAL-2",
+    "marker": "FRAUDĂ",
+    "file": "index codul Fiscal_2.pdf",
+    "title": "Fiscal Index: IDNP Fraud Evidence"
+  },
+  {
+    "id": "NODE-STATEMENT-2026",
+    "file": "MACHERET_STATEMENT_20042026 - Google Документы.pdf",
+    "identity": "A©tor",
+    "title": "TI-ULA Manifesto (20-04-2026)"
+  },
+  {
     "id": "E-TORTURE-1997",
     "status": "Verified",
     "title": "Доказательства пыток 1997-1998 (29 лет бездействия)",
