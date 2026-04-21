@@ -1,5 +1,17 @@
 [
   {
+    "id": "NODE-COURT-313",
+    "status": "Verified",
+    "file": "313_основание_Чеканы.pdf",
+    "title": "Основание 313 УПК: Суд Чеканы - последний аргумент"
+  },
+  {
+    "id": "NODE-AUDIT-FINAL",
+    "file": "final_audit_report.txt",
+    "type": "Forensic Archive",
+    "title": "Final Forensic Audit Report (9,306 files)"
+  },
+  {
     "id": "NODE-FISCAL-INDEX-2",
     "status": "Anchored",
     "file": "index codul Fiscal_2.pdf",
