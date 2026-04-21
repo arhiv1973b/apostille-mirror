@@ -1,5 +1,23 @@
 [
   {
+    "id": "NODE-1325493054",
+    "status": "Verified",
+    "file": "313_Ciocana_Court_Basis_2019.txt",
+    "title": "Основание 313 УПК: Суд Чеканы (Translation)"
+  },
+  {
+    "id": "NODE-283485121",
+    "status": "Verified",
+    "file": "Attack_Lupia_Yuri_Signed.pdf",
+    "title": "Протокол: Нападение (Юрий Лупя) - Signed"
+  },
+  {
+    "id": "NODE-357149520",
+    "status": "Verified",
+    "file": "Criminal_Manifest_FinComBank_2026.pdf",
+    "title": "Criminal Manifest: FinComBank Forgery (2026-04-18)"
+  },
+  {
     "id": "NODE-UN-OHCHR",
     "status": "Verified",
     "file": "Petitions_and_Assistance_OHCHR.pdf",
