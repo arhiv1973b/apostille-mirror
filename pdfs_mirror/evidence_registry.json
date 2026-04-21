@@ -1,5 +1,17 @@
 [
   {
+    "id": "NODE-FISCAL-INDEX-2",
+    "status": "Anchored",
+    "file": "index codul Fiscal_2.pdf",
+    "title": "Фискальный индекс: Доказательства подлога IDNP"
+  },
+  {
+    "id": "NODE-STATEMENT-2026",
+    "file": "MACHERET_STATEMENT_20042026 - Google Документы.pdf",
+    "identity": "A©tor",
+    "title": "Манифест TI-ULA (MACHERET_STATEMENT_20042026)"
+  },
+  {
     "id": "NODE-AUDIT-9306",
     "status": "Anchored",
     "file": "final_audit_report.txt",
