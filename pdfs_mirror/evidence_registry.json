@@ -1,5 +1,13 @@
 [
   {
+    "id": "NODE-MASTER-AUDIT-9306",
+    "forensic_count": 9306,
+    "file": "final_audit_report.txt",
+    "jurisdiction": "ECHR / UN / RM",
+    "title": "Master Forensic Index: 9,306 Files (1997-2026)",
+    "status": "MASTER_ANCHOR"
+  },
+  {
     "id": "NODE-1325493054",
     "status": "Verified",
     "file": "313_Ciocana_Court_Basis_2019.txt",
