@@ -1416,6 +1416,111 @@ function shareDoc() {
 </script>
 <div style='display:none;'>TI-ULA Agent v1.3.1 Active</div>
 <div style='display:none;'>TI-ULA Agent v1.3.1 Active</div>
+<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
+<style>
+.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
+.crit-forgery strong{color:#a32d2d}
+.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
+.crit-jurisdiction strong{color:#185fa5}
+.node-row:hover{background-color:#f5f5f5}
+#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
+#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
+#forensic-table col:nth-child(1){width:110px}
+#forensic-table col:nth-child(2){width:160px}
+#forensic-table col:nth-child(3){width:200px}
+#forensic-table col:nth-child(4){width:auto}
+#forensic-table thead{background:#f4f4f4;font-size:12px}
+#registry-filters{margin:12px 0}
+#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
+#registry-filters button:hover{background:#e8f0fe}
+#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
+#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
+</style>
+<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
+<div id="registry-filters">
+  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
+  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
+  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
+  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
+  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
+</div>
+<div id="ti-ula-counter"></div>
+<div style="overflow-x:auto">
+<table id="forensic-table">
+  <colgroup><col/><col/><col/><col/></colgroup>
+  <thead><tr>
+    <th>Node ID</th>
+    <th>Классификация</th>
+    <th>Файл (источник) / Стр.</th>
+    <th>Контекст форензик-аудита</th>
+  </tr></thead>
+  <tbody id="registry-body"></tbody>
+</table>
+</div>
+<script>
+var allNodes=[];
+var PAGE_SIZE=200;
+var currentOffset=0;
+var currentSet=[];
+
+async function materializeRegistry(){
+  var status=document.getElementById('ti-ula-status');
+  try{
+    var r=await fetch('pdfs_mirror/evidence_registry.json');
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    var data=await r.json();
+    allNodes=data.evidence_nodes||[];
+    status.style.background='#e8f5e9';
+    status.style.borderColor='#4caf50';
+    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
+      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
+      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
+      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
+    renderNodes(allNodes,0);
+  }catch(e){
+    status.style.background='#ffebee';
+    status.style.borderColor='#f44336';
+    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
+    console.error(e);
+  }
+}
+
+function renderNodes(nodes, offset){
+  currentSet=nodes;
+  currentOffset=offset;
+  var body=document.getElementById('registry-body');
+  var slice=nodes.slice(offset, offset+PAGE_SIZE);
+  body.innerHTML=slice.map(function(n){
+    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
+            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
+    var ctx=(n.forensic_context||'').substring(0,100);
+    var fname=(n.source&&n.source.file)||'';
+    var page=(n.source&&n.source.page)||'';
+    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
+    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
+    return '<tr class="node-row '+cls+'">'
+      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
+      +'<td><strong>'+n.classification+'</strong></td>'
+      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
+      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
+      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
+      +'</tr>';
+  }).join('');
+  var ctr=document.getElementById('ti-ula-counter');
+  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
+  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
+  var nav='';
+  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
+  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
+  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
+}
+
+function filterNodes(type){
+  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
+  renderNodes(filtered,0);
+}
+materializeRegistry();
+</script>
 </body>
 </html>
 
