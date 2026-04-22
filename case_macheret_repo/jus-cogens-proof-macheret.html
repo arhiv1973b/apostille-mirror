@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI-ULA: Реестр материализованных доказательств CASE-MACHERET</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .header { background: #1a237e; color: white; padding: 20px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .status-bar { background: #e8f5e9; padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 5px solid #4caf50; font-family: monospace; }
+        .filters { margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+        button { padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; background: #3949ab; color: white; transition: 0.3s; }
+        button:hover { background: #283593; }
+        
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        th { background: #f5f5f5; padding: 12px; border: 1px solid #ddd; text-align: left; position: sticky; top: 0; }
+        td { padding: 10px; border: 1px solid #ddd; font-size: 14px; }
+        
+        /* Классификация улик */
+        .crit-forgery { background-color: #fff9f9; border-left: 5px solid #d32f2f !important; }
+        .crit-forgery strong { color: #d32f2f; }
+        .crit-jurisdiction { background-color: #f0f7ff; border-left: 5px solid #1976d2 !important; }
+        .crit-jurisdiction strong { color: #1976d2; }
+        .primary-mapping { color: #555; }
+        
+        .context-text { font-style: italic; color: #666; font-size: 13px; display: block; margin-top: 5px; background: #fefefe; padding: 5px; border-radius: 3px; }
+        a { color: #1a237e; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>CASE-MACHERET-1997-2026</h1>
+    <p>Международный A©tor: Alexei Arturovich Macheret (IDNP ..655)</p>
+    <p>Статус: <strong>Верификация Jus Cogens / Erga Omnes</strong></p>
+</div>
+
+<div id="ti-ula-status" class="status-bar">Инициализация форензик-реестра...</div>
+
+<div class="filters">
+    <button onclick="filterNodes('all')">Все узлы (4010)</button>
+    <button onclick="filterNodes('Digital Twin')" style="background: #d32f2f;">Подлоги IDNP (..555)</button>
+    <button onclick="filterNodes('Jurisdiction')" style="background: #1976d2;">Подмена Юрисдикции (UNIX)</button>
+    <button onclick="filterNodes('Fiscal')" style="background: #f9a825;">Фискальные аномалии (..455)</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th width="10%">Node ID</th>
+            <th width="20%">Классификация</th>
+            <th width="30%">Файл (Источник)</th>
+            <th width="40%">Контекст (Forensic Context)</th>
+        </tr>
+    </thead>
+    <tbody id="registry-body">
+        <tr><td colspan="4" style="text-align:center;">Загрузка данных...</td></tr>
+    </tbody>
+</table>
+
+<script>
+let allNodes = [];
+
+async function loadRegistry() {
+    const status = document.getElementById('ti-ula-status');
+    try {
+        // Загрузка верифицированного JSON-реестра
+        const response = await fetch('pdfs_mirror/evidence_registry.json');
+        const data = await response.json();
+        allNodes = data.evidence_nodes;
+        
+        status.innerHTML = `✅ <strong>РЕЕСТР МАТЕРИАЛИЗОВАН:</strong> Обнаружено <strong>${data.registry_meta.total_nodes}</strong> узлов подлога | Протокол: ${data.registry_meta.protocol}`;
+        renderNodes(allNodes);
+    } catch (e) {
+        status.innerHTML = "❌ ОШИБКА: Реестр не найден. Запустите форензик-сканер или проверьте пути Git.";
+        status.style.background = "#ffebee";
+    }
+}
+
+function renderNodes(nodes) {
+    const body = document.getElementById('registry-body');
+    body.innerHTML = nodes.map(node => {
+        let rowClass = "";
+        if (node.classification.includes("Digital Twin")) rowClass = "crit-forgery";
+        if (node.classification.includes("Jurisdiction")) rowClass = "crit-jurisdiction";
+        
+        return `
+            <tr class="${rowClass}">
+                <td><code>${node.node_id}</code></td>
+                <td><strong>${node.classification}</strong></td>
+                <td>
+                    <a href="${node.source.file}" target="_blank">${decodeURIComponent(node.source.file)}</a><br>
+                    <small>Стр. ${node.source.page}</small>
+                </td>
+                <td>
+                    <span class="context-text">...${node.forensic_context}...</span>
+                </td>
+            </tr>
+        `;
+    }).join('');
+}
+
+function filterNodes(type) {
+    if (type === 'all') renderNodes(allNodes);
+    else renderNodes(allNodes.filter(n => n.classification.includes(type)));
+}
+
+window.onload = loadRegistry;
+</script>
+
+</body>
+</html>
