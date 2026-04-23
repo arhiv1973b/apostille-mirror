@@ -1,0 +1,59 @@
+﻿name: A©tor UN Dispatch Protocol
+
+on:
+  push:
+    branches:
+      - REVOLUTION-JUS-COGENS-V1
+
+jobs:
+  dispatch_evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Official Communication to OHCHR & CAT
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: URGENT REQUEST FOR INTERIM MEASURES & SUBMISSION OF INDIVIDUAL COMMUNICATION: CASE-MACHERET-1997-2026 (Republic of Moldova)
+          to: cat@ohchr.org, petitions@ohchr.org, registry@ohchr.org
+          from: "Alexei Arturovich Macheret (A©tor)"
+          body: |
+            Honorable Members of the Committee,
+
+            I am submitting this urgent communication to formally notify the Committee of systemic, continuous violations of the absolute prohibition of torture (jus cogens), state-sponsored identity forgery, and severe ongoing reprisals against myself and my family by the authorities of the Republic of Moldova.
+
+            Because my physical safety is currently compromised—highlighted by a direct physical assault at my residence on February 18, 2026, intended to obstruct the preparation of this very submission—I have utilized a cryptographic, decentralized architecture to secure the evidence.
+
+            1. The Evidence Vault (The "Tunnel Matrix")
+            To prevent the destruction of evidence by state actors, the complete evidentiary base (including 90 documents certified by the Apostille of the Hague Convention of 1961) has been structurally secured and deployed to an immutable repository.
+
+            PRIMARY ACCESS (Interactive Index):
+            🔗 https://arhiv1973b.github.io/apostille-mirror/mirrors/index.html
+
+            FALLBACK RAW ACCESS (Machine-Readable / Uncensored):
+            🔗 https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/REVOLUTION-JUS-COGENS-V1/case_macheret_repo/jus-cogens-proof-macheret.html
+
+            2. Key Evidence of Violations Included in the Vault:
+            * Proof of Ne Bis In Idem Violation: Documented proof of a third punishment for the same act, executing a 26-day illegal detention (Apostille Code: 2013074007644).
+            
+            * Proof of Identity Forgery (Article 332, Criminal Code of RM): Official records proving the intentional creation of "phantom" identification numbers (IDNP suffixes ...555 and ...455) to run parallel to my lawful IDNP (...655) for the purpose of financial extortion and blocking access to justice.
+            
+            * Proof of Financial Reprisals: Confirmed theft/blocking of 25,210,256.15 MDL within the FinComPay system, executed in April 2026 as a direct reprisal for preparing this UN submission.
+
+            3. Urgent Request for Interim Measures
+            Given the documented physical attack on my person and the systemic financial terrorism executed via the banking system (Moldindconbank, FinComPay), I urgently request the Committee to issue Interim Measures compelling the State Party (Republic of Moldova) to:
+            * Guarantee the immediate physical protection of myself and my spouse, Irina Oleinic.
+            * Halt all financial blocking actions and reinstate the stolen/frozen assets (25.2M MDL).
+            * Cease the use of forged IDNPs (...555, ...455) in all state registries.
+
+            The completed Individual Communication Form and my detailed Statement of Facts are fully documented within the provided Evidence Vault. I stand ready to provide any further clarification required.
+
+            Respectfully submitted,
+
+            Alexei Arturovich Macheret (A©tor)
+            Victim of Unrehabilitated Torture (Lifelong Group I Disability)
+            Lawful IDNP: 2000001159655
+            Address: mun. Chișinău, str. Andrei Doga 30, ap. 38, Republic of Moldova
+            Digital Signature Status: SHA-256 Verified (A©TOR_KEY)
