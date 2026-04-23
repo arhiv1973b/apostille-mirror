@@ -1,0 +1,6 @@
+pdfs_mirror/Новая папка/
+pdfs_mirror/**/*.exe
+pdfs_mirror/**/*.dll
+pdfs_mirror/**/*.bat
+*.tmp
+*.log
