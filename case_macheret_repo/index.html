@@ -1,351 +1,568 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CASE-MACHERET-1997-2026 | Evidence Dossier</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: 'Courier New', monospace;
-        background: #1a1a1a;
-        color: #e0e0e0;
-        line-height: 1.6;
-        padding: 20px;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      .case-header {
-        border-bottom: 3px solid #b22222;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-        background: #2a2a2a;
-        padding: 20px;
-      }
-      .case-header h1 {
-        color: #fff;
-        font-size: 28px;
-        margin-bottom: 10px;
-      }
-      .status-tag {
-        display: inline-block;
-        background: #b22222;
-        color: white;
-        padding: 5px 15px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      .warning-tag {
-        background: #ff6600;
-        color: white;
-        padding: 5px 15px;
-        font-weight: bold;
-      }
-      .evidence-section {
-        margin-bottom: 40px;
-      }
-      .evidence-section h2 {
-        color: #b22222;
-        border-left: 4px solid #b22222;
-        padding-left: 15px;
-        margin-bottom: 20px;
-      }
-      .evidence-card {
-        background: #2a2a2a;
-        border: 1px solid #444;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-left: 4px solid #b22222;
-      }
-      .evidence-card h3 {
-        color: #fff;
-        margin-bottom: 10px;
-      }
-      .evidence-card .meta {
-        color: #888;
-        font-size: 14px;
-        margin-bottom: 10px;
-      }
-      .evidence-card .impact {
-        color: #ff6600;
-        border-left: 2px solid #ff6600;
-        padding-left: 10px;
-        margin-top: 10px;
-        font-style: italic;
-      }
-      .evidence-card a {
-        display: inline-block;
-        background: #b22222;
-        color: white;
-        padding: 8px 20px;
-        text-decoration: none;
-        margin-top: 15px;
-      }
-      .evidence-card a:hover {
-        background: #d44444;
-      }
-      .total-count {
-        text-align: right;
-        color: #888;
-        margin-bottom: 20px;
-      }
-      footer {
-        border-top: 1px solid #444;
-        padding-top: 20px;
-        margin-top: 40px;
-        text-align: center;
-        color: #666;
-      }
-      .legal-note {
-        background: #2a2a2a;
-        padding: 15px;
-        border: 1px solid #444;
-        margin-top: 20px;
-      }
-      .legal-note strong {
-        color: #b22222;
-      }
-      .lang-toggle {
-        display: inline-block;
-        background: #333;
-        border: 1px solid #555;
-        border-radius: 5px;
-        padding: 5px 10px;
-        margin-left: 20px;
-        cursor: pointer;
-      }
-      .lang-toggle:hover {
-        background: #444;
-      }
-      .lang-toggle button {
-        background: none;
-        border: none;
-        color: #888;
-        cursor: pointer;
-        padding: 2px 8px;
-        font-weight: bold;
-      }
-      .lang-toggle button.active {
-        color: #fff;
-        background: #b22222;
-        border-radius: 3px;
-      }
-      .header-controls {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-  <body>
-    <div class="container">
-      <div class="case-header">
-        <div class="header-controls">
-          <div>
-            <h1>REGISTRY: CASE-MACHERET-1997-2026</h1>
-            <p>
-              <span class="status-tag">ЖЕРТВА ПЫТОК</span>
-              <span class="warning-tag">I ГРУППА ИНВАЛИДНОСТИ</span>
-            </p>
-            <p style="margin-top: 10px; color: #888">
-              <strong>Case ID:</strong> CASE-MACHERET-1997-2026 |
-              <strong>Version:</strong> 2026.02.21-FINAL
-            </p>
-          </div>
-          <div class="lang-toggle">
-            <button id="btn-ru" class="active" onclick="setLang('ru')">RU</button>
-            <button id="btn-en" onclick="setLang('en')">EN</button>
-          </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CASE-MACHERET-1997-2026 · Evidence Vault · Apostille Archive · Jus Cogens Proof">
+<meta name="robots" content="index, follow">
+<title>CASE-MACHERET-1997–2026 · Evidence Vault · Apostille Mirror</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8c96e;
+    --dark: #0a0a0a;
+    --dark-mid: #111111;
+    --dark-card: #161616;
+    --red: #c0392b;
+    --text: #d4cfc7;
+    --text-dim: #7a746e;
+    --border: #2a2520;
+    --seal: #1a1510;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'EB Garamond', Georgia, serif;
+    line-height: 1.7;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  .site-header {
+    border-bottom: 1px solid var(--border);
+    padding: 2rem 2rem 1.5rem;
+    position: relative;
+    background: linear-gradient(180deg, #0d0b08 0%, var(--dark) 100%);
+  }
+  .site-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .case-id {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 900;
+    color: #f0ebe0;
+    line-height: 1.2;
+  }
+  .site-title span { color: var(--gold); }
+  .integrity-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.8rem;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    align-self: center;
+  }
+  .integrity-badge strong { color: #4a9; display: block; }
+
+  /* HERO */
+  .hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
+  }
+  .hero-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 900;
+    line-height: 1.15;
+    color: #f0ebe0;
+    margin-bottom: 1.5rem;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .hero-desc {
+    font-size: 1.05rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--gold);
+    color: #0a0a0a;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.8rem;
+    transition: all 0.2s;
+  }
+  .hero-cta:hover { background: var(--gold-light); }
+
+  /* STATS */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+  }
+  .stat-cell {
+    background: var(--dark-card);
+    padding: 1.8rem 1.5rem;
+    position: relative;
+  }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+  .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+    display: block;
+  }
+  .stat-cell.red .stat-number { color: var(--red); }
+
+  /* SECTIONS GRID */
+  .sections-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 6rem;
+  }
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .section-divider::before, .section-divider::after {
+    content: ''; flex: 1; height: 1px; background: var(--border);
+  }
+  .section-divider span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    margin-bottom: 1px;
+  }
+  .card {
+    background: var(--dark-card);
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover { background: var(--seal); }
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .card:hover::after { opacity: 1; }
+  .card-icon { font-size: 1.5rem; }
+  .card-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f0ebe0;
+    line-height: 1.3;
+  }
+  .card-desc {
+    font-size: 0.88rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    flex: 1;
+  }
+  .card-arrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    margin-top: auto;
+    letter-spacing: 0.05em;
+  }
+
+  /* TIMELINE STRIP */
+  .timeline-strip {
+    background: var(--dark-card);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 2.5rem 2rem;
+    margin-bottom: 4rem;
+    overflow-x: auto;
+  }
+  .timeline-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 0;
+  }
+  .tl-node {
+    flex: 1;
+    min-width: 160px;
+    padding: 0 1.5rem;
+    position: relative;
+    border-right: 1px solid var(--border);
+  }
+  .tl-node:last-child { border-right: none; }
+  .tl-year {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+  }
+  .tl-text {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  /* CHAIN SECTION */
+  .chain-section {
+    background: var(--dark-card);
+    border: 1px solid var(--border);
+    padding: 3rem;
+    margin-bottom: 4rem;
+  }
+  .chain-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f0ebe0;
+    margin-bottom: 0.5rem;
+  }
+  .chain-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .chain-flow {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .chain-node {
+    background: var(--seal);
+    border: 1px solid var(--border);
+    padding: 0.8rem 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text);
+    letter-spacing: 0.05em;
+    text-align: center;
+    min-width: 120px;
+  }
+  .chain-node.highlight { border-color: var(--gold); color: var(--gold); }
+  .chain-node.danger { border-color: var(--red); color: var(--red); }
+  .chain-arrow {
+    color: var(--gold);
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 2rem;
+    background: var(--dark-mid);
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .footer-id {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+  }
+  .footer-id strong { color: var(--gold); }
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div>
+      <div class="case-id">CASE-MACHERET-1997–2026 · EVIDENCE VAULT · APOSTILLE MIRROR</div>
+      <div class="site-title">A©tor · <span>Архив Правосудия</span></div>
+    </div>
+    <div class="integrity-badge">
+      🔒 SHA-256<br>
+      <strong>INTEGRITY 100%</strong>
+      APOSTILLE MIRROR · 2026
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <div class="hero-label">Доказательная матрица · Jus Cogens · Erga Omnes</div>
+      <h1 class="hero-title">
+        Jus Cogens =<br><em>Фактическое<br>Доказательство</em>
+      </h1>
+      <p class="hero-desc">
+        Императивная норма международного права. Без срока давности. Без исключений.
+        90 апостилированных документов. 8158 суток молчания государства.
+        Принцип дополнительности МУС активирован.
+      </p>
+      <a href="jus-cogens-proof-macheret.html" class="hero-cta">
+        ⚖ Открыть Доказательный Акт →
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-cell">
+        <span class="stat-number">90</span>
+        <span class="stat-label">Апостилированных документов</span>
+      </div>
+      <div class="stat-cell red">
+        <span class="stat-number">8158</span>
+        <span class="stat-label">Суток без расследования</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Языка документации</span>
+      </div>
+      <div class="stat-cell red">
+        <span class="stat-number">Art.17</span>
+        <span class="stat-label">МУС активирован</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline-strip">
+    <div class="timeline-inner">
+      <div class="tl-node">
+        <div class="tl-year">1997–1998</div>
+        <div class="tl-text">Пытки задокументированы.<br>Дело № 1-568/98</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-year">2003–2021</div>
+        <div class="tl-text">90 судебных решений. Ни одного расследования пыток</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-year">15.03.2022</div>
+        <div class="tl-text">Подлог Нантой. Захват имущества (ул. Мирон Костин)</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-year">19.03.2026</div>
+        <div class="tl-text">Уведомления: White House, UN OHCHR, G7, ICC</div>
+      </div>
+      <div class="tl-node">
+        <div class="tl-year">2026</div>
+        <div class="tl-text">Global Sanction Vector 11. Архив трансмиттируется</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sections-wrapper">
+    <div class="section-divider"><span>Разделы архива</span></div>
+
+    <div class="cards-grid">
+      <a href="jus-cogens-proof-macheret.html" class="card">
+        <div class="card-icon">⚖</div>
+        <div class="card-label">Основной документ · 4 языка</div>
+        <div class="card-title">Доказательный Акт — Дело Мачерет</div>
+        <div class="card-desc">
+          Jus Cogens = Фактическое доказательство. Полная логическая цепь от факта 1997 года
+          до неопровержимого вывода об активации МУС. На русском, румынском, английском, французском.
         </div>
-      </div>
-
-      <div class="stats-grid">
-        <a href="Downloads/MAI_EXPUNGEMENT_DEMAND.md" class="stat-btn" target="_blank">
-          <span class="number">1997</span>
-          <span class="label">Год начала дела</span>
-        </a>
-        <a href="Downloads/apostile_results_final_secure.csv" class="stat-btn" target="_blank">
-          <span class="number">90</span>
-          <span class="label">Полных апостилей</span>
-        </a>
-        <a href="Downloads/ERGA_OMNES_VIOLATION_UNCLEAR_SIGNATURES.md" class="stat-btn" target="_blank">
-          <span class="number">13</span>
-          <span class="label">Неясные подписи</span>
-        </a>
-        <a href="Downloads/interactive-map.html" class="stat-btn" target="_blank">
-          <span class="number">14.4%</span>
-          <span class="label">Процент неудач проверки</span>
-        </a>
-      </div>
-
-      <div class="total-count" id="total-count-label">
-        Всего документов-триггеров: <span id="total-count">0</span>
-      </div>
-
-      <section class="evidence-section" id="evidence-triggers">
-        <h2 id="triggers-title">📌 Документы-триггеры (Цепь нарушений)</h2>
-        <div id="evidence-container">
-          <p style="color: #888">Загрузка данных...</p>
+        <div class="card-arrow">→ ОТКРЫТЬ</div>
+      </a>
+      <a href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_ACT.html" class="card">
+        <div class="card-icon">🧬</div>
+        <div class="card-label">Криминальный каскад · 15.03.2022</div>
+        <div class="card-title">Акт Деконструкции Подлога Нантой</div>
+        <div class="card-desc">
+          Графологическая экспертиза (Вектор 3). Использование личности Маркова И.М.
+          Причинно-следственный каскад от 8158 суток вакуума к захвату активов.
         </div>
-      </section>
-
-      <section class="evidence-section" id="echr-section" style="border-top: 3px solid #0066cc; margin-top: 40px; padding-top: 20px;">
-        <h2 style="color: #0066cc; border-left: 4px solid #0066cc; padding-left: 15px; margin-bottom: 20px;">
-          ⚖️ Жалоба в ЕСПЧ (ECHR Complaint 2026)
-        </h2>
-        <div class="evidence-card" style="border-left-color: #0066cc;">
-          <h3>Европейский Суд по правам человека</h3>
-          <p class="meta">
-            <strong>Дата подачи:</strong> 02.03.2026 | 
-            <strong>Статус:</strong> ПОДАНА | 
-            <strong>Референс:</strong> CASE-MACHERET-1997-2026-ECHR
-          </p>
-          <p style="margin: 15px 0;">
-            <strong>Нарушенные статьи ЕКПЧ:</strong> Ст. 3 (пытки), Ст. 5 (свобода), Ст. 6 (справедливый суд), Ст. 13 (эффективное средство защиты)
-          </p>
-          <p style="margin: 15px 0;">
-            <strong>Требование компенсации:</strong> 220 000 EUR<br>
-            • Материальный ущерб: 100 000 EUR<br>
-            • Моральный вред: 100 000 EUR<br>
-            • Судебные расходы: 20 000 EUR
-          </p>
-          <p style="margin: 15px 0;">
-            <strong>Ключевые нарушения:</strong><br>
-            • Пытки 1997-1998 (дело №1-568/98)<br>
-            • Отсутствие расследования<br>
-            • Блокировка реабилитации<br>
-            • Убийство свидетеля (2022)
-          </p>
-          <a href="Downloads/ECHR_complaint_filled.md" target="_blank" style="background: #0066cc;">
-            📄 Открыть жалобу (MD)
-          </a>
+        <div class="card-arrow">→ ОТКРЫТЬ</div>
+      </a>
+      <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="card">
+        <div class="card-icon">📂</div>
+        <div class="card-label">Реестр · Гаагская конвенция</div>
+        <div class="card-title">Реестр Апостилированных Документов</div>
+        <div class="card-desc">
+          90 документов, заверенных по Гаагской конвенции 05.10.1961. Апостиль удостоверяет
+          подлинность подписи должностного лица — не законность содержания.
+          Содержание: уклонение от расследования пыток.
         </div>
-      </section>
-
-      <div class="legal-note" id="legal-note">
-        <strong id="legal-title">Юридическая справка:</strong>
-        <p>
-          Нарушение статей 3 и 6 Конвенции в данном деле носит длящийся
-          характер. "Ошибка" в фамилии и мануальный способ ведения дел — не
-          техническая погрешность, а преднамеренное отступление от норм jus
-          cogens.
-        </p>
-      </div>
-
-      <footer>
-        <p><strong>Semnat:</strong> A©tor Maceret Alexei</p>
-        <p>Verified: SHA-256 | GitHub Pages Hosting</p>
-        <p style="margin-top: 15px;">
-          <a href="Downloads/interactive-map.html" style="color: #00d4ff; font-weight: bold;">
-            🔗 Interactive Violation Map (Jus Cogens API)
-          </a>
-        </p>
-      </footer>
+        <div class="card-arrow">→ ОТКРЫТЬ РЕЕСТР</div>
+      </a>
+      <a href="https://arhiv1973b.github.io/apostille-legal-case/" class="card">
+        <div class="card-icon">🔒</div>
+        <div class="card-label">Evidence Vault · Merkle Chain</div>
+        <div class="card-title">Хранилище Доказательств</div>
+        <div class="card-desc">
+          Криптографический архив «Apostille Mirror». Верификация Ed25519.
+          Actor Identity Schema (urn:actor:id). Merkle Root CFC 9a2465bd…e77.
+          TI-ULA · 4010 активных узлов.
+        </div>
+        <div class="card-arrow">→ ХРАНИЛИЩЕ</div>
+      </a>
     </div>
 
-    <script>
-      const translations = {
-        ru: {
-          totalCount: 'Всего документов-триггеров:',
-          triggersTitle: '📌 Документы-триггеры (Цепь нарушений)',
-          legalTitle: 'Юридическая справка:',
-          legalText: 'Нарушение статей 3 и 6 Конвенции в данном деле носит длящийся характер. "Ошибка" в фамилии и мануальный способ ведения дел — не техническая погрешность, а преднамеренное отступление от норм jus cogens.',
-          statusTag: 'ЖЕРТВА ПЫТОК',
-          warningTag: 'I ГРУППА ИНВАЛИДНОСТИ',
-          openDoc: 'Открыть документ (PDF)',
-          date: 'Дата',
-          case: 'Дело',
-          type: 'Тип',
-          loading: 'Загрузка данных...',
-          error: 'Ошибка загрузки данных:'
-        },
-        en: {
-          totalCount: 'Total trigger documents:',
-          triggersTitle: '📌 Trigger Documents (Chain of Violations)',
-          legalTitle: 'Legal Note:',
-          legalText: 'The violation of Articles 3 and 6 of the Convention in this case is of a continuing nature. The "error" in the surname and manual case handling is not a technical glitch but a deliberate departure from jus cogens norms.',
-          statusTag: 'TORTURE VICTIM',
-          warningTag: 'DISABILITY GROUP I',
-          openDoc: 'Open Document (PDF)',
-          date: 'Date',
-          case: 'Case',
-          type: 'Type',
-          loading: 'Loading data...',
-          error: 'Error loading data:'
-        }
-      };
+    <div style="height: 3rem;"></div>
+    <div class="section-divider"><span>Механизм системного нарушения</span></div>
 
-      let currentLang = localStorage.getItem('lang') || 'ru';
+    <div class="chain-section">
+      <div class="chain-title">«Рак» правосудия: механизм институциональной безнаказанности</div>
+      <div class="chain-sub">каждая стрелка — задокументированный факт, не версия</div>
+      <div class="chain-flow">
+        <div class="chain-node highlight">ФАКТ ПЫТОК<br>1997–1998</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node highlight">НАРУШЕНИЕ<br>JUS COGENS</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">МОЛЧАНИЕ<br>ГОСУДАРСТВА</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">РАЗРЫВ<br>ERGA OMNES</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node">ИНСТИТУЦИОНАЛЬНАЯ<br>БЕЗНАКАЗАННОСТЬ<br>8158 СУТОК</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node danger">ПОДЛОГ<br>15.03.2022</div>
+        <div class="chain-arrow">→</div>
+        <div class="chain-node danger">⚠ ЗАХВАТ<br>АКТИВОВ</div>
+      </div>
+    </div>
 
-      function setLang(lang) {
-        currentLang = lang;
-        localStorage.setItem('lang', lang);
-        
-        document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
-        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-        
-        document.getElementById('total-count-label').innerHTML = 
-          translations[lang].totalCount + ' <span id="total-count">' + document.getElementById('total-count').textContent + '</span>';
-        document.getElementById('triggers-title').textContent = translations[lang].triggersTitle;
-        document.getElementById('legal-title').textContent = translations[lang].legalTitle;
-        document.querySelector('#legal-note p').textContent = translations[lang].legalText;
-        
-        document.querySelector('.status-tag').textContent = translations[lang].statusTag;
-        document.querySelector('.warning-tag').textContent = translations[lang].warningTag;
-        
-        document.querySelectorAll('.evidence-card').forEach(card => {
-          const link = card.querySelector('a');
-          if (link) link.textContent = translations[lang].openDoc;
-        });
-        
-        renderEvidence();
-      }
+    <div class="cards-grid">
+      <a href="https://legal.un.org/ilc/guide/1_14.shtml" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">📜</div>
+        <div class="card-label">ILC · ООН</div>
+        <div class="card-title">ILC Jus Cogens</div>
+        <div class="card-desc">Комиссия международного права ООН. Императивные нормы общего международного права.</div>
+        <div class="card-arrow">↗ UN.ORG</div>
+      </a>
+      <a href="https://www.ohchr.org/en/contact-us" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">🌍</div>
+        <div class="card-label">Верховный комиссар · ООН</div>
+        <div class="card-title">UN OHCHR</div>
+        <div class="card-desc">Управление Верховного комиссара ООН по правам человека. Адресат уведомлений от 19.03.2026.</div>
+        <div class="card-arrow">↗ OHCHR.ORG</div>
+      </a>
+      <a href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">🔵</div>
+        <div class="card-label">Международная полиция</div>
+        <div class="card-title">INTERPOL</div>
+        <div class="card-desc">Международная организация уголовной полиции. Идентифицированные персональные акторы.</div>
+        <div class="card-arrow">↗ INTERPOL.INT</div>
+      </a>
+    </div>
+  </div>
+</main>
 
-      function renderEvidence() {
-        const container = document.getElementById('evidence-container');
-        const t = translations[currentLang];
-        
-        fetch('registry.json')
-          .then((response) => response.json())
-          .then((data) => {
-            const triggers = data.evidence_triggers;
-            document.getElementById('total-count').textContent = triggers.length;
-            document.getElementById('total-count-label').innerHTML = 
-              t.totalCount + ' <span id="total-count">' + triggers.length + '</span>';
-            container.innerHTML = '';
-            triggers.forEach((item) => {
-              const card = document.createElement('div');
-              card.className = 'evidence-card';
-              card.innerHTML = `
-                          <h3>${item.title}</h3>
-                          <div class="meta">
-                              <strong>ID:</strong> ${item.id} | 
-                              <strong>${t.date}:</strong> ${item.date || 'N/A'} | 
-                              <strong>${t.case}:</strong> ${item.case || 'N/A'}
-                          </div>
-                          <div class="meta">
-                              <strong>${t.type}:</strong> ${item.type}
-                          </div>
-                          <div class="impact">${item.impact}</div>
-                          <a href="${item.link}" target="_blank">${t.openDoc}</a>
-                      `;
-              container.appendChild(card);
-            });
-          })
-          .catch((err) => {
-            document.getElementById('evidence-container').innerHTML =
-              '<p style="color: #b22222;">' + t.error + ' ' + err.message + '</p>';
-          });
-      }
+<footer>
+  <div class="footer-inner">
+    <div class="footer-id">
+      <strong>A©TOR · СУБЪЕКТ ПРАВА</strong><br>
+      CASE-MACHERET-1997–2026 · ИДНП: 2000001159655<br>
+      DNS: _ti-ula.actor.legal · MERKLE ROOT CFC: 9a2465bd…e77<br>
+      COMMIT: 5b40fda · REPO: arhiv1973b/apostille-mirror
+    </div>
+    <div class="footer-links">
+      <a href="jus-cogens-proof-macheret.html">JUS COGENS ACT</a>
+      <a href="https://arhiv1973b.github.io/apostille-archive-english/">ARCHIVE</a>
+      <a href="https://arhiv1973b.github.io/apostille-legal-case/">LEGAL CASE</a>
+      <a href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">ILC</a>
+    </div>
+  </div>
+</footer>
 
-      document.getElementById('btn-ru').classList.toggle('active', currentLang === 'ru');
-      document.getElementById('btn-en').classList.toggle('active', currentLang === 'en');
-      
-      renderEvidence();
-    </script>
-  </body>
+</body>
 </html>

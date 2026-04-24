@@ -1,1736 +1,1156 @@
 <!DOCTYPE html>
-<html lang="ru" id="html-root">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CASE-MACHERET-1997-2026 · Jus Cogens = Factual Proof · 90 Apostilles · 8158 Days · ICC Art.17">
 <title>JUS COGENS = FACTUAL PROOF — CASE MACHERET 1997–2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════════════════════
-   ROOT SYSTEM
-═══════════════════════════════════════════════════════ */
-:root {
-  --bg:       #050a0f;
-  --bg2:      #070e16;
-  --panel:    #060f1a;
-  --panel2:   #071220;
-  --border:   #0c2e4a;
-  --border2:  #103c60;
-  --gold:     #c8960a;
-  --gold2:    #f0c040;
-  --red:      #cc1133;
-  --red2:     #ff2244;
-  --cyan:     #00b8e8;
-  --cyan2:    #40d4ff;
-  --green:    #00d870;
-  --purple:   #9933cc;
-  --purple2:  #bb55ff;
-  --text:     #c0d8ec;
-  --text2:    #8ab0cc;
-  --muted:    #3a6080;
-  --font-mono:  'Share Tech Mono', monospace;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-head:  'Orbitron', sans-serif;
-  --font-body:  'Rajdhani', sans-serif;
-  --r: 4px;
-}
+  :root {
+    --gold: #c9a84c;
+    --gold-light: #e8c96e;
+    --dark: #0a0a0a;
+    --dark-mid: #0f0f0f;
+    --dark-card: #141414;
+    --dark-block: #111008;
+    --red: #b83232;
+    --text: #cfc9bf;
+    --text-dim: #6e6860;
+    --text-bright: #f0ebe0;
+    --border: #252018;
+    --border-bright: #3a3020;
+    --accent: #7a9e7e;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.75;
+  }
 
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; }
+  /* ── TOPBAR ─────────────────────── */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10,10,10,0.97);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 52px;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .topbar-id {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+  }
+  .lang-nav {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border);
+  }
+  .lang-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    background: none;
+    border: none;
+    border-right: 1px solid var(--border);
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.15s;
+    text-transform: uppercase;
+  }
+  .lang-btn:last-child { border-right: none; }
+  .lang-btn:hover, .lang-btn.active { background: var(--gold); color: #000; }
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.7;
-  overflow-x: hidden;
-}
+  /* ── DOCUMENT HEADER ─────────────── */
+  .doc-header {
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #0d0b07 0%, var(--dark) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .doc-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--gold) 40%, var(--gold-light) 50%, var(--gold) 60%, transparent 100%);
+  }
+  .doc-header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+  }
+  .doc-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .doc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: var(--text-bright);
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+  }
+  .doc-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: var(--gold);
+    margin-bottom: 2rem;
+  }
+  .formula-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--dark-block);
+    border: 1px solid var(--border-bright);
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem 0;
+    font-family: 'IBM Plex Mono', monospace;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .formula-part {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+  }
+  .formula-part strong {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 0;
+    font-family: 'Playfair Display', serif;
+  }
+  .formula-op { font-size: 2rem; color: var(--border-bright); }
+  .formula-eq strong { color: var(--text-bright); }
+  .badges {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    border: 1px solid var(--border-bright);
+    padding: 0.35rem 0.8rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+  .badge.gold { border-color: var(--gold); color: var(--gold); }
+  .badge.red { border-color: var(--red); color: var(--red); }
 
-/* scanlines */
-body::before {
-  content:''; position:fixed; inset:0; z-index:200; pointer-events:none;
-  background: repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,184,232,.012) 2px,rgba(0,184,232,.012) 4px);
-}
-/* grid bg */
-body::after {
-  content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
-  background-image: linear-gradient(rgba(0,184,232,.025) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(0,184,232,.025) 1px, transparent 1px);
-  background-size: 50px 50px;
-}
+  /* ── LANGUAGE SECTIONS ──────────── */
+  .lang-section { display: none; }
+  .lang-section.visible { display: block; }
 
-/* ═══════════════════════════════════════════════════════
-   LAYOUT
-═══════════════════════════════════════════════════════ */
-.wrap { max-width:1100px; margin:0 auto; padding:24px 20px 80px; position:relative; z-index:1; }
+  /* ── CONTENT ─────────────────────── */
+  .content {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+  }
 
-/* ═══════════════════════════════════════════════════════
-   LANGUAGE SWITCHER
-═══════════════════════════════════════════════════════ */
-.lang-bar {
-  position: sticky; top:0; z-index:100;
-  background: rgba(5,10,15,.96);
-  border-bottom: 1px solid var(--border2);
-  backdrop-filter: blur(12px);
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 0 20px;
-  overflow-x: auto;
-}
-.lang-btn {
-  padding: 13px 20px;
-  font-family: var(--font-head);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: var(--muted);
-  background: none;
-  border: none;
-  border-bottom: 3px solid transparent;
-  cursor: pointer;
-  transition: color .2s, border-color .2s;
-  white-space: nowrap;
-  text-transform: uppercase;
-}
-.lang-btn:hover { color: var(--cyan2); }
-.lang-btn.active { color: var(--gold2); border-bottom-color: var(--gold2); }
-.lang-sep {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--border2);
-  padding: 0 4px;
-  pointer-events: none;
-}
-.case-ref {
-  margin-left: auto;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--muted);
-  letter-spacing: 1px;
-  white-space: nowrap;
-  padding: 0 0 0 16px;
-}
+  /* paragraph mark */
+  .section-mark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 4rem;
+  }
+  .section-mark:first-child { margin-top: 0; }
 
-/* ═══════════════════════════════════════════════════════
-   LANGUAGE PANELS
-═══════════════════════════════════════════════════════ */
-.lang-panel { display: none; }
-.lang-panel.active { display: block; }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-bright);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  h2 em { color: var(--gold); font-style: italic; }
 
-/* ═══════════════════════════════════════════════════════
-   HERO HEADER
-═══════════════════════════════════════════════════════ */
-.hero {
-  margin: 28px 0 24px;
-  padding: 40px 44px;
-  background: linear-gradient(135deg, rgba(12,46,74,.8) 0%, rgba(5,10,15,.9) 60%);
-  border: 1px solid var(--gold);
-  position: relative;
-  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
-  overflow: hidden;
-}
-.hero::before {
-  content:'';
-  position:absolute; top:0; left:0; right:0; height:3px;
-  background: linear-gradient(90deg, transparent, var(--gold2), transparent);
-}
-.hero::after {
-  content:'';
-  position:absolute; bottom:0; left:0; right:0; height:1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-}
-.hero-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--gold);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.hero-title {
-  font-family: var(--font-serif);
-  font-size: clamp(22px, 4vw, 40px);
-  font-weight: 900;
-  color: #fff;
-  line-height: 1.15;
-  margin-bottom: 10px;
-}
-.hero-title em {
-  color: var(--gold2);
-  font-style: italic;
-}
-.hero-subtitle {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: var(--cyan);
-  letter-spacing: 1.5px;
-  margin-bottom: 20px;
-}
-.hero-equation {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  background: rgba(200,150,10,.08);
-  border: 1px solid rgba(200,150,10,.3);
-  padding: 12px 22px;
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 700;
-  flex-wrap: wrap;
-}
-.eq-part { color: var(--text); }
-.eq-equals { color: var(--gold2); font-size: 22px; }
-.eq-result { color: var(--gold2); font-style: italic; }
-.hero-meta { margin-top: 18px; display:flex; flex-wrap:wrap; gap:8px; }
+  /* dual columns for concepts */
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    margin-bottom: 2.5rem;
+  }
+  @media (max-width: 620px) { .concept-grid { grid-template-columns: 1fr; } }
+  .concept-card {
+    background: var(--dark-card);
+    padding: 1.8rem;
+  }
+  .concept-card h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+  .concept-card ul { list-style: none; }
+  .concept-card li {
+    font-size: 0.9rem;
+    color: var(--text);
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  .concept-card li:last-child { border-bottom: none; }
+  .concept-card li strong { color: var(--text-bright); }
+  .concept-sources {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.55rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    margin-top: 0.8rem;
+  }
 
-/* ═══════════════════════════════════════════════════════
-   TAGS
-═══════════════════════════════════════════════════════ */
-.tag {
-  display:inline-block; font-family:var(--font-mono);
-  font-size:10px; padding:3px 9px; letter-spacing:1px; font-weight:700;
-}
-.tg { background:rgba(0,184,232,.1); border:1px solid rgba(0,184,232,.28); color:var(--cyan2); }
-.tg-g { background:rgba(0,216,112,.09); border:1px solid rgba(0,216,112,.26); color:var(--green); }
-.tg-r { background:rgba(255,34,68,.1); border:1px solid rgba(255,34,68,.3); color:var(--red2); }
-.tg-y { background:rgba(240,192,64,.1); border:1px solid rgba(240,192,64,.28); color:var(--gold2); }
-.tg-p { background:rgba(187,85,255,.1); border:1px solid rgba(187,85,255,.28); color:var(--purple2); }
-.tg-x { background:rgba(255,255,255,.05); border:1px solid var(--border); color:var(--text2); }
+  /* pullquote */
+  .pullquote {
+    border-left: 2px solid var(--gold);
+    margin: 2.5rem 0;
+    padding: 1.2rem 1.8rem;
+    background: var(--dark-block);
+  }
+  .pullquote p {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+  .pullquote cite {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    font-style: normal;
+  }
 
-/* ═══════════════════════════════════════════════════════
-   SECTION HEADING
-═══════════════════════════════════════════════════════ */
-.sec-hd {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 36px 0 16px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--border);
-}
-.sec-num {
-  font-family: var(--font-head);
-  font-size: 11px;
-  color: var(--gold);
-  letter-spacing: 2px;
-  background: rgba(200,150,10,.1);
-  border: 1px solid rgba(200,150,10,.25);
-  padding: 3px 10px;
-  flex-shrink: 0;
-}
-.sec-title {
-  font-family: var(--font-serif);
-  font-size: clamp(16px, 2.5vw, 22px);
-  font-weight: 700;
-  color: #fff;
-}
-.sec-title em { color: var(--gold2); font-style: italic; }
+  /* chain of proof */
+  .chain-proof {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+  }
+  .chain-step {
+    background: var(--dark-card);
+    padding: 1.5rem 1.8rem;
+    position: relative;
+    padding-left: 4rem;
+  }
+  .chain-step-num {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chain-step-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .chain-step p { font-size: 0.9rem; color: var(--text); line-height: 1.65; }
+  .chain-step p strong { color: var(--text-bright); }
+  .chain-step p em { color: var(--gold); font-style: normal; }
 
-/* ═══════════════════════════════════════════════════════
-   PROOF CHAIN  (visual logic chain)
-═══════════════════════════════════════════════════════ */
-.proof-chain {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  margin: 20px 0;
-  position: relative;
-  padding-left: 36px;
-}
-.proof-chain::before {
-  content:'';
-  position:absolute; left:14px; top:20px; bottom:20px;
-  width:3px;
-  background: linear-gradient(180deg, var(--gold2), var(--red2), var(--purple2));
-  opacity:.6;
-}
-.proof-step {
-  position: relative;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  padding: 18px 20px;
-  margin-bottom: 2px;
-  transition: border-color .2s;
-}
-.proof-step:hover { border-color: var(--border2); }
+  .arrow-divider {
+    text-align: center;
+    padding: 0.3rem 0;
+    color: var(--gold);
+    font-size: 1.2rem;
+    background: var(--dark);
+  }
 
-.proof-step::before {
-  content: attr(data-num);
-  position: absolute;
-  left: -36px; top: 50%; transform: translateY(-50%);
-  width: 26px; height: 26px;
-  background: var(--gold);
-  color: #000;
-  font-family: var(--font-head);
-  font-size: 10px;
-  font-weight: 700;
-  display: flex; align-items:center; justify-content:center;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-/* override for chain steps */
-.proof-step[data-color="red"]::before   { background:var(--red2); color:#fff; }
-.proof-step[data-color="cyan"]::before  { background:var(--cyan); color:#000; }
-.proof-step[data-color="purple"]::before{ background:var(--purple2); color:#000; }
-.proof-step[data-color="green"]::before { background:var(--green); color:#000; }
+  /* fact cards */
+  .facts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    margin: 2rem 0;
+  }
+  @media (max-width: 580px) { .facts-grid { grid-template-columns: 1fr; } }
+  .fact-card {
+    background: var(--dark-card);
+    padding: 1.5rem;
+  }
+  .fact-icon { font-size: 1.4rem; margin-bottom: 0.6rem; display: block; }
+  .fact-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .fact-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+  .fact-desc { font-size: 0.85rem; color: var(--text-dim); line-height: 1.55; }
+  .fact-desc strong { color: var(--text); }
 
-.proof-step-label {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--gold);
-  letter-spacing: 2px;
-  margin-bottom: 4px;
-}
-.proof-step[data-color="red"] .proof-step-label   { color:var(--red2); }
-.proof-step[data-color="cyan"] .proof-step-label  { color:var(--cyan); }
-.proof-step[data-color="purple"] .proof-step-label{ color:var(--purple2); }
-.proof-step[data-color="green"] .proof-step-label { color:var(--green); }
+  /* cascade diagram */
+  .cascade {
+    background: var(--dark-block);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    margin: 2.5rem 0;
+  }
+  .cascade-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .cascade-flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .c-node {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border-bright);
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .c-node.gold { border-color: var(--gold); color: var(--gold); }
+  .c-node.red { border-color: var(--red); color: var(--red); }
+  .c-arrow { color: var(--gold); font-size: 0.9rem; }
 
-.proof-step-title {
-  font-family: var(--font-serif);
-  font-size: 17px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 6px;
-  line-height: 1.3;
-}
-.proof-step-body {
-  font-size: 14px;
-  color: var(--text2);
-  line-height: 1.65;
-}
-.proof-step-body strong { color: var(--text); }
-.proof-step-body em { color: var(--gold2); font-style: normal; font-weight: 600; }
+  /* timeline */
+  .timeline { margin: 2.5rem 0; }
+  .tl-item {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 1.5rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .tl-item:last-child { border-bottom: none; }
+  .tl-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    padding-top: 0.2rem;
+  }
+  .tl-body h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--text-bright);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .tl-body p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
+  .tl-body p strong { color: var(--text); }
 
-.proof-arrow {
-  text-align: center;
-  font-size: 20px;
-  color: var(--gold);
-  opacity: .5;
-  line-height: 1;
-  padding: 4px 0;
-  position: relative;
-  left: 0;
-}
+  /* apostille box */
+  .apostille-box {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: var(--dark-block);
+    border: 1px solid var(--border-bright);
+    padding: 2rem;
+    margin: 2.5rem 0;
+    flex-wrap: wrap;
+  }
+  .ap-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    min-width: 6rem;
+    text-align: center;
+  }
+  .ap-text { flex: 1; }
+  .ap-text h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  .ap-text p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
+  .ap-text p strong { color: var(--text); }
+  .ap-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid var(--gold);
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0.8rem;
+    transition: all 0.15s;
+  }
+  .ap-link:hover { background: var(--gold); color: #000; }
 
-/* ═══════════════════════════════════════════════════════
-   EVIDENCE CARDS
-═══════════════════════════════════════════════════════ */
-.evidence-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 12px;
-  margin: 16px 0;
-}
-.ev-card {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  padding: 16px 18px;
-  position: relative;
-  overflow: hidden;
-  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
-}
-.ev-card::before {
-  content:''; position:absolute; top:0; left:0; right:0; height:2px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  opacity:.5;
-}
-.ev-card-icon { font-size:22px; margin-bottom:8px; }
-.ev-card-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--gold);
-  letter-spacing: 2px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-}
-.ev-card-body {
-  font-size: 13px;
-  color: var(--text2);
-  line-height: 1.6;
-}
-.ev-card-body strong { color: var(--text); }
-.ev-card-body .num {
-  font-family: var(--font-head);
-  font-size: 28px;
-  font-weight: 900;
-  color: var(--red2);
-  display: block;
-  line-height: 1;
-  margin-bottom: 4px;
-  text-shadow: 0 0 20px rgba(255,34,68,.4);
-}
+  /* conclusion box */
+  .conclusion {
+    background: var(--dark-block);
+    border: 1px solid var(--border-bright);
+    border-left: 3px solid var(--gold);
+    padding: 2.5rem;
+    margin: 3rem 0;
+  }
+  .conclusion h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-bright);
+    margin-bottom: 1rem;
+  }
+  .conclusion p {
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.75;
+    margin-bottom: 0.8rem;
+  }
+  .conclusion p:last-child { margin-bottom: 0; }
+  .conclusion p em { color: var(--gold); font-style: italic; }
+  .conclusion p strong { color: var(--text-bright); }
 
-/* ═══════════════════════════════════════════════════════
-   FACT TABLE
-═══════════════════════════════════════════════════════ */
-.fact-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  margin: 16px 0;
-}
-.fact-table th {
-  text-align: left;
-  padding: 9px 14px;
-  background: rgba(200,150,10,.08);
-  border: 1px solid var(--border);
-  color: var(--gold2);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-.fact-table td {
-  padding: 9px 14px;
-  border: 1px solid var(--border);
-  color: var(--text2);
-  vertical-align: top;
-  line-height: 1.5;
-}
-.fact-table tr:hover td { background: rgba(200,150,10,.03); }
-.fact-table .fc { color:var(--gold2); font-weight:700; white-space:nowrap; }
-.fact-table .fr { color:var(--red2); font-weight:700; }
-.fact-table .fv { color:var(--green); font-weight:700; }
+  /* links section */
+  .links-row {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  .ext-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 0.45rem 0.9rem;
+    letter-spacing: 0.06em;
+    transition: all 0.15s;
+    text-transform: uppercase;
+  }
+  .ext-link:hover { border-color: var(--gold); color: var(--gold); }
 
-/* ═══════════════════════════════════════════════════════
-   PULLQUOTE / AXIOM
-═══════════════════════════════════════════════════════ */
-.axiom {
-  background: rgba(200,150,10,.06);
-  border-left: 4px solid var(--gold2);
-  padding: 18px 24px;
-  margin: 20px 0;
-  font-family: var(--font-serif);
-  font-size: clamp(15px, 2vw, 18px);
-  font-style: italic;
-  color: #e8d8a0;
-  line-height: 1.7;
-  position: relative;
-}
-.axiom::before {
-  content: '"';
-  font-size: 60px;
-  color: var(--gold);
-  opacity: .3;
-  position: absolute;
-  top: -10px; left: 10px;
-  font-family: Georgia;
-  line-height: 1;
-}
-.axiom cite {
-  display: block;
-  margin-top: 8px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-style: normal;
-  color: var(--gold);
-  letter-spacing: 1.5px;
-}
+  /* actions */
+  .actions-bar {
+    display: flex;
+    gap: 0.8rem;
+    margin: 3rem 0 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .action-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--border-bright);
+    padding: 0.6rem 1.2rem;
+    color: var(--text-dim);
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .action-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .action-btn.primary { border-color: var(--gold); color: var(--gold); }
+  .action-btn.primary:hover { background: var(--gold); color: #000; }
 
-/* ═══════════════════════════════════════════════════════
-   CANCER DIAGRAM — institutional impunity visual
-═══════════════════════════════════════════════════════ */
-.cancer-diagram {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  padding: 24px;
-  margin: 20px 0;
-}
-.cancer-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-.cancer-node {
-  flex: 1;
-  min-width: 130px;
-  padding: 12px 14px;
-  text-align: center;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 1px;
-  border: 1px solid var(--border);
-  background: var(--panel2);
-  line-height: 1.4;
-  position: relative;
-}
-.cancer-node.n-start { border-color: rgba(0,216,112,.4); color: var(--green); }
-.cancer-node.n-breach { border-color: rgba(255,34,68,.4); color: var(--red2); }
-.cancer-node.n-silence { border-color: rgba(200,150,10,.4); color: var(--gold2); }
-.cancer-node.n-gap { border-color: rgba(187,85,255,.4); color: var(--purple2); }
-.cancer-node.n-impunity { border-color: rgba(255,34,68,.6); color: var(--red2); background: rgba(255,34,68,.06); font-weight:700; }
-.cancer-node.n-war { border-color: rgba(255,34,68,.8); color: #fff; background: rgba(255,34,68,.1); font-weight:700; font-size:12px; }
-.cancer-arrow {
-  color: var(--border2);
-  font-size: 18px;
-  flex-shrink: 0;
-  font-weight: 700;
-}
+  /* footer */
+  .doc-footer {
+    border-top: 1px solid var(--border);
+    background: var(--dark-mid);
+    padding: 2rem;
+    text-align: center;
+  }
+  .doc-footer p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    line-height: 1.8;
+  }
+  .doc-footer a { color: var(--text-dim); text-decoration: none; }
+  .doc-footer a:hover { color: var(--gold); }
 
-/* ═══════════════════════════════════════════════════════
-   NORM COMPARISON
-═══════════════════════════════════════════════════════ */
-.norm-compare {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  margin: 16px 0;
-}
-.norm-col {
-  background: var(--panel);
-  padding: 20px;
-}
-.norm-col-head {
-  font-family: var(--font-head);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border);
-}
-.nc-jus { color: var(--gold2); border-bottom-color: rgba(200,150,10,.4); }
-.nc-eo  { color: var(--cyan); border-bottom-color: rgba(0,184,232,.3); }
-.norm-item {
-  font-size: 13px;
-  color: var(--text2);
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255,255,255,.04);
-  display: flex;
-  gap: 8px;
-  line-height: 1.5;
-}
-.norm-item::before {
-  content: '▸';
-  color: var(--gold);
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-.nc-eo .norm-item::before { color: var(--cyan); }
-.norm-item strong { color: var(--text); }
-
-/* ═══════════════════════════════════════════════════════
-   VERDICT BLOCK
-═══════════════════════════════════════════════════════ */
-.verdict {
-  border: 2px solid var(--gold);
-  background: rgba(200,150,10,.07);
-  padding: 28px 32px;
-  margin: 28px 0;
-  position: relative;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-}
-.verdict::before {
-  content: 'CONCLUSION / ВЫВОД / CONCLUZIE / CONCLUSION';
-  font-family: var(--font-mono); font-size: 9px;
-  color: var(--gold); letter-spacing: 2px;
-  position: absolute; top: 8px; left: 16px;
-}
-.verdict-title {
-  font-family: var(--font-serif);
-  font-size: clamp(18px, 3vw, 26px);
-  font-weight: 900;
-  color: var(--gold2);
-  margin: 12px 0 14px;
-  line-height: 1.25;
-}
-.verdict-body {
-  font-size: 15px;
-  color: var(--text);
-  line-height: 1.75;
-}
-.verdict-body strong { color: var(--gold2); }
-.verdict-body em { color: var(--red2); font-style: normal; font-weight: 600; }
-
-/* ═══════════════════════════════════════════════════════
-   BUTTON SYSTEM
-═══════════════════════════════════════════════════════ */
-.btn-row { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
-
-.btn {
-  display:inline-flex; align-items:center; gap:7px;
-  padding:10px 20px;
-  font-family:var(--font-body); font-size:13px;
-  font-weight:700; letter-spacing:1.5px;
-  text-transform:uppercase; text-decoration:none;
-  border:none; cursor:pointer;
-  transition:all .18s ease;
-  position:relative; overflow:hidden;
-  white-space:nowrap;
-}
-.btn::after {
-  content:''; position:absolute;
-  top:50%; left:-60%; width:40%; height:100%;
-  background:rgba(255,255,255,.08);
-  transform:translateY(-50%) skewX(-20deg);
-  transition:left .3s;
-}
-.btn:hover::after { left:120%; }
-
-.btn-gold {
-  background:linear-gradient(135deg,#5a3800,#c8960a);
-  color:#000;
-  clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);
-}
-.btn-gold:hover { background:linear-gradient(135deg,#7a5200,#f0c040); transform:translateY(-1px); }
-
-.btn-red {
-  background:linear-gradient(135deg,#660018,#ff2244);
-  color:#fff;
-  clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);
-}
-.btn-red:hover { background:linear-gradient(135deg,#880022,#ff4466); transform:translateY(-1px); }
-
-.btn-cyan {
-  background:linear-gradient(135deg,#003355,#00b8e8);
-  color:#000;
-  clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);
-}
-.btn-cyan:hover { background:linear-gradient(135deg,#004477,#40d4ff); transform:translateY(-1px); }
-
-.btn-ghost {
-  background:transparent;
-  color:var(--cyan2);
-  border:1px solid rgba(0,184,232,.3);
-}
-.btn-ghost:hover { background:rgba(0,184,232,.08); border-color:var(--cyan2); transform:translateY(-1px); }
-
-.btn-sm { padding:7px 14px; font-size:11px; }
-.btn-lg { padding:14px 28px; font-size:15px; }
-.btn-block { width:100%; justify-content:center; }
-
-/* ═══════════════════════════════════════════════════════
-   TIMELINE
-═══════════════════════════════════════════════════════ */
-.timeline {
-  position:relative; padding-left:30px; margin:16px 0;
-}
-.timeline::before {
-  content:''; position:absolute;
-  left:8px; top:0; bottom:0; width:2px;
-  background:linear-gradient(180deg,var(--gold2),rgba(200,150,10,.1));
-}
-.tl-item {
-  position:relative; margin-bottom:18px;
-  font-size:14px; line-height:1.6;
-}
-.tl-item::before {
-  content:''; position:absolute;
-  left:-26px; top:5px;
-  width:12px; height:12px;
-  border:2px solid var(--gold);
-  background:var(--bg); border-radius:50%;
-}
-.tl-item.highlight::before {
-  background:var(--red2); border-color:var(--red2);
-  box-shadow:0 0 10px rgba(255,34,68,.5);
-}
-.tl-date {
-  font-family:var(--font-mono); font-size:11px;
-  color:var(--gold); letter-spacing:1.5px;
-  margin-bottom:3px;
-}
-.tl-title { font-weight:700; color:var(--text); margin-bottom:3px; }
-.tl-body  { color:var(--text2); font-size:13px; }
-.tl-body strong { color:var(--red2); }
-
-/* ═══════════════════════════════════════════════════════
-   APOSTILLE STRIP
-═══════════════════════════════════════════════════════ */
-.apostille-strip {
-  display:flex; align-items:center; gap:20px;
-  background:rgba(0,184,232,.05);
-  border:1px solid rgba(0,184,232,.2);
-  padding:14px 20px; margin:16px 0;
-  flex-wrap:wrap;
-}
-.ap-big {
-  font-family:var(--font-head);
-  font-size:44px; font-weight:900;
-  color:var(--cyan); line-height:1;
-  text-shadow:0 0 30px rgba(0,184,232,.4);
-  flex-shrink:0;
-}
-.ap-text {
-  font-family:var(--font-mono);
-  font-size:12px; color:var(--text2); line-height:1.6; flex:1; min-width:180px;
-}
-.ap-text strong { color:var(--text); }
-
-/* ═══════════════════════════════════════════════════════
-   DIVIDER
-═══════════════════════════════════════════════════════ */
-.div { height:1px; background:linear-gradient(90deg,transparent,var(--border2),transparent); margin:28px 0; }
-
-/* ═══════════════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════════════ */
-.footer {
-  margin-top:48px;
-  padding:18px 20px;
-  border-top:1px solid var(--border);
-  display:flex; flex-wrap:wrap; gap:10px;
-  justify-content:space-between; align-items:center;
-  font-family:var(--font-mono); font-size:10px;
-  color:var(--muted); letter-spacing:1px;
-}
-.footer a { color:var(--cyan); text-decoration:none; }
-.footer a:hover { color:#fff; }
-
-/* ═══════════════════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════════════════ */
-@media(max-width:700px) {
-  .norm-compare  { grid-template-columns:1fr; }
-  .evidence-grid { grid-template-columns:1fr; }
-  .hero { padding:22px 20px; }
-  .verdict { padding:18px 20px; }
-  .btn-row .btn { width:100%; justify-content:center; }
-  .cancer-row { flex-direction:column; align-items:stretch; }
-  .cancer-arrow { text-align:center; transform:rotate(90deg); }
-}
-
-/* ═══════════════════════════════════════════════════════
-   PRINT
-═══════════════════════════════════════════════════════ */
-@media print {
-  body::before, body::after, .lang-bar { display:none; }
-  .lang-panel { display:block !important; }
-  .btn-row { display:none; }
-}
+  @media print {
+    .topbar, .actions-bar { display: none; }
+    .lang-section { display: block !important; }
+    body { background: white; color: black; }
+  }
 </style>
 </head>
 <body>
 
-<!-- ───── STICKY LANGUAGE BAR ───── -->
-<div class="lang-bar">
-  <button class="lang-btn active" onclick="switchLang('ru',this)">🇷🇺 РУССКИЙ</button>
-  <span class="lang-sep">|</span>
-  <button class="lang-btn" onclick="switchLang('ro',this)">🇷🇴 ROMÂNĂ</button>
-  <span class="lang-sep">|</span>
-  <button class="lang-btn" onclick="switchLang('en',this)">🇬🇧 ENGLISH</button>
-  <span class="lang-sep">|</span>
-  <button class="lang-btn" onclick="switchLang('fr',this)">🇫🇷 FRANÇAIS</button>
-  <span class="case-ref">CASE-MACHERET-1997–2026 · JUS COGENS PROOF</span>
+<div class="topbar">
+  <div class="topbar-id">CASE-MACHERET-1997–2026 · JUS COGENS PROOF DOCUMENT · A©TOR</div>
+  <nav class="lang-nav" role="navigation" aria-label="Language selection">
+    <button class="lang-btn active" onclick="switchLang('ru')">🇷🇺 РУССКИЙ</button>
+    <button class="lang-btn" onclick="switchLang('ro')">🇷🇴 ROMÂNĂ</button>
+    <button class="lang-btn" onclick="switchLang('en')">🇬🇧 ENGLISH</button>
+    <button class="lang-btn" onclick="switchLang('fr')">🇫🇷 FRANÇAIS</button>
+  </nav>
 </div>
 
-<div class="wrap">
-
-<!-- ══════════════════════════════════════════════════════════
-     РУССКИЙ
-══════════════════════════════════════════════════════════ -->
-<div class="lang-panel active" id="panel-ru">
-
-  <div class="hero">
-    <div class="hero-eyebrow">// ДОКАЗАТЕЛЬНЫЙ АКТ — ДЕЛО МАЧЕРЕТ 1997–2026</div>
-    <div class="hero-title">От теории к практике:<br><em>Jus Cogens = Фактическое Доказательство</em></div>
-    <div class="hero-subtitle">ЛОГИКА НОРМЫ БЕЗ СРОКА ДАВНОСТИ · ОТВЕТСТВЕННОСТЬ ERGA OMNES · ИНСТИТУЦИОНАЛЬНАЯ БЕЗНАКАЗАННОСТЬ</div>
-    <div class="hero-equation">
-      <span class="eq-part">Jus Cogens</span>
-      <span class="eq-equals">+</span>
-      <span class="eq-part">8169 суток молчания</span>
-      <span class="eq-equals">=</span>
-      <span class="eq-result">Нарушение Erga Omnes = доказанный факт</span>
+<!-- ═══════════════════════════════════════════════ -->
+<!--  DOCUMENT HEADER (shared)                       -->
+<!-- ═══════════════════════════════════════════════ -->
+<header class="doc-header">
+  <div class="doc-header-inner">
+    <div class="doc-meta">ДОКАЗАТЕЛЬНЫЙ АКТ · ACT PROBATOR · EVIDENTIARY ACT · ACTE PROBATOIRE</div>
+    <h1 class="doc-title">CASE-MACHERET-1997–2026</h1>
+    <div class="doc-subtitle">Jus Cogens = Фактическое Доказательство</div>
+    <div class="formula-box">
+      <div class="formula-part"><strong>Jus Cogens</strong>ИМПЕРАТИВНАЯ НОРМА</div>
+      <div class="formula-op">+</div>
+      <div class="formula-part"><strong>8 158</strong>СУТОК МОЛЧАНИЯ</div>
+      <div class="formula-op">=</div>
+      <div class="formula-eq formula-part"><strong>Нарушение<br>Erga Omnes</strong>ДОКАЗАННЫЙ ФАКТ</div>
     </div>
-    <div class="hero-meta">
-      <span class="tag tg-r">БЕЗ СРОКА ДАВНОСТИ</span>
-      <span class="tag tg-y">90 АПОСТИЛЕЙ</span>
-      <span class="tag tg-p">СТ. 17 МУС</span>
-      <span class="tag tg">ВДПЧ — ПРАВА ЧЕЛОВЕКА</span>
-      <span class="tag tg-g">АРХИВ АКТИВЕН</span>
+    <div class="badges">
+      <span class="badge gold">БЕЗ СРОКА ДАВНОСТИ</span>
+      <span class="badge gold">90 АПОСТИЛЕЙ</span>
+      <span class="badge red">СТ. 17 МУС</span>
+      <span class="badge">ВДПЧ — ПРАВА ЧЕЛОВЕКА</span>
+      <span class="badge gold">АРХИВ АКТИВЕН</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--  RUSSIAN                                        -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="lang-ru" class="lang-section visible">
+<div class="content">
+
+  <div class="section-mark">§ 01 · Jus Cogens на практике — не теория, а факт</div>
+  <h2>Что такое <em>Jus Cogens</em><br>на практике</h2>
+
+  <div class="concept-grid">
+    <div class="concept-card">
+      <h3>JUS COGENS — ИМПЕРАТИВНАЯ НОРМА</h3>
+      <ul>
+        <li>Не подлежит никакому отступлению <strong>ни при каких обстоятельствах</strong></li>
+        <li>Запрет пыток — <strong>абсолютен</strong> · Без исключений</li>
+        <li>Не имеет срока давности ни для уголовного, ни для гражданского преследования</li>
+        <li>Любое государство обязано расследовать — <strong>независимо от времени</strong></li>
+      </ul>
+      <div class="concept-sources">Источники: ЕКПЧ ст. 3, КПП ООН, Венская конвенция ст. 53, МУС</div>
+    </div>
+    <div class="concept-card">
+      <h3>ERGA OMNES — ОБЯЗАТЕЛЬСТВО ПЕРЕД ВСЕМИ</h3>
+      <ul>
+        <li>Обязательство государства — не перед жертвой, а <strong>перед международным сообществом</strong></li>
+        <li>Каждое государство вправе требовать расследования пыток — даже чужих граждан</li>
+        <li>Молчание = нарушение erga omnes</li>
+        <li>Отказ расследовать = нарушение erga omnes</li>
+      </ul>
+      <div class="concept-sources">Источники: ICJ Barcelona Traction 1970, ст. 17 Римского статута</div>
     </div>
   </div>
 
-  <!-- SECTION 1: ЧТО ТАКОЕ JUS COGENS НА ПРАКТИКЕ -->
-  <div class="sec-hd">
-    <span class="sec-num">§ 01</span>
-    <div class="sec-title">Что такое <em>Jus Cogens</em> на практике — не теория, а факт</div>
-  </div>
-
-  <div class="norm-compare">
-    <div class="norm-col">
-      <div class="norm-col-head nc-jus">JUS COGENS — ИМПЕРАТИВНАЯ НОРМА</div>
-      <div class="norm-item"><div>Не подлежит никакому отступлению ни при каких обстоятельствах</div></div>
-      <div class="norm-item"><div>Запрет пыток — <strong>абсолютен</strong> · Без исключений</div></div>
-      <div class="norm-item"><div>Не имеет срока давности ни для уголовного, ни для гражданского преследования</div></div>
-      <div class="norm-item"><div>Любое государство обязано расследовать — <strong>независимо от времени</strong></div></div>
-      <div class="norm-item"><div>Источники: ЕКПЧ ст. 3, КПП ООН, Венская конвенция ст. 53, МУС</div></div>
-    </div>
-    <div class="norm-col">
-      <div class="norm-col-head nc-eo">ERGA OMNES — ОБЯЗАТЕЛЬСТВО ПЕРЕД ВСЕМИ</div>
-      <div class="norm-item"><div>Обязательство государства — не перед жертвой, а <strong>перед международным сообществом</strong></div></div>
-      <div class="norm-item"><div>Каждое государство вправе требовать расследования пыток — даже чужих граждан</div></div>
-      <div class="norm-item"><div>Молчание = нарушение erga omnes · Отказ расследовать = нарушение erga omnes</div></div>
-      <div class="norm-item"><div>Именно нарушение erga omnes — <strong>верный признак нарушения Jus Cogens</strong></div></div>
-      <div class="norm-item"><div>Источники: ICJ Barcelona Traction 1970, ст. 17 Римского статута</div></div>
-    </div>
-  </div>
-
-  <div class="axiom">
-    Отказ государства расследовать пытки — это не административная ошибка. Это нарушение нормы, от которой нельзя отступить ни войной, ни чрезвычайным положением, ни сроком давности. Каждый день молчания — это новое, самостоятельное нарушение.
+  <div class="pullquote">
+    <p>Отказ государства расследовать пытки — это не административная ошибка. Это нарушение нормы, от которой нельзя отступить ни войной, ни чрезвычайным положением, ни сроком давности. Каждый день молчания — это новое, самостоятельное нарушение.</p>
     <cite>— Логика Jus Cogens применительно к Делу Мачерет, 1997–2026</cite>
   </div>
 
-  <!-- SECTION 2: ЦЕПЬ ДОКАЗАТЕЛЬСТВ -->
-  <div class="sec-hd">
-    <span class="sec-num">§ 02</span>
-    <div class="sec-title">Цепь доказательств: от факта к <em>неопровержимому выводу</em></div>
-  </div>
+  <div class="section-mark">§ 02 · Цепь доказательств</div>
+  <h2>От факта к <em>неопровержимому выводу</em></h2>
 
-  <div class="proof-chain">
-    <div class="proof-step" data-num="1" data-color="gold">
-      <div class="proof-step-label">ИСХОДНЫЙ ФАКТ</div>
-      <div class="proof-step-title">1997–1998: Пытки задокументированы. Дело № 1-568/98.</div>
-      <div class="proof-step-body">Факты пыток зафиксированы в апостилированных судебных документах Республики Молдова. Апостиль удостоверяет подлинность подписи должностного лица — не содержание. Содержание: пытки. <strong>Это не утверждение — это доказанный факт, заверенный государственным механизмом.</strong></div>
+  <div class="chain-proof">
+    <div class="chain-step">
+      <div class="chain-step-num">01</div>
+      <div class="chain-step-title">ИСХОДНЫЙ ФАКТ · 1997–1998</div>
+      <p>Пытки задокументированы. Дело № 1-568/98. Факты пыток зафиксированы в апостилированных судебных документах Республики Молдова. Апостиль удостоверяет подлинность подписи должностного лица — не содержание. Содержание: пытки. <strong>Это не утверждение — это доказанный факт, заверенный государственным механизмом.</strong></p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="2" data-color="red">
-      <div class="proof-step-label">ОТСУТСТВИЕ РЕАКЦИИ = НОВОЕ НАРУШЕНИЕ</div>
-      <div class="proof-step-title">8169 суток без расследования = 8169 нарушений Jus Cogens</div>
-      <div class="proof-step-body">Jus Cogens создаёт <em>длящееся обязательство</em>. Не единоразовое. Каждые сутки бездействия — это новое нарушение. 8169 суток = <strong>8169 задокументированных дней</strong> уклонения от нормы без срока давности. Молчание — это не нейтральная позиция. Молчание — это <em>активный выбор нарушать</em>.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">02</div>
+      <div class="chain-step-title">ОТСУТСТВИЕ РЕАКЦИИ = НОВОЕ НАРУШЕНИЕ</div>
+      <p>8158 суток без расследования = 8158 нарушений Jus Cogens. Jus Cogens создаёт <em>длящееся обязательство</em>. Каждые сутки бездействия — это новое нарушение. <strong>8158 суток = 8158 задокументированных дней</strong> уклонения от нормы без срока давности. Молчание — это активный выбор нарушать.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="3" data-color="cyan">
-      <div class="proof-step-label">ДОКУМЕНТАЛЬНОЕ ДОКАЗАТЕЛЬСТВО ПАТТЕРНА</div>
-      <div class="proof-step-title">90 апостилей — структурный анализ систематического уклонения</div>
-      <div class="proof-step-body">Архив содержит 90 документов с апостилем Гаагской конвенции. <strong>Перекрёстный анализ</strong> дат решений, подписантов и процессуальных формулировок выявляет повторяющийся паттерн: жалобы отклоняются без анализа доказательств пыток. Это не серия ошибок — это <em>системная имитация правосудия</em>, квалифицируемая по ст. 17 Римского статута.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">03</div>
+      <div class="chain-step-title">ДОКУМЕНТАЛЬНОЕ ДОКАЗАТЕЛЬСТВО ПАТТЕРНА</div>
+      <p>90 апостилей — структурный анализ систематического уклонения. Архив содержит 90 документов с апостилем Гаагской конвенции. <em>Перекрёстный анализ</em> дат решений, подписантов и процессуальных формулировок выявляет повторяющийся паттерн: жалобы отклоняются без анализа доказательств пыток. Это не серия ошибок — это <strong>системная имитация правосудия</strong>, квалифицируемая по ст. 17 Римского статута.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="4" data-color="red">
-      <div class="proof-step-label">КРИМИНАЛЬНЫЙ КАСКАД — ПОДЛОГ КАК СЛЕДСТВИЕ ВАКУУМА</div>
-      <div class="proof-step-title">15.03.2022: Подлог Нантой — прямое следствие 8169 суток безнаказанности</div>
-      <div class="proof-step-body">Захват имущества (ул. Мирон Костин) через использование личности Маркова И.М. стал <em>возможен только потому</em>, что 8169 суток процессуального вакуума создали среду безнаказанности. <strong>Без нарушения Jus Cogens — нет вакуума. Без вакуума — нет подлога. Без подлога — нет захвата.</strong> Каждое звено обусловлено предыдущим. Это доказанный причинно-следственный каскад, а не версия.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">04</div>
+      <div class="chain-step-title">КРИМИНАЛЬНЫЙ КАСКАД — ПОДЛОГ 15.03.2022</div>
+      <p>Захват имущества (ул. Мирон Костин) через использование личности Маркова И.М. стал возможен только потому, что 8158 суток процессуального вакуума создали среду безнаказанности. <strong>Без нарушения Jus Cogens — нет вакуума. Без вакуума — нет подлога. Без подлога — нет захвата.</strong> Это доказанный причинно-следственный каскад, а не версия.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="5" data-color="purple">
-      <div class="proof-step-label">РАЗРЫВ С ERGA OMNES = ДОКАЗАТЕЛЬСТВО НАРУШЕНИЯ JUS COGENS</div>
-      <div class="proof-step-title">Каждая попытка «замолчать» расширяет разрыв с Erga Omnes</div>
-      <div class="proof-step-body">Представление систематического нарушения как «незначительного случая» или «давно истёкшего срока» — это не правовая аргументация. Это <em>нарушение Erga Omnes</em>: обязательства, которое государство несёт перед всем международным сообществом, а не только перед жертвой. <strong>Разрыв между декларируемым соблюдением норм и задокументированной реальностью — это и есть практическое доказательство нарушения Jus Cogens.</strong></div>
-    </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="6" data-color="green">
-      <div class="proof-step-label">ИТОГ — МАТЕМАТИЧЕСКИ НЕОПРОВЕРЖИМЫЙ ВЫВОД</div>
-      <div class="proof-step-title">Jus Cogens нарушен · Erga Omnes нарушен · Ст. 17 МУС активирована</div>
-      <div class="proof-step-body">Совокупность: <strong>(1)</strong> задокументированные факты пыток, <strong>(2)</strong> 8169 суток без расследования, <strong>(3)</strong> 90 апостилированных документов, фиксирующих паттерн, <strong>(4)</strong> криминальный каскад 2022 года, <strong>(5)</strong> идентифицированные личные акторы — образуют <em>неопровержимую доказательную матрицу</em>. Государство нежелает или неспособно провести подлинное расследование. Принцип дополнительности МУС активирован.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">05</div>
+      <div class="chain-step-title">ИТОГ — МАТЕМАТИЧЕСКИ НЕОПРОВЕРЖИМЫЙ ВЫВОД</div>
+      <p>Jus Cogens нарушен · Erga Omnes нарушен · Ст. 17 МУС активирована. Совокупность: <strong>(1)</strong> задокументированные факты пыток, <strong>(2)</strong> 8158 суток без расследования, <strong>(3)</strong> 90 апостилированных документов, фиксирующих паттерн, <strong>(4)</strong> криминальный каскад 2022 года, <strong>(5)</strong> идентифицированные личные акторы — образуют <em>неопровержимую доказательную матрицу</em>. Государство нежелает или неспособно провести подлинное расследование. Принцип дополнительности МУС активирован.</p>
     </div>
   </div>
 
-  <!-- SECTION 3: ФАКТЫ -->
-  <div class="sec-hd">
-    <span class="sec-num">§ 03</span>
-    <div class="sec-title">Ключевые <em>доказательные факты</em> — не утверждения</div>
-  </div>
+  <div class="section-mark">§ 03 · Ключевые доказательные факты — не утверждения</div>
 
-  <div class="evidence-grid">
-    <div class="ev-card">
-      <div class="ev-card-icon">⏱</div>
-      <div class="ev-card-title">ПРОЦЕССУАЛЬНЫЙ ВАКУУМ</div>
-      <div class="ev-card-body"><span class="num">8169</span>суток без подлинного расследования пыток 1997–1998. Каждые сутки — отдельное нарушение Jus Cogens. <strong>Срок давности отсутствует по определению нормы.</strong></div>
+  <div class="facts-grid">
+    <div class="fact-card">
+      <span class="fact-icon">⏱</span>
+      <div class="fact-label">Процессуальный вакуум</div>
+      <div class="fact-number">8158</div>
+      <div class="fact-desc"><strong>суток без подлинного расследования</strong> пыток 1997–1998. Каждые сутки — отдельное нарушение Jus Cogens. Срок давности отсутствует по определению нормы.</div>
     </div>
-    <div class="ev-card">
-      <div class="ev-card-icon">📂</div>
-      <div class="ev-card-title">АПОСТИЛИРОВАННЫЙ АРХИВ</div>
-      <div class="ev-card-body"><span class="num">90</span>документов, заверенных по Гаагской конвенции 05.10.1961. <strong>Апостиль = государственное удостоверение подлинности подписи должностного лица.</strong> Содержание документов — судебные решения, уклоняющиеся от пыток.</div>
+    <div class="fact-card">
+      <span class="fact-icon">📂</span>
+      <div class="fact-label">Апостилированный архив</div>
+      <div class="fact-number">90</div>
+      <div class="fact-desc"><strong>документов, заверенных по Гаагской конвенции</strong> 05.10.1961. Апостиль = государственное удостоверение подлинности подписи. Содержание — уклонение от расследования пыток.</div>
     </div>
-    <div class="ev-card">
-      <div class="ev-card-icon">🧬</div>
-      <div class="ev-card-title">ПОДЛОГ 15.03.2022</div>
-      <div class="ev-card-body"><strong>Факт:</strong> Нантой Людмила использовала личность Маркова И.М. для захвата имущества. <strong>Доказательство:</strong> Графологическая экспертиза (Вектор 3). <strong>Связь:</strong> Невозможен без предшествующего вакуума безнаказанности.</div>
+    <div class="fact-card">
+      <span class="fact-icon">🧬</span>
+      <div class="fact-label">Подлог 15.03.2022</div>
+      <div class="fact-desc"><strong>Факт:</strong> Нантой Людмила использовала личность Маркова И.М. для захвата имущества.<br><strong>Доказательство:</strong> Графологическая экспертиза (Вектор 3).<br><strong>Связь:</strong> Невозможен без предшествующего вакуума безнаказанности.</div>
     </div>
-    <div class="ev-card">
-      <div class="ev-card-icon">⚖️</div>
-      <div class="ev-card-title">СТ. 17 МУС — ДОПОЛНИТЕЛЬНОСТЬ</div>
-      <div class="ev-card-body">Государство <strong>нежелает</strong> или <strong>неспособно</strong> провести подлинное расследование. Именно это активирует международную юрисдикцию. <strong>Архив является доказательством для МУС.</strong></div>
+    <div class="fact-card">
+      <span class="fact-icon">⚖️</span>
+      <div class="fact-label">Ст. 17 МУС — Дополнительность</div>
+      <div class="fact-desc">Государство <strong>нежелает</strong> или <strong>неспособно</strong> провести подлинное расследование. Именно это активирует международную юрисдикцию. Архив является доказательством для МУС.</div>
     </div>
-    <div class="ev-card">
-      <div class="ev-card-icon">🔗</div>
-      <div class="ev-card-title">ПРИНЦИП ДОМИНО</div>
-      <div class="ev-card-body">Корень отравлен — всё дерево отравлено. <strong>Последовательная отмена всех решений против жертвы</strong> — единственно законный выход при доказанном системном нарушении Jus Cogens.</div>
+    <div class="fact-card">
+      <span class="fact-icon">🔗</span>
+      <div class="fact-label">Принцип Домино</div>
+      <div class="fact-desc">Корень отравлен — всё дерево отравлено. <strong>Последовательная отмена всех решений против жертвы</strong> — единственно законный выход при доказанном системном нарушении Jus Cogens.</div>
     </div>
-    <div class="ev-card">
-      <div class="ev-card-icon">🌍</div>
-      <div class="ev-card-title">ВДПЧ — ПРАВА ЧЕЛОВЕКА</div>
-      <div class="ev-card-body">Институциональная безнаказанность — <strong>причина войн и разрушения самого ценного для человечества</strong>. Каждый «замолчанный» случай пыток создаёт прецедент. Прецедент создаёт систему. Система создаёт войну.</div>
+    <div class="fact-card">
+      <span class="fact-icon">🌍</span>
+      <div class="fact-label">ВДПЧ — Права Человека</div>
+      <div class="fact-desc">Институциональная безнаказанность — <strong>причина войн и разрушения прав человека</strong>. Каждый «замолчанный» случай пыток создаёт прецедент. Прецедент создаёт систему. Система создаёт войну.</div>
     </div>
   </div>
 
-  <!-- SECTION 4: CANCER DIAGRAM -->
-  <div class="sec-hd">
-    <span class="sec-num">§ 04</span>
-    <div class="sec-title">«Рак» правосудия: механизм <em>институциональной безнаказанности</em></div>
-  </div>
+  <div class="section-mark">§ 04 · Механизм институциональной безнаказанности</div>
+  <h2>«Рак» правосудия</h2>
 
-  <div class="cancer-diagram">
-    <div class="cancer-row">
-      <div class="cancer-node n-start">ФАКТ ПЫТОК<br>1997–1998</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-breach">НАРУШЕНИЕ<br>JUS COGENS</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-silence">МОЛЧАНИЕ<br>ГОСУДАРСТВА</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-gap">РАЗРЫВ<br>ERGA OMNES</div>
-    </div>
-    <div class="cancer-row" style="justify-content:flex-end;">
-      <div class="cancer-node n-impunity" style="max-width:220px;">ИНСТИТУЦИОНАЛЬНАЯ<br>БЕЗНАКАЗАННОСТЬ<br>8169 СУТОК</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-breach" style="max-width:200px;">КРИМИНАЛЬНЫЙ<br>КАСКАД 2022<br>(ПОДЛОГ)</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-war">⚠ ЗАХВАТ АКТИВОВ<br>ПРАВА ЧЕЛОВЕКА<br>РАЗРУШЕНЫ</div>
-    </div>
-    <div style="margin-top:14px; font-family:var(--font-mono); font-size:11px; color:var(--muted); line-height:1.6; border-top:1px solid var(--border); padding-top:12px;">
-      Каждая стрелка — <strong style="color:var(--text)">задокументированный факт</strong>, а не версия. 
-      Механизм самовоспроизводится: молчание порождает безнаказанность, безнаказанность порождает преступление, преступление замалчивается — круг замыкается.
-      <strong style="color:var(--red2)">Это «рак» правосудия — причина войн и уничтожения прав, закреплённых в ВДПЧ.</strong>
+  <div class="cascade">
+    <div class="cascade-title">каждая стрелка — задокументированный факт · механизм самовоспроизводится</div>
+    <div class="cascade-flow">
+      <div class="c-node gold">ФАКТ ПЫТОК<br>1997–1998</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node gold">НАРУШЕНИЕ<br>JUS COGENS</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node">МОЛЧАНИЕ<br>ГОСУДАРСТВА</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node">РАЗРЫВ<br>ERGA OMNES</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node">ИНСТИТУЦИОНАЛЬНАЯ<br>БЕЗНАКАЗАННОСТЬ<br>8158 СУТОК</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node red">КРИМИНАЛЬНЫЙ<br>КАСКАД 2022<br>(ПОДЛОГ)</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node red">⚠ ЗАХВАТ АКТИВОВ<br>ПРАВА ЧЕЛОВЕКА<br>РАЗРУШЕНЫ</div>
     </div>
   </div>
 
-  <!-- TIMELINE -->
-  <div class="sec-hd">
-    <span class="sec-num">§ 05</span>
-    <div class="sec-title">Хронология: каждая дата — <em>доказательный узел</em></div>
-  </div>
+  <div class="section-mark">§ 05 · Хронология: каждая дата — доказательный узел</div>
+
   <div class="timeline">
     <div class="tl-item">
       <div class="tl-date">1997–1998</div>
-      <div class="tl-title">Факты пыток. Дело № 1-568/98.</div>
-      <div class="tl-body">Апостиль подтверждает подлинность судебного документа. <strong>Jus Cogens нарушен впервые.</strong> Обязательство расследовать возникает немедленно и не исчезает никогда.</div>
+      <div class="tl-body">
+        <h4>Факты пыток · Дело № 1-568/98</h4>
+        <p>Апостиль подтверждает подлинность судебного документа. <strong>Jus Cogens нарушен впервые.</strong> Обязательство расследовать возникает немедленно и не исчезает никогда.</p>
+      </div>
     </div>
     <div class="tl-item">
       <div class="tl-date">2003–2021</div>
-      <div class="tl-title">90 судебных решений — ни одного реального расследования пыток.</div>
-      <div class="tl-body">Паттерн: жалобы отклоняются без анализа. <strong>Каждое решение расширяет разрыв с Erga Omnes.</strong> Имитация правосудия — ст. 17 МУС.</div>
+      <div class="tl-body">
+        <h4>90 судебных решений — ни одного расследования</h4>
+        <p>Паттерн: жалобы отклоняются без анализа. <strong>Каждое решение расширяет разрыв с Erga Omnes.</strong> Имитация правосудия — ст. 17 МУС.</p>
+      </div>
     </div>
-    <div class="tl-item highlight">
+    <div class="tl-item">
       <div class="tl-date">15.03.2022</div>
-      <div class="tl-title">Подлог Нантой — точка финального захвата активов.</div>
-      <div class="tl-body">Личность Маркова И.М. использована для подписания документов. <strong>Графологическая экспертиза (Вектор 3)</strong> доказывает несовпадение подписей. Без 8169 суток вакуума этот подлог был бы невозможен.</div>
+      <div class="tl-body">
+        <h4>Подлог Нантой — точка финального захвата активов</h4>
+        <p>Личность Маркова И.М. использована для подписания документов. <strong>Графологическая экспертиза (Вектор 3)</strong> доказывает несовпадение подписей. Без 8158 суток вакуума этот подлог был бы невозможен.</p>
+      </div>
     </div>
     <div class="tl-item">
       <div class="tl-date">19.03.2026</div>
-      <div class="tl-title">Уведомления: White House, UN OHCHR, личные акторы.</div>
-      <div class="tl-body">Liability Notices развёрнуты. Архив трансмиттируется в G7, UN, ICC.</div>
+      <div class="tl-body">
+        <h4>Уведомления: White House, UN OHCHR, личные акторы</h4>
+        <p>Liability Notices развёрнуты. <strong>Архив трансмиттируется в G7, UN, ICC.</strong></p>
+      </div>
     </div>
-    <div class="tl-item highlight">
-      <div class="tl-date">09.04.2026 — ДЕДЛАЙН</div>
-      <div class="tl-title">Нарушение Jus Cogens активирует Global Sanction Vector 11.</div>
-      <div class="tl-body"><strong>Срока давности нет.</strong> Но есть точка невозврата для государства — добровольная или под принуждением международного права.</div>
+    <div class="tl-item">
+      <div class="tl-date">09.04.2026</div>
+      <div class="tl-body">
+        <h4>Дедлайн — Global Sanction Vector 11</h4>
+        <p><strong>Срока давности нет.</strong> Нарушение Jus Cogens активирует международный механизм.</p>
+      </div>
     </div>
   </div>
 
-  <!-- APOSTILLE STRIP -->
-  <div class="apostille-strip">
-    <div class="ap-big">90</div>
+  <div class="apostille-box">
+    <div class="ap-number">90</div>
     <div class="ap-text">
-      <strong>Апостилированных документов</strong> — реестр судебных решений 1997–2026.<br>
-      Апостиль по Гаагской конвенции 05.10.1961 удостоверяет <strong>подлинность подписи</strong> должностного лица.<br>
-      Он не удостоверяет законность содержания. Содержание — <strong>уклонение от расследования пыток.</strong>
-    </div>
-    <div>
-      <a class="btn btn-cyan btn-sm" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 ОТКРЫТЬ РЕЕСТР</a>
+      <h3>Апостилированных документов — реестр судебных решений 1997–2026</h3>
+      <p>Апостиль по Гаагской конвенции 05.10.1961 удостоверяет <strong>подлинность подписи</strong> должностного лица. Он не удостоверяет законность содержания. Содержание — <strong>уклонение от расследования пыток.</strong></p>
+      <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ap-link">📂 Открыть Реестр</a>
     </div>
   </div>
 
-  <!-- VERDICT -->
-  <div class="verdict">
-    <div class="verdict-title">Вывод: Jus Cogens = Фактическое доказательство в Деле Мачерет</div>
-    <div class="verdict-body">
-      <strong>Теорема доказана фактами:</strong> норма Jus Cogens — запрет пыток — существует не на бумаге, а в 90 апостилированных документах, в 8169 сутках молчания государства, в графологической экспертизе подлога 15.03.2022, в цепи причинно-следственных связей от 1997 года до сегодняшнего дня.<br><br>
-      Попытка представить это «несущественным» или «с истёкшим сроком давности» — <em>сама по себе является нарушением Erga Omnes</em> и тем самым подтверждает нарушение Jus Cogens. Это логическое замыкание: отрицание = доказательство.<br><br>
-      <strong>Институциональная безнаказанность — это не судебная ошибка. Это «рак» правосудия. Причина войн. Причина разрушения Прав Человека, провозглашённых во Всеобщей Декларации.</strong>
+  <div class="conclusion">
+    <h3>Вывод: Jus Cogens = Фактическое доказательство в Деле Мачерет</h3>
+    <p><strong>Теорема доказана фактами:</strong> норма Jus Cogens — запрет пыток — существует не на бумаге, а в 90 апостилированных документах, в 8158 сутках молчания государства, в графологической экспертизе подлога 15.03.2022, в цепи причинно-следственных связей от 1997 года до сегодняшнего дня.</p>
+    <p>Попытка представить это «несущественным» или «с истёкшим сроком давности» — <em>сама по себе является нарушением Erga Omnes</em> и тем самым подтверждает нарушение Jus Cogens. Это логическое замыкание: отрицание = доказательство.</p>
+    <p><strong>Институциональная безнаказанность — это не судебная ошибка. Это «рак» правосудия. Причина войн. Причина разрушения Прав Человека, провозглашённых во Всеобщей Декларации.</strong></p>
+  </div>
+
+  <div class="links-row">
+    <a href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_ACT.html" class="ext-link">⚖ АКТ ДЕКОНСТРУКЦИИ (РУ)</a>
+    <a href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" class="ext-link" target="_blank">🔵 INTERPOL</a>
+    <a href="https://www.ohchr.org/en/contact-us" class="ext-link" target="_blank">🌍 UN OHCHR</a>
+    <a href="https://legal.un.org/ilc/guide/1_14.shtml" class="ext-link" target="_blank">📜 ILC JUS COGENS</a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ext-link">📂 АРХИВ</a>
+  </div>
+
+  <div class="actions-bar">
+    <button class="action-btn primary" onclick="window.print()">🖨 РАСПЕЧАТАТЬ</button>
+    <button class="action-btn" onclick="navigator.share&&navigator.share({title:document.title,url:location.href})">📤 ПОДЕЛИТЬСЯ</button>
+    <a href="index.html" class="action-btn">← ГЛАВНАЯ</a>
+  </div>
+
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--  ROMANIAN                                       -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="lang-ro" class="lang-section">
+<div class="content">
+
+  <div class="section-mark">§ 01 · Jus Cogens în practică — nu teorie, ci fapt</div>
+  <h2><em>Jus Cogens</em> în practică</h2>
+
+  <div class="concept-grid">
+    <div class="concept-card">
+      <h3>JUS COGENS — NORMĂ IMPERATIVĂ</h3>
+      <ul>
+        <li>Nu admite nicio derogare <strong>în nicio circumstanță</strong></li>
+        <li>Interzicerea torturii — <strong>absolută</strong> · Fără excepții</li>
+        <li>Nu există termen de prescripție — nici penal, nici civil</li>
+        <li>Orice stat este obligat să investigheze — <strong>indiferent de timp</strong></li>
+      </ul>
+      <div class="concept-sources">Surse: CEDO art. 3, CAT ONU, Convenția de la Viena art. 53, CPI</div>
+    </div>
+    <div class="concept-card">
+      <h3>ERGA OMNES — OBLIGAȚIE FAȚĂ DE TOȚI</h3>
+      <ul>
+        <li>Obligația statului — nu față de victimă, ci față de <strong>comunitatea internațională</strong></li>
+        <li>Orice stat poate cere investigarea torturii — chiar și pentru cetățeni străini</li>
+        <li>Tăcerea = încălcare erga omnes</li>
+        <li>Refuzul de a investiga = încălcare erga omnes</li>
+      </ul>
+      <div class="concept-sources">Surse: ICJ Barcelona Traction 1970, art. 17 Statutul de la Roma</div>
     </div>
   </div>
 
-  <div class="btn-row">
-    <a class="btn btn-gold btn-lg" href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_ACT.html" target="_blank">⚖ АКТ ДЕКОНСТРУКЦИИ (РУ)</a>
-    <a class="btn btn-red btn-lg" href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" target="_blank">🔵 INTERPOL</a>
-    <a class="btn btn-cyan" href="https://www.ohchr.org/en/contact-us" target="_blank">🌍 UN OHCHR</a>
-    <a class="btn btn-ghost" href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">📜 ILC JUS COGENS</a>
-    <a class="btn btn-ghost" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 АРХИВ</a>
-  </div>
-
-</div><!-- /ru -->
-
-
-<!-- ══════════════════════════════════════════════════════════
-     ROMÂNĂ
-══════════════════════════════════════════════════════════ -->
-<div class="lang-panel" id="panel-ro">
-
-  <div class="hero">
-    <div class="hero-eyebrow">// ACT PROBATOR — CAZUL MACHERET 1997–2026</div>
-    <div class="hero-title">De la teorie la practică:<br><em>Jus Cogens = Dovadă Faptică</em></div>
-    <div class="hero-subtitle">LOGICA NORMEI FĂRĂ PRESCRIPȚIE · RĂSPUNDERE ERGA OMNES · IMPUNITATE INSTITUȚIONALĂ</div>
-    <div class="hero-equation">
-      <span class="eq-part">Jus Cogens</span>
-      <span class="eq-equals">+</span>
-      <span class="eq-part">8169 zile de tăcere</span>
-      <span class="eq-equals">=</span>
-      <span class="eq-result">Încălcare Erga Omnes = fapt dovedit</span>
-    </div>
-    <div class="hero-meta">
-      <span class="tag tg-r">FĂRĂ PRESCRIPȚIE</span>
-      <span class="tag tg-y">90 APOSTILE</span>
-      <span class="tag tg-p">ART. 17 CPI</span>
-      <span class="tag tg">DUDO — DREPTURILE OMULUI</span>
-      <span class="tag tg-g">ARHIVĂ ACTIVĂ</span>
-    </div>
-  </div>
-
-  <div class="sec-hd">
-    <span class="sec-num">§ 01</span>
-    <div class="sec-title"><em>Jus Cogens</em> în practică — nu teorie, ci fapt</div>
-  </div>
-
-  <div class="norm-compare">
-    <div class="norm-col">
-      <div class="norm-col-head nc-jus">JUS COGENS — NORMĂ IMPERATIVĂ</div>
-      <div class="norm-item"><div>Nu admite nicio derogare în nicio circumstanță</div></div>
-      <div class="norm-item"><div>Interzicerea torturii — <strong>absolută</strong> · Fără excepții</div></div>
-      <div class="norm-item"><div>Nu există termen de prescripție — nici penal, nici civil</div></div>
-      <div class="norm-item"><div>Orice stat este obligat să investigheze — <strong>indiferent de timp</strong></div></div>
-      <div class="norm-item"><div>Surse: CEDO art. 3, CAT ONU, Convenția de la Viena art. 53, CPI</div></div>
-    </div>
-    <div class="norm-col">
-      <div class="norm-col-head nc-eo">ERGA OMNES — OBLIGAȚIE FAȚĂ DE TOȚI</div>
-      <div class="norm-item"><div>Obligația statului — nu față de victimă, ci față de <strong>comunitatea internațională</strong></div></div>
-      <div class="norm-item"><div>Orice stat poate cere investigarea torturii — chiar și pentru cetățeni străini</div></div>
-      <div class="norm-item"><div>Tăcerea = încălcare erga omnes · Refuzul de a investiga = încălcare erga omnes</div></div>
-      <div class="norm-item"><div>Tocmai încălcarea erga omnes — <strong>semn cert al încălcării Jus Cogens</strong></div></div>
-      <div class="norm-item"><div>Surse: ICJ Barcelona Traction 1970, art. 17 Statutul de la Roma</div></div>
-    </div>
-  </div>
-
-  <div class="axiom">
-    Refuzul statului de a investiga tortura nu este o eroare administrativă. Este o încălcare a normei de la care nu se poate deroga nici în stare de război, nici de urgență, nici prin prescripție. Fiecare zi de tăcere este o nouă încălcare separată.
+  <div class="pullquote">
+    <p>Refuzul statului de a investiga tortura nu este o eroare administrativă. Este o încălcare a normei de la care nu se poate deroga nici în stare de război, nici de urgență, nici prin prescripție. Fiecare zi de tăcere este o nouă încălcare separată.</p>
     <cite>— Logica Jus Cogens aplicată Cazului Macheret, 1997–2026</cite>
   </div>
 
-  <div class="sec-hd">
-    <span class="sec-num">§ 02</span>
-    <div class="sec-title">Lanțul probator: de la fapt la <em>concluzie irefutabilă</em></div>
-  </div>
+  <div class="section-mark">§ 02 · Lanțul probator</div>
+  <h2>De la fapt la <em>concluzie irefutabilă</em></h2>
 
-  <div class="proof-chain">
-    <div class="proof-step" data-num="1" data-color="gold">
-      <div class="proof-step-label">FAPTUL INIȚIAL</div>
-      <div class="proof-step-title">1997–1998: Tortura documentată. Dosar nr. 1-568/98.</div>
-      <div class="proof-step-body">Faptele de tortură sunt consemnate în documente judiciare apostilate ale Republicii Moldova. Apostila atestă autenticitatea semnăturii — nu conținutul. Conținutul: tortură. <strong>Aceasta nu este o afirmație — este un fapt dovedit, certificat prin mecanismul statal.</strong></div>
+  <div class="chain-proof">
+    <div class="chain-step">
+      <div class="chain-step-num">01</div>
+      <div class="chain-step-title">FAPTUL INIȚIAL · 1997–1998</div>
+      <p>Tortura documentată. Dosar nr. 1-568/98. Faptele de tortură sunt consemnate în documente judiciare apostilate ale Republicii Moldova. Apostila atestă autenticitatea semnăturii — nu conținutul. Conținutul: tortură. <strong>Aceasta nu este o afirmație — este un fapt dovedit, certificat prin mecanismul statal.</strong></p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="2" data-color="red">
-      <div class="proof-step-label">ABSENȚA REACȚIEI = NOUĂ ÎNCĂLCARE</div>
-      <div class="proof-step-title">8169 zile fără investigare = 8169 încălcări Jus Cogens</div>
-      <div class="proof-step-body">Jus Cogens creează o <em>obligație continuă</em>. Fiecare zi de inacțiune este o nouă încălcare. 8169 zile = <strong>8169 zile documentate</strong> de eludare a normei fără prescripție. Tăcerea nu este o poziție neutră. Tăcerea este <em>alegerea activă de a încălca.</em></div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">02</div>
+      <div class="chain-step-title">ABSENȚA REACȚIEI = NOUĂ ÎNCĂLCARE</div>
+      <p>8158 zile fără investigare = 8158 încălcări Jus Cogens. Jus Cogens creează o <em>obligație continuă</em>. Fiecare zi de inacțiune este o nouă încălcare. <strong>8158 zile documentate</strong> de eludare a normei fără prescripție. Tăcerea este alegerea activă de a încălca.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="3" data-color="cyan">
-      <div class="proof-step-label">DOVADĂ DOCUMENTARĂ A TIPARUL</div>
-      <div class="proof-step-title">90 apostile — analiza structurală a eludării sistematice</div>
-      <div class="proof-step-body">Arhiva conține 90 documente apostilate conform Convenției de la Haga. <strong>Analiza încrucișată</strong> a datelor deciziilor, semnatarilor și formulărilor procedurale dezvăluie un tipar repetitiv: plângerile sunt respinse fără analizarea probelor de tortură. Nu o serie de erori — <em>simulare sistemică a justiției</em>, calificată conform art. 17 din Statutul de la Roma.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">03</div>
+      <div class="chain-step-title">DOVADĂ DOCUMENTARĂ A TIPARUL</div>
+      <p>90 apostile — analiza structurală a eludării sistematice. Arhiva conține 90 documente apostilate. <em>Analiza încrucișată</em> dezvăluie un tipar repetitiv: plângerile sunt respinse fără analizarea probelor de tortură. Nu o serie de erori — <strong>simulare sistemică a justiției</strong>, calificată conform art. 17 Statutul de la Roma.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="4" data-color="red">
-      <div class="proof-step-label">CASCADĂ CRIMINALĂ — FALS CA URMARE A VIDULUI</div>
-      <div class="proof-step-title">15.03.2022: Falsul Nantoi — consecință directă a 8169 zile de impunitate</div>
-      <div class="proof-step-body">Confiscarea proprietății (str. Miron Costin) prin utilizarea identității lui Marcov I.M. a devenit <em>posibilă tocmai pentru că</em> 8169 zile de vid procedural au creat un mediu de impunitate. <strong>Fără încălcarea Jus Cogens — nu există vid. Fără vid — nu există fals. Fără fals — nu există confiscare.</strong> Fiecare verigă este condiționată de cea precedentă.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">04</div>
+      <div class="chain-step-title">CASCADĂ CRIMINALĂ — FALSUL NANTOI · 15.03.2022</div>
+      <p>Confiscarea proprietății (str. Miron Costin) prin utilizarea identității lui Marcov I.M. <strong>Fără încălcarea Jus Cogens — nu există vid. Fără vid — nu există fals. Fără fals — nu există confiscare.</strong> Fiecare verigă este condiționată de cea precedentă.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="5" data-color="purple">
-      <div class="proof-step-label">RUPTURA CU ERGA OMNES = DOVADA ÎNCĂLCĂRII JUS COGENS</div>
-      <div class="proof-step-title">Fiecare tentativă de „tăcere" lărgește ruptura cu Erga Omnes</div>
-      <div class="proof-step-body">Prezentarea unei încălcări sistematice drept „caz nesemnificativ" sau „prescris" nu este o argumentație juridică. Este o <em>încălcare a Erga Omnes</em>: obligația pe care statul o are față de întreaga comunitate internațională. <strong>Decalajul dintre conformitatea declarată și realitatea documentată — acesta este dovada practică a încălcării Jus Cogens.</strong></div>
-    </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="6" data-color="green">
-      <div class="proof-step-label">CONCLUZIE IREFUTABILĂ</div>
-      <div class="proof-step-title">Jus Cogens încălcat · Erga Omnes încălcat · Art. 17 CPI activat</div>
-      <div class="proof-step-body">Ansamblul: <strong>(1)</strong> fapte de tortură documentate, <strong>(2)</strong> 8169 zile fără investigare, <strong>(3)</strong> 90 documente apostilate ce fixează tiparul, <strong>(4)</strong> cascada criminală din 2022, <strong>(5)</strong> actori personali identificați — formează o <em>matrice probatorie irefutabilă</em>. Statul este incapabil sau refuză să efectueze o investigare autentică. Principiul complementarității CPI este activat.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">05</div>
+      <div class="chain-step-title">CONCLUZIE IREFUTABILĂ</div>
+      <p>Jus Cogens încălcat · Erga Omnes încălcat · Art. 17 CPI activat. Ansamblul: <strong>(1)</strong> fapte de tortură documentate, <strong>(2)</strong> 8158 zile fără investigare, <strong>(3)</strong> 90 documente apostilate fixând tiparul, <strong>(4)</strong> cascada criminală din 2022, <strong>(5)</strong> actori personali identificați — formează o <em>matrice probatorie irefutabilă</em>. Principiul complementarității CPI activat.</p>
     </div>
   </div>
 
-  <div class="apostille-strip">
-    <div class="ap-big">90</div>
+  <div class="apostille-box">
+    <div class="ap-number">90</div>
     <div class="ap-text">
-      <strong>Documente apostilate</strong> — registrul hotărârilor judiciare 1997–2026.<br>
-      Apostila conform Convenției de la Haga 05.10.1961 atestă <strong>autenticitatea semnăturii</strong> funcționarului.<br>
-      Nu atestă legalitatea conținutului. Conținutul: <strong>eludarea investigării torturii.</strong>
-    </div>
-    <div><a class="btn btn-cyan btn-sm" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 DESCHIDE REGISTRUL</a></div>
-  </div>
-
-  <div class="verdict">
-    <div class="verdict-title">Concluzie: Jus Cogens = Dovadă Faptică în Cazul Macheret</div>
-    <div class="verdict-body">
-      <strong>Teorema este dovedită prin fapte:</strong> norma Jus Cogens — interzicerea torturii — există nu pe hârtie, ci în 90 documente apostilate, în 8169 zile de tăcere statală, în expertiza grafologică a falsului din 15.03.2022, în lanțul cauzal de la 1997 până în prezent.<br><br>
-      Tentativa de a prezenta aceasta drept „nesemnificativ" sau „prescris" — <em>constituie ea însăși o încălcare a Erga Omnes</em> și confirmă astfel încălcarea Jus Cogens. Aceasta este o închidere logică: negarea = dovada.<br><br>
-      <strong>Impunitatea instituțională nu este o eroare judiciară. Este „cancerul" justiției. Cauza războaielor. Cauza distrugerii Drepturilor Omului proclamate în Declarația Universală.</strong>
+      <h3>Documente apostilate — registrul hotărârilor judiciare 1997–2026</h3>
+      <p>Apostila conform Convenției de la Haga 05.10.1961 atestă <strong>autenticitatea semnăturii</strong> funcționarului. Nu atestă legalitatea conținutului. Conținutul: <strong>eludarea investigării torturii.</strong></p>
+      <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ap-link">📂 Deschide Registrul</a>
     </div>
   </div>
 
-  <div class="btn-row">
-    <a class="btn btn-gold btn-lg" href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_ACT.html" target="_blank">⚖ ACT DE DECONSTRUCȚIE</a>
-    <a class="btn btn-red" href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" target="_blank">🔵 INTERPOL</a>
-    <a class="btn btn-cyan" href="https://www.ohchr.org/en/contact-us" target="_blank">🌍 UN OHCHR</a>
-    <a class="btn btn-ghost" href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">📜 ILC JUS COGENS</a>
-    <a class="btn btn-ghost" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 ARHIVĂ</a>
+  <div class="conclusion">
+    <h3>Concluzie: Jus Cogens = Dovadă Faptică în Cazul Macheret</h3>
+    <p><strong>Teorema este dovedită prin fapte:</strong> norma Jus Cogens — interzicerea torturii — există nu pe hârtie, ci în 90 documente apostilate, în 8158 zile de tăcere statală, în expertiza grafologică a falsului din 15.03.2022, în lanțul cauzal de la 1997 până în prezent.</p>
+    <p>Tentativa de a prezenta aceasta drept „nesemnificativ" sau „prescris" — <em>constituie ea însăși o încălcare a Erga Omnes</em> și confirmă astfel încălcarea Jus Cogens.</p>
+    <p><strong>Impunitatea instituțională nu este o eroare judiciară. Este „cancerul" justiției. Cauza războaielor. Cauza distrugerii Drepturilor Omului proclamate în Declarația Universală.</strong></p>
   </div>
 
-</div><!-- /ro -->
-
-
-<!-- ══════════════════════════════════════════════════════════
-     ENGLISH
-══════════════════════════════════════════════════════════ -->
-<div class="lang-panel" id="panel-en">
-
-  <div class="hero">
-    <div class="hero-eyebrow">// EVIDENTIARY ACT — MACHERET CASE 1997–2026</div>
-    <div class="hero-title">From Theory to Practice:<br><em>Jus Cogens = Factual Proof</em></div>
-    <div class="hero-subtitle">THE LOGIC OF A NORM WITHOUT LIMITATION · ERGA OMNES ACCOUNTABILITY · INSTITUTIONAL IMPUNITY</div>
-    <div class="hero-equation">
-      <span class="eq-part">Jus Cogens</span>
-      <span class="eq-equals">+</span>
-      <span class="eq-part">8,169 days of silence</span>
-      <span class="eq-equals">=</span>
-      <span class="eq-result">Erga Omnes violation = proven fact</span>
-    </div>
-    <div class="hero-meta">
-      <span class="tag tg-r">NO STATUTE OF LIMITATIONS</span>
-      <span class="tag tg-y">90 APOSTILLES</span>
-      <span class="tag tg-p">ART. 17 ICC</span>
-      <span class="tag tg">UDHR — HUMAN RIGHTS</span>
-      <span class="tag tg-g">ARCHIVE ACTIVE</span>
-    </div>
+  <div class="links-row">
+    <a href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_ACT.html" class="ext-link">⚖ ACT DE DECONSTRUCȚIE</a>
+    <a href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" class="ext-link" target="_blank">🔵 INTERPOL</a>
+    <a href="https://www.ohchr.org/en/contact-us" class="ext-link" target="_blank">🌍 UN OHCHR</a>
+    <a href="https://legal.un.org/ilc/guide/1_14.shtml" class="ext-link" target="_blank">📜 ILC JUS COGENS</a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ext-link">📂 ARHIVĂ</a>
   </div>
 
-  <div class="sec-hd">
-    <span class="sec-num">§ 01</span>
-    <div class="sec-title"><em>Jus Cogens</em> in Practice — Not Theory, but Fact</div>
+  <div class="actions-bar">
+    <button class="action-btn primary" onclick="window.print()">🖨 TIPĂRIRE</button>
+    <a href="index.html" class="action-btn">← PAGINA PRINCIPALĂ</a>
   </div>
 
-  <div class="norm-compare">
-    <div class="norm-col">
-      <div class="norm-col-head nc-jus">JUS COGENS — PEREMPTORY NORM</div>
-      <div class="norm-item"><div>Admits no derogation under any circumstances whatsoever</div></div>
-      <div class="norm-item"><div>Prohibition of torture — <strong>absolute</strong> · No exceptions</div></div>
-      <div class="norm-item"><div>No statute of limitations — neither criminal nor civil</div></div>
-      <div class="norm-item"><div>Every state is obliged to investigate — <strong>regardless of time elapsed</strong></div></div>
-      <div class="norm-item"><div>Sources: ECHR Art. 3, UN CAT, Vienna Convention Art. 53, ICC</div></div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--  ENGLISH                                        -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="lang-en" class="lang-section">
+<div class="content">
+
+  <div class="section-mark">§ 01 · Jus Cogens in Practice — Not Theory, but Fact</div>
+  <h2><em>Jus Cogens</em> in Practice</h2>
+
+  <div class="concept-grid">
+    <div class="concept-card">
+      <h3>JUS COGENS — PEREMPTORY NORM</h3>
+      <ul>
+        <li>Admits no derogation <strong>under any circumstances whatsoever</strong></li>
+        <li>Prohibition of torture — <strong>absolute</strong> · No exceptions</li>
+        <li>No statute of limitations — neither criminal nor civil</li>
+        <li>Every state is obliged to investigate — <strong>regardless of time elapsed</strong></li>
+      </ul>
+      <div class="concept-sources">Sources: ECHR Art. 3, UN CAT, Vienna Convention Art. 53, ICC</div>
     </div>
-    <div class="norm-col">
-      <div class="norm-col-head nc-eo">ERGA OMNES — OBLIGATION TOWARD ALL</div>
-      <div class="norm-item"><div>State obligation — not to the victim, but to the <strong>international community as a whole</strong></div></div>
-      <div class="norm-item"><div>Any state may demand investigation of torture — even of foreign nationals</div></div>
-      <div class="norm-item"><div>Silence = erga omnes violation · Refusal to investigate = erga omnes violation</div></div>
-      <div class="norm-item"><div>Precisely the violation of erga omnes — <strong>reliable indicator of Jus Cogens breach</strong></div></div>
-      <div class="norm-item"><div>Sources: ICJ Barcelona Traction 1970, Art. 17 Rome Statute</div></div>
+    <div class="concept-card">
+      <h3>ERGA OMNES — OBLIGATION TOWARD ALL</h3>
+      <ul>
+        <li>State obligation — not to the victim, but to the <strong>international community as a whole</strong></li>
+        <li>Any state may demand investigation of torture — even of foreign nationals</li>
+        <li>Silence = erga omnes violation</li>
+        <li>Refusal to investigate = erga omnes violation</li>
+      </ul>
+      <div class="concept-sources">Sources: ICJ Barcelona Traction 1970, Art. 17 Rome Statute</div>
     </div>
   </div>
 
-  <div class="axiom">
-    A state's refusal to investigate torture is not an administrative error. It is a violation of a norm from which no derogation is permitted — not by war, not by emergency, not by the passage of time. Every day of silence is a new, independent violation.
+  <div class="pullquote">
+    <p>A state's refusal to investigate torture is not an administrative error. It is a violation of a norm from which no derogation is permitted — not by war, not by emergency, not by the passage of time. Every day of silence is a new, independent violation.</p>
     <cite>— The Logic of Jus Cogens Applied to the Macheret Case, 1997–2026</cite>
   </div>
 
-  <div class="sec-hd">
-    <span class="sec-num">§ 02</span>
-    <div class="sec-title">The Chain of Proof: from Fact to <em>Irrefutable Conclusion</em></div>
-  </div>
+  <div class="section-mark">§ 02 · The Chain of Proof</div>
+  <h2>From Fact to <em>Irrefutable Conclusion</em></h2>
 
-  <div class="proof-chain">
-    <div class="proof-step" data-num="1" data-color="gold">
-      <div class="proof-step-label">FOUNDING FACT</div>
-      <div class="proof-step-title">1997–1998: Torture documented. Case No. 1-568/98.</div>
-      <div class="proof-step-body">Facts of torture are recorded in apostille-certified judicial documents of the Republic of Moldova. The apostille certifies the authenticity of the official's signature — not the content. The content: torture. <strong>This is not an allegation — it is a proven fact, certified by a state mechanism.</strong></div>
+  <div class="chain-proof">
+    <div class="chain-step">
+      <div class="chain-step-num">01</div>
+      <div class="chain-step-title">FOUNDING FACT · 1997–1998</div>
+      <p>Torture documented. Case No. 1-568/98. Facts of torture are recorded in apostille-certified judicial documents of the Republic of Moldova. The apostille certifies the authenticity of the official's signature — not the content. The content: torture. <strong>This is not an allegation — it is a proven fact, certified by a state mechanism.</strong></p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="2" data-color="red">
-      <div class="proof-step-label">ABSENCE OF RESPONSE = NEW VIOLATION</div>
-      <div class="proof-step-title">8,169 days without investigation = 8,169 Jus Cogens violations</div>
-      <div class="proof-step-body">Jus Cogens creates a <em>continuing obligation</em>. Not a one-time duty. Each day of inaction is a new violation. 8,169 days = <strong>8,169 documented days</strong> of evasion of a norm that admits no limitation period. Silence is not a neutral position. Silence is <em>the active choice to violate.</em></div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">02</div>
+      <div class="chain-step-title">ABSENCE OF RESPONSE = NEW VIOLATION</div>
+      <p>8,158 days without investigation = 8,158 Jus Cogens violations. Jus Cogens creates a <em>continuing obligation</em>. Each day of inaction is a new violation. <strong>8,158 documented days</strong> of evasion of a norm that admits no limitation period. Silence is the active choice to violate.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="3" data-color="cyan">
-      <div class="proof-step-label">DOCUMENTARY PROOF OF PATTERN</div>
-      <div class="proof-step-title">90 apostilles — structural analysis of systematic evasion</div>
-      <div class="proof-step-body">The archive contains 90 documents apostilled under the Hague Convention. <strong>Cross-referencing</strong> decision dates, signatories, and procedural language reveals a recurring pattern: complaints dismissed without examination of torture evidence. Not a series of errors — <em>systemic simulation of justice</em>, qualifying under Art. 17 of the Rome Statute.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">03</div>
+      <div class="chain-step-title">DOCUMENTARY PROOF OF PATTERN</div>
+      <p>90 apostilles — structural analysis of systematic evasion. The archive contains 90 documents apostilled under the Hague Convention. <em>Cross-referencing</em> reveals a recurring pattern: complaints dismissed without examination of torture evidence. Not a series of errors — <strong>systemic simulation of justice</strong>, qualifying under Art. 17 of the Rome Statute.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="4" data-color="red">
-      <div class="proof-step-label">CRIMINAL CASCADE — FORGERY AS CONSEQUENCE OF VACUUM</div>
-      <div class="proof-step-title">15 March 2022: Nantoi Forgery — direct consequence of 8,169 days of impunity</div>
-      <div class="proof-step-body">The seizure of property (Miron Costin St.) through use of Marcov I.M.'s identity became <em>possible only because</em> 8,169 days of procedural vacuum created an environment of impunity. <strong>Without Jus Cogens violation — no vacuum. Without vacuum — no forgery. Without forgery — no seizure.</strong> Each link is conditioned by the preceding one. This is a proven causal cascade, not a hypothesis.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">04</div>
+      <div class="chain-step-title">CRIMINAL CASCADE — FORGERY · 15 MARCH 2022</div>
+      <p>The seizure of property (Miron Costin St.) through use of Marcov I.M.'s identity. <strong>Without Jus Cogens violation — no vacuum. Without vacuum — no forgery. Without forgery — no seizure.</strong> Each link is conditioned by the preceding one. This is a proven causal cascade, not a hypothesis.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="5" data-color="purple">
-      <div class="proof-step-label">BREACH OF ERGA OMNES = PROOF OF JUS COGENS VIOLATION</div>
-      <div class="proof-step-title">Every attempt to "silence" widens the gap with Erga Omnes</div>
-      <div class="proof-step-body">Presenting systematic violation as an "insignificant case" or "time-barred" is not a legal argument. It is an <em>erga omnes violation</em>: the obligation the state owes to the entire international community, not just the victim. <strong>The gap between declared compliance and documented reality — this is the practical proof of the Jus Cogens breach.</strong></div>
-    </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="6" data-color="green">
-      <div class="proof-step-label">CONCLUSION — MATHEMATICALLY IRREFUTABLE</div>
-      <div class="proof-step-title">Jus Cogens breached · Erga Omnes breached · Art. 17 ICC activated</div>
-      <div class="proof-step-body">The aggregate: <strong>(1)</strong> documented torture facts, <strong>(2)</strong> 8,169 days without investigation, <strong>(3)</strong> 90 apostilled documents fixing the pattern, <strong>(4)</strong> the 2022 criminal cascade, <strong>(5)</strong> identified personal actors — forms an <em>irrefutable evidentiary matrix</em>. The state is unwilling or unable to conduct a genuine investigation. The ICC complementarity principle is activated.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">05</div>
+      <div class="chain-step-title">CONCLUSION — MATHEMATICALLY IRREFUTABLE</div>
+      <p>Jus Cogens breached · Erga Omnes breached · Art. 17 ICC activated. The aggregate: <strong>(1)</strong> documented torture facts, <strong>(2)</strong> 8,158 days without investigation, <strong>(3)</strong> 90 apostilled documents fixing the pattern, <strong>(4)</strong> the 2022 criminal cascade, <strong>(5)</strong> identified personal actors — forms an <em>irrefutable evidentiary matrix</em>. The ICC complementarity principle is activated.</p>
     </div>
   </div>
 
-  <div class="sec-hd">
-    <span class="sec-num">§ 03</span>
-    <div class="sec-title">The "Cancer" of Justice: <em>How Institutional Impunity Destroys Human Rights</em></div>
-  </div>
+  <div class="section-mark">§ 03 · The "Cancer" of Justice</div>
+  <h2>How Institutional Impunity <em>Destroys Human Rights</em></h2>
 
-  <div class="cancer-diagram">
-    <div class="cancer-row">
-      <div class="cancer-node n-start">TORTURE FACT<br>1997–1998</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-breach">JUS COGENS<br>BREACH</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-silence">STATE<br>SILENCE</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-gap">ERGA OMNES<br>GAP</div>
-    </div>
-    <div class="cancer-row" style="justify-content:flex-end;">
-      <div class="cancer-node n-impunity" style="max-width:220px;">INSTITUTIONAL<br>IMPUNITY<br>8,169 DAYS</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-breach" style="max-width:200px;">CRIMINAL<br>CASCADE 2022<br>(FORGERY)</div>
-      <div class="cancer-arrow">→</div>
-      <div class="cancer-node n-war">⚠ ASSET SEIZURE<br>HUMAN RIGHTS<br>DESTROYED</div>
-    </div>
-    <div style="margin-top:14px; font-family:var(--font-mono); font-size:11px; color:var(--muted); line-height:1.6; border-top:1px solid var(--border); padding-top:12px;">
-      Every arrow — <strong style="color:var(--text)">a documented fact</strong>, not a hypothesis.
-      The mechanism is self-replicating: silence breeds impunity, impunity breeds crime, crime is silenced — the circle closes.
-      <strong style="color:var(--red2)">This is the "cancer" of justice — the cause of wars and the destruction of Human Rights enshrined in the UDHR.</strong>
+  <div class="cascade">
+    <div class="cascade-title">every arrow — a documented fact · the mechanism is self-replicating</div>
+    <div class="cascade-flow">
+      <div class="c-node gold">TORTURE FACT<br>1997–1998</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node gold">JUS COGENS<br>BREACH</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node">STATE<br>SILENCE</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node">ERGA OMNES<br>GAP</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node">INSTITUTIONAL<br>IMPUNITY<br>8,158 DAYS</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node red">CRIMINAL<br>CASCADE 2022<br>(FORGERY)</div>
+      <span class="c-arrow">→</span>
+      <div class="c-node red">⚠ ASSET SEIZURE<br>HUMAN RIGHTS<br>DESTROYED</div>
     </div>
   </div>
 
-  <div class="axiom">
-    When a state systematically refuses to investigate torture, it does not merely fail one victim. It signals to all actors — domestic and international — that peremptory norms may be violated with impunity. This signal is the seed of institutional collapse, of armed conflict, of the erosion of everything the Universal Declaration of Human Rights was designed to protect.
+  <div class="pullquote">
+    <p>When a state systematically refuses to investigate torture, it does not merely fail one victim. It signals to all actors — domestic and international — that peremptory norms may be violated with impunity. This signal is the seed of institutional collapse, of armed conflict, of the erosion of everything the Universal Declaration of Human Rights was designed to protect.</p>
     <cite>— Macheret Case · Jus Cogens · Erga Omnes · 2026</cite>
   </div>
 
-  <div class="apostille-strip">
-    <div class="ap-big">90</div>
+  <div class="apostille-box">
+    <div class="ap-number">90</div>
     <div class="ap-text">
-      <strong>Apostilled documents</strong> — registry of judicial decisions 1997–2026.<br>
-      Apostille under Hague Convention 05.10.1961 certifies <strong>authenticity of official's signature</strong>.<br>
-      It does not certify the lawfulness of content. The content: <strong>evasion of torture investigation.</strong>
-    </div>
-    <div><a class="btn btn-cyan btn-sm" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 OPEN REGISTRY</a></div>
-  </div>
-
-  <div class="verdict">
-    <div class="verdict-title">Conclusion: Jus Cogens = Factual Proof in the Macheret Case</div>
-    <div class="verdict-body">
-      <strong>The theorem is proven by facts:</strong> the Jus Cogens norm — prohibition of torture — exists not on paper but in 90 apostilled documents, in 8,169 days of state silence, in the graphological analysis of the 15 March 2022 forgery, in the causal chain from 1997 to the present day.<br><br>
-      Any attempt to present this as "insignificant" or "time-barred" — <em>is itself a violation of Erga Omnes</em> and thereby confirms the breach of Jus Cogens. This is a logical closure: denial = proof.<br><br>
-      <strong>Institutional impunity is not a judicial error. It is the "cancer" of justice. The cause of wars. The cause of the destruction of the Human Rights proclaimed in the Universal Declaration.</strong>
+      <h3>Apostilled documents — registry of judicial decisions 1997–2026</h3>
+      <p>Apostille under Hague Convention 05.10.1961 certifies <strong>authenticity of official's signature</strong>. It does not certify the lawfulness of content. The content: <strong>evasion of torture investigation.</strong></p>
+      <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ap-link">📂 Open Registry</a>
     </div>
   </div>
 
-  <div class="btn-row">
-    <a class="btn btn-gold btn-lg" href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_EN.html" target="_blank">⚖ DECONSTRUCTION ACT (EN)</a>
-    <a class="btn btn-red" href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" target="_blank">🔵 INTERPOL</a>
-    <a class="btn btn-cyan" href="https://www.ohchr.org/en/contact-us" target="_blank">🌍 UN OHCHR</a>
-    <a class="btn btn-ghost" href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">📜 ILC JUS COGENS</a>
-    <a class="btn btn-ghost" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 ARCHIVE</a>
+  <div class="conclusion">
+    <h3>Conclusion: Jus Cogens = Factual Proof in the Macheret Case</h3>
+    <p><strong>The theorem is proven by facts:</strong> the Jus Cogens norm — prohibition of torture — exists not on paper but in 90 apostilled documents, in 8,158 days of state silence, in the graphological analysis of the 15 March 2022 forgery, in the causal chain from 1997 to the present day.</p>
+    <p>Any attempt to present this as "insignificant" or "time-barred" — <em>is itself a violation of Erga Omnes</em> and thereby confirms the breach of Jus Cogens. This is a logical closure: denial = proof.</p>
+    <p><strong>Institutional impunity is not a judicial error. It is the "cancer" of justice. The cause of wars. The cause of the destruction of the Human Rights proclaimed in the Universal Declaration.</strong></p>
   </div>
 
-</div><!-- /en -->
-
-
-<!-- ══════════════════════════════════════════════════════════
-     FRANÇAIS
-══════════════════════════════════════════════════════════ -->
-<div class="lang-panel" id="panel-fr">
-
-  <div class="hero">
-    <div class="hero-eyebrow">// ACTE PROBATOIRE — AFFAIRE MACHERET 1997–2026</div>
-    <div class="hero-title">De la théorie à la pratique :<br><em>Jus Cogens = Preuve Factuelle</em></div>
-    <div class="hero-subtitle">LA LOGIQUE D'UNE NORME SANS PRESCRIPTION · RESPONSABILITÉ ERGA OMNES · IMPUNITÉ INSTITUTIONNELLE</div>
-    <div class="hero-equation">
-      <span class="eq-part">Jus Cogens</span>
-      <span class="eq-equals">+</span>
-      <span class="eq-part">8 169 jours de silence</span>
-      <span class="eq-equals">=</span>
-      <span class="eq-result">Violation Erga Omnes = fait prouvé</span>
-    </div>
-    <div class="hero-meta">
-      <span class="tag tg-r">SANS PRESCRIPTION</span>
-      <span class="tag tg-y">90 APOSTILLES</span>
-      <span class="tag tg-p">ART. 17 CPI</span>
-      <span class="tag tg">DUDH — DROITS DE L'HOMME</span>
-      <span class="tag tg-g">ARCHIVE ACTIVE</span>
-    </div>
+  <div class="links-row">
+    <a href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_EN.html" class="ext-link">⚖ DECONSTRUCTION ACT (EN)</a>
+    <a href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" class="ext-link" target="_blank">🔵 INTERPOL</a>
+    <a href="https://www.ohchr.org/en/contact-us" class="ext-link" target="_blank">🌍 UN OHCHR</a>
+    <a href="https://legal.un.org/ilc/guide/1_14.shtml" class="ext-link" target="_blank">📜 ILC JUS COGENS</a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ext-link">📂 ARCHIVE</a>
   </div>
 
-  <div class="sec-hd">
-    <span class="sec-num">§ 01</span>
-    <div class="sec-title"><em>Jus Cogens</em> en pratique — pas une théorie, un fait</div>
+  <div class="actions-bar">
+    <button class="action-btn primary" onclick="window.print()">🖨 PRINT</button>
+    <button class="action-btn" onclick="navigator.share&&navigator.share({title:document.title,url:location.href})">📤 SHARE</button>
+    <a href="index.html" class="action-btn">← HOME</a>
   </div>
 
-  <div class="norm-compare">
-    <div class="norm-col">
-      <div class="norm-col-head nc-jus">JUS COGENS — NORME IMPÉRATIVE</div>
-      <div class="norm-item"><div>N'admet aucune dérogation en aucune circonstance</div></div>
-      <div class="norm-item"><div>Interdiction de la torture — <strong>absolue</strong> · Sans exception</div></div>
-      <div class="norm-item"><div>Aucune prescription — ni pénale, ni civile</div></div>
-      <div class="norm-item"><div>Tout État est obligé d'enquêter — <strong>quelle que soit la durée écoulée</strong></div></div>
-      <div class="norm-item"><div>Sources : CEDH art. 3, CAT ONU, Conv. de Vienne art. 53, CPI</div></div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--  FRENCH                                         -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="lang-fr" class="lang-section">
+<div class="content">
+
+  <div class="section-mark">§ 01 · Jus Cogens en pratique — pas une théorie, un fait</div>
+  <h2><em>Jus Cogens</em> en pratique</h2>
+
+  <div class="concept-grid">
+    <div class="concept-card">
+      <h3>JUS COGENS — NORME IMPÉRATIVE</h3>
+      <ul>
+        <li>N'admet aucune dérogation <strong>en aucune circonstance</strong></li>
+        <li>Interdiction de la torture — <strong>absolue</strong> · Sans exception</li>
+        <li>Aucune prescription — ni pénale, ni civile</li>
+        <li>Tout État est obligé d'enquêter — <strong>quelle que soit la durée écoulée</strong></li>
+      </ul>
+      <div class="concept-sources">Sources : CEDH art. 3, CAT ONU, Conv. de Vienne art. 53, CPI</div>
     </div>
-    <div class="norm-col">
-      <div class="norm-col-head nc-eo">ERGA OMNES — OBLIGATION ENVERS TOUS</div>
-      <div class="norm-item"><div>Obligation de l'État — non envers la victime, mais envers la <strong>communauté internationale</strong></div></div>
-      <div class="norm-item"><div>Tout État peut exiger l'enquête sur la torture — même pour des ressortissants étrangers</div></div>
-      <div class="norm-item"><div>Le silence = violation erga omnes · Le refus d'enquêter = violation erga omnes</div></div>
-      <div class="norm-item"><div>Précisément la violation erga omnes — <strong>signe certain de violation du Jus Cogens</strong></div></div>
-      <div class="norm-item"><div>Sources : CIJ Barcelona Traction 1970, art. 17 Statut de Rome</div></div>
+    <div class="concept-card">
+      <h3>ERGA OMNES — OBLIGATION ENVERS TOUS</h3>
+      <ul>
+        <li>Obligation de l'État — non envers la victime, mais envers la <strong>communauté internationale</strong></li>
+        <li>Tout État peut exiger l'enquête sur la torture — même pour des ressortissants étrangers</li>
+        <li>Le silence = violation erga omnes</li>
+        <li>Le refus d'enquêter = violation erga omnes</li>
+      </ul>
+      <div class="concept-sources">Sources : CIJ Barcelona Traction 1970, art. 17 Statut de Rome</div>
     </div>
   </div>
 
-  <div class="axiom">
-    Le refus de l'État d'enquêter sur la torture n'est pas une erreur administrative. C'est une violation d'une norme à laquelle aucune dérogation n'est permise — ni par la guerre, ni par l'état d'urgence, ni par le temps. Chaque jour de silence est une nouvelle violation distincte.
+  <div class="pullquote">
+    <p>Le refus de l'État d'enquêter sur la torture n'est pas une erreur administrative. C'est une violation d'une norme à laquelle aucune dérogation n'est permise — ni par la guerre, ni par l'état d'urgence, ni par le temps. Chaque jour de silence est une nouvelle violation distincte.</p>
     <cite>— La logique du Jus Cogens appliquée à l'Affaire Macheret, 1997–2026</cite>
   </div>
 
-  <div class="sec-hd">
-    <span class="sec-num">§ 02</span>
-    <div class="sec-title">La chaîne probatoire : du fait à la <em>conclusion irréfutable</em></div>
-  </div>
+  <div class="section-mark">§ 02 · La chaîne probatoire</div>
+  <h2>Du fait à la <em>conclusion irréfutable</em></h2>
 
-  <div class="proof-chain">
-    <div class="proof-step" data-num="1" data-color="gold">
-      <div class="proof-step-label">FAIT FONDATEUR</div>
-      <div class="proof-step-title">1997–1998 : Torture documentée. Dossier n° 1-568/98.</div>
-      <div class="proof-step-body">Les faits de torture sont consignés dans des documents judiciaires apostillés de la République de Moldova. L'apostille atteste l'authenticité de la signature — pas le contenu. Le contenu : torture. <strong>Ce n'est pas une allégation — c'est un fait prouvé, certifié par le mécanisme étatique.</strong></div>
+  <div class="chain-proof">
+    <div class="chain-step">
+      <div class="chain-step-num">01</div>
+      <div class="chain-step-title">FAIT FONDATEUR · 1997–1998</div>
+      <p>Torture documentée. Dossier n° 1-568/98. Les faits de torture sont consignés dans des documents judiciaires apostillés de la République de Moldova. L'apostille atteste l'authenticité de la signature — pas le contenu. Le contenu : torture. <strong>Ce n'est pas une allégation — c'est un fait prouvé, certifié par le mécanisme étatique.</strong></p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="2" data-color="red">
-      <div class="proof-step-label">ABSENCE DE RÉACTION = NOUVELLE VIOLATION</div>
-      <div class="proof-step-title">8 169 jours sans enquête = 8 169 violations du Jus Cogens</div>
-      <div class="proof-step-body">Le Jus Cogens crée une <em>obligation continue</em>. Pas ponctuelle. Chaque jour d'inaction est une nouvelle violation. 8 169 jours = <strong>8 169 jours documentés</strong> d'évasion d'une norme imprescriptible. Le silence n'est pas une position neutre. Le silence est <em>le choix actif de violer.</em></div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">02</div>
+      <div class="chain-step-title">ABSENCE DE RÉACTION = NOUVELLE VIOLATION</div>
+      <p>8 158 jours sans enquête = 8 158 violations du Jus Cogens. Le Jus Cogens crée une <em>obligation continue</em>. Chaque jour d'inaction est une nouvelle violation. <strong>8 158 jours documentés</strong> d'évasion d'une norme imprescriptible. Le silence est le choix actif de violer.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="3" data-color="cyan">
-      <div class="proof-step-label">PREUVE DOCUMENTAIRE DU SCHÉMA</div>
-      <div class="proof-step-title">90 apostilles — analyse structurelle de l'évasion systématique</div>
-      <div class="proof-step-body">L'archive contient 90 documents apostillés selon la Convention de La Haye. <strong>L'analyse croisée</strong> des dates des décisions, des signataires et des formulations procédurales révèle un schéma récurrent : les plaintes sont rejetées sans examen des preuves de torture. Non une série d'erreurs — <em>simulation systémique de la justice</em>, qualifiée selon l'art. 17 du Statut de Rome.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">03</div>
+      <div class="chain-step-title">PREUVE DOCUMENTAIRE DU SCHÉMA</div>
+      <p>90 apostilles — analyse structurelle de l'évasion systématique. L'archive contient 90 documents apostillés. <em>L'analyse croisée</em> révèle un schéma récurrent : les plaintes sont rejetées sans examen des preuves de torture. Non une série d'erreurs — <strong>simulation systémique de la justice</strong>, qualifiée selon l'art. 17 du Statut de Rome.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="4" data-color="red">
-      <div class="proof-step-label">CASCADE CRIMINELLE — FAUX COMME CONSÉQUENCE DU VIDE</div>
-      <div class="proof-step-title">15.03.2022 : Le faux Nantoi — conséquence directe de 8 169 jours d'impunité</div>
-      <div class="proof-step-body">La saisie des biens (rue Miron Costin) par l'utilisation de l'identité de Marcov I.M. est devenue <em>possible précisément parce que</em> 8 169 jours de vide procédural ont créé un environnement d'impunité. <strong>Sans violation du Jus Cogens — pas de vide. Sans vide — pas de faux. Sans faux — pas de saisie.</strong> Chaque maillon est conditionné par le précédent.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">04</div>
+      <div class="chain-step-title">CASCADE CRIMINELLE — LE FAUX NANTOI · 15.03.2022</div>
+      <p>La saisie des biens (rue Miron Costin) par l'utilisation de l'identité de Marcov I.M. <strong>Sans violation du Jus Cogens — pas de vide. Sans vide — pas de faux. Sans faux — pas de saisie.</strong> Chaque maillon est conditionné par le précédent.</p>
     </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="5" data-color="purple">
-      <div class="proof-step-label">RUPTURE AVEC ERGA OMNES = PREUVE DE VIOLATION DU JUS COGENS</div>
-      <div class="proof-step-title">Chaque tentative de « silence » élargit la rupture avec l'Erga Omnes</div>
-      <div class="proof-step-body">Présenter une violation systématique comme un « cas insignifiant » ou « prescrit » n'est pas un argument juridique. C'est une <em>violation de l'erga omnes</em> : l'obligation que l'État doit à toute la communauté internationale. <strong>L'écart entre la conformité déclarée et la réalité documentée — c'est la preuve pratique de la violation du Jus Cogens.</strong></div>
-    </div>
-    <div class="proof-arrow">▼</div>
-    <div class="proof-step" data-num="6" data-color="green">
-      <div class="proof-step-label">CONCLUSION IRRÉFUTABLE</div>
-      <div class="proof-step-title">Jus Cogens violé · Erga Omnes violé · Art. 17 CPI activé</div>
-      <div class="proof-step-body">L'ensemble : <strong>(1)</strong> faits de torture documentés, <strong>(2)</strong> 8 169 jours sans enquête, <strong>(3)</strong> 90 documents apostillés fixant le schéma, <strong>(4)</strong> la cascade criminelle de 2022, <strong>(5)</strong> acteurs personnels identifiés — forme une <em>matrice probatoire irréfutable</em>. L'État est incapable ou refuse de mener une enquête authentique. Le principe de complémentarité de la CPI est activé.</div>
+    <div class="arrow-divider">▼</div>
+    <div class="chain-step">
+      <div class="chain-step-num">05</div>
+      <div class="chain-step-title">CONCLUSION IRRÉFUTABLE</div>
+      <p>Jus Cogens violé · Erga Omnes violé · Art. 17 CPI activé. L'ensemble : <strong>(1)</strong> faits de torture documentés, <strong>(2)</strong> 8 158 jours sans enquête, <strong>(3)</strong> 90 documents apostillés fixant le schéma, <strong>(4)</strong> la cascade criminelle de 2022, <strong>(5)</strong> acteurs personnels identifiés — forme une <em>matrice probatoire irréfutable</em>. Le principe de complémentarité de la CPI est activé.</p>
     </div>
   </div>
 
-  <div class="apostille-strip">
-    <div class="ap-big">90</div>
+  <div class="apostille-box">
+    <div class="ap-number">90</div>
     <div class="ap-text">
-      <strong>Documents apostillés</strong> — registre des décisions judiciaires 1997–2026.<br>
-      L'apostille selon la Convention de La Haye du 05.10.1961 certifie <strong>l'authenticité de la signature</strong> du fonctionnaire.<br>
-      Elle ne certifie pas la légalité du contenu. Le contenu : <strong>évasion de l'enquête sur la torture.</strong>
-    </div>
-    <div><a class="btn btn-cyan btn-sm" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 OUVRIR LE REGISTRE</a></div>
-  </div>
-
-  <div class="verdict">
-    <div class="verdict-title">Conclusion : Jus Cogens = Preuve Factuelle dans l'Affaire Macheret</div>
-    <div class="verdict-body">
-      <strong>Le théorème est prouvé par les faits :</strong> la norme Jus Cogens — interdiction de la torture — existe non sur le papier mais dans 90 documents apostillés, dans 8 169 jours de silence étatique, dans l'expertise graphologique du faux du 15 mars 2022, dans la chaîne causale de 1997 à ce jour.<br><br>
-      Toute tentative de présenter ceci comme « insignifiant » ou « prescrit » — <em>constitue elle-même une violation de l'Erga Omnes</em> et confirme ainsi la violation du Jus Cogens. C'est une fermeture logique : le déni = la preuve.<br><br>
-      <strong>L'impunité institutionnelle n'est pas une erreur judiciaire. C'est le « cancer » de la justice. La cause des guerres. La cause de la destruction des Droits de l'Homme proclamés dans la Déclaration Universelle.</strong>
+      <h3>Documents apostillés — registre des décisions judiciaires 1997–2026</h3>
+      <p>L'apostille selon la Convention de La Haye du 05.10.1961 certifie <strong>l'authenticité de la signature</strong> du fonctionnaire. Elle ne certifie pas la légalité du contenu. Le contenu : <strong>évasion de l'enquête sur la torture.</strong></p>
+      <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ap-link">📂 Ouvrir le Registre</a>
     </div>
   </div>
 
-  <div class="btn-row">
-    <a class="btn btn-gold btn-lg" href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_FR.html" target="_blank">⚖ ACTE DE DÉCONSTRUCTION (FR)</a>
-    <a class="btn btn-red" href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" target="_blank">🔵 INTERPOL</a>
-    <a class="btn btn-cyan" href="https://www.ohchr.org/en/contact-us" target="_blank">🌍 HCDH ONU</a>
-    <a class="btn btn-ghost" href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">📜 CDI JUS COGENS</a>
-    <a class="btn btn-ghost" href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">📂 ARCHIVE</a>
+  <div class="conclusion">
+    <h3>Conclusion : Jus Cogens = Preuve Factuelle dans l'Affaire Macheret</h3>
+    <p><strong>Le théorème est prouvé par les faits :</strong> la norme Jus Cogens — interdiction de la torture — existe non sur le papier mais dans 90 documents apostillés, dans 8 158 jours de silence étatique, dans l'expertise graphologique du faux du 15 mars 2022, dans la chaîne causale de 1997 à ce jour.</p>
+    <p>Toute tentative de présenter ceci comme « insignifiant » ou « prescrit » — <em>constitue elle-même une violation de l'Erga Omnes</em> et confirme ainsi la violation du Jus Cogens.</p>
+    <p><strong>L'impunité institutionnelle n'est pas une erreur judiciaire. C'est le « cancer » de la justice. La cause des guerres. La cause de la destruction des Droits de l'Homme proclamés dans la Déclaration Universelle.</strong></p>
   </div>
 
-</div><!-- /fr -->
+  <div class="links-row">
+    <a href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_FR.html" class="ext-link">⚖ ACTE DE DÉCONSTRUCTION (FR)</a>
+    <a href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" class="ext-link" target="_blank">🔵 INTERPOL</a>
+    <a href="https://www.ohchr.org/en/contact-us" class="ext-link" target="_blank">🌍 HCDH ONU</a>
+    <a href="https://legal.un.org/ilc/guide/1_14.shtml" class="ext-link" target="_blank">📜 CDI JUS COGENS</a>
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="ext-link">📂 ARCHIVE</a>
+  </div>
 
-<!-- ══════════════════════════════════════════════════════════
-     FOOTER (shared)
-══════════════════════════════════════════════════════════ -->
-<div class="div"></div>
-<div style="text-align:center; margin:16px 0;">
-  <button class="btn btn-ghost btn-sm" onclick="window.print()">🖨 PRINT / РАСПЕЧАТАТЬ</button>
-  &nbsp;
-  <button class="btn btn-ghost btn-sm" onclick="shareDoc()">📤 SHARE / ПОДЕЛИТЬСЯ</button>
+  <div class="actions-bar">
+    <button class="action-btn primary" onclick="window.print()">🖨 IMPRIMER</button>
+    <a href="index.html" class="action-btn">← ACCUEIL</a>
+  </div>
+
+</div>
 </div>
 
-<div class="footer">
-  <span>CASE-MACHERET-1997–2026 · JUS COGENS PROOF DOCUMENT</span>
-  <span>
-    <a href="https://arhiv1973b.github.io/apostille-legal-case/" target="_blank">EVIDENCE VAULT</a> ·
-    <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">APOSTILLE ARCHIVE</a> ·
+<!-- ═══════════════════════════════════════════════ -->
+<!--  FOOTER                                         -->
+<!-- ═══════════════════════════════════════════════ -->
+<footer class="doc-footer">
+  <p>
+    CASE-MACHERET-1997–2026 · JUS COGENS PROOF DOCUMENT<br>
+    <a href="https://arhiv1973b.github.io/apostille-legal-case/">EVIDENCE VAULT</a> ·
+    <a href="https://arhiv1973b.github.io/apostille-archive-english/">APOSTILLE ARCHIVE</a> ·
     <a href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">ILC JUS COGENS</a>
-  </span>
-  <span>🔒 SHA-256 · INTEGRITY 100% · 2026</span>
-</div>
-
-</div><!-- /wrap -->
+    <br>🔒 SHA-256 · INTEGRITY 100% · 2026 · A©TOR · <a href="index.html">APOSTILLE MIRROR</a>
+  </p>
+</footer>
 
 <script>
-function switchLang(lang, btn) {
-  document.querySelectorAll('.lang-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('panel-' + lang).classList.add('active');
-  btn.classList.add('active');
-  document.documentElement.lang = lang;
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function shareDoc() {
-  const url = 'https://arhiv1973b.github.io/apostille-legal-case/';
-  if (navigator.share) {
-    navigator.share({ title: 'Jus Cogens = Factual Proof — Case Macheret', url });
-  } else {
-    navigator.clipboard?.writeText(url)
-      .then(() => alert('URL copied / Скопировано:\n' + url));
-  }
+function switchLang(lang) {
+  document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('visible'));
+  document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('visible');
+  event.target.classList.add('active');
 }
 </script>
-<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
-<style>
-.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
-.crit-forgery strong{color:#a32d2d}
-.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
-.crit-jurisdiction strong{color:#185fa5}
-.node-row:hover{background-color:#f5f5f5}
-#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
-#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
-#forensic-table col:nth-child(1){width:110px}
-#forensic-table col:nth-child(2){width:160px}
-#forensic-table col:nth-child(3){width:200px}
-#forensic-table col:nth-child(4){width:auto}
-#forensic-table thead{background:#f4f4f4;font-size:12px}
-#registry-filters{margin:12px 0}
-#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
-#registry-filters button:hover{background:#e8f0fe}
-#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
-#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
-</style>
-<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
-<div id="registry-filters">
-  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
-  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
-  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
-  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
-  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
-</div>
-<div id="ti-ula-counter"></div>
-<div style="overflow-x:auto">
-<table id="forensic-table">
-  <colgroup><col/><col/><col/><col/></colgroup>
-  <thead><tr>
-    <th>Node ID</th>
-    <th>Классификация</th>
-    <th>Файл (источник) / Стр.</th>
-    <th>Контекст форензик-аудита</th>
-  </tr></thead>
-  <tbody id="registry-body"></tbody>
-</table>
-</div>
-<script>
-var allNodes=[];
-var PAGE_SIZE=200;
-var currentOffset=0;
-var currentSet=[];
 
-async function materializeRegistry(){
-  var status=document.getElementById('ti-ula-status');
-  try{
-    var r=await fetch('pdfs_mirror/evidence_registry.json');
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    var data=await r.json();
-    allNodes=data.evidence_nodes||[];
-    status.style.background='#e8f5e9';
-    status.style.borderColor='#4caf50';
-    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
-      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
-      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
-      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
-    renderNodes(allNodes,0);
-  }catch(e){
-    status.style.background='#ffebee';
-    status.style.borderColor='#f44336';
-    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
-    console.error(e);
-  }
-}
-
-function renderNodes(nodes, offset){
-  currentSet=nodes;
-  currentOffset=offset;
-  var body=document.getElementById('registry-body');
-  var slice=nodes.slice(offset, offset+PAGE_SIZE);
-  body.innerHTML=slice.map(function(n){
-    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
-            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
-    var ctx=(n.forensic_context||'').substring(0,100);
-    var fname=(n.source&&n.source.file)||'';
-    var page=(n.source&&n.source.page)||'';
-    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
-    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
-    return '<tr class="node-row '+cls+'">'
-      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
-      +'<td><strong>'+n.classification+'</strong></td>'
-      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
-      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
-      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
-      +'</tr>';
-  }).join('');
-  var ctr=document.getElementById('ti-ula-counter');
-  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
-  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
-  var nav='';
-  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
-  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
-  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
-}
-
-function filterNodes(type){
-  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
-  renderNodes(filtered,0);
-}
-materializeRegistry();
-</script>
-
-<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
-<style>
-.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
-.crit-forgery strong{color:#a32d2d}
-.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
-.crit-jurisdiction strong{color:#185fa5}
-.node-row:hover{background-color:#f5f5f5}
-#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
-#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
-#forensic-table col:nth-child(1){width:110px}
-#forensic-table col:nth-child(2){width:160px}
-#forensic-table col:nth-child(3){width:200px}
-#forensic-table col:nth-child(4){width:auto}
-#forensic-table thead{background:#f4f4f4;font-size:12px}
-#registry-filters{margin:12px 0}
-#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
-#registry-filters button:hover{background:#e8f0fe}
-#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
-#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
-</style>
-<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
-<div id="registry-filters">
-  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
-  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
-  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
-  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
-  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
-</div>
-<div id="ti-ula-counter"></div>
-<div style="overflow-x:auto">
-<table id="forensic-table">
-  <colgroup><col/><col/><col/><col/></colgroup>
-  <thead><tr>
-    <th>Node ID</th>
-    <th>Классификация</th>
-    <th>Файл (источник) / Стр.</th>
-    <th>Контекст форензик-аудита</th>
-  </tr></thead>
-  <tbody id="registry-body"></tbody>
-</table>
-</div>
-<script>
-var allNodes=[];
-var PAGE_SIZE=200;
-var currentOffset=0;
-var currentSet=[];
-
-async function materializeRegistry(){
-  var status=document.getElementById('ti-ula-status');
-  try{
-    var r=await fetch('pdfs_mirror/evidence_registry.json');
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    var data=await r.json();
-    allNodes=data.evidence_nodes||[];
-    status.style.background='#e8f5e9';
-    status.style.borderColor='#4caf50';
-    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
-      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
-      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
-      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
-    renderNodes(allNodes,0);
-  }catch(e){
-    status.style.background='#ffebee';
-    status.style.borderColor='#f44336';
-    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
-    console.error(e);
-  }
-}
-
-function renderNodes(nodes, offset){
-  currentSet=nodes;
-  currentOffset=offset;
-  var body=document.getElementById('registry-body');
-  var slice=nodes.slice(offset, offset+PAGE_SIZE);
-  body.innerHTML=slice.map(function(n){
-    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
-            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
-    var ctx=(n.forensic_context||'').substring(0,100);
-    var fname=(n.source&&n.source.file)||'';
-    var page=(n.source&&n.source.page)||'';
-    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
-    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
-    return '<tr class="node-row '+cls+'">'
-      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
-      +'<td><strong>'+n.classification+'</strong></td>'
-      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
-      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
-      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
-      +'</tr>';
-  }).join('');
-  var ctr=document.getElementById('ti-ula-counter');
-  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
-  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
-  var nav='';
-  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
-  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
-  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
-}
-
-function filterNodes(type){
-  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
-  renderNodes(filtered,0);
-}
-materializeRegistry();
-</script>
-
-<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
-<style>
-.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
-.crit-forgery strong{color:#a32d2d}
-.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
-.crit-jurisdiction strong{color:#185fa5}
-.node-row:hover{background-color:#f5f5f5}
-#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
-#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
-#forensic-table col:nth-child(1){width:110px}
-#forensic-table col:nth-child(2){width:160px}
-#forensic-table col:nth-child(3){width:200px}
-#forensic-table col:nth-child(4){width:auto}
-#forensic-table thead{background:#f4f4f4;font-size:12px}
-#registry-filters{margin:12px 0}
-#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
-#registry-filters button:hover{background:#e8f0fe}
-#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
-#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
-</style>
-<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
-<div id="registry-filters">
-  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
-  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
-  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
-  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
-  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
-</div>
-<div id="ti-ula-counter"></div>
-<div style="overflow-x:auto">
-<table id="forensic-table">
-  <colgroup><col/><col/><col/><col/></colgroup>
-  <thead><tr>
-    <th>Node ID</th>
-    <th>Классификация</th>
-    <th>Файл (источник) / Стр.</th>
-    <th>Контекст форензик-аудита</th>
-  </tr></thead>
-  <tbody id="registry-body"></tbody>
-</table>
-</div>
-<script>
-var allNodes=[];
-var PAGE_SIZE=200;
-var currentOffset=0;
-var currentSet=[];
-
-async function materializeRegistry(){
-  var status=document.getElementById('ti-ula-status');
-  try{
-    var r=await fetch('pdfs_mirror/evidence_registry.json');
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    var data=await r.json();
-    allNodes=data.evidence_nodes||[];
-    status.style.background='#e8f5e9';
-    status.style.borderColor='#4caf50';
-    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
-      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
-      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
-      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
-    renderNodes(allNodes,0);
-  }catch(e){
-    status.style.background='#ffebee';
-    status.style.borderColor='#f44336';
-    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
-    console.error(e);
-  }
-}
-
-function renderNodes(nodes, offset){
-  currentSet=nodes;
-  currentOffset=offset;
-  var body=document.getElementById('registry-body');
-  var slice=nodes.slice(offset, offset+PAGE_SIZE);
-  body.innerHTML=slice.map(function(n){
-    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
-            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
-    var ctx=(n.forensic_context||'').substring(0,100);
-    var fname=(n.source&&n.source.file)||'';
-    var page=(n.source&&n.source.page)||'';
-    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
-    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
-    return '<tr class="node-row '+cls+'">'
-      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
-      +'<td><strong>'+n.classification+'</strong></td>'
-      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
-      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
-      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
-      +'</tr>';
-  }).join('');
-  var ctr=document.getElementById('ti-ula-counter');
-  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
-  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
-  var nav='';
-  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
-  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
-  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
-}
-
-function filterNodes(type){
-  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
-  renderNodes(filtered,0);
-}
-materializeRegistry();
-</script>
 </body>
 </html>
-
