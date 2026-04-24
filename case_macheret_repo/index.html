@@ -32,7 +32,6 @@
     overflow-x: hidden;
   }
 
-  /* HEADER */
   .site-header {
     border-bottom: 1px solid var(--border);
     padding: 2rem 2rem 1.5rem;
@@ -83,7 +82,6 @@
   }
   .integrity-badge strong { color: #4a9; display: block; }
 
-  /* HERO */
   .hero {
     max-width: 1100px;
     margin: 0 auto;
@@ -139,7 +137,6 @@
   }
   .hero-cta:hover { background: var(--gold-light); }
 
-  /* STATS */
   .hero-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,7 +167,6 @@
   }
   .stat-cell.red .stat-number { color: var(--red); }
 
-  /* SECTIONS GRID */
   .sections-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -212,16 +208,6 @@
     overflow: hidden;
   }
   .card:hover { background: var(--seal); }
-  .card::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--gold), transparent);
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  .card:hover::after { opacity: 1; }
   .card-icon { font-size: 1.5rem; }
   .card-label {
     font-family: 'IBM Plex Mono', monospace;
@@ -251,7 +237,6 @@
     letter-spacing: 0.05em;
   }
 
-  /* TIMELINE STRIP */
   .timeline-strip {
     background: var(--dark-card);
     border-top: 1px solid var(--border);
@@ -264,7 +249,6 @@
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    gap: 0;
   }
   .tl-node {
     flex: 1;
@@ -287,7 +271,6 @@
     line-height: 1.5;
   }
 
-  /* CHAIN SECTION */
   .chain-section {
     background: var(--dark-card);
     border: 1px solid var(--border);
@@ -312,7 +295,6 @@
   .chain-flow {
     display: flex;
     align-items: center;
-    gap: 0;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
@@ -323,18 +305,13 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.65rem;
     color: var(--text);
-    letter-spacing: 0.05em;
     text-align: center;
     min-width: 120px;
   }
   .chain-node.highlight { border-color: var(--gold); color: var(--gold); }
   .chain-node.danger { border-color: var(--red); color: var(--red); }
-  .chain-arrow {
-    color: var(--gold);
-    font-size: 1.2rem;
-  }
+  .chain-arrow { color: var(--gold); font-size: 1.2rem; }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--border);
     padding: 2.5rem 2rem;
@@ -356,21 +333,6 @@
     letter-spacing: 0.08em;
   }
   .footer-id strong { color: var(--gold); }
-  .footer-links {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-  .footer-links a {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.6rem;
-    color: var(--text-dim);
-    text-decoration: none;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .footer-links a:hover { color: var(--gold); }
 </style>
 </head>
 <body>
@@ -401,147 +363,57 @@
         90 апостилированных документов. 8158 суток молчания государства.
         Принцип дополнительности МУС активирован.
       </p>
-      <a href="jus-cogens-proof-macheret.html" class="hero-cta">
-        ⚖ Открыть Доказательный Акт →
-      </a>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="jus-cogens-proof-macheret.html" class="hero-cta">⚖ ОТКРЫТЬ ДОКАЗАТЕЛЬНЫЙ АКТ</a>
+          <a href="mirrors/interpol_confirmation.html" class="hero-cta" style="background:#004400; color:#0f0; border:1px solid #0f0;">[!] СТАТУС ИНТЕРПОЛА</a>
+      </div>
     </div>
     <div class="hero-stats">
       <div class="stat-cell">
         <span class="stat-number">90</span>
-        <span class="stat-label">Апостилированных документов</span>
+        <span class="stat-label">Апостилей</span>
       </div>
       <div class="stat-cell red">
         <span class="stat-number">8158</span>
-        <span class="stat-label">Суток без расследования</span>
+        <span class="stat-label">Дней молчания</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-number">4</span>
-        <span class="stat-label">Языка документации</span>
+        <span class="stat-number">25.2M</span>
+        <span class="stat-label">MDL Хищено</span>
       </div>
       <div class="stat-cell red">
         <span class="stat-number">Art.17</span>
-        <span class="stat-label">МУС активирован</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="timeline-strip">
-    <div class="timeline-inner">
-      <div class="tl-node">
-        <div class="tl-year">1997–1998</div>
-        <div class="tl-text">Пытки задокументированы.<br>Дело № 1-568/98</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-year">2003–2021</div>
-        <div class="tl-text">90 судебных решений. Ни одного расследования пыток</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-year">15.03.2022</div>
-        <div class="tl-text">Подлог Нантой. Захват имущества (ул. Мирон Костин)</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-year">19.03.2026</div>
-        <div class="tl-text">Уведомления: White House, UN OHCHR, G7, ICC</div>
-      </div>
-      <div class="tl-node">
-        <div class="tl-year">2026</div>
-        <div class="tl-text">Global Sanction Vector 11. Архив трансмиттируется</div>
+        <span class="stat-label">МУС АКТИВЕН</span>
       </div>
     </div>
   </div>
 
   <div class="sections-wrapper">
-    <div class="section-divider"><span>Разделы архива</span></div>
-
+    <div class="section-divider"><span>КРИТИЧЕСКИЕ ОПОЛНЕНИЯ</span></div>
     <div class="cards-grid">
-      <a href="jus-cogens-proof-macheret.html" class="card">
-        <div class="card-icon">⚖</div>
-        <div class="card-label">Основной документ · 4 языка</div>
-        <div class="card-title">Доказательный Акт — Дело Мачерет</div>
-        <div class="card-desc">
-          Jus Cogens = Фактическое доказательство. Полная логическая цепь от факта 1997 года
-          до неопровержимого вывода об активации МУС. На русском, румынском, английском, французском.
-        </div>
-        <div class="card-arrow">→ ОТКРЫТЬ</div>
+      <a href="mirrors/forensic_idnp_report.html" class="card">
+        <div class="card-label">FORENSIC REPORT</div>
+        <div class="card-title">ПОДЛОГ ИДНП 655/555/455</div>
+        <div class="card-desc">Доказательства систематической фальсификации личных данных в реестрах Молдовы.</div>
+        <div class="card-arrow">→ ОТКРЫТЬ PDF/DOCX</div>
       </a>
-      <a href="https://arhiv1973b.github.io/apostille-legal-case/FORGERY_DECONSTRUCTION_ACT.html" class="card">
-        <div class="card-icon">🧬</div>
-        <div class="card-label">Криминальный каскад · 15.03.2022</div>
-        <div class="card-title">Акт Деконструкции Подлога Нантой</div>
-        <div class="card-desc">
-          Графологическая экспертиза (Вектор 3). Использование личности Маркова И.М.
-          Причинно-следственный каскад от 8158 суток вакуума к захвату активов.
-        </div>
-        <div class="card-arrow">→ ОТКРЫТЬ</div>
+      <a href="mirrors/forensic_financial_report.html" class="card">
+        <div class="card-label">FINANCIAL REPORT</div>
+        <div class="card-title">ХИЩЕНИЕ АКТИВОВ</div>
+        <div class="card-desc">След транзакций Moldindconbank и хищение 25.2 млн леев через фантомные ИДНП.</div>
+        <div class="card-arrow">→ ОТКРЫТЬ PDF/DOCX</div>
       </a>
-      <a href="https://arhiv1973b.github.io/apostille-archive-english/" class="card">
-        <div class="card-icon">📂</div>
-        <div class="card-label">Реестр · Гаагская конвенция</div>
-        <div class="card-title">Реестр Апостилированных Документов</div>
-        <div class="card-desc">
-          90 документов, заверенных по Гаагской конвенции 05.10.1961. Апостиль удостоверяет
-          подлинность подписи должностного лица — не законность содержания.
-          Содержание: уклонение от расследования пыток.
-        </div>
-        <div class="card-arrow">→ ОТКРЫТЬ РЕЕСТР</div>
+      <a href="mirrors/un_memorandum_macheret.html" class="card">
+        <div class="card-label">UN OHCHR</div>
+        <div class="card-title">МЕМОРАНДУМ ООН</div>
+        <div class="card-desc">Официальное уведомление спецдокладчиков ООН о нарушении норм Jus Cogens.</div>
+        <div class="card-arrow">→ ОТКРЫТЬ EN/FR</div>
       </a>
-      <a href="https://arhiv1973b.github.io/apostille-legal-case/" class="card">
-        <div class="card-icon">🔒</div>
-        <div class="card-label">Evidence Vault · Merkle Chain</div>
-        <div class="card-title">Хранилище Доказательств</div>
-        <div class="card-desc">
-          Криптографический архив «Apostille Mirror». Верификация Ed25519.
-          Actor Identity Schema (urn:actor:id). Merkle Root CFC 9a2465bd…e77.
-          TI-ULA · 4010 активных узлов.
-        </div>
-        <div class="card-arrow">→ ХРАНИЛИЩЕ</div>
-      </a>
-    </div>
-
-    <div style="height: 3rem;"></div>
-    <div class="section-divider"><span>Механизм системного нарушения</span></div>
-
-    <div class="chain-section">
-      <div class="chain-title">«Рак» правосудия: механизм институциональной безнаказанности</div>
-      <div class="chain-sub">каждая стрелка — задокументированный факт, не версия</div>
-      <div class="chain-flow">
-        <div class="chain-node highlight">ФАКТ ПЫТОК<br>1997–1998</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-node highlight">НАРУШЕНИЕ<br>JUS COGENS</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-node">МОЛЧАНИЕ<br>ГОСУДАРСТВА</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-node">РАЗРЫВ<br>ERGA OMNES</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-node">ИНСТИТУЦИОНАЛЬНАЯ<br>БЕЗНАКАЗАННОСТЬ<br>8158 СУТОК</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-node danger">ПОДЛОГ<br>15.03.2022</div>
-        <div class="chain-arrow">→</div>
-        <div class="chain-node danger">⚠ ЗАХВАТ<br>АКТИВОВ</div>
-      </div>
-    </div>
-
-    <div class="cards-grid">
-      <a href="https://legal.un.org/ilc/guide/1_14.shtml" class="card" target="_blank" rel="noopener">
-        <div class="card-icon">📜</div>
-        <div class="card-label">ILC · ООН</div>
-        <div class="card-title">ILC Jus Cogens</div>
-        <div class="card-desc">Комиссия международного права ООН. Императивные нормы общего международного права.</div>
-        <div class="card-arrow">↗ UN.ORG</div>
-      </a>
-      <a href="https://www.ohchr.org/en/contact-us" class="card" target="_blank" rel="noopener">
-        <div class="card-icon">🌍</div>
-        <div class="card-label">Верховный комиссар · ООН</div>
-        <div class="card-title">UN OHCHR</div>
-        <div class="card-desc">Управление Верховного комиссара ООН по правам человека. Адресат уведомлений от 19.03.2026.</div><br><br><a href='mirrors/un_memorandum_macheret.html' style='color:#66bbff; font-weight:bold; font-size:1.1em;'>🌍 URGENT APPEAL & MEMORANDUM TO THE UN (EN/FR)</a><br><br><a href='mirrors/forensic_idnp_report.html' style='color:#ff4444; font-weight:bold; font-size:1.1em;'>🚨 FORENSIC REPORT: СИСТЕМАТИЧЕСКАЯ ФАЛЬСИФИКАЦИЯ ИДНП</a><br><br><a href='mirrors/forensic_financial_report.html' style='color:#44ff44; font-weight:bold; font-size:1.1em;'>💵 FORENSIC REPORT: ФИНАНСОВЫЕ ПРЕСТУПЛЕНИЯ (Moldindconbank)</a>
-        <div class="card-arrow">↗ OHCHR.ORG</div>
-      </a>
-      <a href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" class="card" target="_blank" rel="noopener">
-        <div class="card-icon">🔵</div>
-        <div class="card-label">Международная полиция</div>
-        <div class="card-title">INTERPOL</div>
-        <div class="card-desc">Международная организация уголовной полиции. Идентифицированные персональные акторы.</div><br><br><a href='mirrors/ccf_interpol_request.html' style='color:#4488ff; font-weight:bold; font-size:1.1em;'>🔵 PREEMPTIVE REQUEST TO INTERPOL CCF (Article 3)</a>
-        <div class="card-arrow">↗ INTERPOL.INT</div>
+      <a href="mirrors/ccf_interpol_request.html" class="card">
+        <div class="card-label">INTERPOL CCF</div>
+        <div class="card-title">БЛОКИРОВКА CCF</div>
+        <div class="card-desc">Превентивный запрос на блокировку Красных Циркуляров по ст. 3 Конституции Интерпола.</div>
+        <div class="card-arrow">→ ОТКРЫТЬ ДОКУМЕНТ</div>
       </a>
     </div>
   </div>
@@ -550,23 +422,10 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-id">
-      <strong>A©TOR · СУБЪЕКТ ПРАВА</strong><br>
-      CASE-MACHERET-1997–2026 · ИДНП: 2000001159655<br>
-      DNS: _ti-ula.actor.legal · MERKLE ROOT CFC: 9a2465bd…e77<br>
-      COMMIT: 5b40fda · REPO: arhiv1973b/apostille-mirror
-    </div>
-    <div class="footer-links">
-      <a href="jus-cogens-proof-macheret.html">JUS COGENS ACT</a>
-      <a href="https://arhiv1973b.github.io/apostille-archive-english/">ARCHIVE</a>
-      <a href="https://arhiv1973b.github.io/apostille-legal-case/">LEGAL CASE</a>
-      <a href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">ILC</a>
+      <strong>A©TOR · ALEXEI MACHERET</strong><br>
+      IDNP: 2000001159655 · TIMESTAMP: $TS_UTC
     </div>
   </div>
 </footer>
-
 </body>
 </html>
-
-
-
-
