@@ -2,8 +2,8 @@
     "case_id":  "CASE-MACHERET-1997-2026",
     "authority":  "A©tor",
     "idnp":  "655",
-    "timestamp":  "2026-04-28 01:20:07",
-    "total_files":  2992,
+    "timestamp":  "2026-04-28 01:51:01",
+    "total_files":  2993,
     "integrity_algo":  "SHA-256",
     "registry":  [
                      {
@@ -6412,6 +6412,13 @@
                          "modified":  "2025-10-07 12:07:44"
                      },
                      {
+                         "filename":  "evidence-roadmap.html",
+                         "rel_path":  "evidence-roadmap.html",
+                         "sha256":  "b7887bbe6ebe5d8e72bad89b329b5cd42400e02232abffa75ff7f826a5eb2494",
+                         "size":  5153,
+                         "modified":  "2026-04-28 01:50:36"
+                     },
+                     {
                          "filename":  "evidence.html",
                          "rel_path":  "evidence.html",
                          "sha256":  "674ec5fab3239c951845956b4ad0298ab4cd2dd09679c098420b286800816a31",
@@ -6911,9 +6918,9 @@
                      {
                          "filename":  "index.html",
                          "rel_path":  "index.html",
-                         "sha256":  "a4985908a8899efc596cfece4e5c5be3e81dd043e074bd517c9aa5bed4baf308",
-                         "size":  9058,
-                         "modified":  "2026-04-04 15:15:43"
+                         "sha256":  "730e5e25904993a16b338866d1fd21e40306be324be7ef692bf7a68b3e3af5e6",
+                         "size":  928965,
+                         "modified":  "2026-04-28 01:34:50"
                      },
                      {
                          "filename":  "index.json",
