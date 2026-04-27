@@ -1,0 +1,11 @@
+﻿{
+  "system": "TI-ULA-GLOBAL-LIQUIDITY",
+  "status": "404_ANCHOR_DEPLOYED",
+  "identity": "A©tor",
+  "case": "CASE-MACHERET-1997-2026",
+  "liquidity_rules": {
+    "entry_recovery": "Every 404 error must point to mirrors/index.html",
+    "auth_recovery": "Every 401 error must be resolvable via scripts/fix-gpg-local.ps1",
+    "style": "Forensic-Dark-V3 enforced"
+  }
+}
