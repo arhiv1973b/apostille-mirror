@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Model = "",
     [string]$Prompt = "",
     [switch]$List,
@@ -11,141 +11,71 @@ function Write-Color($text, $color="White") { Write-Host $text -ForegroundColor 
 function Write-Header {
     Write-Host ""
     Write-Color "╔══════════════════════════════════════════════════════╗" Cyan
-    Write-Color "║     A©tor AI SWITCHER v2.0 — Коммутатор моделей     ║" Cyan
-    Write-Color "║        CASE-MACHERET-1997-2026 · Active Mode         ║" Cyan
+    Write-Color "║      A©tor AI SWITCHER v2.1 — UTF-8 EDITION          ║" Cyan
+    Write-Color "║         CASE-MACHERET-1997-2026 · Active             ║" Cyan
     Write-Color "╚══════════════════════════════════════════════════════╝" Cyan
     Write-Host ""
 }
 
 $MODELS = [ordered]@{
-    "gemini-flash"   = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 2.5 Flash";       ID="gemini-2.5-flash" }
-    "gemini-pro"     = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 2.5 Pro";         ID="gemini-2.5-pro" }
+    "gemini-flash"   = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 2.5 Flash";        ID="gemini-2.5-flash" }
     "gemini-3-flash" = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 3 Flash Preview"; ID="gemini-3-flash-preview" }
     "claude-sonnet"  = @{ Provider="anthropic";  EnvKey="ANTHROPIC_API_KEY";            Name="Claude Sonnet 4.6";      ID="claude-sonnet-4-6" }
-    "claude-haiku"   = @{ Provider="anthropic";  EnvKey="ANTHROPIC_API_KEY";            Name="Claude Haiku 4.5";       ID="claude-haiku-4-5-20251001" }
-    "gpt-4o"         = @{ Provider="openai";     EnvKey="OPENAI_API_KEY";               Name="GPT-4o";                 ID="gpt-4o" }
-    "gpt-4o-mini"    = @{ Provider="openai";     EnvKey="OPENAI_API_KEY";               Name="GPT-4o Mini";            ID="gpt-4o-mini" }
-    "grok"           = @{ Provider="grok";       EnvKey="GROK_API_KEY";                 Name="Grok (xAI)";             ID="grok-3-mini" }
-    "llama-groq"     = @{ Provider="groq";       EnvKey="GROQ_API_KEY";                 Name="Llama 3.3 70B (Groq)";  ID="llama-3.3-70b-versatile" }
-    "or-deepseek"    = @{ Provider="openrouter"; EnvKey="OPENROUTER_API_KEY";           Name="DeepSeek R1";            ID="deepseek/deepseek-r1" }
-    "or-claude"      = @{ Provider="openrouter"; EnvKey="OPENROUTER_API_KEY";           Name="Claude via OpenRouter";  ID="anthropic/claude-sonnet-4-5" }
-}
-
-function Get-KeyStatus {
-    $s = @{}
-    foreach ($a in $MODELS.Keys) {
-        $v = [System.Environment]::GetEnvironmentVariable($MODELS[$a].EnvKey)
-        $s[$a] = ($null -ne $v -and $v -ne "")
-    }
-    return $s
-}
-
-function Show-Models {
-    Write-Header
-    $status = Get-KeyStatus
-    foreach ($a in $MODELS.Keys) {
-        $ok   = $status[$a]
-        $icon = if ($ok) { "✅" } else { "❌" }
-        $col  = if ($ok) { "Green" } else { "Red" }
-        Write-Color ("  {0} [{1,-14}] {2}" -f $icon, $a, $MODELS[$a].Name) $col
-    }
-    Write-Host ""
-    Write-Color "  Использование: actor-ai -Model gemini-flash -Prompt `"Вопрос`"" Cyan
-    Write-Color "  Интерактив:    actor-ai -Interactive" Cyan
-    Write-Host ""
+    "gpt-4o"         = @{ Provider="openai";     EnvKey="OPENAI_API_KEY";               Name="GPT-4o";                  ID="gpt-4o" }
+    "grok"           = @{ Provider="grok";       EnvKey="GROK_API_KEY";                 Name="Grok (xAI)";              ID="grok-3-mini" }
 }
 
 function Invoke-AI {
     param([string]$Alias, [string]$UserPrompt)
-    if (-not $MODELS.Contains($Alias)) { Write-Color "❌ Модель '$Alias' не найдена." Red; return }
-
-    $cfg      = $MODELS[$Alias]
-    $apiKey   = [System.Environment]::GetEnvironmentVariable($cfg.EnvKey)
+    $cfg = $MODELS[$Alias]
+    $apiKey = [System.Environment]::GetEnvironmentVariable($cfg.EnvKey)
     if (-not $apiKey) { Write-Color "❌ Ключ $($cfg.EnvKey) не найден." Red; return }
 
     Write-Color "`n  🤖 [$($cfg.Name)] обрабатывает запрос..." Yellow
 
     $headers = @{ "Content-Type" = "application/json" }
-    $uri = ""; $body = ""
+    $uri = ""; $jsonBody = ""
 
-    switch ($cfg.Provider) {
-        "gemini" {
-            $uri = "https://generativelanguage.googleapis.com/v1beta/models/$($cfg.ID):generateContent?key=$apiKey"
-            $body = @{ contents = @(@{ parts = @(@{ text = $UserPrompt }) }) } | ConvertTo-Json -Depth 5
-        }
-        "anthropic" {
-            $uri = "https://api.anthropic.com/v1/messages"
-            $headers["x-api-key"] = $apiKey
-            $headers["anthropic-version"] = "2023-06-01"
-            $body = @{ model=$cfg.ID; max_tokens=1024; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
-        }
-        "openai" {
-            $uri = "https://api.openai.com/v1/chat/completions"
-            $headers["Authorization"] = "Bearer $apiKey"
-            $body = @{ model=$cfg.ID; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
-        }
-        "grok" {
-            $uri = "https://api.x.ai/v1/chat/completions"
-            $headers["Authorization"] = "Bearer $apiKey"
-            $body = @{ model=$cfg.ID; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
-        }
-        "groq" {
-            $uri = "https://api.groq.com/openai/v1/chat/completions"
-            $headers["Authorization"] = "Bearer $apiKey"
-            $body = @{ model=$cfg.ID; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
-        }
-        "openrouter" {
-            $uri = "https://openrouter.ai/api/v1/chat/completions"
-            $headers["Authorization"] = "Bearer $apiKey"
-            $headers["HTTP-Referer"] = "https://arhiv1973b.github.io/apostille-mirror/"
-            $body = @{ model=$cfg.ID; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
-        }
+    if ($cfg.Provider -eq "gemini") {
+        $uri = "https://generativelanguage.googleapis.com/v1beta/models/$($cfg.ID):generateContent?key=$apiKey"
+        $jsonBody = @{ contents = @(@{ parts = @(@{ text = $UserPrompt }) }) } | ConvertTo-Json -Depth 5
+    } elseif ($cfg.Provider -eq "anthropic") {
+        $uri = "https://api.anthropic.com/v1/messages"
+        $headers["x-api-key"] = $apiKey
+        $headers["anthropic-version"] = "2023-06-01"
+        $jsonBody = @{ model=$cfg.ID; max_tokens=1024; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
+    } else {
+        $uri = if ($cfg.Provider -eq "openai") { "https://api.openai.com/v1/chat/completions" } else { "https://api.x.ai/v1/chat/completions" }
+        $headers["Authorization"] = "Bearer $apiKey"
+        $jsonBody = @{ model=$cfg.ID; messages=@(@{ role="user"; content=$UserPrompt }) } | ConvertTo-Json -Depth 5
     }
 
+    # КРИТИЧЕСКИЙ ФИКС КОДИРОВКИ
+    $postData = [System.Text.Encoding]::UTF8.GetBytes($jsonBody)
+
     try {
-        $resp = Invoke-RestMethod -Uri $uri -Method POST -Headers $headers -Body $body -TimeoutSec 60
-        $text = switch ($cfg.Provider) {
-            "anthropic" { $resp.content[0].text }
-            "gemini"    { $resp.candidates[0].content.parts[0].text }
-            default     { $resp.choices[0].message.content }
-        }
+        $resp = Invoke-RestMethod -Uri $uri -Method POST -Headers $headers -Body $postData -TimeoutSec 60
+        $text = if ($cfg.Provider -eq "gemini") { $resp.candidates[0].content.parts[0].text } 
+                elseif ($cfg.Provider -eq "anthropic") { $resp.content[0].text } 
+                else { $resp.choices[0].message.content }
+        
         Write-Color "─────────────────────────────────────────────────" DarkGray
         Write-Color "  [$($cfg.Name)]" Cyan
         Write-Color "─────────────────────────────────────────────────" DarkGray
         Write-Host $text
         Write-Color "─────────────────────────────────────────────────" DarkGray
-        Write-Host ""
-        return $text
-    } catch {
-        Write-Color "❌ Ошибка: $($_.Exception.Message)" Red
-    }
+    } catch { Write-Color "❌ Ошибка: $($_.Exception.Message)" Red }
 }
 
-function Start-Interactive {
+if ($List) { $MODELS.Keys | ForEach-Object { Write-Color "  [$_]" Green } }
+elseif ($Interactive) {
     Write-Header
-    $status  = Get-KeyStatus
-    $active  = $MODELS.Keys | Where-Object { $status[$_] }
-    $current = $active | Select-Object -First 1
-    Write-Color "  Активных моделей: $($active.Count) | Текущая: $current" Green
-    Write-Color "  Команды: /list /switch <alias> /exit" DarkGray
-    Write-Host ""
+    $current = "gemini-3-flash"
     while ($true) {
-        Write-Host -NoNewline "  A©tor [$current]> " -ForegroundColor Yellow
-        $inp = Read-Host
-        if ($inp -eq "/exit") { break }
-        elseif ($inp -eq "/list") { Show-Models }
-        elseif ($inp -match "^/switch\s+(\S+)") {
-            $t = $matches[1]
-            if ($MODELS.Contains($t) -and $status[$t]) { $current = $t; Write-Color "  ✅ → $($MODELS[$current].Name)" Green }
-            else { Write-Color "  ❌ Модель недоступна." Red }
-        }
-        elseif ($inp.Trim() -ne "") { Invoke-AI -Alias $current -UserPrompt $inp }
+        $input = Read-Host "  A©tor [$current]> "
+        if ($input -eq "/exit") { break }
+        if ($input.Trim() -ne "") { Invoke-AI -Alias $current -UserPrompt $input }
     }
 }
-
-Write-Header
-if ($List)                              { Show-Models }
-elseif ($Install)                       { Write-Color "pip install google-generativeai openai anthropic" Yellow }
-elseif ($Interactive)                   { Start-Interactive }
 elseif ($Model -ne "" -and $Prompt -ne "") { Invoke-AI -Alias $Model -UserPrompt $Prompt }
-else                                    { Show-Models }
+else { Write-Header; Write-Color "Использование: actor-ai -Interactive" Yellow }
