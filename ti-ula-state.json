@@ -1,8 +1,10 @@
 ﻿{
-  "system": "TI-ULA-AUTO-AUTH",
-  "status": "ZERO_MAINTENANCE",
-  "identity": "A©tor",
-  "authority_key": "7BEACB5463BA3007",
-  "persistence": "30,000,000 seconds cache",
-  "scheduler": "Enabled (AtLogOn)"
+    "system":  "TI-ULA-AUTO-AUTH",
+    "status":  "ZERO_MAINTENANCE",
+    "identity":  "A©tor",
+    "authority_key":  "7BEACB5463BA3007",
+    "persistence":  "30,000,000 seconds cache",
+    "scheduler":  "Enabled (AtLogOn)",
+    "delegation":  "ACTIVE_PERSISTENT_TASK",
+    "auto_sync_id":  "d4590606-39b1-4449-b850-047947298403"
 }
