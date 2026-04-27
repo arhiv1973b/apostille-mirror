@@ -1,0 +1,12 @@
+{
+  "event_id": "LAW-SABOTAGE-RICOFAST",
+  "incident_date": "2007-07-23",
+  "location": "Apt. 64, Miron Costin 13/3",
+  "substance": "Ricofast (Pseudoephedrine-based)",
+  "legal_manipulation": {
+    "decree_43": "GD No. 43 (26.01.2009) changed substance classification.",
+    "timing_anomaly": "Appellate Court sentenced A©tor on 03.02.2009 — exactly when GD No. 43 made the charge irrelevant for criminal law.",
+    "vsp_reversal": "Decision 1ra-834/09 confirms: No crime committed."
+  },
+  "status": "PROVEN_FABRICATION"
+}

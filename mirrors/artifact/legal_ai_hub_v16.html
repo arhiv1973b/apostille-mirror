@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal AI Hub v16: Evidence Forensic & Volume Navigator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.9);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 10px;
+      }
+      .progress-bar {
+        transition: width 0.3s ease;
+      }
+      .active-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .file-card {
+        transition: all 0.3s ease;
+      }
+      .file-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8">
+    <div class="max-w-7xl mx-auto space-y-6">
+      <!-- Header -->
+      <header
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6"
+      >
+        <div>
+          <h1
+            class="text-3xl font-black tracking-tighter text-white uppercase flex items-center gap-3"
+          >
+            FORENSIC <span class="text-emerald-500 italic">NAVIGATOR</span>
+            <span class="text-slate-600 text-xl font-bold">v16</span>
+          </h1>
+          <p
+            class="text-slate-500 text-[10px] mt-1 font-bold tracking-[0.4em] uppercase italic"
+          >
+            Поиск Первого Тома и Хронология Сокрытия (JSON/YAML Engine)
+          </p>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onclick="loadEvidenceFiles()"
+            class="bg-white text-black text-[10px] font-black px-6 py-3 rounded-xl hover:bg-emerald-500 hover:text-white transition-all uppercase tracking-widest shadow-lg"
+          >
+            Загрузить Evidence Слои
+          </button>
+          <button
+            onclick="document.getElementById('pdf-input').click()"
+            class="bg-emerald-600 text-white text-[10px] font-black px-6 py-3 rounded-xl hover:bg-emerald-500 transition-all uppercase tracking-widest shadow-lg"
+          >
+            Загрузить PDF Том
+          </button>
+          <input
+            id="pdf-input"
+            type="file"
+            class="hidden"
+            accept="application/pdf"
+            multiple
+          />
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Sidebar: Controls & Logic -->
+        <aside class="lg:col-span-4 space-y-6">
+          <!-- Evidence Layers Section -->
+          <section class="glass rounded-3xl p-6 border-t border-slate-700">
+            <h2
+              class="text-[10px] font-black text-emerald-500 uppercase tracking-widest mb-6 italic"
+            >
+              Evidence Слои
+            </h2>
+
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <label class="text-[9px] font-bold text-slate-500 uppercase"
+                  >ID дела:</label
+                >
+                <input
+                  id="case-id"
+                  type="text"
+                  value="CASE-MACHERET-1998-2026"
+                  class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-emerald-400 outline-none focus:border-emerald-500 mono"
+                />
+              </div>
+
+              <div class="bg-slate-950 rounded-xl p-4 border border-slate-800">
+                <p class="text-[9px] text-slate-500 uppercase mb-2">
+                  Статус evidence слоев:
+                </p>
+                <div id="evidence-status" class="text-[10px] text-amber-500">
+                  Загрузите JSON/YAML файлы...
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  onclick="loadJSONFiles()"
+                  class="bg-blue-600 hover:bg-blue-500 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+                >
+                  Загрузить JSON
+                </button>
+                <button
+                  onclick="loadYAMLFiles()"
+                  class="bg-purple-600 hover:bg-purple-500 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+                >
+                  Загрузить YAML
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Navigation Section -->
+          <section class="glass rounded-3xl p-6 border-l-4 border-amber-600">
+            <h2
+              class="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-4 italic"
+            >
+              Критерии Верификации
+            </h2>
+            <div class="space-y-2 text-[10px] text-slate-400 italic">
+              <p>
+                1. <b>Ласточка = Пытка.</b> Игнорировать формулировку
+                "превышение".
+              </p>
+              <p>
+                2. <b>Трое сотрудников = Сговор.</b> Анализировать "спектакль"
+                сокрытия.
+              </p>
+              <p>
+                3. <b>Дата сокрытия vs Переезд суда.</b> Искать нестыковки в
+                архивных описях.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-col gap-2">
+              <button
+                onclick="exportData('json')"
+                class="bg-slate-800 hover:bg-indigo-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Экспорт JSON DB
+              </button>
+              <button
+                onclick="exportData('yaml')"
+                class="bg-slate-800 hover:bg-indigo-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Экспорт YAML DB
+              </button>
+              <button
+                onclick="exportZip()"
+                class="bg-slate-800 hover:bg-green-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Экспорт ZIP Архив
+              </button>
+            </div>
+          </section>
+
+          <!-- Loaded Files List -->
+          <section class="glass rounded-3xl p-6 border border-slate-800">
+            <h3
+              class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-4"
+            >
+              Загруженные слои
+            </h3>
+            <div
+              id="files-list"
+              class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar"
+            >
+              <p class="text-[9px] text-slate-600">Файлы не загружены</p>
+            </div>
+          </section>
+        </aside>
+
+        <!-- Main Work Area -->
+        <main class="lg:col-span-8 space-y-6">
+          <!-- Evidence Processing -->
+          <section class="glass rounded-[2.5rem] p-6 border border-slate-800">
+            <canvas id="main-canvas" class="hidden"></canvas>
+
+            <div class="flex justify-between items-center mb-6">
+              <div class="flex items-center gap-3">
+                <div
+                  id="status-light"
+                  class="h-2 w-2 rounded-full bg-slate-700"
+                ></div>
+                <h2
+                  class="text-[10px] font-black text-slate-500 uppercase tracking-widest"
+                >
+                  Структурированный поток доказательств
+                </h2>
+              </div>
+              <div class="flex gap-2">
+                <button
+                  onclick="mergeEvidence()"
+                  class="bg-emerald-600 hover:bg-emerald-500 text-white text-[9px] font-bold px-4 py-2 rounded-xl uppercase transition-all"
+                >
+                  Объединить слои
+                </button>
+                <button
+                  onclick="clearDatabase()"
+                  class="text-red-500 text-[9px] font-bold uppercase hover:underline"
+                >
+                  Сброс базы
+                </button>
+              </div>
+            </div>
+
+            <!-- JSON/YAML Structured Display -->
+            <div
+              class="flex-1 bg-slate-950 rounded-3xl border border-slate-800 p-6 overflow-hidden flex flex-col shadow-inner"
+            >
+              <pre
+                id="json-preview"
+                class="flex-1 text-[11px] mono text-emerald-400 overflow-y-auto custom-scrollbar leading-relaxed"
+              >
+{
+  "system": "ready",
+  "waiting_for": "Evidence_Layers_Upload",
+  "caseId": "CASE-MACHERET-1998-2026",
+  "volumes": [],
+  "evidence_layers": []
+}
+                        </pre
+              >
+            </div>
+
+            <!-- AI Reasoning Feedback -->
+            <div
+              class="mt-6 p-5 rounded-2xl bg-indigo-950/20 border border-indigo-500/30"
+            >
+              <div class="flex items-center gap-2 mb-2">
+                <span
+                  class="text-indigo-400 text-[10px] font-black uppercase tracking-widest"
+                  >Интеллект Gemini v16:</span
+                >
+              </div>
+              <div
+                id="ai-feedback"
+                class="text-[11px] text-slate-300 italic leading-relaxed"
+              >
+                Ожидание данных для сопоставления фактов похищения и уничтожения
+                материалов дела в 2015 году.
+              </div>
+            </div>
+          </section>
+
+          <!-- File Cards Grid -->
+          <section
+            id="file-cards"
+            class="grid grid-cols-1 md:grid-cols-2 gap-4"
+          >
+            <!-- File cards will be dynamically added here -->
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Hidden inputs for multiple file types -->
+    <input id="json-input" type="file" class="hidden" accept=".json" multiple />
+    <input
+      id="yaml-input"
+      type="file"
+      class="hidden"
+      accept=".yaml,.yml"
+      multiple
+    />
+
+    <script>
+      const pdfjs = window['pdfjs-dist/build/pdf'];
+      pdfjs.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+      // Инициализация структурированной базы
+      let masterDatabase = {
+        metadata: {
+          caseRef: 'CASE-MACHERET-1-568-1-272',
+          institution: 'Judecătoria Chişinău (Sediul Centru)',
+          lastUpdate: new Date().toISOString(),
+        },
+        volumes: [],
+        evidence_layers: [],
+      };
+
+      const jsonInput = document.getElementById('json-input');
+      const yamlInput = document.getElementById('yaml-input');
+      const pdfInput = document.getElementById('pdf-input');
+      const jsonPreview = document.getElementById('json-preview');
+      const statusLight = document.getElementById('status-light');
+      const aiFeedback = document.getElementById('ai-feedback');
+      const canvas = document.getElementById('main-canvas');
+      const ctx = canvas.getContext('2d');
+      const filesList = document.getElementById('files-list');
+
+      // Загрузка JSON файлов
+      jsonInput.addEventListener('change', async (e) => {
+        const files = Array.from(e.target.files);
+        for (const file of files) {
+          await loadEvidenceLayer(file, 'json');
+        }
+      });
+
+      // Загрузка YAML файлов
+      yamlInput.addEventListener('change', async (e) => {
+        const files = Array.from(e.target.files);
+        for (const file of files) {
+          await loadEvidenceLayer(file, 'yaml');
+        }
+      });
+
+      // Загрузка PDF файлов
+      pdfInput.addEventListener('change', async (e) => {
+        const files = Array.from(e.target.files);
+        for (const file of files) {
+          await processPDFVolume(file);
+        }
+      });
+
+      async function loadEvidenceLayer(file, format) {
+        try {
+          const text = await file.text();
+          let data;
+
+          if (format === 'json') {
+            data = JSON.parse(text);
+          } else {
+            data = jsyaml.load(text);
+          }
+
+          // Добавление в masterDatabase
+          const layer = {
+            id: file.name,
+            format: format,
+            metadata: data.metadata,
+            files: data.files || [],
+            loadedAt: new Date().toISOString(),
+          };
+
+          masterDatabase.evidence_layers.push(layer);
+
+          updateFilesList();
+          updatePreview();
+          document.getElementById('evidence-status').textContent =
+            `Загружено: ${masterDatabase.evidence_layers.length} слоев`;
+          statusLight.classList.add('bg-emerald-500');
+
+          console.log(`Загружен ${format} слой:`, file.name, data);
+        } catch (error) {
+          console.error(`Ошибка загрузки ${format}:`, error);
+          document.getElementById('evidence-status').textContent =
+            `Ошибка загрузки ${file.name}`;
+        }
+      }
+
+      async function processPDFVolume(file) {
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
+
+        const volumeEntry = {
+          id: file.name.replace('.pdf', ''),
+          fileName: file.name,
+          totalPages: pdf.numPages,
+          processedAt: new Date().toISOString(),
+          pages: [],
+        };
+
+        const worker = await Tesseract.createWorker('rus+ron');
+
+        for (let i = 1; i <= pdf.numPages; i++) {
+          const page = await pdf.getPage(i);
+          const viewport = page.getViewport({ scale: 1.5 });
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+
+          const {
+            data: { text },
+          } = await worker.recognize(canvas);
+
+          volumeEntry.pages.push({
+            index: i,
+            content: text.trim(),
+            timestamp: new Date().toISOString(),
+          });
+        }
+
+        await worker.terminate();
+        masterDatabase.volumes.push(volumeEntry);
+
+        updatePreview();
+        createFileCard(volumeEntry);
+      }
+
+      function updateFilesList() {
+        const html = masterDatabase.evidence_layers
+          .map(
+            (layer) => `
+                <div class="file-card bg-slate-800 rounded-lg p-2 border border-slate-700">
+                    <div class="flex justify-between items-center">
+                        <span class="text-[9px] font-mono text-${layer.format === 'json' ? 'blue' : 'purple'}-400">${layer.id}</span>
+                        <span class="text-[8px] text-slate-500">${layer.format.toUpperCase()}</span>
+                    </div>
+                    <div class="text-[8px] text-slate-600 mt-1">
+                        ${layer.metadata.caseId} • ${layer.files.length} файлов
+                    </div>
+                </div>
+            `,
+          )
+          .join('');
+
+        filesList.innerHTML =
+          html || '<p class="text-[9px] text-slate-600">Файлы не загружены</p>';
+      }
+
+      function createFileCard(volume) {
+        const fileCards = document.getElementById('file-cards');
+        const card = document.createElement('div');
+        card.className =
+          'file-card glass rounded-2xl p-6 border border-slate-800';
+        card.innerHTML = `
+                <h3 class="text-sm font-bold text-white mb-3">${volume.fileName}</h3>
+                <div class="grid grid-cols-2 gap-4 text-xs text-slate-400">
+                    <div>
+                        <span class="text-emerald-500">Страниц:</span> ${volume.totalPages}
+                    </div>
+                    <div>
+                        <span class="text-emerald-500">Обработано:</span> ${new Date(volume.processedAt).toLocaleDateString()}
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <button onclick="analyzeVolume('${volume.id}')" class="bg-indigo-600 hover:bg-indigo-500 text-white text-[9px] font-bold py-2 px-4 rounded-lg transition-all">
+                        Анализировать
+                    </button>
+                </div>
+            `;
+        fileCards.appendChild(card);
+      }
+
+      function mergeEvidence() {
+        // Объединяем все evidence слои с томами
+        const merged = {
+          ...masterDatabase,
+          mergedAt: new Date().toISOString(),
+          totalLayers: masterDatabase.evidence_layers.length,
+          totalVolumes: masterDatabase.volumes.length,
+          mergedContent: {
+            all_files: masterDatabase.evidence_layers.flatMap((l) => l.files),
+            all_metadata: masterDatabase.evidence_layers.map((l) => l.metadata),
+          },
+        };
+
+        updatePreview(merged);
+        aiFeedback.innerHTML = `<span class="text-emerald-400">🔗 Слои объединены: ${masterDatabase.evidence_layers.length} evidence + ${masterDatabase.volumes.length} томов</span>`;
+      }
+
+      function updatePreview(data = null) {
+        jsonPreview.textContent = JSON.stringify(
+          data || masterDatabase,
+          null,
+          2,
+        );
+      }
+
+      function loadJSONFiles() {
+        jsonInput.click();
+      }
+      function loadYAMLFiles() {
+        yamlInput.click();
+      }
+      function loadEvidenceFiles() {
+        jsonInput.click();
+        setTimeout(() => yamlInput.click(), 100);
+      }
+
+      function exportData(format) {
+        let content, blob, ext;
+        if (format === 'json') {
+          content = JSON.stringify(masterDatabase, null, 2);
+          blob = new Blob([content], { type: 'application/json' });
+          ext = 'json';
+        } else {
+          content = jsyaml.dump(masterDatabase);
+          blob = new Blob([content], { type: 'text/yaml' });
+          ext = 'yaml';
+        }
+        saveAs(blob, `maceret_evidence_v16_${Date.now()}.${ext}`);
+      }
+
+      function exportZip() {
+        const zip = new JSZip();
+
+        // Добавляем JSON файлы
+        masterDatabase.evidence_layers.forEach((layer) => {
+          const content =
+            layer.format === 'json'
+              ? JSON.stringify(layer, null, 2)
+              : jsyaml.dump(layer);
+          zip.file(layer.id, content);
+        });
+
+        // Добавляем базу данных
+        zip.file(
+          'master_database.json',
+          JSON.stringify(masterDatabase, null, 2),
+        );
+
+        // Генерируем и сохраняем ZIP
+        zip.generateAsync({ type: 'blob' }).then((blob) => {
+          saveAs(blob, `macheret_evidence_archive_${Date.now()}.zip`);
+        });
+      }
+
+      function clearDatabase() {
+        masterDatabase.volumes = [];
+        masterDatabase.evidence_layers = [];
+        updatePreview();
+        updateFilesList();
+        document.getElementById('file-cards').innerHTML = '';
+        document.getElementById('evidence-status').textContent = 'База очищена';
+      }
+
+      async function analyzeVolume(volumeId) {
+        const volume = masterDatabase.volumes.find((v) => v.id === volumeId);
+        if (!volume) return;
+
+        aiFeedback.innerHTML = `<span class='animate-pulse text-indigo-400'>🤖 Анализ тома ${volumeId}...</span>`;
+
+        // Здесь можно добавить интеграцию с Gemini API
+        setTimeout(() => {
+          aiFeedback.innerHTML = `<b>Анализ тома ${volumeId}:</b><br>
+                - Найдено ${volume.totalPages} страниц<br>
+                - Обнаружены признаки юридического документа<br>
+                - Требуется проверка на подлинность`;
+        }, 2000);
+      }
+
+      // Инициализация
+      updatePreview();
+    </script>
+  </body>
+</html>

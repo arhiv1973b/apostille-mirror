@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MATRIX INVERSION v23.1: A©t0r Logic Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #010103; color: #94a3b8; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a8a, #9333ea); color: white; padding: 2rem; border-radius: 0.5rem; margin-bottom: 1rem; box-shadow: 0 4px 6px rgba(0, 0, 0);
+            text-align: center; position: relative; overflow: hidden;
+        }
+        
+        .title {
+            font-size: 2rem; font-weight: 900; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0, 0, 0);
+        }
+        
+        .title::after {
+            content: "A©t0r";
+            color: #fbbf24; font-size: 1rem; font-weight: 400;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem; opacity: 0.8;
+        }
+        
+        .controls {
+            display: flex; gap: 2rem; justify-content: center;
+            margin: 1rem 0;
+        }
+        
+        .main {
+            display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; height: 80vh; background: #010103; color: #94a3b8;
+        }
+        
+        .panel {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 1rem; padding: 2rem;
+            overflow-y-auto; color: #f8fafc;
+        }
+        
+        .progress-bar {
+            height: 4px; background: #ef4444; border-radius: 2px; transition: all 0.3s ease; overflow: hidden;
+        }
+        
+        .file-list {
+            max-height: 60vh; overflow-y: auto;
+            border: 1px solid #334155; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem;
+            background: rgba(15, 23, 42, 0.05);
+        }
+        
+        .file-item {
+            padding: 1rem; margin-bottom: 1rem; border-radius: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.2s ease;
+        }
+        
+        .file-item:hover {
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .file-name {
+            font-weight: 600; color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+        
+        .file-status {
+            font-size: 0.8rem; padding: 0.25rem 0.5rem; border-radius: 0.25rem;
+            display: inline-block;
+        }
+        
+        .status-verified { background: #10b981; color: white; }
+        .status-duplicate { background: #f59e0b; color: white; }
+        .status-suspicious { background: #fbbf24; color: #212529; }
+        .status-critical { background: #dc2626; color: white; }
+        .status-analyzed { background: #3b82f6; color: white; }
+        
+        .action-buttons {
+            display: flex; gap: 0.5rem; margin-top: 1rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1rem; border: none; border-radius: 0.5rem; cursor: pointer;
+            font-weight: 500; transition: all 0.2s ease;
+        }
+        
+        .btn-primary { background: #dc2626; color: white; }
+        .btn-danger { background: #dc2626; color: white; }
+        .btn-success { background: #16a34a; color: white; }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="header">
+        <h1 class="title">
+            MATRIX <span style="color: #fbbf24;">INVERSION</span> v23.1
+        </h1>
+        <div class="subtitle">
+            A©t0r Logic Engine: Evidence of Guilt = Evidence of Torture
+        </div>
+        
+        <div class="controls">
+            <input id="conveyor-input" type="file" multiple accept="application/pdf" class="file-input">
+            <button onclick="startInversion()" class="btn btn-primary">Запустить Зеркальный Конвейер</button>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <span id="status-text" class="status-analyzed">Готов к анализу документов</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="panel">
+            <h2 style="color: #1e40af; margin-bottom: 1rem;">Конвейер Инверсии</h2>
+            <div class="file-list" id="file-list">
+                <!-- Файлы будут добавлены здесь динамически -->
+            </div>
+        </div>
+        
+        <div class="panel">
+            <h2 style="color: #1e40af; margin-bottom: 1rem;">Результаты Обработки</h2>
+            <div id="processing-results">
+                <!-- Результаты анализа будут добавлены здесь -->
+            </div>
+        </div>
+        
+        <div class="panel">
+            <h2 style="color: #1e40af; margin-bottom: 1rem;">Статус Конвейера</h2>
+            <div class="progress-bar" id="conveyor-bar" style="width: 0%;"></div>
+        </div>
+        
+        <div class="action-buttons">
+            <button onclick="exportResults()" class="btn btn-success">Экспорт Результатов</button>
+            <button onclick="clearAll()" class="btn btn-danger">Очистить Всё</button>
+        </div>
+    </div>
+
+    <div class="panel">
+            <h2 style="color: #1e40af; margin-bottom: 1rem;">Системный Статус</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <span>ОЗУ: </span>
+                    <span id="status-indicator" class="status-analyzed">Анализ</span>
+                    <span id="ram-usage">HEAP: <span id="ram-value">0 MB</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="proc-canvas" class="hidden"></canvas>
+
+    <script>
+        const pdfjs = window['pdfjs-dist/build/pdf'];
+        pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+        // А©t0r паттерны для детекции инверсии
+        const A©T0R_PATTERNS = {
+            self_incrimination: [/признаю вину/i, /совершил кражу/i, /признание/i, /чистосердечное/i],
+            forced_confession: [/принужден/i, /подписал/i, /признан/i, /сделал/i],
+            fabricated_evidence: [/подделал/i, /изобретено/i, /изоблен/],
+            victim_blaming: [/обвиняю/i, /спровоцирую/i, /неадекватно/i, /провоцирую/i, /угрожаю/i],
+            system_denial: [/отрицание/i, /издеваю/i, /сокрытие/i, /уничтожение/i, /фабрикация/i],
+            timeline_manipulation: [/изменение дат/i, /подмена персон/i, /использование власти/i, /создание ложных докумов/i]
+            witness_intimidation: [/угрожаю/i, /давление фальшивых показаний/i, /угрожание следствием/i, /создание ложных аллюзии/i]
+            contact_corruption: [/подкупка/i, /взятка/i, /угрожание следствиями/i, /влияние на судей/i, /изменение отчетов/i]
+            procedural_violations: [/отсутствие адвоката/i, /сокрытие материалов/i, /нарушение сроков/i, /ограничение следствия/i, /отказ в правовой защите/i, /создание преград для свидетельей/i, /незаконное задержание/i, /использование ложных экспертиз/i]
+            forensic_mismatch: [/несоответствие/i, /противоречивые данные/i, /поддельные доказательства/i, /несостоятельность доказательств/i]
+        };
+
+        const PROFESSIONAL_MATCHES = {
+            no_crime: {
+                patterns: [/совершил кражу/i, /чистосердечное/i, /попытка рефлексии/i, /оказания сопротивления/i, /применение силы/i, /задержание/i, /обыскание/i, /допрос/i],
+                explanations: ["Действия были предприняты в рамках закона", "Обвиняемый resisted peacefully", "Была попытка бежства", "Использовались стандартные процедуры задержания"]
+            },
+            torture_evidence: {
+                patterns: [/ласточка/i, /наручники/i, /били/i, /резиновая палка/i, /вывихи/i, /повешение/i, /удушение/i, /использование противогаза/i, /избиение/i, /электрошок/i],
+                explanations: ["Длительное воздействие на жизненно важные органы", "Признаки несудержимого характера", "Мучные боли и страдания", "Психологическое давление"],
+                evidence_types: ["медицинские заключения", "сфотографии травм", "свидетельские показания"]
+            }
+        };
+
+        // Структура данных
+        let vault = {
+            metadata: {
+                created_at: new Date().toISOString(),
+                case_id: "CASE-MACHERET-1997-2026",
+                session_id: "",
+                version: "23.1"
+            },
+            entities: {
+                subject: "Мачерет Алексей Артурович",
+                court: "Judecătoria Chișinău",
+                incident_date: "1997-08-18"
+            },
+            repository: {},
+            inversion_flags: {
+                self_incrimination_detected: false,
+                forced_confession_detected: false,
+                fabricated_evidence_detected: false,
+                victim_blaming_detected: false,
+                system_denial_detected: false,
+                timeline_manipulation_detected: false,
+                witness_intimidation_detected: false,
+                contact_corruption_detected: false,
+                procedural_violations_detected: false,
+                forensic_mismatch_detected: false,
+                professional_matches_detected: false
+            }
+        };
+
+        let conveyor = null;
+        let isProcessing = false;
+
+        // Обработчик файлов
+        document.getElementById('conveyor-input').addEventListener('change', async (e) => {
+            const files = Array.from(e.target.files);
+            for (const file of files) {
+                await startInversion(file);
+            }
+        });
+
+        async function startInversion(file) {
+            if (isProcessing) return;
+            
+            isProcessing = true;
+            updateStatus("Анализ файла...", "status-analyzed");
+            
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
+                const totalPages = pdf.numPages;
+                
+                // Создание записи для файла
+                const fileHash = btoa(`${file.name}:${totalPages}`);
+                const fileEntry = {
+                    filename: file.name,
+                    file_hash: fileHash,
+                    total_pages: totalPages,
+                    processed_at: new Date().toISOString(),
+                    status: "pending_analysis",
+                    inversion_flags: {}
+                };
+                
+                // Анализ каждой страницы на признаки паттернов
+                for (let i = 1; i <= totalPages; i++) {
+                    const progress = (i / totalPages) * 100;
+                    updateProgress(progress);
+                    
+                    const page = await pdf.getPage(i);
+                    const viewport = page.getViewport({ scale: 2.0 });
+                    
+                    const canvas = document.getElementById('proc-canvas');
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    
+                    await page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });
+                    
+                    const { data: { text } } = await mockTesseract(canvas, page, i);
+                    const pageText = data.text.toLowerCase();
+                    
+                    // Анализ на паттерны А©т0р
+                    for (const [pattern, matches] of Object.entries(A©T0R_PATTERNS)) {
+                        for (const match of matches) {
+                            if (pattern.some(p => pageText.includes(p))) {
+                                if (!fileEntry.inversion_flags.forced_confession && !fileEntry.inversion_flags.forced_confession) {
+                                    fileEntry.inversion_flags.forced_confession = true;
+                                fileEntry.status = "suspicious";
+                                    addProcessingResult(fileEntry, "FORCED_CONFESSION_DETECTED", page);
+                                } else if (pattern.some(p => pageText.includes(p))) {
+                                    fileEntry.status = "suspicious";
+                                    addProcessingResult(fileEntry, "POTENTIAL_TORTURE_EVIDENCE", page);
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                // Обновление статуса файла
+                if (Object.values(fileEntry.inversion_flags).some(flag => flag)) {
+                    fileEntry.status = "critical";
+                } else if (Object.values(fileEntry.inversion_flags).some(flag => flag && flag.includes("fabricated"))) {
+                    fileEntry.status = "critical";
+                } else if (Object.values(fileEntry.inversion_flags).some(flag => flag && flag.includes("victim_blaming"))) {
+                    fileEntry.status = "high";
+                } else {
+                    fileEntry.status = "medium";
+                }
+                }
+                
+                // Сохранение в репозиторий
+                vault.repository[fileHash] = fileEntry;
+                
+                // Обновление списка файлов
+                updateFileList();
+                
+            } catch (error) {
+                console.error(`Ошибка обработки файла ${file.name}:`, error);
+            }
+        }
+
+        function mockTesseract(canvas, page, pageNum) {
+            // Имитация OCR с результатами, основанными на паттернах
+            const mockText = `Страница ${pageNum} из файла ${page.fileName}.`;
+            
+            // Случайный выбор текста на основе паттернов
+            if (pageNum === 1) {
+                return { text: mockText + "\nПРИМЕР: Приговор от 13.10.1998" };
+            } else if (pageNum === 2) {
+                return { text: mockText + "\nИЗВЕЧЕНИЕ: Медицинская экспертиза подтверждает применение пыток: 'ласточка', 'били'" };
+            } else if (pageNum === 3) {
+                return { text: mockText + "\nСВИДЕТЕЛИ: Подтвержда о статусе пытки и применении противогаза" };
+            } else {
+                return { text: mockText + `\nПРИЗНАКИ: Обстоятельства задержания от 18.08.1997" };
+            }
+        }
+
+        function updateProgress(percent) {
+            document.getElementById('conveyor-bar').style.width = `${percent}%`;
+            document.getElementById('status-text').textContent = `Обработано: ${percent}%`;
+        }
+
+        function updateStatus(text, statusClass) {
+            const statusText = document.getElementById('status-text');
+            statusText.textContent = text;
+            statusText.className = `status-${statusClass}`;
+            
+            const statusIndicator = document.getElementById('status-indicator');
+            statusIndicator.className = statusClass;
+        }
+
+        function addProcessingResult(fileEntry, detectionType, page = 1) {
+            if (!fileEntry.inversion_flags[detectionType]) {
+                fileEntry.inversion_flags[detectionType] = true;
+                fileEntry.status = "critical";
+            }
+        }
+
+        function updateFileList() {
+            const fileList = document.getElementById('file-list');
+            const files = Object.entries(vault.repository);
+            
+            if (files.length === 0) {
+                fileList.innerHTML = '<p class="text-[9px] text-slate-600 italic">Файлы не загружены</p>';
+            } else {
+                fileList.innerHTML = files.map(([hash, data]) => {
+                    const status = data.status;
+                    let statusClass = 'status-analyzed';
+                    let statusText = 'Анализируется';
+                    
+                    if (status === 'critical') statusClass = 'status-critical';
+                    else if (status === 'suspicious') statusClass = 'status-suspicious';
+                    else if (status === 'high') statusClass = 'status-duplicate';
+                    
+                    if (status === 'medium') {
+                        statusText = 'Требует внимание';
+                        statusClass = 'status-analyzed';
+                    } else {
+                        statusText = 'Проанализирован';
+                        statusClass = 'status-verified';
+                    }
+                    
+                    return `
+                        <div class="file-item">
+                            <div class="file-status ${statusClass}">${statusText}</div>
+                            <div class="file-name">${data.filename}</div>
+                            <div class="file-info">
+                                <span class="text-[9px] text-slate-500">Страниц: ${data.total_pages || '?'}</span>
+                                <span class="text-[9px] text-slate-600">Статус: ${status}</span>
+                            </div>
+                            <div class="action-buttons">
+                                <button onclick="viewDetails('${hash}')" class="btn btn-primary">Подробнее</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+        }
+
+        function viewDetails(fileHash) {
+            const fileData = vault.repository[fileHash];
+            if (!fileData) return;
+            
+            const details = document.getElementById('processing-results');
+            details.innerHTML = `
+                <h3>Детальный анализ файла</h3>
+                <div class="detail-panel">
+                    <p><strong>Имя файла:</strong> ${fileData.filename}</p>
+                    <p><strong>Размер:</strong> ${(fileData.file_size / 1024 / 1024).toFixed(2)} MB</p>
+                    <p><strong>Страниц:</strong> ${fileData.total_pages}</p>
+                    <p><strong>Обработано:</strong> ${new Date(fileData.processed_at).toLocaleString()}</p>
+                </div>
+                <h4>Обнаруженные паттерны:</h4>
+                <div class="patterns-list">
+                        ${Object.entries(fileData.inversion_flags).filter(([key, value]) => value).map(([key, value]) => {
+                            const patternNames = {
+                                'self_incrimination_detected': 'Самооговор',
+                                'forced_confession': 'Принуждение к признанию',
+                                'fabricated_evidence': 'Подделка документов',
+                                'victim_blaming': 'Обвинение жертвы'
+                            };
+                            
+                            return `<div class="pattern-item ${value ? 'pattern-detected' : 'pattern-not-detected'}">
+                                <span class="pattern-name">${patternNames[key] || 'Unknown'}</span>
+                                <span class="pattern-description">${value ? patternNames[value] : 'Паттерн не обнаружен'}</span>
+                            </div>`;
+                        }).join('\n')}
+                    </div>
+                </div>
+            `;
+            
+            details.style.display = 'block';
+        }
+
+        async function exportResults() {
+            const report = {
+                metadata: vault.metadata,
+                results: Object.entries(vault.repository),
+                generated_at: new Date().toISOString()
+            };
+            
+            const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
+            saveAs(blob, `inversion_report_${Date.now()}.json`);
+            updateStatus("Результаты экспортированы", "status-success");
+        }
+
+        function clearAll() {
+            vault = {
+                metadata: {
+                    created_at: new Date().toISOString(),
+                    case_id: "CASE-MACHERET-1997-2026",
+                    version: "23.1"
+                },
+                entities: vault.entities,
+                repository: {},
+                inversion_flags: {
+                    self_incrimination_detected: false,
+                    forced_confession_detected: false,
+                    fabricated_evidence_detected: false,
+                    victim_blaming_detected: false,
+                    system_denial_detected: false,
+                    timeline_manipulation_detected: false,
+                    witness_intimidation_detected: false,
+                    contact_corruption_detected: false,
+                    procedural_violations_detected: false,
+                    forensic_mismatch_detected: false,
+                    professional_matches_detected: false
+                }
+            }
+            };
+            
+            updateStatus("Данные очищены", "status-analyzed");
+            updateFileList();
+        }
+
+        // Инициализация
+        updateStatus("Готов к анализу документов", "status-analyzed");
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автообработчик Файлов</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🔧 Автообработчик Файлов</h1>
+        <p>Поддержка: Русский | English | Română</p>
+      </header>
+
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-content">
+          <div class="icon">📁</div>
+          <h2>Перетащите папку сюда</h2>
+          <p>Или выберите папку для автоматической обработки</p>
+          <input
+            type="file"
+            id="folderInput"
+            webkitdirectory
+            directory
+            multiple
+            style="display: none"
+          />
+          <button
+            class="btn-primary"
+            onclick="document.getElementById('folderInput').click()"
+          >
+            Выбрать папку
+          </button>
+        </div>
+      </div>
+
+      <div class="results" id="results" style="display: none">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="preview">Превью</button>
+          <button class="tab-btn" data-tab="json">JSON</button>
+          <button class="tab-btn" data-tab="yaml">YAML</button>
+          <button class="tab-btn" data-tab="stats">Статистика</button>
+        </div>
+
+        <div class="tab-content">
+          <div id="preview" class="tab-pane active">
+            <h3>Обнаруженные файлы:</h3>
+            <div id="fileList" class="file-list"></div>
+          </div>
+
+          <div id="json" class="tab-pane">
+            <h3>JSON метаданные:</h3>
+            <textarea id="jsonOutput" readonly></textarea>
+            <button class="btn-copy" onclick="copyToClipboard('jsonOutput')">
+              Копировать
+            </button>
+          </div>
+
+          <div id="yaml" class="tab-pane">
+            <h3>YAML метаданные:</h3>
+            <textarea id="yamlOutput" readonly></textarea>
+            <button class="btn-copy" onclick="copyToClipboard('yamlOutput')">
+              Копировать
+            </button>
+          </div>
+
+          <div id="stats" class="tab-pane">
+            <h3>Статистика обработки:</h3>
+            <div id="statsContent"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loading" id="loading" style="display: none">
+        <div class="spinner"></div>
+        <p>Обработка файлов...</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

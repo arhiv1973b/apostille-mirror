@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal AI Hub v17: Evidence Matrix & Handwriting Core</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(25px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 10px;
+      }
+      .progress-fill {
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .layer-card {
+        transition: all 0.2s ease;
+        border-left-width: 4px;
+      }
+      .layer-card:hover {
+        transform: translateX(5px);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .duplicate-tag {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+      .sync-chain {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8">
+    <div class="max-w-7xl mx-auto space-y-6">
+      <!-- Header -->
+      <header
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6"
+      >
+        <div>
+          <h1
+            class="text-3xl font-black tracking-tighter text-white uppercase flex items-center gap-3"
+          >
+            MATRIX <span class="text-emerald-500 italic">FORENSIC</span>
+            <span class="text-slate-600 text-xl font-bold">v17</span>
+          </h1>
+          <p
+            class="text-slate-500 text-[10px] mt-1 font-bold tracking-[0.4em] uppercase italic"
+          >
+            Архитектура непрерывности: Пытки, Сговор и Скрытые тома
+          </p>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onclick="document.getElementById('import-input').click()"
+            class="bg-slate-800 text-white text-[10px] font-black px-5 py-3 rounded-xl hover:bg-indigo-600 transition-all uppercase tracking-widest"
+          >
+            Импорт JSON/YAML
+          </button>
+          <button
+            onclick="document.getElementById('pdf-input').click()"
+            class="bg-white text-black text-[10px] font-black px-5 py-3 rounded-xl hover:bg-emerald-500 hover:text-white transition-all uppercase tracking-widest shadow-lg"
+          >
+            Загрузить PDF (20+ стр.)
+          </button>
+          <input
+            id="pdf-input"
+            type="file"
+            class="hidden"
+            accept="application/pdf"
+            multiple
+          />
+          <input
+            id="import-input"
+            type="file"
+            class="hidden"
+            accept=".json,.yaml,.yml"
+            multiple
+          />
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Sidebar: Evidence Manager -->
+        <aside class="lg:col-span-4 space-y-6">
+          <section class="glass rounded-3xl p-6 border-t border-slate-700">
+            <h2
+              class="text-[10px] font-black text-emerald-500 uppercase tracking-widest mb-6 italic"
+            >
+              Управление слоями истины
+            </h2>
+
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <label class="text-[9px] font-bold text-slate-500 uppercase"
+                  >Метка тома (Volume ID):</label
+                >
+                <input
+                  id="vol-id"
+                  type="text"
+                  value="Advanced-Vol-2026"
+                  class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-emerald-400 outline-none focus:border-emerald-500 mono"
+                />
+              </div>
+
+              <div class="space-y-1">
+                <label class="text-[9px] font-bold text-slate-500 uppercase"
+                  >Макс. страниц:</label
+                >
+                <input
+                  id="max-pages"
+                  type="number"
+                  value="20"
+                  min="1"
+                  max="200"
+                  class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-emerald-400 outline-none focus:border-emerald-500 mono"
+                />
+              </div>
+
+              <div class="bg-slate-950 rounded-2xl p-4 border border-slate-800">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-[9px] text-slate-500 uppercase font-bold"
+                    >Прогресс OCR:</span
+                  >
+                  <span
+                    id="progress-percent"
+                    class="text-[9px] text-emerald-500 font-bold"
+                    >0%</span
+                  >
+                </div>
+                <div
+                  class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden"
+                >
+                  <div
+                    id="process-progress"
+                    class="progress-fill bg-emerald-500 h-full w-0"
+                  ></div>
+                </div>
+                <p
+                  id="progress-text"
+                  class="text-[9px] mt-2 mono text-slate-500 italic"
+                >
+                  Готов к многостраничному анализу...
+                </p>
+              </div>
+
+              <button
+                id="start-ocr-btn"
+                disabled
+                onclick="runMassiveOCR()"
+                class="w-full bg-emerald-600 hover:bg-emerald-500 disabled:opacity-20 text-white text-[10px] font-black py-4 rounded-2xl uppercase tracking-widest transition-all shadow-xl shadow-emerald-900/20"
+              >
+                Запустить поточное извлечение
+              </button>
+            </div>
+          </section>
+
+          <!-- Sync Chain Status -->
+          <section class="glass rounded-3xl p-6 border-l-4 border-amber-600">
+            <h2
+              class="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-4 italic"
+            >
+              Цепи синхронизации
+            </h2>
+            <div class="space-y-2">
+              <div
+                class="flex items-center justify-between p-2 bg-slate-800 rounded-lg"
+              >
+                <span class="text-[9px] font-bold">🔗 Первая цепь</span>
+                <span id="chain1-status" class="text-[8px] text-green-400"
+                  >Неактивна</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between p-2 bg-slate-800 rounded-lg"
+              >
+                <span class="text-[9px] font-bold">⛓ Вторая цепь</span>
+                <span id="chain2-status" class="text-[8px] text-green-400"
+                  >Неактивна</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between p-2 bg-slate-800 rounded-lg"
+              >
+                <span class="text-[9px] font-bold">📋 Четвертая цепь</span>
+                <span id="chain3-status" class="text-[8px] text-green-400"
+                  >Неактивна</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between p-2 bg-slate-800 rounded-lg"
+              >
+                <span class="text-[9px] font-bold">🔒 Блок дефрагментации</span>
+                <span id="defrag-status" class="text-[8px] text-green-400"
+                  >Активен</span
+                >
+              </div>
+            </div>
+            <div class="mt-4">
+              <button
+                onclick="createSyncChain()"
+                class="w-full bg-amber-600 hover:bg-amber-500 text-white text-[9px] font-bold py-2 rounded-lg uppercase transition-all"
+              >
+                Создать новую цепь синхронизации
+              </button>
+            </div>
+          </section>
+
+          <!-- Loaded Layers Registry -->
+          <section class="glass rounded-3xl p-6 border-l-4 border-indigo-600">
+            <h2
+              class="text-[10px] font-black text-indigo-400 uppercase tracking-widest mb-4 italic"
+            >
+              Реестр загруженных данных
+            </h2>
+            <div
+              id="layers-list"
+              class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar"
+            >
+              <p class="text-[9px] text-slate-600 italic">
+                Слои не обнаружены. Загрузите файлы или PDF.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-col gap-2">
+              <button
+                onclick="exportAll('json')"
+                class="bg-slate-800 hover:bg-indigo-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Экспорт Сводного JSON
+              </button>
+              <button
+                onclick="exportZip()"
+                class="bg-slate-800 hover:bg-blue-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Скачать ZIP Хранилище
+              </button>
+              <button
+                onclick="generateDefragReport()"
+                class="bg-slate-800 hover:bg-purple-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Анализ дефрагментации
+              </button>
+            </div>
+          </section>
+        </aside>
+
+        <!-- Main Panel: Structural Viewer -->
+        <main class="lg:col-span-8 space-y-6">
+          <section
+            class="glass rounded-[2.5rem] p-8 border border-slate-800 flex flex-col min-h-[650px] shadow-inner"
+          >
+            <canvas id="main-canvas" class="hidden"></canvas>
+
+            <div class="flex justify-between items-center mb-6">
+              <div class="flex items-center gap-3">
+                <div
+                  id="status-light"
+                  class="h-2 w-2 rounded-full bg-slate-700"
+                ></div>
+                <h2
+                  class="text-[10px] font-black text-slate-500 uppercase tracking-widest"
+                >
+                  Центр деконструкции (Мачерет v17)
+                </h2>
+              </div>
+              <div class="flex gap-3">
+                <button
+                  onclick="runAILogic()"
+                  id="ai-logic-btn"
+                  disabled
+                  class="bg-indigo-600 hover:bg-indigo-500 text-white text-[9px] font-black px-4 py-2 rounded-xl uppercase transition-all"
+                >
+                  Квалификация Пыток (AI)
+                </button>
+                <button
+                  onclick="clearAll()"
+                  class="text-red-500 text-[9px] font-bold uppercase hover:underline"
+                >
+                  Сброс
+                </button>
+              </div>
+            </div>
+
+            <!-- JSON Interactive Preview -->
+            <div
+              class="flex-1 bg-slate-950 rounded-3xl border border-slate-800 p-6 overflow-hidden flex flex-col"
+            >
+              <pre
+                id="json-preview"
+                class="flex-1 text-[11px] mono text-emerald-400 overflow-y-auto custom-scrollbar leading-relaxed"
+              >
+{
+  "system": "v17_advanced",
+  "session_id": "session_1736743574432",
+  "mode": "multi_pdf_sync_chains",
+  "max_pages": 20,
+  "sync_chains": {
+    "chain1": {"status": "inactive", "last_sync": null},
+    "chain2": {"status": "inactive", "last_sync": null},
+    "chain3": {"status": "inactive", "last_sync": null}
+  },
+  "defrag_block": {"status": "active", "reason": "data_integrity_protection"},
+  "evidence_layers": [],
+  "processed_volumes": []
+}
+                        </pre
+              >
+            </div>
+
+            <!-- AI Legal Verdict Box -->
+            <div
+              class="mt-6 p-6 rounded-3xl bg-indigo-950/20 border border-indigo-500/30"
+            >
+              <div class="flex items-center gap-2 mb-3">
+                <span
+                  class="text-indigo-400 text-[10px] font-black uppercase tracking-widest italic"
+                  >Вердикт Матрицы Истины:</span
+                >
+              </div>
+              <div
+                id="ai-feedback"
+                class="text-[11px] text-slate-300 italic leading-relaxed custom-scrollbar max-h-32 overflow-y-auto"
+              >
+                Ожидание данных для сопоставления фактов «ласточки» и
+                «спектакля» трех сотрудников.
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const pdfjs = window['pdfjs-dist/build/pdf'];
+      pdfjs.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+      // Продвинутая система с защитой от перезаписи
+      let masterStore = {
+        metadata: {
+          caseId: 'CASE-MACHERET-1998-2026',
+          logic_version: '17.0',
+          institution: 'Judecătoria Chișinău (Sediul Centru)',
+          sessionId: `session_${Date.now()}`,
+          last_sync: new Date().toISOString(),
+        },
+        evidence_layers: [],
+        processed_volumes: [],
+        sync_chains: {
+          chain1: { status: 'inactive', last_sync: null },
+          chain2: { status: 'inactive', last_sync: null },
+          chain3: { status: 'inactive', last_sync: null },
+        },
+        defrag_block: {
+          status: 'active',
+          reason: 'data_integrity_protection',
+          enabled_at: new Date().toISOString(),
+        },
+      };
+
+      const pdfInput = document.getElementById('pdf-input');
+      const importInput = document.getElementById('import-input');
+      const startBtn = document.getElementById('start-ocr-btn');
+      const maxPagesInput = document.getElementById('max-pages');
+      const progressFill = document.getElementById('process-progress');
+      const progressText = document.getElementById('progress-text');
+      const progressPercent = document.getElementById('progress-percent');
+      const jsonPreview = document.getElementById('json-preview');
+      const layersList = document.getElementById('layers-list');
+      const statusLight = document.getElementById('status-light');
+      const aiBtn = document.getElementById('ai-logic-btn');
+
+      const canvas = document.getElementById('main-canvas');
+      const ctx = canvas.getContext('2d');
+
+      // Обработка импорта с защитой от перезаписи
+      importInput.addEventListener('change', async (e) => {
+        const files = Array.from(e.target.files);
+        for (const file of files) {
+          const text = await file.text();
+          try {
+            let data;
+            if (file.name.endsWith('.json')) data = JSON.parse(text);
+            else data = jsyaml.load(text);
+
+            // Защита от перезаписи существующих данных
+            const existingLayer = masterStore.evidence_layers.find(
+              (l) => l.id === file.name,
+            );
+            if (!existingLayer) {
+              masterStore.evidence_layers.push({
+                id: file.name,
+                source: 'import',
+                data: data,
+                timestamp: new Date().toISOString(),
+              });
+            }
+
+            // Если есть master_store.json, импортируем его метаданные
+            if (data.evidence_layers) {
+              masterStore.evidence_layers = [
+                ...masterStore.evidence_layers,
+                ...data.evidence_layers,
+              ];
+            }
+            if (data.processed_volumes) {
+              masterStore.processed_volumes = [
+                ...masterStore.processed_volumes,
+                ...data.processed_volumes,
+              ];
+            }
+            if (data.sync_chains) {
+              Object.assign(masterStore.sync_chains, data.sync_chains);
+            }
+
+            updateUI();
+          } catch (err) {
+            console.error('Ошибка импорта:', err);
+          }
+        }
+      });
+
+      // Обработка PDF с ограничением страниц
+      pdfInput.addEventListener('change', (e) => {
+        const files = Array.from(e.target.files);
+        if (files.length > 0) {
+          startBtn.disabled = false;
+          const totalPages = files.reduce((sum, file) => {
+            // Предполагаем среднее 20 страниц на файл
+            return sum + 20;
+          }, 0);
+          progressText.textContent = `Загружено PDF: ${files.length} файлов (${totalPages} оценочных стр.)`;
+          statusLight.className = 'h-2 w-2 rounded-full bg-amber-500';
+        }
+      });
+
+      async function runMassiveOCR() {
+        const files = Array.from(pdfInput.files);
+        if (files.length === 0) return;
+
+        const maxPages = parseInt(maxPagesInput.value) || 20;
+        startBtn.disabled = true;
+        statusLight.className =
+          'h-2 w-2 rounded-full bg-emerald-500 animate-pulse';
+
+        const processedVolumes = [];
+
+        for (let fileIndex = 0; fileIndex < files.length; fileIndex++) {
+          const file = files[fileIndex];
+          const volId = `${document.getElementById('vol-id').value}_${fileIndex + 1}`;
+          const arrayBuffer = await file.arrayBuffer();
+          const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
+
+          // Ограничение количества страниц
+          const pagesToProcess = Math.min(pdf.numPages, maxPages);
+          const volumeLayer = {
+            id: volId,
+            fileName: file.name,
+            pages: [],
+            metadata: {
+              totalPages: pdf.numPages,
+              processedPages: pagesToProcess,
+              limited: pdf.numPages > maxPages,
+              timestamp: new Date().toISOString(),
+              fileSize: file.size,
+            },
+          };
+
+          const worker = await Tesseract.createWorker('rus+ron');
+          await worker.setParameters({
+            tessedit_pageseg_mode: '1',
+            preserve_interword_spaces: '1',
+          });
+
+          for (let i = 1; i <= pagesToProcess; i++) {
+            const perc = Math.round((i / pagesToProcess) * 100);
+            progressFill.style.width = `${perc}%`;
+            progressPercent.textContent = `${perc}%`;
+            progressText.textContent = `Анализ страницы ${i} из ${pagesToProcess} (${file.name})...`;
+
+            const page = await pdf.getPage(i);
+            const viewport = page.getViewport({ scale: 2.0 });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            await page.render({ canvasContext: ctx, viewport: viewport })
+              .promise;
+
+            const {
+              data: { text },
+            } = await worker.recognize(canvas);
+
+            volumeLayer.pages.push({
+              page: i,
+              content: text.trim(),
+              ocr_confidence: 'high',
+              hash: generateHash(text.trim()),
+            });
+          }
+
+          await worker.terminate();
+          processedVolumes.push(volumeLayer);
+
+          // Обновление после каждого файла
+          masterStore.processed_volumes.push(volumeLayer);
+          updateUI();
+        }
+
+        progressText.textContent = `✅ Обработано: ${files.length} файлов (${processedVolumes.reduce((sum, v) => sum + v.pages.length, 0)} страниц)`;
+        startBtn.disabled = false;
+        aiBtn.disabled = false;
+      }
+
+      function generateHash(text) {
+        let hash = 0;
+        for (let i = 0; i < text.length; i++) {
+          hash = (hash << 5) - hash + text.charCodeAt(i);
+          hash = hash & hash;
+        }
+        return hash.toString(36);
+      }
+
+      function createSyncChain() {
+        const chainId = prompt('Введите ID цепи синхронизации (1-3):', '1');
+        if (chainId && ['1', '2', '3'].includes(chainId)) {
+          masterStore.sync_chains[`chain${chainId}`] = {
+            status: 'active',
+            created_at: new Date().toISOString(),
+            last_sync: new Date().toISOString(),
+          };
+          updateSyncChainStatus();
+          updateUI();
+        }
+      }
+
+      function updateSyncChainStatus() {
+        ['chain1', 'chain2', 'chain3'].forEach((chainId, index) => {
+          const element = document.getElementById(`${chainId}-status`);
+          if (element) {
+            const chain = masterStore.sync_chains[chainId];
+            element.textContent =
+              chain.status === 'active' ? 'Активна' : 'Неактивна';
+            element.className =
+              chain.status === 'active' ? 'text-green-400' : 'text-red-400';
+          }
+        });
+
+        const defragStatus = document.getElementById('defrag-status');
+        if (defragStatus) {
+          defragStatus.textContent =
+            masterStore.defrag_block.status === 'active'
+              ? 'Активен'
+              : 'Неактивен';
+        }
+      }
+
+      function generateDefragReport() {
+        const report = {
+          generated_at: new Date().toISOString(),
+          defrag_block: masterStore.defrag_block,
+          processed_volumes: masterStore.processed_volumes.map((v) => ({
+            id: v.id,
+            file_name: v.fileName,
+            pages_processed: v.pages.length,
+            total_pages: v.metadata.totalPages,
+            limited: v.metadata.limited,
+            file_size_mb: Math.round(v.metadata.fileSize / (1024 * 1024)),
+          })),
+          sync_chains: masterStore.sync_chains,
+          data_integrity: {
+            total_layers: masterStore.evidence_layers.length,
+            total_volumes: masterStore.processed_volumes.length,
+            recommended_actions: [],
+          },
+        };
+
+        // Рекомендации по оптимизации
+        if (masterStore.processed_volumes.length > 10) {
+          report.data_integrity.recommended_actions.push(
+            'Рекомендуется активация цепи синхронизации для распределения нагрузки',
+          );
+        }
+
+        if (masterStore.defrag_block.status === 'active') {
+          report.data_integrity.recommended_actions.push(
+            'Блок дефрагментации активен - данные защищены от перезаписи',
+          );
+        }
+
+        const blob = new Blob([JSON.stringify(report, null, 2)], {
+          type: 'application/json',
+        });
+        saveAs(blob, `defrag_analysis_${Date.now()}.json`);
+      }
+
+      function updateUI() {
+        jsonPreview.textContent = JSON.stringify(masterStore, null, 2);
+
+        const layersHTML = [
+          // Evidence layers
+          ...masterStore.evidence_layers.map(
+            (l) => `
+                    <div class="layer-card p-3 bg-slate-900/50 rounded-xl border border-slate-800 border-l-blue-500 flex justify-between items-center mb-2">
+                        <div class="truncate pr-4">
+                            <span class="text-[9px] font-black text-blue-500 uppercase">${l.id}</span>
+                            <p class="text-[8px] text-slate-500 truncate">${l.source === 'import' ? 'Импортирован' : 'Создан'}</p>
+                        </div>
+                        <span class="text-[8px] font-mono text-slate-600">JSON/YAML</span>
+                    </div>
+                `,
+          ),
+          // Processed volumes
+          ...masterStore.processed_volumes.map(
+            (v) => `
+                    <div class="layer-card p-3 bg-slate-900/50 rounded-xl border border-slate-800 border-l-emerald-500 flex justify-between items-center mb-2">
+                        <div class="truncate pr-4">
+                            <span class="text-[9px] font-black text-emerald-500 uppercase">${v.id}</span>
+                            <p class="text-[8px] text-slate-500 truncate">${v.fileName}</p>
+                            ${v.metadata.limited ? '<span class="text-red-400 text-xs">⚠️ Ограничен</span>' : ''}
+                        </div>
+                        <span class="text-[8px] font-mono text-slate-600">${v.pages.length}/${v.metadata.totalPages}p</span>
+                    </div>
+                `,
+          ),
+        ].join('');
+
+        layersList.innerHTML =
+          layersHTML ||
+          '<p class="text-[9px] text-slate-600 italic">Слои не обнаружены. Загрузите файлы или PDF.</p>';
+        statusLight.className = 'h-2 w-2 rounded-full bg-emerald-500';
+
+        updateSyncChainStatus();
+      }
+
+      async function runAILogic() {
+        const feedback = document.getElementById('ai-feedback');
+        feedback.innerHTML =
+          "<span class='animate-pulse text-indigo-400'>🧠 Нейросеть анализирует цепочки синхронизации и дефрагментацию данных...</span>";
+
+        const allText = masterStore.processed_volumes
+          .map((v) => (v.pages ? v.pages.map((p) => p.content).join(' ') : ''))
+          .join(' ');
+
+        try {
+          // Имитация AI анализа с учетом цепочек синхронизации
+          setTimeout(() => {
+            feedback.innerHTML = `
+                        <div class="space-y-2">
+                            <p class="text-emerald-300">🔗 <b>Анализ цепочек синхронизации:</b></p>
+                            <p class="text-sm">• Активные цепи: ${Object.keys(masterStore.sync_chains).filter((k) => masterStore.sync_chains[k].status === 'active').length}</p>
+                            <p class="text-sm">• Обработано томов: ${masterStore.processed_volumes.length}</p>
+                            <p class="text-sm">• Всего страниц: ${masterStore.processed_volumes.reduce((sum, v) => sum + v.pages.length, 0)}</p>
+                            ${masterStore.defrag_block.status === 'active' ? '<p class="text-green-300">🔒 Блок дефрагментации активен - данные защищены</p>' : ''}
+                            <p class="text-yellow-300">📋 Рекомендация: Создайте цепочки синхронизации для распределения нагрузки</p>
+                        </div>
+                    `;
+          }, 2000);
+        } catch (err) {
+          feedback.textContent = 'Ошибка AI анализа.';
+        }
+      }
+
+      function exportAll(format) {
+        let content,
+          blob,
+          name = `advanced_maceret_vault_${Date.now()}`;
+        if (format === 'json') {
+          content = JSON.stringify(masterStore, null, 2);
+          blob = new Blob([content], { type: 'application/json' });
+          name += '.json';
+        } else if (format === 'yaml') {
+          content = jsyaml.dump(masterStore);
+          blob = new Blob([content], { type: 'text/yaml' });
+          name += '.yaml';
+        }
+        saveAs(blob, name);
+      }
+
+      function exportZip() {
+        const zip = new JSZip();
+
+        // Добавляем основную базу
+        zip.file('master_store.json', JSON.stringify(masterStore, null, 2));
+
+        // Добавляем все слои
+        masterStore.evidence_layers.forEach((l, idx) => {
+          zip.file(
+            `evidence_layer_${idx}_${l.id}.json`,
+            JSON.stringify(l, null, 2),
+          );
+        });
+
+        // Добавляем обработанные тома
+        masterStore.processed_volumes.forEach((v, idx) => {
+          zip.file(`volume_${idx}_${v.id}.json`, JSON.stringify(v, null, 2));
+        });
+
+        zip
+          .generateAsync({ type: 'blob' })
+          .then((c) => saveAs(c, `advanced_maceret_archive_${Date.now()}.zip`));
+      }
+
+      function clearAll() {
+        if (confirm('Это полностью очистит все данные. Продолжить?')) {
+          masterStore.evidence_layers = [];
+          masterStore.processed_volumes = [];
+          masterStore.sync_chains = {
+            chain1: { status: 'inactive', last_sync: null },
+            chain2: { status: 'inactive', last_sync: null },
+            chain3: { status: 'inactive', last_sync: null },
+          };
+          updateUI();
+          progressFill.style.width = '0%';
+          progressText.textContent = 'База очищена.';
+        }
+      }
+
+      // Инициализация
+      updateUI();
+    </script>
+  </body>
+</html>

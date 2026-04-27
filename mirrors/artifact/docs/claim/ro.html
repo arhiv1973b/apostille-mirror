@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acțiune Civilă — Macheret împotriva Republicii Moldova</title>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+body{background:#09090f;color:#d4cfc5;font-family:'Georgia',serif;max-width:860px;margin:0 auto;padding:2rem 1.5rem 4rem;line-height:1.7}
+h1,h2,h3{font-family:'Georgia',serif;color:#fff}
+h1{font-size:2rem;border-bottom:2px solid #c8a84b;padding-bottom:.5rem;margin-bottom:1.5rem}
+h2{font-size:1.4rem;color:#c8a84b;margin-top:2rem;border-left:3px solid #c8a84b;padding-left:.75rem}
+h3{font-size:1.1rem;color:#4b9fc8;margin-top:1.5rem}
+strong{color:#c8a84b}
+em{color:#a78bfa}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}
+th{background:#1c1e2e;color:#c8a84b;padding:.6rem 1rem;text-align:left;font-family:monospace;font-size:11px;letter-spacing:1px}
+td{padding:.6rem 1rem;border-bottom:1px solid #1c1e2e;vertical-align:top}
+tr:hover td{background:#111318}
+a{color:#4b9fc8}
+hr{border:none;border-top:1px solid #1c1e2e;margin:1.5rem 0}
+code{background:#111318;padding:2px 6px;font-family:monospace;color:#3dba7e}
+blockquote{border-left:3px solid #c8a84b;padding:.5rem 1rem;margin:1rem 0;color:#888;font-style:italic}
+nav{display:flex;gap:.75rem;margin-bottom:2rem;flex-wrap:wrap}
+nav a{font-family:monospace;font-size:10px;letter-spacing:2px;color:#6b7280;text-decoration:none;padding:4px 10px;border:1px solid #1c1e2e}
+nav a:hover{color:#c8a84b;border-color:rgba(200,168,75,.3)}
+.warn{background:#120a0a;border:1px solid #e05252;border-left:4px solid #e05252;padding:1rem 1.5rem;margin-bottom:1.5rem;font-size:.9rem;color:#e05252;font-family:monospace}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../../index.html">← Главная</a>
+  <a href="ru.html">RU</a>
+  <a href="en.html">EN</a>
+  <a href="ro.html">RO</a>
+</nav>
+<div class="warn">⚠ ЮРИДИЧЕСКИЙ ДОКУМЕНТ · LEGAL DOCUMENT · DOCUMENT JURIDIC — Document juridic. Pârât (Art. 21/1 Legea 1545/1995): Ministerul Finanțelor propriu: Ministerul Finanțelor. Ministerul Finanțelor = parte intervenientă necorespunzătoare.</div>
+<div id="content">Загрузка...</div>
+<script>
+fetch('ro.html')
+  .then(r => r.text())
+  .then(text => {
+    document.getElementById('content').innerHTML = marked.parse(text);
+  })
+  .catch(() => {
+    document.getElementById('content').innerHTML = '<p style="color:#e05252">Ошибка загрузки документа</p>';
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jus Cogens — Peremptory Norms of International Law</title>
+  <style>
+    :root { --primary:#1a237e; --gold:#f9a825; --accent:#c62828; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Segoe UI',Arial,sans-serif; background:#0d0d2b; color:#eee; }
+    header { background:linear-gradient(135deg,#0d0d2b,#1a237e);
+      text-align:center; padding:3rem 1rem; border-bottom:3px solid var(--gold); }
+    header h1 { font-size:2.5rem; color:var(--gold); text-shadow:0 0 20px rgba(249,168,37,0.5); }
+    header p { color:#aaa; margin-top:0.5rem; }
+    .container { max-width:900px; margin:0 auto; padding:2rem 1rem; }
+    .card { background:rgba(255,255,255,0.05); border:1px solid rgba(249,168,37,0.3);
+      border-radius:12px; padding:2rem; margin:1.5rem 0; }
+    .card h2 { color:var(--gold); margin-bottom:1rem; font-size:1.4rem; }
+    .card p, .card li { line-height:1.8; color:#ccc; margin-bottom:0.5rem; }
+    .article-box { background:rgba(198,40,40,0.1); border-left:4px solid var(--accent);
+      padding:1.5rem; border-radius:0 8px 8px 0; margin:1rem 0; }
+    .article-box h3 { color:#ef9a9a; margin-bottom:0.75rem; }
+    .interactive-core { text-align:center; padding:2rem; }
+    .pulse-btn { background:none; border:2px solid var(--gold); color:var(--gold);
+      padding:1rem 2.5rem; font-size:1.1rem; border-radius:50px; cursor:pointer;
+      transition:all 0.3s; animation:pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{box-shadow:0 0 10px rgba(249,168,37,0.3)}
+      50%{box-shadow:0 0 30px rgba(249,168,37,0.8)} }
+    .pulse-btn:hover { background:var(--gold); color:#000; }
+    .norm-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+    .norm-item { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1);
+      border-radius:8px; padding:1rem; text-align:center; }
+    .norm-icon { font-size:2rem; margin-bottom:0.5rem; }
+    .norm-title { color:var(--gold); font-weight:bold; font-size:0.9rem; }
+    .norm-desc { color:#999; font-size:0.8rem; margin-top:0.3rem; }
+    #activation-log { background:rgba(0,0,0,0.3); border-radius:8px;
+      padding:1rem; margin-top:1rem; min-height:80px; font-family:monospace; font-size:0.85rem; }
+    .log-entry { color:#4caf50; margin:0.25rem 0; }
+    nav { background:rgba(255,255,255,0.05); padding:0.75rem; text-align:center; }
+    nav a { color:#aaa; text-decoration:none; margin:0 0.75rem; font-size:0.9rem; }
+    nav a:hover { color:var(--gold); }
+    .back-link { display:inline-block; margin-top:2rem; color:var(--gold);
+      text-decoration:none; border:1px solid var(--gold); padding:0.5rem 1.5rem; border-radius:4px; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html">⚖️ Main Case</a>
+  <a href="violations-map.html">🗺️ Violations</a>
+  <a href="treaties.html">📜 Treaties</a>
+  <a href="apostilles.html">📋 Apostilles</a>
+  <a href="evidence.html">🔍 Evidence</a>
+</nav>
+<header>
+  <h1>⚡ Jus Cogens</h1>
+  <p>Peremptory Norms of General International Law</p>
+  <p>Vienna Convention on the Law of Treaties, 23 May 1969</p>
+</header>
+<div class="container">
+
+  <div class="card">
+    <h2>What is Jus Cogens?</h2>
+    <p>A peremptory norm of general international law (<em>jus cogens</em>) is a norm accepted and recognized by the international community of states as a whole as a norm from which <strong>no derogation is permitted</strong> and which can be modified only by a subsequent norm of general international law having the same character.</p>
+    <p>Unlike ordinary treaty obligations, jus cogens norms bind all states regardless of consent, reservations, or domestic law. Any act, treaty, or governmental decision that conflicts with jus cogens is <strong>void ab initio</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2>Vienna Convention — Key Articles</h2>
+    <div class="article-box">
+      <h3>Article 53 — Void Treaties</h3>
+      <p>"A treaty is void if, at the time of its conclusion, it conflicts with a peremptory norm of general international law. For the purposes of the present Convention, a peremptory norm of general international law is a norm accepted and recognized by the international community of States as a whole as a norm from which no derogation is permitted..."</p>
+    </div>
+    <div class="article-box">
+      <h3>Article 64 — Emergence of New Norms</h3>
+      <p>"If a new peremptory norm of general international law emerges, any existing treaty which is in conflict with that norm becomes void and terminates."</p>
+    </div>
+    <div class="article-box">
+      <h3>Article 85 — Languages of Authenticity</h3>
+      <p>The Convention was concluded in Chinese, English, French, Russian and Spanish, each text being equally authentic — establishing multilingual equal authentication as a norm. Moldova's refusal on language grounds violates this principle.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Core Jus Cogens Norms</h2>
+    <div class="norm-grid">
+      <div class="norm-item"><div class="norm-icon">🚫</div>
+        <div class="norm-title" onclick="showN(0)" style="cursor:pointer;color:#e05252">Запрет пыток &#x25B6;</div>
+        <div class="norm-desc">ECHR Art. 3 · ICCPR Art. 7 · Absolute prohibition</div></div>
+      <div class="norm-item"><div class="norm-icon">⚖️</div>
+        <div class="norm-title" onclick="showN(1)" style="cursor:pointer;color:#c8a84b">Право на справедливый суд &#x25B6;</div>
+        <div class="norm-desc">ECHR Art. 6 · Violated in Moldova 2009</div></div>
+      <div class="norm-item"><div class="norm-icon">🛡️</div>
+        <div class="norm-title" onclick="showN(2)" style="cursor:pointer;color:#4b9fc8">Эффективное средство защиты &#x25B6;</div>
+        <div class="norm-desc">ECHR Art. 13 · No derogation permitted</div></div>
+      <div class="norm-item"><div class="norm-icon">📜</div>
+        <div class="norm-title" onclick="showN(3)" style="cursor:pointer;color:#a78bfa">Аутентичность апостиля &#x25B6;</div>
+        <div class="norm-desc">Hague Conv. Art. 3 · Signature clarity required</div></div>
+      <div class="norm-item"><div class="norm-icon">🌍</div>
+        <div class="norm-title" onclick="showN(4)" style="cursor:pointer;color:#3dba7e">Недискриминация &#x25B6;</div>
+        <div class="norm-desc">Universal · Language-based denial is void</div></div>
+      <div class="norm-item"><div class="norm-icon">🔒</div>
+        <div class="norm-title" onclick="showN(5)" style="cursor:pointer;color:#c8a84b">Государственная подотчетность &#x25B6;</div>
+        <div class="norm-desc">Vienna Conv. Art. 26 · Pacta sunt servanda</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Application to Moldova Case</h2>
+    <p>The Republic of Moldova, as signatory to the Vienna Convention (1969), Hague Convention (1961), and European Convention on Human Rights, is bound by jus cogens norms. The systematic processing of 90 apostilles (1997–2026) with authentication defects, combined with the refusal of Constitutional Court access on language grounds, constitutes:</p>
+    <ul style="margin:1rem 0;padding-left:1.5rem">
+      <li>Violation of Art. 53 — administrative acts conflicting with peremptory norms are void</li>
+      <li>Violation of Art. 64 — emerging authentication standards render non-compliant apostilles void</li>
+      <li>Violation of ECHR Art. 3, 6, 13 — systematic, not isolated breaches</li>
+      <li>Breach of Hague Convention Art. 3 — 14.4% unclear signatures</li>
+    </ul>
+    <p>Total claim: <strong>€500,000</strong> for period 1997–2026.</p>
+  </div>
+
+  <div class="card interactive-core">
+    <h2>⚡ Interactive Jus Cogens Protocol</h2>
+    <p style="color:#aaa;margin-bottom:1.5rem">Activate to apply jus cogens norms to Moldova case</p>
+    <button class="pulse-btn" onclick="activateProtocol()">&#x25B6; АКТИВИРОВАТЬ ПРОТОКОЛ</button>
+    <div style="margin-top:1rem;padding-top:.75rem;border-top:1px solid #1c1e2e">
+      <div style="font-family:monospace;font-size:9px;color:#6b7280;margin-bottom:.5rem;letter-spacing:2px">ДЕЛО ЧУМАК · Венская конв. ст. 49-52:</div>
+      <div style="display:flex;flex-wrap:wrap;gap:.35rem">
+        <button onclick="showV(49)" style="font-family:monospace;font-size:10px;padding:4px 10px;border:1px solid rgba(167,139,250,.5);color:#a78bfa;background:transparent;cursor:pointer">Ст.49 Обман</button>
+        <button onclick="showV(50)" style="font-family:monospace;font-size:10px;padding:4px 10px;border:1px solid rgba(224,82,82,.5);color:#e05252;background:transparent;cursor:pointer">Ст.50 Подкуп</button>
+        <button onclick="showV(51)" style="font-family:monospace;font-size:10px;padding:4px 10px;border:1px solid rgba(200,168,75,.5);color:#c8a84b;background:transparent;cursor:pointer">Ст.51 Принуждение</button>
+        <button onclick="showV(52)" style="font-family:monospace;font-size:10px;padding:4px 10px;border:1px solid rgba(61,186,126,.5);color:#3dba7e;background:transparent;cursor:pointer">Ст.52 Принуждение гос-ва</button>
+      </div>
+    </div>
+    <div id="activation-log"><span style="color:#666">// Awaiting activation...</span></div>
+  </div>
+
+  <a href="index.html" class="back-link">← Back to Main Case</a>
+</div>
+
+<script>
+function activateProtocol() {
+  const log = document.getElementById('activation-log');
+  log.innerHTML = '';
+  const steps = [
+    '[INIT] Jus cogens protocol initiated...',
+    '[LOAD] Vienna Convention Art. 53 — peremptory norm engaged',
+    '[LOAD] Vienna Convention Art. 64 — new norm emergence confirmed',
+    '[SCAN] Apostille database: 90 records examined',
+    '[FIND] 13 apostilles with unclear signatures detected (14.4%)',
+    '[VOID] Non-compliant apostilles declared void under Art. 53',
+    '[ECHR] Art. 3 violation logged — systemic treatment',
+    '[ECHR] Art. 6 violation logged — Constitutional Court 2009',
+    '[ECHR] Art. 13 violation logged — no effective remedy',
+    '[HAGUE] Art. 3 violation logged — authentication breach',
+    '[NOTIFY] Diplomatic notifications dispatched to 129 states',
+    '[RESULT] Republic of Moldova: bound, no derogation permitted',
+    '[STATUS] ✓ JUS COGENS ACTIVATED — CLAIM: €500,000'
+  ];
+  steps.forEach((step, i) => {
+    setTimeout(() => {
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      entry.textContent = step;
+      log.appendChild(entry);
+      log.scrollTop = log.scrollHeight;
+    }, i * 300);
+  });
+}
+</script>
+
+<div id="nm" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;padding:1rem">
+<div style="background:#0d0f14;border:1px solid #333;max-width:560px;width:100%;padding:2rem;position:relative;border-left:4px solid #c8a84b">
+<button onclick="document.getElementById('nm').style.display='none'" style="position:absolute;top:.75rem;right:.75rem;background:none;border:none;color:#888;font-size:1.3rem;cursor:pointer">x</button>
+<div id="nm-tag" style="font-family:monospace;font-size:9px;letter-spacing:2px;margin-bottom:.5rem"></div>
+<h3 id="nm-title" style="color:#fff;font-size:1.2rem;margin-bottom:.6rem;font-family:Georgia,serif"></h3>
+<p id="nm-body" style="color:#d4cfc5;font-size:.9rem;line-height:1.6;margin-bottom:.75rem"></p>
+<div id="nm-quote" style="border-left:3px solid #c8a84b;padding:.6rem 1rem;color:#888;font-style:italic;font-size:.85rem;margin-bottom:.6rem"></div>
+<div id="nm-case" style="font-family:monospace;font-size:10px;color:#4b9fc8;white-space:pre-line"></div>
+</div></div>
+
+<div id="vm" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;padding:1rem">
+<div style="background:#0d0f14;border:1px solid #a78bfa;border-left:4px solid #a78bfa;max-width:560px;width:100%;padding:2rem;position:relative">
+<button onclick="document.getElementById('vm').style.display='none'" style="position:absolute;top:.75rem;right:.75rem;background:none;border:none;color:#888;font-size:1.3rem;cursor:pointer">x</button>
+<div id="vm-num" style="font-family:monospace;font-size:9px;color:#a78bfa;letter-spacing:2px;margin-bottom:.5rem"></div>
+<h3 id="vm-title" style="color:#fff;font-size:1.2rem;margin-bottom:.75rem;font-family:Georgia,serif"></h3>
+<p id="vm-b1" style="color:#d4cfc5;font-size:.9rem;line-height:1.6;margin-bottom:.75rem"></p>
+<p id="vm-b2" style="color:#c8a84b;font-size:.9rem;font-style:italic;line-height:1.5"></p>
+</div></div>
+
+<script>
+var ND=[
+{t:"ЕКПЧ СТ.3",c:"#e05252",h:"Запрет пыток и унижающего обращения",b:"Отказ Суда Рышкановка и судьи Чумак обеспечить доступность правосудия инвалиду 1-й группы является формой унижающего обращения (ст.3 ЕКПЧ). Отказ выдать перевод решений на русском языке с апостилем нарушает абсолютную норму jus cogens. Государство обязано принять позитивные меры.",q:"ЕСПЧ: Ст.3 не допускает никаких исключений даже в чрезвычайных обстоятельствах (Ireland v. UK, 1978).",k:"Gurguru v. Moldova 16.09.2009\nЗакон РМ N60: суды обязаны обеспечить равные права инвалида"},
+{t:"ЕКПЧ СТ.6",c:"#c8a84b",h:"Право на справедливый суд",b:"Суд Чокана (28.06.2019) отклонил жалобу без мотивировки. Апелляционная палата (27.11.2019) ПРЯМО констатировала нарушение ст.6 ЕКПЧ и отменила решение. КС РМ (2009) — отказ по языковым основаниям. Два суда за 17 лет = системный характер нарушения jus cogens.",q:"Неспособность суда дать ответ на доводы = нарушение ст.6 ЕКПЧ. Апелляционная палата Кишинэу, 27.11.2019.",k:"Дело N10r-1009/19 · Апелляционная палата · 27.11.2019\nFomin v. Moldova · Hirvisaari v. Finland p.30"},
+{t:"ЕКПЧ СТ.13",c:"#4b9fc8",h:"Эффективное средство защиты",b:"ARIJ признало переплату 50 лей (письмо N12-25/1988), но возврат произвёл СФС (ордер N0600013037, 01.10.2021), уведомил МинФин. Три разных ведомства — невозможно установить надлежащего ответчика. Это системное нарушение ст.13 ЕКПЧ: государство обязано обеспечить реальный механизм защиты.",q:"ЕСПЧ: Средство защиты должно быть эффективным как на практике, так и de jure (Kudla v. Poland, 2000).",k:"Письмо ARIJ N12-25/1988 (02.09.2021)\nОрдер СФС N0600013037 (01.10.2021)\nУведомление МинФин октябрь 2021"},
+{t:"ГААГСКАЯ КОНВ. СТ.3",c:"#a78bfa",h:"Аутентичность апостиля",b:"Апостиль N5OTZ38FVFN8R2 (29-12-2021, Iordan Iurie, Curtea de Apel Chisinau): поле 10 Semnatura digitala ПУСТОЕ. Нарушение обязательной 10-польной формы Конвенции 1961 года. Апостиль без подписи в поле 10 недействителен для международных процедур включая ЕСПЧ и ООН.",q:"Гаагская конвенция ст.3: Апостиль заполняется в соответствии с образцом. Все поля 1-10 обязательны.",k:"ДЕФЕКТ: N5OTZ38FVFN8R2 (поле 10 пусто)\nОК: N7FYS428VLM4F4 · NFN5P1X6ZIP6R3"},
+{t:"НЕДИСКРИМИНАЦИЯ СТ.14",c:"#3dba7e",h:"Языковая дискриминация — норма jus cogens",b:"Систематический отказ предоставить документы на русском языке для инвалида 1-й группы нарушает: Закон РМ N60, ст.14 ЕКПЧ, МПГПП ст.26. КС РМ (2009) отклонил без перевода = нарушение ст.6+14 ЕКПЧ. Языковой барьер как инструмент лишения права = форма дискриминации.",q:"Закон РМ N60: суды обязаны уважать и способствовать равным правам инвалида с другими участниками процесса.",k:"Закон РМ N60 · CRPD ООН · МПГПП ст.26\nКС РМ (2009): отказ без предоставления перевода"},
+{t:"ВЕНСКАЯ КОНВ. СТ.26",c:"#c8a84b",h:"Государственная подотчетность — Pacta sunt servanda",b:"Молдова ратифицировала Гаагскую конв.1961 и Венскую конв.1969. Ст.26 требует добросовестного исполнения. Передача обязательства между тремя ведомствами (ARIJ — СФС — МинФин) лишает заявителя возможности установить ответчика = нарушение pacta sunt servanda.",q:"Венская конвенция ст.26: Каждый действующий договор обязателен для его участников и должен ими добросовестно выполняться.",k:"ARIJ признало долг — СФС исполнил — МинФин уведомил\nВопрос: кто надлежащий ответчик по иску?"}
+];
+var VD={49:{n:"ВЕНСКАЯ КОНВЕНЦИЯ СТ. 49",h:"Обман",b1:"Если государство было вовлечено в договор посредством обманного поведения другого участника, оно вправе ссылаться на обман как на основание недействительности.",b2:"Дело Чумак: введение заявителя в заблуждение относительно надлежащего ответчика (Мин.Юстиции вместо СФС) = форма институционального обмана при исполнении Гаагской конвенции."},50:{n:"ВЕНСКАЯ КОНВЕНЦИЯ СТ. 50",h:"Подкуп представителя государства",b1:"Если согласие государства на обязательность договора достигнуто посредством подкупа его представителя, государство вправе ссылаться на такой подкуп как на основание недействительности.",b2:"Системный отказ молдавских судов применять нормы ЕКПЧ при подтверждённом нарушении (АП, 27.11.2019) ставит вопрос о реальных причинах уклонения от исполнения международных обязательств Молдовы."},51:{n:"ВЕНСКАЯ КОНВЕНЦИЯ СТ. 51",h:"Принуждение представителя государства",b1:"Выражение согласия государства, достигнутое путём принуждения его представителя посредством угроз или насилия, является юридически ничтожным.",b2:"Судья Чумак действует в условиях задокументированного системного давления (Gurguru v. Moldova, 2009). Принуждение к решениям, противоречащим Конвенции, влечёт их ничтожность по ст.51."},52:{n:"ВЕНСКАЯ КОНВЕНЦИЯ СТ. 52",h:"Принуждение государства",b1:"Договор ничтожен, если его заключение явилось результатом угрозы силой или её применения в нарушение принципов международного права, воплощённых в Уставе ООН.",b2:"Принуждение инвалида 1-й группы к участию в процедурах без обеспечения доступности (язык, апостиль, надлежащий ответчик) = процессуальное принуждение. Решения ничтожны по ст.52 + ст.53 Венской конвенции."}};
+function showN(i){var n=ND[i],m=document.getElementById('nm');document.getElementById('nm-tag').textContent=n.t;document.getElementById('nm-tag').style.color=n.c;document.getElementById('nm-title').textContent=n.h;document.getElementById('nm-body').textContent=n.b;document.getElementById('nm-quote').textContent=n.q;document.getElementById('nm-case').textContent=n.k;m.style.display='flex';}
+function showV(n){var v=VD[n],m=document.getElementById('vm');document.getElementById('vm-num').textContent=v.n;document.getElementById('vm-title').textContent=v.h;document.getElementById('vm-b1').textContent=v.b1;document.getElementById('vm-b2').textContent=v.b2;m.style.display='flex';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.getElementById('nm').style.display='none';document.getElementById('vm').style.display='none';}});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+{
+  "case_info": {
+    "case_id": "CASE-MACHERET-1997-2026",
+    "victim": "Maceret Alexei",
+    "period": "1997-2026",
+    "total_apostilles": 90,
+    "unclear_signatures": 13,
+    "root_case": "1997-CI-0608",
+    "total_violations": 20
+  },
+  "apostille_mapping": [
+    {
+      "id": "MURDER-2022",
+      "date": "16.03.2022",
+      "type": "Murder of Witness - Galina Markov",
+      "status": "CRIME_AGAINST_HUMANITY",
+      "echr_articles": ["art3", "art7"],
+      "description": "Убийство Марковой Галины - свидетеля по делу. Виновник: Moldova Authorities. Доказательство: CO2S9BA3JX6H1",
+      "case_number": "MURDER-2022"
+    },
+    {
+      "id": "DLTP7B8ZHWGQ7",
+      "date": "08.07.2022",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "torture_no_investigation"
+    },
+    {
+      "id": "CG0T6Y1TBUEL7",
+      "date": "12.07.2022",
+      "echr_articles": ["art3", "art6"],
+      "violation": "unclear_authenticity"
+    },
+    {
+      "id": "DFVMD2FQLW5N3",
+      "date": "14.12.2022",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "no_rehabilitation"
+    },
+    {
+      "id": "IMTQ930Z8U4N7",
+      "date": "05.10.2022",
+      "echr_articles": ["art3", "art6"],
+      "violation": "unclear_authenticity"
+    },
+    {
+      "id": "HQ7X9W62GUJL9",
+      "date": "20.04.2022",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "justice_simulation"
+    },
+    {
+      "id": "BS7XCZF1EUJG3",
+      "date": "15.07.2022",
+      "echr_articles": ["art3", "art6"],
+      "violation": "unclear_authenticity"
+    },
+    {
+      "id": "403WF02QGRCI1",
+      "date": "30.01.2023",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "systemic_impunity"
+    },
+    {
+      "id": "DQ1N892ZFXDI3",
+      "date": "13.03.2023",
+      "echr_articles": ["art3", "art6"],
+      "violation": "unclear_authenticity"
+    },
+    {
+      "id": "6R2V5Z4XBZBH8",
+      "date": "20.07.2022",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "no_appeal"
+    },
+    {
+      "id": "IT1PD8E29S5F5",
+      "date": "30.01.2023",
+      "echr_articles": ["art3", "art6"],
+      "violation": "unclear_authenticity"
+    },
+    {
+      "id": "4J20E98WFY7J2",
+      "date": "03.10.2022",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "justice_simulation"
+    },
+    {
+      "id": "6OZUD89VBUEJ3",
+      "date": "01.11.2022",
+      "echr_articles": ["art3", "art6"],
+      "violation": "unclear_authenticity"
+    },
+    {
+      "id": "IHW093CZ8U8R7",
+      "date": "03.08.2022",
+      "echr_articles": ["art3", "art6", "art13"],
+      "violation": "no_investigation"
+    },
+    {
+      "id": "1997-CI-0608",
+      "date": "06.08.1997",
+      "authority": "Judecătoria sect. Centru (C.P. Ciachir)",
+      "type": "Administrative Substitution (ROOT_POISON)",
+      "status": "ROOT",
+      "echr_articles": ["art3", "art6"],
+      "description": "Подмена уголовного преступления (пытки) на административное хулиганство (ст.164 CCA) для легализации первичного насилия.",
+      "case_number": "1997-CI-0608"
+    },
+    {
+      "id": "CAZIER-2023-MAI",
+      "date": "15.08.2023",
+      "authority": "MAI RM",
+      "type": "Systemic Stigmatization (CASCADING_EFFECT)",
+      "status": "DEPENDENT",
+      "dependency": "1997-CI-0608",
+      "echr_articles": ["art8", "art13", "art3"],
+      "description": "Справка о судимости - сохранение данных о судимостях 2002/2003 и 2014/2016 без реабилитации. Каскадный эффект отравленного корня 1997.",
+      "case_number": "CAZIER-2023-MAI"
+    },
+    {
+      "id": "2024-GRIGORASH-VIORELIA",
+      "date": "05.08.2024",
+      "authority": "Judecătoria Chișinău (Viorelia Grigorash)",
+      "type": "Procedural Simulation (CASCADING_EFFECT)",
+      "status": "DEPENDENT",
+      "dependency": "1997-CI-0608",
+      "echr_articles": ["art3", "art6", "art13"],
+      "description": "Определение о передаче дела судье T. Stambul для 'объединения дел' - процессуальный пинг-понг без решения по существу.",
+      "case_number": "2024-08-05"
+    },
+    {
+      "id": "ICC-ECHR-2026",
+      "date": "25.02.2026",
+      "type": "ICC/ECHR Application (Signed)",
+      "status": "SUBMITTED",
+      "echr_articles": ["art3", "art6", "art13", "art17"],
+      "description": "Заявление в МУС и ЕКПЧ о системных нарушениях. Ссылка на отравленный корень 1997 и каскадный эффект.",
+      "file": "МУС и ЕКПЧ.signed.pdf"
+    },
+    {
+      "id": "MAI-ULTIMATUM-2026",
+      "date": "25.02.2026",
+      "type": "MAI Expungement Ultimatum (Signed)",
+      "status": "SUBMITTED",
+      "echr_articles": ["art3", "art6", "art8", "art13"],
+      "description": "Ультиматум МВД РМ о немедленном удалении записей из базы данных. Требование expungement на основе jus cogens.",
+      "file": "MAI Ultimatum - Cere .signed.pdf"
+    },
+    {
+      "id": "ECHR-COMPLAINT-2026",
+      "date": "02.03.2026",
+      "type": "ECHR Complaint / Жалоба в ЕСПЧ",
+      "status": "FILED",
+      "echr_articles": ["art3", "art5", "art6", "art13"],
+      "description": "Жалоба в ЕСПЧ о системных нарушениях: пытки (1997), отсутствие расследования, блокировка реабилитации, убийство свидетеля. Требование: 220 000 EUR.",
+      "file": "ECHR_complaint_filled.md",
+      "compensation": "220000 EUR",
+      "key_violations": [
+        "torture_1997",
+        "no_investigation",
+        "blocked_rehabilitation",
+        "witness_murder"
+      ]
+    }
+  ],
+  "echr_articles": {
+    "art3": {
+      "name": "Prohibition of Torture",
+      "violations_count": 17,
+      "description": "No one shall be subjected to torture or to inhuman or degrading treatment or punishment"
+    },
+    "art5": {
+      "name": "Right to Liberty and Security",
+      "violations_count": 1,
+      "description": "Everyone has the right to liberty and security of person"
+    },
+    "art6": {
+      "name": "Right to a Fair Trial",
+      "violations_count": 16,
+      "description": "In the determination of his civil rights and obligations... everyone is entitled to a fair and public hearing"
+    },
+    "art13": {
+      "name": "Right to an Effective Remedy",
+      "violations_count": 9,
+      "description": "Everyone whose rights and freedoms as set forth in this Convention are violated shall have an effective remedy"
+    },
+    "art8": {
+      "name": "Right to Respect for Private and Family Life",
+      "violations_count": 1,
+      "description": "Everyone has the right to respect for his private and family life"
+    },
+    "art17": {
+      "name": "Rome Statute - Complementarity",
+      "violations_count": 1,
+      "description": "International Criminal Court jurisdiction activation"
+    },
+    "art7": {
+      "name": "Crimes Against Humanity",
+      "violations_count": 1,
+      "description": "Rome Statute Article 7 - Systematic attack against civilian population"
+    }
+  },
+  "algorithm": {
+    "root_case": "1-568/98",
+    "formula": "∀x ∈ CaseChain : Torture(A) ∧ ¬Rehab(A) → Invalid(x)",
+    "doctrine": "poisoned_root_doctrine",
+    "cicd_analogy": "continuous_justice_integration"
+  }
+}

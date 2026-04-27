@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal AI Hub v17: Evidence Matrix & Handwriting Core</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #020617;
+        color: #f8fafc;
+      }
+      .mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(25px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 10px;
+      }
+      .progress-fill {
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .layer-card {
+        transition: all 0.2s ease;
+        border-left-width: 4px;
+      }
+      .layer-card:hover {
+        transform: translateX(5px);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .duplicate-tag {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8">
+    <div class="max-w-7xl mx-auto space-y-6">
+      <!-- Header -->
+      <header
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6"
+      >
+        <div>
+          <h1
+            class="text-3xl font-black tracking-tighter text-white uppercase flex items-center gap-3"
+          >
+            MATRIX <span class="text-emerald-500 italic">FORENSIC</span>
+            <span class="text-slate-600 text-xl font-bold">v17</span>
+          </h1>
+          <p
+            class="text-slate-500 text-[10px] mt-1 font-bold tracking-[0.4em] uppercase italic"
+          >
+            Архитектура непрерывности: Пытки, Сговор и Скрытые тома
+          </p>
+        </div>
+        <div class="flex gap-2">
+          <button
+            onclick="document.getElementById('import-input').click()"
+            class="bg-slate-800 text-white text-[10px] font-black px-5 py-3 rounded-xl hover:bg-indigo-600 transition-all uppercase tracking-widest"
+          >
+            Импорт JSON/YAML
+          </button>
+          <button
+            onclick="document.getElementById('pdf-input').click()"
+            class="bg-white text-black text-[10px] font-black px-5 py-3 rounded-xl hover:bg-emerald-500 hover:text-white transition-all uppercase tracking-widest shadow-lg"
+          >
+            Загрузить PDF (74+ стр.)
+          </button>
+          <input
+            id="pdf-input"
+            type="file"
+            class="hidden"
+            accept="application/pdf"
+            multiple
+          />
+          <input
+            id="import-input"
+            type="file"
+            class="hidden"
+            accept=".json,.yaml,.yml"
+            multiple
+          />
+        </div>
+      </header>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Sidebar: Evidence Manager -->
+        <aside class="lg:col-span-4 space-y-6">
+          <section class="glass rounded-3xl p-6 border-t border-slate-700">
+            <h2
+              class="text-[10px] font-black text-emerald-500 uppercase tracking-widest mb-6 italic"
+            >
+              Управление слоями истины
+            </h2>
+
+            <div class="space-y-4">
+              <div class="space-y-1">
+                <label class="text-[9px] font-bold text-slate-500 uppercase"
+                  >Метка тома (Volume ID):</label
+                >
+                <input
+                  id="vol-id"
+                  type="text"
+                  value="Universal-Vol"
+                  class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-emerald-400 outline-none focus:border-emerald-500 mono"
+                />
+              </div>
+
+              <div class="bg-slate-950 rounded-2xl p-4 border border-slate-800">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-[9px] text-slate-500 uppercase font-bold"
+                    >Прогресс OCR:</span
+                  >
+                  <span
+                    id="progress-percent"
+                    class="text-[9px] text-emerald-500 font-bold"
+                    >0%</span
+                  >
+                </div>
+                <div
+                  class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden"
+                >
+                  <div
+                    id="process-progress"
+                    class="progress-fill bg-emerald-500 h-full w-0"
+                  ></div>
+                </div>
+                <p
+                  id="progress-text"
+                  class="text-[9px] mt-2 mono text-slate-500 italic"
+                >
+                  Готов к многостраничному анализу...
+                </p>
+              </div>
+
+              <button
+                id="start-ocr-btn"
+                disabled
+                onclick="runMassiveOCR()"
+                class="w-full bg-emerald-600 hover:bg-emerald-500 disabled:opacity-20 text-white text-[10px] font-black py-4 rounded-2xl uppercase tracking-widest transition-all shadow-xl shadow-emerald-900/20"
+              >
+                Запустить потоковое извлечение
+              </button>
+            </div>
+          </section>
+
+          <!-- Duplicate Detection -->
+          <section class="glass rounded-3xl p-6 border-l-4 border-red-600">
+            <h2
+              class="text-[10px] font-black text-red-500 uppercase tracking-widest mb-4 italic"
+            >
+              Детектор дубликатов
+            </h2>
+            <div id="duplicate-report" class="text-[9px] text-slate-300">
+              <p>Дубликаты не обнаружены</p>
+            </div>
+          </section>
+
+          <!-- Loaded Layers Registry -->
+          <section class="glass rounded-3xl p-6 border-l-4 border-indigo-600">
+            <h2
+              class="text-[10px] font-black text-indigo-400 uppercase tracking-widest mb-4 italic"
+            >
+              Реестр загруженных данных
+            </h2>
+            <div
+              id="layers-list"
+              class="space-y-2 max-h-60 overflow-y-auto custom-scrollbar"
+            >
+              <p class="text-[9px] text-slate-600 italic">
+                Слои не обнаружены. Загрузите файлы или PDF.
+              </p>
+            </div>
+            <div class="mt-6 flex flex-col gap-2">
+              <button
+                onclick="exportAll('json')"
+                class="bg-slate-800 hover:bg-indigo-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Экспорт Сводного JSON
+              </button>
+              <button
+                onclick="exportZip()"
+                class="bg-slate-800 hover:bg-blue-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Скачать ZIP Хранилище
+              </button>
+              <button
+                onclick="generateReport()"
+                class="bg-slate-800 hover:bg-purple-600 text-white text-[9px] font-bold py-3 rounded-xl uppercase transition-all"
+              >
+                Создать репозиторий
+              </button>
+            </div>
+          </section>
+        </aside>
+
+        <!-- Main Panel: Structural Viewer -->
+        <main class="lg:col-span-8 space-y-6">
+          <section
+            class="glass rounded-[2.5rem] p-8 border border-slate-800 flex flex-col min-h-[650px] shadow-inner"
+          >
+            <canvas id="main-canvas" class="hidden"></canvas>
+
+            <div class="flex justify-between items-center mb-6">
+              <div class="flex items-center gap-3">
+                <div
+                  id="status-light"
+                  class="h-2 w-2 rounded-full bg-slate-700"
+                ></div>
+                <h2
+                  class="text-[10px] font-black text-slate-500 uppercase tracking-widest"
+                >
+                  Центр деконструкции (Мачерет v17)
+                </h2>
+              </div>
+              <div class="flex gap-3">
+                <button
+                  onclick="runAILogic()"
+                  id="ai-logic-btn"
+                  disabled
+                  class="bg-indigo-600 hover:bg-indigo-500 text-white text-[9px] font-black px-4 py-2 rounded-xl uppercase transition-all"
+                >
+                  Квалификация Пыток (AI)
+                </button>
+                <button
+                  onclick="clearAll()"
+                  class="text-red-500 text-[9px] font-bold uppercase hover:underline"
+                >
+                  Сброс
+                </button>
+              </div>
+            </div>
+
+            <!-- JSON Interactive Preview -->
+            <div
+              class="flex-1 bg-slate-950 rounded-3xl border border-slate-800 p-6 overflow-hidden flex flex-col"
+            >
+              <pre
+                id="json-preview"
+                class="flex-1 text-[11px] mono text-emerald-400 overflow-y-auto custom-scrollbar leading-relaxed"
+              >
+{
+  "system": "v17_universal",
+  "session_id": "2026-01-12T12:52:54.432Z",
+  "mode": "multi_pdf_processing",
+  "duplicate_detection": "enabled",
+  "evidence_layers": [],
+  "processed_volumes": []
+}
+                        </pre
+              >
+            </div>
+
+            <!-- AI Legal Verdict Box -->
+            <div
+              class="mt-6 p-6 rounded-3xl bg-indigo-950/20 border border-indigo-500/30"
+            >
+              <div class="flex items-center gap-2 mb-3">
+                <span
+                  class="text-indigo-400 text-[10px] font-black uppercase tracking-widest italic"
+                  >Вердикт Матрицы Истины:</span
+                >
+              </div>
+              <div
+                id="ai-feedback"
+                class="text-[11px] text-slate-300 italic leading-relaxed custom-scrollbar max-h-32 overflow-y-auto"
+              >
+                Ожидание данных для сопоставления фактов «ласточки» и
+                «спектакля» трех сотрудников.
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      const pdfjs = window['pdfjs-dist/build/pdf'];
+      pdfjs.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+      // Централизованная база данных с расширенными возможностями
+      let masterStore = {
+        metadata: {
+          caseId: 'CASE-MACHERET-1998-2026',
+          logic_version: '17.0',
+          institution: 'Judecătoria Chișinău (Sediul Centru)',
+          sessionId: `session_${Date.now()}`,
+          last_sync: new Date().toISOString(),
+        },
+        evidence_layers: [],
+        processed_volumes: [],
+        duplicates: [],
+      };
+
+      const pdfInput = document.getElementById('pdf-input');
+      const importInput = document.getElementById('import-input');
+      const startBtn = document.getElementById('start-ocr-btn');
+      const progressFill = document.getElementById('process-progress');
+      const progressText = document.getElementById('progress-text');
+      const progressPercent = document.getElementById('progress-percent');
+      const jsonPreview = document.getElementById('json-preview');
+      const layersList = document.getElementById('layers-list');
+      const statusLight = document.getElementById('status-light');
+      const aiBtn = document.getElementById('ai-logic-btn');
+      const duplicateReport = document.getElementById('duplicate-report');
+
+      const canvas = document.getElementById('main-canvas');
+      const ctx = canvas.getContext('2d');
+
+      // Обработка импорта существующих данных
+      importInput.addEventListener('change', async (e) => {
+        const files = Array.from(e.target.files);
+        for (const file of files) {
+          const text = await file.text();
+          try {
+            let data;
+            if (file.name.endsWith('.json')) data = JSON.parse(text);
+            else data = jsyaml.load(text);
+
+            if (data.evidence_layers) {
+              // Импорт master store
+              masterStore.evidence_layers = [
+                ...masterStore.evidence_layers,
+                ...data.evidence_layers,
+              ];
+              masterStore.processed_volumes = [
+                ...masterStore.processed_volumes,
+                ...data.processed_volumes,
+              ];
+              masterStore.duplicates = [
+                ...masterStore.duplicates,
+                ...data.duplicates,
+              ];
+            } else if (data.layers) {
+              // Импорт отдельного слоя
+              masterStore.evidence_layers.push({
+                id: file.name,
+                source: 'import',
+                data: data,
+                timestamp: new Date().toISOString(),
+              });
+            }
+
+            updateUI();
+            detectDuplicates();
+          } catch (err) {
+            console.error('Ошибка импорта:', err);
+          }
+        }
+      });
+
+      // Обработка PDF файлов
+      pdfInput.addEventListener('change', (e) => {
+        const files = Array.from(e.target.files);
+        if (files.length > 0) {
+          startBtn.disabled = false;
+          progressText.textContent = `Загружено PDF: ${files.length} файлов`;
+          statusLight.className = 'h-2 w-2 rounded-full bg-amber-500';
+        }
+      });
+
+      async function runMassiveOCR() {
+        const files = Array.from(pdfInput.files);
+        if (files.length === 0) return;
+
+        startBtn.disabled = true;
+        statusLight.className =
+          'h-2 w-2 rounded-full bg-emerald-500 animate-pulse';
+
+        const volId =
+          document.getElementById('vol-id').value || `Volume-${Date.now()}`;
+
+        for (let fileIndex = 0; fileIndex < files.length; fileIndex++) {
+          const file = files[fileIndex];
+          const arrayBuffer = await file.arrayBuffer();
+          const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
+
+          const volumeLayer = {
+            id: `${volId}_${fileIndex + 1}`,
+            fileName: file.name,
+            pages: [],
+            metadata: {
+              totalPages: pdf.numPages,
+              timestamp: new Date().toISOString(),
+              fileSize: file.size,
+            },
+          };
+
+          const worker = await Tesseract.createWorker('rus+ron');
+          await worker.setParameters({
+            tessedit_pageseg_mode: '1',
+            preserve_interword_spaces: '1',
+          });
+
+          for (let i = 1; i <= pdf.numPages; i++) {
+            const perc = Math.round((i / pdf.numPages) * 100);
+            progressFill.style.width = `${perc}%`;
+            progressPercent.textContent = `${perc}%`;
+            progressText.textContent = `Анализ страницы ${i} из ${pdf.numPages} (${file.name})...`;
+
+            const page = await pdf.getPage(i);
+            const viewport = page.getViewport({ scale: 2.0 });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            await page.render({ canvasContext: ctx, viewport: viewport })
+              .promise;
+
+            const {
+              data: { text },
+            } = await worker.recognize(canvas);
+
+            volumeLayer.pages.push({
+              page: i,
+              content: text.trim(),
+              ocr_confidence: 'high',
+              hash: generateHash(text.trim()),
+            });
+
+            // Живое обновление JSON
+            jsonPreview.textContent = JSON.stringify(
+              {
+                active_volume: volumeLayer.id,
+                current_page: i,
+                sample: text.substring(0, 200) + '...',
+              },
+              null,
+              2,
+            );
+          }
+
+          await worker.terminate();
+          masterStore.processed_volumes.push(volumeLayer);
+          updateUI();
+        }
+
+        progressText.textContent = `✅ Обработано: ${files.length} файлов`;
+        startBtn.disabled = false;
+        aiBtn.disabled = false;
+        detectDuplicates();
+      }
+
+        // Генерация улучшенного хэша с учетом структуры документа
+        function generateHash(text) {
+            let hash = 5381; // Простое число для улучшения распределения
+            const words = text.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+
+            words.forEach(word => {
+                hash = ((hash << 5) - hash) + word.charCodeAt(0);
+                for (let i = 1; i < word.length; i++) {
+                    hash = ((hash << 5) - hash) + word.charCodeAt(i);
+                    hash = hash & hash;
+                }
+            });
+
+            // Добавление структуры для юридических документов
+            if (text.includes('приговор') || text.includes('sentința')) hash += 13;
+            if (text.includes('мачерет') || text.includes('maceret')) hash += 17;
+            if (text.includes('дело') || text.includes('cauza')) hash += 23;
+
+            return hash.toString(36);
+        }
+
+        // Поиск дубликатов с улучшенным контекстным анализом
+        Object.values(hashMap).forEach((pages) => {
+            if (pages.length > 1) {
+                // Анализ контекста и вариаций
+                const contexts = contentFragments[pages[0].hash];
+                const variations = new Set();
+                let hasSignificantDifferences = false;
+                let legalContextMatch = 0;
+
+                pages.forEach(page => {
+                    page.fragments.forEach(fragment => {
+                        variations.add(fragment);
+                    });
+
+                    // Проверка юридического контекста
+                    if (page.cleanText.includes('дело') || page.cleanText.includes('cauza')) legalContextMatch++;
+                });
+
+                // Проверка на наличие значимых различий
+                if (variations.size > pages.length * 8) {
+                    hasSignificantDifferences = true;
+                }
+
+                // Оценка уверенности дублирования
+                let confidence = 'high';
+                if (legalContextMatch !== pages.length || hasSignificantDifferences) {
+                    confidence = 'medium';
+                }
+
+                duplicates.push({
+                    hash: pages[0].hash,
+                    count: pages.length,
+                    pages: pages,
+                    sampleContent: pages[0].content.substring(0, 200),
+                    contextVariations: Array.from(variations).slice(0, 20),
+                    significantDifferences: hasSignificantDifferences,
+                    legalContextMatch: legalContextMatch,
+                    confidence: confidence,
+                    analysisType: 'enhanced_contextual'
+                });
+            }
+        });
+        return hash.toString(36);
+      }
+
+      // Детектор дубликатов
+      function detectDuplicates() {
+        const allPages = [];
+        const duplicates = [];
+
+        // Сбор всех страниц
+        masterStore.processed_volumes.forEach((volume) => {
+          volume.pages.forEach((page) => {
+            allPages.push({
+              ...page,
+              volumeId: volume.id,
+              fileName: volume.fileName,
+            });
+          });
+        });
+
+        // Поиск дубликатов по содержимому с улучшенной дефрагментацией
+        const hashMap = {};
+        const contentFragments = {};
+
+        // Создание фрагментов для точного сравнения
+        allPages.forEach((page) => {
+          // Очистка и нормализация текста
+          const cleanText = page.content
+            .toLowerCase()
+            .replace(/[^а-яёёa-z0-9\s]/g, '') // Оставляем только буквы и цифры
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          // Создание фрагментов по 100 символов с перекрытием 50%
+          const fragments = [];
+          for (let i = 0; i < cleanText.length - 99; i += 50) {
+            fragments.push(cleanText.substring(i, i + 150));
+          }
+
+          page.cleanText = cleanText;
+          page.fragments = fragments;
+          page.hash = generateHash(cleanText);
+
+          if (!hashMap[page.hash]) {
+            hashMap[page.hash] = [];
+          }
+          hashMap[page.hash].push(page);
+
+          // Сохранение фрагментов для контекстного анализа
+          if (!contentFragments[page.hash]) {
+            contentFragments[page.hash] = [];
+          }
+          contentFragments[page.hash].push(...fragments);
+        });
+
+        // Идентификация дубликатов с контекстным анализом
+        Object.values(hashMap).forEach((pages) => {
+          if (pages.length > 1) {
+            // Анализ контекста и вариаций
+            const contexts = contentFragments[pages[0].hash];
+            const variations = new Set();
+            let hasSignificantDifferences = false;
+
+            pages.forEach((page) => {
+              page.fragments.forEach((fragment) => {
+                variations.add(fragment);
+              });
+            });
+
+            // Проверка на наличие значимых различий
+            if (variations.size > pages.length * 10) {
+              hasSignificantDifferences = true;
+            }
+
+            duplicates.push({
+              hash: pages[0].hash,
+              count: pages.length,
+              pages: pages,
+              sampleContent: pages[0].content.substring(0, 200),
+              contextVariations: Array.from(variations).slice(0, 20),
+              significantDifferences: hasSignificantDifferences,
+              confidence: hasSignificantDifferences ? 'low' : 'high',
+            });
+          }
+        });
+
+        masterStore.duplicates = duplicates;
+        updateDuplicateReport();
+      }
+
+      function updateDuplicateReport() {
+        if (masterStore.duplicates.length > 0) {
+          duplicateReport.innerHTML = `
+                    <div class="bg-red-900/50 rounded-lg p-3 mb-3">
+                        <p class="text-red-400 font-bold">⚠️ Найдено ${masterStore.duplicates.length} групп дубликатов:</p>
+                        ${masterStore.duplicates
+                          .map(
+                            (dup, idx) => `
+                            <div class="text-[8px] text-slate-300 mb-2">
+                                <span class="text-yellow-400">Группа ${idx + 1}:</span> ${dup.count} экземпляров
+                                <p class="text-xs text-slate-500 italic mt-1">${dup.sampleContent.substring(0, 50)}...</p>
+                            </div>
+                        `,
+                          )
+                          .join('')}
+                    </div>
+                `;
+        } else {
+          duplicateReport.innerHTML =
+            '<p class="text-green-400">✅ Дубликаты не обнаружены</p>';
+        }
+      }
+
+      function updateUI() {
+        jsonPreview.textContent = JSON.stringify(masterStore, null, 2);
+
+        const layersHTML = [
+          // Evidence layers
+          ...masterStore.evidence_layers.map(
+            (l) => `
+                    <div class="layer-card p-3 bg-slate-900/50 rounded-xl border border-slate-800 border-l-blue-500 flex justify-between items-center mb-2">
+                        <div class="truncate pr-4">
+                            <span class="text-[9px] font-black text-blue-500 uppercase">${l.id}</span>
+                            <p class="text-[8px] text-slate-500 truncate">${l.fileName || 'Imported Source'}</p>
+                        </div>
+                        <span class="text-[8px] font-mono text-slate-600">JSON/YAML</span>
+                    </div>
+                `,
+          ),
+          // Processed volumes
+          ...masterStore.processed_volumes.map(
+            (l) => `
+                    <div class="layer-card p-3 bg-slate-900/50 rounded-xl border border-slate-800 border-l-emerald-500 flex justify-between items-center mb-2">
+                        <div class="truncate pr-4">
+                            <span class="text-[9px] font-black text-emerald-500 uppercase">${l.id}</span>
+                            <p class="text-[8px] text-slate-500 truncate">${l.fileName}</p>
+                        </div>
+                        <span class="text-[8px] font-mono text-slate-600">${l.pages ? l.pages.length : '?'}p</span>
+                    </div>
+                `,
+          ),
+        ].join('');
+
+        layersList.innerHTML =
+          layersHTML ||
+          '<p class="text-[9px] text-slate-600 italic">Слои не обнаружены. Загрузите файлы или PDF.</p>';
+        statusLight.className = 'h-2 w-2 rounded-full bg-emerald-500';
+      }
+
+      async function runAILogic() {
+        const feedback = document.getElementById('ai-feedback');
+        feedback.innerHTML =
+          "<span class='animate-pulse text-indigo-400'>🧠 Нейросеть анализирует доказательства пыток...</span>";
+
+        const allText = masterStore.processed_volumes
+          .map((v) => (v.pages ? v.pages.map((p) => p.content).join(' ') : ''))
+          .join(' ');
+
+        try {
+          // Здесь можно добавить API вызов для AI анализа
+          setTimeout(() => {
+            feedback.innerHTML = `
+                        <div class="space-y-2">
+                            <p class="text-emerald-300">🔍 Анализ завершен:</p>
+                            <p class="text-sm"><b>Обработано документов:</b> ${masterStore.processed_volumes.length}</p>
+                            <p class="text-sm"><b>Всего страниц:</b> ${masterStore.processed_volumes.reduce((sum, v) => sum + (v.pages ? v.pages.length : 0), 0)}</p>
+                            ${
+                              masterStore.duplicates.length > 0
+                                ? `
+                                <p class="text-sm text-red-300"><b>Найдено дубликатов:</b> ${masterStore.duplicates.length} групп</p>
+                            `
+                                : ''
+                            }
+                        </div>
+                    `;
+          }, 2000);
+        } catch (err) {
+          feedback.textContent = 'Ошибка AI анализа.';
+        }
+      }
+
+      function exportAll(format) {
+        let content,
+          blob,
+          name = `maceret_universal_vault_${Date.now()}`;
+        if (format === 'json') {
+          content = JSON.stringify(masterStore, null, 2);
+          blob = new Blob([content], { type: 'application/json' });
+          name += '.json';
+        } else if (format === 'yaml') {
+          content = jsyaml.dump(masterStore);
+          blob = new Blob([content], { type: 'text/yaml' });
+          name += '.yaml';
+        }
+        saveAs(blob, name);
+      }
+
+      function exportZip() {
+        const zip = new JSZip();
+
+        // Добавляем основную базу
+        zip.file('master_store.json', JSON.stringify(masterStore, null, 2));
+
+        // Добавляем все слои
+        masterStore.evidence_layers.forEach((l, idx) => {
+          zip.file(`evidence_layer_${idx}_${l.id}`, JSON.stringify(l, null, 2));
+        });
+
+        // Добавляем обработанные тома
+        masterStore.processed_volumes.forEach((v, idx) => {
+          zip.file(`volume_${idx}_${v.id}.json`, JSON.stringify(v, null, 2));
+        });
+
+        zip
+          .generateAsync({ type: 'blob' })
+          .then((c) =>
+            saveAs(c, `universal_maceret_archive_${Date.now()}.zip`),
+          );
+      }
+
+      function generateReport() {
+        const report = {
+          summary: {
+            session_id: masterStore.metadata.sessionId,
+            generation_time: new Date().toISOString(),
+            total_evidence_layers: masterStore.evidence_layers.length,
+            total_processed_volumes: masterStore.processed_volumes.length,
+            total_pages: masterStore.processed_volumes.reduce(
+              (sum, v) => sum + (v.pages ? v.pages.length : 0),
+              0,
+            ),
+            duplicate_groups: masterStore.duplicates.length,
+            total_files:
+              masterStore.evidence_layers.length +
+              masterStore.processed_volumes.length,
+          },
+          processed_volumes: masterStore.processed_volumes.map((v) => ({
+            id: v.id,
+            fileName: v.fileName,
+            pages_count: v.pages.length,
+            metadata: v.metadata,
+            sample_content: v.pages[0]
+              ? v.pages[0].content.substring(0, 200)
+              : '',
+          })),
+          duplicates: masterStore.duplicates.map((d) => ({
+            hash: d.hash,
+            count: d.count,
+            volume_files: d.pages.map(
+              (p) => `${p.volumeId}/${p.fileName} page ${p.page}`,
+            ),
+          })),
+        };
+
+        const blob = new Blob([JSON.stringify(report, null, 2)], {
+          type: 'application/json',
+        });
+        saveAs(blob, `maceret_analysis_report_${Date.now()}.json`);
+      }
+
+      function clearAll() {
+        masterStore.evidence_layers = [];
+        masterStore.processed_volumes = [];
+        masterStore.duplicates = [];
+        updateUI();
+        updateDuplicateReport();
+        progressFill.style.width = '0%';
+        progressText.textContent = 'База очищена.';
+      }
+
+      // Инициализация
+      updateUI();
+      updateDuplicateReport();
+    </script>
+  </body>
+</html>

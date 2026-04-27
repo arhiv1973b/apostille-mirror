@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INTERNATIONAL OBSERVER GUIDE — CASE-MACHERET-1997-2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #030a0f; --panel: #071624; --border: #0e3a5c;
+    --accent: #00c6ff; --red: #ff2244; --gold: #f0c040; --text: #c8e0f0;
+  }
+  body { background: var(--bg); color: var(--text); font-family: 'Rajdhani', sans-serif; margin: 0; padding: 20px; }
+  .guide-wrap { max-width: 1000px; margin: 0 auto; border: 1px solid var(--border); background: var(--panel); padding: 40px; box-shadow: 0 0 30px rgba(0,198,255,0.1); }
+  
+  .lang-switcher { margin-bottom: 30px; display: flex; gap: 10px; border-bottom: 1px solid var(--border); padding-bottom: 15px; }
+  .lang-btn { background: none; border: 1px solid var(--accent); color: var(--accent); padding: 5px 15px; cursor: pointer; font-family: 'Orbitron', sans-serif; font-size: 0.8rem; }
+  .lang-btn.active { background: var(--accent); color: #000; }
+
+  section { margin-top: 40px; display: none; }
+  section.active { display: block; }
+
+  h1 { font-family: 'Orbitron', sans-serif; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+  h2 { color: var(--gold); font-family: 'Orbitron', sans-serif; font-size: 1.2rem; margin-top: 30px; }
+  .legal-box { border-left: 4px solid var(--red); padding: 15px; background: rgba(255,0,0,0.05); margin: 20px 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  
+  @media print {
+    .lang-switcher { display: none; }
+    section { display: block !important; page-break-after: always; color: #000; }
+    .guide-wrap { border: none; box-shadow: none; background: #fff; color: #000; }
+    h1, h2 { color: #000; border-bottom-color: #000; }
+    .legal-box { border-color: #000; background: #eee; }
+  }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('en')">ENGLISH</button>
+    <button class="lang-btn" onclick="setLang('ru')">РУССКИЙ</button>
+    <button class="lang-btn" onclick="setLang('ro')">ROMÂNĂ</button>
+    <button class="lang-btn" onclick="setLang('fr')">FRANÇAIS</button>
+  </div>
+
+  <section id="en" class="active">
+    <h1>INTERNATIONAL OBSERVER GUIDE</h1>
+    <p><strong>CASE ID:</strong> CASE-MACHERET-1997-2026 | <strong>STATUS:</strong> PRIORITY AUDIT</p>
+    
+    <h2>§ 01 — THE AXIOM</h2>
+    <p>The Evidence Vault is a decentralized cryptographic repository documenting systemic human rights violations. The core axiom: an apostille on a forged document is a continuation of the crime, not its legalization.</p>
+
+    <div class="legal-box">
+      <h2>§ 02 — CORE EVIDENCE TRIAD</h2>
+      <ul>
+        <li><strong>1998:</strong> Acts of torture and illegal detention (Art. 3 ECHR).</li>
+        <li><strong>8158 DAYS:</strong> Systematic denial of justice and non-rehabilitation.</li>
+        <li><strong>2022:</strong> Systemic identity theft and forgery to block rehabilitation.</li>
+      </ul>
+    </div>
+
+    <h2>§ 03 — ACCESS PROTOCOL</h2>
+    <ol>
+      <li>Verify CASE_PASSPORT.html for cryptographic seals.</li>
+      <li>Examine JUS_COGENS_PROOF_MACHERET.html for legal basis.</li>
+      <li>Review FORGERY_DECONSTRUCTION_ACT.html for technical proof.</li>
+    </ol>
+
+    <h2>§ 04 — OFFICIAL CHANNELS</h2>
+    <p>Reporting to: UN OHCHR, INTERPOL, ICC OTP, ECHR.</p>
+  </section>
+
+  <section id="ru">
+    <h1>РУКОВОДСТВО МЕЖДУНАРОДНОГО НАБЛЮДАТЕЛЯ</h1>
+    <p><strong>ID ДЕЛА:</strong> CASE-MACHERET-1997-2026 | <strong>СТАТУС:</strong> ПРИОРИТЕТНЫЙ АУДИТ</p>
+    
+    <h2>§ 01 — АКСИОМА</h2>
+    <p>Хранилище улик — это децентрализованный криптографический реестр нарушений прав человека. Аксиома: апостиль на подложном документе является продолжением преступления, а не его легализацией.</p>
+
+    <div class="legal-box">
+      <h2>§ 02 — ТРИАДА ДОКАЗАТЕЛЬСТВ</h2>
+      <ul>
+        <li><strong>1998:</strong> Факты пыток и незаконного лишения свободы (ст. 3 ЕКПЧ).</li>
+        <li><strong>8158 ДНЕЙ:</strong> Систематический отказ в правосудии и реабилитации.</li>
+        <li><strong>2022:</strong> Системный подлог личности для блокировки реабилитации.</li>
+      </ul>
+    </div>
+
+    <h2>§ 06 — ДЕДЛАЙН: 09.04.2026</h2>
+    <p>Окончательный срок для принятия юрисдикционного решения национальными органами перед полной международной эскалацией.</p>
+  </section>
+
+  <section id="ro">
+    <h1>GHIDUL OBSERVATORULUI INTERNAȚIONAL</h1>
+    <p><strong>CASE ID:</strong> CASE-MACHERET-1997-2026 | <strong>STATUS:</strong> AUDIT PRIORITAR</p>
+    <h2>§ 05 — INSTRUMENTE JURIDICE</h2>
+    <p>Jus Cogens, Erga Omnes, Statutul de la Roma (Art. 17), CEDO.</p>
+  </section>
+
+  <section id="fr">
+    <h1>GUIDE DE L'OBSERVATEUR INTERNATIONAL</h1>
+    <h2>§ 07 — CANAUX OFFICIELS</h2>
+    <p>Signalement: INTERPOL, ONU (HCDH), CPI, CEDH.</p>
+  </section>
+
+</div>
+
+<script>
+  function setLang(langId) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(langId).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>

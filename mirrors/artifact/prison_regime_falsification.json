@@ -1,0 +1,11 @@
+{
+  "event_id": "PRISON-REGIME-SABOTAGE",
+  "victim": "Maceret Alexei Artur",
+  "document_conflict": {
+    "original_sentence_2009": "Special and Strict Regime (1a-42/09)",
+    "fake_certificate_2022": "General Regime (MAI Request M-197/22)",
+    "impact": "Blockade of judicial rehabilitation and E-Apostille legalization."
+  },
+  "judge_involved": "Tudor Stambol (Used fake regime data to reject rehabilitation)",
+  "jus_cogens_impact": "Violation of Art. 6 (Fair trial) and Art. 13 (Right to remedy). State-sponsored data corruption."
+}

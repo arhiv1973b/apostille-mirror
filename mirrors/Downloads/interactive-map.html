@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASE-MACHERET-1997-2026 | Interactive Violation Map</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #e0e0e0;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 0;
+        border-bottom: 2px solid #00d4ff;
+        margin-bottom: 40px;
+      }
+      h1 {
+        font-size: 2.5em;
+        color: #00d4ff;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        color: #888;
+        font-size: 1.1em;
+      }
+
+      .case-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .info-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(0, 212, 255, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+      .info-card .number {
+        font-size: 2.5em;
+        color: #00d4ff;
+        font-weight: bold;
+      }
+      .info-card .label {
+        color: #888;
+        margin-top: 5px;
+      }
+
+      .formula-box {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid #00d4ff;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .formula {
+        font-size: 1.8em;
+        font-family: 'Courier New', monospace;
+        color: #00ff88;
+      }
+      .formula-desc {
+        color: #888;
+        margin-top: 10px;
+      }
+
+      .echr-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .echr-card {
+        background: linear-gradient(135deg, #2d1b4e 0%, #1a1a2e 100%);
+        border-radius: 15px;
+        padding: 25px;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+      .echr-card:hover {
+        transform: translateY(-5px);
+      }
+      .echr-card.art3 {
+        border-color: #ff4444;
+      }
+      .echr-card.art6 {
+        border-color: #ffaa00;
+      }
+      .echr-card.art13 {
+        border-color: #00ff88;
+      }
+
+      .echr-card h3 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      .echr-card .violations {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .art3 .violations {
+        color: #ff4444;
+      }
+      .art6 .violations {
+        color: #ffaa00;
+      }
+      .art13 .violations {
+        color: #00ff88;
+      }
+
+      .apostille-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .apostille-table th {
+        background: rgba(0, 212, 255, 0.2);
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+      }
+      .apostille-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .apostille-table tr:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        margin-right: 5px;
+      }
+      .tag-art3 {
+        background: rgba(255, 68, 68, 0.3);
+        color: #ff4444;
+      }
+      .tag-art6 {
+        background: rgba(255, 170, 0, 0.3);
+        color: #ffaa00;
+      }
+      .tag-art13 {
+        background: rgba(0, 255, 136, 0.3);
+        color: #00ff88;
+      }
+
+      .unclear-sig {
+        color: #ff6b6b;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        color: #666;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 40px;
+      }
+
+      .loading {
+        text-align: center;
+        padding: 40px;
+        color: #00d4ff;
+      }
+      .error {
+        color: #ff4444;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .echr-stats {
+          grid-template-columns: 1fr;
+        }
+        .formula {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CASE-MACHERET-1997-2026</h1>
+        <p class="subtitle">
+          Interactive Violation Mapping System | Jus Cogens Evidence API
+        </p>
+      </header>
+
+      <div id="case-info" class="case-info">
+        <div class="loading">Loading case data...</div>
+      </div>
+
+      <div class="formula-box">
+        <div class="formula">
+          ∀x ∈ CaseChain : Torture(A) ∧ ¬Rehab(A) → Invalid(x)
+        </div>
+        <div class="formula-desc">
+          Poisoned Root Doctrine — Algorithm of Invalidity
+        </div>
+      </div>
+
+      <div id="echr-stats" class="echr-stats">
+        <div class="loading">Loading ECHR data...</div>
+      </div>
+
+      <h2 style="margin-bottom: 20px">
+        Apostille Registry with ECHR Violations
+      </h2>
+      <table class="apostille-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Apostille ID</th>
+            <th>Date</th>
+            <th>ECHR Articles</th>
+            <th>Violation Type</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+
+      <footer>
+        <p>CASE-MACHERET-1997-2026 | Evidence Archive</p>
+        <p>Mathematical Justice: When Law Becomes Algorithm</p>
+        <p style="margin-top: 10px; font-size: 0.8em; color: #444">
+          Data Source:
+          <a href="history.json" style="color: #00d4ff">history.json</a> |
+          Commit: <span id="commit-hash">Loading...</span>
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      const DATA_URL = 'history.json';
+
+      const violationLabels = {
+        torture_no_investigation: 'Torture - No Investigation',
+        unclear_authenticity: 'Unclear Signature ⚠️',
+        no_rehabilitation: 'No Rehabilitation',
+        justice_simulation: 'Justice Simulation',
+        systemic_impunity: 'Systemic Impunity',
+        no_appeal: 'No Appeal Right',
+        no_investigation: 'No Investigation',
+      };
+
+      async function loadData() {
+        try {
+          const response = await fetch(DATA_URL);
+          if (!response.ok) throw new Error('Failed to load history.json');
+
+          const data = await response.json();
+          renderCaseInfo(data);
+          renderECHRStats(data);
+          renderApostilleTable(data);
+
+          document.getElementById('commit-hash').textContent =
+            '0aa52ec — Dynamic Loading Active';
+        } catch (error) {
+          console.error('Error loading data:', error);
+          document.getElementById('case-info').innerHTML =
+            `<div class="error">Error loading data: ${error.message}</div>`;
+        }
+      }
+
+      function renderCaseInfo(data) {
+        const info = data.case_info;
+        document.getElementById('case-info').innerHTML = `
+                <div class="info-card">
+                    <div class="number">${info.period.split('-')[0]}</div>
+                    <div class="label">Case Start Year</div>
+                </div>
+                <div class="info-card">
+                    <div class="number">${info.total_apostilles}</div>
+                    <div class="label">Total Apostilles</div>
+                </div>
+                <div class="info-card">
+                    <div class="number" style="color: #ff6b6b;">${info.unclear_signatures}</div>
+                    <div class="label">Unclear Signatures</div>
+                </div>
+                <div class="info-card">
+                    <div class="number">${((info.unclear_signatures / info.total_apostilles) * 100).toFixed(1)}%</div>
+                    <div class="label">Verification Failure Rate</div>
+                </div>
+            `;
+      }
+
+      function renderECHRStats(data) {
+        const articles = data.echr_articles;
+        document.getElementById('echr-stats').innerHTML = `
+                <div class="echr-card art3">
+                    <h3>Article 3</h3>
+                    <p>${articles.art3.name}</p>
+                    <div class="violations">${articles.art3.violations_count} violations</div>
+                </div>
+                <div class="echr-card art6">
+                    <h3>Article 6</h3>
+                    <p>${articles.art6.name}</p>
+                    <div class="violations">${articles.art6.violations_count} violations</div>
+                </div>
+                <div class="echr-card art13">
+                    <h3>Article 13</h3>
+                    <p>${articles.art13.name}</p>
+                    <div class="violations">${articles.art13.violations_count} violations</div>
+                </div>
+            `;
+      }
+
+      function renderApostilleTable(data) {
+        const tbody = document.getElementById('table-body');
+        tbody.innerHTML = '';
+
+        data.apostille_mapping.forEach((item, index) => {
+          const row = document.createElement('tr');
+          const tags = item.echr_articles
+            .map((a) => `<span class="tag tag-${a}">${a.toUpperCase()}</span>`)
+            .join('');
+
+          row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td class="unclear-sig">${item.id}</td>
+                    <td>${item.date}</td>
+                    <td>${tags}</td>
+                    <td>${violationLabels[item.violation]}</td>
+                `;
+          tbody.appendChild(row);
+        });
+      }
+
+      loadData();
+    </script>
+  </body>
+</html>

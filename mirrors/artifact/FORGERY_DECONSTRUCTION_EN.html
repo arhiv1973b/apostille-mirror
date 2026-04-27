@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORGERY DECONSTRUCTION ACT ПОДЛОГА — CASE-MACHERET-1997-2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#02080d;--panel:#05131e;--border:#0d3050;--border2:#0e4068;--accent:#00c6ff;--red:#ff2244;--gold:#f0c040;--green:#00ff88;--purple:#aa44ff;--text:#c0dff0;--muted:#3a6a8a;--font-mono:'Share Tech Mono',monospace;--font-head:'Orbitron',sans-serif;--font-body:'Rajdhani',sans-serif;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:15px;line-height:1.7;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,34,68,.01) 2px,rgba(255,34,68,.01) 4px);}
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(0,198,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,198,255,.025) 1px,transparent 1px);background-size:44px 44px;}
+
+.sitenav{position:sticky;top:0;z-index:100;background:rgba(2,8,13,.97);border-bottom:1px solid var(--border2);backdrop-filter:blur(12px);display:flex;align-items:center;padding:0 16px;overflow-x:auto;gap:0;}
+.sitenav a{padding:12px 13px;font-family:var(--font-head);font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s;}
+.sitenav a:hover{color:var(--accent);}
+.sitenav a.active{color:var(--red);border-bottom-color:var(--red);}
+.nav-sep{color:var(--border2);font-size:11px;padding:0 2px;flex-shrink:0;}
+.nav-badge{margin-left:auto;font-family:var(--font-mono);font-size:9px;color:var(--muted);letter-spacing:1px;padding-left:12px;white-space:nowrap;flex-shrink:0;}
+
+.wrap{max-width:960px;margin:0 auto;padding:24px 20px 60px;position:relative;z-index:1;}
+.crumb{font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:1px;margin-bottom:18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.crumb a{color:var(--accent);text-decoration:none;}
+
+.hero{border:2px solid var(--red);background:linear-gradient(135deg,rgba(255,34,68,.09),rgba(0,0,0,.02));padding:28px 34px;margin-bottom:18px;position:relative;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--red),transparent);}
+.hero-eye{font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:2px;margin-bottom:8px;}
+.hero-title{font-family:var(--font-head);font-size:clamp(16px,3vw,24px);font-weight:900;color:var(--red);letter-spacing:2px;text-shadow:0 0 20px rgba(255,34,68,.5);margin-bottom:6px;}
+.hero-sub{font-family:var(--font-mono);font-size:11px;color:var(--gold);letter-spacing:2px;margin-bottom:12px;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:7px;}
+
+.tag{display:inline-block;font-family:var(--font-mono);font-size:10px;padding:3px 9px;letter-spacing:1px;font-weight:700;}
+.tg-r{background:rgba(255,34,68,.13);border:1px solid rgba(255,34,68,.38);color:var(--red);}
+.tg-b{background:rgba(0,198,255,.1);border:1px solid rgba(0,198,255,.28);color:var(--accent);}
+.tg-y{background:rgba(240,192,64,.1);border:1px solid rgba(240,192,64,.28);color:var(--gold);}
+.tg-p{background:rgba(170,68,255,.1);border:1px solid rgba(170,68,255,.28);color:var(--purple);}
+
+.panel{border:1px solid var(--border);background:var(--panel);margin-bottom:14px;position:relative;overflow:hidden;}
+.panel-r{border-color:rgba(255,34,68,.3);}
+.panel::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--red),transparent);opacity:.4;}
+.panel-hd{padding:11px 18px;background:rgba(255,34,68,.05);border-bottom:1px solid var(--border);font-family:var(--font-head);font-size:11px;font-weight:700;color:var(--red);letter-spacing:2px;text-transform:uppercase;}
+.panel-bd{padding:16px 18px;}
+
+.fact-block{background:rgba(255,34,68,.05);border:1px solid rgba(255,34,68,.2);border-left:4px solid var(--red);padding:14px 18px;margin:10px 0;font-family:var(--font-mono);font-size:12px;color:var(--muted);line-height:1.7;}
+.fact-block strong{color:var(--text);}
+.fact-block em{color:var(--gold);font-style:normal;font-weight:700;}
+
+.cascade{display:flex;flex-direction:column;gap:0;margin:12px 0;}
+.cas{background:var(--panel);border:1px solid var(--border);border-top:none;padding:13px 16px 13px 50px;position:relative;}
+.cas:first-child{border-top:1px solid var(--border);}
+.cas::before{content:attr(data-n);position:absolute;left:14px;top:50%;transform:translateY(-50%);width:22px;height:22px;background:var(--red);color:#fff;font-family:var(--font-head);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;border-radius:50%;}
+.cas-lbl{font-family:var(--font-mono);font-size:10px;color:var(--red);letter-spacing:1.5px;margin-bottom:2px;}
+.cas-title{font-weight:700;color:var(--text);font-size:14px;}
+.cas-body{font-family:var(--font-mono);font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
+.cas-body strong{color:var(--text);}
+
+.art-table{width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:11px;margin:10px 0;}
+.art-table th{text-align:left;padding:8px 12px;background:rgba(255,34,68,.06);border:1px solid var(--border);color:var(--red);letter-spacing:1.5px;font-size:10px;text-transform:uppercase;}
+.art-table td{padding:8px 12px;border:1px solid var(--border);color:var(--text);vertical-align:top;line-height:1.5;}
+.art-table tr:hover td{background:rgba(255,34,68,.02);}
+.art-table .ac{color:var(--gold);font-weight:700;white-space:nowrap;}
+.art-table .as{text-align:center;}
+
+.lang-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+.lang-item{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border:1px solid var(--border);background:rgba(0,198,255,.03);text-decoration:none;color:var(--text);font-family:var(--font-mono);font-size:12px;letter-spacing:1px;transition:border-color .15s,background .15s,color .15s;}
+.lang-item:hover{border-color:var(--accent);background:rgba(0,198,255,.08);color:var(--accent);}
+
+.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .18s;position:relative;overflow:hidden;white-space:nowrap;}
+.btn::after{content:'';position:absolute;top:50%;left:-60%;width:40%;height:100%;background:rgba(255,255,255,.08);transform:translateY(-50%) skewX(-20deg);transition:left .3s;}
+.btn:hover::after{left:120%;}
+.btn-red{background:linear-gradient(135deg,#660018,#ff2244);color:#fff;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);}
+.btn-red:hover{background:linear-gradient(135deg,#880022,#ff4466);transform:translateY(-1px);}
+.btn-purple{background:linear-gradient(135deg,#3a0066,#aa44ff);color:#fff;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);}
+.btn-purple:hover{transform:translateY(-1px);}
+.btn-blue{background:linear-gradient(135deg,#005588,#00c6ff);color:#000;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%);}
+.btn-blue:hover{transform:translateY(-1px);}
+.btn-ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,198,255,.3);}
+.btn-ghost:hover{background:rgba(0,198,255,.08);transform:translateY(-1px);}
+.btn-sm{padding:7px 13px;font-size:11px;}
+
+.div{height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent);margin:20px 0;}
+.footer{margin-top:36px;padding:14px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:10px;color:var(--muted);letter-spacing:1px;}
+.footer a{color:var(--accent);text-decoration:none;}
+@media(max-width:600px){.hero{padding:18px 16px;}.btn-row{flex-direction:column;}.btn-row .btn{width:100%;justify-content:center;}}
+</style>
+</head>
+<body>
+
+<nav class="sitenav">
+  <a href="index.html">⌂ VAULT</a>
+  <span class="nav-sep">|</span>
+  <a href="jus-cogens-proof-macheret.html">📜 JUS COGENS</a>
+  <span class="nav-sep">|</span>
+  <a href="liability-nodes.html">📉 LIABILITY</a>
+  <span class="nav-sep">|</span>
+  <a href="NANTOI_NOTICE.html">🚨 НАНТОЙ</a>
+  <span class="nav-sep">|</span>
+  <a href="FORGERY_DECONSTRUCTION_EN.html" class="active">⚖ ACT (EN)</a>
+  <span class="nav-sep">·</span>
+  <a href="FORGERY_DECONSTRUCTION_EN.html">EN</a>
+  <span class="nav-sep">·</span>
+  <a href="FORGERY_DECONSTRUCTION_FR.html">FR</a>
+  <span class="nav-sep">|</span>
+  <a href="apostille-legal-case-optimized.html">💎 VAULT 4.2</a>
+  <span class="nav-badge">CASE-MACHERET-1997–2026</span>
+</nav>
+
+<div class="wrap">
+
+<div class="crumb">
+  <a href="index.html">⌂ EVIDENCE VAULT</a> ›
+  <a href="NANTOI_NOTICE.html">НАНТОЙ NOTICE</a> ›
+  <span style="color:var(--text)">АКТ ДЕКОНСТРУКЦИИ ПОДЛОГА</span>
+  <span style="margin-left:auto;" class="tag tg-r">🚨 INTERPOL READY</span>
+</div>
+
+<div class="hero">
+  <div class="hero-eye">// КРИМИНАЛИСТИЧЕСКИЙ АКТ · ДОПОЛНЕНИЕ К УВЕДОМЛЕНИЮ OFFICIAL SUBMISSION TO UN OHCHR / INTERPOL</div>
+  <div class="hero-title">🔍 FORGERY DECONSTRUCTION ACT</div>
+  <div class="hero-sub">SUBJECT: IDENTITY FRAUD AND SIGNATURE FALSIFICATION OF I.M. MARCOV · 15.03.2022</div>
+  <div class="hero-meta">
+    <span class="tag tg-r">LIUDMILA NANTOI — PERPETRATOR</span>
+    <span class="tag tg-p">OAZU NANTOI — ACCOMPLICE</span>
+    <span class="tag tg-y">СТ. 361 УК РМ</span>
+    <span class="tag tg-b">OFFICIAL SUBMISSION TO UN OHCHR / INTERPOL</span>
+  </div>
+</div>
+
+<div class="panel panel-r">
+  <div class="panel-hd">📌 1. МЕХАНИКА «МАСКИ» — УСТАНОВЛЕННЫЕ ФАКТЫ</div>
+  <div class="panel-bd">
+    <div class="fact-block">
+      <strong>ФАКТ:</strong> Использование личности Маркова И.М. для легализации документов после его фактического устранения/смерти.<br><br>
+      <strong>ДОКАЗАТЕЛЬСТВО:</strong> Несовпадение графологических характеристик подписей — <em>Вектор 3</em>. Подписи от имени Маркова И.М. в материалах гражданских дел (включая захват имущества на ул. Мирон Костин) являются продуктом умышленного подлога, совершённого его дочерью — <em>Людмилой Нантой</em>.<br><br>
+      <strong>ДАТА СОБЫТИЯ:</strong> <em>15.03.2022</em> — точка окончательного захвата активов.
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-hd">🧬 2. ГЕНЕЗИС ПРЕСТУПЛЕНИЯ — ПРИЧИННО-СЛЕДСТВЕННЫЙ КАСКАД</div>
+  <div class="panel-bd">
+    <div class="cascade">
+      <div class="cas" data-n="1">
+        <div class="cas-lbl">СУБЪЕКТ ПРЕСТУПЛЕНИЯ</div>
+        <div class="cas-title">Людмила Нантой действовала «под видом» отца</div>
+        <div class="cas-body">Использование правосубъектности Маркова И.М. для блокировки прав законного наследника (A©tor). <strong>Личность использована после фактической недееспособности/смерти.</strong></div>
+      </div>
+      <div class="cas" data-n="2">
+        <div class="cas-lbl">СОУЧАСТИЕ</div>
+        <div class="cas-title">Оазу Нантой — административное и политическое прикрытие</div>
+        <div class="cas-body">Использование политического положения для <strong>давления на следственные органы РМ.</strong> Обеспечение безнаказанности исполнителя.</div>
+      </div>
+      <div class="cas" data-n="3">
+        <div class="cas-lbl">УСЛОВИЕ ВОЗМОЖНОСТИ</div>
+        <div class="cas-title">8158 суток процессуального вакуума — питательная среда</div>
+        <div class="cas-body">Без нарушения Jus Cogens (сокрытие пыток 1998) → нет вакуума → нет подлога. <strong>Криминальный каскад доказан как единая цепь.</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-hd">⚖ 3. КВАЛИФИКАЦИЯ — УК РМ И МЕЖДУНАРОДНОЕ ПРАВО</div>
+  <div class="panel-bd">
+    <table class="art-table">
+      <thead><tr><th>НОРМА</th><th>ИНСТРУМЕНТ</th><th>ПРИМЕНЕНИЕ</th><th class="as">СТАТУС</th></tr></thead>
+      <tbody>
+        <tr><td class="ac">Ст. 361 УК РМ</td><td>УК Республики Молдова</td><td>Изготовление и использование поддельных документов</td><td class="as"><span class="tag tg-r">ТЯЖКОЕ</span></td></tr>
+        <tr><td class="ac">Ст. 190 УК РМ</td><td>УК Республики Молдова</td><td>Мошенничество в особо крупных размерах</td><td class="as"><span class="tag tg-r">ТЯЖКОЕ</span></td></tr>
+        <tr><td class="ac">Identity Theft</td><td>Международное право</td><td>Хищение личности для совершения мошенничества</td><td class="as"><span class="tag tg-r">ТЯЖКОЕ</span></td></tr>
+        <tr><td class="ac">Криминальный каскад</td><td>Jus Cogens / ILC</td><td>Прямое продолжение сокрытия пыток 1998 года</td><td class="as"><span class="tag tg-y">СВЯЗЬ</span></td></tr>
+      </tbody>
+    </table>
+    <div class="fact-block" style="border-color:rgba(240,192,64,.2);background:rgba(240,192,64,.04);">
+      <strong>🏁 ТРЕБОВАНИЕ:</strong> Немедленное возбуждение уголовного дела в отношении <em>Нантой Л.</em> и <em>Нантой О.</em> по факту мошенничества, подлога и незаконного захвата собственности инвалида I группы.
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-hd">🌐 TRANSLATIONS — OFFICIAL VERSIONS</div>
+  <div class="panel-bd">
+    <div class="lang-row">
+      <a class="lang-item" href="FORGERY_DECONSTRUCTION_EN.html">🇬🇧 ENGLISH — for UN / INTERPOL (current)</a>
+      <a class="lang-item" href="FORGERY_DECONSTRUCTION_FR.html">🇫🇷 FRANÇAIS — for EU / ECHR</a>
+      <a class="lang-item" href="FORGERY_DECONSTRUCTION_ACT.html" style="border-color:rgba(255,34,68,.3);color:var(--red);">🇷🇺 RUSSIAN (current)</a>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-red" href="https://www.interpol.int/en/Who-we-are/Contact-INTERPOL" target="_blank">🔵 SUBMIT TO INTERPOL</a>
+      <a class="btn btn-blue btn-sm" href="https://https://www.ohchr.org/en/contact-us" target="_blank">🌍 UN OHCHR</a>
+      <a class="btn btn-purple btn-sm" href="https://www.icc-cpi.int/get-involved/Pages/communications-and-referrals.aspx" target="_blank">⚖ МУС / ICC</a>
+      <button class="btn btn-ghost btn-sm" onclick="window.print()">🖨 PRINT</button>
+    </div>
+  </div>
+</div>
+
+<div class="div"></div>
+<div class="btn-row">
+  <a class="btn btn-ghost btn-sm" href="NANTOI_NOTICE.html">🚨 НАНТОЙ NOTICE</a>
+  <a class="btn btn-ghost btn-sm" href="liability-nodes.html">📉 LIABILITY NODES</a>
+  <a class="btn btn-ghost btn-sm" href="jus-cogens-proof-macheret.html">📜 JUS COGENS</a>
+  <a class="btn btn-ghost btn-sm" href="index.html">⌂ HOME</a>
+</div>
+
+<div class="footer">
+  <span>АКТ ДЕКОНСТРУКЦИИ ПОДЛОГА · CASE-MACHERET-1997–2026</span>
+  <span><a href="https://legal.un.org/ilc/guide/1_14.shtml" target="_blank">ILC JUS COGENS</a> · <a href="https://arhiv1973b.github.io/apostille-archive-english/" target="_blank">90 APOSTILLES</a></span>
+  <span>🔒 INTERPOL READY · 2026</span>
+</div>
+</div>
+</body>
+</html>

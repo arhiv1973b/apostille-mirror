@@ -1,0 +1,6 @@
+{
+  "EU_CORE": ["@eu_eeas", "@EU_Commission", "@Europarl_EN"],
+  "HAGUE_DEPOSITARY": ["@MinPres", "@NLinMoldova"],
+  "UN_STRUCTURES": ["@UNHumanRights", "@antonioguterres"],
+  "G7_CHANNELS": ["@StateDept", "@FCDOGovUK", "@francediplo", "@AuswaertigesAmt", "@ItalyMFA_int", "@CanadaFP", "@MofaJapan_jp"]
+}

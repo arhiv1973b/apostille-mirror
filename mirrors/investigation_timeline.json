@@ -1,0 +1,41 @@
+{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "subject_status": "A©tor",
+  "meta": {
+    "purpose": "Chronological mapping of systemic jus cogens violations",
+    "verification_status": "SHA-256 Ready"
+  },
+  "timeline_nodes": [
+    {
+      "phase": "1. EVIDENCE_LAYER",
+      "title": "Сбор первичных артефактов и фиксация следов",
+      "key_documents": [
+        "Дело № 1-568/98 (Первичный акт)",
+        "apostille_DFVMD2FQLW5N3.pdf",
+        "apostille_BS7XCZF1EUJG3.pdf"
+      ],
+      "identified_pattern": "Системная анонимизация подписей (indescifrabilă) для блокировки реабилитации"
+    },
+    {
+      "phase": "2. AUDIT_LAYER",
+      "title": "Внедрение математической аналитики",
+      "analytics_files": [
+        "audit_report.txt",
+        "sector9_toxicity_map.png",
+        "APOSTILLE_INVESTIGATION_SUMMARY.md"
+      ],
+      "mathematical_proof": "Токсичная задержка правосудия: 6363 дня"
+    },
+    {
+      "phase": "3. INTERNATIONAL_LAYER",
+      "title": "Прорыв локального иммунитета",
+      "legal_framework": ["Jus Cogens", "Erga Omnes", "UN ILC Guide"],
+      "tech_infrastructure": [
+        "A©tor Neuro-Protocol Portal",
+        "SphaeraFintech/Apostille Blockchain timestamping",
+        "Google Search Console Indexing (identity_schema.json)"
+      ]
+    }
+  ],
+  "mcp_status": "AWAITING_NOTEBOOKLM_INGESTION"
+}
