@@ -1,0 +1,8 @@
+﻿{
+  "system": "TI-ULA-AUTO-AUTH",
+  "status": "ZERO_MAINTENANCE",
+  "identity": "A©tor",
+  "authority_key": "7BEACB5463BA3007",
+  "persistence": "30,000,000 seconds cache",
+  "scheduler": "Enabled (AtLogOn)"
+}
