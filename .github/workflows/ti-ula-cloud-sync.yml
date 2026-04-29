@@ -2,8 +2,8 @@ name: TI-ULA Cloud Sync
 
 on:
   schedule:
-    - cron: '0 * * * *' # Запуск каждый час
-  workflow_dispatch:    # Ручной запуск
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   sync-and-index:
@@ -18,19 +18,17 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y rclone jq
+
       - name: Configure Rclone
+        env:
+          RCLONE_CONF_DATA: ${{ secrets.RCLONE_CONFIG }}
         run: |
           mkdir -p ~/.config/rclone
-          echo "${{ secrets.RCLONE_CONFIG }}" > ~/.config/rclone/rclone.conf
-
+          printf "%s\n" "$RCLONE_CONF_DATA" > ~/.config/rclone/rclone.conf
       - name: Re-index Google Drive Evidence
         run: |
-          # Прямое чтение облака через Rclone
-          rclone lsjson gdrive:CASE-MACHERET-EVIDENCE-FINAL -R --no-modtime > raw_cloud.json
-          
-          # Формирование индекса для mirrors/search.html
+          rclone lsjson "gdrive,root_folder_id=1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy:" -R --no-modtime > raw_cloud.json
           jq '[.[] | {name: .Name, size: .Size, id: .ID, mime: .MimeType}]' raw_cloud.json > mirrors/evidence_index.json
-          
           if [ ! -s mirrors/evidence_index.json ]; then
             echo "КРИТИЧЕСКАЯ ОШИБКА: Индекс пуст."
             exit 1
@@ -43,15 +41,14 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
           git_user_signingkey: true
           git_commit_gpgsign: true
+
       - name: Commit and Push Updates
         run: |
           git config --global user.name "A©tor"
           git config --global user.email "arhiv240@gmail.com"
-          
           git add mirrors/evidence_index.json
-          
           if git diff --cached --exit-code; then
-            echo "Изменений в облаке не обнаружено."
+            echo "Изменений не обнаружено."
           else
             git commit -S -m "TI-ULA · Autonomous Sync · $(date +'%Y-%m-%d %H:%M') · IDNP 655"
             git push origin main
