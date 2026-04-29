@@ -1,0 +1,730 @@
+{
+  "meta": {
+    "title": "Evidence Packet: cogens",
+    "generated_at": "2026-04-29T21:04:29.766461+00:00",
+    "issuer": "A©tor",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "jurisdiction": [
+      "ECHR",
+      "UN",
+      "MD"
+    ],
+    "object_count": 119
+  },
+  "evidence_chain": [
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан 6.pdf",
+      "uri": "https://drive.google.com/file/d/1sUTrctE2C4irVypIrtqn2-0t077TRgFE/view",
+      "integrity_id": "sha256:3b4bca49bb40bab9b3fcb3bb28f6ce1d89ff521f93a00d59b206a18a2ed823ff",
+      "size_bytes": 1006277
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия)_2.pdf",
+      "uri": "https://drive.google.com/file/d/1OhQWmiqx8SXZv5P3AvHS33U_jf-QkZBj/view",
+      "integrity_id": "sha256:36e5e652792bbff0bf0cd85e8a11e70546e8b72c5949810838b14255c7e86409",
+      "size_bytes": 135006
+    },
+    {
+      "name": "Выводы Jus cogens.pdf",
+      "uri": "https://drive.google.com/file/d/1oew-chg9VYbqiRXsIcvHcNq_ZUbBVMvw/view",
+      "integrity_id": "sha256:c4ebed7d638c4b09b13f8ca246d1c75ceee18557c2f2b0adb7a0405aff3a3399",
+      "size_bytes": 558992
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия) 2.pdf",
+      "uri": "https://drive.google.com/file/d/15gn1xkHb8wbGaNDzf9B4hGQuvVlp9VyR/view",
+      "integrity_id": "sha256:809843dc82d4d5527d5881478dd2851873f3dfe6d42b86fd2f63b05ba7abd2a4",
+      "size_bytes": 135006
+    },
+    {
+      "name": "un_jus_.cogens._reabilitation_erga.omnes.pdf_extracted.txt",
+      "uri": "https://drive.google.com/file/d/1JRUA8xUp50iwsPLnsE9AbwfilP-CJ8sp/view",
+      "integrity_id": "sha256:f64e20d1dc8a354fa18b1b2adcfd8de90e9155dccd0e60c8d9cfafeae193c63b",
+      "size_bytes": 5514
+    },
+    {
+      "name": "un_jus.cogens.signed.pdf_extracted.txt",
+      "uri": "https://drive.google.com/file/d/1FH-Y0rQlcyLLEy-xCzNqZI0ul1zSQ3Oi/view",
+      "integrity_id": "sha256:7d6057d60c640dee19ea3b21d0e8b91e7f9365204697bcf73be04593a4e464c3",
+      "size_bytes": 5494
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL.pdf_extracted.txt",
+      "uri": "https://drive.google.com/file/d/1a9bhmjhbjd7L2Bz1GZk5O_Ur34w1Bbze/view",
+      "integrity_id": "sha256:f1747d6c936b56d6f08e7052f72b4d342cf9496c0a07359f3a93287ba1f1fb6d",
+      "size_bytes": 5513
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes.pdf_extracted.txt",
+      "uri": "https://drive.google.com/file/d/1VGSPHVlQPHSLtsvNnLtbVnQlxgA1nEDF/view",
+      "integrity_id": "sha256:f787a1bc5f1ebc0cd1ae2b5bea39a7607c538c9853f1035cd51a7283c719eff6",
+      "size_bytes": 31895
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.pdf_extracted.txt",
+      "uri": "https://drive.google.com/file/d/1ohoFCtu0Fg_je0CTwsAowIlYxBR-66p4/view",
+      "integrity_id": "sha256:5e2f749d037837e84f3c1a6f31e492b341bbf9ce7d26082716337821dfc4ebd5",
+      "size_bytes": 12543
+    },
+    {
+      "name": "Casatia jus cogens and erga omnes.pdf",
+      "uri": "https://drive.google.com/file/d/1rsUmQfUX7fzJOm5T4hlb3j75OvC2WuiV/view",
+      "integrity_id": "sha256:a40df420066bd4d8a592069382396c2eddfd0e657997c2a19a303b07bffad0d1",
+      "size_bytes": 503202
+    },
+    {
+      "name": "Recurs Jus Cogens & Erga Omnes.pdf",
+      "uri": "https://drive.google.com/file/d/11aFAz_G0TGJQFo0pHaMcAGk63bvpWNTh/view",
+      "integrity_id": "sha256:55641ca81896e21a0e89620e353583b05bcd549b04d170f52b3c150fe352ed47",
+      "size_bytes": 459243
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия)_1.pdf",
+      "uri": "https://drive.google.com/file/d/12ErunJkHOg1TjysslO1g0OGMg-pcI8qv/view",
+      "integrity_id": "sha256:f1ff1e576416d679166ea7db5c48110afd84cbafce296c23b63b70138048ca12",
+      "size_bytes": 170827
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия)_1_4.pdf",
+      "uri": "https://drive.google.com/file/d/1Md_afoNCPCEmi1xCvfCWevBZURakr6ho/view",
+      "integrity_id": "sha256:fefedf1156ccfbcc96bb833a6d5711378433b7fccdb2b1be2383aa83fa84d5c3",
+      "size_bytes": 135006
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия)_1_3.pdf",
+      "uri": "https://drive.google.com/file/d/1ENH_vETWqL7rGS4EfD1HXvBCiEOb6_8z/view",
+      "integrity_id": "sha256:81a7a2104d9322ac4ce620a3f1889c2ae511261946df3f2c4d15309e71919448",
+      "size_bytes": 135006
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия)_1_2.pdf",
+      "uri": "https://drive.google.com/file/d/1MQrVNoCvprGzwS-QTzs0J9aLKzbMqiRv/view",
+      "integrity_id": "sha256:991d0d3320d474a2fb8a88401c3d39810471b72bf8c3cec5eae0f2420129a196",
+      "size_bytes": 135006
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия)_1_1.pdf",
+      "uri": "https://drive.google.com/file/d/1ZMy8l-0FQd3Q9k4eihJ4S6M5BZRLcOB-/view",
+      "integrity_id": "sha256:e73beb0c13b25d1c06c771878b06e28704c9162f4a0874fff8901341c5683e75",
+      "size_bytes": 135006
+    },
+    {
+      "name": "Recurs Jus Cogens & Erga Omnes_1.pdf",
+      "uri": "https://drive.google.com/file/d/1O_JmH9L2hrAXmt4vyd2hXRWuMpsw00RS/view",
+      "integrity_id": "sha256:c013d14d4e794e3201862124325f6c8dc7cc7ed54a0b7797b4c438c2e638b5d6",
+      "size_bytes": 258453
+    },
+    {
+      "name": "Recurs Jus Cogens & Erga Omnes_3.pdf",
+      "uri": "https://drive.google.com/file/d/1tAYfv06viCMObbEx28YNliuN-L40Ogh5/view",
+      "integrity_id": "sha256:fbcf7add0fe0b281a4f0ede415db02527bab3bc90943cdfd42256f8e2a8923ff",
+      "size_bytes": 258453
+    },
+    {
+      "name": "Recurs Jus Cogens & Erga Omnes_2.pdf",
+      "uri": "https://drive.google.com/file/d/13pgwGqT1myNjv5Ew5SMdn_xlSR6rBsuV/view",
+      "integrity_id": "sha256:8794213888b9198b988a3aed3ec70b27a5d53d2f91b7e5d6503b3a273fa8ded8",
+      "size_bytes": 258453
+    },
+    {
+      "name": "Recurs Jus Cogens & Erga Omnes_4.pdf",
+      "uri": "https://drive.google.com/file/d/1xizAAZic6x7YA0mUEiMZE1Ce5vLKFIza/view",
+      "integrity_id": "sha256:a7603bc64c9577243f195d0c386c60e0f80476a17bfb3f8ee7a9156d697d6046",
+      "size_bytes": 258453
+    },
+    {
+      "name": "res judicata of Jus Cogens .подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1HvNKxy2d25pYkH7VHqw0608p-s2QheLh/view",
+      "integrity_id": "sha256:33b240ed6f58699d969751070d3a3bc44f0951a70f6a8faa8a828ee79f186bfb",
+      "size_bytes": 249424
+    },
+    {
+      "name": "res judicata of Jus Cogens .pdf",
+      "uri": "https://drive.google.com/file/d/1Xe5deRSQYjYD40huGi91BI51OJPK8W1h/view",
+      "integrity_id": "sha256:8bef904950266f67cca8be4065770544caf2ac1d07c6aa467cc1c1c662e1dc65",
+      "size_bytes": 127797
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Erga_Omnes_A©tor_Macheret_2.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1PO4zAs7C0AZbhTC-l5h-4YvnjY1zbbAB/view",
+      "integrity_id": "sha256:104c1d887de47f3436d47593072a4e088ad54e9a8ee2121a5ba3d4b3db7ec8e2",
+      "size_bytes": 263020
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия)_1.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1oTdJ_73YoALcDhtawBs2xs_e9CVb0E8J/view",
+      "integrity_id": "sha256:835967149f0f3327b9b8e8b41ed3a7994837db1431bacd6aeb2a717846cd1067",
+      "size_bytes": 1006277
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor (копия).pdf",
+      "uri": "https://drive.google.com/file/d/13-hL0NhvQJJaX52LGxTIQwnK2shYNCoL/view",
+      "integrity_id": "sha256:f4080fba8754849e1f37a93e231646cc59eaeef9edc660bae1c622e6f2c06c71",
+      "size_bytes": 135006
+    },
+    {
+      "name": "МЕМОРАНДУМ О НАРУШЕНИИ JUS COGENS_1.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1gNJSI5NWJAU_EEb4ZRAuFIU3OzFrIWTv/view",
+      "integrity_id": "sha256:6fd8ff790eb6c4e8ab0326884f199adf3dd1c29878a2111cfc565b3fa1ab6a64",
+      "size_bytes": 329358
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Erga_Omnes_A©tor_Macheret_1.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1eyLNWYquN4vJA8H4wgDzRj1_WTlnfy22/view",
+      "integrity_id": "sha256:c860aee40f841d7e5cf2b0d5dadc9e63c79d1c5bd1fa724f3c5557f36696f859",
+      "size_bytes": 263020
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Erga_Omnes_A©tor_Macheret.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1-eh2FPjJqlI9_UbRYmpnEOM_jVCsC1lF/view",
+      "integrity_id": "sha256:cd7b3d96bb2bb3f64ce821fd60039b420659283d7640721e0f5436dcd6896788",
+      "size_bytes": 263020
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Erga_Omnes_A©tor_Macheret_1.pdf",
+      "uri": "https://drive.google.com/file/d/1q2xyUk2QbIZo30gqAvHIx3fRI8mxfS0g/view",
+      "integrity_id": "sha256:9b2558258d4403fd66a6f1c2a00b74a457d9aa02fd72dc23f3be1d0502886b66",
+      "size_bytes": 118108
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Erga_Omnes_A©tor_Macheret.pdf",
+      "uri": "https://drive.google.com/file/d/1rk7ZrkhUrdUQrRr-_OVhmND2gcT1wYSd/view",
+      "integrity_id": "sha256:fde7b191b7b6e12d778e44c29da0d4c295100c8f346015528f5f66cf836afffe",
+      "size_bytes": 143728
+    },
+    {
+      "name": "МЕМОРАНДУМ О НАРУШЕНИИ JUS COGENS.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1hk38-Oj70-V2iJU3OSj_UBm_qXsuWMbP/view",
+      "integrity_id": "sha256:0b1fe7e47f165adb5f18d976f22ab6de0a1e97d1ab753ebe2dd3a0ec59bac4f9",
+      "size_bytes": 329358
+    },
+    {
+      "name": "МЕМОРАНДУМ О НАРУШЕНИИ JUS COGENS.pdf",
+      "uri": "https://drive.google.com/file/d/1JCuMBBuOeIKbdFAbZF0vRQZ0mImTzW6q/view",
+      "integrity_id": "sha256:ef06b6bd25608b7653ffbf47f783c99d32d49e7bcbb76bd5f749210740705e17",
+      "size_bytes": 208422
+    },
+    {
+      "name": "Tabel de sinteză al constatărilor proiectului privind jus cogens și implicațiile acestora pentru 1.pdf",
+      "uri": "https://drive.google.com/file/d/1xpSMSChXd3RxTMqV-7ofl9vAu7KsfdzY/view",
+      "integrity_id": "sha256:e5e12807277bda0fe461fef233ca1544e9c8edd36ab411ac546c3dabdc003dcc",
+      "size_bytes": 160658
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor_.pdf",
+      "uri": "https://drive.google.com/file/d/1FNUuDpU-omVFKWH0k1tJ_F2PrwZt13MQ/view",
+      "integrity_id": "sha256:b553cf54f8abcf751299de1ea565fb021653fa7904c20adbc664ee6e477c7b89",
+      "size_bytes": 242856
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor_.подписан (1).pdf",
+      "uri": "https://drive.google.com/file/d/1E4RrVgzEr4vDRK1VbUQzEd5NqqTX9rz4/view",
+      "integrity_id": "sha256:585398c99023a9e817e5004decb9916a30e9491022aef2d029b84149333216a1",
+      "size_bytes": 364580
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor_.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1WsB-T7cEOl_1TeVe-nkFl4AGhkP6nrW8/view",
+      "integrity_id": "sha256:7587dfa303d64fddd0c26e6267c492131a1ccfe8eb1ca89b6369982d84d35205",
+      "size_bytes": 364580
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_Actor_v2.pdf",
+      "uri": "https://drive.google.com/file/d/11VmVB5jCy2AgMXhPY9zg6EQzxYDpPkI4/view",
+      "integrity_id": "sha256:6cd9bd0a8e4677d9d639e70f1ac748421fb09c4da59a23f65566c90297912df6",
+      "size_bytes": 242853
+    },
+    {
+      "name": "Svodnaya_tablitsa_jus_cogens_A©tor_v2.pdf",
+      "uri": "https://drive.google.com/file/d/1bDx2AaMuOhTSDhABZVDb34itYziEZCKG/view",
+      "integrity_id": "sha256:555b03c85e428e47f9ca5df525f9ac10e4f5b403264044e577b84c24459604cc",
+      "size_bytes": 336475
+    },
+    {
+      "name": "Tabel de sinteză al constatărilor proiectului privind jus cogens și implicațiile acestora pentru A.pdf",
+      "uri": "https://drive.google.com/file/d/1x4TE2GLJ7hVSa2YepnSvKmA_D-ynVrFM/view",
+      "integrity_id": "sha256:134d8a360102592222618b57a9402192541447ab2a993023bba8e5146e0468c8",
+      "size_bytes": 157457
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO_1.подписан (1) 2.pdf",
+      "uri": "https://drive.google.com/file/d/1KaV2iuOmV_dkSGSvYp-LM2Lt0Fva1osa/view",
+      "integrity_id": "sha256:1a2ea9b5d89b61aa2c12c94b53422b5659f56cc5f378c16d8b6f9d152ada18f1",
+      "size_bytes": 292998
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Alexei_Macheret_1.docx.pdf",
+      "uri": "https://drive.google.com/file/d/149OAJ1yTfpyR7NQ4VR0h4FQYqC6vGULC/view",
+      "integrity_id": "sha256:9d54a250ba2f559f1272914e8a67fdb75536738dfed4a184e85893eba9f8769d",
+      "size_bytes": 173539
+    },
+    {
+      "name": "Memorandum_Jus_Cogens_Alexei_Macheret.docx.pdf",
+      "uri": "https://drive.google.com/file/d/1Z_2MTmv8lUaYhMyt4P-QtDGoUx3HRLm_/view",
+      "integrity_id": "sha256:d18cfae7255364403e30fa52fa32c5db4894446c38aced0657cd1271b399b96f",
+      "size_bytes": 173539
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes_compressed (2).pdf",
+      "uri": "https://drive.google.com/file/d/1XIg1GaqxPCDNGsoaUmLj7hEruxcdts4C/view",
+      "integrity_id": "sha256:413e402563d3486e86affd05a9d1a45f37f2610632ff725a4389588e229bde88",
+      "size_bytes": 3733988
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes_OCR..подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1UvOpRlvpe2tg3DIVX7qF6Bpdoz-LMoKi/view",
+      "integrity_id": "sha256:555074ce4c1d2575fd9d331775dd8ac9ede0123206a2941c6e411fd8fc01a831",
+      "size_bytes": 9126799
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes_OCR..pdf",
+      "uri": "https://drive.google.com/file/d/15TuYOYx6telLSszlMff6EcsWF75aAEGi/view",
+      "integrity_id": "sha256:6dea59d22bfa7fd1a4f0f7a2ee833254eaf988e12a23ff5528b848224a200b14",
+      "size_bytes": 9010016
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes_compressed.pdf",
+      "uri": "https://drive.google.com/file/d/1J_EU1dMsIGEOo9urizKHRoXvl5xLqZix/view",
+      "integrity_id": "sha256:f76949ec8dff10c65d61e07a36d0248161735258f73e4ab09273e5bddf5e8cab",
+      "size_bytes": 9010080
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes_compressed (1).подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1VR1d45NztAegnuqsYBzuA2xEcKv_727y/view",
+      "integrity_id": "sha256:80634eb5724d0bd790bd6e9c3c138f4c7daf68a9fea24920bd0dbdde1efebcd6",
+      "size_bytes": 9066651
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes_compressed (1).pdf",
+      "uri": "https://drive.google.com/file/d/1WiersEN5zZQcOBv-Q6SPEnoRQd0TtUI5/view",
+      "integrity_id": "sha256:2859c4d69e4d84314cf76c0c5a849e950a367a5b4e36c5a7eca04c6879b0530a",
+      "size_bytes": 8956325
+    },
+    {
+      "name": "un_jus_.cogens.&reabilitation&erga.omnes.pdf",
+      "uri": "https://drive.google.com/file/d/1iMHeHyv4873Ncd1MnzzjwNGXpRho081c/view",
+      "integrity_id": "sha256:9c246176ee864c5ae30c3a5c16939cf2dfa2b99b047a6055457dd96e6b761a66",
+      "size_bytes": 43687101
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан 3.pdf",
+      "uri": "https://drive.google.com/file/d/1lj6RW6yppMVnk3RUwx5_DWiB4-7j6rxJ/view",
+      "integrity_id": "sha256:aabf72bd7c8df0cce07669cdba0e2ba3f1555675177dff357bd0424574ae4754",
+      "size_bytes": 1006277
+    },
+    {
+      "name": "un_jus_2.cogens.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1n4SQTkUbUibE9ncCc6TcQbdHrgVjgyGE/view",
+      "integrity_id": "sha256:8ae206d6041a1060405d10a78c3e7b8dc133d1920a3b2f819b2be22a7ceb9e4f",
+      "size_bytes": 1096614
+    },
+    {
+      "name": "un_jus.cogens.подписан.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1km2wh02zJOn7nq33Ipl4FHPofMwAagYs/view",
+      "integrity_id": "sha256:dfad19008991c1d7f986684079dd2386fa3d77fac2bff2a8d5603a9afd1d6e7a",
+      "size_bytes": 247
+    },
+    {
+      "name": "un_jus.cogens.signed.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1S6l4V8yY3MQlJAZeejD2AaQwvaS-nSlC/view",
+      "integrity_id": "sha256:e490324ab192060b0b82a58185bfdfd104b93783d7a71abd1f5dd0599a002cf2",
+      "size_bytes": 227
+    },
+    {
+      "name": "un_jus_1.cogens.signed.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1l_T_j644sIKqh7CH_7NABcQTCZrDa94u/view",
+      "integrity_id": "sha256:8aa711bfe243bcc60877fe114557ec49eed463c260036673ff40f22f08539b5e",
+      "size_bytes": 231
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1aQtCwyLI3ifoptTqMExbL20IdGxpgT2O/view",
+      "integrity_id": "sha256:c943bea06ef48bcb12ad9c32d055db8f54ed6e43b35bf9b9ae907df60986c8be",
+      "size_bytes": 299
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (2).pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1hgPjMA0iIgOcIlG0MucHq_gofonLQTm_/view",
+      "integrity_id": "sha256:903d35cccaa5f10d2bd21ae8465f575e3ceb7e8028652f9eeea982d6310c43b1",
+      "size_bytes": 307
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1).pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1g8dq1JXeYuwMV4VJ463l6kKWWt0eEQg3/view",
+      "integrity_id": "sha256:df86243925d5df58ec89a444993ee6170fb506e88800501bff01bab15bac0197",
+      "size_bytes": 307
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) 2.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1gZnYcJLlPXmopcIIJzQDhj9Q0z94Mp_f/view",
+      "integrity_id": "sha256:fd88ff89216113db13ade4203f025a94a3d863beaef43b4c62484753ddfdb357",
+      "size_bytes": 311
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1iIGE5p2qfeNiItXezDJ61rp8-7dRuAlX/view",
+      "integrity_id": "sha256:419a4903244658c7c4c6f1c6bc19d21eb4b8f1b046ea990c2ec648bdf382e479",
+      "size_bytes": 325
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан (1).pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1XA6tpVh_UTY_EN45eM0o4g5hWuX9GGeX/view",
+      "integrity_id": "sha256:705a1628d1fc60dbe5f2f58fe80600f5b5f41ef96e26444f87bf6195bf0b790a",
+      "size_bytes": 333
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_Updated_1.подписан.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1CGzxh-QofuJlSXNbix1ozvwix6LbESHN/view",
+      "integrity_id": "sha256:943c6cddbf88ef544c106a802384f39af96ac60e39d37bb8cf962c3327d54382",
+      "size_bytes": 319
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed.pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1_lWpwdiqfVyMyr1iIjeaf_KAvPGSrDld/view",
+      "integrity_id": "sha256:16684bc604bc13c34406d26c839a43d6dc2a2705cc0b0bf4c1e76fc37b2b2b42",
+      "size_bytes": 279
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed (1).pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/16HPdAoqVcFAeBIvAffEf24zihpVopqTp/view",
+      "integrity_id": "sha256:2191859e2df4c587cf15b3a418eee9c1e543401854b83ad25b08af3e7f4e3c3b",
+      "size_bytes": 287
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.подписан (1).pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1wvP_e2bzP-li438upeVYGLmkNuqODBIc/view",
+      "integrity_id": "sha256:70fe1cf83fe82d855fc787c9592da4cbb3efbcc1f52975c0264582ff871f4b9b",
+      "size_bytes": 319
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO_1.подписан (1).pdf.LABEL.json",
+      "uri": "https://drive.google.com/file/d/1uevCUJUEAhZDkAZVWEvl0easyv6DXvn-/view",
+      "integrity_id": "sha256:c15ec43df4c211f06ef9ad338fe0f735a7703ade00378c49187b1a8ed681fcd4",
+      "size_bytes": 323
+    },
+    {
+      "name": "un_jus.cogens.подписан.pdf.sig",
+      "uri": "https://drive.google.com/file/d/1Nlqci6kHQs74cZMiBfw-P65RrrJ_AAVZ/view",
+      "integrity_id": "sha256:48a13eb500d9b8ad3485121c63a46995d41657e862dfa0a1b0eb4111b67fdcf8",
+      "size_bytes": 57
+    },
+    {
+      "name": "un_jus.cogens.signed.pdf.sig",
+      "uri": "https://drive.google.com/file/d/18OKOgspb-nn9NGKlN2eyFWXl0ABqNrFZ/view",
+      "integrity_id": "sha256:d1244588a74ad0f58486f6cd891d21224ebf3720adafa91dfe6fc394224f3a87",
+      "size_bytes": 47
+    },
+    {
+      "name": "un_jus_1.cogens.signed.pdf.sig",
+      "uri": "https://drive.google.com/file/d/1WNj6J3fqPClTH4o9G0eu7JBR2v518kja/view",
+      "integrity_id": "sha256:8f6e8c65cb603f265e28075c4ef1fff69f052fa1a1664c98c33998b012232f8c",
+      "size_bytes": 49
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан.pdf.sig",
+      "uri": "https://drive.google.com/file/d/1UoQDDyLsohLw6kaObPNnq7zKkBZtj8Mw/view",
+      "integrity_id": "sha256:efc8ba6a2cc4441b6bbf43600ee3f7b196f5a20da9eac9f9fab6a28fc1ab71b9",
+      "size_bytes": 83
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (2).pdf.sig",
+      "uri": "https://drive.google.com/file/d/17HXVqmoNOsq0XVq5pdI-EXDt4BTQj3l2/view",
+      "integrity_id": "sha256:5059f0769d8e762f3ea128e2dec44dd53ed6aab991b25410e2ec157860f0c425",
+      "size_bytes": 87
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1).pdf.sig",
+      "uri": "https://drive.google.com/file/d/11FaMr0JJqWVm2QMxl1vhMLqFzwEEQEh2/view",
+      "integrity_id": "sha256:2e8ad8d7f1b602aca1e1212683c207d20f4d3217614a8588cf5f2aec49861fdb",
+      "size_bytes": 87
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) 2.pdf.sig",
+      "uri": "https://drive.google.com/file/d/10-TgT7FcyEdlH7Bg_St5mPyz1GhR06ki/view",
+      "integrity_id": "sha256:9b29486da7c30b283b6892026055611bc5c83fe8fcc2e80882cd4010ea8ab283",
+      "size_bytes": 89
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан.pdf.sig",
+      "uri": "https://drive.google.com/file/d/1K1SwvlFCPbB2WzJDsEgo12BEed33faAD/view",
+      "integrity_id": "sha256:d20a03aa06ba10c0dabaab4c02da1458a813bfe11765575b3c577050167edd9f",
+      "size_bytes": 96
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан (1).pdf.sig",
+      "uri": "https://drive.google.com/file/d/1pVEzfmDy-B7-OHi-4U1ZzJw42ytuODDH/view",
+      "integrity_id": "sha256:2d677a7c117b3030745d717828024d54b2844589e8c680df04096d58d0436fe8",
+      "size_bytes": 100
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_Updated_1.подписан.pdf.sig",
+      "uri": "https://drive.google.com/file/d/1Ly4hfp-fPYzJ3euR2nt8A2bZaB1Uhzgj/view",
+      "integrity_id": "sha256:f355104418831460563c20ba25c7ad964f41b1d552e528c55f602c56f3fc536d",
+      "size_bytes": 93
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed.pdf.sig",
+      "uri": "https://drive.google.com/file/d/1MwT7cgwvHYeUgKDxW3DgCQng9Arxe0S0/view",
+      "integrity_id": "sha256:e43a4ad0e5b8a24f81cc2a3b1014f6a0fb2e92d4612661d1f973c42681c4989c",
+      "size_bytes": 73
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed (1).pdf.sig",
+      "uri": "https://drive.google.com/file/d/1FEP9Q2Ehm-C6JG2SVLK6avkVMAq5BDUe/view",
+      "integrity_id": "sha256:e50dd6198b04d4fda78a3c6a38c9288ab37b21c9176c8a6dc6253368970ee75e",
+      "size_bytes": 77
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.подписан (1).pdf.sig",
+      "uri": "https://drive.google.com/file/d/1uodaHTqyQuMDUsuuJzGGijpK39ML6ELp/view",
+      "integrity_id": "sha256:0df1451e0a64a6fa911baada7a2616ab60eed35fc1b83278c9b0e099957e218a",
+      "size_bytes": 93
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO_1.подписан (1).pdf.sig",
+      "uri": "https://drive.google.com/file/d/1sSed22LOOgdMHyQCGvVOB9kdgGqB6LCj/view",
+      "integrity_id": "sha256:e7da4b00760f089ff665663b4f5a74f43905c58164433e4fdd3497adfd2c0fbd",
+      "size_bytes": 95
+    },
+    {
+      "name": "un_jus.cogens.подписан.pdf.json",
+      "uri": "https://drive.google.com/file/d/1wFAyNf8GfPQmHXocyBOxHjQoveDjzJey/view",
+      "integrity_id": "sha256:60bf61801c50abb0b6f0840d88e384b4e44344467b4039ac663bf1c3c2a5131f",
+      "size_bytes": 86
+    },
+    {
+      "name": "un_jus.cogens.signed.pdf.json",
+      "uri": "https://drive.google.com/file/d/1QkX4mTwZKvYs2GGVlh-sam_ROSfvke31/view",
+      "integrity_id": "sha256:0b882b0199ac3f3a75dee9b408878381169b58d96d176723eb674ffe3727ca14",
+      "size_bytes": 76
+    },
+    {
+      "name": "un_jus_1.cogens.signed.pdf.json",
+      "uri": "https://drive.google.com/file/d/1TLKYtONoGu4BiDjWki4TvOFMmZyZokyb/view",
+      "integrity_id": "sha256:36ff001d0a01608118abf4c83331f38ef05d2290aadbefa9481923f56721d0d9",
+      "size_bytes": 78
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан.pdf.json",
+      "uri": "https://drive.google.com/file/d/19BAaiiOXecimhDmKuRH6A8fng9VIQlCJ/view",
+      "integrity_id": "sha256:9f97bc3f37a7f4ed524b45c8c7a335189da38ff995b809d9ab37fa1617066906",
+      "size_bytes": 112
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (2).pdf.json",
+      "uri": "https://drive.google.com/file/d/1PjA5PZhaXhMdOu96CcVDFg8UMvg4plTP/view",
+      "integrity_id": "sha256:a3897dc847814d618a76e3546538916d15f8c19ab7076df1414e715e74c9f17e",
+      "size_bytes": 116
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1).pdf.json",
+      "uri": "https://drive.google.com/file/d/19mduTMlgHSd23NuDdLQmm9P-wwYQAcww/view",
+      "integrity_id": "sha256:3278e476649434024734f94d878954b375f5887accb14086b290c58c6c8e1e0a",
+      "size_bytes": 116
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) 2.pdf.json",
+      "uri": "https://drive.google.com/file/d/1fe1-Ch5Tfo4VqpfnpqrYpz6aabVWztr0/view",
+      "integrity_id": "sha256:625161072ca0aff9248f990d261e735a351a67a4de4de0fb08302488591522f7",
+      "size_bytes": 118
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан.pdf.json",
+      "uri": "https://drive.google.com/file/d/1hclDmT72QrAeU7QGTV6NydOWd1kzOix8/view",
+      "integrity_id": "sha256:cedf967f42d18232199dbf51e2ad67576c1aa74e70e54bf2efaf5a8e6bf92f05",
+      "size_bytes": 125
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан (1).pdf.json",
+      "uri": "https://drive.google.com/file/d/1Onjq5sjjRSB6l0HOOWaBIq_lB8b7WwYC/view",
+      "integrity_id": "sha256:7ae54684268040d69c3475711b5a49cd7cd819ba63d0834288ed851214604de6",
+      "size_bytes": 129
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_Updated_1.подписан.pdf.json",
+      "uri": "https://drive.google.com/file/d/1paAMSoyOM98hWfug9NbHgBWHyrn9q9rR/view",
+      "integrity_id": "sha256:ddedc42e717041b82744d4af8dead8a56ca182c1cfe402dc325d62908c395050",
+      "size_bytes": 122
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed.pdf.json",
+      "uri": "https://drive.google.com/file/d/1ToWJWrrBm7Id6F_prY2nfd0ak2NODXY0/view",
+      "integrity_id": "sha256:5aa3798ad084b63932cb4be1081f0ab8405afa40dca2eabd2228a0c1782c0b78",
+      "size_bytes": 102
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed (1).pdf.json",
+      "uri": "https://drive.google.com/file/d/1qnc6x0JtQNnCdH-RwtwIzPurKHz0xBjK/view",
+      "integrity_id": "sha256:14f6cdf96bc1ccadee26ec27915ac74f3104add7911ef7cf6ace3204d2037600",
+      "size_bytes": 106
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.подписан (1).pdf.json",
+      "uri": "https://drive.google.com/file/d/1lVqSPcmgU-fgKLDkDhD7oYk9XZcQ_FQz/view",
+      "integrity_id": "sha256:b065d6e21f9f13fcdc1a969d07a0f8f34741bd0e01ac084e915053af48aa9f31",
+      "size_bytes": 122
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO_1.подписан (1).pdf.json",
+      "uri": "https://drive.google.com/file/d/16Q_KJOZ1aqbgznQABUnomSjdAXtHgxLz/view",
+      "integrity_id": "sha256:27a07c8f85eb8f883a6f0ddd7a49b6cc1291f475c077fec8360dd59f42953304",
+      "size_bytes": 124
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.подписан (1) 2.pdf",
+      "uri": "https://drive.google.com/file/d/12wgz0ev3TkTRXt4-x6h-cycZM-58p4Fg/view",
+      "integrity_id": "sha256:b1f9fe5b94772649758f893af8961ba6983bebf5bfbaa8980bc97d0899deecb6",
+      "size_bytes": 292998
+    },
+    {
+      "name": "un_jus_1.cogens.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/10lUmzqQOZFLn8qC_9A2BsW-YMy7hNz39/view",
+      "integrity_id": "sha256:69b202fb74fd6df09857fccd31d9cee6b8806aab418fc96edcce97ad7183af47",
+      "size_bytes": 1096614
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) (1).pdf",
+      "uri": "https://drive.google.com/file/d/1j-yxnywHKglyK0lhnjCl75QzLAtYwP94/view",
+      "integrity_id": "sha256:f53d11bbb84e6dc8513c746d76fdc3d9d1c3cbde314d36328f0f6b1120b60965",
+      "size_bytes": 2210057
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL_1.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1-fWFBQpaJxAhG1fok5QhgHPKziEhgDsp/view",
+      "integrity_id": "sha256:55a5f75748dc9d9fa796c468d4cf9d5c7df9305d9af09ef2c21eacd31a437820",
+      "size_bytes": 2209990
+    },
+    {
+      "name": "un_jus.cogens.signed.pdf",
+      "uri": "https://drive.google.com/file/d/12cax8yM82BimI1dAjUyMZ-lgZkihdXbm/view",
+      "integrity_id": "sha256:986d76984af776162602ea95440495448e57543a1a39f29785bb9b69dbe1463a",
+      "size_bytes": 42375401
+    },
+    {
+      "name": "un_jus_1.cogens.signed.pdf",
+      "uri": "https://drive.google.com/file/d/1VphJVkXSay3-ntz2byIYGfxCQJVeNlW_/view",
+      "integrity_id": "sha256:abf25b6c62965c769ff9181ab9a12844c1b7cef3cea93380b97c6d73418fd110",
+      "size_bytes": 42375401
+    },
+    {
+      "name": "un_jus.cogens.pdf",
+      "uri": "https://drive.google.com/file/d/1l4CN6BZqKpRFNsjzDbwGLdNLHp0YJqjJ/view",
+      "integrity_id": "sha256:372b0ea109b0ccde36124c2fdba834cd6af93fd60f3d5f02c2ddd227fc6c14e8",
+      "size_bytes": 42257462
+    },
+    {
+      "name": "un_jus.cogens.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1SWGeqM-JhiVjgtHK27O_DSQPmMt9Tbwq/view",
+      "integrity_id": "sha256:876cce61eb211c5aad2ddb7dfb9d79a1d0498c02b89a97ac9896049a2f80dfa6",
+      "size_bytes": 1096614
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) 2.pdf",
+      "uri": "https://drive.google.com/file/d/148O9hr41oLbSVG2U61mQC5Ix-Pp6qtRX/view",
+      "integrity_id": "sha256:137536f94d171752c967e0f68e253f190c62c21b2cf475257407d9aded02e71c",
+      "size_bytes": 2210057
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (2).pdf",
+      "uri": "https://drive.google.com/file/d/1m3I-3RBskPqAsftYaVim3-S7t7vg1GEN/view",
+      "integrity_id": "sha256:19022dd0879212c04e46d629dfcbb0f5338cd0e35fe71161bedc88aa601cbccf",
+      "size_bytes": 2209654
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1).pdf",
+      "uri": "https://drive.google.com/file/d/1AHzwnkiPsHG23r7jYmmqGPMdgIQivHmi/view",
+      "integrity_id": "sha256:a64ed8e7307184e0887b4bedeafaac4d0916b4df33a5a8d8131bde45786702c6",
+      "size_bytes": 2210057
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.pdf",
+      "uri": "https://drive.google.com/file/d/1tGm8eqNESbIGzE4g-e3Zr3oLcEWLdG97/view",
+      "integrity_id": "sha256:23be151300c93cc48acc25772be3d4e071a8cfc6490f2733644aea63e2276b49",
+      "size_bytes": 2093226
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_Updated_1.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1ZqcbUj2Atptv7txrKmOjvcXaNk5PvvQt/view",
+      "integrity_id": "sha256:db2f6eb00a7baa0cc74e537a361b969a9c46f201a7db8915b8e9f85ee3d9bae0",
+      "size_bytes": 115226
+    },
+    {
+      "name": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1A41tEKpFzQA-VzSw1PbhDCPAijbRmnG1/view",
+      "integrity_id": "sha256:4626528bc8421e6ad67c1713154203b0dd5ee9ccf64ec78cb5e94b52d80ca46c",
+      "size_bytes": 2209654
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed.pdf",
+      "uri": "https://drive.google.com/file/d/14iI_X4fEEyk_4t91XkUBVgZm8S1_tuBU/view",
+      "integrity_id": "sha256:fef99a55a8a997442422c20cae44a16c52319716bc56f4f690627717a58e9960",
+      "size_bytes": 1006277
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_Updated_1.pdf",
+      "uri": "https://drive.google.com/file/d/1igbUDjWblefzcO44svsWXaAxQKIeYFOa/view",
+      "integrity_id": "sha256:6ad27a13e8ea59e4da4668f52927499911089ee2635d33cd8ad7655275643219",
+      "size_bytes": 5001
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_Updated.pdf",
+      "uri": "https://drive.google.com/file/d/1W5A8jqq5WjeVUyajItKjkIMZ3EvR4lRN/view",
+      "integrity_id": "sha256:c4525d8b5ecff3be4efcba773e68d185a6a8f39a4a29b90adc6f8b5b7ecbb7ac",
+      "size_bytes": 5001
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL_signed (1).pdf",
+      "uri": "https://drive.google.com/file/d/1qMIPLC8rfQyR2JXtrRDFArPWBV-C4E6g/view",
+      "integrity_id": "sha256:25f8ff6b1b67197226950fd17e2f2ebc3aeb5caae601e188779bb7cb740ddd2a",
+      "size_bytes": 1006277
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO_1.подписан (1).pdf",
+      "uri": "https://drive.google.com/file/d/1YSPfYlh75TtRLxmFqmHvmxQDl2CzVncC/view",
+      "integrity_id": "sha256:589556e182e3a03cab85d90085250af6aa5f7f30d263d0410aa6061538fc753e",
+      "size_bytes": 292998
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан 4.pdf",
+      "uri": "https://drive.google.com/file/d/1s25C6r8m7cp5ZXT8LVtgma4nkZtlvkU4/view",
+      "integrity_id": "sha256:ad6558719a2ff9341643db329a1febb98182f011f784fabfac7470c3097a3b16",
+      "size_bytes": 1006521
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан (1).pdf",
+      "uri": "https://drive.google.com/file/d/1r3_qrWM36PfMtsiaAgtNYMw-lHepyM-c/view",
+      "integrity_id": "sha256:c6c8db6002ecb318b382bd5ad0353b497be2ae5b44a417adf970f9b06ee2ae95",
+      "size_bytes": 1006277
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.подписан (1).pdf",
+      "uri": "https://drive.google.com/file/d/1RrcexFk5-9p3MWT_6CjOkCl5admmAlS2/view",
+      "integrity_id": "sha256:0cb1b92c1349d70badee21a79f04b4cc2b5a8a9f8b2b9f73b39072563d72bb24",
+      "size_bytes": 292998
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1xSglo8YLWH5rEp2D9__rbtG-pOQI2_SW/view",
+      "integrity_id": "sha256:31670f2c3579b9c1af9536685891d1d7c0217dcd2dcf896ccb5f3294fcecf54c",
+      "size_bytes": 292858
+    },
+    {
+      "name": "MEMORANDUM_JUS_COGENS_PRIORITY_PROTOCOL_EN_RO.pdf",
+      "uri": "https://drive.google.com/file/d/1ljiw4AJ_il00x7xuzmK9qbNjufSe2H9M/view",
+      "integrity_id": "sha256:998845bf2aba6f54d8be2884d2f4571f9852d34a331af57f96786c5c74aec191",
+      "size_bytes": 178216
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).подписан.pdf",
+      "uri": "https://drive.google.com/file/d/1Bik3s8YONTfCdHRwEtTiKPrLNdF665x6/view",
+      "integrity_id": "sha256:17efc63fc2a1719b5b6c78a434427e3eeeb58011df36c4a79634e298177145bb",
+      "size_bytes": 1006521
+    },
+    {
+      "name": "Memorandum_JUS_COGENS_PRIORITY_PROTOCOL (копия).pdf",
+      "uri": "https://drive.google.com/file/d/1Nrihe_h493Tl0MXpAd0p_6zEyU8Y5yUZ/view",
+      "integrity_id": "sha256:404551b108ae952685caefcfd3f820ecb037b4e5734792023ef7d45bc45faa2e",
+      "size_bytes": 889929
+    }
+  ]
+}
