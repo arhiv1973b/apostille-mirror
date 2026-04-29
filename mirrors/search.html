@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TI-ULA Evidence Registry · CASE-MACHERET-1997-2026</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0e1a;color:#e2e8f0;font-family:'Courier New',monospace;min-height:100vh}
+header{padding:16px 24px;background:#111827;border-bottom:1px solid #1e3a5f}
+h1{color:#d4af37;font-size:13px;letter-spacing:2px}
+h1 span{color:#64748b;font-size:11px}
+.bar{padding:12px 24px;background:#111827;border-bottom:1px solid #1e3a5f;display:flex;gap:10px;flex-wrap:wrap}
+input{flex:1;min-width:260px;background:#0a0e1a;border:1px solid #1e3a5f;color:#e2e8f0;padding:9px 13px;border-radius:5px;font-family:inherit;font-size:13px;outline:none}
+input:focus{border-color:#2563eb}
+select{background:#0a0e1a;border:1px solid #1e3a5f;color:#e2e8f0;padding:9px 11px;border-radius:5px;font-family:inherit;font-size:12px}
+.info{padding:7px 24px;font-size:11px;color:#64748b;border-bottom:1px solid #1e3a5f}
+.info b{color:#d4af37}
+#res{padding:10px 24px}
+.it{border:1px solid #1e3a5f;border-radius:5px;padding:9px 13px;margin-bottom:5px;display:flex;align-items:center;gap:10px;background:#111827}
+.it:hover{border-color:#2563eb}
+.nm{flex:1;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sz{font-size:10px;color:#64748b;margin-top:2px}
+a.lk{color:#2563eb;font-size:11px;padding:3px 9px;border:1px solid #2563eb;border-radius:4px;text-decoration:none;white-space:nowrap}
+a.lk:hover{background:#2563eb;color:#fff}
+.pg{text-align:center;padding:14px;color:#64748b;font-size:11px}
+button{background:#111827;border:1px solid #1e3a5f;color:#e2e8f0;padding:5px 12px;border-radius:4px;cursor:pointer;font-family:inherit;margin:2px}
+button:hover{border-color:#2563eb}
+button.on{border-color:#d4af37;color:#d4af37}
+</style></head><body>
+<header><h1>⚖ TI-ULA EVIDENCE REGISTRY &nbsp;<span>CASE-MACHERET-1997-2026 · A©tor · IDNP 655</span></h1></header>
+<div class="bar">
+<input id="q" type="text" placeholder="apostila · Macheret · подлог · 1997 · Нантой · Jus Cogens..." oninput="go()" autocomplete="off">
+<select id="ft" onchange="go()">
+<option value="">Все типы</option>
+<option value=".pdf">PDF</option>
+<option value=".png">PNG</option>
+<option value=".json">JSON</option>
+<option value=".txt">TXT</option>
+<option value=".sig">SIG · подпись</option>
+</select>
+</div>
+<div class="info" id="inf">Загрузка реестра...</div>
+<div id="res"></div>
+<script>
+const IC={pdf:'📄',png:'🖼',jpg:'🖼',json:'🗂',txt:'📝',sig:'🔏',xml:'📋',tmp:'⚙',dll:'⚙',exe:'⚙'};
+function ic(n){return IC[n.split('.').pop().toLowerCase()]||'📎'}
+function sz(b){if(!b)return'—';if(b<1048576)return(b/1024).toFixed(1)+' KB';return(b/1048576).toFixed(1)+' MB'}
+let ALL=[],fil=[],pg=0;const PS=50;
+function go(){
+  const q=document.getElementById('q').value.toLowerCase().trim();
+  const ft=document.getElementById('ft').value.toLowerCase();
+  fil=ALL.filter(f=>{const n=(f.name||'').toLowerCase();return(!q||n.includes(q))&&(!ft||n.endsWith(ft))});
+  pg=0;draw();
+}
+function draw(){
+  const tot=fil.length,s=pg*PS,chunk=fil.slice(s,s+PS),pages=Math.ceil(tot/PS)||1;
+  document.getElementById('inf').innerHTML='Найдено: <b>'+tot+'</b> · Стр. <b>'+(pg+1)+'/'+pages+'</b> · Всего: <b>'+ALL.length+'</b>';
+  let h=chunk.map(f=>'<div class="it"><div style="font-size:15px;min-width:18px;text-align:center">'+ic(f.name)+'</div><div style="flex:1;min-width:0"><div class="nm" title="'+f.name+'">'+f.name+'</div><div class="sz">'+sz(f.size)+' · '+(f.mime||'—')+'</div></div>'+(f.id?'<a class="lk" href="https://drive.google.com/file/d/'+f.id+'/view" target="_blank">↗ Открыть</a>':'<span style="color:#64748b;font-size:11px">no id</span>')+'</div>').join('');
+  if(pages>1){let b='';for(let i=0;i<pages;i++)b+='<button class="'+(i===pg?'on':'')+'" onclick="gp('+i+')">'+(i+1)+'</button>';h+='<div class="pg">'+b+'</div>'}
+  document.getElementById('res').innerHTML=h;
+}
+function gp(n){pg=n;draw();document.getElementById('res').scrollIntoView({behavior:'smooth'})}
+fetch('./evidence_index.json').then(r=>r.json()).then(d=>{ALL=d;fil=d;draw()}).catch(()=>{document.getElementById('inf').textContent='[ ERR ] evidence_index.json не загружен'});
+</script></body></html>
