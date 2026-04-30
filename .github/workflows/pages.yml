@@ -1,5 +1,6 @@
 ﻿name: TI-ULA-Auto-Deploy
 on:
+  workflow_dispatch:
   push:
     branches: ["main", "gh-pages"]
 permissions:
@@ -12,6 +13,7 @@ jobs:
       name: github-pages
       url: 
     runs-on: ubuntu-latest
+  workflow_dispatch:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
