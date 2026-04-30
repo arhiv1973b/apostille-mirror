@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pledoarie Finală · CASE-MACHERET-1997-2026 · A©tor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@300;400;600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:        #0d0d0d;
+    --parchment:  #f8f4ec;
+    --deep:       #1a1533;
+    --gold:       #b8922a;
+    --gold-light: #e4c96a;
+    --crimson:    #8b1a1a;
+    --steel:      #2e4057;
+    --muted:      #5a5670;
+    --line:       #ccc5b0;
+    --verified:   #1a5c2e;
+    --mono:       'IBM Plex Mono', monospace;
+    --serif:      'Source Serif 4', Georgia, serif;
+    --display:    'Playfair Display', Georgia, serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  /* ── NOISE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--deep);
+    color: var(--gold-light);
+    padding: 12px 40px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em;
+    border-bottom: 2px solid var(--gold);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .site-header a { color: var(--gold-light); text-decoration: none; }
+  .site-header a:hover { color: #fff; }
+  .header-seal { color: var(--gold); font-weight: 600; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--deep);
+    color: var(--parchment);
+    padding: 80px 60px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute; right: -60px; bottom: -80px;
+    width: 420px; height: 420px;
+    background: radial-gradient(circle, rgba(184,146,42,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-label {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: var(--display); font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 900; line-height: 1.1;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .hero h1 em { color: var(--gold-light); font-style: normal; }
+  .hero-sub {
+    font-family: var(--serif); font-size: 1rem; color: #c5bfb0;
+    margin-top: 16px; max-width: 680px;
+  }
+  .hero-meta {
+    margin-top: 32px;
+    display: flex; gap: 40px; flex-wrap: wrap;
+  }
+  .meta-item { font-family: var(--mono); font-size: 11px; }
+  .meta-item span { display: block; color: var(--gold); margin-bottom: 2px; }
+  .meta-item strong { color: #fff; font-size: 13px; }
+
+  /* ── INTEGRITY BAR ── */
+  .integrity-bar {
+    background: #0a0918; color: var(--gold-light);
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+    padding: 10px 40px;
+    display: flex; gap: 32px; flex-wrap: wrap; align-items: center;
+    border-bottom: 1px solid rgba(184,146,42,0.3);
+  }
+  .integrity-bar .tag {
+    background: rgba(184,146,42,0.15); border: 1px solid rgba(184,146,42,0.4);
+    padding: 2px 10px; border-radius: 2px;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .container { max-width: 1020px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 1; }
+
+  /* ── SECTION ── */
+  .section { padding: 56px 0 40px; border-bottom: 1px solid var(--line); }
+  .section:last-child { border-bottom: none; }
+
+  .section-tag {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em;
+    color: var(--gold); text-transform: uppercase; margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: var(--display); font-size: 1.7rem; font-weight: 700;
+    color: var(--deep); margin-bottom: 24px;
+    border-left: 4px solid var(--gold); padding-left: 16px;
+  }
+  .section-intro {
+    font-style: italic; color: var(--muted);
+    max-width: 760px; margin-bottom: 28px;
+    font-size: 0.95rem;
+  }
+
+  /* ── NORM TABLE ── */
+  .norm-table {
+    width: 100%; border-collapse: collapse; margin-bottom: 12px;
+    font-size: 13.5px;
+  }
+  .norm-table thead tr {
+    background: var(--deep); color: var(--gold-light);
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .norm-table th { padding: 10px 14px; text-align: left; font-weight: 600; }
+  .norm-table td { padding: 9px 14px; border-bottom: 1px solid #e0d9c8; vertical-align: top; }
+  .norm-table tbody tr:nth-child(even) { background: rgba(0,0,0,0.025); }
+  .norm-table .badge {
+    display: inline-block; font-family: var(--mono); font-size: 9px;
+    padding: 2px 8px; letter-spacing: 0.08em; border-radius: 2px; font-weight: 700;
+  }
+  .badge-jus { background: var(--crimson); color: #fff; }
+  .badge-ok  { background: var(--verified); color: #fff; }
+  .badge-art { background: var(--steel); color: #fff; }
+
+  /* ── PILLAR ── */
+  .pillar {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--gold);
+    margin-bottom: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .pillar-head {
+    background: var(--deep); color: var(--gold-light);
+    padding: 14px 22px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .pillar-num {
+    font-family: var(--display); font-size: 1.5rem; font-weight: 900;
+    color: var(--gold); width: 36px; flex-shrink: 0; line-height: 1;
+  }
+  .pillar-title-block { flex: 1; }
+  .pillar-article { font-family: var(--mono); font-size: 9px; letter-spacing: 0.15em; color: var(--gold); }
+  .pillar-title { font-family: var(--display); font-size: 1rem; font-weight: 700; color: #fff; }
+  .pillar-integrity {
+    font-family: var(--mono); font-size: 9px; color: #7fdb9e;
+    letter-spacing: 0.1em; text-align: right;
+  }
+  .pillar-body { padding: 0; }
+  .pillar-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .pillar-table tr { border-bottom: 1px solid #eee8d8; }
+  .pillar-table tr:last-child { border-bottom: none; }
+  .pillar-table td { padding: 9px 18px; vertical-align: top; }
+  .pillar-table td:first-child {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em;
+    color: var(--muted); width: 220px; font-weight: 600;
+    background: rgba(0,0,0,0.018);
+  }
+  .pillar-table td:last-child { color: var(--ink); }
+  .pillar-table tr:hover td { background: rgba(184,146,42,0.05); }
+
+  /* ── SUMMARY MATRIX ── */
+  .matrix-wrap { overflow-x: auto; margin-top: 28px; }
+  .matrix-table {
+    width: 100%; border-collapse: collapse; font-size: 12.5px;
+    font-family: var(--mono);
+  }
+  .matrix-table thead tr {
+    background: var(--deep); color: var(--gold-light);
+    font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+  }
+  .matrix-table th { padding: 10px 14px; text-align: left; }
+  .matrix-table td { padding: 9px 14px; border-bottom: 1px solid #e0d8c5; }
+  .matrix-table tbody tr:nth-child(even) { background: rgba(0,0,0,0.02); }
+  .proved { color: var(--verified); font-weight: 700; }
+  .matrix-footer {
+    margin-top: 12px; padding: 12px 16px;
+    background: var(--deep); color: var(--gold-light);
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+    border-left: 4px solid var(--gold);
+  }
+
+  /* ── CAUSAL CHAIN ── */
+  .causal {
+    display: flex; flex-wrap: wrap; align-items: center;
+    gap: 0; margin: 28px 0;
+  }
+  .causal-node {
+    background: var(--deep); color: var(--parchment);
+    padding: 14px 18px; font-size: 12px; font-family: var(--serif);
+    border-top: 3px solid var(--gold); text-align: center;
+    min-width: 130px; flex: 1;
+  }
+  .causal-node .year { font-family: var(--mono); font-size: 9px; color: var(--gold); }
+  .causal-arrow {
+    color: var(--gold); font-size: 1.4rem; padding: 0 4px;
+    flex-shrink: 0;
+  }
+  .causal-node.danger { border-top-color: var(--crimson); }
+  .causal-node.danger .year { color: #ff8a8a; }
+
+  /* ── TIMELINE ── */
+  .timeline { margin-top: 16px; }
+  .tl-row {
+    display: grid; grid-template-columns: 130px 1fr;
+    gap: 0; border-bottom: 1px solid var(--line);
+    padding: 11px 0;
+  }
+  .tl-row:hover { background: rgba(184,146,42,0.04); }
+  .tl-date { font-family: var(--mono); font-size: 11px; color: var(--gold); font-weight: 600; padding-right: 16px; }
+  .tl-event { font-size: 13px; }
+  .tl-node { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+  /* ── DEMANDS ── */
+  .demands { margin-top: 16px; }
+  .demand {
+    display: grid; grid-template-columns: 36px 1fr;
+    gap: 0; padding: 13px 0; border-bottom: 1px solid var(--line);
+    align-items: start;
+  }
+  .demand:hover { background: rgba(184,146,42,0.04); }
+  .demand-num {
+    font-family: var(--display); font-size: 1.1rem; font-weight: 900;
+    color: var(--gold); line-height: 1.4;
+  }
+  .demand-text { font-size: 14px; line-height: 1.7; }
+
+  /* ── CONCLUSION ── */
+  .conclusion-block {
+    background: var(--deep);
+    color: var(--parchment);
+    padding: 40px 48px;
+    margin-top: 40px;
+    border-top: 4px solid var(--gold);
+    position: relative; overflow: hidden;
+  }
+  .conclusion-block::before {
+    content: '⚖';
+    position: absolute; right: 40px; top: 30px;
+    font-size: 6rem; opacity: 0.06; pointer-events: none;
+  }
+  .conclusion-block blockquote {
+    font-family: var(--display); font-style: italic;
+    font-size: 1.05rem; line-height: 1.8;
+    color: #e8e0cc; max-width: 820px;
+    border-left: 3px solid var(--gold); padding-left: 22px;
+    margin-bottom: 22px;
+  }
+  .conclusion-block .logic-close {
+    font-family: var(--mono); font-size: 13px;
+    color: var(--gold-light); font-weight: 600;
+  }
+
+  /* ── INTEGRITY FOOTER SEAL ── */
+  .seal-footer {
+    background: #080714; color: var(--muted);
+    padding: 32px 40px;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  }
+  .seal-footer .key-line {
+    color: var(--gold); font-size: 11px; margin-bottom: 8px; font-weight: 600;
+  }
+  .seal-footer .hash-line { color: #4a4665; margin-bottom: 4px; }
+  .seal-footer .links { margin-top: 16px; display: flex; gap: 20px; flex-wrap: wrap; }
+  .seal-footer a { color: var(--gold); text-decoration: none; }
+  .seal-footer a:hover { color: #fff; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 700px) {
+    .hero { padding: 48px 20px 40px; }
+    .container { padding: 0 16px; }
+    .integrity-bar { padding: 8px 16px; font-size: 9px; }
+    .site-header { padding: 10px 16px; font-size: 9px; }
+    .causal { flex-direction: column; }
+    .causal-arrow { transform: rotate(90deg); }
+    .tl-row { grid-template-columns: 1fr; }
+    .conclusion-block { padding: 28px 20px; }
+    .pillar-table td:first-child { width: 140px; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .pillar { animation: fadeUp 0.4s ease both; }
+  .pillar:nth-child(1) { animation-delay: 0.05s; }
+  .pillar:nth-child(2) { animation-delay: 0.12s; }
+  .pillar:nth-child(3) { animation-delay: 0.19s; }
+  .pillar:nth-child(4) { animation-delay: 0.26s; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div>
+    <a href="https://arhiv1973b.github.io/apostille-mirror/">◂ Apostille Mirror</a>
+    &nbsp;/&nbsp;
+    <a href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html">Jus Cogens Proof</a>
+    &nbsp;/&nbsp;
+    <a href="https://arhiv1973b.github.io/apostille-mirror/mirrors/evidence-roadmap.html#p7-4">Evidence Roadmap p7-4</a>
+  </div>
+  <div class="header-seal">🔒 SHA-256 · INTEGRITY 100% · 2026</div>
+</header>
+
+<!-- INTEGRITY BAR -->
+<div class="integrity-bar">
+  <span class="tag">TI-ULA · 4,010 NODES</span>
+  <span>MERKLE ROOT: 9a2465bd...e77</span>
+  <span>DNS: _ti-ula.actor.legal</span>
+  <span>COMMIT: 5b40fda</span>
+  <span class="tag">90 APOSTILLES · HAGUE CONV. 05.10.1961</span>
+  <span>REPO: arhiv1973b/apostille-mirror</span>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-label">CASE-MACHERET-1997-2026 · A©tor · Document juridic final</div>
+    <h1>Pledoarie<br><em>Finală</em></h1>
+    <p class="hero-sub">
+      Evidence Roadmap p7-4 integrat · Матрица доказательств ЕКПЧ ·
+      Jus Cogens + 8158 суток молчания = Erga Omnes нарушен · факт доказан
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span>СУБЪЕКТ ПРАВА</span>
+        <strong>A©tor · Мачерет Алексей Артурович</strong>
+      </div>
+      <div class="meta-item">
+        <span>ИДНП</span>
+        <strong>2000001159655</strong>
+      </div>
+      <div class="meta-item">
+        <span>СТАТУС</span>
+        <strong>Жертва, не реабилитированная · Инвалид I гр., пожизненно</strong>
+      </div>
+      <div class="meta-item">
+        <span>ДАТА</span>
+        <strong>30.04.2026 · pledoarie_finala_0904</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- § 01 ПРАВОВАЯ КВАЛИФИКАЦИЯ -->
+<section class="section">
+  <div class="section-tag">§ 01</div>
+  <h2 class="section-title">Правовая квалификация · Temeiul Juridic</h2>
+  <div class="matrix-wrap">
+    <table class="norm-table">
+      <thead>
+        <tr>
+          <th>Норма ЕКПЧ</th>
+          <th>Инструмент</th>
+          <th>Статус нарушения</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ст. 3 — Запрет пыток</td>
+          <td>ЕКПЧ ст. 3 · КПП ООН</td>
+          <td><span class="badge badge-jus">JUS COGENS · БЕЗ СРОКА ДАВНОСТИ</span></td>
+        </tr>
+        <tr>
+          <td>Ст. 5 — Право на свободу</td>
+          <td>ЕКПЧ ст. 5</td>
+          <td>Нарушено: незаконный арест 26 суток</td>
+        </tr>
+        <tr>
+          <td>Ст. 6 — Справедливое судопроизводство</td>
+          <td>ЕКПЧ ст. 6</td>
+          <td>Нарушено: оправдание 2009, реабилитация отсутствует</td>
+        </tr>
+        <tr>
+          <td>Ст. 13 — Эффективное средство защиты</td>
+          <td>ЕКПЧ ст. 13</td>
+          <td>Нарушено: 8158 суток без ответа</td>
+        </tr>
+        <tr>
+          <td>Протокол 1, Ст. 1 — Защита имущества</td>
+          <td>П1 ст. 1 ЕКПЧ</td>
+          <td>Нарушено: захват ул. Мирон Костин</td>
+        </tr>
+        <tr>
+          <td>Протокол 7, Ст. 4 — Ne Bis In Idem</td>
+          <td>П7 ст. 4 ЕКПЧ</td>
+          <td>Нарушено: дело 2006, ст. 361 ч. 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- § 02 EVIDENCE ROADMAP / ДОКАЗАТЕЛЬНАЯ МАТРИЦА -->
+<section class="section">
+  <div class="section-tag">§ 02 · Evidence Roadmap · p7-4</div>
+  <h2 class="section-title">Доказательная матрица · Matrix Probatorie</h2>
+  <p class="section-intro">
+    Каждый столп — задокументированный факт с верифицируемой цифровой целостностью.
+    Совокупность образует неопровержимую процессуальную конструкцию.
+    Источник: <a href="https://arhiv1973b.github.io/apostille-mirror/mirrors/evidence-roadmap.html#p7-4" style="color:var(--gold)">evidence-roadmap.html#p7-4</a>
+  </p>
+
+  <!-- PILLAR I -->
+  <div class="pillar">
+    <div class="pillar-head">
+      <div class="pillar-num">I</div>
+      <div class="pillar-title-block">
+        <div class="pillar-article">ЕКПЧ СТАТЬЯ 3</div>
+        <div class="pillar-title">Запрет пыток и бесчеловечного обращения</div>
+      </div>
+      <div class="pillar-integrity">✓ Binary Hash PDF<br>LEAF: merkle_pillar_art3</div>
+    </div>
+    <div class="pillar-body">
+      <table class="pillar-table">
+        <tr><td>Источник доказательства</td><td>Медицинские записи, фиксирующие инвалидность I группы (пожизненно) и пробелы в государственной медпомощи, 1997–2026</td></tr>
+        <tr><td>Базовый факт</td><td>Пытки 1997–1998 гг. Дело № 1-568/98. Зафиксированы в апостилированных судебных документах РМ</td></tr>
+        <tr><td>Длящееся нарушение</td><td>8158 суток без расследования = 8158 независимых нарушений jus cogens. Срок давности отсутствует по определению нормы</td></tr>
+        <tr><td>Контроль целостности</td><td>Binary hashes клинических PDF · Ed25519 подпись · <code>urn:actor:id</code></td></tr>
+        <tr><td>Апостиль</td><td>Гаагская конвенция 05.10.1961 — удостоверяет подлинность подписи должностного лица</td></tr>
+        <tr><td>Правовой вывод</td><td>Государство нежелает / неспособно расследовать → <strong>ст. 17 МУС активирована</strong></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- PILLAR II -->
+  <div class="pillar">
+    <div class="pillar-head">
+      <div class="pillar-num">II</div>
+      <div class="pillar-title-block">
+        <div class="pillar-article">ЕКПЧ СТАТЬЯ 5</div>
+        <div class="pillar-title">Право на свободу и личную неприкосновенность</div>
+      </div>
+      <div class="pillar-integrity">✓ Timestamped Audit<br>LEAF: merkle_pillar_art5</div>
+    </div>
+    <div class="pillar-body">
+      <table class="pillar-table">
+        <tr><td>Источник доказательства</td><td>Документы о задержании и процессуальные документы без требуемых судебных подписей</td></tr>
+        <tr><td>Базовый факт</td><td>Незаконный арест на 26 суток (дело 2006020792) по неконституционной ст. 361 ч. 2 УК РМ</td></tr>
+        <tr><td>Неконституционность нормы</td><td>Постановление КС РМ № 12 от 14.05.2018: норма (литера «ц») признана неконституционной</td></tr>
+        <tr><td>Нарушение Ne Bis In Idem</td><td>Судья Морозан Г.: третье наказание при доказанной оплате; дело передано без переводчика · Протокол 7, ст. 4</td></tr>
+        <tr><td>Последствие</td><td>Блокировка паспорта → экономическая изоляция → «цифровой двойник» ИДНП ..555 вместо ..655</td></tr>
+        <tr><td>Контроль целостности</td><td>Timestamped audit trails · процессуальные штампы · подписи</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- PILLAR III -->
+  <div class="pillar">
+    <div class="pillar-head">
+      <div class="pillar-num">III</div>
+      <div class="pillar-title-block">
+        <div class="pillar-article">ЕКПЧ СТАТЬЯ 6</div>
+        <div class="pillar-title">Право на справедливое судебное разбирательство</div>
+      </div>
+      <div class="pillar-integrity">✓ Merkle Tree Inclusion<br>LEAF: merkle_pillar_art6</div>
+    </div>
+    <div class="pillar-body">
+      <table class="pillar-table">
+        <tr><td>Источник доказательства</td><td>Судебное решение 2009 г. об оправдании и последующие записи, демонстрирующие отказ в полной реабилитации</td></tr>
+        <tr><td>Базовый факт</td><td>Оправдательный приговор 2009 г. существует; реабилитация в реестрах МВД — не произведена</td></tr>
+        <tr><td>Структурный паттерн</td><td>2003–2021: 90 судебных решений — ни одного реального расследования пыток</td></tr>
+        <tr><td>Квалификация</td><td>Систематическая имитация правосудия → ст. 17 Римского статута</td></tr>
+        <tr><td>Подлог ИДНП</td><td>..555 вместо ..655 → «цифровой двойник» → фиктивные долги → блокировка счетов</td></tr>
+        <tr><td>Контроль целостности</td><td>Merkle Tree leaf inclusion · перекрёстный анализ дат / подписантов / формулировок</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- PILLAR IV -->
+  <div class="pillar">
+    <div class="pillar-head">
+      <div class="pillar-num">IV</div>
+      <div class="pillar-title-block">
+        <div class="pillar-article">ЕКПЧ СТАТЬЯ 13</div>
+        <div class="pillar-title">Право на эффективное средство правовой защиты</div>
+      </div>
+      <div class="pillar-integrity">✓ Signed .eml Manifests<br>LEAF: merkle_pillar_art13</div>
+    </div>
+    <div class="pillar-body">
+      <table class="pillar-table">
+        <tr><td>Источник доказательства</td><td>Исчерпывающие логи коммуникаций с органами власти РМ (msmtp gateway), не получившие содержательного ответа</td></tr>
+        <tr><td>Базовый факт</td><td>8158 суток молчания = активная позиция нарушения erga omnes</td></tr>
+        <tr><td>Задокументированные обращения</td><td>Уведомления: White House, UN OHCHR, G7, ICC — 19.03.2026</td></tr>
+        <tr><td>Криминальный каскад</td><td>15.03.2022: Подлог Нантой (захват ул. Мирон Костин, графологическая экспертиза «Вектор 3»)</td></tr>
+        <tr><td>Следствие вакуума</td><td>Суд Чеканы, судья Дада Ион: инкриминация операций со счётом Ирины Олейник — 3000 леев от законного владельца A©tor</td></tr>
+        <tr><td>Контроль целостности</td><td>Signed .eml manifests · msmtp logs · commit verification · A©TOR_KEY</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- СВОДНАЯ МАТРИЦА -->
+  <h3 style="font-family:var(--display);font-size:1.1rem;margin:32px 0 12px;color:var(--deep)">
+    Сводная матрица · Matricea Sintetică
+  </h3>
+  <div class="matrix-wrap">
+    <table class="matrix-table">
+      <thead>
+        <tr>
+          <th>Столп</th><th>Норма</th><th>Базовый факт</th><th>Integrity Check</th><th>Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Art. 3</td><td>JUS COGENS</td><td>Пытки 1997 · 8158 суток</td><td>Binary Hash PDF</td><td class="proved">✓ PROVED</td></tr>
+        <tr><td>Art. 5</td><td>Свобода</td><td>Арест 26 сут · ст.361</td><td>Timestamp Audit</td><td class="proved">✓ PROVED</td></tr>
+        <tr><td>Art. 6</td><td>Правосудие</td><td>Оправд. 2009 · 90 апост</td><td>Merkle Inclusion</td><td class="proved">✓ PROVED</td></tr>
+        <tr><td>Art. 13</td><td>Erga Omnes</td><td>8158 дней молчания</td><td>Signed .eml</td><td class="proved">✓ PROVED</td></tr>
+        <tr><td>P1 Art.1</td><td>Имущество</td><td>Захват Мирон Костин</td><td>Grafo Вектор 3</td><td class="proved">✓ PROVED</td></tr>
+        <tr><td>P7 Art.4</td><td>Ne Bis In Idem</td><td>Дело 2006 · Морозан</td><td>Процес. штамп</td><td class="proved">✓ PROVED</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="matrix-footer">
+    СОВОКУПНЫЙ ВЫВОД: JUS COGENS нарушен · ERGA OMNES нарушен · Ст. 17 МУС АКТИВИРОВАНА
+  </div>
+</section>
+
+<!-- § 03 КАУЗАЛЬНАЯ ЦЕПЬ -->
+<section class="section">
+  <div class="section-tag">§ 03</div>
+  <h2 class="section-title">Каузальная цепь · Lanțul Cauzal</h2>
+  <p class="section-intro">Каждое звено — задокументированный факт. Отрицание = доказательство нарушения erga omnes.</p>
+  <div class="causal">
+    <div class="causal-node"><div class="year">1997–1998</div>Факт пыток<br>Дело № 1-568/98</div>
+    <div class="causal-arrow">→</div>
+    <div class="causal-node"><div class="year">JUS COGENS</div>Нарушение<br>нормы</div>
+    <div class="causal-arrow">→</div>
+    <div class="causal-node"><div class="year">8158 СУТОК</div>Молчание<br>государства</div>
+    <div class="causal-arrow">→</div>
+    <div class="causal-node"><div class="year">ERGA OMNES</div>Разрыв<br>обязательств</div>
+    <div class="causal-arrow">→</div>
+    <div class="causal-node danger"><div class="year">15.03.2022</div>Подлог Нантой<br>захват активов</div>
+    <div class="causal-arrow">→</div>
+    <div class="causal-node danger"><div class="year">⚠ СЕЙЧАС</div>Иск 520M EUR<br>ст.17 МУС</div>
+  </div>
+</section>
+
+<!-- § 04 ХРОНОЛОГИЯ -->
+<section class="section">
+  <div class="section-tag">§ 04</div>
+  <h2 class="section-title">Хронология · Cronologie</h2>
+  <div class="timeline">
+    <div class="tl-row"><div class="tl-date">1997–1998</div><div><div class="tl-event">Пытки · Дело № 1-568/98</div><div class="tl-node">Апостиль · jus cogens нарушен впервые · обязательство расследовать возникает немедленно</div></div></div>
+    <div class="tl-row"><div class="tl-date">2003–2021</div><div><div class="tl-event">90 судебных решений · 0 расследований пыток</div><div class="tl-node">Паттерн систематической имитации правосудия · ст. 17 МУС</div></div></div>
+    <div class="tl-row"><div class="tl-date">2006</div><div><div class="tl-event">Незаконный арест 26 суток · ст. 361 ч.2 УК РМ</div><div class="tl-node">Ne Bis In Idem нарушен · норма признана неконституционной КС РМ № 12 / 14.05.2018</div></div></div>
+    <div class="tl-row"><div class="tl-date">2009</div><div><div class="tl-event">Оправдательный приговор</div><div class="tl-node">Реабилитация в реестрах МВД — не произведена до сего дня</div></div></div>
+    <div class="tl-row"><div class="tl-date">14.05.2018</div><div><div class="tl-event">КС РМ № 12: ст. 361 ч.2 — неконституционна</div><div class="tl-node">Все ограничения после 2018 на её основании — преступление против правосудия</div></div></div>
+    <div class="tl-row"><div class="tl-date">15.03.2022</div><div><div class="tl-event">Подлог Нантой · захват ул. Мирон Костин</div><div class="tl-node">Графологическая экспертиза «Вектор 3» · прямое следствие 8158 суток вакуума безнаказанности</div></div></div>
+    <div class="tl-row"><div class="tl-date">19.03.2026</div><div><div class="tl-event">Liability Notices: White House, UN OHCHR, G7, ICC</div><div class="tl-node">TI-ULA 4,010 nodes deployed · Global Sanction Vector 11</div></div></div>
+    <div class="tl-row"><div class="tl-date">30.04.2026</div><div><div class="tl-event">Настоящая Плeдоария · Интеграция Evidence Roadmap p7-4</div><div class="tl-node">pledoarie_finala_0904 · A©tor · SHA-256 sealed</div></div></div>
+  </div>
+</section>
+
+<!-- § 05 ТРЕБОВАНИЯ -->
+<section class="section">
+  <div class="section-tag">§ 05</div>
+  <h2 class="section-title">Требования · Cereri</h2>
+  <div class="demands">
+    <div class="demand"><div class="demand-num">I.</div><div class="demand-text">Возбудить уголовное дело по факту хищения <strong>25 210 256,15 MDL</strong> (FinComPay, апрель 2026).</div></div>
+    <div class="demand"><div class="demand-num">II.</div><div class="demand-text">Аннулировать все записи о «судимости» и «штрафах», основанные на неконституционной ст. 361 ч. 2 и манипуляциях с ИДНП (<strong>..555 → ..655</strong>).</div></div>
+    <div class="demand"><div class="demand-num">III.</div><div class="demand-text">Провести подлинное расследование пыток 1997–1998 гг. — обязательство <em>jus cogens</em>, не имеющее срока давности.</div></div>
+    <div class="demand"><div class="demand-num">IV.</div><div class="demand-text">Обеспечить полную реабилитацию согласно оправдательному приговору 2009 г.</div></div>
+    <div class="demand"><div class="demand-num">V.</div><div class="demand-text">Привести фамилию к международному стандарту <strong>Macheret</strong> во всех реестрах МВД.</div></div>
+    <div class="demand"><div class="demand-num">VI.</div><div class="demand-text">Расследовать подлог 15.03.2022 (Нантой Людмила · имущество · Марков И.М.).</div></div>
+    <div class="demand"><div class="demand-num">VII.</div><div class="demand-text">Расследовать действия судебных исполнителей Вассиана и Фокша (Молдинкомбанк).</div></div>
+    <div class="demand"><div class="demand-num">VIII.</div><div class="demand-text">Прекратить уголовное преследование Ирины Олейник (Суд Чеканы, судья Дада Ион) как основанное на операциях со средствами законного владельца — <strong>A©tor</strong>.</div></div>
+  </div>
+</section>
+
+<!-- ЗАКЛЮЧЕНИЕ -->
+<section class="section">
+  <div class="section-tag">§ 06</div>
+  <h2 class="section-title">Заключение · Concluzie</h2>
+  <div class="conclusion-block">
+    <blockquote>
+      Теорема доказана фактами: норма <em>jus cogens</em> — запрет пыток — существует не на бумаге,
+      а в 90 апостилированных документах, в 8158 сутках молчания государства, в графологической
+      экспертизе подлога 15.03.2022, в цепи причинно-следственных связей от 1997 года до сегодняшнего дня.
+    </blockquote>
+    <div class="logic-close">
+      Отрицание = доказательство нарушения erga omnes. Логическое замыкание: отрицание ≡ доказательство.<br><br>
+      Институциональная безнаказанность — не судебная ошибка. Это «рак» правосудия.
+      Причина войн. Причина разрушения Прав Человека, провозглашённых во Всеобщей Декларации.
+    </div>
+  </div>
+</section>
+
+</div><!-- /container -->
+
+<!-- INTEGRITY SEAL FOOTER -->
+<footer class="seal-footer">
+  <div class="container">
+    <div class="key-line">A©TOR_KEY="# [⚖ } Мачерет Алексей · CASE-MACHERET-1997-2026"</div>
+    <div class="hash-line">SHA-256 · INTEGRITY 100% · MERKLE ROOT: 9a2465bd...e77</div>
+    <div class="hash-line">pledoarie_finala_0904.md · INTEGRATED: evidence-roadmap-p7-4 · 2026-04-30</div>
+    <div class="hash-line">COMMIT: 5b40fda · DNS: _ti-ula.actor.legal · Ed25519 · urn:actor:id</div>
+    <div class="links">
+      <a href="https://arhiv1973b.github.io/apostille-mirror/">◂ Apostille Mirror</a>
+      <a href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html">Jus Cogens Proof</a>
+      <a href="https://arhiv1973b.github.io/apostille-mirror/mirrors/evidence-roadmap.html#p7-4">Evidence Roadmap p7-4</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
