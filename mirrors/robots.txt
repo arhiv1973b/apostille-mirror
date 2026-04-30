@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://arhiv1973b.github.io/apostille-legal-case/sitemap.xml
-
-# Специфические ключевые маркеры для поиска:
-# Maceret Alexei, Lupiy Yuri, Iordan Iurie, Trandafilova Maria, Case 1-42/09, Torture 1998

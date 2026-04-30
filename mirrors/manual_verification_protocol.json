@@ -1,9 +1,0 @@
-{
-  "event_id": "MANUAL-VERIFICATION-2022",
-  "subject": "Maceret Alexei (A©tor)",
-  "action": "Manual delivery of signature sample under passport pledge",
-  "context": "Verification of the Acting Chairperson of the Court signature for Apostille purposes.",
-  "security_measures": ["Opaque sealed envelope", "Special courier protocol", "Identity document (passport) held as collateral"],
-  "sabotage_proof": "Digital registry subsequently marked the signature as 'indescifrabilă' despite confirmed manual verification and delivery of the physical sample by the applicant himself.",
-  "jus_cogens_impact": "Direct evidence of state-sponsored falsification and denial of legal personality."
-}

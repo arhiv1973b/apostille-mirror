@@ -5,3 +5,4 @@ migration_*.log
 evidence_index.json
 harvester.py
 keywords*.txt
+mirrors/

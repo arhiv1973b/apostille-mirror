@@ -1,9 +1,0 @@
-{
-  "event_id": "ECONOMIC-NODE-COMEX",
-  "entity": "COMEX SRL",
-  "shareholder": "Maceret Alexei Artur",
-  "share_percentage": "20%",
-  "status": "ASSET_UNDER_ATTACK",
-  "mechanism": "Identity mismatch (Maseret) used to block management and dividend rights.",
-  "jus_cogens_impact": "Violation of Art. 1 Protocol 1 ECHR. Protection of property regardless of state-manufactured identity noise."
-}
