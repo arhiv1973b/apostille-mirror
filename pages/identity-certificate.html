@@ -9,9 +9,31 @@
 <meta name="robots" content="index, follow">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root { --black: #0a0a0a; --deep: #0d1117; --card: #161b22; --border: #21262d; --accent: #e8b84b; --green: #27ae60; --red: #c0392b; --text: #e6edf3; --muted: #8b949e; --font: 'JetBrains Mono', monospace; --sans: 'Inter', sans-serif; }
+:root {
+  --black:  #0a0a0a;
+  --deep:   #0d1117;
+  --card:   #161b22;
+  --border: #21262d;
+  --accent: #e8b84b;
+  --green:  #27ae60;
+  --red:    #c0392b;
+  --text:   #e6edf3;
+  --muted:  #8b949e;
+  --font:   'JetBrains Mono', 'Courier New', monospace;
+  --sans:   'Inter', system-ui, sans-serif;
+}
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--black); color: var(--text); font-family: var(--sans); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
+html { font-size: 16px; }
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--sans);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
 .cert-outer { width: 100%; max-width: 860px; }
 .cert { background: var(--deep); border: 2px solid var(--accent); border-radius: 4px; position: relative; overflow: hidden; }
 .cert::before, .cert::after { content: ''; position: absolute; width: 40px; height: 40px; border-color: var(--accent); border-style: solid; }
@@ -27,36 +49,114 @@ body { background: var(--black); color: var(--text); font-family: var(--sans); m
 .field-label { font-family: var(--font); font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; margin-bottom: .3rem; }
 .field-value { font-family: var(--font); font-size: .95rem; color: var(--text); font-weight: 600; }
 .field-value.accent { color: var(--accent); font-size: 1.1rem; }
-.field-value.green { color: #2ecc71; }
+.field-value.green  { color: #2ecc71; }
+.field-full { grid-column: 1 / -1; }
 .identity-box { background: rgba(232,184,75,.06); border: 1px solid rgba(232,184,75,.3); border-radius: 4px; padding: 1.5rem 2rem; margin-bottom: 2rem; }
 .identity-box h3 { font-family: var(--font); font-size: .75rem; color: var(--accent); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 1rem; display: flex; align-items: center; gap: .5rem; }
 .identity-rule { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: .75rem; padding-bottom: .75rem; border-bottom: 1px solid rgba(232,184,75,.1); }
+.identity-rule:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.rule-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: .1rem; }
+.rule-text { font-size: .88rem; line-height: 1.5; }
+.rule-text strong { color: var(--accent); font-family: var(--font); }
 .legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
 .legal-item { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 1rem; }
+.legal-item .lbl { font-family: var(--font); font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .4rem; }
+.legal-item .val { font-family: var(--font); font-size: .82rem; color: var(--text); }
 .crypto-block { background: #0a0e13; border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem 2rem; margin-bottom: 2rem; font-family: var(--font); }
-.crypto-val { font-size: .78rem; color: #2ecc71; word-break: break-all; margin-bottom: 1rem; }
+.crypto-block .crypto-label { font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; margin-bottom: .4rem; }
+.crypto-block .crypto-val { font-size: .78rem; color: #2ecc71; word-break: break-all; margin-bottom: 1rem; }
+.crypto-block .crypto-val:last-child { margin-bottom: 0; }
+.validity-strip { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; background: rgba(39,174,96,.08); border: 1px solid rgba(39,174,96,.3); border-radius: 4px; padding: 1rem 1.5rem; margin-bottom: 2rem; }
+.validity-item { display: flex; align-items: center; gap: .5rem; font-family: var(--font); font-size: .8rem; }
+.validity-dot { width: 8px; height: 8px; border-radius: 50%; background: #2ecc71; box-shadow: 0 0 6px #2ecc71; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 .prohibition { background: rgba(192,57,43,.08); border: 1px solid rgba(192,57,43,.3); border-radius: 4px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+.prohibition h3 { font-family: var(--font); font-size: .72rem; color: #e74c3c; text-transform: uppercase; letter-spacing: .12em; margin-bottom: .75rem; }
+.prohibition ul { list-style: none; font-size: .85rem; color: var(--text); }
+.prohibition ul li { padding: .25rem 0; padding-left: 1.5rem; position: relative; }
+.prohibition ul li::before { content: '✗'; position: absolute; left: 0; color: #e74c3c; font-family: var(--font); }
 .cert-footer { border-top: 1px solid var(--border); padding: 1.5rem 3rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; background: var(--card); }
 .footer-col { text-align: center; }
+.footer-col .fc-label { font-family: var(--font); font-size: .62rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .5rem; }
+.footer-col .fc-val { font-family: var(--font); font-size: .78rem; color: var(--accent); }
+.footer-col .sig-line { border-top: 1px solid var(--accent); margin-top: .75rem; padding-top: .5rem; font-family: var(--font); font-size: .7rem; color: var(--muted); }
 .watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-30deg); font-family: var(--font); font-size: 6rem; font-weight: 900; color: rgba(232,184,75,.04); pointer-events: none; white-space: nowrap; z-index: 0; }
+.cert-body, .cert-header, .cert-footer { position: relative; z-index: 1; }
+@media print { body { background: white; } .cert { border-color: #333; } }
+@media (max-width: 600px) { .cert-header, .cert-body, .cert-footer { padding: 1.5rem; } .subject-block { grid-template-columns: 1fr; } .cert-footer { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
-<div class="cert-outer"><div class="cert"><div class="watermark">A©tor</div>
-<div class="cert-header"><div class="seal">⚖️</div><div class="cert-title-label">Official Document · Republic of Moldova · International Law</div><div class="cert-title">IDENTITY VERIFICATION CERTIFICATE</div></div>
-<div class="cert-body">
-<div class="subject-block">
-<div><div class="field-label">Legal Subject</div><div class="field-value accent">Maceret Alexei</div></div>
-<div><div class="field-label">Digital Identity</div><div class="field-value accent">A©tor</div></div>
-<div><div class="field-label">IDNP</div><div class="field-value accent">2000001159655</div></div>
+<div class="cert-outer">
+<div class="cert">
+  <div class="watermark">A©tor</div>
+  <div class="cert-header">
+    <div class="seal">⚖️</div>
+    <div class="cert-title-label">Official Document · Republic of Moldova · International Law</div>
+    <div class="cert-title">IDENTITY VERIFICATION CERTIFICATE</div>
+    <div class="cert-subtitle">СЕРТИФИКАТ ВЕРИФИКАЦИИ ИДЕНТИЧНОСТИ · CERTIFICAT DE VERIFICARE A IDENTITĂȚII</div>
+  </div>
+  <div class="cert-body">
+    <div class="subject-block">
+      <div><div class="field-label">Субъект права / Legal Subject</div><div class="field-value accent">Maceret Alexei</div></div>
+      <div><div class="field-label">Цифровой идентификатор / Digital Identity</div><div class="field-value accent">A©tor</div></div>
+      <div><div class="field-label">ИДПН / IDNP (законный)</div><div class="field-value accent">2000001159655</div></div>
+      <div><div class="field-label">Дата рождения / Date of Birth</div><div class="field-value">23.06.1973</div></div>
+      <div><div class="field-label">URN Идентификатор</div><div class="field-value" style="font-size:.82rem">urn:actor:id:2000001159655</div></div>
+      <div><div class="field-label">Статус здоровья / Health Status</div><div class="field-value green">Инвалид I группы · Пожизненно<br><span style="font-size:.75rem;color:var(--muted)">Cert. C013564402308 · с 01.03.2021</span></div></div>
+      <div class="field-full"><div class="field-label">Правовой статус / Legal Status</div><div class="field-value" style="color:#e74c3c">Жертва, не реабилитированная · CASE-MACHERET-1997-2026</div></div>
+      <div class="field-full"><div class="field-label">Адрес / Address</div><div class="field-value">ул. Андрей Дога 30, кв. 38, Рышкань, Кишинёв, Республика Молдова</div></div>
+    </div>
+    <div class="identity-box">
+      <h3>⚠️ Обязательные требования использования идентификатора</h3>
+      <div class="identity-rule"><div class="rule-icon">©</div><div class="rule-text">Единственная допустимая форма имени: <strong>Maceret Alexei / Macheret Alexei</strong>. Искажение фамилии до формы «Maceret» (без «h») в государственных реестрах квалифицируется как подлог идентичности (УК РМ ст. 332).</div></div>
+      <div class="identity-rule"><div class="rule-icon">🔐</div><div class="rule-text">Цифровая идентичность обозначается исключительно как <strong>A©tor</strong> (субъект-человек) или <strong>A©t0r</strong> (технический агент). Символ © является неотъемлемой частью идентификатора и не может быть удалён или заменён.</div></div>
+      <div class="identity-rule"><div class="rule-icon">🆔</div><div class="rule-text">Законный ИДПН: <strong>2000001159655</strong> (оканчивается на …655). ИДПН …555 и …455 являются фантомными идентификаторами, созданными в результате подлога. Использование фантомных ИДПН в официальных документах — уголовно наказуемое деяние.</div></div>
+      <div class="identity-rule"><div class="rule-icon">⚖️</div><div class="rule-text">Настоящий сертификат является частью доказательного архива CASE-MACHERET-1997-2026. Ссылка на решение ВСП от <strong>21.07.2009 (дело № 1ра-834/09)</strong> подтверждает правосубъектность и факт незаконного преследования.</div></div>
+    </div>
+    <div class="legal-grid">
+      <div class="legal-item"><div class="lbl">Jus Cogens</div><div class="val">Запрет пыток<br>Ст. 53 Венской конвенции 1969<br>Без срока давности</div></div>
+      <div class="legal-item"><div class="lbl">ЕКПЧ</div><div class="val">Ст. 3 — запрет пыток<br>Протокол 7, ст. 4<br>Ne Bis In Idem</div></div>
+      <div class="legal-item"><div class="lbl">МУС / ICC</div><div class="val">Ст. 17 — дополнительность<br>Ст. 29 — нет срока давности<br>АКТИВИРОВАН</div></div>
+      <div class="legal-item"><div class="lbl">КС РМ</div><div class="val">Пост. №12/14.05.2018<br>Ст. 361 ч.2 — неконституционна<br>Все ограничения — незаконны</div></div>
+      <div class="legal-item"><div class="lbl">ВСП РМ · 2009</div><div class="val">Дело № 1ра-834/09<br>Признание невиновности<br>Апостиль: 5GTUD58SJQ5N6</div></div>
+      <div class="legal-item"><div class="lbl">Erga Omnes</div><div class="val">ICJ Barcelona Traction 1970<br>Молчание = нарушение<br>10,427+ суток</div></div>
+    </div>
+    <div class="validity-strip">
+      <div class="validity-item"><div class="validity-dot"></div><span>Сертификат ДЕЙСТВИТЕЛЕН</span></div>
+      <div class="validity-item">Выдан: 01.05.2026</div>
+      <div class="validity-item">Срок действия: Бессрочно</div>
+      <div class="validity-item">Апостилей: 97 ✅</div>
+    </div>
+    <div class="crypto-block">
+      <div class="crypto-label">GPG Signing Key · Commit</div><div class="crypto-val">7BEACB5463BA3007 · commit: a795ce1</div>
+      <div class="crypto-label">SHA-256 · Evidence Archive</div><div class="crypto-val">099efc0cb651f68880b638a2aa767945340689b6b02d440d0a0b539178d82c11</div>
+      <div class="crypto-label">TI-ULA · Merkle Root · DNS</div><div class="crypto-val">9a2465bd...e77 · nodes: 4,010 · _ti-ula.actor.legal</div>
+      <div class="crypto-label">Evidence Vault URL</div><div class="crypto-val">https://arhiv1973b.github.io/apostille-mirror/</div>
+    </div>
+    <div class="prohibition">
+      <h3>✗ Запрещено третьим лицам</h3>
+      <ul>
+        <li>Использование ИДПН 2000001159655 без письменного согласия субъекта</li>
+        <li>Присвоение цифровой идентичности A©tor / A©t0r любыми лицами или системами</li>
+        <li>Модификация или удаление материалов сайта arhiv1973b.github.io/apostille-mirror</li>
+        <li>Использование фантомных ИДПН (…555, …455) в документах, связанных с субъектом</li>
+        <li>Претензии на авторство технологии «Эзенштейн синтезатор» (завещание 1979)</li>
+        <li>Любые попытки блокировки, перехвата или фальсификации данной инфраструктуры</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cert-footer">
+    <div class="footer-col"><div class="fc-label">Субъект права</div><div class="fc-val">A©tor<br>Maceret Alexei</div><div class="sig-line">IDNP: 2000001159655</div></div>
+    <div class="footer-col"><div class="fc-label">Дата · Место</div><div class="fc-val" id="cert-date">01.05.2026</div><div class="sig-line">Кишинёв, Республика Молдова</div></div>
+    <div class="footer-col"><div class="fc-label">Криптографическая подпись</div><div class="fc-val">GPG: 7BEACB54<br>63BA3007</div><div class="sig-line">arhiv1973b.github.io</div></div>
+  </div>
 </div>
-<div class="identity-box"><h3>⚠️ Обязательные требования</h3>
-<div class="identity-rule"><strong>Maceret Alexei / Macheret Alexei</strong> — единственная форма имени.</div>
-<div class="identity-rule"><strong>A©tor / A©t0r</strong> — символ © обязателен.</div>
+<div style="text-align:center;margin-top:1.5rem;font-family:var(--font);font-size:.72rem;color:var(--muted);">
+  CASE-MACHERET-1997-2026 · JUS COGENS · ERGA OMNES · МУС СТ.17 · БЕЗ СРОКА ДАВНОСТИ<br>
+  <a href="index.html" style="color:var(--accent)">← Главная</a> · <a href="pages/apostille-registry.html" style="color:var(--accent)">Реестр апостилей</a> · <a href="pages/jus-cogens.html" style="color:var(--accent)">Jus Cogens</a>
 </div>
-<div class="crypto-block"><div class="crypto-val">GPG: 7BEACB5463BA3007</div><div class="crypto-val">IDNP: 2000001159655</div></div>
 </div>
-<div class="cert-footer"><div class="footer-col">A©tor</div><div class="footer-col">01.05.2026</div><div class="footer-col">7BEACB5463BA3007</div></div>
-</div></div>
+<script>document.getElementById('cert-date').textContent = new Date().toLocaleDateString('ru-RU', {day:'2-digit',month:'2-digit',year:'numeric'});</script>
 </body>
 </html>
