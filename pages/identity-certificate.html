@@ -4,21 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Identity Verification Certificate · A©tor · IDNP 2000001159655</title>
+<meta name="description" content="Official Identity Verification Certificate. Subject: Maceret Alexei. IDNP: 2000001159655. Case: CASE-MACHERET-1997-2026.">
+<meta name="author" content="A©tor · urn:actor:id:2000001159655">
+<meta name="robots" content="index, follow">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root { --black: #0a0a0a; --deep: #0d1117; --accent: #e8b84b; --text: #e6edf3; --font: 'JetBrains Mono', monospace; }
-body { background: var(--black); color: var(--text); font-family: sans-serif; display: flex; justify-content: center; padding: 2rem; }
-.cert { background: var(--deep); border: 2px solid var(--accent); padding: 3rem; max-width: 800px; position: relative; }
-.accent { color: var(--accent); font-weight: bold; }
+:root { --black: #0a0a0a; --deep: #0d1117; --card: #161b22; --border: #21262d; --accent: #e8b84b; --green: #27ae60; --red: #c0392b; --text: #e6edf3; --muted: #8b949e; --font: 'JetBrains Mono', monospace; --sans: 'Inter', sans-serif; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--black); color: var(--text); font-family: var(--sans); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; }
+.cert-outer { width: 100%; max-width: 860px; }
+.cert { background: var(--deep); border: 2px solid var(--accent); border-radius: 4px; position: relative; overflow: hidden; }
+.cert::before, .cert::after { content: ''; position: absolute; width: 40px; height: 40px; border-color: var(--accent); border-style: solid; }
+.cert::before { top: 12px; left: 12px; border-width: 2px 0 0 2px; }
+.cert::after  { bottom: 12px; right: 12px; border-width: 0 2px 2px 0; }
+.cert-header { background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); border-bottom: 1px solid var(--accent); padding: 2.5rem 3rem 2rem; text-align: center; }
+.seal { width: 80px; height: 80px; border: 3px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.5rem; background: rgba(232,184,75,.08); box-shadow: 0 0 30px rgba(232,184,75,.2); }
+.cert-title-label { font-family: var(--font); font-size: .7rem; color: var(--muted); letter-spacing: .2em; text-transform: uppercase; margin-bottom: .5rem; }
+.cert-title { font-family: var(--font); font-size: clamp(1.1rem, 3vw, 1.6rem); color: var(--accent); font-weight: 700; margin-bottom: .25rem; }
+.cert-subtitle { font-family: var(--font); font-size: .78rem; color: var(--muted); letter-spacing: .08em; }
+.cert-body { padding: 2.5rem 3rem; }
+.subject-block { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 4px; padding: 1.5rem 2rem; margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.field-label { font-family: var(--font); font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; margin-bottom: .3rem; }
+.field-value { font-family: var(--font); font-size: .95rem; color: var(--text); font-weight: 600; }
+.field-value.accent { color: var(--accent); font-size: 1.1rem; }
+.field-value.green { color: #2ecc71; }
+.identity-box { background: rgba(232,184,75,.06); border: 1px solid rgba(232,184,75,.3); border-radius: 4px; padding: 1.5rem 2rem; margin-bottom: 2rem; }
+.identity-box h3 { font-family: var(--font); font-size: .75rem; color: var(--accent); text-transform: uppercase; letter-spacing: .12em; margin-bottom: 1rem; display: flex; align-items: center; gap: .5rem; }
+.identity-rule { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: .75rem; padding-bottom: .75rem; border-bottom: 1px solid rgba(232,184,75,.1); }
+.legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.legal-item { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 1rem; }
+.crypto-block { background: #0a0e13; border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem 2rem; margin-bottom: 2rem; font-family: var(--font); }
+.crypto-val { font-size: .78rem; color: #2ecc71; word-break: break-all; margin-bottom: 1rem; }
+.prohibition { background: rgba(192,57,43,.08); border: 1px solid rgba(192,57,43,.3); border-radius: 4px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; }
+.cert-footer { border-top: 1px solid var(--border); padding: 1.5rem 3rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; background: var(--card); }
+.footer-col { text-align: center; }
+.watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-30deg); font-family: var(--font); font-size: 6rem; font-weight: 900; color: rgba(232,184,75,.04); pointer-events: none; white-space: nowrap; z-index: 0; }
 </style>
 </head>
 <body>
-<div class="cert">
-  <h1 style="color:var(--accent)">IDENTITY VERIFICATION CERTIFICATE</h1>
-  <p>Subject: <span class="accent">Maceret Alexei</span></p>
-  <p>Digital Identity: <span class="accent">A©tor</span></p>
-  <p>IDNP: <span class="accent">2000001159655</span></p>
-  <hr style="border:0; border-top:1px solid #21262d; margin:2rem 0;">
-  <p style="font-size:0.8rem; color:#8b949e;">CASE-MACHERET-1997-2026 · JUS COGENS · ERGA OMNES</p>
+<div class="cert-outer"><div class="cert"><div class="watermark">A©tor</div>
+<div class="cert-header"><div class="seal">⚖️</div><div class="cert-title-label">Official Document · Republic of Moldova · International Law</div><div class="cert-title">IDENTITY VERIFICATION CERTIFICATE</div></div>
+<div class="cert-body">
+<div class="subject-block">
+<div><div class="field-label">Legal Subject</div><div class="field-value accent">Maceret Alexei</div></div>
+<div><div class="field-label">Digital Identity</div><div class="field-value accent">A©tor</div></div>
+<div><div class="field-label">IDNP</div><div class="field-value accent">2000001159655</div></div>
 </div>
+<div class="identity-box"><h3>⚠️ Обязательные требования</h3>
+<div class="identity-rule"><strong>Maceret Alexei / Macheret Alexei</strong> — единственная форма имени.</div>
+<div class="identity-rule"><strong>A©tor / A©t0r</strong> — символ © обязателен.</div>
+</div>
+<div class="crypto-block"><div class="crypto-val">GPG: 7BEACB5463BA3007</div><div class="crypto-val">IDNP: 2000001159655</div></div>
+</div>
+<div class="cert-footer"><div class="footer-col">A©tor</div><div class="footer-col">01.05.2026</div><div class="footer-col">7BEACB5463BA3007</div></div>
+</div></div>
 </body>
 </html>
