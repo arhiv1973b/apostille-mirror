@@ -1,0 +1,18 @@
+{
+  "case": "CASE-MACHERET-1997-2026",
+  "idnp": "2000001159655",
+  "subject": "Maceret Alexei",
+  "updated": "2026-05-01T00:00:00Z",
+  "days_without_investigation": 10427,
+  "apostilles_count": 97,
+  "ti_ula_nodes": 4010,
+  "merkle_root": "9a2465bd...e77",
+  "sha256_index": "auto-computed-on-deploy",
+  "archive_sha256": "099efc0cb651f68880b638a2aa767945340689b6b02d440d0a0b539178d82c11",
+  "dns_record": "_ti-ula.actor.legal",
+  "commit": "5b40fda",
+  "status": "ACTIVE · JUS COGENS VIOLATED · ERGA OMNES BREACHED",
+  "disability": "Group I · Sever · Certificate C013564402308 · Permanent",
+  "contact_primary": "arhiv240@gmail.com",
+  "contact_github": "arhiv1973b@outlook.com"
+}

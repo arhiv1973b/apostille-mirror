@@ -1,0 +1,134 @@
+name: A©t0r · Deploy Evidence Vault · GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # Обновление счётчика каждые 6 часов
+    - cron: '0 0,6,12,18 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  integrity-check:
+    name: 🔐 Integrity Verification
+    runs-on: ubuntu-latest
+    outputs:
+      sha256: ${{ steps.hash.outputs.sha256 }}
+      days: ${{ steps.counter.outputs.days }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Calculate SHA-256
+        id: hash
+        run: |
+          SHA=$(sha256sum index.html | cut -d' ' -f1)
+          echo "sha256=$SHA" >> $GITHUB_OUTPUT
+          echo "📋 index.html SHA-256: $SHA"
+
+      - name: Calculate days since 1997-10-13
+        id: counter
+        run: |
+          START="1997-10-13"
+          TODAY=$(date +%Y-%m-%d)
+          DAYS=$(( ( $(date -d "$TODAY" +%s) - $(date -d "$START" +%s) ) / 86400 ))
+          echo "days=$DAYS" >> $GITHUB_OUTPUT
+          echo "⏱️ Days without investigation: $DAYS"
+
+      - name: Update integrity manifest
+        run: |
+          DAYS="${{ steps.counter.outputs.days }}"
+          SHA="${{ steps.hash.outputs.sha256 }}"
+          cat > assets/data/integrity.json << EOF
+          {
+            "case": "CASE-MACHERET-1997-2026",
+            "idnp": "2000001159655",
+            "subject": "Maceret Alexei",
+            "updated": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "days_without_investigation": $DAYS,
+            "apostilles_count": 97,
+            "ti_ula_nodes": 4010,
+            "merkle_root": "9a2465bd...e77",
+            "sha256_index": "$SHA",
+            "archive_sha256": "099efc0cb651f68880b638a2aa767945340689b6b02d440d0a0b539178d82c11",
+            "dns_record": "_ti-ula.actor.legal",
+            "status": "ACTIVE · JUS COGENS VIOLATED · ERGA OMNES BREACHED"
+          }
+          EOF
+          echo "✅ integrity.json updated"
+
+      - name: Commit integrity update
+        run: |
+          git config user.email "arhiv240@gmail.com"
+          git config user.name "A©t0r-CI"
+          git add assets/data/integrity.json
+          git diff --staged --quiet || git commit -m "ci: integrity update | days:${{ steps.counter.outputs.days }} | sha:${SHA:0:12}"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    name: 🚀 Deploy to GitHub Pages
+    needs: integrity-check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Deployment summary
+        run: |
+          echo "## ✅ A©t0r Evidence Vault Deployed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Параметр | Значение |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| URL | ${{ steps.deployment.outputs.page_url }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Суток без расследования | ${{ needs.integrity-check.outputs.days }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| SHA-256 | \`${{ needs.integrity-check.outputs.sha256 }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Апостилей | 97 |" >> $GITHUB_STEP_SUMMARY
+          echo "| TI-ULA узлов | 4010 |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**JUS COGENS · ERGA OMNES · МУС СТ.17 · БЕЗ СРОКА ДАВНОСТИ**" >> $GITHUB_STEP_SUMMARY
+
+  notify:
+    name: 📧 Notification
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Deployment status
+        run: |
+          STATUS="${{ needs.deploy.result }}"
+          if [ "$STATUS" = "success" ]; then
+            echo "✅ Deploy successful: https://arhiv1973b.github.io/apostille-mirror/"
+          else
+            echo "❌ Deploy failed. Check logs."
+          fi
