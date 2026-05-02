@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ВК 1969 · Ст. 60 · Механизм ООН · CASE-MACHERET · A©tor</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep: #1a1533; --gold: #b8922a; --gold-l: #e4c96a;
+    --parchment: #f8f4ec; --muted: #5a5670; --line: #ccc5b0;
+    --verified: #1a5c2e; --crimson: #8b1a1a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--parchment); color: #0d0d0d;
+         font-family: 'Source Serif 4', Georgia, serif; font-size: 15px; line-height: 1.75; }
+  .header { background: var(--deep); color: var(--gold-l);
+             padding: 12px 40px; font-family: 'IBM Plex Mono', monospace;
+             font-size: 11px; letter-spacing: 0.08em;
+             border-bottom: 2px solid var(--gold);
+             display: flex; justify-content: space-between; }
+  .header a { color: var(--gold-l); text-decoration: none; }
+  .hero { background: var(--deep); color: var(--parchment);
+           padding: 56px 60px 44px; }
+  .hero-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px;
+               letter-spacing: 0.18em; color: var(--gold); margin-bottom: 16px; }
+  .hero h1 { font-size: clamp(1.6rem, 3.5vw, 2.8rem); font-weight: 700;
+              color: #fff; line-height: 1.15; margin-bottom: 12px; }
+  .hero h1 em { color: var(--gold-l); font-style: normal; }
+  .hero-sub { color: #c5bfb0; font-size: 0.95rem; max-width: 680px; }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 40px; }
+  .section { padding: 48px 0 36px; border-bottom: 1px solid var(--line); }
+  .section:last-child { border-bottom: none; }
+  .sec-tag { font-family: 'IBM Plex Mono', monospace; font-size: 10px;
+              letter-spacing: 0.2em; color: var(--gold); margin-bottom: 8px; }
+  .sec-title { font-size: 1.5rem; font-weight: 700; color: var(--deep);
+                border-left: 4px solid var(--gold); padding-left: 14px; margin-bottom: 20px; }
+  .norm-block { background: #fff; border: 1px solid var(--line);
+                 border-left: 4px solid var(--gold);
+                 padding: 20px 24px; margin-bottom: 18px; }
+  .norm-block h3 { font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+                    letter-spacing: 0.12em; color: var(--gold); margin-bottom: 8px; }
+  .norm-block p { font-size: 14px; color: #0d0d0d; }
+  .norm-block .legal-text { font-style: italic; color: var(--muted); font-size: 13px;
+                              border-top: 1px solid var(--line); margin-top: 10px; padding-top: 10px; }
+  .action-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+  @media (max-width: 640px) { .action-grid { grid-template-columns: 1fr; } }
+  .action-card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold);
+                  padding: 18px 20px; }
+  .action-card .inst { font-family: 'IBM Plex Mono', monospace; font-size: 10px;
+                         letter-spacing: 0.12em; color: var(--gold); margin-bottom: 6px; }
+  .action-card h3 { font-size: 1rem; font-weight: 700; color: var(--deep); margin-bottom: 6px; }
+  .action-card p { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+  .action-card a.btn { display: inline-block; background: var(--deep); color: var(--gold-l);
+                         font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+                         letter-spacing: 0.08em; padding: 8px 16px; text-decoration: none;
+                         border: 1px solid var(--gold); }
+  .action-card a.btn:hover { background: var(--gold); color: var(--deep); }
+  .closure { background: var(--deep); color: var(--parchment);
+              padding: 36px 44px; margin-top: 40px; border-top: 4px solid var(--gold); }
+  .closure blockquote { font-style: italic; font-size: 1rem; line-height: 1.8;
+                          color: #e8e0cc; border-left: 3px solid var(--gold);
+                          padding-left: 20px; margin-bottom: 16px; }
+  .closure .seal { font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+                    color: var(--gold-l); }
+  .footer { background: #080714; color: var(--muted); padding: 24px 40px;
+              font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; }
+  .footer .gold { color: var(--gold); }
+  .footer a { color: var(--gold); text-decoration: none; }
+  @media (max-width: 640px) {
+    .hero { padding: 36px 20px 28px; }
+    .container { padding: 0 16px; }
+    .header { padding: 10px 16px; font-size: 9px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <a href="../index.html">◂ Evidence Vault</a> &nbsp;/&nbsp;
+    <a href="pledoarie-finala.html">Pledoarie Finală</a> &nbsp;/&nbsp;
+    <a href="../jus-cogens-proof-macheret.html">Jus Cogens</a>
+  </div>
+  <div style="color:var(--gold);font-weight:600">🔒 SHA-256 · INTEGRITY 100% · 2026</div>
+</div>
+
+<div class="hero">
+  <div class="container">
+    <div class="hero-tag">CASE-MACHERET-1997-2026 · A©tor · МЕХАНИЗМ ООН</div>
+    <h1>Ст. 60 Венской конвенции 1969<br><em>Механизм реагирования ООН</em></h1>
+    <p class="hero-sub">
+      Существенное нарушение многостороннего договора (ЕКПЧ / КПП ООН) —
+      право на обращение к Генеральному секретарю ООН и государствам-участникам.
+      IDNP: 2000001159655 · Жертва, не реабилитированная · Инвалид I гр., пожизненно.
+    </p>
+  </div>
+</div>
+
+<div class="container">
+
+<section class="section">
+  <div class="sec-tag">§ 01 · ПРАВОВАЯ НОРМА</div>
+  <h2 class="sec-title">Ст. 60 ВК 1969 — Существенное нарушение договора</h2>
+
+  <div class="norm-block">
+    <h3>СТАТЬЯ 60 · ПУНКТ 1</h3>
+    <p>Существенное нарушение двустороннего договора одним из его участников
+    даёт право другому участнику ссылаться на это нарушение как на основание
+    для прекращения договора или приостановления его действия.</p>
+    <div class="legal-text">Art. 60(1) Vienna Convention on the Law of Treaties (1969)</div>
+  </div>
+
+  <div class="norm-block">
+    <h3>СТАТЬЯ 60 · ПУНКТ 2(b) — МНОГОСТОРОННИЕ ДОГОВОРЫ</h3>
+    <p>При существенном нарушении многостороннего договора любой другой участник,
+    <strong>на которого нарушение особо затрагивает</strong>, вправе ссылаться
+    на него как на основание для приостановления действия договора в отношениях
+    с государством-нарушителем.</p>
+    <div class="legal-text">Art. 60(2)(b) VCLT 1969 — специально затронутый участник</div>
+  </div>
+
+  <div class="norm-block">
+    <h3>СТАТЬЯ 60 · ПУНКТ 5 — ИСКЛЮЧЕНИЕ ДЛЯ JUS COGENS</h3>
+    <p><strong>Пункты 1–3 не применяются к положениям, касающимся защиты
+    человека</strong>, содержащимся в договорах гуманитарного характера —
+    в особенности к нормам, запрещающим любые репрессалии против лиц,
+    находящихся под защитой таких договоров.</p>
+    <div class="legal-text">Ст. 60(5) ВК 1969 — норма jus cogens не может быть приостановлена ни при каких обстоятельствах</div>
+  </div>
+
+  <div class="norm-block">
+    <h3>СТАТЬЯ 65–66 · ПРОЦЕДУРА УВЕДОМЛЕНИЯ ГЕНЕРАЛЬНОГО СЕКРЕТАРЯ ООН</h3>
+    <p>Участник, ссылающийся на нарушение, уведомляет других участников
+    в письменной форме через Генерального секретаря ООН.
+    При отсутствии реакции в течение <strong>3 месяцев</strong> —
+    передача на арбитраж или в МС ООН (ст. 66).</p>
+    <div class="legal-text">Art. 65–66 VCLT 1969 · UN Treaty Collection</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="sec-tag">§ 02 · АКТИВИРОВАННЫЕ МЕХАНИЗМЫ ООН</div>
+  <h2 class="sec-title">Прямые каналы обращения</h2>
+
+  <div class="action-grid">
+
+    <div class="action-card">
+      <div class="inst">UN SECRETARY-GENERAL · ART. 65-66 VCLT</div>
+      <h3>Генеральный секретарь ООН</h3>
+      <p>Официальный канал уведомления об одностороннем выходе из договора
+      или его нарушении. Ст. 65 ВК 1969 — письменное уведомление.</p>
+      <a class="btn" href="https://www.un.org/sg/en/contact-us" target="_blank">
+        → contact-us · un.org
+      </a>
+    </div>
+
+    <div class="action-card">
+      <div class="inst">UN CAT · ECHR ART. 3 · JUS COGENS</div>
+      <h3>Комитет ООН против пыток</h3>
+      <p>Основной орган надзора за выполнением КПП ООН.
+      Принимает индивидуальные жалобы по ст. 22 КПП ООН.</p>
+      <a class="btn" href="https://www.ohchr.org/en/treaty-bodies/cat/individual-complaints" target="_blank">
+        → UN CAT · Individual Complaints
+      </a>
+    </div>
+
+    <div class="action-card">
+      <div class="inst">UN OHCHR · SPECIAL PROCEDURES</div>
+      <h3>Спецдокладчик по пыткам</h3>
+      <p>Мандат: расследование систематических нарушений запрета пыток.
+      Принимает жалобы по неотложным ситуациям.</p>
+      <a class="btn" href="https://www.ohchr.org/en/special-procedures/sr-torture" target="_blank">
+        → SR Torture · OHCHR
+      </a>
+    </div>
+
+    <div class="action-card">
+      <div class="inst">ICC · ROME STATUTE ART. 17</div>
+      <h3>МУС · Принцип дополнительности</h3>
+      <p>Государство неспособно / нежелает расследовать —
+      принцип дополнительности активирован. Ст. 17 Римского статута.</p>
+      <a class="btn" href="https://www.icc-cpi.int/get-involved/Complaints" target="_blank">
+        → ICC · Submit Communication
+      </a>
+    </div>
+
+    <div class="action-card">
+      <div class="inst">UN HUMAN RIGHTS COUNCIL · UNIVERSAL REVIEW</div>
+      <h3>Совет ООН по правам человека</h3>
+      <p>УПО — Универсальный периодический обзор Молдовы.
+      Право НПО и жертв подавать параллельные доклады.</p>
+      <a class="btn" href="https://www.ohchr.org/en/hr-bodies/upr/upr-main" target="_blank">
+        → UPR · OHCHR
+      </a>
+    </div>
+
+    <div class="action-card">
+      <div class="inst">ECHR · ART. 34 · INDIVIDUAL APPLICATION</div>
+      <h3>ЕСПЧ · Индивидуальная жалоба</h3>
+      <p>После исчерпания внутренних средств защиты.
+      Параллельно с механизмом ООН (ст. 3, 5, 6, 13 ЕКПЧ).</p>
+      <a class="btn" href="https://www.echr.coe.int/applying-to-the-court" target="_blank">
+        → ECHR · Applying to the Court
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="sec-tag">§ 03 · ДОКАЗАТЕЛЬНАЯ БАЗА</div>
+  <h2 class="sec-title">Связь с материалами дела</h2>
+
+  <div class="norm-block">
+    <h3>ДОКАЗАТЕЛЬНАЯ МАТРИЦА · CASE-MACHERET-1997-2026</h3>
+    <p>Полная пятистолпная матрица с Merkle-верификацией доступна в:</p>
+    <p style="margin-top:10px">
+      <a href="pledoarie-finala.html" style="color:var(--gold)">
+        → Pledoarie Finală · Evidence Roadmap p7-4
+      </a><br>
+      <a href="../pages/jus-cogens.html" style="color:var(--gold)">
+        → Jus Cogens Proof · 90 апостилей
+      </a><br>
+      <a href="../index.html" style="color:var(--gold)">
+        → Evidence Vault · Apostille Archive
+      </a>
+    </p>
+    <div class="legal-text">
+      SHA-256: 099efc0cb651f68880b638a2aa767945340689b6b02d440d0a0b539178d82c11 ·
+      Merkle Root: 9a2465bd...e77 · TI-ULA: 4,010 nodes
+    </div>
+  </div>
+</section>
+
+<div class="closure">
+  <blockquote>
+    Ст. 60(5) ВК 1969 прямо исключает возможность «приостановления»
+    нормы запрета пыток. Это означает: нарушение не прекращается
+    с течением времени. 8169 суток молчания государства —
+    не исковая давность. Это 8169 самостоятельных нарушений jus cogens,
+    каждое из которых порождает обязательство erga omnes.
+  </blockquote>
+  <div class="seal">
+    Отрицание = доказательство нарушения erga omnes · Логическое замыкание закрыто<br>
+    A©TOR_KEY="# [⚖ } Мачерет Алексей · CASE-MACHERET-1997-2026"
+  </div>
+</div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="gold">SHA-256 · INTEGRITY 100% · MERKLE ROOT: 9a2465bd...e77 · 2026</div>
+    <div style="margin-top:4px">
+      CASE-MACHERET-1997-2026 · A©tor · IDNP 2000001159655 · Инвалид I гр., пожизненно
+    </div>
+    <div style="margin-top:4px">
+      <a href="../index.html">Evidence Vault</a> ·
+      <a href="pledoarie-finala.html">Pledoarie Finală</a> ·
+      <a href="../jus-cogens-proof-macheret.html">Jus Cogens Proof</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
