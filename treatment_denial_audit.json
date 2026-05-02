@@ -1,0 +1,10 @@
+﻿{
+  "audit_type": "Denial of Medical Treatment/Rehabilitation",
+  "status": "NOT PROVIDED / FORMAL ONLY",
+  "consequence": "Permanent Group I Disability",
+  "root_cause": "Torture Case 1-568/98 (Art. 219 CP 1961)",
+  "legal_block": "8169 days of refusal to recognize victim status",
+  "evidence_anchor": "Decision 10g-1009/19 (Apostille 5OTZ38FVFN8R2)",
+  "idnp": "2000001159655",
+  "integrity": "SHA-256 sealed by A©tor"
+}
