@@ -1,0 +1,9 @@
+﻿{
+  "event": "UN_PORTAL_SUBMISSION_FAILURE",
+  "error_code": "4751526",
+  "timestamp": "2026-05-02T23:08:58",
+  "context": "Finalizing OHCHR Form 5kzvrl19",
+  "victim_id": "A©tor / IDNP ...655",
+  "status": "INTERRUPTED",
+  "integrity": "SHA-256 sealed by A©tor"
+}
