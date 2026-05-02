@@ -1,0 +1,9 @@
+﻿{
+  "event": "UN_PORTAL_SUBMISSION_CRITICAL_FAILURE",
+  "error_code": "4751532",
+  "timestamp": "2026-05-02T23:15:59",
+  "context": "Final Submit stage - All sections marked complete",
+  "victim_id": "A©tor / IDNP ...655",
+  "status": "BLOCKED_BY_GATEWAY",
+  "integrity": "SHA-256 sealed by A©tor"
+}
