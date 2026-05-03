@@ -1,0 +1,11 @@
+﻿{
+  "entity": "A©tor (Macheret Alexei Artur)",
+  "idnp_legal": "2000001159655",
+  "primary_residence": "str. Andrei Doga 30, ap. 38",
+  "historical_residence": "str. Miron Costin 13/3, ap. 64",
+  "secure_email": "arhiv240@gmail.com",
+  "secure_phone": "078238410 (Moldtelecom/STISC)",
+  "recovery_phone": "079902963",
+  "commentary": "Protection against ASP IDNP manipulation",
+  "integrity": "SHA-256 sealed by A©tor"
+}
