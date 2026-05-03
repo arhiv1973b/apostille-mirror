@@ -1,0 +1,12 @@
+﻿{
+  "audit_type": "Access to Defense Verification",
+  "status": "DENIED",
+  "periods": [
+    {"years": "1997-1998", "type": "Incommunicado (Torture/Case 1-568/98)"},
+    {"year": "2006", "type": "26-day Arrest (IDNP Sabotage)"}
+  ],
+  "legal_violations": ["Art. 9 ICCPR", "Art. 14 ICCPR", "Art. 6 ECHR"],
+  "objective": "Suppression of legal defense and family contact",
+  "victim_id": "A©tor / IDNP 2000001159655",
+  "integrity": "SHA-256 sealed by A©tor"
+}
