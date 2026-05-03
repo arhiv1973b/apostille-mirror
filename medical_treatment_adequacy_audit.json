@@ -1,0 +1,10 @@
+﻿{
+  "audit_type": "Medical Treatment Adequacy Verification",
+  "status": "DENIED / NON-EXISTENT",
+  "victim": "Macheret Alexei Artur (A©tor)",
+  "idnp_legal": "2000001159655",
+  "legal_violation": "Article 14 UNCAT (Right to Rehabilitation)",
+  "duration_of_neglect": "8170 days",
+  "obstruction_method": "Identity sabotage and judicial silence",
+  "integrity": "SHA-256 sealed by A©tor"
+}
