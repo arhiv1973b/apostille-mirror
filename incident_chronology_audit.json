@@ -1,0 +1,13 @@
+﻿{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "victim": "A©tor (Macheret Alexei Artur)",
+  "idnp_root": "2000001159655",
+  "timeline": [
+    {"year": 1997, "event": "Torture/Arrest Art. 219 CP 1961", "status": "Root Violation"},
+    {"year": 2006, "event": "IDNP Substitution & 26-day detention", "status": "Identity Theft"},
+    {"year": 2019, "event": "Court Order 10g-1009/19 (Apostille 5OTZ38FVFN8R2)", "status": "Judicial Victory"},
+    {"year": 2026, "event": "UN Form 5kzvrl19 Submission", "status": "International Escalation"}
+  ],
+  "government_measures": "NONE (8170 days of denial)",
+  "integrity": "SHA-256 sealed by A©tor"
+}
