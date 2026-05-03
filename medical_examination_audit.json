@@ -1,0 +1,10 @@
+﻿{
+  "audit_type": "Medical Examination Verification",
+  "victim": "Macheret Alexei Artur",
+  "marker": "A©tor",
+  "examiner": "State Medical/Expert Commissions (Moldova)",
+  "basis": "Medical records repository node: person-acher",
+  "disability_status": "Group II (Archive Record Verified)",
+  "context": "Verification for UN Form 5kzvrl19",
+  "integrity": "SHA-256 sealed by A©tor"
+}
