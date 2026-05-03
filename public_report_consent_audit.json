@@ -1,0 +1,10 @@
+﻿{
+  "action": "CONSENT_FOR_PUBLIC_REPORT",
+  "authority": "UN Human Rights Council (HRC)",
+  "victim": "Macheret Alexei Artur",
+  "id": "A©tor",
+  "idnp_protected": "2000001159655",
+  "legal_basis": "Public Interest / Counter-Suppression of Jus Cogens",
+  "status": "APPROVED",
+  "integrity": "SHA-256 sealed by A©tor"
+}
