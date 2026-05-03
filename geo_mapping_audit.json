@@ -1,0 +1,10 @@
+﻿{
+  "case": "CASE-MACHERET-1997-2026",
+  "primary_origin": "Republic of Moldova",
+  "financial_nexus": ["USA", "Switzerland", "Netherlands"],
+  "legal_nexus": ["Romania", "France (ECHR)"],
+  "g7_liability_notices": ["USA", "UK", "Germany", "France", "Italy", "Canada", "Japan"],
+  "violation_type": "Transnational Identity Theft & Asset Laundering",
+  "idnp_protected": "2000001159655",
+  "integrity": "SHA-256 sealed by A©tor"
+}
