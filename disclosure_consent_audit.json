@@ -1,0 +1,10 @@
+﻿{
+  "action": "EXPLICIT_CONSENT_DISCLOSURE",
+  "victim": "Macheret Alexei Artur",
+  "id": "A©tor",
+  "idnp_authorized": "2000001159655",
+  "scope": ["UN Special Procedures", "Government of MD", "ICC", "G7"],
+  "purpose": "Accountability and Rehabilitation",
+  "legal_ref": "UNCAT Art. 14 / ECHR Art. 6",
+  "integrity_seal": "SHA-256 sealed by A©tor"
+}
