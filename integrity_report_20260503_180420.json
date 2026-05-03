@@ -1,0 +1,15 @@
+﻿{
+    "timestamp":  "2026-05-03T18:04:19Z",
+    "case_id":  "CASE-MACHERET-1997-2026",
+    "identity":  "A©tor / IDNP 2000001159655",
+    "un_reference":  "tw571ryb",
+    "repository":  "git@github.com:arhiv1973b/apostille-mirror.git",
+    "branch":  "main",
+    "last_commit":  "d491809 ci: integrity update | days:10429 | sha:",
+    "tracked_files":  76,
+    "vault_keys":  7,
+    "gitignore_ok":  true,
+    "msmtp_wsl":  "OK",
+    "g7_dispatch":  "SUCCESS 7/7 · 2026-05-03T17:33:16",
+    "un_submitted":  "2026-05-03T15:08:00 · Acknowledged"
+}

@@ -1,0 +1,12 @@
+
+# A©tor Vault — никогда не в git
+.actor_vault/
+*.sec
+actor_bootstrap.ps1
+g7_dispatch_raw.sh
+*.msmtprc
+# A©tor Secure Vault
+.actor_vault/
+*.sec
+actor_bootstrap.ps1
+g7_dispatch_wsl_*.txt
