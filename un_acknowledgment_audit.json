@@ -1,0 +1,11 @@
+﻿{
+  "audit_type": "UN Special Procedures Acknowledgment",
+  "case_ref": "CASE-MACHERET-1997-2026",
+  "un_receipt_time": "2026-05-03T15:08:00",
+  "sender": "spformfeedback@ohchr.org",
+  "recipient": "arhiv240@gmail.com",
+  "document_source": "Outlook_8.pdf",
+  "status": "ACKNOWLEDGED",
+  "idnp_protected": "2000001159655",
+  "integrity_seal": "SHA-256 sealed by A©tor"
+}
