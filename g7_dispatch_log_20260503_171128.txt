@@ -1,0 +1,11 @@
+[FAILED]  17:11:33 → chisinau@international.gc.ca | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[FAILED]  17:11:36 → ambassade.france.chisinau@diplomatie.gouv.fr | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[FAILED]  17:11:40 → info@chisinau.diplo.de | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[FAILED]  17:11:43 → ambasciata.chisinau@esteri.it | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[FAILED]  17:11:46 → chisinau-consul@mofa.go.jp | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[FAILED]  17:11:49 → enquiries.chisinau@fco.gov.uk | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+[FAILED]  17:11:54 → chisinauvisas@state.gov | Error: The term 'msmtp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+=== DISPATCH COMPLETE · 2026-05-03 17:11:58 ===
+SUCCESS: 0 / FAILED: 7
+UN Ref: tw571ryb · A©tor · IDNP 655
