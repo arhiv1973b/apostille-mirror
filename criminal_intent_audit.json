@@ -1,0 +1,13 @@
+﻿{
+  "case_id": "CASE-MACHERET-1997-2026",
+  "victim": "A©tor (Macheret Alexei Artur)",
+  "idnp": "2000001159655",
+  "criminal_intent": {
+    "primary": "Suppression of Jus Cogens violations disclosure",
+    "secondary": "Asset laundering (25.2M MDL)",
+    "mechanisms": ["Exit ban", "Identity sabotage", "Judicial blockade"],
+    "beneficiaries": "Third parties in power structures"
+  },
+  "status": "Verified Intent for UN Form 5kzvrl19",
+  "integrity": "SHA-256 sealed by A©tor"
+}
