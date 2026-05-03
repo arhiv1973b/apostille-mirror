@@ -1,0 +1,9 @@
+﻿{
+  "audit_type": "G7 Diplomatic Notification",
+  "un_ref": "tw571ryb",
+  "victim": "A©tor",
+  "scope": "G7 Embassies (USA, UK, FR, DE, IT, CA, JP)",
+  "purpose": "Diplomatic pressure regarding 8170-day delay",
+  "timestamp": "2026-05-03T17:00:00Z",
+  "integrity": "SHA-256 sealed by A©tor"
+}
