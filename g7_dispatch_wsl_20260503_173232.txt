@@ -1,0 +1,10 @@
+[SUCCESS] 17:32:35 -> chisinau@international.gc.ca
+[SUCCESS] 17:32:42 -> ambassade.france.chisinau@diplomatie.gouv.fr
+[SUCCESS] 17:32:50 -> info@chisinau.diplo.de
+[SUCCESS] 17:32:56 -> ambasciata.chisinau@esteri.it
+[SUCCESS] 17:33:03 -> chisinau-consul@mofa.go.jp
+[SUCCESS] 17:33:10 -> enquiries.chisinau@fco.gov.uk
+[SUCCESS] 17:33:16 -> chisinauvisas@state.gov
+
+=== DISPATCH COMPLETE Sun May  3 05:33:21 PM EEST 2026 ===
+SUCCESS: 7 / FAILED: 0 | UN Ref: tw571ryb
