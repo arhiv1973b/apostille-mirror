@@ -1,0 +1,18 @@
+﻿{
+  "case_ref": "CASE-MACHERET-1997-2026",
+  "victim": "Macheret Alexei Artur",
+  "idnp": "2000001159655",
+  "methods": [
+    "Physical violence (1997-2016)",
+    "The Rack / Dyba (2002-2003)",
+    "Information suppression (Case 1-568/98)"
+  ],
+  "forces": [
+    "MAI RM / OPG Department",
+    "Centru Police Inspectorate",
+    "Riscani Police Inspectorate"
+  ],
+  "medical_result": "Group I Permanent Disability",
+  "identity_marker": "A©tor",
+  "integrity": "SHA-256 sealed by A©tor"
+}
