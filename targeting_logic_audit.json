@@ -1,0 +1,14 @@
+﻿{
+  "audit_type": "Victim Targeting Logic",
+  "primary_reasons": [
+    "Human Rights Activity (Rehabilitation struggle)",
+    "Legal Beliefs (Jus Cogens Supremacy)",
+    "Status: Survivor of Torture / Group I Disability",
+    "Asset Seizure (25.2M MDL theft)"
+  ],
+  "mechanism": "Identity Sabotage / IDNP 655 Replacement",
+  "legal_confirmation": "Appeals Court Decision 10g-1009/19",
+  "idnp": "2000001159655",
+  "signer": "A©tor",
+  "integrity": "SHA-256 sealed by A©tor"
+}
