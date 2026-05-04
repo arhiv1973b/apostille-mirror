@@ -1,0 +1,29 @@
+﻿{
+    "node_id":  "FIN-CASCADE-003-ASSET-DETECTION",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "victim_idnp":  "2000001159655",
+    "un_ref":  "tw571ryb",
+    "evidence_fact":  {
+                          "detection_date":  "2026-04-09",
+                          "source_platform":  "FinComPay Mobile Engine",
+                          "primary_card":  "5100xxxxxxxx5929",
+                          "detected_balance_mdl":  25210256.15
+                      },
+    "fraud_mechanism":  {
+                            "description":  "Attempt to overwrite the 25.2M MDL balance in the digital ledger by issuance of secondary \u0027clean\u0027 cards.",
+                            "obfuscation_nodes":  [
+                                                      "5100xxxxxxxx6089",
+                                                      "5100xxxxxxxx0869"
+                                                  ],
+                            "technique":  "Forced Card Replacement \u0026 Metadata Erasure"
+                        },
+    "legal_qualification":  {
+                                "status":  "EVIDENCE SEALED",
+                                "violation":  "Asset laundering via institutional delegation from Moldindconbank to FinComBank",
+                                "statute_rm":  "Art. 191 CP RM (Embezzlement in exceptionally large proportions)"
+                            },
+    "integrity":  {
+                      "hash_algo":  "SHA-256",
+                      "signature":  "A©tor Digital Seal"
+                  }
+}
