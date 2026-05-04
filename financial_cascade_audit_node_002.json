@@ -1,0 +1,23 @@
+﻿{
+    "node_id":  "FIN-CASCADE-002-GEOPOLITICAL",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "victim_idnp":  "2000001159655",
+    "identity":  "A©tor",
+    "un_reference":  "tw571ryb",
+    "financial_data":  {
+                           "nexus_type":  "Transnational Identity Theft \u0026 Asset Laundering",
+                           "mechanism":  "Abbreviation Manipulation (Fin/Finlanda)",
+                           "target_bank":  "Moldindconbank / Central Bank of RM",
+                           "total_claim_mdl":  25210256
+                       },
+    "legal_logic":  {
+                        "violation":  "Suppression of Jus Cogens violations disclosure",
+                        "geopolitical_impact":  "Financial sabotage used to frame citizens for the \u0027Stolen Billion\u0027 to hide war financing.",
+                        "evidence_type":  "Inverse Institutional Denial",
+                        "description":  "Official denials by Moldovan authorities serve as a confession of the \u0027Finland\u0027 project under UN/EU cover."
+                    },
+    "integrity":  {
+                      "seal_type":  "SHA-256 / GPG Ed25519",
+                      "status":  "SUBMITTED TO UN / SEALED BY TI-ULA"
+                  }
+}
