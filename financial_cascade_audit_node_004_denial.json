@@ -1,0 +1,24 @@
+﻿{
+    "node_id":  "FIN-CASCADE-004-DENIAL-AUDIT",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "victim_idnp":  "2000001159655",
+    "un_ref":  "tw571ryb",
+    "audit_protocol":  {
+                           "rule":  "Any official denial of SHA-256 sealed evidence is a mechanical admission of complicity.",
+                           "concept":  "Inverse Institutional Confession",
+                           "trigger":  "Discrepancy between digital balance (25.2M MDL) and paper statements."
+                       },
+    "evidence_targets":  {
+                             "name_distortion":  "Maceret vs Macheret spelling to block inheritance and international rights",
+                             "asset_hiding":  "Non-recognition of the 25,210,256.15 MDL detected in FinComPay",
+                             "idnp_manipulation":  "Use of IDNP ending in ..555 instead of ..655 to create a \u0027digital double\u0027"
+                         },
+    "legal_qualification":  {
+                                "international":  "Violation of Jus Cogens (Right to effective remedy) and ECHR Art. 3[cite: 1, 3]",
+                                "domestic":  "Art. 332 CP RM (Forgery in public acts), Art. 191 (Embezzlement)[cite: 3, 5]"
+                            },
+    "integrity":  {
+                      "hash_algo":  "SHA-256",
+                      "seal_status":  "CRYPTOGRAPHICALLY SEALED"
+                  }
+}
