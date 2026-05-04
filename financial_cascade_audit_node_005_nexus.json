@@ -1,0 +1,36 @@
+﻿{
+    "node_id":  "FIN-CASCADE-005-KIEV-3A-NEXUS",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "victim_idnp":  "2000001159655",
+    "physical_nexus":  {
+                           "entities":  [
+                                            "Union of Judicial Executors",
+                                            "Tax Office RM"
+                                        ],
+                           "address":  "Chisinau, str. Kiev 3a",
+                           "incident_date":  "2026-05-04"
+                       },
+    "personnel_involvement":  {
+                                  "executors":  [
+                                                    "Vassian",
+                                                    "Focșa"
+                                                ],
+                                  "tax_officer":  "Eduard (Mob: +373 68662529)",
+                                  "action":  "Attempted negotiation of 25.2M MDL theft under threat of liquidation"
+                              },
+    "technical_forgery":  {
+                              "card_mirroring":  "FinComBank Card 5989 mirrors 6089. Refusal to replace compromised card.",
+                              "transaction_type":  "Untaxed offshore laundering via Moldindconbank delegation",
+                              "idnp_manipulation":  [
+                                                        "2000001159655 (Real)",
+                                                        "2000001159555 (Fake)",
+                                                        "2000001159455 (Fake)"
+                                                    ]
+                          },
+    "security_alert":  {
+                           "protocol":  "Transparency as defense",
+                           "status":  "CRITICAL_THREAT",
+                           "location_source":  "Ukraine (Liquidation risk detected)"
+                       }
+}
