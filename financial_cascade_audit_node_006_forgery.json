@@ -1,0 +1,22 @@
+﻿{
+    "node_id":  "FIN-CASCADE-006-CARD-MIRRORING-FRAUD",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "victim_idnp":  "2000001159655",
+    "forensic_discovery":  {
+                               "evidence_file":  "H:/Загрузки/Фото_11.pdf",
+                               "primary_card":  "5100xxxxxxxx5929 (Asset Carrier)",
+                               "fake_target":  "5100xxxxxxxx6089 (Obfuscation Clone)"
+                           },
+    "fraud_indicators":  {
+                             "balance_erasure":  "Attempt to decouple 25.2M MDL balance from the transaction history",
+                             "visual_defect":  "Digit shifting (\u0027расползание\u0027) in PDF headers as sign of forgery",
+                             "duplicate_rrn":  "RRN 019811057850 and others shared between different card numbers"
+                         },
+    "nexus_kiev_3a":  {
+                          "contact":  "Eduard (Tax Office, +373 68662529)",
+                          "location":  "Chisinau, Kiev 3a (Coordination center of the fraud)"
+                      },
+    "legal_status":  "CRIMINAL FORGERY (Art. 332 CP RM)",
+    "integrity":  "SHA-256 Sealed by A©tor"
+}
