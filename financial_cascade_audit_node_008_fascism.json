@@ -1,0 +1,19 @@
+﻿{
+    "node_id":  "FIN-CASCADE-008-PROCEDURAL-FASCISM-LOGIC",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "victim_idnp":  "2000001159655",
+    "institutional_fraud_mechanism":  {
+                                          "target_evidence":  "RRN 019811057850 (The card 5929/6089 mirroring proof)",
+                                          "concept":  "Procedural Fascism",
+                                          "definition":  "The systematic suppression of immutable forensic data through the mandatory \u0027oral reading\u0027 requirement in civil proceedings to neutralize criminal liability"
+                                      },
+    "identified_tactics":  [
+                               "The Orality Trap: Ignoring SHA-256 sealed data if not \u0027vocalized\u0027 by corrupt agents",
+                               "Ghost Sessions: Concealing hearing times to prevent victim\u0027s attendance",
+                               "Judicial Opinion Hijacking: Replacing facts of ECHR Art. 3 violations (blocked pensions) with \u0027personal judicial opinions\u0027",
+                               "Witness Tampering: Advocate Ion Gusanu\u0027s 600 MDL \u0027off-record\u0027 payment to bypass 25.2M MDL liability"
+                           ],
+    "geopolitical_impact":  "Intentional economic sabotage of UN/US-backed humanitarian assets (25,210,256.15 MDL)",
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
