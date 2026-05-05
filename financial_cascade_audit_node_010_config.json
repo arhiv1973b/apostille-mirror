@@ -1,0 +1,20 @@
+﻿{
+    "node_id":  "FIN-CASCADE-010-STACK-VERIFICATION",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "timestamp":  "2026-05-05 23:23:13",
+    "verified_stack":  {
+                           "smtp_port":  465,
+                           "git_transport":  "SSH / Port 22",
+                           "smtp_protocol":  "Direct SSL (Wrapper Mode)",
+                           "status":  "BLOCKADE BROKEN",
+                           "api_security":  "Forced TLS 1.3/1.2"
+                       },
+    "suppression_log":  {
+                            "service_affected":  "StarNet Moldova (avertizare.starnet.md)",
+                            "intercepted_port":  587,
+                            "interception_method":  "Transparent Proxy / HTTP 302 Redirection"
+                        },
+    "operator_note":  "This configuration is mandatory for bypassing institutional communication filters in Chisinau.",
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
