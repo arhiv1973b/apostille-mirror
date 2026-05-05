@@ -1,0 +1,20 @@
+﻿{
+    "node_id":  "FIN-CASCADE-007-PRICE-TAG-TRAP",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "victim_idnp":  "2000001159655",
+    "event_log":  {
+                      "context":  "Attempted trade: 60k EUR property return vs minor payments while state pensions are blocked",
+                      "timestamp":  "2026-05-05 20:54:01",
+                      "actor_involved":  "Advocate Ion Gusanu",
+                      "action":  "Sudden hand-to-hand delivery of 600 MDL after communication blockade"
+                  },
+    "financial_strangulation":  {
+                                    "emergency_payment_mdl":  600,
+                                    "received_mdl":  180,
+                                    "legal_status":  "Inhuman conditions (ECHR Art. 3) to force withdrawal of 25.2M MDL claim",
+                                    "blocked_pension_mdl":  1880
+                                },
+    "strategic_logic":  "Price-tagging the victim to obscure the 25,210,256.15 MDL theft discovered via RRN 019811057850",
+    "integrity":  "SHA-256 Sealed by A©tor"
+}
