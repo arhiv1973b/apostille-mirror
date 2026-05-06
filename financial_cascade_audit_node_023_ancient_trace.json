@@ -1,0 +1,14 @@
+﻿{
+    "node_id":  "FIN-CASCADE-023-ANCIENT-IDNP-TRACE",
+    "timestamp":  "2026-05-07T00:04:02Z",
+    "subject":  "IDNP Identification Records (Pre-2000 Era)",
+    "integrity_proof":  {
+                            "drive_link":  "https://drive.google.com/file/d/1ck9b9aO8Xds5OAaJqXaD8gVr2MRCbKtR/view?usp=sharing",
+                            "sha256_hash":  "ВСТАВЬТЕ_ХЕШ_ПОСЛЕ_ЗАПУСКА_SCRIPTS",
+                            "view_mode":  "Live Stream / Direct Embed"
+                        },
+    "legal_context":  {
+                          "theory":  "Demonstrating IDNP 2000001159655 consistency before the structural sabotage.",
+                          "audit_tag":  "ANCIENT_TRACE_655"
+                      }
+}
