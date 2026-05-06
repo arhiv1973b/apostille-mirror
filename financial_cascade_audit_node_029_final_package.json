@@ -1,0 +1,18 @@
+﻿{
+    "node_id":  "FIN-CASCADE-029-CONSOLIDATED-ICC-SUBMISSION",
+    "timestamp":  "2026-05-07T00:55:08Z",
+    "subject":  "Final Evidence Package for Office of the Prosecutor (ICC)",
+    "integrity_root":  "9a2465bd8e669cc6aad66c7beacb5463ba3007",
+    "mapped_evidence":  [
+                            "Cover_Letter_ICC.pdf (Art. 15 Communication)",
+                            "Legal_Memorandum_Consolidated.pdf (Jus Cogens/Erga Omnes)",
+                            "Liability_Notice_Final_0205.pdf (Registry of 4010 nodes)",
+                            "Evidence_Matrix_Assault_18022026 (Obstruction of Justice)"
+                        ],
+    "legal_trigger":  {
+                          "asset_theft":  "25,210,256.15 MDL (UN/IMF Aid)",
+                          "statute":  "Rome Statute Art. 7, 8 \u0026 17",
+                          "total_duration":  "8169 Days of Continuous Violation"
+                      },
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
