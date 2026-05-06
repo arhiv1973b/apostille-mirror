@@ -1,0 +1,10 @@
+﻿timestamp: "2026-04-27 23:34:15"
+event: INTEGRITY_AUDIT_SUCCESS
+identity: A©tor
+files_verified:
+  - 404.html
+  - liquidity-manifest.json
+  - ti-ula-state.json
+  - ti-ula-state.yaml
+gpg_status: MATCHED
+authority_key: "7BEACB5463BA3007"
