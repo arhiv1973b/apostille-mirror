@@ -1,0 +1,14 @@
+﻿{
+    "node_id":  "FIN-CASCADE-011-INSTITUTIONAL-SUBSTITUTION",
+    "parent_hash":  "be857ad6086f...",
+    "timestamp":  "2026-05-06T15:18:34Z",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "victim_idnp":  "2000001159655",
+    "audit_target":  "Institutional Substitution Analysis",
+    "observations":  [
+                         "Фиксация аномалий в трансграничных транзакциях (MICB/FinComBank)",
+                         "Подмена верификационных центров в процессе реабилитации"
+                     ],
+    "integrity_seal":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
