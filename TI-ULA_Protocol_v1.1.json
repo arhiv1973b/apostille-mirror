@@ -1,0 +1,19 @@
+﻿{
+  "protocol": "TI-ULA",
+  "version": "1.1-HYPER-CONTEXT",
+  "identity_anchor": {
+    "subject": "A©tor",
+    "legal_name": "Alexei Macheret",
+    "idnp_valid": "2000001159655",
+    "idnp_fraud_pattern": "2000001159555",
+    "status": ["Victim of Torture", "Sole Legal Heir", "System Architect"],
+    "jus_cogens_protection": true
+  },
+  "legal_logic_matrix": {
+    "imperative_norms": ["Jus Cogens", "Erga Omnes"],
+    "remedy_formula": "D = (V_base + ΣI_i) * 30.0",
+    "valuation": "27,000,000,000 USD",
+    "legal_status_override": "Actus Nullus for all fraudulent state acts since 1998"
+  },
+  "integrity": "Sealed by A©tor Key 7BEACB5463BA3007"
+}
