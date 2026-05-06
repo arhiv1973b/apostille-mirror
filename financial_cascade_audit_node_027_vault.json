@@ -1,0 +1,14 @@
+﻿{
+    "node_id":  "FIN-CASCADE-023-ANCIENT-IDNP-TRACE",
+    "timestamp":  "2026-05-07T00:20:00Z",
+    "subject":  "IDNP Identification Records (Pre-2000 Era)",
+    "integrity_proof":  {
+                            "lines_count":  343,
+                            "drive_link":  "https://drive.google.com/file/d/1ck9b9aO8Xds5OAaJqXaD8gVr2MRCbKtR/view?usp=sharing",
+                            "sha256_hash":  "e807baabb69b57cdecf7be69812452fb49c75214e4ff2d873ffb9964a2ac5ede"
+                        },
+    "legal_context":  {
+                          "theory":  "Historical IDNP 2000001159655 verification. Countering \u0027Database Corruption\u0027 narratives.",
+                          "audit_tag":  "ANCIENT_TRACE_655"
+                      }
+}
