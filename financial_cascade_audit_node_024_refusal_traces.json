@@ -1,0 +1,16 @@
+﻿{
+    "node_id":  "FIN-CASCADE-024-REFUSAL-TRACES-MARKOVA",
+    "timestamp":  "2026-05-07T00:22:20Z",
+    "subject":  "Suppression of Evidence: Galina Markova Case (1979-2026)",
+    "negative_space_targets":  [
+                                   "Inheritance Records 1979 (Blocked by Maceret/Macheret distortion)",
+                                   "Medical-Legal records of severe health harm (Reference: 180 UN_CAT_Notice)",
+                                   "Original Judicial Decisions of 2006 (Declared \u0027not available\u0027 by Court in 2018)"
+                               ],
+    "legal_qualification":  {
+                                "context":  "Systemic erasure of Jus Cogens violation traces.",
+                                "violation":  "Suppression of Evidence / Unlawful Information Detention",
+                                "logic":  "Denial = Proof (As per TI-ULA Protocol)"
+                            },
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
