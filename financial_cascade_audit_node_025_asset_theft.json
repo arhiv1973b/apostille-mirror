@@ -1,0 +1,16 @@
+﻿{
+    "node_id":  "FIN-CASCADE-025-ASSET-THEFT-IDNP-FORGERY",
+    "timestamp":  "2026-05-07T00:33:06Z",
+    "subject":  "Economic Genocide: Theft of 25.2M MDL and Identity Sabotage",
+    "evidence_anchors":  [
+                             "FinComBank Statement: 25,210,256.15 MDL (IDNP 655/555 mismatch)",
+                             "Prosecutor General Submission: 2026-04-17 (Case CASE-MACHERET-1997-2026)",
+                             "UN_CAT_Notice: Integrity 100% active deployment"
+                         ],
+    "legal_qualification":  {
+                                "intl_context":  "Violation of Art. 17 Rome Statute (Inability of State to prosecute)",
+                                "forgery_statute":  "Art. 332 УК RM (Service forgery - IDNP 555 manipulation)",
+                                "theft_statute":  "Art. 191 УК RM (Embezzlement in especially large amounts)"
+                            },
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
