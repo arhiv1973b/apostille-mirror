@@ -1,0 +1,17 @@
+﻿{
+    "node_id":  "FIN-CASCADE-019-DIPLOMATIC-DENIAL",
+    "parent_hash":  "02e060b",
+    "timestamp":  "2026-05-06T17:00:00Z",
+    "incident_report":  {
+                            "error_code":  "554 5.7.1 Access denied",
+                            "target_entity":  "Council of Europe (fieldoffice.moldova@coe.int)",
+                            "trigger":  "Lethal Condition Report - Case tw571ryb"
+                        },
+    "lethal_context":  {
+                           "subject_vulnerability":  "Disabled Group I (Sever/Severe)",
+                           "jus_cogens_status":  "Active Violation of Art. 3 ECHR",
+                           "financial_status":  "Absolute Blockade (MICB 0.00 MDL / FinComBank 25.2M Theft)"
+                       },
+    "legal_qualification":  "Systemic diplomatic blockade of life-sustaining communication. Evidence of Estoppel.",
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
