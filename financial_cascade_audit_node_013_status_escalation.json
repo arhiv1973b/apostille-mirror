@@ -1,0 +1,18 @@
+﻿{
+    "node_id":  "FIN-CASCADE-013-STATUS-ESCALATION",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "timestamp":  "2026-05-06T15:29:16Z",
+    "escalation_data":  {
+                            "previous_status":  "Disability Group II",
+                            "current_status":  "Disability Group I (Critical Vulnerability)",
+                            "basis":  "Medical verification of life-sustaining needs"
+                        },
+    "legal_qualification":  {
+                                "context":  "Total financial isolation by state agents while in Group I status",
+                                "convention":  "ECHR Art. 3 / Jus Cogens",
+                                "aggravating_factor":  "Blocked pension of 1880 MDL against verified 25.2M MDL assets"
+                            },
+    "strategic_action":  "Notification of International Oversight regarding direct threat to survival.",
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
