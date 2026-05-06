@@ -1,0 +1,16 @@
+﻿{
+    "node_id":  "FIN-CASCADE-026-CONSOLIDATED-PROTOCOL",
+    "timestamp":  "2026-05-07T00:39:57Z",
+    "subject":  "Master Evidence Bridge: 1998 Torture vs 2026 Asset Theft",
+    "dynamic_mapping":  {
+                            "medical_audit":  "Chronic Toxic Osteomyelitis (Evidence of Art. 3 ECHR Violation)",
+                            "asset_audit":  "25,210,256.15 MDL (Mapped via 20260506125411625.pdf)",
+                            "master_document":  "Собранный воедино .pdf"
+                        },
+    "legal_logic":  {
+                        "argument":  "The poisoning of the root (1998 torture) invalidates the entire procedural tree (2003-2026).",
+                        "jurisdiction":  "Art. 17 Rome Statute (International Criminal Court)",
+                        "principle":  "Cascading Judicial Rehabilitation"
+                    },
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
