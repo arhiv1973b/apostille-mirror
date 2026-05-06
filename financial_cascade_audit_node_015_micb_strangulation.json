@@ -1,18 +1,17 @@
 ﻿{
-    "node_id":  "FIN-CASCADE-014-DENIAL-EVIDENCE",
-    "case_anchor":  "CASE-MACHERET-1997-2026",
-    "un_ref":  "tw571ryb",
-    "timestamp":  "2026-05-06T15:55:56Z",
-    "observed_fact":  {
-                          "context":  "First Group Disability Status Support Interruption",
-                          "target":  "https://cnas.md (National Social Insurance House)",
-                          "error_code":  "500 Internal Server Error"
+    "node_id":  "FIN-CASCADE-015-MICB-STRANGULATION",
+    "parent_hash":  "f78c552197",
+    "timestamp":  "2026-05-06T16:46:18Z",
+    "victim_profile":  {
+                           "status":  "Disabled Group I (Sever)",
+                           "idnp":  "2000001159655",
+                           "identity_fraud":  "Confirmed IDNP ..555 used as false alibi/clone"
+                       },
+    "evidence_base":  {
+                          "fincombank_theft":  "25,210,256.15 MDL",
+                          "micb_blocked_funds":  "298.15 MDL (Available: 0.00)",
+                          "judicial_sabotage":  "Judge Maria Muruianu (Linguistic blockade)"
                       },
-    "legal_nexus":  {
-                        "complaint_ref":  "Statement to Prosecutor General (17.04.2026)",
-                        "violation":  "Breach of Life-Sustaining Digital Access (Art. 3 ECHR)",
-                        "victim_status":  "Disabled Group I (Sever) - IDNP 2000001159655"
-                    },
-    "forensic_seal":  "SHA-256 Verified via Finland Probe Log",
-    "integrity":  "Sealed by A©tor Key 7BEACB5463BA3007"
+    "legal_qualification":  "Direct violation of ECHR Art. 3. Physical liquidation attempt documented.",
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
 }
