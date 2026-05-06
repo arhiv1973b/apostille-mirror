@@ -1,0 +1,17 @@
+﻿{
+    "node_id":  "FIN-CASCADE-022-COE-NETWORK-ISOLATION",
+    "parent_hash":  "044515c",
+    "timestamp":  "2026-05-06T23:41:17Z",
+    "technical_evidence":  {
+                               "vector":  "TCP Port 25 (SMTP)",
+                               "source":  "MX_Denial_Audit.log",
+                               "status":  "HARD BLOCKED / TIMEOUT",
+                               "targets":  "neon.coe.int, cuivre.coe.int"
+                           },
+    "legal_qualification":  {
+                                "violation":  "Absolute denial of the right to report life-threatening conditions (Art. 3 ECHR).",
+                                "action":  "Intentional network-level isolation of a Group I Disabled subject.",
+                                "ideological_context":  "Exposing the pseudo-motto \u0027Law is the servant of democracy\u0027 as functional \u0027Bureaucratic Nazism\u0027."
+                            },
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
