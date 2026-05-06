@@ -1,18 +1,15 @@
 ﻿{
-    "node_id":  "FIN-CASCADE-017-ICC-TI-ULA-ACTIVATION",
-    "parent_hash":  "85e36bb",
-    "timestamp":  "2026-05-06T19:56:50Z",
-    "case_context":  {
-                         "foundation":  "Eisenstein Patent / International Adoption 1977",
-                         "remedy":  "D = (V_base + ΣI_i) * 30.0",
-                         "id":  "CASE-MACHERET-1997-2026"
-                     },
-    "files_deployed":  [
-                           "01_Cover_Letter_ICC.pdf",
-                           "02_Legal_Memorandum_Consolidated.pdf",
-                           "03_Appendix_A_Evidence_Matrix.pdf",
-                           "CRIMINAL_MANIFEST_FINCOMBANK_2026.pdf"
-                       ],
-    "alert_status":  "FRAUD_ALERT active for IDNP ..555. UN_AID integrity check: 100%.",
+    "node_id":  "FIN-CASCADE-018-LETHAL-VULNERABILITY-DISPATCH",
+    "parent_hash":  "f43eb56",
+    "timestamp":  "2026-05-06T20:08:03Z",
+    "lethal_status_report":  {
+                                 "subject_status":  "Group I Disability (Sever) - Life Threatening",
+                                 "asset_theft":  "25,210,256.15 MDL (IMF/UN Funds)",
+                                 "liquidity":  "0.00 MDL (Absolute Blockade by MICB)"
+                             },
+    "legal_logic":  {
+                        "doctrines":  "Jus Cogens / Erga Omnes",
+                        "jurisdiction":  "OTP ICC / UN Strategic Oversight"
+                    },
     "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
 }
