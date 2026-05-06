@@ -1,0 +1,20 @@
+﻿{
+    "node_id":  "FIN-CASCADE-012-DIPLOMATIC-DENIAL-INITIATION",
+    "parent_hash":  "94a37a26f5...",
+    "case_anchor":  "CASE-MACHERET-1997-2026",
+    "un_ref":  "tw571ryb",
+    "timestamp":  "2026-05-06T15:24:13Z",
+    "action_log":  {
+                       "dispatch_status":  "SUCCESS",
+                       "channel":  "Direct SSL Port 465 (Bypass Confirmed)",
+                       "dispatch_target":  "Council of Europe fieldoffice.moldova@coe.int",
+                       "estoppel_logic":  "Formal notification of Jus Cogens breach and procedural fascism"
+                   },
+    "denial_audit_initiation":  {
+                                    "objective":  "Transforming systemic silence into forensic evidence of suppression",
+                                    "probe_script":  "finland_denial_probe.ps1",
+                                    "targets":  "justice.gov.md, cnas.md, micb.md"
+                                },
+    "integrity_link":  "SHA-256:5506D1F9427B972DB38A61E5E43DC0C5EA5BE5809F248C68D5A8E0B4C6D70C84 (Memorandum Seal)",
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
