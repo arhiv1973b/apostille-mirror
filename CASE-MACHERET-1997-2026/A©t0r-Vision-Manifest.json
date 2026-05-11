@@ -1,0 +1,21 @@
+{
+  "$schema": "https://github.com/arhiv1973b/CASE-MACHERET-1997-2026/schema.json",
+  "meta": {
+    "caseId": "CASE-MACHERET-1997-2026",
+    "protocolTitle": "Протокол: Первый Шаг и Условия",
+    "version": "1.0.2-signed",
+    "timestamp": "2026-05-11T18:45:00Z",
+    "status": "CONSOLIDATION_ACTIVE",
+    "securityLevel": "JUS_COGENS"
+  },
+  "inheritance_logic": {
+    "predecessor": "Александр Вениаминович Мачерет",
+    "successor_authorized": "A©tor (Алексей Артурович Мачерет)",
+    "logic": "Разрыв генетического мифа / Синтезатор Эйзенштейна"
+  },
+  "technical_conditions": {
+    "gpg_status": "REQUIRED",
+    "secret_phrase_alias": "База Данных",
+    "ssh_status": "READY"
+  }
+}
