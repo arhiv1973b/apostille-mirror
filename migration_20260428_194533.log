@@ -1,0 +1,12 @@
+2026/04/28 19:45:37 ERROR : Local file system at /mnt/h/WSL_PDFs: error reading source root directory: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error
+2026/04/28 19:45:37 ERROR : Attempt 1/3 failed with 1 errors and: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error
+2026/04/28 19:45:38 ERROR : Local file system at /mnt/h/WSL_PDFs: error reading source root directory: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error
+2026/04/28 19:45:38 ERROR : Attempt 2/3 failed with 1 errors and: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error
+2026/04/28 19:45:40 ERROR : Local file system at /mnt/h/WSL_PDFs: error reading source root directory: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error
+2026/04/28 19:45:40 ERROR : Attempt 3/3 failed with 1 errors and: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error
+2026/04/28 19:45:40 INFO  : 
+Transferred:   	          0 B / 0 B, -, 0 B/s, ETA -
+Errors:                 1 (retrying may help)
+Elapsed time:         5.6s
+
+2026/04/28 19:45:40 Failed to copy: failed to read directory entry: readdirent /mnt/h/WSL_PDFs: input/output error

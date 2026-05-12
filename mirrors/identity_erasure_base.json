@@ -1,0 +1,12 @@
+{
+  "event_id": "IDENTITY-ERASURE-BASE",
+  "victim": "Maceret Alexei Artur",
+  "idnp": "2000001159655",
+  "registry": "Ministry of Justice disability database",
+  "manipulation": {
+    "fake_alias": "Maseret (Макеирет)",
+    "context": "Post-mortem blockade of inheritance and property rights (Apt. 64).",
+    "sabotage_proof": "Digital forgery using a deliberate misspelling to create a legal mismatch with property deeds."
+  },
+  "jus_cogens_impact": "Degradation of legal personality. Violation of Art. 8 ECHR and Protocol 1."
+}

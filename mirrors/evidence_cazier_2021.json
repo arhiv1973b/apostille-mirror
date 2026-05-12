@@ -1,0 +1,12 @@
+{
+  "event_id": "CAZIER-CLEAN-2021",
+  "document": "Certificat de Cazier Judiciar (CJNG-21-021527)",
+  "idnp": "2000001159655",
+  "verification": {
+    "apostille_nr": "CQ0VC27VGTCK6",
+    "officer": "Gonza Natalia",
+    "date": "29.03.2021"
+  },
+  "legal_fact": "Official confirmation of NO criminal record. This node nullifies any future attempts to claim the existence of non-rehabilitated convictions.",
+  "status": "TOTAL_LEGAL_PURITY"
+}
