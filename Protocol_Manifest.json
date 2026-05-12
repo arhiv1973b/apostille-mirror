@@ -1,0 +1,29 @@
+{
+   "$schema": "https://actor.schema/v1",
+   "meta": {
+     "caseId": "CASE-MACHERET-1997-2026",
+     "protocolTitle": "Протокол: Первый Шаг и Условия",
+     "version": "1.0.0-alpha",
+     "timestamp": "2026-05-11T17:45:00Z",
+     "status": "CONSOLIDATION_ACTIVE",
+     "securityLevel": "JUS_COGENS"
+   },
+   "inheritance_logic": {
+     "predecessor_intellectual": "Александр Вениаминович Мачерет",
+     "predecessor_theoretical": "Сергей Михайлович Эйзенштейн",
+     "successor_authorized": "А©tor (Алексей Артурович Мачерет)",
+     "paradigm_shift": "Разрыв генетического мифа в пользу нейронного построения образа (Сценария)",
+     "verification_dates": ["1977-Акт усыновления", "1981-Инициация в Москве", "2022-Кража Завещания"]
+   },
+   "technical_conditions": {
+     "engine": "A©t0r Integrity Engine v6.9",
+     "monitoring": "WSL_Host_Bridge",
+     "data_source": "Google_Drive_Evidence_Vault"
+   },
+   "protocol_steps": [
+     { "step": 1, "action": "Consolidate_Sessions", "objective": "Склейка разрозненных данных в единый документальный Сценарий" },
+     { "step": 2, "action": "Integrity_Audit", "objective": "Обнаружение аномалий в логах" },
+     { "step": 3, "action": "Legal_Resonance", "objective": "Конвертация интеллектуальной собственности в императивное право Наследника" }
+   ],
+   "checksum": "SHA-256:VERIFIED_BY_ACTOR_INTEGRITY_ENGINE"
+}
