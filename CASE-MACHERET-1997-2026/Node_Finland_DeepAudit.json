@@ -1,0 +1,33 @@
+{
+  "id": "tw571ryb-lr-002-deep-audit",
+  "timestamp": "2026-05-13T11:31:00Z",
+  "component": "Project Finland - Deep Workspace Audit",
+  "legal_doctrine": "Denial as Evidence & Asymmetric Blockade",
+  "respondents": [
+    "Venice Commission",
+    "Judges Avasilae, Cisilita (Riscani Court)"
+  ],
+  "conclusion": "Forensic email audit confirms an asymmetric blockade of the sender's account. Incoming traffic functions normally. Outgoing traffic to institutional domains has been systematically restricted since December 2021 (initial 554 errors), escalating to hard rejections (550 Sender email address rejected) by May 2025 for justice.md, and complete Access Denied (550 5.4.1) for UN infrastructure by May 2026. The last successful dispatch without a server bounce was to MAI (petitie@igp.gov.md, secretariat@mai.gov.md) on April 21, 2026. This algorithmic silencing directly correlates with ongoing litigation and warnings submitted to the Supreme Court (Petru Rares 18).",
+  "evidence_links": [
+    {
+      "date": "2021-12-08",
+      "event": "Initial restrictions (banned file attachments) to Ombudsman and Justice domains",
+      "link": "https://mail.google.com/mail/u/0/#all/17d8c265abb28644"
+    },
+    {
+      "date": "2025-05-19",
+      "event": "Hard block (550 Sender email address rejected) from justice.gov.md and justice.md",
+      "link": "https://mail.google.com/mail/u/0/#all/196e7eea33484150"
+    },
+    {
+      "date": "2026-04-21",
+      "event": "Last un-bounced communication to MAI / IGP",
+      "link": "https://mail.google.com/mail/u/0/#all/19db097c89b3416c"
+    },
+    {
+      "date": "2026-05-12",
+      "event": "Access denied (550 5.4.1) from UN domains (cat@un.org)",
+      "link": "https://mail.google.com/mail/u/0/#all/19e18baee4fd8cc9"
+    }
+  ]
+}
