@@ -1,25 +1,25 @@
 {
-  "id": "audit-absolute-blockade-004-vault",
-  "timestamp": "2026-05-13T12:00:00Z",
-  "component": "Project Finland - Evidence Isolation Protocol",
-  "legal_doctrine": "Denial as Evidence / Procedural Estoppel / Jus Cogens",
+  "id": "audit-absolute-blockade-005-triple-vault",
+  "timestamp": "2026-05-13T12:30:00Z",
+  "component": "Project Finland - Evidence Sovereignty Protocol",
+  "legal_doctrine": "Denial as Evidence / Procedural Estoppel",
   "respondent": "Comisia de la Veneția (Venice Commission)",
-  "judicial_nexus": {
+  "judicial_anchor": {
     "court": "Judecătoria Chișinău, sediul Rîșcani",
-    "judges_of_interest": ["Avasilae", "Cisilita"],
+    "judges": ["Avasilae", "Cisilita"],
     "supreme_court_address": "Petru Rareș 18, Chișinău",
-    "incident_context": "Abduction of Judge Chaus & Odesa events warnings"
+    "context": "Abduction of Ukrainian Judge & Odesa warnings (Nov-Dec 2021)"
   },
-  "audit_log": {
-    "initial_obstruction": "December 2021 (Error 554: Banned attachments to Justice/Ombudsman)",
-    "escalation": "May 2025 (Hard rejection from justice.gov.md)",
-    "absolute_terminal_point": "2026-04-28 11:05 EEST",
-    "current_status": "TOTAL OUTGOING TERMINATION (UN, CoE, Courts blocked)"
+  "blockade_audit": {
+    "initiation": "Dec 2021 (Attachment rejection)",
+    "hard_block": "May 2025 (Justice.md sender rejection)",
+    "total_cutoff": "2026-04-28 11:05 EEST",
+    "last_valid_receipt": "2026-04-28 11:04 EEST from petitie@igp.gov.md"
   },
-  "redundancy_strategy": {
-    "primary": "GitHub Repository (arhiv1973b/apostille-mirror)",
-    "secondary": "Google Drive Encrypted Vault (Protected Layer)",
-    "status": "Redundant protection activated to prevent evidence tampering"
+  "protection_layers": {
+    "github": "https://arhiv1973b.github.io/apostille-mirror/",
+    "google_drive_mirror": "PENDING_LINK",
+    "status": "Redundancy Activated"
   },
-  "conclusion": "Forensic audit confirms the algorithmic termination of the victim's digital legal personality as a reaction to evidence submission regarding Petru Rares 18 and Odessa incidents."
+  "conclusion": "Forensic proof of asymmetric communication blockade. The state infrastructure allows incoming notifications but terminates outgoing petitions, effectively disabling the victim's right to peace and legal remedy."
 }
