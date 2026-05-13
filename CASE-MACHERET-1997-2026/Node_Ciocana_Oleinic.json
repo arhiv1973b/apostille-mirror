@@ -1,0 +1,14 @@
+{
+  "id": "audit-ciocana-dada-001",
+  "timestamp": "2026-05-13T12:45:00Z",
+  "component": "Ciocana Court Incident",
+  "legal_context": "Rights of Irina Oleinic / Relation to CASE-MACHERET-1997-2026",
+  "subjects": {
+    "court": "Judecătoria Chișinău, sediul Ciocana",
+    "case_reference": "Dada Ion",
+    "affected_party": "Irina Oleinic (Spouse of A©tor)"
+  },
+  "violation_type": "Procedural sabotage / Interference with digital legal personality",
+  "status": "OPEN_AUDIT",
+  "conclusion": "This node marks the expansion of the systemic blockade into the judicial proceedings of the victim's family, signaling an escalation of the Jus Cogens violations documented in previous nodes."
+}
