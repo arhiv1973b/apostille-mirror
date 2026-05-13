@@ -1,0 +1,18 @@
+{
+  "id": "audit-absolute-blockade-003",
+  "timestamp": "2026-05-13T11:45:00Z",
+  "component": "Project Finland - Deep Workspace Audit",
+  "legal_doctrine": "Denial as Evidence & Asymmetric Blockade",
+  "respondent": "Comisia de la Veneția",
+  "trigger_events": [
+    "Refusal to appear at Judecătoria Chișinău, sediul Rîșcani (Judges: Avasilae, Cisilita) in Nov-Dec 2021.",
+    "Warnings sent to Curtea Supremă de Justiție (Petru Rareș 18) regarding events in Odesa and the abduction of a Ukrainian judge."
+  ],
+  "audit_findings": {
+    "blockade_start": "November-December 2021",
+    "escalation": "Systematic rejection of outgoing mail to state domains (550 Sender email address rejected) escalating through April 2026.",
+    "last_successful_contact": "April 28, 2026, 11:04 EEST - Registration confirmation received from petitie@igp.gov.md.",
+    "absolute_blockade_start": "April 28, 2026, 11:05 EEST - Immediate rejection (550 5.1.1) of the outgoing reply to petitie@igp.gov.md. Since this timestamp, outgoing traffic to justice.gov.md, mai.gov.md, igp.gov.md, un.org, and other infrastructure domains fails completely."
+  },
+  "conclusion": "The asymmetric mail blockade is confirmed as a targeted algorithmic isolation protocol. It originates from the 2021 legal conflicts and reached absolute obstruction on April 28, 2026. This technical silencing enforces the doctrine of Denial as Evidence against the respondents."
+}
