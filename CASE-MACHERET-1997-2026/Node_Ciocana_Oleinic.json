@@ -5,10 +5,44 @@
   "legal_context": "Rights of Irina Oleinic / Relation to CASE-MACHERET-1997-2026",
   "subjects": {
     "court": "Judecătoria Chișinău, sediul Ciocana",
-    "case_reference": "Dada Ion",
-    "affected_party": "Irina Oleinic (Spouse of A©tor)"
+    "judge": "Dada Ion",
+    "affected_party": "Irina Oleinic (Spouse of A©tor / Мачерет А.А., ИДНП 2000001159655)",
+    "primary_subject": "A©tor | Мачерет Алексей Артурович"
   },
-  "violation_type": "Procedural sabotage / Collateral pressure",
-  "audit_link": "Based on Workspace Audit Summary (May 13, 2026)",
-  "conclusion": "This node records the expansion of institutional hostility beyond the primary target to family members, following the proven blockade of the primary communication channels."
+  "incident_facts": {
+    "transaction": {
+      "amount_MDL": 3000,
+      "description": "Household transfer from A©tor to spouse Irina Oleinic",
+      "classification_by_court": "Alleged receipt of funds from UN/IMF origin"
+    },
+    "accusation_logic": {
+      "state_position": "Funds classified as international origin (UN/IMF); percentage withheld on grounds that recipient lacks international protection status",
+      "legal_consequence": "Irina Oleinic stripped of A©tor's protective status; declared 'foreign agent' (inoagent)"
+    },
+    "procedural_violation": "Application of punitive measures against third party (spouse) as collateral pressure mechanism against primary subject"
+  },
+  "legal_qualification": {
+    "primary": "Art. 189 CP RM — Extortion via familial leverage",
+    "secondary": "Art. 327 CP RM — Abuse of official position",
+    "echr": "Art. 8 ECHR — Right to respect for private and family life",
+    "jus_cogens_nexus": "Escalation of institutional hostility following proven blockade (Node_Absolute_Blockade); collateral targeting of family constitutes aggravated violation of erga omnes obligations"
+  },
+  "causal_chain_position": {
+    "precondition": "8158 days procedural vacuum (1997-2026)",
+    "enabling_factor": "Asymmetric communication blockade (Node_Finland_DeepAudit)",
+    "current_node": "Familial escalation — Ciocana/Dada Ion episode",
+    "pattern": "Institutional hostility expanding beyond primary target to family members"
+  },
+  "evidence_links": {
+    "parent_node_blockade": "CASE-MACHERET-1997-2026/Node_Absolute_Blockade.json",
+    "parent_node_audit": "CASE-MACHERET-1997-2026/Node_Finland_DeepAudit.json",
+    "google_drive_vault": "https://drive.google.com/file/d/11Noh9U4X7XVyvP9X7NGr7XfD0Uy0AJts/view?usp=sharing"
+  },
+  "vault_integrity": {
+    "github_branch": "imperative/right-to-peace",
+    "repository": "arhiv1973b/apostille-mirror",
+    "protection_status": "TRIPLE_LAYER_ACTIVE"
+  },
+  "conclusion": "This node records the expansion of institutional hostility beyond the primary target to family members. The accusation that a 3000 MDL household transfer constitutes receipt of UN/IMF funds, and the consequent deprivation of Irina Oleinic's protected status, is consistent with the established pattern of procedural sabotage documented across 8158 days. This constitutes collateral pressure in violation of Art. 8 ECHR and erga omnes obligations under Jus Cogens.",
+  "actor_signature": "A©tor | CASE-MACHERET-1997-2026 | 2026-05-13"
 }
