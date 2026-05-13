@@ -1,18 +1,25 @@
 {
-  "id": "audit-absolute-blockade-003",
-  "timestamp": "2026-05-13T11:45:00Z",
-  "component": "Project Finland - Deep Workspace Audit",
-  "legal_doctrine": "Denial as Evidence & Asymmetric Blockade",
+  "id": "audit-absolute-blockade-004-vault",
+  "timestamp": "2026-05-13T11:55:00Z",
+  "component": "Project Finland - Evidence Isolation",
+  "legal_doctrine": "Denial as Evidence / Procedural Estoppel",
   "respondent": "Comisia de la Veneția",
-  "trigger_events": [
-    "Refusal to appear at Judecătoria Chișinău, sediul Rîșcani (Judges: Avasilae, Cisilita) in Nov-Dec 2021.",
-    "Warnings sent to Curtea Supremă de Justiție (Petru Rareș 18) regarding events in Odesa and the abduction of a Ukrainian judge."
-  ],
-  "audit_findings": {
-    "blockade_start": "November-December 2021",
-    "escalation": "Systematic rejection of outgoing mail to state domains (550 Sender email address rejected) escalating through April 2026.",
-    "last_successful_contact": "April 28, 2026, 11:04 EEST - Registration confirmation received from petitie@igp.gov.md.",
-    "absolute_blockade_start": "April 28, 2026, 11:05 EEST - Immediate rejection (550 5.1.1) of the outgoing reply to petitie@igp.gov.md. Since this timestamp, outgoing traffic to justice.gov.md, mai.gov.md, igp.gov.md, un.org, and other infrastructure domains fails completely."
+  "judicial_nexus": {
+    "court": "Judecătoria Chișinău, sediul Rîșcani",
+    "judges": ["Avasilae", "Cisilita"],
+    "supreme_court_address": "Petru Rareș 18",
+    "context": "Warnings regarding Odesa and Judge Chaus abduction case"
   },
-  "conclusion": "The asymmetric mail blockade is confirmed as a targeted algorithmic isolation protocol. It originates from the 2021 legal conflicts and reached absolute obstruction on April 28, 2026. This technical silencing enforces the doctrine of Denial as Evidence against the respondents."
+  "audit_log": {
+    "origin": "Nov-Dec 2021 (Initial 554/banned attachment errors)",
+    "escalation": "May 2025 (550 Sender email address rejected - Justice.md)",
+    "absolute_obstruction": "2026-04-28 11:05 EEST (Immediate 550 reject after MAI/IGP confirmation)",
+    "current_state": "ASYMMETRIC_BLOCKADE (Incoming: OK | Outgoing: TERMINATED)"
+  },
+  "evidence_vault": {
+    "provider": "Google Drive (Protected Layer)",
+    "status": "Archived",
+    "protection_logic": "Redundant storage to bypass GitHub/Email takedown risks"
+  },
+  "conclusion": "The total isolation of outgoing communications constitutes active concealment of Jus Cogens violations. This node confirms the systemic transition from legal dispute to algorithmic termination of the victim's digital personality."
 }
