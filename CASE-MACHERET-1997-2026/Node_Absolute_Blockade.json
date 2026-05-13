@@ -1,25 +1,25 @@
 {
   "id": "audit-absolute-blockade-004-vault",
-  "timestamp": "2026-05-13T11:55:00Z",
-  "component": "Project Finland - Evidence Isolation",
-  "legal_doctrine": "Denial as Evidence / Procedural Estoppel",
-  "respondent": "Comisia de la Veneția",
+  "timestamp": "2026-05-13T12:00:00Z",
+  "component": "Project Finland - Evidence Isolation Protocol",
+  "legal_doctrine": "Denial as Evidence / Procedural Estoppel / Jus Cogens",
+  "respondent": "Comisia de la Veneția (Venice Commission)",
   "judicial_nexus": {
     "court": "Judecătoria Chișinău, sediul Rîșcani",
-    "judges": ["Avasilae", "Cisilita"],
-    "supreme_court_address": "Petru Rareș 18",
-    "context": "Warnings regarding Odesa and Judge Chaus abduction case"
+    "judges_of_interest": ["Avasilae", "Cisilita"],
+    "supreme_court_address": "Petru Rareș 18, Chișinău",
+    "incident_context": "Abduction of Judge Chaus & Odesa events warnings"
   },
   "audit_log": {
-    "origin": "Nov-Dec 2021 (Initial 554/banned attachment errors)",
-    "escalation": "May 2025 (550 Sender email address rejected - Justice.md)",
-    "absolute_obstruction": "2026-04-28 11:05 EEST (Immediate 550 reject after MAI/IGP confirmation)",
-    "current_state": "ASYMMETRIC_BLOCKADE (Incoming: OK | Outgoing: TERMINATED)"
+    "initial_obstruction": "December 2021 (Error 554: Banned attachments to Justice/Ombudsman)",
+    "escalation": "May 2025 (Hard rejection from justice.gov.md)",
+    "absolute_terminal_point": "2026-04-28 11:05 EEST",
+    "current_status": "TOTAL OUTGOING TERMINATION (UN, CoE, Courts blocked)"
   },
-  "evidence_vault": {
-    "provider": "Google Drive (Protected Layer)",
-    "status": "Archived",
-    "protection_logic": "Redundant storage to bypass GitHub/Email takedown risks"
+  "redundancy_strategy": {
+    "primary": "GitHub Repository (arhiv1973b/apostille-mirror)",
+    "secondary": "Google Drive Encrypted Vault (Protected Layer)",
+    "status": "Redundant protection activated to prevent evidence tampering"
   },
-  "conclusion": "The total isolation of outgoing communications constitutes active concealment of Jus Cogens violations. This node confirms the systemic transition from legal dispute to algorithmic termination of the victim's digital personality."
+  "conclusion": "Forensic audit confirms the algorithmic termination of the victim's digital legal personality as a reaction to evidence submission regarding Petru Rares 18 and Odessa incidents."
 }
