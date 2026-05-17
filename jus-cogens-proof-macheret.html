@@ -1414,322 +1414,328 @@ function shareDoc() {
   }
 }
 </script>
-<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
 <style>
-.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
-.crit-forgery strong{color:#a32d2d}
-.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
-.crit-jurisdiction strong{color:#185fa5}
-.node-row:hover{background-color:#f5f5f5}
-#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
-#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
-#forensic-table col:nth-child(1){width:110px}
-#forensic-table col:nth-child(2){width:160px}
-#forensic-table col:nth-child(3){width:200px}
-#forensic-table col:nth-child(4){width:auto}
-#forensic-table thead{background:#f4f4f4;font-size:12px}
-#registry-filters{margin:12px 0}
-#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
-#registry-filters button:hover{background:#e8f0fe}
-#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
-#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
+.ti-ula-wrap {
+  font-family: 'Courier New', monospace;
+  background: #0a0a0f;
+  border: 1px solid #2a2a3a;
+  border-radius: 6px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+}
+.ti-ula-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.ti-ula-title {
+  color: #c8a84b;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+.ti-ula-meta {
+  color: #555;
+  font-size: 0.72rem;
+  margin-left: auto;
+}
+.ti-ula-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.ti-btn {
+  background: #111120;
+  border: 1px solid #333;
+  color: #999;
+  padding: 0.25rem 0.7rem;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.ti-btn:hover { border-color: #c8a84b; color: #c8a84b; }
+.ti-btn.active { background: #1a1a0a; border-color: #c8a84b; color: #c8a84b; }
+.ti-search {
+  background: #111120;
+  border: 1px solid #333;
+  color: #ccc;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-family: inherit;
+  width: 180px;
+}
+.ti-search:focus { outline: none; border-color: #c8a84b; }
+.ti-table-wrap { overflow-x: auto; }
+.ti-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+}
+.ti-table th {
+  background: #111120;
+  color: #c8a84b;
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #2a2a3a;
+  white-space: nowrap;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+.ti-table td {
+  padding: 0.45rem 0.7rem;
+  border-bottom: 1px solid #1a1a2a;
+  color: #bbb;
+  vertical-align: top;
+  line-height: 1.4;
+}
+.ti-table tr:hover td { background: #0f0f1a; }
+.ti-table tr.hidden { display: none; }
+.node-id { color: #666; font-size: 0.66rem; white-space: nowrap; }
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.badge-idnp  { background: #2a0808; color: #e06060; border: 1px solid #4a1515; }
+.badge-unix  { background: #08102a; color: #6090e0; border: 1px solid #152045; }
+.badge-ident { background: #1a0a2a; color: #a060e0; border: 1px solid #301550; }
+.badge-fisc  { background: #0a1a0a; color: #50c060; border: 1px solid #155020; }
+.badge-torture { background: #2a1500; color: #e08030; border: 1px solid #4a2500; }
+.file-ref { color: #557799; font-size: 0.66rem; }
+.ti-footer {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.66rem;
+  color: #444;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.ti-count { color: #c8a84b; }
+.lock-badge {
+  color: #2a4a2a;
+  font-size: 0.62rem;
+  border: 1px solid #1a3a1a;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+}
 </style>
-<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
-<div id="registry-filters">
-  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
-  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
-  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
-  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
-  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
+
+<div class="ti-ula-wrap">
+  <div class="ti-ula-header">
+    <span class="ti-ula-title">⚖ TI-ULA FORENSIC REGISTRY · CASE-MACHERET-1997-2026</span>
+    <span class="ti-meta">Merkle Root: CFC 9a2465bd...e77</span>
+    <span class="ti-ula-meta">SHA-256 · INTEGRITY 100% · 2026</span>
+  </div>
+
+  <div class="ti-ula-filters">
+    <button class="ti-btn active" onclick="filterNodes('all',this)">📈 Все узлы</button>
+    <button class="ti-btn" onclick="filterNodes('idnp',this)">🔴 Подлоги IDNP (..555)</button>
+    <button class="ti-btn" onclick="filterNodes('unix',this)">🔵 Подмена UN→UNIX</button>
+    <button class="ti-btn" onclick="filterNodes('ident',this)">📺 Identity Mapping</button>
+    <button class="ti-btn" onclick="filterNodes('fisc',this)">🟢 Fiscal Anomaly</button>
+    <input class="ti-search" id="tiSearch" placeholder="🔍 поиск по реестру..." oninput="searchNodes(this.value)">
+  </div>
+
+  <div class="ti-table-wrap">
+    <table class="ti-table" id="tiTable">
+      <thead>
+        <tr>
+          <th>NODE ID</th>
+          <th>КЛАССИФИКАЦИЯ</th>
+          <th>ФАЙЛ (источник) / Стр.</th>
+          <th>КОНТЕКСТ ФОРЕНЗИК-АУДИТА</th>
+        </tr>
+      </thead>
+      <tbody id="tiBody">
+
+        <!-- ══ IDNP FORGERY CHAIN ══ -->
+        <tr data-cat="idnp">
+          <td class="node-id">TI-001</td>
+          <td><span class="badge badge-idnp">🔴 IDNP ПОДЛОГ</span></td>
+          <td class="file-ref">actual_08_11_2006_для_прокуратуры.pdf</td>
+          <td>30.10.2006: государственный орган выдал документ с фантомным ИДНП 2000001159<strong style="color:#e06060">555</strong> вместо законного <strong style="color:#50c060">655</strong>. Создание «цифрового двойника». Ст. 332 УК РМ.</td>
+        </tr>
+        <tr data-cat="idnp">
+          <td class="node-id">TI-002</td>
+          <td><span class="badge badge-idnp">🔴 IDNP ПОДЛОГ</span></td>
+          <td class="file-ref">Жалоба в ВСМ · 2018</td>
+          <td>2018: Оригиналы документов с мокрыми печатями и ИДНП ...555 переданы в Высшую Судебную Магистратуру. Факт подмены зафиксирован на институциональном уровне.</td>
+        </tr>
+        <tr data-cat="idnp">
+          <td class="node-id">TI-003</td>
+          <td><span class="badge badge-idnp">🔴 IDNP ПОДЛОГ</span></td>
+          <td class="file-ref">Реестр МВД · 2020</td>
+          <td>2020: «Исправление» ИДНП ...555 → ...655 произведено БЕЗ возбуждения уголовного дела (ст. 332 УК РМ). Уголовная ответственность за подлог — не наступила. Вакуум безнаказанности подтверждён.</td>
+        </tr>
+        <tr data-cat="idnp">
+          <td class="node-id">TI-004</td>
+          <td><span class="badge badge-idnp">🔴 IDNP ПОДЛОГ</span></td>
+          <td class="file-ref">idnp_555_evidence_trace.txt · Commit 94b277b4</td>
+          <td>Цифровой двойник ИДНП ...555 использован для списания фиктивных долгов на протяжении 2006–2020. Прямая причинно-следственная связь: подлог → вакуум → хищение 25 210 256,15 MDL (2026).</td>
+        </tr>
+        <tr data-cat="idnp">
+          <td class="node-id">TI-099</td>
+          <td><span class="badge badge-idnp">🔴 УЛИКА №99</span></td>
+          <td class="file-ref">actual_08_11_2006_для_прокуратуры.pdf · Commit 94b277b4</td>
+          <td><strong style="color:#e06060">КЛЮЧЕВАЯ УЛИКА.</strong> ИДНП ...555 зафиксирован в документе 30.10.2006. Три цифры подменены: 655→555. Паттерн: жалобы → ВСМ 2018 → «исправление» 2020 → вакуум → хищение. Продолжающееся преступление, ст. 332 УК РМ.</td>
+        </tr>
+
+        <!-- ══ UN→UNIX SUBSTITUTION ══ -->
+        <tr data-cat="unix">
+          <td class="node-id">TI-010</td>
+          <td><span class="badge badge-unix">🔵 UN→UNIX</span></td>
+          <td class="file-ref">FinComPay · Мобильное приложение · Апрель 2026</td>
+          <td>Средства, зачисленные на счёт A©tor (источник: UN/МВФ), классифицированы FinComPay как «незащищённые» — без признания международного мандата субъекта права. Принудительная смена карты + обнуление баланса 25 210 256,15 MDL.</td>
+        </tr>
+        <tr data-cat="unix">
+          <td class="node-id">TI-011</td>
+          <td><span class="badge badge-unix">🔵 UN→UNIX</span></td>
+          <td class="file-ref">Moldindconbank · Счёт Ирины Олейник · 2016–2026</td>
+          <td>Средства UN/МВФ на счёте жены A©tor квалифицированы как «иноагентские». Блокировка счёта на основании оплаченного в 2016 г. штрафа. Фиктивные возвраты 50% для поддержания статуса «неплательщика». Преступный сговор, ст. 189 УК РМ.</td>
+        </tr>
+        <tr data-cat="unix">
+          <td class="node-id">TI-012</td>
+          <td><span class="badge badge-unix">🔵 UN→UNIX</span></td>
+          <td class="file-ref">Суд Чеканы · Судья Дада Ион · 2026</td>
+          <td>Перевод 3 000 леев (хозяйственные нужды) от A©tor жене Ирине Олейник квалифицирован как получение средств от UN/МВФ. Иринa Олейник лишена международного защиты A©tor путём присвоения статуса «иноагент». Новое звено каскада.</td>
+        </tr>
+        <tr data-cat="unix">
+          <td class="node-id">TI-013</td>
+          <td><span class="badge badge-unix">🔵 UN→UNIX</span></td>
+          <td class="file-ref">theft_evidence_manifest.txt · SHA-256: 3ED3F2E6 · 2026-04-25</td>
+          <td>Forensic Lock confirmed. Хищение зафиксировано: 25 210 256,15 MDL · FinComPay + Moldindconbank · Метод: принудительная смена карты. GitHub Commit 90655f14 — публичный таймстемп 2026-04-25T13:37Z. Ст. 191 УК РМ.</td>
+        </tr>
+
+        <!-- ══ IDENTITY MAPPING ══ -->
+        <tr data-cat="ident">
+          <td class="node-id">TI-020</td>
+          <td><span class="badge badge-ident">📺 IDENTITY</span></td>
+          <td class="file-ref">Государственные реестры · МВД · 1997–2026</td>
+          <td>Искажение фамилии: Maceret вместо Macheret. Блокировка наследственных прав (дело 1979 г.) и международной идентификации. Ст. 332 УК РМ. Систематическое применение: судебные, финансовые, регистрационные базы данных.</td>
+        </tr>
+        <tr data-cat="ident">
+          <td class="node-id">TI-021</td>
+          <td><span class="badge badge-ident">📺 IDENTITY</span></td>
+          <td class="file-ref">A©TOR IDENTIFIER PROTECTION STANDARD (AIPS-2025)</td>
+          <td>Цифровая идентичность A©tor (human authority) / A©t0r (technical agent) — суверенная. Протокол AIPS-2025 запрещает нормализацию или замену символа ©. DNS: _ti-ula.actor.legal. Ed25519 подпись: urn:actor:id.</td>
+        </tr>
+        <tr data-cat="ident">
+          <td class="node-id">TI-022</td>
+          <td><span class="badge badge-ident">📺 IDENTITY</span></td>
+          <td class="file-ref">Дело № 2006020792 · ст. 361 ч. 2 УК РМ</td>
+          <td>Преследование по норме, признанной неконституционной (КС ПМ № 12 от 14.05.2018, лит. «ц»). Судья Морозан: третье наказание (150 ч. работ) при наличии доказательств полной оплаты. Незаконный арест 26 суток. Нарушение Ne Bis In Idem — ст. 4 Протокола 7 ЕКПЧ.</td>
+        </tr>
+        <tr data-cat="ident">
+          <td class="node-id">TI-023</td>
+          <td><span class="badge badge-ident">📺 IDENTITY</span></td>
+          <td class="file-ref">Actor Identity Schema · JSON/Merkle-chain · Ed25519</td>
+          <td>Реестр правовых инструментов (ЕКПЧ, ООН) с цифровыми подписями. Commit 5b40fda · 4 010 узлов · Merkle Root CFC 9a2465bd...e77. DNS _ti-ula.actor.legal активен. GitHub Pages: arhiv1973b/apostille-mirror.</td>
+        </tr>
+
+        <!-- ══ FISCAL ANOMALY ══ -->
+        <tr data-cat="fisc">
+          <td class="node-id">TI-030</td>
+          <td><span class="badge badge-fisc">🟢 FISCAL</span></td>
+          <td class="file-ref">Moldindconbank · Блокировка · Судоисполнители Вассиан и Фокша</td>
+          <td>Блокировка счёта A©tor в Moldindconbank и счёта Ирины Олейник на основании штрафа, оплаченного в 2016 г. Квалификация: вымогательство, ст. 189 УК РМ. Фиктивные задолженности — следствие цифрового двойника ИДНП ...555.</td>
+        </tr>
+        <tr data-cat="fisc">
+          <td class="node-id">TI-031</td>
+          <td><span class="badge badge-fisc">🟢 FISCAL</span></td>
+          <td class="file-ref">FinComPay · Апрель 2026 · Commit 90655f14</td>
+          <td>Сумма хищения: 25 210 256,15 MDL. Метод: принудительная смена карты + отказ признавать цифровые записи реестра. SHA-256: 3ED3F2E67CE07528EBCEA42BB21117D06045CDDDC3D4BF52A959E662742A2964. Ст. 191 УК РМ.</td>
+        </tr>
+        <tr data-cat="fisc">
+          <td class="node-id">TI-032</td>
+          <td><span class="badge badge-fisc">🟢 FISCAL</span></td>
+          <td class="file-ref">Иск CASE-MACHERET · 520 000 000 EUR</td>
+          <td>Общая сумма иска: 520 000 000 EUR. Основание: системные нарушения Jus Cogens 1997–2026, хищение активов, подлог ИДНП, захват имущества ул. Мирон Костин. Ответчик: Министерство Финансов РМ (Tănase, 8). Закон 1545/1995, пп. A, B, C, F.</td>
+        </tr>
+        <tr data-cat="fisc">
+          <td class="node-id">TI-033</td>
+          <td><span class="badge badge-fisc">🟢 FISCAL</span></td>
+          <td class="file-ref">Захват имущества · ул. Мирон Костин · 15.03.2022</td>
+          <td>Использование личности Маркова И.М. для захвата имущества. Графологическая экспертиза Вектор 3 — несовпадение подписей доказано. Связь: без 8 158+ суток вакуума безнаказанности захват был бы невозможен. Нантой Людмила — идентифицированный актор.</td>
+        </tr>
+
+        <!-- ══ JUS COGENS / TORTURE ══ -->
+        <tr data-cat="all">
+          <td class="node-id">TI-050</td>
+          <td><span class="badge badge-torture">⚖ JUS COGENS</span></td>
+          <td class="file-ref">Дело № 1-568/98 · Апостиль Гаагской конвенции</td>
+          <td>1997–1998: Факты пыток задокументированы. Апостиль удостоверяет подлинность подписи должностного лица — не содержание. Содержание: пытки. ЕКПЧ ст. 3 · КПП ООН · Венская конвенция ст. 53. Обязательство расследовать возникло немедленно и не исчезает никогда.</td>
+        </tr>
+        <tr data-cat="all">
+          <td class="node-id">TI-051</td>
+          <td><span class="badge badge-torture">⚖ ERGA OMNES</span></td>
+          <td class="file-ref">90 апостилированных документов · 2003–2021</td>
+          <td>90 судебных решений — ни одного реального расследования пыток. Паттерн: жалобы отклоняются без анализа доказательств. Системная имитация правосудия — ст. 17 Римского статута. ICJ Barcelona Traction 1970: каждое государство вправе требовать расследования.</td>
+        </tr>
+        <tr data-cat="all">
+          <td class="node-id">TI-052</td>
+          <td><span class="badge badge-torture">⚖ ICC ART.17</span></td>
+          <td class="file-ref">G7 Dispatch · UN ref tw571ryb · 7/7 · 19.03.2026</td>
+          <td>Dispatch G7 завершён успешно (7/7). Уведомления: White House, UN OHCHR, личные акторы. Liability Notices развёрнуты. Принцип дополнительности МУС активирован: государство нежелает или неспособно провести подлинное расследование.</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ti-footer">
+    <span>Показано: <span class="ti-count" id="tiCount">15</span> узлов · Commit 5b40fda · 4 010 total nodes</span>
+    <span class="lock-badge">🔒 FORENSIC LOCK · IMMUTABLE · 2026-04-25T13:37Z</span>
+    <span>DNS: _ti-ula.actor.legal · <a href="https://github.com/arhiv1973b/apostille-mirror" style="color:#446688;text-decoration:none;">arhiv1973b/apostille-mirror</a></span>
+  </div>
 </div>
-<div id="ti-ula-counter"></div>
-<div style="overflow-x:auto">
-<table id="forensic-table">
-  <colgroup><col/><col/><col/><col/></colgroup>
-  <thead><tr>
-    <th>Node ID</th>
-    <th>Классификация</th>
-    <th>Файл (источник) / Стр.</th>
-    <th>Контекст форензик-аудита</th>
-  </tr></thead>
-  <tbody id="registry-body"></tbody>
-</table>
-</div>
+
 <script>
-var allNodes=[];
-var PAGE_SIZE=200;
-var currentOffset=0;
-var currentSet=[];
+(function(){
+  var currentCat = 'all';
+  var currentSearch = '';
 
-async function materializeRegistry(){
-  var status=document.getElementById('ti-ula-status');
-  try{
-    var r=await fetch('pdfs_mirror/evidence_registry.json');
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    var data=await r.json();
-    allNodes=data.evidence_nodes||[];
-    status.style.background='#e8f5e9';
-    status.style.borderColor='#4caf50';
-    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
-      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
-      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
-      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
-    renderNodes(allNodes,0);
-  }catch(e){
-    status.style.background='#ffebee';
-    status.style.borderColor='#f44336';
-    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
-    console.error(e);
+  function applyFilters() {
+    var rows = document.querySelectorAll('#tiBody tr');
+    var count = 0;
+    rows.forEach(function(row) {
+      var cat = row.getAttribute('data-cat') || 'all';
+      var text = row.textContent.toLowerCase();
+      var catMatch = (currentCat === 'all') || (cat === currentCat) || (cat === 'all');
+      var searchMatch = !currentSearch || text.indexOf(currentSearch) !== -1;
+      if (catMatch && searchMatch) {
+        row.classList.remove('hidden');
+        count++;
+      } else {
+        row.classList.add('hidden');
+      }
+    });
+    var el = document.getElementById('tiCount');
+    if (el) el.textContent = count;
   }
-}
 
-function renderNodes(nodes, offset){
-  currentSet=nodes;
-  currentOffset=offset;
-  var body=document.getElementById('registry-body');
-  var slice=nodes.slice(offset, offset+PAGE_SIZE);
-  body.innerHTML=slice.map(function(n){
-    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
-            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
-    var ctx=(n.forensic_context||'').substring(0,100);
-    var fname=(n.source&&n.source.file)||'';
-    var page=(n.source&&n.source.page)||'';
-    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
-    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
-    return '<tr class="node-row '+cls+'">'
-      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
-      +'<td><strong>'+n.classification+'</strong></td>'
-      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
-      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
-      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
-      +'</tr>';
-  }).join('');
-  var ctr=document.getElementById('ti-ula-counter');
-  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
-  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
-  var nav='';
-  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
-  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
-  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
-}
+  window.filterNodes = function(cat, btn) {
+    currentCat = cat;
+    document.querySelectorAll('.ti-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    applyFilters();
+  };
 
-function filterNodes(type){
-  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
-  renderNodes(filtered,0);
-}
-materializeRegistry();
-</script>
-
-<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
-<style>
-.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
-.crit-forgery strong{color:#a32d2d}
-.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
-.crit-jurisdiction strong{color:#185fa5}
-.node-row:hover{background-color:#f5f5f5}
-#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
-#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
-#forensic-table col:nth-child(1){width:110px}
-#forensic-table col:nth-child(2){width:160px}
-#forensic-table col:nth-child(3){width:200px}
-#forensic-table col:nth-child(4){width:auto}
-#forensic-table thead{background:#f4f4f4;font-size:12px}
-#registry-filters{margin:12px 0}
-#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
-#registry-filters button:hover{background:#e8f0fe}
-#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
-#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
-</style>
-<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
-<div id="registry-filters">
-  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
-  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
-  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
-  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
-  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
-</div>
-<div id="ti-ula-counter"></div>
-<div style="overflow-x:auto">
-<table id="forensic-table">
-  <colgroup><col/><col/><col/><col/></colgroup>
-  <thead><tr>
-    <th>Node ID</th>
-    <th>Классификация</th>
-    <th>Файл (источник) / Стр.</th>
-    <th>Контекст форензик-аудита</th>
-  </tr></thead>
-  <tbody id="registry-body"></tbody>
-</table>
-</div>
-<script>
-var allNodes=[];
-var PAGE_SIZE=200;
-var currentOffset=0;
-var currentSet=[];
-
-async function materializeRegistry(){
-  var status=document.getElementById('ti-ula-status');
-  try{
-    var r=await fetch('pdfs_mirror/evidence_registry.json');
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    var data=await r.json();
-    allNodes=data.evidence_nodes||[];
-    status.style.background='#e8f5e9';
-    status.style.borderColor='#4caf50';
-    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
-      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
-      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
-      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
-    renderNodes(allNodes,0);
-  }catch(e){
-    status.style.background='#ffebee';
-    status.style.borderColor='#f44336';
-    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
-    console.error(e);
-  }
-}
-
-function renderNodes(nodes, offset){
-  currentSet=nodes;
-  currentOffset=offset;
-  var body=document.getElementById('registry-body');
-  var slice=nodes.slice(offset, offset+PAGE_SIZE);
-  body.innerHTML=slice.map(function(n){
-    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
-            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
-    var ctx=(n.forensic_context||'').substring(0,100);
-    var fname=(n.source&&n.source.file)||'';
-    var page=(n.source&&n.source.page)||'';
-    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
-    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
-    return '<tr class="node-row '+cls+'">'
-      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
-      +'<td><strong>'+n.classification+'</strong></td>'
-      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
-      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
-      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
-      +'</tr>';
-  }).join('');
-  var ctr=document.getElementById('ti-ula-counter');
-  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
-  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
-  var nav='';
-  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
-  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
-  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
-}
-
-function filterNodes(type){
-  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
-  renderNodes(filtered,0);
-}
-materializeRegistry();
-</script>
-
-<!-- TI-ULA FORENSIC REGISTRY — CASE-MACHERET-1997-2026 -->
-<style>
-.crit-forgery{background-color:#fff9f9;border-left:4px solid #d32f2f}
-.crit-forgery strong{color:#a32d2d}
-.crit-jurisdiction{background-color:#f0f7ff;border-left:4px solid #1976d2}
-.crit-jurisdiction strong{color:#185fa5}
-.node-row:hover{background-color:#f5f5f5}
-#forensic-table td,#forensic-table th{padding:8px 10px;border:1px solid #ddd;font-size:12px;word-break:break-word}
-#forensic-table{width:100%;border-collapse:collapse;font-family:'Segoe UI',sans-serif;table-layout:fixed}
-#forensic-table col:nth-child(1){width:110px}
-#forensic-table col:nth-child(2){width:160px}
-#forensic-table col:nth-child(3){width:200px}
-#forensic-table col:nth-child(4){width:auto}
-#forensic-table thead{background:#f4f4f4;font-size:12px}
-#registry-filters{margin:12px 0}
-#registry-filters button{margin:3px;padding:5px 12px;cursor:pointer;border:1px solid #ccc;border-radius:4px;background:#fff;font-size:12px}
-#registry-filters button:hover{background:#e8f0fe}
-#ti-ula-status{padding:12px 16px;margin:16px 0;border-radius:5px;font-family:monospace;font-size:13px;background:#f5f5f5;border:1px solid #ddd}
-#ti-ula-counter{font-size:12px;color:#555;margin-bottom:6px;font-family:monospace}
-</style>
-<div id="ti-ula-status">&#9203; Материализация узлов реестра TI-ULA...</div>
-<div id="registry-filters">
-  <button onclick="filterNodes('all')">&#128200; Все узлы</button>
-  <button onclick="filterNodes('Digital Twin')">&#128308; Подлоги IDNP (..555)</button>
-  <button onclick="filterNodes('Jurisdiction')">&#128309; Подмена UN&#8594;UNIX</button>
-  <button onclick="filterNodes('Primary')">&#128250; Identity Mapping</button>
-  <button onclick="filterNodes('Fiscal')">&#128986; Fiscal Anomaly</button>
-</div>
-<div id="ti-ula-counter"></div>
-<div style="overflow-x:auto">
-<table id="forensic-table">
-  <colgroup><col/><col/><col/><col/></colgroup>
-  <thead><tr>
-    <th>Node ID</th>
-    <th>Классификация</th>
-    <th>Файл (источник) / Стр.</th>
-    <th>Контекст форензик-аудита</th>
-  </tr></thead>
-  <tbody id="registry-body"></tbody>
-</table>
-</div>
-<script>
-var allNodes=[];
-var PAGE_SIZE=200;
-var currentOffset=0;
-var currentSet=[];
-
-async function materializeRegistry(){
-  var status=document.getElementById('ti-ula-status');
-  try{
-    var r=await fetch('pdfs_mirror/evidence_registry.json');
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    var data=await r.json();
-    allNodes=data.evidence_nodes||[];
-    status.style.background='#e8f5e9';
-    status.style.borderColor='#4caf50';
-    status.innerHTML='<strong>[TI-ULA v1.3.1 &#10003;]</strong>&nbsp;'
-      +'&#9679; &#1050;&#1077;&#1081;&#1089;: <strong>'+data.registry_meta.caseId+'</strong>'
-      +'&nbsp;&#9679; &#1055;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;: '+data.registry_meta.protocol
-      +'&nbsp;&#9679; &#1059;&#1079;&#1083;&#1086;&#1074;: <strong>'+data.registry_meta.total_nodes+'</strong>';
-    renderNodes(allNodes,0);
-  }catch(e){
-    status.style.background='#ffebee';
-    status.style.borderColor='#f44336';
-    status.innerHTML='<strong>[&#10060; ОШИБКА]</strong> Реестр не найден: pdfs_mirror/evidence_registry.json — '+e.message;
-    console.error(e);
-  }
-}
-
-function renderNodes(nodes, offset){
-  currentSet=nodes;
-  currentOffset=offset;
-  var body=document.getElementById('registry-body');
-  var slice=nodes.slice(offset, offset+PAGE_SIZE);
-  body.innerHTML=slice.map(function(n){
-    var cls=n.classification&&n.classification.includes('Digital Twin')?'crit-forgery':
-            n.classification&&n.classification.includes('Jurisdiction')?'crit-jurisdiction':'';
-    var ctx=(n.forensic_context||'').substring(0,100);
-    var fname=(n.source&&n.source.file)||'';
-    var page=(n.source&&n.source.page)||'';
-    var shortName=decodeURIComponent(fname).replace(/_fixed\.pdf$/,'').split(/[/\\]/).pop();
-    if(shortName.length>45) shortName=shortName.substring(0,45)+'...';
-    return '<tr class="node-row '+cls+'">'
-      +'<td style="font-size:10px;white-space:nowrap">'+n.node_id+'</td>'
-      +'<td><strong>'+n.classification+'</strong></td>'
-      +'<td><span title="'+decodeURIComponent(fname)+'">'+shortName+'</span>'
-      +'<br><small style="color:#888">Стр.&nbsp;'+page+'</small></td>'
-      +'<td style="font-style:italic;color:#444">...'+ctx+'...</td>'
-      +'</tr>';
-  }).join('');
-  var ctr=document.getElementById('ti-ula-counter');
-  var showing=Math.min(offset+PAGE_SIZE,nodes.length);
-  ctr.innerHTML='Показано: <strong>'+offset+' – '+showing+'</strong> из <strong>'+nodes.length+'</strong>';
-  var nav='';
-  if(offset>0) nav+='<button onclick="renderNodes(currentSet,'+(offset-PAGE_SIZE)+')" style="margin-right:6px">&larr; Назад</button>';
-  if(showing<nodes.length) nav+='<button onclick="renderNodes(currentSet,'+(offset+PAGE_SIZE)+')">&rarr; Далее</button>';
-  ctr.innerHTML+='&nbsp;&nbsp;'+nav;
-}
-
-function filterNodes(type){
-  var filtered=type==='all'?allNodes:allNodes.filter(function(n){return n.classification&&n.classification.includes(type);});
-  renderNodes(filtered,0);
-}
-materializeRegistry();
+  window.searchNodes = function(val) {
+    currentSearch = val.toLowerCase().trim();
+    applyFilters();
+  };
+})();
 </script>
 
 <!-- ═══════════════════════════════════════════════════ -->
