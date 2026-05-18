@@ -10,7 +10,7 @@
     {
       "rel_path": "final_audit_report Cod Fiscal 2_555 2_455 and 2_666.txt",
       "filename": "final_audit_report Cod Fiscal 2_555 2_455 and 2_666.txt",
-      "sha256": "E0F814A51760416DC2F5E33CEDBD9AB4D4BF3F2F08120409B7BF3EECDD04A7A6",
+      "sha256": "5CBBF18AE2A911BB53EF2B7E771BC04B2101DE09D50B43630BD87FA3E882B4F8",
       "mcp_role": "FORGERY_DETECTED"
     },
     {
@@ -250,13 +250,13 @@
     {
       "rel_path": "Downloads\\combined_pdf_summaries_corrected.json",
       "filename": "combined_pdf_summaries_corrected.json",
-      "sha256": "A2F5F25E41DF1E516D27966DF784B4D288BDC0F1B43826CBA7724C0BD6F87695",
+      "sha256": "C4E05C44D3191BFFE77ACF4391CE93951EC1A879C50CF6F016A8534A3F6BEBF2",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\combined_pdf_summaries.json",
       "filename": "combined_pdf_summaries.json",
-      "sha256": "62192E0ACAE6BCE2569FE077BE07F024C11F0D39426CA2B89FFE7BE2F1D757D2",
+      "sha256": "64B45A5713A9A5C8FB92DF1D691050BE4E90E60591ED973E1E8AEC8BAB355AB3",
       "mcp_role": "standard"
     },
     {
@@ -394,7 +394,7 @@
     {
       "rel_path": "Downloads\\ultra_mega_archive.json.txt",
       "filename": "ultra_mega_archive.json.txt",
-      "sha256": "4612D727F8A66F6C09CA7B841F33AE171E47EF796BF4A43732BCD3B71FDE3E31",
+      "sha256": "4881BCF3572A186E103C415E64F22B1E85306C3B4589BCBD6020C1119DF66331",
       "mcp_role": "standard"
     },
     {
@@ -1090,7 +1090,7 @@
     {
       "rel_path": "Downloads\\Защиты\\Суд Рышкановка суду Лупашку Наталье _com.signed.signed.txt",
       "filename": "Суд Рышкановка суду Лупашку Наталье _com.signed.signed.txt",
-      "sha256": "0430ED62813CDD16A0F0B564C14E9320CE13324FE05E39D5511456733A2E79F8",
+      "sha256": "312A0AE91085BE71D5955A90545ED02ECB7A4229A1E70887F0C112964B5B4813",
       "mcp_role": "standard"
     },
     {
@@ -1108,31 +1108,31 @@
     {
       "rel_path": "Downloads\\Защиты\\A©tor_Foundation.json",
       "filename": "A©tor_Foundation.json",
-      "sha256": "F41B53D4501C0F33A9C5C1F1A151AD39CA171101574C34F26E8B77E47F106E5A",
+      "sha256": "FDBD90C6355BF078CBECCECF0F633E021B0FF291AE5D7651615DF5E65EE31077",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\abbey_ocr_correction.py",
       "filename": "abbey_ocr_correction.py",
-      "sha256": "2D6CA27E6960BFF0BFF07CB769AFDC77ED85A75BD3577393B892B6996BB0BAD6",
+      "sha256": "BE5408B49D7058D7C8CAF2C32045EF237C6B22F3FCEB5605671B048023CAC5B4",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\abbey_ocr_corrector.py",
       "filename": "abbey_ocr_corrector.py",
-      "sha256": "A65F9B8991FF85CF0621E02EC67EAFED9A57CC6C7D64F46AB56F9E1AF76DA0E1",
+      "sha256": "F15A64E3D733442C6698318A74965379BEE9356DB1DBC4C2B43723463FFDECD9",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\abbey_style_ocr_system.py",
       "filename": "abbey_style_ocr_system.py",
-      "sha256": "269B5F691BD4B9CD5ED176984FEA4BFF3DC594CD66E7F9C09805B68A7932A311",
+      "sha256": "8A0EE7851ADAA802573C954CB6C05823C87F3500EA899287CBADED02B3A6E62C",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\abbyy_ocr_corrector.py",
       "filename": "abbyy_ocr_corrector.py",
-      "sha256": "02CADD526DD3E115AE4F7F24606D64ED8D4DDBBD544B8C0B697381AAB5EB1A2B",
+      "sha256": "805A16AB31E64004AB3299B13C88DEFD511B86881063340E76ED474A423F1618",
       "mcp_role": "standard"
     },
     {
@@ -1150,19 +1150,19 @@
     {
       "rel_path": "Downloads\\Защиты\\combined_pdf_summaries_corrected_20260126_212243.json",
       "filename": "combined_pdf_summaries_corrected_20260126_212243.json",
-      "sha256": "6183B13A43A0E9A87A0438F2B4921B167615507575A34B1F9C71771DBD55D964",
+      "sha256": "1703A58C18AC3EAF8F8D59F720AEC49AA730CC0ECE931F3DC566C4B8C982791A",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\combined_pdf_summaries.json",
       "filename": "combined_pdf_summaries.json",
-      "sha256": "71A64502D9943C146D1E4BC70F454D659AC5A8EDE6EA3627A530EF565D72E15C",
+      "sha256": "64B45A5713A9A5C8FB92DF1D691050BE4E90E60591ED973E1E8AEC8BAB355AB3",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\FINAL_COMPLETION_REPORT.md",
       "filename": "FINAL_COMPLETION_REPORT.md",
-      "sha256": "DC4249FA9AC9679EA290244CB11422056F27DE461FD6E6BE3E130855FEBEB8BB",
+      "sha256": "2832B9756671270ACD8ADD6907E28ACC500A00322BB5210DFC503534A9F4B178",
       "mcp_role": "standard"
     },
     {
@@ -1180,25 +1180,25 @@
     {
       "rel_path": "Downloads\\Защиты\\ocr_correction_dictionary.json",
       "filename": "ocr_correction_dictionary.json",
-      "sha256": "B2E1B7A88E34FA6E7290CD77AC4EFE34F4EF5064BEB784DFAC1E9C75876956E8",
+      "sha256": "CF8D4551832C3F40AEB96A4053E5B24C754883A7CAB45EFDD078E53B89937BD8",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\OCR_Correction_Report.txt",
       "filename": "OCR_Correction_Report.txt",
-      "sha256": "2CD5555C6BCA551145D4810B68DB08ADFEFF823859FA310668F7A06D36FE5DC0",
+      "sha256": "F1D2AA3F1245DFC25BCE8236377D3D8C60F3D90258D93C6D3392219466A1480F",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\process_ocr_corrections.py",
       "filename": "process_ocr_corrections.py",
-      "sha256": "697F97682C7B29D96DE18509291E7ACBEBBBA0EBF49D7564E23359E505591434",
+      "sha256": "0651BE75990B3367B23B9512372D57A027D20C72EA241F20F362079C913EF7F9",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\READABLE_CASE_ARCHIVE.json",
       "filename": "READABLE_CASE_ARCHIVE.json",
-      "sha256": "EA110AE56ABF5E6B8E382F07CEDD390E192E0160E9471F29AF2D705EFF987273",
+      "sha256": "3DBBF00021E2149A090CB301CE90866A1198B5080401CBB8A3BE1F6184BE0428",
       "mcp_role": "standard"
     },
     {
@@ -1210,13 +1210,13 @@
     {
       "rel_path": "Downloads\\Защиты\\README_OCR_CORRECTION.md",
       "filename": "README_OCR_CORRECTION.md",
-      "sha256": "A10C5F6F0E3B041588CD1E47D69F19E44A10195D3389A1CCA5C0ADAF5741C04F",
+      "sha256": "70C8425E0079D4B7E4F9DA02EB4C019134F0AE9CD3EAA824A49BE89299BFEB92",
       "mcp_role": "standard"
     },
     {
       "rel_path": "Downloads\\Защиты\\README_TI-ULA_A©tor.md",
       "filename": "README_TI-ULA_A©tor.md",
-      "sha256": "C3267C3EC81703BB280B4D035D00B611C4EC05039EBA47237BB55731C2C83BD4",
+      "sha256": "4FAC18EE0304C38A3C620E055AACFACD26F2316B5B6847E29671743EFAA41D66",
       "mcp_role": "standard"
     },
     {
@@ -1228,7 +1228,7 @@
     {
       "rel_path": "Downloads\\Защиты\\SAFE_LEGAL_ARCHIVE_CORRECTED_correction_log.json",
       "filename": "SAFE_LEGAL_ARCHIVE_CORRECTED_correction_log.json",
-      "sha256": "FE05BAFCAA6381B581C7D8A9634BF892F8B9E3BB6C5A5544A9BED4152FFCC7E1",
+      "sha256": "2E17D66C9A7724A2616500C6E5B26A54CFF10FDAE27A890997FF8E53747441C5",
       "mcp_role": "standard"
     },
     {
@@ -1240,7 +1240,7 @@
     {
       "rel_path": "Downloads\\Защиты\\SAFE_LEGAL_ARCHIVE.json",
       "filename": "SAFE_LEGAL_ARCHIVE.json",
-      "sha256": "0FC467CA774E5B185C342DFF733AAC5BFCCC2DED484A303B2C8473A28EB07DFD",
+      "sha256": "85D67BAFC804D8C4790C7FA53212490ED28026A1873111405E90C166A03F1BED",
       "mcp_role": "standard"
     },
     {
@@ -1258,7 +1258,7 @@
     {
       "rel_path": "Downloads\\Защиты\\transformed_jus_cogens_case_backup_20260126_165959_annotated.json",
       "filename": "transformed_jus_cogens_case_backup_20260126_165959_annotated.json",
-      "sha256": "1D5556AF0A7AA9B7CDBBA2EC95E7680740963ED263E4DC26DB98A13C40892F63",
+      "sha256": "6DB96D425C1D7F769B2593411EC1D2306FABF2D9084DE658589EBCACBD8D0A79",
       "mcp_role": "standard"
     },
     {
@@ -1270,7 +1270,7 @@
     {
       "rel_path": "Downloads\\Защиты\\transformed_jus_cogens_case_backup_20260126_165959.json",
       "filename": "transformed_jus_cogens_case_backup_20260126_165959.json",
-      "sha256": "159E7DB45D375F59A727658BA505AB0748B5BAE854F1329391CEE002349A198B",
+      "sha256": "2C882D72E25B617D00E847C52654D10FE77B20A4D5FF0CE686A428F50DB99F4F",
       "mcp_role": "standard"
     },
     {
