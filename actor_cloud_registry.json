@@ -1,0 +1,20 @@
+[
+  {
+    "repoName": "apostille-mirror",
+    "localPath": "C:\\Users\\arhiv\\ACTOR_DEV_ENV\\apostille-mirror",
+    "githubUrl": "https://github.com/arhiv1973b/apostille-mirror",
+    "gdriveBundle": "gdrive_actor:CASE-MACHERET-1997-2026/REPOS/BUNDLES/apostille-mirror.bundle",
+    "gdriveworking": "gdrive_actor:CASE-MACHERET-1997-2026/REPOS/WORKING/apostille-mirror",
+    "bundleSHA256": "573B0E852BEF50AEF826E6F30183EF7BB9DD883F9C573DDED6A93387ED47D0FF",
+    "verifiedAt": "2026-05-20T23:10:27Z"
+  },
+  {
+    "repoName": "apostille-mirror-clone",
+    "localPath": "C:\\Users\\arhiv\\case_macheret_repo\\apostille-mirror-clone",
+    "githubUrl": "git@github.com:arhiv1973b/apostille-mirror.git",
+    "gdriveBundle": "gdrive_actor:CASE-MACHERET-1997-2026/REPOS/BUNDLES/apostille-mirror-clone.bundle",
+    "gdriveworking": "gdrive_actor:CASE-MACHERET-1997-2026/REPOS/WORKING/apostille-mirror-clone",
+    "bundleSHA256": "7F5CDA34391A682A1FC13643A98133D8F642B8387C4AFBB94231402D8B491EAC",
+    "verifiedAt": "2026-05-20T23:10:49Z"
+  }
+]
