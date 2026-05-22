@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A©tor FORENSIC HUB v15.3 | CASE-MACHERET-1997-2026</title>
+    <title>A©tor FORENSIC HUB | CASE-MACHERET-1997-2026</title>
     <link rel="stylesheet" href="assets/css/actor-theme.css">
     <script src="assets/js/actor-core.js"></script>
+    <style>
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .stat-card { background: #12121a; border: 1px solid #2a2a3e; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-value { font-size: 2.5em; color: #c8a951; font-weight: bold; }
+        .cas-card { border-left: 4px solid #c8a951; background: #12121a; padding: 15px; margin-bottom: 10px; }
+        .cas-hash { font-family: monospace; color: #4ecdc4; }
+        #cas-explorer { margin-top: 40px; border-top: 1px solid #2a2a3e; padding-top: 20px; }
+    </style>
 </head>
 <body>
     <header>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <span class="jus-cogens-badge">JUS COGENS ERGA OMNES</span>
-                <div id="sovereign-seal">Verifying Seal...</div>
-            </div>
-            <div style="text-align: right;">
-                <h1 style="margin:0;">A©tor Hub v15.3</h1>
-                <p style="color: #888; margin:0;">Case: <strong>MACHERET-1997-2026</strong></p>
-            </div>
-        </div>
+        <span class="jus-cogens-badge">JUS COGENS ERGA OMNES</span>
+        <h1>A©tor — Forensic Evidence Hub</h1>
+        <p style="color: #888;">Case: <strong>CASE-MACHERET-1997-2026</strong> | Status: <strong>MISSION_READY</strong></p>
     </header>
 
     <div class="dashboard-grid">
@@ -31,41 +32,20 @@
             <div class="stat-value">90</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">СИСТЕМНЫЙ СТАТУС</div>
-            <div class="stat-value" style="color: #27ae60;">OPERATIONAL</div>
+            <div class="stat-label">СУВЕРЕННЫЙ СТАТУС</div>
+            <div class="stat-value" style="color: #e74c3c;">ACTIVE</div>
         </div>
     </div>
 
-    <section id="forensic-monitoring">
-        <h2>Live Forensic Activity Feed</h2>
-        <div id="live-feed"></div>
-    </section>
-
-    <section id="mission-timeline">
-        <h2>Mission Timeline (1997-2026)</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">1997-11-13</div>
-                <div class="timeline-event">Дело № 1–568: Инициация системного саботажа.</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2026-05-22</div>
-                <div class="timeline-event">Активация v15.3: Развернут Sovereign Integrity Seal.</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="explorer-section">
-        <input type="text" id="hub-search" placeholder="🔍 Поиск по CAS-хэшу или ID...">
-        <div id="cas-explorer">
-            <p>Загрузка децентрализованной базы...</p>
-        </div>
-    </section>
+    <div id="cas-explorer">
+        <h2>CAS Evidence Explorer (Real-Time Index)</h2>
+        <p>Загрузка децентрализованного реестра...</p>
+    </div>
 
     <div class="donation-banner">
-        <p>Sovereign Justice Mission</p>
-        <a href="https://github.com/sponsors/arhiv1973b" target="_blank" class="btn-donate">GitHub Support</a>
-        <a href="https://drive.google.com/drive/folders/1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy" target="_blank" class="btn-donate">Evidence Roadmap</a>
+        <p>Миссия реабилитации Алексея Мачерета</p>
+        <a href="https://github.com/sponsors/arhiv1973b" target="_blank" class="btn-donate">Support Mission</a>
+        <a href="https://drive.google.com/drive/folders/1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy" target="_blank" class="btn-donate">Roadmap DB</a>
     </div>
 </body>
 </html>
