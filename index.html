@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A©tor FORENSIC HUB | CASE-MACHERET-1997-2026</title>
+    <title>A©tor FORENSIC HUB v15.2 | CASE-MACHERET-1997-2026</title>
     <link rel="stylesheet" href="assets/css/actor-theme.css">
     <script src="assets/js/actor-core.js"></script>
-    <style>
-        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
-        .stat-card { background: #12121a; border: 1px solid #2a2a3e; padding: 20px; border-radius: 8px; text-align: center; }
-        .stat-value { font-size: 2.5em; color: #c8a951; font-weight: bold; }
-        .cas-card { border-left: 4px solid #c8a951; background: #12121a; padding: 15px; margin-bottom: 10px; }
-        .cas-hash { font-family: monospace; color: #4ecdc4; }
-        #cas-explorer { margin-top: 40px; border-top: 1px solid #2a2a3e; padding-top: 20px; }
-    </style>
 </head>
 <body>
     <header>
         <span class="jus-cogens-badge">JUS COGENS ERGA OMNES</span>
-        <h1>A©tor — Forensic Evidence Hub</h1>
-        <p style="color: #888;">Case: <strong>CASE-MACHERET-1997-2026</strong> | Status: <strong>MISSION_READY</strong></p>
+        <h1>A©tor — Forensic Evidence Hub v15.2</h1>
+        <p style="color: #888;">Case: <strong>CASE-MACHERET-1997-2026</strong> | Global Integrity Network</p>
     </header>
 
     <div class="dashboard-grid">
@@ -32,15 +24,39 @@
             <div class="stat-value">90</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">СУВЕРЕННЫЙ СТАТУС</div>
-            <div class="stat-value" style="color: #e74c3c;">ACTIVE</div>
+            <div class="stat-label">ХРОНОЛОГИЯ МИССИИ</div>
+            <div class="stat-value">1997 - 2026</div>
         </div>
     </div>
 
-    <div id="cas-explorer">
-        <h2>CAS Evidence Explorer (Real-Time Index)</h2>
-        <p>Загрузка децентрализованного реестра...</p>
-    </div>
+    <section id="mission-timeline">
+        <h2>Mission Timeline (Critical Milestones)</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">1997-11-13</div>
+                <div class="timeline-event">Первичный судебный акт (Дело № 1–568) — Точка отсчета саботажа.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2006-11-08</div>
+                <div class="timeline-event">Идентификация IDNP 2000001159655 и консолидация доказательств по ИДНП.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2025-12-23</div>
+                <div class="timeline-event">Подача Кассационной жалобы по фактам пыток и нарушению Римского Статута.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2026-05-22</div>
+                <div class="timeline-event">Активация A©t0r CORE ORCHESTRATOR v14.0 и деплой Forensic Hub.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="explorer-section">
+        <input type="text" id="hub-search" placeholder="🔍 Поиск по хэшу, ID узла или имени документа...">
+        <div id="cas-explorer">
+            <p>Загрузка CAS-индекса...</p>
+        </div>
+    </section>
 
     <div class="donation-banner">
         <p>Миссия реабилитации Алексея Мачерета</p>
