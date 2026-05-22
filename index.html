@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A©tor FORENSIC HUB v15.2 | CASE-MACHERET-1997-2026</title>
+    <title>A©tor FORENSIC HUB v15.3 | CASE-MACHERET-1997-2026</title>
     <link rel="stylesheet" href="assets/css/actor-theme.css">
     <script src="assets/js/actor-core.js"></script>
 </head>
 <body>
     <header>
-        <span class="jus-cogens-badge">JUS COGENS ERGA OMNES</span>
-        <h1>A©tor — Forensic Evidence Hub v15.2</h1>
-        <p style="color: #888;">Case: <strong>CASE-MACHERET-1997-2026</strong> | Global Integrity Network</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <span class="jus-cogens-badge">JUS COGENS ERGA OMNES</span>
+                <div id="sovereign-seal">Verifying Seal...</div>
+            </div>
+            <div style="text-align: right;">
+                <h1 style="margin:0;">A©tor Hub v15.3</h1>
+                <p style="color: #888; margin:0;">Case: <strong>MACHERET-1997-2026</strong></p>
+            </div>
+        </div>
     </header>
 
     <div class="dashboard-grid">
@@ -24,44 +31,41 @@
             <div class="stat-value">90</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">ХРОНОЛОГИЯ МИССИИ</div>
-            <div class="stat-value">1997 - 2026</div>
+            <div class="stat-label">СИСТЕМНЫЙ СТАТУС</div>
+            <div class="stat-value" style="color: #27ae60;">OPERATIONAL</div>
         </div>
     </div>
 
+    <section id="forensic-monitoring">
+        <h2>Live Forensic Activity Feed</h2>
+        <div id="live-feed"></div>
+    </section>
+
     <section id="mission-timeline">
-        <h2>Mission Timeline (Critical Milestones)</h2>
+        <h2>Mission Timeline (1997-2026)</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-date">1997-11-13</div>
-                <div class="timeline-event">Первичный судебный акт (Дело № 1–568) — Точка отсчета саботажа.</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2006-11-08</div>
-                <div class="timeline-event">Идентификация IDNP 2000001159655 и консолидация доказательств по ИДНП.</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2025-12-23</div>
-                <div class="timeline-event">Подача Кассационной жалобы по фактам пыток и нарушению Римского Статута.</div>
+                <div class="timeline-event">Дело № 1–568: Инициация системного саботажа.</div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">2026-05-22</div>
-                <div class="timeline-event">Активация A©t0r CORE ORCHESTRATOR v14.0 и деплой Forensic Hub.</div>
+                <div class="timeline-event">Активация v15.3: Развернут Sovereign Integrity Seal.</div>
             </div>
         </div>
     </section>
 
     <section id="explorer-section">
-        <input type="text" id="hub-search" placeholder="🔍 Поиск по хэшу, ID узла или имени документа...">
+        <input type="text" id="hub-search" placeholder="🔍 Поиск по CAS-хэшу или ID...">
         <div id="cas-explorer">
-            <p>Загрузка CAS-индекса...</p>
+            <p>Загрузка децентрализованной базы...</p>
         </div>
     </section>
 
     <div class="donation-banner">
-        <p>Миссия реабилитации Алексея Мачерета</p>
-        <a href="https://github.com/sponsors/arhiv1973b" target="_blank" class="btn-donate">Support Mission</a>
-        <a href="https://drive.google.com/drive/folders/1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy" target="_blank" class="btn-donate">Roadmap DB</a>
+        <p>Sovereign Justice Mission</p>
+        <a href="https://github.com/sponsors/arhiv1973b" target="_blank" class="btn-donate">GitHub Support</a>
+        <a href="https://drive.google.com/drive/folders/1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy" target="_blank" class="btn-donate">Evidence Roadmap</a>
     </div>
 </body>
 </html>

@@ -21,3 +21,12 @@ h1, h2, h3 { color: #c8a951; font-family: 'Times New Roman', serif; border-botto
 }
 .timeline-date { color: #c8a951; font-weight: bold; margin-bottom: 5px; }
 .timeline-event { font-size: 0.9em; color: #aaa; }
+/* Integrity & Feed Styles */
+.verified-badge { color: #27ae60; font-weight: bold; border: 1px solid #27ae60; padding: 5px 10px; border-radius: 4px; background: rgba(39, 174, 96, 0.1); }
+#live-feed { 
+    background: #050508; border: 1px solid #2a2a3e; padding: 15px; 
+    height: 150px; overflow-y: auto; font-family: monospace; font-size: 0.85em; color: #4ecdc4;
+    margin: 20px 0; border-radius: 4px;
+}
+.feed-entry { margin-bottom: 5px; border-bottom: 1px solid #1a1a2e; padding-bottom: 3px; }
+#sovereign-seal { margin-top: 10px; display: inline-block; }
