@@ -2,24 +2,50 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>A©tor | CASE-MACHERET-1997-2026 | Jus Cogens Evidence Vault</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A©tor FORENSIC HUB | CASE-MACHERET-1997-2026</title>
     <link rel="stylesheet" href="assets/css/actor-theme.css">
+    <script src="assets/js/actor-core.js"></script>
+    <style>
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        .stat-card { background: #12121a; border: 1px solid #2a2a3e; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-value { font-size: 2.5em; color: #c8a951; font-weight: bold; }
+        .cas-card { border-left: 4px solid #c8a951; background: #12121a; padding: 15px; margin-bottom: 10px; }
+        .cas-hash { font-family: monospace; color: #4ecdc4; }
+        #cas-explorer { margin-top: 40px; border-top: 1px solid #2a2a3e; padding-top: 20px; }
+    </style>
 </head>
 <body>
-    <h1>A©tor — Единый консолидированный реестр доказательств</h1>
-    <h3>Дело: CASE-MACHERET-1997-2026</h3>
-    <div style="font-size: 1.2em; margin: 20px 0;">
-        <span class="jus-cogens-badge">JUS COGENS ACTIVE</span> | <strong>4010</strong> узлов зафиксировано | <strong>90</strong> апостилей | <strong>8158</strong> суток непрерывного процессуального саботажа.
-        <br><small style="color: #27ae60;">[STATUS] INTEGRATED_GCP | Stable Hybrid Sync Active</small>
+    <header>
+        <span class="jus-cogens-badge">JUS COGENS ERGA OMNES</span>
+        <h1>A©tor — Forensic Evidence Hub</h1>
+        <p style="color: #888;">Case: <strong>CASE-MACHERET-1997-2026</strong> | Status: <strong>MISSION_READY</strong></p>
+    </header>
+
+    <div class="dashboard-grid">
+        <div class="stat-card">
+            <div class="stat-label">ЗАФИКСИРОВАНО УЗЛОВ</div>
+            <div class="stat-value" id="node-count">4010</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">ВАЛИДНЫХ АПОСТИЛЕЙ</div>
+            <div class="stat-value">90</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">СУВЕРЕННЫЙ СТАТУС</div>
+            <div class="stat-value" style="color: #e74c3c;">ACTIVE</div>
+        </div>
     </div>
-    <ul>
-        <li><a href="jus-cogens-proof-macheret.html" class="hash-link">Открыть главный меморандум правовой позиции</a></li>
-        <li><a href="registry.html" class="hash-link">Перейти к децентрализованной таблице хэш-ссылок (Реестру)</a></li>
-    </ul>
+
+    <div id="cas-explorer">
+        <h2>CAS Evidence Explorer (Real-Time Index)</h2>
+        <p>Загрузка децентрализованного реестра...</p>
+    </div>
+
     <div class="donation-banner">
-        <p><strong>Миссия судебной и криминальной реабилитации Алексея Мачерета</strong></p>
-        <a href="https://github.com/sponsors/arhiv1973b" target="_blank" class="btn-donate">GitHub Sponsors</a>
-        <a href="https://www.patreon.com/arhiv240" target="_blank" class="btn-donate">Patreon</a>
+        <p>Миссия реабилитации Алексея Мачерета</p>
+        <a href="https://github.com/sponsors/arhiv1973b" target="_blank" class="btn-donate">Support Mission</a>
+        <a href="https://drive.google.com/drive/folders/1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy" target="_blank" class="btn-donate">Roadmap DB</a>
     </div>
 </body>
 </html>
