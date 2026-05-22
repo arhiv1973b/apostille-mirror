@@ -20,23 +20,22 @@ function renderRegistry(index) {
     
     let html = '';
     for (const [hash, node] of Object.entries(index)) {
-        html += `
-            <div class="cas-card">
-                <div class="cas-hash">...</div>
-                <div class="cas-meta">Node:  | ID: </div>
+        html += <div class="cas-card">
+                <div class="cas-hash">\...</div>
+                <div class="cas-meta">Node: \ | ID: \</div>
                 <div class="cas-links">
-                    <a href="" target="_blank" class="hash-link">GITHUB_RAW</a>
-                    <a href="" target="_blank" class="hash-link">GDRIVE_NODE</a>
+                    <a href="\" target="_blank" class="hash-link">GITHUB_RAW</a>
+                    <a href="\" target="_blank" class="hash-link">GDRIVE_NODE</a>
                 </div>
-            </div>
-        `;
+            </div>;
     }
     container.innerHTML = html;
 }
 
 function updateStats(index) {
     const count = Object.keys(index).length;
-    document.getElementById('node-count').innerText = "4010+ (" + count + " active)";
+    const nodeEl = document.getElementById('node-count');
+    if (nodeEl) nodeEl.innerText = "4010+ (" + count + " active)";
 }
 
 window.onload = initForensicHub;
