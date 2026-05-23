@@ -1,3 +1,30 @@
 ﻿{
-
+    "D4BA478E946B8843C4078B632A6FD8454AE299FCB9CE5C34F99F7EDEDF57E433":  {
+                                                                             "doc_id":  "ARTICLE_361_ANALYSIS.pdf",
+                                                                             "node_id":  "NODE-ROADMAP-B",
+                                                                             "links":  {
+                                                                                           "Primary":  "#",
+                                                                                           "Mirror":  "#"
+                                                                                       },
+                                                                             "deep_meta":  {
+                                                                                               "title":  "Article 361 Unconstitutional",
+                                                                                               "created":  "2026-05-20",
+                                                                                               "author":  "A©tor"
+                                                                                           },
+                                                                             "status":  "MOCKED_FOR_UI"
+                                                                         },
+    "57BF917347C0B4DC6D4ABD3F6B16405A3D97971ADF7E52FA55CFEA244C289BEA":  {
+                                                                             "doc_id":  "EVIDENCE_ROADMAP_MASTER.pdf",
+                                                                             "node_id":  "NODE-ROADMAP-A",
+                                                                             "links":  {
+                                                                                           "Primary":  "#",
+                                                                                           "Mirror":  "#"
+                                                                                       },
+                                                                             "deep_meta":  {
+                                                                                               "title":  "Roadmap Master",
+                                                                                               "created":  "2026-05-22",
+                                                                                               "author":  "A©tor"
+                                                                                           },
+                                                                             "status":  "MOCKED_FOR_UI"
+                                                                         }
 }
