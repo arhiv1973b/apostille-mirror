@@ -1,6 +1,6 @@
 /**
  * CASE-MACHERET Data Integration Module
- * Source: apostille_registry_working_5.signed.pdf
+ * Source: CAS-Registry (Metadata Driven)
  */
 const apostilleData = [
     { id: "1", code: "IMWM44AZGX6N6", case: "2013073817848", dateIssue: "04.01.2021", dateApostille: "18.01.2021", series: "000278", signedBy: "Топорец Ирина", position: "Подписант", department: "Минюст" },
@@ -24,7 +24,7 @@ function renderApostilleTable() {
             <td>${item.signedBy}</td>
             <td>${item.position}</td>
             <td>${item.department}</td>
-            <td><a href="https://github.com/arhiv1973b/apostille-legal-case/blob/main/docs/${item.code}.pdf" target="_blank">Download</a></td>
+            <td><a href="EVIDENCE_CATALOG.md#${item.code}" target="_blank">CAS-CONTEXT</a></td>
         </tr>`).join('');
 }
 document.addEventListener('DOMContentLoaded', renderApostilleTable);
