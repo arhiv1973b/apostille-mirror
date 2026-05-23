@@ -30,3 +30,9 @@ h1, h2, h3 { color: #c8a951; font-family: 'Times New Roman', serif; border-botto
 }
 .feed-entry { margin-bottom: 5px; border-bottom: 1px solid #1a1a2e; padding-bottom: 3px; }
 #sovereign-seal { margin-top: 10px; display: inline-block; }
+/* Deep Audit UI */
+.deep-meta-box { 
+    background: #0d1117; border-left: 2px solid #4ecdc4; 
+    padding: 10px; margin: 10px 0; font-family: 'Courier New', monospace; 
+    color: #8b949e; font-size: 0.85em; 
+}
