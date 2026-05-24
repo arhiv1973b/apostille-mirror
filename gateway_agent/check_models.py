@@ -3,13 +3,14 @@ import requests
 import json
 
 # Получаем ключ из среды или жестко заданный (удалил для безопасности в итоговом коде)
-API_KEY = "AIzaSyB7IN_3u9ffBf8pt60xy4DX1m6Zy8y1PKo"
+API_KEY = os.getenv("GOOGLE_GENERATIVE_AI_API_KEY", "")
 # Список доступных моделей для проверки
-LIST_URL = f"https://generativelanguage.googleapis.com/v1beta/models?key={API_KEY}"
+def get_list_url():
+    return f"https://generativelanguage.googleapis.com/v1beta/models?key={API_KEY}"
 
 def check():
     try:
-        resp = requests.get(LIST_URL).json()
+        resp = requests.get(get_list_url()).json()
         models = [m['name'] for m in resp.get('models', [])]
         return models
     except Exception as e:

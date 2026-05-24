@@ -2,7 +2,7 @@ import os, sys, requests, json, hashlib, time
 
 # Парадигма: A©tor Vertical Montage (Asynchronous Reality)
 LOCAL_MODEL = "qwen2.5:3b"
-API_KEY = "AIzaSyB7IN_3u9ffBf8pt60xy4DX1m6Zy8y1PKo"
+API_KEY = os.getenv("GOOGLE_GENERATIVE_AI_API_KEY", "")
 OLLAMA_URL = "http://host.docker.internal:11434/api/generate"
 EXPERIENCE_LOG = "/app/experience_weights.jsonl"
 
