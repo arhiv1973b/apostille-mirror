@@ -1,0 +1,13 @@
+{
+    "$schema":  "https://actor.schema/v1/pactum",
+    "meta":  {
+                 "caseId":  "CASE-MACHERET-1997-2026",
+                 "signer":  "A©tor",
+                 "status":  "active"
+             },
+    "chain_registry":  {
+                           "hash_algo":  "SHA-256",
+                           "superposition_vector":  "1f64ab8d5cdb0c1e096719514266e0f7a34244e3d8575b95d0b868f136046c51",
+                           "absence_of_choice_timestamp":  "2026-05-24T11:22:24Z"
+                       }
+}
