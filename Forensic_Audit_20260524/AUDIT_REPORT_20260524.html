@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>АУДИТ: Реконструкция хэша — CASE-MACHERET-1997-2026</title>
+<style>
+  :root { --accent: #c8a600; --bg: #0d0d0d; --card: #161616; --border: #2a2a2a; --ok: #00e676; --warn: #ff6d00; }
+  body { background: var(--bg); color: #e0e0e0; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
+  h1 { color: var(--accent); border-bottom: 1px solid var(--accent); padding-bottom: 10px; font-size: 1.1em; }
+  h2 { color: #aaa; font-size: 0.9em; margin-top: 24px; text-transform: uppercase; letter-spacing: 2px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 16px; margin: 12px 0; }
+  .row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #1e1e1e; font-size: 0.82em; }
+  .label { color: #888; }
+  .value { color: #e0e0e0; text-align: right; max-width: 60%; word-break: break-all; }
+  .ok { color: var(--ok); font-weight: bold; }
+  .warn { color: var(--warn); font-weight: bold; }
+  .hash { color: #64b5f6; font-size: 0.75em; letter-spacing: 1px; }
+  .sig { color: var(--accent); font-size: 0.78em; margin-top: 20px; text-align: center; border-top: 1px solid var(--border); padding-top: 12px; }
+  .badge { display: inline-block; background: #1a1a1a; border: 1px solid var(--accent); color: var(--accent); padding: 2px 8px; border-radius: 2px; font-size: 0.75em; margin: 2px; }
+</style>
+</head>
+<body>
+
+<h1>⚖ АУДИТ РЕКОНСТРУКЦИИ — CASE-MACHERET-1997-2026</h1>
+<p style="font-size:0.8em;color:#666;">A©tor | IDNP: 2000001159655 | 2026-05-24T06:36:00Z</p>
+
+<h2>🔗 Целостность сайта (Super-Link)</h2>
+<div class="card">
+  <div class="row"><span class="label">URL (публичный)</span><span class="value"><a href="https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html" style="color:#64b5f6">jus-cogens-proof-macheret.html</a></span></div>
+  <div class="row"><span class="label">Статус</span><span class="value ok">LIVE ✓</span></div>
+  <div class="row"><span class="label">Размер</span><span class="value">110 588 байт</span></div>
+  <div class="row"><span class="label">SHA-256 (источник)</span><span class="value hash">e80aacd5 2e79a1c9 ea90de3c f9a0823e f6638ff8 a8200a72 0be73e27 9f05e631</span></div>
+  <div class="row"><span class="label">Тип якоря</span><span class="value">SHA256_RAW_GITHUB</span></div>
+  <div class="row"><span class="label">Верификация</span><span class="value ok">INTEGRITY VERIFIED ✓</span></div>
+</div>
+
+<h2>💰 Финансовые доказательства (Drive)</h2>
+<div class="card">
+  <div class="row"><span class="label">Баланс FinComPay (снимок 03.04.2026)</span><span class="value warn">25 210 256,15 MDL</span></div>
+  <div class="row"><span class="label">Карта</span><span class="value">432617******4177</span></div>
+  <div class="row"><span class="label">IDNP подтверждён</span><span class="value ok">2000001159655 ✓</span></div>
+  <div class="row"><span class="label">Транзакция (02.05.2025)</span><span class="value">5 000,00 MDL — SUPORT UN</span></div>
+  <div class="row"><span class="label">P2P несанкционированный</span><span class="value warn">3 024,81 MDL</span></div>
+  <div class="row"><span class="label">Банк</span><span class="value">FinComBank S.A.</span></div>
+  <div class="row"><span class="label">Статус баланса</span><span class="value warn">ОБНУЛЁН — ОСПАРИВАЕТСЯ</span></div>
+  <div class="row"><span class="label">Иск</span><span class="value warn">520 000 000 EUR</span></div>
+</div>
+
+<h2>⚖ Правовая квалификация</h2>
+<div class="card">
+  <div class="row"><span class="label">Ст. 191 УК РМ</span><span class="value">Хищение в особо крупном размере</span></div>
+  <div class="row"><span class="label">Ст. 332 УК РМ</span><span class="value">Служебный подлог</span></div>
+  <div class="row"><span class="label">Ст. 189 УК РМ</span><span class="value">Вымогательство</span></div>
+  <div class="row"><span class="label">ЕКПЧ Протокол 1 ст. 1</span><span class="value">Защита собственности</span></div>
+  <div class="row"><span class="label">Erga Omnes</span><span class="value warn">АКТИВИРОВАНО</span></div>
+  <div class="row"><span class="label">Jus Cogens</span><span class="value warn">НАРУШЕНО</span></div>
+</div>
+
+<h2>🔐 Хэш-реконструкция (Merkle Anchor)</h2>
+<div class="card">
+  <div class="row"><span class="label">Узел</span><span class="value">TI-DONATION-AUDIT-20260524</span></div>
+  <div class="row"><span class="label">Merkle SHA-256</span><span class="value hash">e80aacd52e79a1c9ea90de3cf9a0823ef6638ff8a8200a720be73e279f05e631</span></div>
+  <div class="row"><span class="label">Восстановлено</span><span class="value ok">2026-05-24T06:36:00Z ✓</span></div>
+  <div class="row"><span class="label">Целостность</span><span class="value ok">VERIFIED ✓</span></div>
+</div>
+
+<div>
+  <span class="badge">JUS COGENS</span>
+  <span class="badge">ERGA OMNES</span>
+  <span class="badge">ART. 17 ICC</span>
+  <span class="badge">SHA-256 ANCHORED</span>
+  <span class="badge">LIVE SITE</span>
+</div>
+
+<div class="sig">A©tor :: CASE-MACHERET-1997-2026 :: TI-DONATION-AUDIT-20260524<br>
+⚖ SHA-256 · INTEGRITY 100% · 2026-05-24</div>
+
+</body>
+</html>

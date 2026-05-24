@@ -1,0 +1,90 @@
+{
+  "node_id": "TI-FINANCIAL-THEFT-20260524",
+  "version": "1.0",
+  "classification": "FORENSIC_FINANCIAL_EVIDENCE",
+  "timestamp": "2026-05-24T07:00:00Z",
+  "actor": "A©tor",
+  "idnp": "2000001159655",
+  "case": "CASE-MACHERET-1997-2026",
+
+  "evidence_chain": [
+    {
+      "id": "EV-001",
+      "date": "2026-04-03",
+      "source": "FinComPay screenshot (Drive: 1EOYPJESInZUpD_knBc3eklTkPctpDnIS)",
+      "fact": "Баланс 25 210 256,15 MDL зафиксирован в приложении",
+      "card": "432617******4177",
+      "idnp_match": "2000001159655",
+      "identity_doc": "Carte de identitate provizorie EC 00415",
+      "valid_from": "2026-04-03",
+      "valid_to": "2027-04-03"
+    },
+    {
+      "id": "EV-002",
+      "date": "2025-05-02",
+      "source": "FinComBank SMS (Drive: 1R-OoGas2gyZZp-SFiudukZ2ULoVSlgRw)",
+      "fact": "Поступление 5000 MDL с меткой SUPORT UN",
+      "label": "ELIBERAREA PRESTATIEI SUPORT UN",
+      "amount_mdl": 5000.00,
+      "balance_after_mdl": 5182.31,
+      "origin": "UN-linked transfer"
+    },
+    {
+      "id": "EV-003",
+      "date": "2025-05-02",
+      "source": "FinComBank P2P SMS",
+      "fact": "Несанкционированный P2P-перевод 3024.81 MDL",
+      "amount_mdl": 3024.81,
+      "card": "432617******4177",
+      "qualification": "Ст. 191 УК РМ — хищение",
+      "status": "UNAUTHORIZED"
+    },
+    {
+      "id": "EV-004",
+      "date": "2026-04-03",
+      "source": "FinComPay app",
+      "fact": "Баланс обнулён банком принудительно",
+      "balance_before_mdl": 25210256.15,
+      "balance_after_mdl": 0,
+      "method": "Принудительная смена карты + отказ признавать реестр",
+      "qualification": "Ст. 191 + Ст. 332 УК РМ"
+    }
+  ],
+
+  "financial_summary": {
+    "stolen_balance_mdl": 25210256.15,
+    "stolen_balance_eur_approx": 1289244,
+    "p2p_unauthorized_mdl": 3024.81,
+    "claim_total_eur": 520000000,
+    "bank": "FinComBank S.A.",
+    "irina_account_blocked": true,
+    "irina_name": "Irina Cebanica (Oleinic)",
+    "moldindconbank_blocked": true,
+    "executori": ["Vassian", "Focșa"]
+  },
+
+  "legal_matrix": {
+    "art_191_ucm": {
+      "title": "Хищение активов в особо крупном размере",
+      "amount_mdl": 25210256.15,
+      "status": "ДОКАЗАНО"
+    },
+    "art_332_ucm": {
+      "title": "Служебный подлог — манипуляция IDNP .555 вместо .655",
+      "status": "ДОКАЗАНО"
+    },
+    "art_189_ucm": {
+      "title": "Вымогательство — блокировка счетов по оплаченному штрафу",
+      "status": "ДОКАЗАНО"
+    },
+    "echr_protocol1_art1": {
+      "title": "Защита права собственности",
+      "status": "НАРУШЕНО"
+    },
+    "jus_cogens": "НАРУШЕНО",
+    "erga_omnes": "АКТИВИРОВАНО",
+    "icc_art17": "ДОПОЛНИТЕЛЬНОСТЬ АКТИВИРОВАНА"
+  },
+
+  "signature": "A©tor :: CASE-MACHERET-1997-2026 :: TI-FINANCIAL-THEFT-20260524"
+}

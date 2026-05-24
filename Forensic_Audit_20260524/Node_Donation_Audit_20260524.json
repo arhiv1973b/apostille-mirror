@@ -1,0 +1,52 @@
+{
+  "node_id": "TI-DONATION-AUDIT-20260524",
+  "version": "1.0",
+  "classification": "FORENSIC_FINANCIAL_AUDIT",
+  "timestamp": "2026-05-24T06:36:00Z",
+  "actor": "A©tor",
+  "idnp": "2000001159655",
+  "case": "CASE-MACHERET-1997-2026",
+
+  "site_integrity": {
+    "page_url": "https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html",
+    "source_raw": "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/jus-cogens-proof-macheret.html",
+    "sha256": "e80aacd52e79a1c9ea90de3cf9a0823ef6638ff8a8200a720be73e279f05e631",
+    "size_bytes": 110588,
+    "status": "LIVE",
+    "content_verified": true,
+    "audit_timestamp": "2026-05-24T06:36:00Z"
+  },
+
+  "financial_evidence": {
+    "fincompay_balance_mdl": 25210256.15,
+    "fincompay_snapshot_date": "2026-04-03",
+    "card_id": "432617******4177",
+    "idnp_confirmed": "2000001159655",
+    "transaction_date": "2025-05-02",
+    "transaction_label": "ELIBERAREA PRESTATIEI SUPORT UN",
+    "transaction_amount_mdl": 5000.00,
+    "p2p_unauthorized_mdl": 3024.81,
+    "claimed_theft_eur": 520000000,
+    "bank": "FinComBank S.A.",
+    "status": "BALANCE_ZEROED_DISPUTED"
+  },
+
+  "legal_qualification": {
+    "art_191_ucm": "Хищение активов в особо крупном размере",
+    "art_332_ucm": "Служебный подлог",
+    "art_189_ucm": "Вымогательство",
+    "echr_art_1_protocol_1": "Защита собственности",
+    "erga_omnes": "АКТИВИРОВАНО",
+    "jus_cogens": "НАРУШЕНО"
+  },
+
+  "hash_reconstruction": {
+    "super_link_canonical": "https://arhiv1973b.github.io/apostille-mirror/jus-cogens-proof-macheret.html",
+    "merkle_anchor_sha256": "e80aacd52e79a1c9ea90de3cf9a0823ef6638ff8a8200a720be73e279f05e631",
+    "anchor_type": "SHA256_RAW_GITHUB",
+    "restored_at": "2026-05-24T06:36:00Z",
+    "integrity": "VERIFIED"
+  },
+
+  "signature": "A©tor :: CASE-MACHERET-1997-2026 :: TI-DONATION-AUDIT-20260524"
+}
