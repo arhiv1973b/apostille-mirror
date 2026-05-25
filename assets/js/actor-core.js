@@ -1,4 +1,4 @@
-﻿/**
+/**
  * A©t0r Forensic Core v15.5
  * Deep Content Audit & Metadata Explorer
  */
