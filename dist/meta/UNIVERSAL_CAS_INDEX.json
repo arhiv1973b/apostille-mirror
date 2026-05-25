@@ -1,15 +1,15 @@
 ﻿{
-    "F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2":  {
-                                                                             "doc_id":  "DOSARUL21-30 (1).подписан.pdf",
-                                                                             "node_id":  "NODE-F16B1BE1",
-                                                                             "timestamp":  "2026-05-23T16:00:00Z",
-                                                                             "status":  "RECLAIMED_FROM_CANCELED",
+    "50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9":  {
+                                                                             "doc_id":  "PH-1997-DIV-RECT",
+                                                                             "node_id":  "TI-012",
                                                                              "links":  {
-                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2",
-                                                                                           "Mirror":  "gdrive_actor:EvidenceVault/Static/dist/blobs/F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2"
+                                                                                           "API":  "actor://resolve/50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9",
+                                                                                           "Mirror":  "https://drive.google.com/open?id=1fjJuz6oC_d9OEv3dcSNDclfO9mK1jkBy",
+                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9",
+                                                                                           "Forensic":  "sha256:50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9"
                                                                                        },
-                                                                             "context_name":  "DOSARUL21-30_signed",
-                                                                             "type_hint":  "FORENSIC_DOC"
+                                                                             "status":  "CAS_OPTIMIZED",
+                                                                             "timestamp":  "2026-05-25T03:11:24Z"
                                                                          },
     "8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576":  {
                                                                              "doc_id":  "DOSARUL21-30_1.pdf",
@@ -22,5 +22,17 @@
                                                                                        },
                                                                              "context_name":  "DOSARUL21-30_raw",
                                                                              "type_hint":  "RAW_DATA"
+                                                                         },
+    "F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2":  {
+                                                                             "doc_id":  "DOSARUL21-30 (1).подписан.pdf",
+                                                                             "node_id":  "NODE-F16B1BE1",
+                                                                             "timestamp":  "2026-05-23T16:00:00Z",
+                                                                             "status":  "RECLAIMED_FROM_CANCELED",
+                                                                             "links":  {
+                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2",
+                                                                                           "Mirror":  "gdrive_actor:EvidenceVault/Static/dist/blobs/F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2"
+                                                                                       },
+                                                                             "context_name":  "DOSARUL21-30_signed",
+                                                                             "type_hint":  "FORENSIC_DOC"
                                                                          }
 }
