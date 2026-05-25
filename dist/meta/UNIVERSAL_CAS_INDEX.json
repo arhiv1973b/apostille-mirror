@@ -1,26 +1,4 @@
 ﻿{
-    "8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576":  {
-                                                                             "doc_id":  "DOSARUL21-30_1.pdf",
-                                                                             "node_id":  "NODE-8574FF5F",
-                                                                             "timestamp":  "2026-05-23T16:00:00Z",
-                                                                             "status":  "RECLAIMED_FROM_CANCELED",
-                                                                             "links":  {
-                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576",
-                                                                                           "Mirror":  "gdrive_actor:EvidenceVault/Static/dist/blobs/8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576"
-                                                                                       },
-                                                                             "context_name":  "DOSARUL21-30_raw",
-                                                                             "type_hint":  "RAW_DATA"
-                                                                         },
-    "50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9":  {
-                                                                             "doc_id":  "PH-1997-DIV-RECT",
-                                                                             "node_id":  "TI-012",
-                                                                             "links":  {
-                                                                                           "Forensic":  "sha256:50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9",
-                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9.html"
-                                                                                       },
-                                                                             "status":  "RESONANCE_SEALED",
-                                                                             "timestamp":  "2026-05-25T03:30:05Z"
-                                                                         },
     "F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2":  {
                                                                              "doc_id":  "DOSARUL21-30 (1).подписан.pdf",
                                                                              "node_id":  "NODE-F16B1BE1",
@@ -32,5 +10,27 @@
                                                                                        },
                                                                              "context_name":  "DOSARUL21-30_signed",
                                                                              "type_hint":  "FORENSIC_DOC"
+                                                                         },
+    "50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9":  {
+                                                                             "doc_id":  "PH-1997-DIV-RECT",
+                                                                             "node_id":  "TI-012",
+                                                                             "links":  {
+                                                                                           "Forensic":  "sha256:50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9",
+                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9.html"
+                                                                                       },
+                                                                             "status":  "RESONANCE_SEALED",
+                                                                             "timestamp":  "2026-05-25T03:32:52Z"
+                                                                         },
+    "8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576":  {
+                                                                             "doc_id":  "DOSARUL21-30_1.pdf",
+                                                                             "node_id":  "NODE-8574FF5F",
+                                                                             "timestamp":  "2026-05-23T16:00:00Z",
+                                                                             "status":  "RECLAIMED_FROM_CANCELED",
+                                                                             "links":  {
+                                                                                           "Primary":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576",
+                                                                                           "Mirror":  "gdrive_actor:EvidenceVault/Static/dist/blobs/8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576"
+                                                                                       },
+                                                                             "context_name":  "DOSARUL21-30_raw",
+                                                                             "type_hint":  "RAW_DATA"
                                                                          }
 }
