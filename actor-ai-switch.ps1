@@ -21,8 +21,8 @@ $MODELS = [ordered]@{
     "gemini-flash"   = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 2.5 Flash";       ID="gemini-2.5-flash" }
     "gemini-pro"     = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 2.5 Pro";         ID="gemini-2.5-pro" }
     "gemini-3-flash" = @{ Provider="gemini";     EnvKey="GOOGLE_GENERATIVE_AI_API_KEY"; Name="Gemini 3 Flash Preview"; ID="gemini-3-flash-preview" }
-    "claude-sonnet"  = @{ Provider="anthropic";  EnvKey="ANTHROPIC_API_KEY";            Name="Claude Sonnet 4.6";      ID="claude-sonnet-4-6" }
-    "claude-haiku"   = @{ Provider="anthropic";  EnvKey="ANTHROPIC_API_KEY";            Name="Claude Haiku 4.5";       ID="claude-haiku-4-5-20251001" }
+    #    "claude-sonnet"  = @{ Provider="anthropic";  EnvKey="ANTHROPIC_API_KEY";            Name="Claude Sonnet 4.6";      ID="claude-3-5-sonnet-20241022" }
+    #    "claude-haiku"   = @{ Provider="anthropic";  EnvKey="ANTHROPIC_API_KEY";            Name="Claude Haiku 4.5";       ID="claude-3-5-haiku-20241022" }
     "gpt-4o"         = @{ Provider="openai";     EnvKey="OPENAI_API_KEY";               Name="GPT-4o";                 ID="gpt-4o" }
     "gpt-4o-mini"    = @{ Provider="openai";     EnvKey="OPENAI_API_KEY";               Name="GPT-4o Mini";            ID="gpt-4o-mini" }
     "grok"           = @{ Provider="grok";       EnvKey="GROK_API_KEY";                 Name="Grok (xAI)";             ID="grok-3-mini" }
