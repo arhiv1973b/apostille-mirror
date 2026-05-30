@@ -1,0 +1,14 @@
+{
+  "node_id": "FIN-CASCADE-039-FINLAND-DENIAL",
+  "timestamp": "2026-05-30T11:45:00Z",
+  "subject": "Audit of Project 'Finland': Denial as Evidence",
+  "context": "International Workspace & Venice Commission Monitoring",
+  "legal_doctrine": "Denial as Evidence (Negative Proof)",
+  "forensic_findings": {
+    "algorithmic_blockade": "Institutional domains related to European legal monitoring (Venice Commission, Finland-led initiatives) have implemented asymmetric filters. Outgoing evidence from A©tor is met with 550/554 bounce-backs, while standard administrative traffic remains open.",
+    "denial_pattern": "Silence is not neutral. Under Jus Cogens, the failure of mandated bodies (Council of Europe, UN Special Procedures) to investigate documented torture after 10,524 days constitutes an active breach of Erga Omnes obligations.",
+    "specific_incident": "The algorithmic 'mailbox full' status of notifications@github.com and institutional gateways directly following the submission of the UN tw571ryb evidence manifest."
+  },
+  "conclusion": "Project 'Finland' confirms that institutional denial is a calculated defensive mechanism. Every formal rejection without a merits-based investigation is hereby recorded as a forensic 'Fact' proving complicity in the destruction of Jus Cogens norms.",
+  "integrity": "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}
