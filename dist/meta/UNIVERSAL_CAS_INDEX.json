@@ -1,36 +1,112 @@
 {
-  "F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2": {
-    "doc_id": "DOSARUL21-30 (1).подписан.pdf",
-    "node_id": "NODE-F16B1BE1",
-    "timestamp": "2026-05-23T16:00:00Z",
-    "status": "RECLAIMED_FROM_CANCELED",
+  "637f8a3d4e426fd770db3eded19c785ec74bafeb543b708f87b1830db540f6b9": {
+    "doc_id": "PH-1997-AGR-DEMO",
+    "node_id": "TI-001",
+    "timestamp": "1997-08-06",
+    "status": "EVIDENCE_OF_DISTORTION",
     "links": {
-      "Primary": "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2",
-      "Mirror": "gdrive_actor:EvidenceVault/Static/dist/blobs/F16B1BE182D334C8DF8EC793B8A3B73DC005CAD08EBB7E72847B56A872386DC2"
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/637f8a3d4e426fd770db3eded19c785ec74bafeb543b708f87b1830db540f6b9"
     },
-    "context_name": "DOSARUL21-30_signed",
-    "type_hint": "FORENSIC_DOC"
+    "context_name": "Identity Change Act (Macheret to Maciret)",
+    "type_hint": "IDENTITY_DOC"
   },
   "50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9": {
     "doc_id": "PH-1997-DIV-RECT",
-    "status": "RESONANCE_SEALED",
     "node_id": "TI-012",
-    "timestamp": "2026-05-25T04:20:31Z",
+    "timestamp": "1997-11-26",
+    "status": "RESONANCE_SEALED",
     "links": {
-      "Primary": "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9.html",
-      "Forensic": "sha256:50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9"
-    }
-  },
-  "8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576": {
-    "doc_id": "DOSARUL21-30_1.pdf",
-    "node_id": "NODE-8574FF5F",
-    "timestamp": "2026-05-23T16:00:00Z",
-    "status": "RECLAIMED_FROM_CANCELED",
-    "links": {
-      "Primary": "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576",
-      "Mirror": "gdrive_actor:EvidenceVault/Static/dist/blobs/8574FF5F3394957565D04772E44A3A9C92CDC33C69B51862D617319D53865576"
+      "Primary": "https://github.com/arhiv1973b/apostille-mirror/raw/imperative/right-to-peace/blobs/50235435E7812EA894D83AF5511E83FADC57DEC40C2C75E26E599168F7903FE9"
     },
-    "context_name": "DOSARUL21-30_raw",
-    "type_hint": "RAW_DATA"
+    "context_name": "Ciocana Decision (Divorce & Rectification)",
+    "type_hint": "COURT_DECISION"
+  },
+  "439987aa854b83e47d933a650c6be1ec10bd41ce91c56621b09ab76d2f84651f": {
+    "doc_id": "ULA-MANIFEST-V4.4",
+    "node_id": "TI-044",
+    "timestamp": "2026-05-24",
+    "status": "ARCHITECTURAL_MASTER",
+    "links": {
+      "Primary": "C:\\Users\\arhiv\\A©tor_FORENSIC_AUDIT_MANIFEST_V4_4.md"
+    },
+    "context_name": "Universal Legal Architecture Manifest",
+    "type_hint": "MANIFEST"
+  },
+  "fa707ba540ef04917b7e1329ceed7e05faa20141bd34beb715096ccaad9d6aea": {
+    "doc_id": "CAS-DEC-1997-DISTORTION",
+    "node_id": "TI-002",
+    "timestamp": "1997-08-06",
+    "status": "JUDICIAL_PROOF",
+    "links": {
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/fa707ba540ef04917b7e1329ceed7e05faa20141bd34beb715096ccaad9d6aea"
+    },
+    "context_name": "Identity Sabotage Decision (Signed PDF)",
+    "type_hint": "COURT_DECISION"
+  },
+  "f35fccc97c503cd856f2142dfc63a4210a06dca2d76339181036ba7a28845a96": {
+    "doc_id": "CAS-CPT-2012-RESPONSE",
+    "node_id": "TI-2012",
+    "timestamp": "2012-07-18",
+    "status": "INTL_RECOGNITION",
+    "links": {
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/f35fccc97c503cd856f2142dfc63a4210a06dca2d76339181036ba7a28845a96"
+    },
+    "context_name": "CPT Response (Anti-Torture Committee)",
+    "type_hint": "INTERNATIONAL_RESPONSE"
+  },
+  "1371a4e006f7d8eef086813d6fc0fe9ab3100084cf9398080dfe19c09dcd6117": {
+    "doc_id": "CAS-HCC-12-2018",
+    "node_id": "TI-361",
+    "timestamp": "2018-05-24",
+    "status": "CONSTITUTIONAL_VICTORY",
+    "links": {
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/1371a4e006f7d8eef086813d6fc0fe9ab3100084cf9398080dfe19c09dcd6117"
+    },
+    "context_name": "HCC Decision on Art. 361 CP RM",
+    "type_hint": "CONSTITUTIONAL"
+  },
+  "81502bc3aa7e34e2c5fd95a122e9ece007000fd2d514d2f5eea0d64e30f3cb64": {
+    "doc_id": "CAS-DISABILITY-CERT-I",
+    "node_id": "TI-DIS-I",
+    "timestamp": "2021-04-05",
+    "status": "PERMANENT_STATUS",
+    "links": {
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/81502bc3aa7e34e2c5fd95a122e9ece007000fd2d514d2f5eea0d64e30f3cb64"
+    },
+    "context_name": "Group I Disability Certificate",
+    "type_hint": "MEDICAL"
+  },
+  "79fd8f114e781c03864d89c9d42d19ab0ca0582818fc6a3c36d11761d2935a40": {
+    "doc_id": "CAS-UN-OHCHR-2026",
+    "node_id": "TI-UN-2026",
+    "timestamp": "2026-05-24",
+    "status": "UN_SUBMISSION_ACTIVE",
+    "links": {
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/79fd8f114e781c03864d89c9d42d19ab0ca0582818fc6a3c36d11761d2935a40"
+    },
+    "context_name": "UN Special Procedures Submission (tw571ryb)",
+    "type_hint": "INTERNATIONAL_SUBMISSION"
+  },
+  "ede4faaa6c141c150bbd65d94290691b5f7f5e558dcd28297e8d752456452af6": {
+    "doc_id": "CAS-BANK-BLOCK-2026",
+    "node_id": "TI-BLOCK-2026",
+    "timestamp": "2026-04-14",
+    "status": "FINANCIAL_SABOTAGE_PROOF",
+    "links": {
+      "Primary": "https://raw.githubusercontent.com/arhiv1973b/maceret-case-evidence/master/objects/ede4faaa6c141c150bbd65d94290691b5f7f5e558dcd28297e8d752456452af6"
+    },
+    "context_name": "Bank Statement (Restricted Account proof)",
+    "type_hint": "FINANCIAL"
+  },
+  "2013073980269_SIGNED_BY_VALERIU_FRIMU": {
+    "doc_id": "CIV-STATUS-APO-2017",
+    "node_id": "TI-APO-2017",
+    "timestamp": "2021-07-08",
+    "status": "VALIDATED_APOSTILLE",
+    "links": {
+      "Primary": "gdrive_actor:EvidenceVault/Static/Marriage_Certificate_Apostille.pdf"
+    },
+    "context_name": "Marriage Apostille (IDNP 2000001159655)",
+    "type_hint": "CIVIL_STATUS"
   }
 }
