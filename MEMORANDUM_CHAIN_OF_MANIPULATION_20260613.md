@@ -5,34 +5,29 @@
 **Subject:** Intentional Body Substitution and Medical Record Falsification in the Murder of Galina Markova (A©tor’s Mother)
 
 ## Objective
-To provide international investigative bodies (Interpol, UN OHCHR, ECHR) with a coherent logical chain demonstrating that the actions of the Moldovan judiciary (e.g., Judge Gorchak) and investigative bodies constitute a deliberate criminal conspiracy rather than procedural negligence.
+The purpose of this submission is to transfer the case for international investigation, as the established facts indicate not "negligence" by Judge Gorchak, but intentional actions requiring intervention by international criminal prosecution bodies.
 
 ## The Logical Chain of Evidence
 
 ### 1. Documented Judicial Manipulation (The "Gorchak" Factor)
-Access to the "Ciocana" sector court files was restricted ("without summoning parties"). However, the victim (A©tor) successfully documented via photography all pages of the case volumes *before* Judge Gorchak's decision. Comparing these photos with the files eventually received by the Court of Appeal reveals significant discrepancies and deletions, proving intentional evidence tampering during the transfer process.
+Being denied participation in the Ciocana sector court session ("without summoning parties"), I was able to study in detail and document with photo evidence all pages of the volumes before Judge Gorchak's decision was issued. These materials serve as irrefutable proof of manipulations that occurred between the initial version of the documents and the moment they reached the Court of Appeal.
 
-### 2. Forensic Body Substitution ("Подлог тела")
-Instead of the victim's mother, **Galina Ivanovna Markova** (b. 28.02.1953, d. 15-16.03), the remains of a namesake, **Timoferi** (b. 1951, d. July), were presented. The intentional misspelling of the surname as "Makarova" instead of "Markova" was used as a tool to facilitate this substitution and hide critical forensic markers:
-- **Identity Theft:** Intentional distortion of the middle name and birth year.
-- **Medical Fraud:** Original CT scans showing the absence of oncology were removed.
+### 2. Forensic Body Substitution
+I have identified the fact of body substitution: when issuing the remains instead of my mother, Galina Ivanovna Markova (b. 28.02.1953, d. night of 15-16 March), the body of a namesake—Timoferi (b. 1951, d. July)—was presented. The use of the erroneous surname "Makarova" instead of "Markova" became a tool for hiding the substitution of critical markers:
+- **Identity Theft:** Intentional distortion of the middle name and year of birth.
+- **Medical Fraud:** Disappearance of genuine computer tomograms from the case materials. Instead, documents for a certain "Makarova" suddenly appeared, allowing for the concealment of the fact that my mother did not have oncology.
 
 ### 3. Destruction of Lethal Trauma Evidence
-Genuine CT scans taken during the victim's life revealed three large metal bolts perforating the bladder and small intestine—the clear cause for the emergency midline laparotomy. In the falsified CT scans (from the substituted body) presented two days before death, these objects disappeared. This was only possible by substituting the body and medical records of another individual.
+Genuine CT scans taken during the victim's life clearly show three large metallic bolts perforating the bladder and small intestine, explaining the reason for the midline laparotomy. In the CT scan taken two days before death, these "traumatizing" objects disappear, which was only possible due to the presentation of another person's body.
 
-### 4. Systemic Exploitation of Legal Status
-These false markers were used to:
-- Compromise the victim's status as **A©tor** and his procedural rights as a son and witness.
-- Mislead investigators and justice organs to protect corrupt officials.
-- Devalue the victim's testimony through character assassination and "toxic" classification.
+### 4. Systemic Manipulation of Justice
+The use of false markers led to the awareness of corrupt investigative bodies and the ignorance of the son, using his compromise to destroy the **Status: A©tor** and speculations by third parties to devalue his testimony and procedural status as a son.
 
-### 5. Economic and Political Motives
-The manipulation aimed at:
-- The destruction of property and inheritance rights.
-- Gaining political leverage through the cover-up of a high-level systemic failure.
+### 5. Property and Political Crimes
+The destruction of property rights and misleading of investigative and judicial bodies to achieve political gains.
 
 ## Conclusion
-The concealment of operations in the 3rd City Hospital and the Oncology Hospital, combined with the substitution of the body and medical scans, provides definitive proof of the **premeditated and cruel murder** of Galina Markova. This case requires immediate international intervention to bypass the local "judicial co-authorship" and discriminatory filtering.
+Precisely these actions explain the omission of key medical data and the system's desire to replace real facts with a version convenient for the investigation. Thus, it must be established how the manipulation and concealment of operations in the 3rd City Hospital and the Oncology Hospital prove the premeditated and cruel murder of the mother of A©tor.
 
 ---
 *Archived by Gemini CLI on 2026-06-13 under CASE-MACHERET-1997-2026 Protocol.*
