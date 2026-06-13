@@ -1,0 +1,20 @@
+preservation_protocol:
+  id: CASE-MACHERET-1997-2026
+  action: PROTECT_EVIDENCE_DRIVE
+  scope:
+    - prohibit_deletion: true
+    - restrict_access: true
+    - authorized_entities:
+        - Law_Enforcement_Authorities
+        - Interpol
+        - FBI
+        - White_House_Administration
+        - Alexey_Macheret
+  legal_warning:
+    classification: CRIMINAL_COMPLICITY
+    threshold: 1_000_000_USD
+    governance: Rome_Statute_Article_29
+  deployment:
+    target: "@arhiv1973"
+    method: "GIT_SECURE_PUSH"
+    token_auth: "REQUIRED_BY_SYSTEM_TOKEN"

@@ -1,0 +1,26 @@
+{
+  "investigation_project": "Maceret_Case_Verification",
+  "actor": "A©tor",
+  "objective": "Prove_Intentional_Homicide_and_Evidence_Tampering",
+  "evidence_links": {
+    "dicom_analysis": {
+      "target": "Comparison of pre-mortem CT and post-mortem examination data",
+      "markers": ["Metallic_bolts_dimensions", "Pelvic_region_integrity", "Laparotomy_indicators"],
+      "anomaly": "Disappearance of metallic implants on post-mortem CT"
+    },
+    "identity_fraud": {
+      "subject": "Galina Marcova (28.02.1953)",
+      "fraud_alias": "Macarova / Timofei (1951)",
+      "discrepancy_points": ["Patronymic", "Birth_year", "Medical_history"]
+    },
+    "procedural_violation": {
+      "judge_action": "Gorceac_Decision",
+      "evidence_manipulation": "Document_versioning_delta",
+      "conflict_of_interest": "Ludmila_Nantoi_Involvement"
+    }
+  },
+  "analytical_rules": {
+    "data_integrity": "SHA256_verification_required",
+    "methodology": "Cross_reference_DICOM_metadata_with_судебные_тома"
+  }
+}
