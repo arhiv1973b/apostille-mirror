@@ -1,0 +1,13 @@
+{
+    "AuditTimestamp": "2026-06-13T20:43:27.733606",
+    "TotalFilesAnalyzed": 921,
+    "AnomaliesDetected": 0,
+    "PatientNameConsistenty": [
+        "Marcova^Galina",
+        "Marcova^Galina^ch colorectal"
+    ],
+    "DateRange": [
+        "20220109",
+        "20220314"
+    ]
+}

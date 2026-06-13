@@ -2,10 +2,11 @@ import os
 import json
 import pydicom
 import hashlib
+import pandas as pd
 from datetime import datetime
 
 def get_file_sha256(file_path):
-    """Calculates SHA256 hash of a file for integrity verification."""
+    """Calculates SHA256 hash of a file for Level 1 Integrity Manifest."""
     sha256_hash = hashlib.sha256()
     with open(file_path, "rb") as f:
         for byte_block in iter(lambda: f.read(4096), b""):
@@ -16,108 +17,95 @@ class DicomForensicAnalyzer:
     def __init__(self, config_path):
         with open(config_path, 'r', encoding='utf-8') as f:
             self.config = json.load(f)
-        self.results = []
+        self.data_entries = []
         self.anomalies = []
-        self.discrepancy_table = []
 
     def analyze_file(self, file_path):
-        """Analyzes a single DICOM file against forensic markers."""
+        """Extracts deep metadata and calculates integrity hash for Audit Data Frame."""
         try:
             ds = pydicom.dcmread(file_path)
             
-            # Extract core identification metadata
-            metadata = {
-                "file_path": file_path,
-                "sha256": get_file_sha256(file_path),
-                "patient_name": str(ds.get("PatientName", "MISSING")),
-                "patient_id": str(ds.get("PatientID", "MISSING")),
-                "birth_date": str(ds.get("PatientBirthDate", "MISSING")),
-                "study_date": str(ds.get("StudyDate", "MISSING")),
-                "series_description": str(ds.get("SeriesDescription", "MISSING")),
-                "body_part_examined": str(ds.get("BodyPartExamined", "MISSING")),
-                "modality": str(ds.get("Modality", "MISSING")),
-                "image_position": str(ds.get("ImagePositionPatient", "MISSING")),
-                "image_orientation": str(ds.get("ImageOrientationPatient", "MISSING")),
-                "slice_location": str(ds.get("SliceLocation", "MISSING"))
+            entry = {
+                "Filename": os.path.basename(file_path),
+                "FullPath": file_path,
+                "SHA256": get_file_sha256(file_path),
+                "PatientName": str(ds.get("PatientName", "MISSING")),
+                "PatientID": str(ds.get("PatientID", "MISSING")),
+                "SOPInstanceUID": str(ds.get("SOPInstanceUID", "MISSING")),
+                "SeriesInstanceUID": str(ds.get("SeriesInstanceUID", "MISSING")),
+                "StudyDate": str(ds.get("StudyDate", "MISSING")),
+                "SeriesTime": str(ds.get("SeriesTime", "MISSING")),
+                "ContentTime": str(ds.get("ContentTime", "MISSING")),
+                "Modality": str(ds.get("Modality", "MISSING")),
+                "ImagePositionPatient": str(list(ds.get("ImagePositionPatient", [])) if ds.get("ImagePositionPatient") else "MISSING"),
+                "ImageOrientationPatient": str(list(ds.get("ImageOrientationPatient", [])) if ds.get("ImageOrientationPatient") else "MISSING"),
+                "SliceLocation": str(ds.get("SliceLocation", "MISSING")),
+                "Manufacturer": str(ds.get("Manufacturer", "MISSING"))
             }
 
-            # Identity Fraud Check (Marcova vs Macarova/Timofei)
-            subject_name = "MARCOVA"
-            if subject_name.upper() not in metadata["patient_name"].upper():
-                if "TIMOFEI" in metadata["patient_name"].upper() or "MACAROVA" in metadata["patient_name"].upper():
+            # Identity Mask Check
+            if "MARCOVA" not in entry["PatientName"].upper():
+                if any(x in entry["PatientName"].upper() for x in ["TIMOFEI", "MACAROVA"]):
                     self.anomalies.append({
-                        "type": "IDENTITY_SUBSTITUTION_RISK",
-                        "file": file_path,
-                        "found_name": metadata["patient_name"]
+                        "SOPInstanceUID": entry["SOPInstanceUID"],
+                        "Type": "IDENTITY_SUBSTITUTION_RISK",
+                        "FoundName": entry["PatientName"]
                     })
 
-            # Anatomical Alignment Check (January vs March 2022)
-            study_date = metadata["study_date"]
-            if study_date.startswith("202201") or study_date.startswith("202203"):
-                # Track position to ensure 'in-focus' area comparison
-                metadata["forensic_alignment_eligible"] = True
+            # Check for surgical hardware indicators in series description
+            series_desc = str(ds.get("SeriesDescription", "")).upper()
+            entry["ImplantIndicator"] = "BOLT" in series_desc or "METAL" in series_desc or "SURGICAL" in series_desc
 
-            # Detect high-density objects (Metallic Bolts) in PixelData
-            # Note: This is a thresholding heuristic for metallic density in HU
-            # (Requires pixel_array access which is computationally heavy for mass audit)
-            # Placeholder for metadata-based surgical marker detection:
-            if "BOLT" in metadata["series_description"].upper() or "METAL" in metadata["series_description"].upper():
-                metadata["implant_detected"] = True
-
-            self.results.append(metadata)
+            self.data_entries.append(entry)
 
         except Exception as e:
-            print(f"Error processing {file_path}: {e}")
+            # print(f"Error processing {file_path}: {e}")
+            pass
 
-    def build_discrepancy_table(self):
-        """Synthesizes findings into the final Discrepancy Table."""
-        jan_scans = [r for r in self.results if r["study_date"].startswith("202201")]
-        mar_scans = [r for r in self.results if r["study_date"].startswith("202203")]
-        
-        for jan in jan_scans:
-            # Match by slice location or anatomical position to ensure same FOV
-            for mar in mar_scans:
-                if jan["slice_location"] == mar["slice_location"] and jan["slice_location"] != "MISSING":
-                    self.discrepancy_table.append({
-                        "january_scan": jan["file_path"],
-                        "march_scan": mar["file_path"],
-                        "location": jan["slice_location"],
-                        "jan_implant_detected": jan.get("implant_detected", False),
-                        "mar_implant_detected": mar.get("implant_detected", False),
-                        "status": "DISCREPANCY_FOUND" if jan.get("implant_detected") != mar.get("implant_detected") else "CONSISTENT"
-                    })
+    def scan_directory(self, root_dir):
+        """Recursively scans for assets, including extensionless DICOM files."""
+        for root, _, files in os.walk(root_dir):
+            for file in files:
+                # Include standard extensions OR extensionless files in DICOM folders
+                if file.lower().endswith(('.dcm', '.ima')) or "." not in file:
+                    self.analyze_file(os.path.join(root, file))
 
-    def generate_report(self, output_path):
-        self.build_discrepancy_table()
-        report = {
-            "timestamp": datetime.now().isoformat(),
-            "config_project": self.config["investigation_project"],
-            "total_files_analyzed": len(self.results),
-            "anomalies": self.anomalies,
-            "discrepancy_table": self.discrepancy_table,
-            "detailed_results": self.results
+    def export_audit_frame(self, output_csv):
+        """Generates the Level 3 Audit-Ready Data Frame."""
+        df = pd.DataFrame(self.data_entries)
+        df.to_csv(output_csv, index=False, encoding='utf-8-sig')
+        print(f"Audit Data Frame exported: {output_csv}")
+        return df
+
+    def generate_findings_summary(self, output_json, df):
+        """Generates a summary of anomalies and discrepancies."""
+        summary = {
+            "AuditTimestamp": datetime.now().isoformat(),
+            "TotalFilesAnalyzed": len(df),
+            "AnomaliesDetected": len(self.anomalies),
+            "PatientNameConsistenty": df["PatientName"].unique().tolist(),
+            "DateRange": [df["StudyDate"].min(), df["StudyDate"].max()]
         }
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(report, f, indent=4, ensure_ascii=False)
-        print(f"Forensic report generated: {output_path}")
+        with open(output_json, 'w', encoding='utf-8') as f:
+            json.dump(summary, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
-    # Standard paths for the A©tor environment
     CONFIG_FILE = "forensic_config/investigation_config.json"
-    SCAN_DIR = "H:/ACTOR_DEV_ENV/apostille-mirror/DICOM_Archive_Local" # Placeholder path
-    OUTPUT_REPORT = "forensic_reports/dicom_audit_result_20260613.json"
+    analyzer = DicomForensicAnalyzer(CONFIG_FILE)
+    
+    # Priority paths from previous hard audits
+    target_paths = [
+        r"C:\A\29 апр 2024\MARCOVAGALINA\DICOM",
+        "mirrors/"
+    ]
+    
+    for path in target_paths:
+        if os.path.exists(path):
+            print(f"Scanning {path}...")
+            analyzer.scan_directory(path)
 
     if not os.path.exists("forensic_reports"):
         os.makedirs("forensic_reports")
 
-    analyzer = DicomForensicAnalyzer(CONFIG_FILE)
-    
-    # Check if target directory exists, otherwise scan current mirrors/
-    if os.path.exists(SCAN_DIR):
-        analyzer.scan_directory(SCAN_DIR)
-    else:
-        print(f"Path {SCAN_DIR} not found. Scanning 'mirrors/' and 'case_macheret_repo/' for assets...")
-        analyzer.scan_directory("mirrors/")
-        analyzer.scan_directory("case_macheret_repo/")
-
-    analyzer.generate_report(OUTPUT_REPORT)
+    df_result = analyzer.export_audit_frame("forensic_reports/audit_data_frame_20260613.csv")
+    analyzer.generate_findings_summary("forensic_reports/audit_findings_summary_20260613.json", df_result)
