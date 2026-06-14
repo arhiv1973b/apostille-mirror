@@ -28,7 +28,13 @@ Write-Host "[OK] Шлюз пересобран и готов." -ForegroundColor 
 function gemini {
     param([Parameter(ValueFromRemainingArguments=$true)][string[]]$Query)
     $QueryString = $Query -join " "
-    docker run --rm gateway-agent python proxy_logic.py $QueryString
+    # Запуск с ограничением ресурсов и под пользователем actor-robot (уже в Dockerfile)
+    docker run --rm `
+        --name "gemini-query-$(Get-Random)" `
+        --memory="512m" `
+        --cpus="0.5" `
+        --add-host=host.docker.internal:host-gateway `
+        gateway-agent python proxy_logic.py $QueryString
 }
 
 Write-Host "[!] Протокол переподключения завершен. Система A©tor синхронизирована." -ForegroundColor Green

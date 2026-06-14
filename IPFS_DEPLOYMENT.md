@@ -114,12 +114,14 @@ Update `index.html` with IPFS links:
 
 ## 7. IPFS CID MAPPING
 
-| File           | CID       | Status       |
-| -------------- | --------- | ------------ |
-| ECHR_complaint | [PENDING] | Not uploaded |
-| UN Protocol    | [PENDING] | Not uploaded |
-| Memorandums    | [PENDING] | Not uploaded |
-| Apostilles     | [PENDING] | Not uploaded |
+| File                      | SHA256 Hash (Integrity)                                            | Status             | CID (Pending) |
+| ------------------------- | ------------------------------------------------------------------ | ------------------ | ------------- |
+| ECHR_complaint_filled.md  | 1E48D93BB2E31A7217F201474D3995FB586DE3BF2BA76D435566E123665FBDCA | READY_FOR_UPLOAD   | [PENDING]     |
+| UN_JUS_COGENS_PROTOCOL.md | 50CDF71ECA01B4917FE26C49E8663378158EE89C85D48C39A6DE81D34C166B70 | READY_FOR_UPLOAD   | [PENDING]     |
+| UN_COMMUNICATION_SHORT.md | 3EBFDE871FE8C098F1BB7B43E260B8D8AFF2B357A4330B02E3A9D0532D18E24E | READY_FOR_UPLOAD   | [PENDING]     |
+| ECHR_FORM_PREPARED.md     | 9BE155B21FBE36D3B4379B33C0909E3B37F1F5307CEA08E05BB211E2B8DD2852 | READY_FOR_UPLOAD   | [PENDING]     |
+| TUNNEL_PREPARATION.md     | E701131A3DB8E9C519FB6D87B02C5F723C5C8377820A54DC1401B0E594A79AF5 | READY_FOR_UPLOAD   | [PENDING]     |
+| A©tor_PGP_PublicKey.asc   | 1A3AA84C6D4C74166E8A74B36783D6A2580C3AD38F63E69072C227DE786003F2 | READY_FOR_UPLOAD   | [PENDING]     |
 
 ---
 

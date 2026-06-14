@@ -139,18 +139,53 @@
                                        }
                       },
                       {
-                          "original_name":  "Marriage_Certificate_Apostille.pdf",
-                          "content_preview":  "Marriage Certificate (2017-02-21) and Apostille 2013073980269 (2021-07-08) confirming IDNP 2000001159655.",
-                          "append_timestamp":  "2026-05-30T12:00:00Z",
-                          "evidence_hash":  "2013073980269_SIGNED_BY_VALERIU_FRIMU",
+                          "document_id":  "CAS-FINCOMBANK-BLOCK-2026",
+                          "original_name":  "FinComBank_Restitution_Log_20260611.html",
+                          "document_type":  "financial_evidence",
+                          "evidence_hash":  "C498B117E30A024D4324E0A0F531777FFD1267489F208B2A9FD94831B583829B",
+                          "append_timestamp":  "2026-06-11T12:00:00Z",
+                          "content_preview":  "Forensic log of 25.2M MDL restitution blockade at BC FinComBank SA. Confirms decoupling of assets from payment instruments for IDNP 2000001159655.",
                           "metadata":  {
-                                           "husband":  "Alexei Maceret",
-                                           "apostille_ref":  "2013073980269",
-                                           "wife":  "Irina Oleinic",
-                                           "legitimate_idnp":  "2000001159655"
-                                       },
-                          "document_id":  "CIV-STATUS-APO-2017",
-                          "document_type":  "civil_status"
+                                           "restitution_target": "25210256.00 MDL",
+                                           "bank": "BC FinComBank SA",
+                                           "status": "PROCEDURAL_BLOCKADE"
+                                       }
+                      },
+                      {
+                          "document_id":  "CAS-JUDICIAL-OLEYNIK-2026",
+                          "original_name":  "_isk_v_uugolnom_dele_anti_macheret_oleynik.pdf",
+                          "document_type":  "court_decision",
+                          "evidence_hash":  "b54ae150bffab673988d8fcf0b1076341e998de155228b4af71f5b520282be93",
+                          "append_timestamp":  "2026-06-12T10:00:00Z",
+                          "content_preview":  "Lawsuit in criminal case anti-Macheret/Oleynik. Evidence of judicial fraud.",
+                          "metadata":  {
+                                           "jurisdiction": "MD",
+                                           "status": "VERIFIED_EVIDENCE"
+                                       }
+                      },
+                      {
+                          "document_id":  "CAS-USA-CITIZEN-STRATULAT",
+                          "original_name":  "_sude_stratulat_podtverzhdenie_grazhdanstva_ssha_.podpisan.pdf",
+                          "document_type":  "civil_status",
+                          "evidence_hash":  "3f5d2a8dd937892d9e74e1a850ec978c12a60dbe190c837f485019f30eeba69e",
+                          "append_timestamp":  "2026-06-12T10:05:00Z",
+                          "content_preview":  "Court document confirming USA citizenship (Stratulat). Critical for asset recovery jurisdiction.",
+                          "metadata":  {
+                                           "jurisdiction": "US",
+                                           "status": "VERIFIED_EVIDENCE"
+                                       }
+                      },
+                      {
+                          "document_id":  "CAS-VASILENKO-SYSTEMIC-LINK",
+                          "original_name":  "17 Дело Василенко - Мынэскурта.pdf",
+                          "document_type":  "court_decision",
+                          "evidence_hash":  "5f4b009142f4b5c82423399bd0e8efbaea69411809c1880edf6e369bc42c4f6f",
+                          "append_timestamp":  "2026-06-12T10:10:00Z",
+                          "content_preview":  "Vasilenko - Myneskurta case. Establishes systemic FinComBank link.",
+                          "metadata":  {
+                                           "bank": "BC FinComBank SA",
+                                           "status": "VERIFIED_EVIDENCE"
+                                       }
                       }
                   ]
 }
