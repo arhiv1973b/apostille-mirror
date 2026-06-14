@@ -1,0 +1,17 @@
+﻿# Сначала игнорируем всё
+*
+
+# Но разрешаем нужные файлы и типы
+!/.gitignore
+!/apostille-mirror/
+!/run/
+!*.py
+!*.ps1
+!*.json
+!Dockerfile
+!requirements.txt
+
+# Блокировка секретов
+.keys/
+*.key
+*.asc
