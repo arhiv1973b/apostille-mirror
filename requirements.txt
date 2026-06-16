@@ -1,3 +1,2 @@
-matplotlib
-pa
-das
+mcp
+google-generativeai

@@ -1,0 +1,100 @@
+version: '3.9'
+
+services:
+  # ============================================================================
+  # Development Service
+  # Purpose: Local debugging with live code mounting, security context simulation
+  # ============================================================================
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.hardened
+      target: runtime  # Use final stage if multi-target build needed
+    container_name: actor-app-dev
+    
+    # Security: Run container with minimal privileges
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE  # Only if listening on ports < 1024
+    
+    # User context: Match distroless nonroot (65532)
+    user: "65532:65532"
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    
+    # Volume mounts for development
+    volumes:
+      # Code mount (read-only in production, read-write for dev)
+      - ./apostille-mirror:/app/apostille-mirror:ro
+      - ./entrypoint.sh:/app/entrypoint.sh:ro
+
+      # Temporary working directory (if needed)
+      - app-tmp:/tmp
+    # Environment variables (secure defaults)
+    env_file:
+      - .env.local
+    environment:
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONHASHSEED: "0"  # Deterministic for testing
+    
+    # Network isolation
+    networks:
+      - actor-internal
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
+    stdin_open: true
+    tty: true
+
+  # ============================================================================
+  # Optional: Monitoring/Audit Service
+  # Purpose: Validate security posture and image metadata
+  # ============================================================================
+  app-audit:
+    image: anchore/grype:latest
+    container_name: actor-audit
+    
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    
+    networks:
+      - app-network
+    # Scan command (example)
+    command: 
+      - dir:/app
+      - -o
+      - table
+    
+    depends_on:
+      - app-dev
+
+networks:
+  actor-internal:
+    driver: bridge
+    internal: true
+    driver_opts:
+      # IPv4 only (reduce attack surface)
+      com.docker.network.driver.mtu: "1500"
+
+volumes:
+  app-tmp:
+    driver: local

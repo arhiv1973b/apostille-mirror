@@ -9,9 +9,14 @@
 !*.ps1
 !*.json
 !Dockerfile
+!Dockerfile.hardened
+!docker-compose.yml
 !requirements.txt
+!requirements-locked.txt
+!*.md
 
 # Блокировка секретов
+.env.local
 .keys/
 *.key
 *.asc
