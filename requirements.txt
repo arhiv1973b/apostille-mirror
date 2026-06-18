@@ -1,2 +1,9 @@
 mcp
-google-generativeai
+openai-whisper
+vosk
+librosa
+easyocr
+opencv-python
+pytesseract
+pydicom
+python-magic

@@ -192,3 +192,4 @@ $report | Select-Object -Last 5 | ForEach-Object { Write-Host $_ }
 
 Write-Host ""
 Log-Step "Audit complete. Report: $ReportPath" "Info"
+& H:\ACTOR_DEV_ENV\audit_sync.ps1 -SourceFile $ReportPath

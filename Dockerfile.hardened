@@ -30,7 +30,7 @@ RUN pip install --no-cache-dir \
 # STAGE 2: Runtime (Alpine Hardened)
 # Purpose: Minimal runtime with security hardening, zero build tools
 # ==============================================================================
-FROM python:3.13-alpine3.20
+FROM python:3.13-alpine3.20 AS runtime
 
 # Create non-root user with minimal privileges
 RUN addgroup -g 65532 appgroup && \

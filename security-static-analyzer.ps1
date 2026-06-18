@@ -9,7 +9,7 @@ using namespace System.Security.Cryptography
 #region Configuration
 
 $AnalysisConfig = @{
-    DockerfilePath          = 'Dockerfile.hardened'
+    DockerfilePath          = 'Dockerfile'
     ComposeFilePath         = 'docker-compose.yml'
     RequirementsPath        = 'requirements-locked.txt'
     NistComplianceVersion   = '800-190'
@@ -473,23 +473,24 @@ function Test-LayerIsolation {
     $RuntimeStageStart = $null
 
     $Lines | ForEach-Object -Begin { $InRuntimeStage = $false } {
-        if ($_ -match 'FROM.*(?:runtime|stage-1)' -or ($InRuntimeStage -and $_ -match 'FROM')) {
+        $CurrentLine = $_
+        if ($CurrentLine -match 'FROM.*(?:runtime|stage-1)' -or ($InRuntimeStage -and $CurrentLine -match 'FROM')) {
             $InRuntimeStage = $true
         }
         
         if ($InRuntimeStage) {
             $ArtifactPatterns | ForEach-Object {
-                if ($_ -match $_.pattern) {
+                if ($CurrentLine -match $_.pattern) {
                     $Findings += New-Finding -Severity $_.severity -Category 'Layer Isolation' `
-                        -Message "Build artifact detected in runtime: $($_.name) ($_)" `
+                        -Message "Build artifact detected in runtime: $($_.name) ($CurrentLine)" `
                         -Remediation "Remove $($_.name) or ensure cleanup in builder stage"
                 }
             }
 
             # Check for rm -rf /var/cache/apk/* (cache cleanup)
-            if ($_ -match 'apk add' -and $_ -notmatch 'rm -rf.*apk') {
+            if ($CurrentLine -match 'apk add' -and $CurrentLine -notmatch 'rm -rf.*apk') {
                 $Findings += New-Finding -Severity 'MEDIUM' -Category 'Layer Size' `
-                    -Message "APK cache not cleaned: $_" `
+                    -Message "APK cache not cleaned: $CurrentLine" `
                     -Remediation 'Add: && rm -rf /var/cache/apk/* to RUN directive'
             }
         }
@@ -552,7 +553,7 @@ function Publish-AnalysisReport {
             timestamp           = $AnalysisResults.timestamp
             docker_benchmark    = $AnalysisConfig.CisDockerBenchmark
             nist_version        = $AnalysisConfig.NistComplianceVersion
-            total_findings      = ($AnalysisResults.dockerfile_findings + $AnalysisResults.compose_findings).Count
+            total_findings      = (@($AnalysisResults.dockerfile_findings) + @($AnalysisResults.compose_findings)).Count
             total_risk_score    = $AnalysisResults.risk_score
         }
         findings = @{
@@ -561,13 +562,12 @@ function Publish-AnalysisReport {
             hashes     = $AnalysisResults.hash_verification
         }
         severity = $AnalysisResults.severity_levels
-        compliance = $AnalysisResults.compliance_status
+        compliance = @{
+            cis_benchmark = ($AnalysisResults.severity_levels.CRITICAL -eq 0 -and $AnalysisResults.severity_levels.HIGH -le 2)
+            nist_800_190  = ($AnalysisResults.severity_levels.CRITICAL -eq 0)
+            owasp_container = ($AnalysisResults.severity_levels.CRITICAL -eq 0)
+        }
     }
-
-    # Determine compliance status
-    $Report.compliance.cis_benchmark = ($AnalysisResults.severity_levels.CRITICAL -eq 0 -and $AnalysisResults.severity_levels.HIGH -le 2)
-    $Report.compliance.nist_800_190 = ($AnalysisResults.severity_levels.CRITICAL -eq 0)
-    $Report.compliance.owasp_container = ($AnalysisResults.severity_levels.CRITICAL -eq 0)
 
     $Report | ConvertTo-Json -Depth 10 | Set-Content -Path $OutputPath -Encoding UTF8
 
@@ -610,13 +610,13 @@ function Start-SecurityAnalysis {
     Write-Host "╚════════════════════════════════════════════════════════════╝`n" -ForegroundColor Magenta
 
     # 1. Analyze Dockerfile
-    $AnalysisResults.dockerfile_findings = Analyze-Dockerfile
+    $AnalysisResults.dockerfile_findings = @(Analyze-Dockerfile)
 
     # 2. Analyze docker-compose.yml
-    $AnalysisResults.compose_findings = Analyze-DockerCompose
+    $AnalysisResults.compose_findings = @(Analyze-DockerCompose)
 
     # 3. Verify dependency hashes
-    $AnalysisResults.hash_verification = Verify-DependencyHashes
+    $AnalysisResults.hash_verification = @(Verify-DependencyHashes)
 
     # 4. Test layer isolation
     $AnalysisResults.dockerfile_findings += @(Test-LayerIsolation)

@@ -1,4 +1,12 @@
-# SECURITY AUDIT SUMMARY & INTEGRATION GUIDE
+## AUTOMATED AUDIT SYNC STATUS (2026-06-17)
+
+The forensic audit workflow now includes automated synchronization and integrity verification. 
+- **Automated Sync**: `mcp_audit.ps1` now automatically triggers `audit_sync.ps1` upon completion.
+- **Integrity Validation**: All forensic files listed in `FINAL_AUDIT_MANIFEST_20260615.json` have been verified.
+- **Status**: Automated sync and hash generation for audit reports are active.
+
+---
+## SECURITY AUDIT SUMMARY & INTEGRATION GUIDE
 
 **Project:** ACTOR Development Environment | High-Security Multi-Stage Container + Native Isolation  
 **Date:** 2026-06-16  

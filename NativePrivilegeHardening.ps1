@@ -11,26 +11,25 @@ using namespace System.Security.Principal
 $NativeHardeningConfig = @{
     # JEA (Just Enough Administration) endpoint
     JeaEndpointName         = 'ActorAnalyzer'
-    JeaConfigPath           = 'C:\ProgramData\PowerShell\Endpoints'
-    
+    JeaConfigPath           = 'H:\ACTOR_DEV_ENV\.native\Endpoints'
+
     # Constrained Language Mode
     EnableClm               = $true
-    ClmRuntimePath          = 'C:\Actor\Runtime'
-    
+    ClmRuntimePath          = 'H:\ACTOR_DEV_ENV\.native\Runtime'
+
     # AppLocker policies
-    AppLockerPath           = 'C:\ProgramData\AppLocker'
-    AppLockerRulesPath      = 'C:\ProgramData\AppLocker\rules'
-    
+    AppLockerPath           = 'H:\ACTOR_DEV_ENV\.native\AppLocker'
+    AppLockerRulesPath      = 'H:\ACTOR_DEV_ENV\.native\AppLocker\rules'
+
     # Isolation user
     IsolationUser           = 'ActorAudit'
     IsolationUserPassword   = $null  # Will be generated
-    IsolationUserDescription = 'Unprivileged audit process (Docker equivalent UID 65532)'
-    
+    IsolationUserDescription = 'Unprivileged audit process (UID 65532)'
+
     # Filesystem paths
-    ApplicationPath         = 'C:\Actor\App'
-    AuditPath               = 'C:\Actor\Audits'
-    CachePath               = 'C:\Actor\Cache'
-    
+    ApplicationPath         = 'H:\ACTOR_DEV_ENV'
+    AuditPath               = 'H:\ACTOR_DEV_ENV\audits'
+    CachePath               = 'H:\ACTOR_DEV_ENV\.native\Cache'
     # Allowed cmdlets (whitelist for JEA)
     AllowedCmdlets          = @(
         'Write-Host', 'Write-Output', 'Get-Content', 'Write-Error',
@@ -89,6 +88,11 @@ function New-JeaSessionConfiguration {
         '$($NativeHardeningConfig.AllowedCmdlets -join "', '")'
     )
 
+    # Exposed types for TI-ULA (SHA256, Ed25519)
+    VisibleTypes = @(
+        'System.Security.Cryptography.*'
+    )
+
     # Hide built-in commands
     HiddenCmdlets = @(
         'Get-Process',
@@ -126,13 +130,13 @@ function New-JeaSessionConfiguration {
     Write-Host "[JEA] Generating session configuration: $SessionConfigPath" -ForegroundColor Yellow
 
     $SessionConfigContent = @"
-@{
+    @{
     # Core configuration
     SessionType = 'RestrictedRemote'
-    
+
     # Enforce Constrained Language Mode
     LanguageMode = 'ConstrainedLanguage'
-    
+
     # Execution policy (override)
     ExecutionPolicy = 'AllSigned'
 
@@ -141,7 +145,7 @@ function New-JeaSessionConfiguration {
         '$($NativeHardeningConfig.IsolationUser)' = @{
             RoleCapabilities = @('$EndpointName')
         }
-        'BUILTIN\Administrators' = @{
+        'S-1-5-32-544' = @{
             RoleCapabilities = @('$EndpointName')
         }
     }
@@ -160,13 +164,12 @@ function New-JeaSessionConfiguration {
     EnvironmentVariables = @{
         'ACTOR_ISOLATED' = 'true'
         'ACTOR_MODE' = 'jea'
-        'TEMP' = 'C:\Actor\Temp'
+        'TEMP' = 'H:\ACTOR_DEV_ENV\.native\Temp'
     }
 
     # Resource limits
     RunAsVirtualAccount = `$true
-    RunAsVirtualAccountGroups = @('BUILTIN\Users')
-
+    RunAsVirtualAccountGroups = @('S-1-5-32-545')
     # Audit policy
     MountUserDrive = `$false
     
@@ -434,7 +437,7 @@ function Set-StrictAcl {
         }
     }
 
-    # Add SYSTEM (admin) for backup
+    # Add SYSTEM (admin) and Current User for backup
     $SystemSid = New-Object System.Security.Principal.SecurityIdentifier('S-1-5-18')
     $SystemRule = New-Object System.Security.AccessControl.FileSystemAccessRule(
         $SystemSid,
@@ -444,8 +447,18 @@ function Set-StrictAcl {
         'Allow'
     )
 
+    $CurrentUserSid = [System.Security.Principal.WindowsIdentity]::GetCurrent().User
+    $CurrentUserRule = New-Object System.Security.AccessControl.FileSystemAccessRule(
+        $CurrentUserSid,
+        'FullControl',
+        'ContainerInherit,ObjectInherit',
+        'None',
+        'Allow'
+    )
+
     $Acl.AddAccessRule($Rule)
     $Acl.AddAccessRule($SystemRule)
+    $Acl.AddAccessRule($CurrentUserRule)
 
     Set-Acl -Path $Path -AclObject $Acl
     Write-Host "[SUCCESS] ACL applied to: $Path" -ForegroundColor Green
@@ -484,8 +497,11 @@ function New-AuditUser {
         # Create new user
     }
 
-    # Generate password
-    $Password = [System.Web.Security.Membership]::GeneratePassword(32, 5)
+    # Generate password (PS Core compatible)
+    $Bytes = New-Object Byte[] 32
+    $Generator = [System.Security.Cryptography.RandomNumberGenerator]::Create()
+    $Generator.GetBytes($Bytes)
+    $Password = [Convert]::ToBase64String($Bytes)
     $SecurePassword = ConvertTo-SecureString -String $Password -AsPlainText -Force
 
     try {
