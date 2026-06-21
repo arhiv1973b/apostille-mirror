@@ -1,48 +1,50 @@
-{
-  "findings": {
-    "compose": [
-      {
-        "timestamp": "2026-06-17 17:31:19Z",
-        "remediation": "Add: deploy.resources.limits.cpus",
-        "severity": "MEDIUM",
-        "message": "CPU limit not configured",
-        "category": "Resource Limits"
-      },
-      {
-        "timestamp": "2026-06-17 17:31:19Z",
-        "remediation": "Define custom bridge network (not default bridge)",
-        "severity": "MEDIUM",
-        "message": "Custom isolated network not configured",
-        "category": "Network"
-      }
-    ],
-    "dockerfile": [
-      {
-        "timestamp": "2026-06-17 17:31:19Z",
-        "remediation": "Add: && rm -rf /var/cache/apk/* to clear package cache",
-        "severity": "MEDIUM",
-        "message": "RUN directive not clearing cache: RUN apk add --no-cache \\",
-        "category": "Image Size"
-      }
-    ],
-    "hashes": []
-  },
-  "metadata": {
-    "docker_benchmark": "5.0",
-    "total_risk_score": 1.5,
-    "timestamp": "2026-06-17 17:31:19Z",
-    "total_findings": 3,
-    "nist_version": "800-190"
-  },
-  "severity": {
-    "CRITICAL": 0,
-    "HIGH": 0,
-    "LOW": 0,
-    "MEDIUM": 3
-  },
-  "compliance": {
-    "cis_benchmark": true,
-    "owasp_container": true,
-    "nist_800_190": true
-  }
+﻿{
+    "compliance":  {
+                       "cis_benchmark":  true,
+                       "nist_800_190":  true,
+                       "owasp_container":  true
+                   },
+    "findings":  {
+                     "hashes":  [
+
+                                ],
+                     "compose":  [
+                                     {
+                                         "timestamp":  "2026-06-19 22:41:59Z",
+                                         "message":  "CPU limit not configured",
+                                         "category":  "Resource Limits",
+                                         "remediation":  "Add: deploy.resources.limits.cpus",
+                                         "severity":  "MEDIUM"
+                                     },
+                                     {
+                                         "timestamp":  "2026-06-19 22:41:59Z",
+                                         "message":  "Custom isolated network not configured",
+                                         "category":  "Network",
+                                         "remediation":  "Define custom bridge network (not default bridge)",
+                                         "severity":  "MEDIUM"
+                                     }
+                                 ],
+                     "dockerfile":  [
+                                        {
+                                            "timestamp":  "2026-06-19 22:41:59Z",
+                                            "message":  "RUN directive not clearing cache: RUN apk add --no-cache \\",
+                                            "category":  "Image Size",
+                                            "remediation":  "Add: \u0026\u0026 rm -rf /var/cache/apk/* to clear package cache",
+                                            "severity":  "MEDIUM"
+                                        }
+                                    ]
+                 },
+    "severity":  {
+                     "LOW":  0,
+                     "CRITICAL":  0,
+                     "MEDIUM":  3,
+                     "HIGH":  0
+                 },
+    "metadata":  {
+                     "docker_benchmark":  "5.0",
+                     "total_findings":  3,
+                     "timestamp":  "2026-06-19 22:41:59Z",
+                     "total_risk_score":  1.5,
+                     "nist_version":  "800-190"
+                 }
 }

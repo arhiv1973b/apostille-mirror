@@ -10,7 +10,8 @@ RUN apk add --no-cache \
     musl-dev \
     linux-headers \
     g++ \
-    make
+    make && \
+    rm -rf /var/cache/apk/*
 
 # Create virtual environment in builder stage
 WORKDIR /build

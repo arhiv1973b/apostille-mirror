@@ -1,19 +1,46 @@
 services:
   actor-app-dev:
     build: .
-    user: "0:0"
+    user: "65532:65532"
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+    networks:
+      - actor-net
     volumes:
       - audit_data:/app/.audit
+
   actor-audit:
     image: anchore/grype:latest
     depends_on:
       - actor-app-dev
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+    networks:
+      - actor-net
     volumes:
       - audit_data:/app:ro
     environment:
-      - GRYPE_DB_AUTO_UPDATE=false
-    # Прямой вызов, без оболочки sh
-    entrypoint: ["grype", "/app", "-o", "table"]
+      - GRYPE_DB_AUTO_UPDATE=true
+    entrypoint: ["/grype", "/app", "-o", "table"]
+
+networks:
+  actor-net:
+    driver: bridge
 
 volumes:
   audit_data:
+

@@ -1,0 +1,13 @@
+{
+  "agents": {
+    "bridge_logger": {
+      "status": "ok",
+      "msg": "alive"
+    },
+    "orchestrator": {
+      "status": "ok",
+      "msg": "running",
+      "last_update": "2026-06-21T19:55:57.131052+00:00"
+    }
+  }
+}
