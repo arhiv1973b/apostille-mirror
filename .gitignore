@@ -1,0 +1,3 @@
+*.sock
+.docker/
+CASE-MACHERET-1997-2026/
