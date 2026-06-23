@@ -152,9 +152,32 @@ def main():
     if rc != 0:
         print(f"Test returned error code {rc}")
     handshake = read_handshake()
+    # Load metrics to assess legal_agent heartbeat
+    try:
+        metrics = json.loads(METRICS_PATH.read_text(encoding="utf-8"))
+    except Exception:
+        metrics = {}
+    legal_status = "UNKNOWN"
+    if metrics.get("agents", {}).get("legal_agent"):
+        la = metrics["agents"]["legal_agent"]
+        ts = la.get("last_update")
+        if ts:
+            try:
+                from datetime import datetime, timezone
+                last = datetime.fromisoformat(ts.replace('Z', '+00:00'))
+                age = (datetime.now(timezone.utc) - last).total_seconds()
+                legal_status = "OK" if age <= 60 else "STALE"
+            except Exception:
+                legal_status = "INVALID"
+        else:
+            legal_status = "MISSING"
+    else:
+        legal_status = "MISSING"
+    logger.info("Legal agent heartbeat status: %s", legal_status)
     status = compute_status(CSV_LOG)
     print("\n=== Orchestrator result ===")
     print(f"TI‑ULA status : {status}")
+    print(f"Legal agent heartbeat : {legal_status}")
     print(f"Last run_id   : {list(handshake.keys())[-1] if handshake else 'N/A'}")
     print(f"Monitor log   : {MONITOR_LOG}")
     print(f"Test log      : {TEST_LOG}")

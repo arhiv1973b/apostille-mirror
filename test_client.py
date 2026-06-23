@@ -1,22 +1,20 @@
-import asyncio
-from mcp.client.stdio import stdio_client, StdioServerParameters
-from mcp import ClientSession
+import socket
+import json
 
-async def run_test():
-    server_params = StdioServerParameters(
-        command="python", 
-        args=["H:\\ACTOR_DEV_ENV\\mcp_server.py"]
-    )
-    
-    print("--- Запуск теста MCP-сервера ---")
-    async with stdio_client(server_params) as (read, write):
-        async with ClientSession(read, write) as session:
-            await session.initialize()
-            
-            # Тест: вызов функции
-            print("--- Вызов get_audit_events ---")
-            result = await session.call_tool("get_audit_events", arguments={})
-            print("Результат:", result)
 
-if __name__ == "__main__":
-    asyncio.run(run_test())
+def send_command(command):
+    try:
+        # Подключаемся к оркестратору на локальный порт 5000
+        client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        client.connect(('127.0.0.1', 5000))
+        client.send(json.dumps(command).encode('utf-8'))
+        response = client.recv(4096).decode('utf-8')
+        client.close()
+        return json.loads(response)
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+# Проверка связи
+print("Тестирование связи с оркестратором...")
+result = send_command({"action": "ping"})
+print(f"Ответ сервера: {result}")
