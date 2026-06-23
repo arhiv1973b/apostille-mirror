@@ -1,9 +1,4 @@
-mcp
-openai-whisper
-vosk
-librosa
-easyocr
-opencv-python
-pytesseract
-pydicom
-python-magic
+google-genai
+tenacity
+requests
+psutil
