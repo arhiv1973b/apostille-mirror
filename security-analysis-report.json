@@ -10,14 +10,14 @@
                                 ],
                      "compose":  [
                                      {
-                                         "timestamp":  "2026-06-19 22:41:59Z",
+                                         "timestamp":  "2026-06-24 20:39:02Z",
                                          "message":  "CPU limit not configured",
                                          "category":  "Resource Limits",
                                          "remediation":  "Add: deploy.resources.limits.cpus",
                                          "severity":  "MEDIUM"
                                      },
                                      {
-                                         "timestamp":  "2026-06-19 22:41:59Z",
+                                         "timestamp":  "2026-06-24 20:39:02Z",
                                          "message":  "Custom isolated network not configured",
                                          "category":  "Network",
                                          "remediation":  "Define custom bridge network (not default bridge)",
@@ -26,7 +26,7 @@
                                  ],
                      "dockerfile":  [
                                         {
-                                            "timestamp":  "2026-06-19 22:41:59Z",
+                                            "timestamp":  "2026-06-24 20:39:02Z",
                                             "message":  "RUN directive not clearing cache: RUN apk add --no-cache \\",
                                             "category":  "Image Size",
                                             "remediation":  "Add: \u0026\u0026 rm -rf /var/cache/apk/* to clear package cache",
@@ -43,7 +43,7 @@
     "metadata":  {
                      "docker_benchmark":  "5.0",
                      "total_findings":  3,
-                     "timestamp":  "2026-06-19 22:41:59Z",
+                     "timestamp":  "2026-06-24 20:39:02Z",
                      "total_risk_score":  1.5,
                      "nist_version":  "800-190"
                  }

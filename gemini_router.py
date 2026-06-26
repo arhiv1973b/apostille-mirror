@@ -3,6 +3,7 @@ import os
 import json
 import logging
 import signal
+import subprocess
 from collections import defaultdict
 from google import genai
 from google.genai import errors
@@ -35,7 +36,41 @@ class AliasRouter:
             logging.error(f"Ошибка загрузки манифеста: {e}")
             self.available_models = []
 
+    def classify_task(self, prompt):
+        """Простейшая классификация задач"""
+        local_keywords = ["статус", "лог", "интеграция", "проверка"]
+        if any(keyword in prompt.lower() for keyword in local_keywords):
+            return "LOCAL"
+        return "REMOTE"
+
+    def is_docker_available(self):
+        try:
+            subprocess.run(["docker", "info"], capture_output=True, timeout=2)
+            return True
+        except:
+            return False
+
+    def execute_local(self, prompt):
+        """Выполнение задачи локально через Ollama"""
+        logging.info(f"Выполнение локально: {prompt}")
+        try:
+            # Используем qwen2.5:7b, так как она у вас уже загружена
+            cmd = ["docker", "exec", "-i", "actor_ollama", "ollama", "run", "qwen2.5:7b", prompt]
+            # Добавляем timeout=30 секунд, чтобы скрипт не висел вечно
+            result = subprocess.run(cmd, capture_output=True, text=True, check=True, timeout=30)
+            return {"model": "local/qwen2.5:7b", "text": result.stdout.strip()}
+        except subprocess.TimeoutExpired:
+            logging.error("Тайм-аут локального исполнения")
+            return {"model": "local/qwen2.5:7b", "text": "Ошибка: превышено время ожидания локальной модели."}
+        except Exception as e:
+            logging.error(f"Ошибка локального исполнения: {e}")
+            return {"model": "local/qwen2.5:7b", "text": f"Ошибка: {e}"}
+
     def execute(self, prompt):
+        # Если Docker не отвечает, даже не пытаемся локально, сразу идем в облако
+        if self.classify_task(prompt) == 'LOCAL' and self.is_docker_available():
+            return self.execute_local(prompt)
+
         # Автоматическая перестановка приоритетов перед выполнением
         self._reorder_by_stability()
 
@@ -55,7 +90,7 @@ class AliasRouter:
 
                 signal.alarm(0)
                 self.stats[model_id]["success"] += 1
-                return {"model": self.alias_name, "text": response.text}
+                return {"model": model_id, "text": response.text}
 
             except TimeoutException:
                 self.stats[model_id]["errors"] += 1
