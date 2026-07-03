@@ -23,17 +23,21 @@
     </ul>
     <div style="margin-top:12px;background:#071625;padding:12px;border-radius:6px;border:1px solid #103c60">
       <h3 style="margin:0 0 8px;color:#f0c040">Банковский перевод (LEI, Moldova)</h3>
-      <pre style="white-space:pre-wrap;color:#cfe;margin:0;font-family:inherit;font-size:14px">Banca beneficiară: FinComBank S.A., suc.nr.6, Chisinau
+      <pre id="bank-rect" style="white-space:pre-wrap;color:#cfe;margin:0;font-family:inherit;font-size:14px">Banca beneficiară: FinComBank S.A., suc.nr.6, Chisinau
 IBAN: MD55FT225920600348117498
 Beneficiar: Maceret Alexei
 Cod personal: 2000001159655
 Адреса: bd. Moscovei, 9, Chisinau
 Телефон банка: (+37322) 404504</pre>
-      <p class="note" style="margin-top:8px">Публикация реквизитов — это публичная информация; используйте осторожно. Для приватных переводов свяжитесь заранее через защищённый канал.</p>
+      <div style="margin-top:8px">
+        <small id="payment-purpose" style="color:#8ab0cc;display:block">Назначение платежа: "Пожертвование — Evidence Portal / Case Maceret". Пожалуйста, укажите имя отправителя и короткое примечание.</small>
+      </div>
+      <p class="note" id="phish-warn" style="margin-top:8px;display:none">Внимание: проверяйте квитанции и полученные запросы — возможен фишинг. Если сомневаетесь, свяжитесь с владельцем через защищённый канал.</p>
     </div>
     <p style="margin-top:12px;color:#8ab0cc">Примечание: Замените внешние ссылки на реальные способы пожертвований. Не храните секреты в репозитории.</p>
     <a class="button" href="index.html" style="background:#f0c040;margin-left:8px">← Вернуться в портал</a>
   </div>
 <script src="portal-enhancements.js"></script>
+<script src="donate.js"></script>
 </body>
 </html>
