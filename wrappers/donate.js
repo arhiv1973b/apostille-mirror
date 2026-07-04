@@ -1,9 +1,14 @@
 // donate.js — copy-to-clipboard and helper for donate.html
 (function(){
-  function $(s){return document.querySelector(s)}
   function createToast(msg){
     var existing = document.getElementById('donate-toast');
-    if(existing){ existing.textContent = msg; existing.style.opacity = '1'; clearTimeout(existing._t); existing._t = setTimeout(()=> existing.style.opacity='0',2500); return; }
+    if(existing){ 
+      existing.textContent = msg; 
+      existing.style.opacity = '1'; 
+      clearTimeout(existing._t); 
+      existing._t = setTimeout(()=> {existing.style.opacity='0'}, 2500); 
+      return; 
+    }
     var t = document.createElement('div');
     t.id = 'donate-toast';
     t.textContent = msg;
@@ -11,47 +16,62 @@
     t.style.bottom = '80px';
     t.style.right = '16px';
     t.style.background = '#111';
-    t.style.color = '#cfe';
-    t.style.padding = '10px 14px';
+    t.style.color = '#0f0';
+    t.style.padding = '12px 16px';
     t.style.borderRadius = '6px';
-    t.style.boxShadow = '0 4px 16px rgba(0,0,0,.6)';
+    t.style.boxShadow = '0 4px 16px rgba(0,0,0,.8)';
     t.style.zIndex = 10000;
     t.style.transition = 'opacity .3s';
+    t.style.fontFamily = 'monospace';
+    t.style.fontSize = '13px';
     document.body.appendChild(t);
-    t._t = setTimeout(()=> t.style.opacity='0',2500);
+    t._t = setTimeout(()=> {t.style.opacity='0'}, 2500);
   }
 
-  function copyText(text){
+  function copyToClipboard(text){
     if(!navigator.clipboard){
-      // fallback
-      var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); createToast('Скопировано в буфер'); }catch(e){ createToast('Копирование не удалось'); } ta.remove();
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      try{
+        document.execCommand('copy');
+        createToast('✓ Скопировано в буфер');
+      }catch(e){
+        createToast('✗ Копирование не удалось');
+      }
+      ta.remove();
     } else {
-      navigator.clipboard.writeText(text).then(function(){ createToast('Скопировано в буфер'); }, function(){ createToast('Копирование не удалось'); });
+      navigator.clipboard.writeText(text).then(
+        function(){ createToast('✓ Скопировано в буфер'); },
+        function(err){ createToast('✗ Ошибка копирования'); }
+      );
     }
   }
 
   document.addEventListener('DOMContentLoaded', function(){
-    var pre = document.querySelector('#bank-rect');
-    if(!pre) return;
-    var copyBtn = document.createElement('button');
-    copyBtn.textContent = 'Копировать реквизиты';
-    copyBtn.style.marginTop = '8px';
-    copyBtn.style.marginRight = '8px';
-    copyBtn.className = 'button';
-    copyBtn.onclick = function(){ copyText(pre.innerText); };
+    // Copy bank details button
+    var copyBankBtn = document.getElementById('copy-bank-btn');
+    if(copyBankBtn){
+      copyBankBtn.onclick = function(){
+        var bankText = document.getElementById('bank-rect').innerText;
+        copyToClipboard(bankText);
+      };
+    }
 
-    var purposeText = document.querySelector('#payment-purpose');
-    var copyPurposeBtn = document.createElement('button');
-    copyPurposeBtn.textContent = 'Копировать назначение платежа';
-    copyPurposeBtn.style.marginTop = '8px';
-    copyPurposeBtn.className = 'button';
-    copyPurposeBtn.onclick = function(){ copyText(purposeText.innerText); };
+    // Copy payment purpose button
+    var copyPurposeBtn = document.getElementById('copy-purpose-btn');
+    if(copyPurposeBtn){
+      copyPurposeBtn.onclick = function(){
+        var purposeText = document.getElementById('payment-purpose').innerText;
+        copyToClipboard(purposeText);
+      };
+    }
 
-    pre.parentNode.insertBefore(copyBtn, pre.nextSibling);
-    pre.parentNode.insertBefore(copyPurposeBtn, copyBtn.nextSibling);
-
-    // security warning toggle
-    var warn = document.querySelector('#phish-warn');
-    if(warn){ warn.style.display='block'; }
+    // Show phishing warning
+    var warnEl = document.getElementById('phish-warn');
+    if(warnEl){ warnEl.style.display='block'; }
   });
 })();
