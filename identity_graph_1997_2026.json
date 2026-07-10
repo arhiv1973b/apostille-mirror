@@ -1,15 +1,75 @@
 {
+  "project": "CASE-MACHERET-1997-2026",
+  "metadata": {
+    "version": "2.0",
+    "description": "Multi-nodal relational map of judicial actors and procedural distortions."
+  },
   "nodes": [
     {
-      "id": "ciachir_1997",
-      "name": "Ciachir",
+      "id": "subject_alexei_artur",
+      "name": "Alexei Artur Maciret/Maceret",
       "aliases": [
-        "Maciret"
+        "Maciret Alexei Artur",
+        "Maceret Alexei",
+        "Alexei Artur Maciret"
       ],
+      "type": "subject",
+      "attributes": "Identity subject to orthographic and procedural distortion"
+    },
+    {
+      "id": "judge_ciachir_1997",
+      "name": "C.P. Ciachir",
+      "type": "judicial_actor",
+      "role": "Judge",
+      "institution": "Judecătoria sect. Centru"
+    },
+    {
+      "id": "event_1997_art164",
+      "name": "1997 Administrative Penalty",
+      "type": "event",
       "year": 1997,
-      "address": "Asachi 49 b",
-      "details": "Initial node"
+      "details": "Art. 164 al.1 CCA RM (Hooliganism); 90 lei fine; Location: str. G. Asachi 49 'b'"
+    },
+    {
+      "id": "event_2026_obstruction",
+      "name": "2026 Procedural Obstruction",
+      "type": "event",
+      "year": 2026,
+      "details": "CNAJGS intervention; Alleged obstruction via false mental health pretext"
+    },
+    {
+      "id": "lawyer_nicolae_negrei",
+      "name": "Nicolae Negrei",
+      "type": "legal_actor",
+      "role": "Lawyer",
+      "attributes": "Accused of lack of due diligence and case cover-up complicity"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "source": "subject_alexei_artur",
+      "target": "event_1997_art164",
+      "relation": "subject_of"
+    },
+    {
+      "source": "judge_ciachir_1997",
+      "target": "event_1997_art164",
+      "relation": "presided"
+    },
+    {
+      "source": "subject_alexei_artur",
+      "target": "event_2026_obstruction",
+      "relation": "subject_of"
+    },
+    {
+      "source": "lawyer_nicolae_negrei",
+      "target": "event_2026_obstruction",
+      "relation": "involved_in"
+    },
+    {
+      "source": "event_1997_art164",
+      "target": "event_2026_obstruction",
+      "relation": "pattern_match_identity_distortion"
+    }
+  ]
 }
