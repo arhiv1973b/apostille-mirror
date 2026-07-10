@@ -1,0 +1,20 @@
+{
+  "project": "CASE-MACHERET-1997-2026",
+  "metadata": {
+    "last_updated": "2026-07-10T15:00:00Z",
+    "description": "Forensic graph linking judicial actors and fabricated legal records."
+  },
+  "nodes": [
+    {
+      "type": "judicial_actor",
+      "name": "C.P. Ciachir",
+      "role": "Judge",
+      "court": "Judecătoria sect. Centru",
+      "year": 1997,
+      "case_reference": "Maciret Alexei Artur (Admin penalty - 90 lei)",
+      "address_node": "str. G. Asachi 49 \"b\" ap. 33",
+      "evidence_node": "Root Node (1997)"
+    }
+  ],
+  "relations": []
+}
