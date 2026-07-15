@@ -1,0 +1,12 @@
+# Security - Sensitive files to ignore
+.env*
+*.pem
+*.key
+*.db
+*.log
+__pycache__/
+.venv/
+.gemini/
+*.gdoc
+*.gsheet
+*.sig
