@@ -1236,7 +1236,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-002",
@@ -2604,7 +2605,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-003",
@@ -2727,7 +2729,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-004",
@@ -4094,7 +4097,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-005",
@@ -4147,7 +4151,8 @@
         "NODE-3355",
         "NODE-3356",
         "NODE-3357"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-006",
@@ -5514,7 +5519,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-007",
@@ -6749,7 +6755,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-008",
@@ -7984,7 +7991,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-009",
@@ -9219,7 +9227,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-010",
@@ -9234,7 +9243,8 @@
         "NODE-882",
         "NODE-3141",
         "NODE-3160"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-011",
@@ -10469,7 +10479,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-012",
@@ -11704,7 +11715,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-013",
@@ -12939,7 +12951,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-014",
@@ -14174,7 +14187,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-015",
@@ -15541,7 +15555,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-016",
@@ -16908,7 +16923,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-017",
@@ -18275,7 +18291,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-018",
@@ -19510,7 +19527,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-019",
@@ -20745,7 +20763,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-020",
@@ -21980,7 +21999,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-021",
@@ -22024,7 +22044,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-022",
@@ -23391,7 +23412,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-023",
@@ -24758,7 +24780,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-024",
@@ -25993,7 +26016,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-025",
@@ -27228,7 +27252,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-026",
@@ -28463,7 +28488,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-027",
@@ -28616,7 +28642,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-028",
@@ -28769,7 +28796,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-029",
@@ -28922,7 +28950,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-030",
@@ -30157,7 +30186,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-031",
@@ -31392,7 +31422,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-032",
@@ -31436,7 +31467,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-033",
@@ -31489,7 +31521,8 @@
         "NODE-3355",
         "NODE-3356",
         "NODE-3357"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-034",
@@ -31533,7 +31566,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-035",
@@ -32768,7 +32802,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-036",
@@ -32776,7 +32811,8 @@
       "document_ref": "MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) 2.pdf",
       "drive_iframe_src": "",
       "local_mirror_path": "Downolde\\temp_extract\\MEMORANDUM JUS_COGENS_PRIORITY_PROTOCOL.подписан (1) 2.pdf",
-      "hash_sha256": "fe1b1d61323ac8ac597e3fc5a3ed26d33ed69104682eb55913a1ef42d231220d"
+      "hash_sha256": "fe1b1d61323ac8ac597e3fc5a3ed26d33ed69104682eb55913a1ef42d231220d",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-037",
@@ -34143,7 +34179,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-038",
@@ -35378,7 +35415,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-039",
@@ -35422,7 +35460,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-040",
@@ -36657,7 +36696,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-041",
@@ -36672,7 +36712,8 @@
         "NODE-889",
         "NODE-907",
         "NODE-931"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-042",
@@ -36825,7 +36866,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-043",
@@ -38060,7 +38102,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-044",
@@ -38083,7 +38126,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-045",
@@ -38091,7 +38135,8 @@
       "document_ref": "Исковое Заявление в отношении Венецианской Комиссиии 3.pdf",
       "drive_iframe_src": "",
       "local_mirror_path": "A©torVault\\EvidenceVault\\Static\\case_macheret_repo\\legal_package\\Исковое Заявление в отношении Венецианской Комиссиии 3.pdf",
-      "hash_sha256": "04ac79c9c08893a050f9e116a72501ac29ad7332e2507263836e431a316b7376"
+      "hash_sha256": "04ac79c9c08893a050f9e116a72501ac29ad7332e2507263836e431a316b7376",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-046",
@@ -38135,7 +38180,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-047",
@@ -38179,7 +38225,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-048",
@@ -38223,7 +38270,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-049",
@@ -38376,7 +38424,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-050",
@@ -39743,7 +39792,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-051",
@@ -39787,7 +39837,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-052",
@@ -39831,7 +39882,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-053",
@@ -41066,7 +41118,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-054",
@@ -41081,7 +41134,8 @@
         "NODE-889",
         "NODE-907",
         "NODE-931"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-055",
@@ -41108,7 +41162,8 @@
         "NODE-3058",
         "NODE-3226",
         "NODE-3309"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-056",
@@ -41137,7 +41192,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-057",
@@ -42504,7 +42560,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-058",
@@ -42548,7 +42605,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-059",
@@ -42569,7 +42627,8 @@
         "NODE-3167",
         "NODE-3211",
         "NODE-3299"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-060",
@@ -43936,7 +43995,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-061",
@@ -43989,7 +44049,8 @@
         "NODE-3355",
         "NODE-3356",
         "NODE-3357"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-062",
@@ -45224,7 +45285,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-063",
@@ -46459,7 +46521,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-064",
@@ -46467,7 +46530,8 @@
       "document_ref": "Мачерет Александр Вениамигович.pdf",
       "drive_iframe_src": "",
       "local_mirror_path": "для розыска\\Мачерет Александр Вениамигович.pdf",
-      "hash_sha256": "b15d5c4af9c522dd7d83dab38737b04e0dd455fa192c8aad5ce9a5b3f0d1b449"
+      "hash_sha256": "b15d5c4af9c522dd7d83dab38737b04e0dd455fa192c8aad5ce9a5b3f0d1b449",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-065",
@@ -46520,7 +46584,8 @@
         "NODE-3355",
         "NODE-3356",
         "NODE-3357"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-066",
@@ -46573,7 +46638,8 @@
         "NODE-3355",
         "NODE-3356",
         "NODE-3357"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-067",
@@ -47940,7 +48006,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-068",
@@ -49307,7 +49374,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-069",
@@ -50674,7 +50742,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-070",
@@ -50727,7 +50796,8 @@
         "NODE-3355",
         "NODE-3356",
         "NODE-3357"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-071",
@@ -51962,7 +52032,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-072",
@@ -53329,7 +53400,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-073",
@@ -53373,7 +53445,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-074",
@@ -53417,7 +53490,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-075",
@@ -53461,7 +53535,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-076",
@@ -53505,7 +53580,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-077",
@@ -53522,7 +53598,8 @@
         "NODE-3022",
         "NODE-3265",
         "NODE-3332"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-078",
@@ -54889,7 +54966,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-079",
@@ -56124,7 +56202,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-080",
@@ -56168,7 +56247,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-081",
@@ -57535,7 +57615,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-082",
@@ -58902,7 +58983,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-083",
@@ -60137,7 +60219,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-084",
@@ -61372,7 +61455,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-085",
@@ -62607,7 +62691,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-086",
@@ -63842,7 +63927,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-087",
@@ -63857,7 +63943,8 @@
         "NODE-683",
         "NODE-2709",
         "NODE-3227"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-088",
@@ -63897,7 +63984,8 @@
         "NODE-1016",
         "NODE-2617",
         "NODE-3100"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-089",
@@ -63910,7 +63998,8 @@
         "NODE-1667",
         "NODE-2567",
         "NODE-2588"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-090",
@@ -65277,7 +65366,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-091",
@@ -65430,7 +65520,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-092",
@@ -66797,7 +66888,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-093",
@@ -68164,7 +68256,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-094",
@@ -69531,7 +69624,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-095",
@@ -70766,7 +70860,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-096",
@@ -72001,7 +72096,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-097",
@@ -73236,7 +73332,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-098",
@@ -74471,7 +74568,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-099",
@@ -75706,7 +75804,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-100",
@@ -77073,7 +77172,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-101",
@@ -77226,7 +77326,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-102",
@@ -77379,7 +77480,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-103",
@@ -78614,7 +78716,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-104",
@@ -79981,7 +80084,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-105",
@@ -81348,7 +81452,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-106",
@@ -82715,7 +82820,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-107",
@@ -84082,7 +84188,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-108",
@@ -85449,7 +85556,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-109",
@@ -85457,7 +85565,8 @@
       "document_ref": "apostila 95 Денис Бабалэу.pdf",
       "drive_iframe_src": "",
       "local_mirror_path": "iCloudPhotos\\Photos\\Новая папка\\apostila 95 Денис Бабалэу.pdf",
-      "hash_sha256": "24ec56bc3c3f35128475f9a809d84094fa420f0d0e8bf46b2dfb13cdeda93fdc"
+      "hash_sha256": "24ec56bc3c3f35128475f9a809d84094fa420f0d0e8bf46b2dfb13cdeda93fdc",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-110",
@@ -86692,7 +86801,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-111",
@@ -88059,7 +88169,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-112",
@@ -89294,7 +89405,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-113",
@@ -90529,7 +90641,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-114",
@@ -91896,7 +92009,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-115",
@@ -93131,7 +93245,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-116",
@@ -93284,7 +93399,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-117",
@@ -94651,7 +94767,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-118",
@@ -95886,7 +96003,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-119",
@@ -97121,7 +97239,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-120",
@@ -98356,7 +98475,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-121",
@@ -99591,7 +99711,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-122",
@@ -100958,7 +101079,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-123",
@@ -102193,7 +102315,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-124",
@@ -103428,7 +103551,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-125",
@@ -104663,7 +104787,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-126",
@@ -106030,7 +106155,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-127",
@@ -106084,7 +106210,8 @@
         "NODE-1696",
         "NODE-1697",
         "NODE-1761"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-128",
@@ -106095,7 +106222,8 @@
       "hash_sha256": "21b4d13777150b04f413a7dd054ce12c7ea39a8e35231399ca2a97545266231f",
       "links": [
         "NODE-2693"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-129",
@@ -107462,7 +107590,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-130",
@@ -107516,7 +107645,8 @@
         "NODE-1696",
         "NODE-1697",
         "NODE-1761"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-131",
@@ -108751,7 +108881,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-132",
@@ -110118,7 +110249,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-133",
@@ -111353,7 +111485,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-134",
@@ -112720,7 +112853,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-135",
@@ -113955,7 +114089,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-136",
@@ -113981,7 +114116,8 @@
         "NODE-1268",
         "NODE-1657",
         "NODE-3076"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-137",
@@ -115216,7 +115352,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-138",
@@ -116451,7 +116588,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-139",
@@ -116477,7 +116615,8 @@
         "NODE-1268",
         "NODE-1657",
         "NODE-3076"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-140",
@@ -117712,7 +117851,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-141",
@@ -119079,7 +119219,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-142",
@@ -120314,7 +120455,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-143",
@@ -121549,7 +121691,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-144",
@@ -122784,7 +122927,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-145",
@@ -124151,7 +124295,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-146",
@@ -125518,7 +125663,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-147",
@@ -126885,7 +127031,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-148",
@@ -128252,7 +128399,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-149",
@@ -129619,7 +129767,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-150",
@@ -130986,7 +131135,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-151",
@@ -132221,7 +132371,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-152",
@@ -133456,7 +133607,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-153",
@@ -134823,7 +134975,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-154",
@@ -136190,7 +136343,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-155",
@@ -136206,7 +136360,8 @@
         "NODE-1562",
         "NODE-1567",
         "NODE-1630"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-156",
@@ -137441,7 +137596,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-157",
@@ -138676,7 +138832,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-158",
@@ -139911,7 +140068,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-159",
@@ -141278,7 +141436,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-160",
@@ -142645,7 +142804,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-161",
@@ -144012,7 +144172,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-162",
@@ -145379,7 +145540,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-163",
@@ -146746,7 +146908,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-164",
@@ -148113,7 +148276,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-165",
@@ -149348,7 +149512,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-166",
@@ -150715,7 +150880,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-167",
@@ -152082,7 +152248,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-168",
@@ -152203,7 +152370,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-169",
@@ -153438,7 +153606,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-170",
@@ -154673,7 +154842,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-171",
@@ -155908,7 +156078,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-172",
@@ -155952,7 +156123,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-173",
@@ -157187,7 +157359,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-174",
@@ -158422,7 +158595,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-175",
@@ -159657,7 +159831,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-176",
@@ -159778,7 +159953,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-177",
@@ -161145,7 +161321,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-178",
@@ -162512,7 +162689,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-179",
@@ -163747,7 +163925,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-180",
@@ -165114,7 +165293,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-181",
@@ -166349,7 +166529,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-182",
@@ -167716,7 +167897,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-183",
@@ -169083,7 +169265,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-184",
@@ -170318,7 +170501,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-185",
@@ -171685,7 +171869,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-186",
@@ -173052,7 +173237,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-187",
@@ -174419,7 +174605,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-188",
@@ -175786,7 +175973,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-189",
@@ -177153,7 +177341,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-190",
@@ -178520,7 +178709,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-191",
@@ -179887,7 +180077,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-192",
@@ -179895,7 +180086,8 @@
       "document_ref": "Просроченные -иммунитеты ЕоС от 1949.pdf",
       "drive_iframe_src": "",
       "local_mirror_path": "актуал\\Новая папка\\Просроченные -иммунитеты ЕоС от 1949.pdf",
-      "hash_sha256": "a4fcdf849f9de2c99f74c675bcafe421d5d5fddff4de8d3c46cc8f77e00b75c0"
+      "hash_sha256": "a4fcdf849f9de2c99f74c675bcafe421d5d5fddff4de8d3c46cc8f77e00b75c0",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-193",
@@ -179939,7 +180131,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-194",
@@ -181306,7 +181499,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-195",
@@ -182673,7 +182867,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-196",
@@ -183908,7 +184103,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-197",
@@ -183916,7 +184112,8 @@
       "document_ref": "Здравствуйте.pdf",
       "drive_iframe_src": "",
       "local_mirror_path": "Папка по дискриминации\\Здравствуйте.pdf",
-      "hash_sha256": "91faaa706758290b4d3fe81a42720b9dfff17780815dabaeddc5e4567f5127f6"
+      "hash_sha256": "91faaa706758290b4d3fe81a42720b9dfff17780815dabaeddc5e4567f5127f6",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-198",
@@ -185283,7 +185480,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-199",
@@ -186650,7 +186848,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-200",
@@ -188017,7 +188216,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-201",
@@ -189384,7 +189584,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-202",
@@ -190619,7 +190820,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-203",
@@ -191854,7 +192056,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-204",
@@ -193090,7 +193293,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-205",
@@ -194326,7 +194530,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-206",
@@ -195562,7 +195767,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-207",
@@ -196798,7 +197004,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-208",
@@ -198034,7 +198241,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-209",
@@ -199270,7 +199478,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-210",
@@ -200506,7 +200715,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-211",
@@ -201874,7 +202084,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-212",
@@ -203110,7 +203321,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-213",
@@ -204346,7 +204558,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-214",
@@ -205714,7 +205927,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-215",
@@ -206950,7 +207164,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-216",
@@ -208318,7 +208533,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-217",
@@ -209686,7 +209902,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-218",
@@ -210922,7 +211139,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-219",
@@ -212158,7 +212376,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-220",
@@ -213526,7 +213745,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-221",
@@ -214762,7 +214982,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-222",
@@ -215998,7 +216219,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-223",
@@ -217366,7 +217588,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-224",
@@ -218734,7 +218957,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-225",
@@ -220102,7 +220326,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-226",
@@ -221338,7 +221563,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-227",
@@ -221383,7 +221609,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-228",
@@ -222619,7 +222846,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-229",
@@ -223987,7 +224215,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-230",
@@ -225355,7 +225584,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-231",
@@ -226723,7 +226953,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-232",
@@ -227959,7 +228190,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-233",
@@ -229195,7 +229427,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-234",
@@ -230431,7 +230664,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-235",
@@ -231667,7 +231901,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-236",
@@ -232903,7 +233138,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-237",
@@ -234139,7 +234375,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-238",
@@ -235507,7 +235744,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-239",
@@ -235661,7 +235899,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-240",
@@ -235815,7 +236054,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-241",
@@ -237051,7 +237291,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-242",
@@ -238287,7 +238528,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-243",
@@ -239523,7 +239765,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-244",
@@ -240759,7 +241002,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-245",
@@ -241995,7 +242239,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-246",
@@ -243363,7 +243608,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-247",
@@ -243408,7 +243654,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-248",
@@ -244777,7 +245024,8 @@
         "NODE-2943",
         "NODE-2962"
       ],
-      "event_date": "01.04.2024"
+      "event_date": "01.04.2024",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-249",
@@ -246145,7 +246393,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-250",
@@ -247513,7 +247762,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-251",
@@ -248881,7 +249131,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-252",
@@ -250117,7 +250368,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-253",
@@ -251353,7 +251605,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-254",
@@ -251398,7 +251651,8 @@
         "NODE-3273",
         "NODE-3324",
         "NODE-3346"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-255",
@@ -252634,7 +252888,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-256",
@@ -252650,7 +252905,8 @@
         "NODE-882",
         "NODE-3141",
         "NODE-3160"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-257",
@@ -257990,7 +258246,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-261",
@@ -259358,7 +259615,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-262",
@@ -260726,7 +260984,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-263",
@@ -262094,7 +262353,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-264",
@@ -263462,7 +263722,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-265",
@@ -264830,7 +265091,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-266",
@@ -266066,7 +266328,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-267",
@@ -267434,7 +267697,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-268",
@@ -268802,7 +269066,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-269",
@@ -270038,7 +270303,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-270",
@@ -271406,7 +271672,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-271",
@@ -272774,7 +273041,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-272",
@@ -272928,7 +273196,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-273",
@@ -273082,7 +273351,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-274",
@@ -273236,7 +273506,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-275",
@@ -273390,7 +273661,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-276",
@@ -274758,7 +275030,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-277",
@@ -276126,7 +276399,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-278",
@@ -277362,7 +277636,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-279",
@@ -278598,7 +278873,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-280",
@@ -279834,7 +280110,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-281",
@@ -279846,7 +280123,8 @@
       "forensic_content_summary": "Objektive content: Документ Microsoft Word (6).pdf",
       "links": [
         "NODE-1760"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-282",
@@ -281082,7 +281360,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-283",
@@ -282318,7 +282597,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-284",
@@ -283554,7 +283834,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-285",
@@ -284790,7 +285071,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-286",
@@ -284804,7 +285086,8 @@
         "NODE-560",
         "NODE-848",
         "NODE-1200"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-287",
@@ -284859,7 +285142,8 @@
         "NODE-1696",
         "NODE-1697",
         "NODE-1761"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-288",
@@ -286227,7 +286511,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-289",
@@ -287463,7 +287748,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-290",
@@ -288700,7 +288986,8 @@
         "NODE-3348",
         "NODE-3353"
       ],
-      "event_date": "30.03.2012"
+      "event_date": "30.03.2012",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-291",
@@ -288724,7 +289011,8 @@
         "NODE-684",
         "NODE-868",
         "NODE-2721"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-292",
@@ -289960,7 +290248,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-293",
@@ -291196,7 +291485,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-294",
@@ -292432,7 +292722,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-295",
@@ -293800,7 +294091,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-296",
@@ -295036,7 +295328,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-297",
@@ -295190,7 +295483,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-298",
@@ -295344,7 +295638,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-299",
@@ -296712,7 +297007,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-300",
@@ -296767,7 +297063,8 @@
         "NODE-1696",
         "NODE-1697",
         "NODE-1761"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-301",
@@ -296921,7 +297218,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-302",
@@ -298157,7 +298455,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-303",
@@ -299393,7 +299692,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-304",
@@ -300629,7 +300929,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-305",
@@ -301865,7 +302166,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-306",
@@ -301877,7 +302179,8 @@
       "forensic_content_summary": "Objektive content: Документ 3.pdf",
       "links": [
         "NODE-1222"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-307",
@@ -303246,7 +303549,8 @@
         "NODE-2943",
         "NODE-2962"
       ],
-      "idnp": "2013073999025"
+      "idnp": "2013073999025",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-308",
@@ -304482,7 +304786,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-309",
@@ -305850,7 +306155,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-310",
@@ -305891,7 +306197,8 @@
         "NODE-1016",
         "NODE-2617",
         "NODE-3100"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-311",
@@ -305910,7 +306217,8 @@
         "NODE-3265",
         "NODE-3332"
       ],
-      "event_date": "11.02.2021"
+      "event_date": "11.02.2021",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-312",
@@ -307278,7 +307586,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-313",
@@ -308514,7 +308823,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-314",
@@ -309750,7 +310060,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-315",
@@ -309872,7 +310183,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-316",
@@ -311108,7 +311420,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-317",
@@ -312344,7 +312657,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-318",
@@ -313580,7 +313894,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-319",
@@ -314816,7 +315131,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-320",
@@ -316053,7 +316369,8 @@
         "NODE-3348",
         "NODE-3353"
       ],
-      "participant_role": "адвокат"
+      "participant_role": "адвокат",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-321",
@@ -317289,7 +317606,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-322",
@@ -318525,7 +318843,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-323",
@@ -319761,7 +320080,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-324",
@@ -320997,7 +321317,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-325",
@@ -322233,7 +322554,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-326",
@@ -323470,7 +323792,8 @@
         "NODE-3348",
         "NODE-3353"
       ],
-      "participant_role": "адвокат"
+      "participant_role": "адвокат",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-327",
@@ -324706,7 +325029,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-328",
@@ -324718,7 +325042,8 @@
       "forensic_content_summary": "Objektive content: Документ.pdf",
       "links": [
         "NODE-764"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-329",
@@ -324748,7 +325073,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-330",
@@ -325984,7 +326310,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-331",
@@ -327221,7 +327548,8 @@
         "NODE-3348",
         "NODE-3353"
       ],
-      "event_date": "21.07.2009"
+      "event_date": "21.07.2009",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-332",
@@ -327251,7 +327579,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-333",
@@ -328487,7 +328816,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-334",
@@ -329723,7 +330053,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-335",
@@ -330959,7 +331290,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-336",
@@ -332195,7 +332527,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-337",
@@ -332317,7 +332650,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-338",
@@ -332331,7 +332665,8 @@
         "NODE-1624",
         "NODE-2181",
         "NODE-2188"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-339",
@@ -332453,7 +332788,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-340",
@@ -333821,7 +334157,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-341",
@@ -335189,7 +335526,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-342",
@@ -336425,7 +336763,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-343",
@@ -337793,7 +338132,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-344",
@@ -339161,7 +339501,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-345",
@@ -340529,7 +340870,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-346",
@@ -341765,7 +342107,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-347",
@@ -343133,7 +343476,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-348",
@@ -344501,7 +344845,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-349",
@@ -345737,7 +346082,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-350",
@@ -347105,7 +347451,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-351",
@@ -348341,7 +348688,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-352",
@@ -349710,7 +350058,8 @@
         "NODE-2943",
         "NODE-2962"
       ],
-      "event_date": "21.05.2021"
+      "event_date": "21.05.2021",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-353",
@@ -351078,7 +351427,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-354",
@@ -352448,7 +352798,8 @@
         "NODE-2962"
       ],
       "participant_role": "Judecător",
-      "location": "Chișinău"
+      "location": "Chișinău",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-355",
@@ -353684,7 +354035,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-356",
@@ -355052,7 +355404,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-357",
@@ -356420,7 +356773,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-358",
@@ -357656,7 +358010,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-359",
@@ -358892,7 +359247,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-360",
@@ -360128,7 +360484,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-361",
@@ -361496,7 +361853,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-362",
@@ -362864,7 +363222,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-363",
@@ -363018,7 +363377,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-364",
@@ -364386,7 +364746,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-365",
@@ -365754,7 +366115,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-366",
@@ -366990,7 +367352,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-367",
@@ -367112,7 +367475,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-368",
@@ -368348,7 +368712,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-369",
@@ -369716,7 +370081,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-370",
@@ -370952,7 +371318,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-371",
@@ -372320,7 +372687,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-372",
@@ -373688,7 +374056,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-373",
@@ -374924,7 +375293,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-374",
@@ -375078,7 +375448,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-375",
@@ -375233,7 +375604,8 @@
         "NODE-3230",
         "NODE-3345"
       ],
-      "event_date": "04.01.2021"
+      "event_date": "04.01.2021",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-376",
@@ -375388,7 +375760,8 @@
         "NODE-3230",
         "NODE-3345"
       ],
-      "event_date": "04.01.2021"
+      "event_date": "04.01.2021",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-377",
@@ -375542,7 +375915,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-378",
@@ -375696,7 +376070,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-379",
@@ -375851,7 +376226,8 @@
         "NODE-3230",
         "NODE-3345"
       ],
-      "event_date": "21.07.2009"
+      "event_date": "21.07.2009",
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-380",
@@ -376005,7 +376381,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-381",
@@ -376159,7 +376536,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-382",
@@ -376313,7 +376691,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-383",
@@ -376467,7 +376846,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-384",
@@ -376621,7 +377001,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-385",
@@ -376775,7 +377156,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-386",
@@ -376929,7 +377311,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-387",
@@ -377083,7 +377466,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-388",
@@ -378319,7 +378703,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-389",
@@ -378473,7 +378858,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-390",
@@ -378627,7 +379013,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-391",
@@ -378781,7 +379168,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-392",
@@ -378935,7 +379323,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-393",
@@ -379089,7 +379478,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-394",
@@ -379243,7 +379633,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-395",
@@ -379397,7 +379788,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-396",
@@ -379551,7 +379943,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-397",
@@ -379705,7 +380098,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-398",
@@ -379859,7 +380253,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-399",
@@ -380013,7 +380408,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-400",
@@ -380167,7 +380563,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-401",
@@ -380191,7 +380588,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-402",
@@ -380208,7 +380606,8 @@
         "NODE-1562",
         "NODE-1567",
         "NODE-1630"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-403",
@@ -381444,7 +381843,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-404",
@@ -381470,7 +381870,8 @@
         "NODE-1268",
         "NODE-1657",
         "NODE-3076"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-405",
@@ -382837,7 +383238,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-406",
@@ -384204,7 +384606,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-407",
@@ -384215,7 +384618,8 @@
       "hash_sha256": "PENDING_HASH",
       "links": [
         "NODE-1507"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-408",
@@ -385582,7 +385986,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-409",
@@ -386949,7 +387354,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-410",
@@ -388316,7 +388722,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-411",
@@ -389551,7 +389958,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-412",
@@ -390786,7 +391194,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-413",
@@ -390939,7 +391348,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-414",
@@ -391092,7 +391502,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-415",
@@ -391245,7 +391656,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-416",
@@ -391398,7 +391810,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-417",
@@ -392765,7 +393178,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-418",
@@ -392918,7 +393332,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-419",
@@ -393071,7 +393486,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-420",
@@ -394306,7 +394722,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-421",
@@ -395541,7 +395958,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-422",
@@ -396776,7 +397194,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-423",
@@ -398143,7 +398562,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-424",
@@ -399378,7 +399798,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-425",
@@ -400613,7 +401034,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-426",
@@ -401980,7 +402402,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-427",
@@ -403347,7 +403770,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-428",
@@ -404582,7 +405006,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-429",
@@ -404622,7 +405047,8 @@
         "NODE-1016",
         "NODE-2617",
         "NODE-3100"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-430",
@@ -405989,7 +406415,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-431",
@@ -406012,7 +406439,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-432",
@@ -407247,7 +407675,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-433",
@@ -407276,7 +407705,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-434",
@@ -407429,7 +407859,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-435",
@@ -408796,7 +409227,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-436",
@@ -410163,7 +410595,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-437",
@@ -411398,7 +411831,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-438",
@@ -411427,7 +411861,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-439",
@@ -412662,7 +413097,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-440",
@@ -412685,7 +413121,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-441",
@@ -414052,7 +414489,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-442",
@@ -415419,7 +415857,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-443",
@@ -416786,7 +417225,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-444",
@@ -418021,7 +418461,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-445",
@@ -419256,7 +419697,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-446",
@@ -420623,7 +421065,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-447",
@@ -420776,7 +421219,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-448",
@@ -420929,7 +421373,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-449",
@@ -421082,7 +421527,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-450",
@@ -422317,7 +422763,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-451",
@@ -423684,7 +424131,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-452",
@@ -425051,7 +425499,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-453",
@@ -426418,7 +426867,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-454",
@@ -426429,7 +426879,8 @@
       "hash_sha256": "PENDING_HASH",
       "links": [
         "NODE-938"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-455",
@@ -426452,7 +426903,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-456",
@@ -426475,7 +426927,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-457",
@@ -426498,7 +426951,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-458",
@@ -427733,7 +428187,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-459",
@@ -428968,7 +429423,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-460",
@@ -430203,7 +430659,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-461",
@@ -431438,7 +431895,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-462",
@@ -431591,7 +432049,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-463",
@@ -432826,7 +433285,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-464",
@@ -434193,7 +434653,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-465",
@@ -435560,7 +436021,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-466",
@@ -435713,7 +436175,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-467",
@@ -435866,7 +436329,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-468",
@@ -437101,7 +437565,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-469",
@@ -438336,7 +438801,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-470",
@@ -439571,7 +440037,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-471",
@@ -440806,7 +441273,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-472",
@@ -440927,7 +441395,8 @@
         "NODE-2836",
         "NODE-2863",
         "NODE-2926"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-473",
@@ -442162,7 +442631,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-474",
@@ -443397,7 +443867,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-475",
@@ -444764,7 +445235,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-476",
@@ -445999,7 +446471,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-477",
@@ -446028,7 +446501,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-478",
@@ -446051,7 +446525,8 @@
         "NODE-813",
         "NODE-3107",
         "NODE-3229"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-479",
@@ -446204,7 +446679,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-480",
@@ -446357,7 +446833,8 @@
         "NODE-3174",
         "NODE-3230",
         "NODE-3345"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-481",
@@ -447592,7 +448069,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-482",
@@ -447621,7 +448099,8 @@
         "NODE-3060",
         "NODE-3124",
         "NODE-3134"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-483",
@@ -448856,7 +449335,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-484",
@@ -450091,7 +450571,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-485",
@@ -451458,7 +451939,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-486",
@@ -452825,7 +453307,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-487",
@@ -454192,7 +454675,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-488",
@@ -455427,7 +455911,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-489",
@@ -456794,7 +457279,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-490",
@@ -458161,7 +458647,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-491",
@@ -459528,7 +460015,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-492",
@@ -460895,7 +461383,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-493",
@@ -462130,7 +462619,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-494",
@@ -463365,7 +463855,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-495",
@@ -464732,7 +465223,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-496",
@@ -464772,7 +465264,8 @@
         "NODE-1016",
         "NODE-2617",
         "NODE-3100"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-497",
@@ -466007,7 +466500,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-498",
@@ -467374,7 +467868,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-499",
@@ -468609,7 +469104,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-500",
@@ -468636,7 +469132,8 @@
         "NODE-3058",
         "NODE-3226",
         "NODE-3309"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-244",
@@ -468653,7 +469150,7 @@
         "NODE-001",
         "NODE-003"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-245",
@@ -468669,7 +469166,7 @@
         "NODE-244",
         "NODE-039"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-246",
@@ -468685,7 +469182,7 @@
         "NODE-244",
         "NODE-245"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-247",
@@ -468702,7 +469199,7 @@
         "NODE-245",
         "NODE-246"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-248",
@@ -468718,7 +469215,7 @@
         "NODE-247",
         "NODE-244"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-249",
@@ -468735,7 +469232,7 @@
         "NODE-130",
         "NODE-131"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-250",
@@ -468751,7 +469248,7 @@
         "NODE-247",
         "NODE-248"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-251",
@@ -468764,7 +469261,7 @@
       "links": [
         "NODE-247"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-252",
@@ -468778,7 +469275,7 @@
         "NODE-246",
         "NODE-250"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-253",
@@ -468791,7 +469288,7 @@
       "links": [
         "NODE-249"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-254",
@@ -468804,7 +469301,7 @@
       "links": [
         "NODE-253"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-255",
@@ -468817,7 +469314,7 @@
       "links": [
         "NODE-247"
       ],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-256",
@@ -468831,7 +469328,7 @@
       "issue_date": "04.01.2021",
       "hash_sha256": "PENDING_HASH",
       "links": [],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-257",
@@ -468887,7 +469384,7 @@
       "issue_date": "13.10.1998",
       "hash_sha256": "PENDING_HASH",
       "links": [],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-262",
@@ -468901,7 +469398,7 @@
       "issue_date": "14.05.2021",
       "hash_sha256": "PENDING_HASH",
       "links": [],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-263",
@@ -468915,7 +469412,7 @@
       "issue_date": "17.05.2021",
       "hash_sha256": "PENDING_HASH",
       "links": [],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-264",
@@ -468929,7 +469426,7 @@
       "issue_date": "03.12.2018",
       "hash_sha256": "PENDING_HASH",
       "links": [],
-      "deep_indexed": false
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-265",
@@ -468941,6 +469438,44 @@
       "case_ref": "7-17/13",
       "signer": "Галбен Анатолий",
       "issue_date": "24.05.2013",
+      "hash_sha256": "PENDING_HASH",
+      "links": [],
+      "deep_indexed": true
+    },
+    {
+      "node_id": "NODE-257",
+      "type": "analysis_report",
+      "subject": "Macheret Alexei",
+      "document_ref": "Анализ системного подлога идентичности...",
+      "forensic_content_summary": "Анализ системного подлога идентичности и хронология каскада правонарушений CASE-MACHERET-1997-2026.",
+      "local_mirror_path": "Анализ системного подлога идентичности и хронология каскада правонарушений CASE-MACHERET-1997-2026.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-246",
+        "NODE-247"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-258",
+      "type": "technical_manifest",
+      "subject": "A©t0r",
+      "document_ref": "ACTOR_Autonomous_Deployment_Manifest",
+      "forensic_content_summary": "Манифест автономного развертывания агента A©t0r.",
+      "local_mirror_path": "ACTOR_Autonomous_Deployment_Manifest.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-250"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-259",
+      "type": "forensic_artifact",
+      "subject": "Unknown",
+      "document_ref": "Artifact 0-02-05...",
+      "forensic_content_summary": "Неидентифицированный артефакт (зашифрованное имя файла). Требует детального анализа содержания.",
+      "local_mirror_path": "0-02-05-2c27340647974345d69ed0bd771af1723665025195af61fe4a6855f2087283f8_fc005006667dd87c.pdf",
       "hash_sha256": "PENDING_HASH",
       "links": [],
       "deep_indexed": false
