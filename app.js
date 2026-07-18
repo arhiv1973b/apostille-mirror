@@ -3,27 +3,126 @@ const searchBox = document.getElementById('searchBox');
 const modal = document.getElementById('modal');
 const modalIframe = document.getElementById('modalIframe');
 
-async function loadRegistry() {
+async function loadGraphData() {
     try {
-        // 1. Грузим мастер-индекс
         const response = await fetch('registry_chunks/index.json');
         const masterIndex = await response.json();
         
-        // 2. Грузим все чанки параллельно
         const chunkPromises = masterIndex.chunks.map(filename => 
             fetch(`registry_chunks/${filename}`).then(r => r.json())
         );
-        
         const chunks = await Promise.all(chunkPromises);
-        
-        // 3. Объединяем узлы (Flattening)
         const allNodes = chunks.flatMap(chunk => chunk.evidence_nodes);
-        
+
+        let semanticEdges = [];
+        try {
+            const edgesResponse = await fetch('registry_chunks/edges.json');
+            const edgesData = await edgesResponse.json();
+            semanticEdges = edgesData.edges || [];
+        } catch (e) {
+            console.warn("edges.json пока не найден или пуст.");
+        }
+
         renderTiles(allNodes);
+        
+        const cyElements = [
+             ...allNodes.map(node => ({
+                 data: { 
+                     id: node.node_id, 
+                     label: node.node_id,
+                     ...node 
+                 }
+             })),
+             ...semanticEdges.map(edge => ({
+                 data: {
+                     source: edge.source,
+                     target: edge.target,
+                     relation: edge.relation
+                 },
+                 classes: edge.relation
+             }))
+         ];
+        initGraph(cyElements);
+        return { nodes: allNodes, edges: semanticEdges };
     } catch (e) { 
-        console.error("Ошибка при сборке чанков:", e); 
-        renderTiles([]);
+        console.error("A©t0r: Ошибка загрузки реестра и связей:", e); 
     }
+}
+
+function initGraph(elements) {
+    const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements: elements,
+        style: [
+            {
+                selector: 'node',
+                style: {
+                    'background-color': '#1E90FF',
+                    'label': 'data(label)',
+                    'color': '#E0E0E0',
+                    'font-size': '10px',
+                    'text-valign': 'bottom',
+                    'text-margin-y': 5
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'width': 1.5,
+                    'line-color': '#444', 
+                    'curve-style': 'bezier',
+                    'opacity': 0.6
+                }
+            },
+            {
+                selector: 'edge.shared_idnp',
+                style: {
+                    'line-color': '#FF4136',
+                    'target-arrow-color': '#FF4136',
+                    'target-arrow-shape': 'triangle',
+                    'label': 'IDNP',
+                    'font-size': '8px',
+                    'color': '#FF4136',
+                    'opacity': 1,
+                    'z-index': 10
+                }
+            },
+            {
+                selector: 'edge.shared_case_ref',
+                style: {
+                    'line-color': '#FFDC00',
+                    'target-arrow-color': '#FFDC00',
+                    'target-arrow-shape': 'triangle',
+                    'label': 'Case',
+                    'font-size': '8px',
+                    'color': '#FFDC00',
+                    'opacity': 1,
+                    'z-index': 10
+                }
+            },
+            {
+                selector: 'edge.shared_ip_address',
+                style: {
+                    'line-color': '#2ECC40',
+                    'target-arrow-color': '#2ECC40',
+                    'target-arrow-shape': 'triangle',
+                    'label': 'IP',
+                    'font-size': '8px',
+                    'color': '#2ECC40',
+                    'opacity': 1,
+                    'z-index': 10
+                }
+            }
+        ],
+        layout: {
+            name: 'cose', 
+            idealEdgeLength: 100,
+            nodeOverlap: 20,
+            refresh: 20,
+            fit: true,
+            padding: 30
+        }
+    });
 }
 
 function renderTiles(nodes) {
@@ -60,13 +159,18 @@ function highlightLinks(links, nodeMap) {
 
 function openModal(src) {
     if (!src) return;
-    // URL Transformation to preview
     const previewUrl = src.replace(/\/view.*$/, '/preview').replace(/\/edit.*$/, '/preview');
     modalIframe.src = previewUrl;
     modal.style.display = 'block';
 }
 
 document.querySelector('.close').onclick = () => { modal.style.display = 'none'; modalIframe.src = ''; };
+
+// View Toggle Logic
+function toggleView(view) {
+    document.getElementById('tileGrid').style.display = view === 'grid' ? 'grid' : 'none';
+    document.getElementById('cy').style.display = view === 'graph' ? 'block' : 'none';
+}
 
 // Live Search
 searchBox.oninput = (e) => {
@@ -77,4 +181,4 @@ searchBox.oninput = (e) => {
     });
 };
 
-loadRegistry();
+loadGraphData();
