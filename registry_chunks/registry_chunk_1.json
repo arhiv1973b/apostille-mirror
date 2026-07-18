@@ -468752,6 +468752,72 @@
         "NODE-248"
       ],
       "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-251",
+      "type": "judicial_sentence_authenticated",
+      "subject": "Macheret Alexei",
+      "document_ref": "Apostille DR4Y1584JW9F4 - Case 1-649/2003",
+      "forensic_content_summary": "Приговор по делу №1-649/2003 (наркотические вещества).",
+      "local_mirror_path": "apostille_DR4Y1584JW9F4_2013073886585.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-247"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-252",
+      "type": "prosecutor_correspondence",
+      "subject": "Macheret Alexei",
+      "document_ref": "Apostille FRWX11FTJU5F9 - Prosecutor Letter 2020",
+      "forensic_content_summary": "Письмо прокурора Потинга В. (03.11.2020) об отказе возобновления дела №1997018105.",
+      "local_mirror_path": "apostille_FRWX11FTJU5F9_2013074190032.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-246",
+        "NODE-250"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-253",
+      "type": "judicial_ruling_revision",
+      "subject": "Macheret Alexei",
+      "document_ref": "Apostille DOYO489SCL5K2 - Revision 4rh-7/2019",
+      "forensic_content_summary": "Решение суда Буюкань (18.12.2019) о передаче запроса на пересмотр дела.",
+      "local_mirror_path": "apostille_DOYO489SCL5K2_2013074137051.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-249"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-254",
+      "type": "supreme_court_ruling",
+      "subject": "Macheret Alexei",
+      "document_ref": "Apostille DLTP7B8ZHWGQ7 - SCJ Ruling Ira-719/2022",
+      "forensic_content_summary": "Определение ВСП (08.06.2022) о недопустимости кассационной жалобы.",
+      "local_mirror_path": "apostille_DLTP7B8ZHWGQ7_2013074484667.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-253"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-255",
+      "type": "judicial_sentence_authenticated",
+      "subject": "Macheret Alexei",
+      "document_ref": "Apostille 3R3T11BQ6TJI1 - Sentence 1-989/06",
+      "forensic_content_summary": "Приговор суда Рышкань (08.11.2006) - 150 часов общественных работ.",
+      "local_mirror_path": "apostille_3R3T11BQ6TJI1_2013073973599.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-247"
+      ],
+      "deep_indexed": false
     }
   ]
 }
