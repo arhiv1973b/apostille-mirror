@@ -468736,6 +468736,22 @@
         "NODE-131"
       ],
       "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-250",
+      "type": "forensic_torture_complaint",
+      "subject": "Macheret Alexei",
+      "case_ref": "None (1997 Complaint)",
+      "event_date": "18.08.1997",
+      "document_ref": "1997_Torture_Complaint_Macheret - МВД Молдовы",
+      "forensic_content_summary": "Официальная жалоба в МВД РМ на систематические избиения, пытки и незаконное изъятие имущества сотрудниками полиции во главе с Виктором Дулче. Основа для обвинений в фабрикации дела.",
+      "local_mirror_path": "1997_Torture_Complaint_Macheret.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-247",
+        "NODE-248"
+      ],
+      "deep_indexed": false
     }
   ]
 }
