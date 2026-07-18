@@ -468654,6 +468654,22 @@
         "NODE-003"
       ],
       "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-245",
+      "type": "apostilled_legal_document",
+      "subject": "Macheret Alexei",
+      "case_ref": "1-568/98",
+      "event_date": "11.02.2021",
+      "document_ref": "Apostille BOUS9XAQDTFH2 - Legalized Translation confirmation",
+      "forensic_content_summary": "Официальное подтверждение выдачи перевода приговора по делу №1-568/98 на русский язык. Документ подтверждает легализацию судебного решения для международного использования.",
+      "local_mirror_path": "apostille_BOUS9XAQDTFH2_2013073851064.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-244",
+        "NODE-039"
+      ],
+      "deep_indexed": false
     }
   ]
 }
