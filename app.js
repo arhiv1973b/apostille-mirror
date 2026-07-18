@@ -5,10 +5,25 @@ const modalIframe = document.getElementById('modalIframe');
 
 async function loadRegistry() {
     try {
-        const response = await fetch('EVIDENCE_REGISTRY_INDEX.json');
-        const data = await response.json();
-        renderTiles(data.evidence_nodes || []);
-    } catch (e) { console.error("Ошибка загрузки реестра:", e); }
+        // 1. Грузим мастер-индекс
+        const response = await fetch('registry_chunks/index.json');
+        const masterIndex = await response.json();
+        
+        // 2. Грузим все чанки параллельно
+        const chunkPromises = masterIndex.chunks.map(filename => 
+            fetch(`registry_chunks/${filename}`).then(r => r.json())
+        );
+        
+        const chunks = await Promise.all(chunkPromises);
+        
+        // 3. Объединяем узлы (Flattening)
+        const allNodes = chunks.flatMap(chunk => chunk.evidence_nodes);
+        
+        renderTiles(allNodes);
+    } catch (e) { 
+        console.error("Ошибка при сборке чанков:", e); 
+        renderTiles([]);
+    }
 }
 
 function renderTiles(nodes) {
