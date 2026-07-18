@@ -468703,6 +468703,39 @@
         "NODE-246"
       ],
       "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-248",
+      "type": "administrative_precedent_pre_tort",
+      "subject": "Macheret Alexei",
+      "case_ref": "None (Administrative)",
+      "event_date": "05.08.1997",
+      "document_ref": "Decizie Judecătoria Centru - 06.08.1997",
+      "forensic_content_summary": "Административное решение (штраф 90 лей) по ст. 164 ч. 1 КоАП РМ, зафиксировавшее инцидент на остановке до применения пыток 18.08.1997. Свидетельствует о создании первичного административного прецедента для последующего давления.",
+      "local_mirror_path": "1997_год_подмена_пыток.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-247",
+        "NODE-244"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-249",
+      "type": "judicial_sentence_authenticated",
+      "subject": "Macheret Alexei",
+      "case_ref": "1-272/03",
+      "event_date": "21.02.2003",
+      "document_ref": "Apostille 5S2WF92X7X4R8 - Verdict Case 1-272/03",
+      "forensic_content_summary": "Приговор суда г. Кишинев от 21.02.2003 г. по делу №1-272/03 (ст. 225-5 ч. 1 УК РМ). Обвинительный приговор с испытательным сроком и принудительным лечением.",
+      "local_mirror_path": "apostille_5S2WF92X7X4R8_2013074079955.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-129",
+        "NODE-130",
+        "NODE-131"
+      ],
+      "deep_indexed": false
     }
   ]
 }
