@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit-Hub: Case Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Audit-Hub Case Explorer</h1>
+        <input type="text" id="searchBox" placeholder="Поиск по ID или описанию...">
+    </header>
+    <main id="tileGrid" class="grid"></main>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
