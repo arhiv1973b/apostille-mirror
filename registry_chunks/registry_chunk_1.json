@@ -468670,6 +468670,39 @@
         "NODE-039"
       ],
       "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-246",
+      "type": "official_correspondence_destruction_protocol",
+      "subject": "Macheret Alexei",
+      "case_ref": "1-568/98",
+      "event_date": "22.03.2022",
+      "document_ref": "Apostille CT5X1Y51KUDM1 - Confirmation of file destruction",
+      "forensic_content_summary": "Официальный ответ суда г. Кишинев (Центр) от 22.03.2022, подтверждающий уничтожение материалов уголовного дела №1-568/98 в 2015 году согласно протоколу №4.",
+      "local_mirror_path": "apostille_CT5X1Y51KUDM1_2013074286896.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-244",
+        "NODE-245"
+      ],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-247",
+      "type": "judicial_sentence_authenticated",
+      "subject": "Macheret Alexei",
+      "case_ref": "1-568/98",
+      "event_date": "13.10.1998",
+      "document_ref": "Apostille CH3OF03S9Q7F9 - Judicial Sentence Dulce V.G.",
+      "forensic_content_summary": "Приговор суда сектора Центр от 13.10.1998 г. в отношении Виктора Дулче за применение пыток к Мачерету А.А. (ст. 185 ч. 3 УК РМ). Выдача решения на государственном языке была подтверждена 11.02.2021.",
+      "local_mirror_path": "apostille_CH3OF03S9Q7F9_2013074286896.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-244",
+        "NODE-245",
+        "NODE-246"
+      ],
+      "deep_indexed": false
     }
   ]
 }
