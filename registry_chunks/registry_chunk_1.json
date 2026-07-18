@@ -470706,6 +470706,20 @@
       "local_mirror_path": "",
       "hash_sha256": "PENDING_HASH",
       "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-268",
+      "type": "apostilled_record",
+      "subject": "Macheret Alexei",
+      "event_date": "07.07.2021",
+      "document_ref": "Apostille 80UQ636YBZG17 - Legalized Document",
+      "forensic_content_summary": "Апостилированный документ (код 80UQ636YBZG17), подписант Iordan Iurie.",
+      "local_mirror_path": "apostille_80UQ636YBZG17_2013073978518.pdf",
+      "hash_sha256": "PENDING_HASH",
+      "links": [
+        "NODE-256"
+      ],
+      "deep_indexed": false
     }
   ]
 }
