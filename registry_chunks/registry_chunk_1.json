@@ -252915,7 +252915,7 @@
       "drive_iframe_src": "",
       "local_mirror_path": "Снимок экрана 2025—03—21 в 18.14.40.pdf",
       "hash_sha256": "d145b66b2e9d8f98531091834f57852908d3478715aaa951f24df092800880f5",
-      "forensic_content_summary": "Objektive content: Снимок экрана 2025—03—21 в 18.14.40.pdf",
+      "forensic_content_summary": "ERROR_OCR: (1, 'Image too large: (1725, 35035) Error during processing.')",
       "links": [
         "NODE-001",
         "NODE-007",
@@ -254142,7 +254142,8 @@
         "NODE-3347",
         "NODE-3348",
         "NODE-3353"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-258",
@@ -254151,7 +254152,7 @@
       "drive_iframe_src": "",
       "local_mirror_path": "A©torVault\\CASE-MACHERET-1997-2026\\PDF-Evidences\\_1\\Grigoriu V si Gusanu Ion.pdf",
       "hash_sha256": "b3aefbd829900e61da954b41557fd87026eda8404367736b01e5853867dff6c7",
-      "forensic_content_summary": "Objektive content: Grigoriu V si Gusanu Ion.pdf",
+      "forensic_content_summary": "\n--- Page 1 ---\nNOTAR CRIUCOVA SVETLANA\nMD-2068, Republica Moldova, mun.Chişinău,\nstr.Miron Costin, 7, of.105\ntel: +373 22 44-20-29\n\nCONTRACT\nde înstrăinare a bunului imobil\ncu condiţia întreţinerii pe viaţă\n\nmun.Chişinău, Republica Moldova,\nȘaptesprezece ianuarie anul două mii douăzeci şi cinci.\n\nSubsemnaţii: Gușanu lonm, născut la 21.08.1969, cetățean a RM. cu IDNP\n0963011540964, identificat prin buletin de identitate B42159795, eliberat de ASP la 13.03.2023,\nvalabil nelimitat, domiciliat în R.M., mun.Chişinău, str.Andrei Doga, nr.30, ap.50, numit în\ncontinuare „Beneficiarul Întreţinerii” şi Grigoriu Victoria, născută la 02.04.1962, cet. al RM\ncu IDNP 0961111894334, identificată prin buletin de identitate A02172230, eliberat de of.02 la\n10.02.2009, valabil nelimitat, domiciliat în R.M., mun.Chişinău, bd.Moscova, 20/3, ap 30,\nnumită în continuare „Dobînditor”, ат întocmit prezentul contract, privind următoarele: ----—---\n\n1. Eu, Gușanu Ion, numit „Beneficiarul Întreţinerii”, fiind în deplinătatea facultăților\nmintale, conştient de importanța acestui act şi nesilit de nimeni, înțeleg că transmit în deplină\nproprietate „Dobânditorului” în contul întreţinerii mele pe viață, Iprobilul din proprietatea mea *\nşi anume: Apartamentul nr.50, compus din una odaie cu suprafața totală de 30,9 (treizeci și — *\n9/10) m.p., inclusiv suprafaţa locativă de 11,1 (unsprezece #1 1/10) 'm.p., situat în RM,\nmun.Chişinău, sectorul Rişcani, str.Andrei Doga, nr.30, nr.cadastral 0100423.112.01.050. —-\n\n2. Bunul imobil sus-indicat aparține „Beneficiarului Întreținerii” în baza Certificatului\ncu privire 1а dreptul de proprietate asupra cotei-părți @т proprietatea comună nr.1-323, eliberat\nde către notarul Jeleznîi Angela 1а 14.12.2022 înregistrat 1а I.P. „ASP”, Serviciul Cadastral\nTeritorial „Chișinău” 1а 20.12.2022 cu nr.0100/22/188688, Contractului de donaţie nr.1-183,\nautentificat de către notarul Cutian Aliona 1а 17.05.2024, înregistrat Та I.P. „Cadastrul Bunurilor\nImobile”, Serviciul Cad",
       "links": [
         "NODE-002",
         "NODE-004",
@@ -255510,7 +255511,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-259",
@@ -255519,7 +255521,7 @@
       "drive_iframe_src": "",
       "local_mirror_path": "A©torVault\\CASE-MACHERET-1997-2026\\PDF-Evidences\\_1\\Confirmare_de_plata_00930958070557 (1).pdf",
       "hash_sha256": "11594fe6a52deea95d247c7942ea4daa68242a42c9d4571f5a919ed99876499a",
-      "forensic_content_summary": "Objektive content: Confirmare_de_plata_00930958070557 (1).pdf",
+      "forensic_content_summary": "\n--- Page 1 ---\n///;/Llay I SERVICIUL GUVERNAMENTAL DE PLATI ELECTRONICE\n\n00 9309 5807 0557\n\nCONFIRMARE DE ACHITARE A NOTEI DE PLATĂ\n\nINVOICE PAYMENT CONFIRMATION ® ПОДТВЕРЖДЕНИЕ ОПЛАТЫ СЧЁТА\n\nSeria și numărul notei de plată\nInvoice identifier / Homep счёта\n\nEmisă la / Issued а{ / Выписан 17-02-2024 16:11 Statutul achitării / Payment status / Статус оплаты Achitat\n\nAchitat pentru / Paid for / Оплачено на имя Achitat către / Paid to / Оплачено B пользу\n\nALEXEI MACERET . Agenţia Servicii Publice —°\n2000001159655 ; 1002600024700 °\nPersoană fizică ° str. Puşkin nr. 42, mun. Chişinău, MD-2012 —°\n\nAchitat prin / Paid through / Оплачено через\n\nDescifrarea plății achitate / Payment details / Детали платежа\n\n# | 8.1 Serviciul sau taxa ID plată Data achitării Suma\nService or tax Payment ID | Payment date Sum\n\n1. Numărul comenzii la prestatorul de serviciu: 300161227334\n\n1.1 Servicii în domeniul înregistrării bunurilor imobile, 125901801 05-09-2023 15:38 390.00 MDL\nconform contractului (1 х 390,00 Lei)\n\nReducere sau scutire / Discount / Скидка —Ă 0.00 MDL\n\nComision / Comission Fee / Коммиссия _ 0.00 MDL\n\nLivrare / Shipping/ Доставкаа l 0.00 MDL\n\nTOTAL/TOTAL/ ИТОГО 390.00 MDL\n\nInformații suplimentare / Additional information / Дополнительная информация\n\nDetalii plată nr. 1.1\nBeneficiarul plății: I.P. Agenţia Servicii Publice\n\nAgentCommission: 0.00\n\nCod destinatie: pf\n\nCod serviciu: КЕСО1\n\nDestination: Servicii în domeniul înregistrării bunurilor imobile, conform contractului (1 x 390,00 Lei)\nDetalii info 1: MD98STRPCCC518430C01231AA;\n\nInfo 1: Conturi trezoreriale\n\nRetailServiceCode: pf|b997423c-4abd-4ba0-bc5e-9530b378dd8d\n\nIBAN destinație: MD98STRPCCC518430C01231AA\n\nCod fiscal: 1002600024700\n\nInformaţii utile / Useful information / Полезная информация\n\nPrestator а! Serviciului Guvernamental de Plăți Electronice MPay este Instituția Publică Agenţia de Guvernare\n\nScanaţi codul QR pentru a verifica\nstatutul notei de plată.\n\nScan the QR code to verify the status\nof е invoice.\n\nСкан",
       "links": [
         "NODE-002",
         "NODE-004",
@@ -256878,7 +256880,8 @@
         "NODE-2897",
         "NODE-2943",
         "NODE-2962"
-      ]
+      ],
+      "deep_indexed": true
     },
     {
       "node_id": "NODE-260",
@@ -470612,6 +470615,96 @@
       "issue_date": "13.08.2021",
       "hash_sha256": "PENDING_HASH",
       "links": [],
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-258",
+      "type": "drive_document",
+      "document_ref": "e8",
+      "drive_iframe_src": "https://drive.google.com/open?id=1uqaxT2yqy5N7jVu2vXR6deq7-2qBHfp0",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-259",
+      "type": "drive_document",
+      "document_ref": "82",
+      "drive_iframe_src": "https://drive.google.com/open?id=1_qbBUYfX0Ck6nuW1-qr6Ct-UFo3RakGr",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-260",
+      "type": "drive_document",
+      "document_ref": "88",
+      "drive_iframe_src": "https://drive.google.com/open?id=1g5-p8wBoYGk9vfJ4behTEuCDnfnJH47a",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-261",
+      "type": "drive_document",
+      "document_ref": "8c",
+      "drive_iframe_src": "https://drive.google.com/open?id=1u4bdU_7xH3Z6wqcx-6MJoOlMpd-CQbf8",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-262",
+      "type": "drive_document",
+      "document_ref": "ee",
+      "drive_iframe_src": "https://drive.google.com/open?id=1V3V-id-uPiOR7hP_cl2wpbjUPyENFZK-",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-263",
+      "type": "drive_document",
+      "document_ref": "67",
+      "drive_iframe_src": "https://drive.google.com/open?id=1NK2ozSi0LCWLd5hBaE_p93Jl7ViRMFqB",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-264",
+      "type": "drive_document",
+      "document_ref": "23",
+      "drive_iframe_src": "https://drive.google.com/open?id=1poI5dBc1FVnQBM6RLdewKblMrDVn3iJz",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-265",
+      "type": "drive_document",
+      "document_ref": "9b",
+      "drive_iframe_src": "https://drive.google.com/open?id=17oljG9E9ei3pgOK7cJuM04Oy_4APcN4x",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-266",
+      "type": "drive_document",
+      "document_ref": "52",
+      "drive_iframe_src": "https://drive.google.com/open?id=1k23tPv6FqdRJZNSNG_1HkA07TPSw2Iir",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
+      "deep_indexed": false
+    },
+    {
+      "node_id": "NODE-267",
+      "type": "drive_document",
+      "document_ref": "b2",
+      "drive_iframe_src": "https://drive.google.com/open?id=1mtax_AAWAapaIc0APKWWhOudgN3Vc5W8",
+      "local_mirror_path": "",
+      "hash_sha256": "PENDING_HASH",
       "deep_indexed": false
     }
   ]
