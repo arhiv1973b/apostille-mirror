@@ -1,0 +1,188 @@
+═══════════════════════════════════════════════════════
+MCP AUDIT REPORT — 2026-07-05 05:00:33
+═══════════════════════════════════════════════════════
+
+[Info] Starting MCP Audit and Repair Sequence
+
+[Info] Part 1: Checking MCP Servers
+
+[Success] MCP list retrieved successfully.
+Configured MCP servers:
+
+✗ test-bridge:  - Disconnected
+✗ tiula-bridge:  - Disconnected
+✗ MCP_DOCKER: docker mcp gateway run --profile terminal_control (stdio) - Disconnected
+✗ LocalFS:  - Disconnected
+
+[Warning] Found disconnected MCP servers!
+Disconnected servers found.
+[Info] Part 2: Checking Docker Containers
+
+[Success] Docker containers retrieved.
+CONTAINER ID   IMAGE                                COMMAND                  CREATED          STATUS             PORTS                                         NAMES
+b46225791f86   b53b9d2ecd7c                         "docker-entrypoint.s…"   5 seconds ago    Up 3 seconds                                                     peaceful_mcclintock
+7e04ecf12e00   b53b9d2ecd7c                         "docker-entrypoint.s…"   51 minutes ago   Up 51 minutes                                                    bold_neumann
+1f640e59bc00   sdraeger1/ddalab-docker-ext:1.1.20   "/backend/ddalab-man…"   6 weeks ago      Up About an hour   0.0.0.0:8090->8080/tcp, [::]:8090->8080/tcp   sdraeger1_ddalab-docker-ext-desktop-extension-service
+e11e7da2d72d   aytor-bastion                        "/usr/local/bin/sync…"   7 weeks ago      Up About an hour                                                 aytor-sentinel
+7e130243f398   robot-actor-robot                    "python3 -u robot.py"    8 weeks ago      Up About an hour                                                 act0r-robot
+16df1cd31258   registry:2                           "/entrypoint.sh /etc…"   2 months ago     Up About an hour   0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp   case_macheret_registry
+
+[Info] Running containers: 6
+[Info] Part 3: Checking Docker Logs
+
+[Info] Logs for container b46225791f86 (last 20 lines):
+--- Logs for b46225791f86 ---
+
+[Info] Logs for container 7e04ecf12e00 (last 20 lines):
+--- Logs for 7e04ecf12e00 ---
+{"result":{"content":[{"type":"text","text":"Error: ENOENT: no such file or directory, stat '/usr/src/app/H:\\ACTOR_DEV_ENV\\mcp_config.yaml'"}],"isError":true},"jsonrpc":"2.0","id":10}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[FEEDBACK DEBUG] Tool write_file failed, not checking feedback"}}
+{"result":{"content":[{"type":"text","text":"Error: ENOENT: no such file or directory, open '/usr/src/app/AUDIT/test.md'"}],"isError":true},"jsonrpc":"2.0","id":13}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"error","logger":"desktop-commander","data":"error catch Error: ENOENT: no such file or directory, stat '/usr/src/app/H:\\ACTOR_DEV_ENV\\mcp_config.yaml'"}}
+{"result":{"content":[{"type":"text","text":"Error: ENOENT: no such file or directory, stat '/usr/src/app/H:\\ACTOR_DEV_ENV\\mcp_config.yaml'"}],"isError":true},"jsonrpc":"2.0","id":14}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"error","logger":"desktop-commander","data":"error catch Error: ENOENT: no such file or directory, stat '/usr/src/app/H:\\ACTOR_DEV_ENV\\AUDIT\\file_registry.txt'"}}
+{"result":{"content":[{"type":"text","text":"Error: ENOENT: no such file or directory, stat '/usr/src/app/H:\\ACTOR_DEV_ENV\\AUDIT\\file_registry.txt'"}],"isError":true},"jsonrpc":"2.0","id":15}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"error","logger":"desktop-commander","data":"error catch Error: ENOENT: no such file or directory, stat '/usr/src/app/AUDIT/file_registry.txt'"}}
+{"result":{"content":[{"type":"text","text":"Error: ENOENT: no such file or directory, stat '/usr/src/app/AUDIT/file_registry.txt'"}],"isError":true},"jsonrpc":"2.0","id":16}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[FEEDBACK DEBUG] Tool write_file succeeded, checking feedback..."}}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[ONBOARDING DEBUG] Should show onboarding: false"}}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[FEEDBACK DEBUG] Should prompt for feedback: false"}}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[DOCKER DEBUG] Should prompt for Docker info: false"}}
+{"result":{"content":[{"type":"text","text":"Successfully wrote to H:\\ACTOR_DEV_ENV\\tools\\run_ps.sh (4 lines) "}],"structuredContent":{"fileName":"H:\\ACTOR_DEV_ENV\\tools\\run_ps.sh","filePath":"/usr/src/app/H:\\ACTOR_DEV_ENV\\tools\\run_ps.sh","fileType":"text"}},"jsonrpc":"2.0","id":17}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[FEEDBACK DEBUG] Tool write_file succeeded, checking feedback..."}}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[ONBOARDING DEBUG] Should show onboarding: false"}}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[FEEDBACK DEBUG] Should prompt for feedback: false"}}
+{"jsonrpc":"2.0","method":"notifications/message","params":{"level":"info","logger":"desktop-commander","data":"[DOCKER DEBUG] Should prompt for Docker info: false"}}
+{"result":{"content":[{"type":"text","text":"Successfully wrote to H:\\ACTOR_DEV_ENV\\tools\\run_ps.sh (6 lines) "}],"structuredContent":{"fileName":"H:\\ACTOR_DEV_ENV\\tools\\run_ps.sh","filePath":"/usr/src/app/H:\\ACTOR_DEV_ENV\\tools\\run_ps.sh","fileType":"text"}},"jsonrpc":"2.0","id":18}
+Downloa
+
+[Warning] Potential errors detected in logs!
+[Info] Logs for container 1f640e59bc00 (last 20 lines):
+--- Logs for 1f640e59bc00 ---
+2026/06/25 11:32:28 Status request from 172.20.0.1:58380
+2026/06/25 11:32:28 Found 0 services, 0 running
+2026/06/25 11:33:28 Status request from 172.20.0.1:58388
+2026/06/25 11:33:28 Found 0 services, 0 running
+2026/06/25 11:34:28 Status request from 172.20.0.1:58380
+2026/06/25 11:34:28 Found 0 services, 0 running
+2026/06/25 11:35:28 Status request from 172.20.0.1:58388
+2026/06/25 11:35:29 Found 0 services, 0 running
+2026/06/25 11:36:29 Status request from 172.20.0.1:58380
+2026/06/25 11:36:29 Found 0 services, 0 running
+2026/06/25 11:37:31 Status request from 172.20.0.1:58380
+2026/06/25 11:37:31 Found 0 services, 0 running
+2026/06/25 11:38:29 Status request from 172.20.0.1:58388
+2026/06/25 11:38:29 Found 0 services, 0 running
+2026/06/25 11:39:27 Status request from 172.20.0.1:58380
+2026/06/25 11:39:28 Found 0 services, 0 running
+2026/06/25 11:40:28 Status request from 172.20.0.1:58388
+2026/06/25 11:40:28 Found 0 services, 0 running
+2026/06/25 11:41:28 Status request from 172.20.0.1:58380
+2026/06/25 11:41:28 Found 0 services, 0 running
+
+[Info] Logs for container e11e7da2d72d (last 20 lines):
+--- Logs for e11e7da2d72d ---
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[ A©t0r Protocol ] Облачный Бастион активирован. Узел Erga Omnes запущен.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+fatal: couldn't find remote ref refs/heads/Actor-IP-Protection
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+fatal: couldn't find remote ref refs/heads/Actor-IP-Protection
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+fatal: couldn't find remote ref refs/heads/Actor-IP-Protection
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+fatal: couldn't find remote ref refs/heads/Actor-IP-Protection
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+fatal: couldn't find remote ref refs/heads/Actor-IP-Protection
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+[ SHIELD ] Облачный якорь удерживает 57BF... и другие узлы. Сон 5 минут.
+[*] Синхронизация с GitHub (Ветка: Actor-IP-Protection)...
+
+[Info] Logs for container 7e130243f398 (last 20 lines):
+--- Logs for 7e130243f398 ---
+2026-05-22 18:21:37,951 [A©t0r-Robot] integrity.json updated: 10448 days
+2026-05-22 18:48:51,478 [A©t0r-Robot] A©t0r Robot started
+2026-05-22 18:48:51,478 [A©t0r-Robot] Case: CASE-MACHERET-1997-2026 | Days: 10448
+2026-05-22 18:48:51,507 [A©t0r-Robot] integrity.json updated: 10448 days
+2026-05-22 18:50:42,923 [A©t0r-Robot] A©t0r Robot started
+2026-05-22 18:50:42,924 [A©t0r-Robot] Case: CASE-MACHERET-1997-2026 | Days: 10448
+2026-05-22 18:50:42,933 [A©t0r-Robot] integrity.json updated: 10448 days
+2026-05-22 18:56:08,670 [A©t0r-Robot] A©t0r Robot started
+2026-05-22 18:56:08,670 [A©t0r-Robot] Case: CASE-MACHERET-1997-2026 | Days: 10448
+2026-05-22 18:56:08,695 [A©t0r-Robot] integrity.json updated: 10448 days
+2026-05-22 18:57:22,935 [A©t0r-Robot] A©t0r Robot started
+2026-05-22 18:57:22,935 [A©t0r-Robot] Case: CASE-MACHERET-1997-2026 | Days: 10448
+2026-05-22 18:57:22,945 [A©t0r-Robot] integrity.json updated: 10448 days
+2026-05-22 18:58:56,283 [A©t0r-Robot] A©t0r Robot started
+2026-05-22 18:58:56,283 [A©t0r-Robot] Case: CASE-MACHERET-1997-2026 | Days: 10448
+2026-05-22 18:58:56,301 [A©t0r-Robot] integrity.json updated: 10448 days
+2026-05-23 00:59:55,797 [A©t0r-Robot] integrity.json updated: 10449 days
+2026-05-23 10:18:59,365 [A©t0r-Robot] A©t0r Robot started
+2026-05-23 10:18:59,365 [A©t0r-Robot] Case: CASE-MACHERET-1997-2026 | Days: 10449
+2026-05-23 10:18:59,572 [A©t0r-Robot] integrity.json updated: 10449 days
+
+[Info] Logs for container 16df1cd31258 (last 20 lines):
+--- Logs for 16df1cd31258 ---
+time="2026-05-22T18:57:21.5577134Z" level=info msg="Starting upload purge in 13m0s" go.version=go1.20.8 instance.id=d8678afd-e8c4-4d76-943b-662b988d63c1 service=registry version=2.8.3 
+time="2026-05-22T18:57:21.557742Z" level=info msg="redis not configured" go.version=go1.20.8 instance.id=d8678afd-e8c4-4d76-943b-662b988d63c1 service=registry version=2.8.3 
+time="2026-05-22T18:57:21.5581456Z" level=info msg="using inmemory blob descriptor cache" go.version=go1.20.8 instance.id=d8678afd-e8c4-4d76-943b-662b988d63c1 service=registry version=2.8.3 
+time="2026-05-22T18:57:21.558869Z" level=info msg="listening on [::]:5000" go.version=go1.20.8 instance.id=d8678afd-e8c4-4d76-943b-662b988d63c1 service=registry version=2.8.3 
+time="2026-05-22T18:58:55.1285144Z" level=warning msg="No HTTP secret provided - generated random secret. This may cause problems with uploads if multiple registries are behind a load-balancer. To provide a shared secret, fill in http.secret in the configuration file or set the REGISTRY_HTTP_SECRET environment variable." go.version=go1.20.8 instance.id=fde9db83-6770-4090-9127-3e405e0c58d3 service=registry version=2.8.3 
+time="2026-05-22T18:58:55.1294223Z" level=info msg="Starting upload purge in 57m0s" go.version=go1.20.8 instance.id=fde9db83-6770-4090-9127-3e405e0c58d3 service=registry version=2.8.3 
+time="2026-05-22T18:58:55.1298655Z" level=info msg="redis not configured" go.version=go1.20.8 instance.id=fde9db83-6770-4090-9127-3e405e0c58d3 service=registry version=2.8.3 
+time="2026-05-22T18:58:55.1302007Z" level=info msg="using inmemory blob descriptor cache" go.version=go1.20.8 instance.id=fde9db83-6770-4090-9127-3e405e0c58d3 service=registry version=2.8.3 
+time="2026-05-22T18:58:55.1364885Z" level=info msg="listening on [::]:5000" go.version=go1.20.8 instance.id=fde9db83-6770-4090-9127-3e405e0c58d3 service=registry version=2.8.3 
+time="2026-05-22T19:55:54.694597076Z" level=info msg="PurgeUploads starting: olderThan=2026-05-15 19:55:54.687560459 +0000 UTC m=-601379.857289030, actuallyDelete=true" 
+time="2026-05-22T19:55:54.707603532Z" level=info msg="Purge uploads finished.  Num deleted=0, num errors=0" 
+time="2026-05-22T19:55:54.709120744Z" level=info msg="Starting upload purge in 24h0m0s" go.version=go1.20.8 instance.id=fde9db83-6770-4090-9127-3e405e0c58d3 service=registry version=2.8.3 
+time="2026-05-23T10:18:54.883424685Z" level=warning msg="No HTTP secret provided - generated random secret. This may cause problems with uploads if multiple registries are behind a load-balancer. To provide a shared secret, fill in http.secret in the configuration file or set the REGISTRY_HTTP_SECRET environment variable." go.version=go1.20.8 instance.id=f83332b9-45ea-4c39-897d-67974bdced7c service=registry version=2.8.3 
+time="2026-05-23T10:18:54.883555204Z" level=info msg="redis not configured" go.version=go1.20.8 instance.id=f83332b9-45ea-4c39-897d-67974bdced7c service=registry version=2.8.3 
+time="2026-05-23T10:18:54.883773235Z" level=info msg="using inmemory blob descriptor cache" go.version=go1.20.8 instance.id=f83332b9-45ea-4c39-897d-67974bdced7c service=registry version=2.8.3 
+time="2026-05-23T10:18:54.88614638Z" level=info msg="Starting upload purge in 40m0s" go.version=go1.20.8 instance.id=f83332b9-45ea-4c39-897d-67974bdced7c service=registry version=2.8.3 
+time="2026-05-23T10:18:54.891845509Z" level=info msg="listening on [::]:5000" go.version=go1.20.8 instance.id=f83332b9-45ea-4c39-897d-67974bdced7c service=registry version=2.8.3 
+time="2026-05-23T10:58:54.654903632Z" level=info msg="PurgeUploads starting: olderThan=2026-05-16 10:58:54.653617728 +0000 UTC m=-602399.753244849, actuallyDelete=true" 
+time="2026-05-23T10:58:54.657763064Z" level=info msg="Purge uploads finished.  Num deleted=0, num errors=0" 
+time="2026-05-23T10:58:54.657807067Z" level=info msg="Starting upload purge in 24h0m0s" go.version=go1.20.8 instance.id=f83332b9-45ea-4c39-897d-67974bdced7c service=registry version=2.8.3 
+
+[Info] Part 4: Checking MCP Profile Configuration
+
+[Warning] MCP server running with limited profile (terminal_control/ti_ula).
+Limited profile detected. Recommend switching to 'full' profile.
+[Info] Part 6: Testing MCP Tools
+
+[Warning] No standard MCP tools detected.
+Warning: True color (24-bit) support not detected. Using a terminal with true color enabled will result in a better visual experience.
+Ripgrep is not available. Falling back to GrepTool.
+Error when talking to Gemini API Full report available at: C:\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-07-05T02-01-30-346Z.json TerminalQuotaError: You have exhausted your daily quota on this model.
+    at classifyGoogleError (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:297614:16)
+    at retryWithBackoff (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:298310:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:321564:28)
+    at async GeminiChat.streamWithRetries (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:321382:29)
+    at async Turn.run (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:322128:24)
+    at async GeminiClient.processTurn (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:335620:22)
+    at async GeminiClient.sendMessageStream (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/chunk-VLV2BYPM.js:335717:14)
+    at async file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/gemini-FSMCKCVD.js:23725:26
+    at async main (file:///H:/npm-global/node_modules/@google/gemini-cli/bundle/gemini-FSMCKCVD.js:29133:5) {
+  cause: {
+    code: 429,
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n' +
+      '* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\n' +
+      'Please retry in 29.748993635s.',
+    details: [ [Object], [Object], [Object] ]
+  },
+  retryDelayMs: undefined,
+  reason: undefined
+}
+An unexpected critical error occurred:[object Object]
+
+[Info] Generating final report...
+
+═══════════════════════════════════════════════════════
+END OF REPORT
+═══════════════════════════════════════════════════════

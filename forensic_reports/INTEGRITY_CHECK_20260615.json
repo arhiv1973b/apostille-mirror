@@ -1,0 +1,1340 @@
+﻿[
+    {
+        "File":  "Срочные меры_3.pdf",
+        "Expected":  "82CBB681885B2AE02EA088121DB8798DCA165FDB1CCBEA56CD2C0ADE6F92B0B8",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "final_audit_report Cod Fiscal 2_555 2_455 and 2_666.txt",
+        "Expected":  "5CBBF18AE2A911BB53EF2B7E771BC04B2101DE09D50B43630BD87FA3E882B4F8",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "FINAL_MANIFEST_2026-04-02.txt",
+        "Expected":  "6EF7A3838881EF5568EF229D67AA463FCB19D3306D3F6AF600567C23CBE97ADD",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "index codul Fiscal_2.pdf",
+        "Expected":  "A78530DB15DE7BCF93EA0ADF2EB33E1C91EA8AF45B71D94578D87873327E37A6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "MACHERET_STATEMENT_20042026 - Google Документы.pdf",
+        "Expected":  "C2F20CB767FC84D0036AEC8327711007B7B9E444721B6BB2F05A43DB415BB13F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\id_ed25519",
+        "Expected":  "53F1DC8A3EDC00702A28AFCE553FC07B7231A29D26C98C2107D9961CA4C44194",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\id_ed25519.pub",
+        "Expected":  "99D5EA3D1A95976B34D0D5C70E16EFB2A4D31AE3829F32AC2EA553167C181EA1",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-109037bec39c0becc8221222ae23557559bc594290945a2c4221ab4f303b8871",
+        "Expected":  "109037BEC39C0BECC8221222AE23557559BC594290945A2C4221AB4F303B8871",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-22a838ceb7fb22755a3b0ae9b4eadde629d19be1f651f73efb8c6b4e2cd0eea0",
+        "Expected":  "22A838CEB7FB22755A3B0AE9B4EADDE629D19BE1F651F73EFB8C6B4E2CD0EEA0",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-6331358be52a6ebc2fd0755a51ad1175734fd17a628ab5ea6897109396245362",
+        "Expected":  "6331358BE52A6EBC2FD0755A51AD1175734FD17A628AB5EA6897109396245362",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-923426e76b183456b6aaca2c0538ae96f2de390cddc543278de025f714f79a03",
+        "Expected":  "923426E76B183456B6AACA2C0538AE96F2DE390CDDC543278DE025F714F79A03",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-af0ddbdaaa26f30d54d727f9dd944b76bdb926fdaf9a58f63f78c532f57c191f",
+        "Expected":  "AF0DDBDAAA26F30D54D727F9DD944B76BDB926FDAF9A58F63F78C532F57C191F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-b6ae5839783f2ba248e65e4b960ab15f9c4b7118db285827dba6cba9754759e2",
+        "Expected":  "B6AE5839783F2BA248E65E4B960AB15F9C4B7118DB285827DBA6CBA9754759E2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-c8472cd9daed5e7c20aa53689e441e10620a002aacd58686aeac2cb188addb5c",
+        "Expected":  "C8472CD9DAED5E7C20AA53689E441E10620A002AACD58686AEAC2CB188ADDB5C",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-dd084c7d92a3c1c14cc09ae77153b903fd2024b64a100a0cc8ec9316063d2dbc",
+        "Expected":  "DD084C7D92A3C1C14CC09AE77153B903FD2024B64A100A0CC8EC9316063D2DBC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-e0a42594d802e5d31cdc786deb4823edb8adff66094d49de8fffe976d753e348",
+        "Expected":  "E0A42594D802E5D31CDC786DEB4823EDB8ADFF66094D49DE8FFFE976D753E348",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "caches\\.ollama\\models\\blobs\\sha256-fa956ab37b8c21152f975a7fcdd095c4fee8754674b21d9b44d710435697a00d",
+        "Expected":  "FA956AB37B8C21152F975A7FCDD095C4FEE8754674B21D9B44D710435697A00D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Аналитический отчет по обращению гражданина Мачерет Алексея в Конституционный суд Республики Молдова.pdf",
+        "Expected":  "FA376DD6FEF07CE12CA1C8E14CC21B7066D8DE1FA49EAF4988656E03A1E77A40",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Жалоба на отмену.pdf",
+        "Expected":  "A122EE59DCE570BF8CF12C9B04077040C378EB6A89227342F7337CAA9E7FA65A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Жалоба на отмену.signed.pdf",
+        "Expected":  "DDA38EBE0C256C4A836B4A7642DC1266DBD3CE3AE7C8D13A0E630142483526EF",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Конституционный Суд Молдовы.pdf",
+        "Expected":  "DF8274DA400578B1C510CEE05A4464822D7DF0E4397CCAA90DA1F0851DBD3A85",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\КС дубл.pdf",
+        "Expected":  "7A9D197CE2C33727B389E817B0BCB5E352D773FD4FF1322916B6718391C27318",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\КС дубл.signed.pdf",
+        "Expected":  "BF47737C9E892587606F381389447684C51E51AC9958093F33590735C5879973",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\паспорт.pdf",
+        "Expected":  "1A40BEA085B05157225EF75AF19F913F2CB5497D929797539DBACC02CB6E9F01",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\паспорт.signed.pdf",
+        "Expected":  "81291FAFA07D7906C02EC962BFC4A4210295615F1B6A1ACFE4CCB091880A22B3",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Реестр апостилей (рабочие).pdf",
+        "Expected":  "A92259FE5712BFDD3150FCE775A8FA36F72477646ADE67AD4D7AAC07113CB8A5",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Реестр апостилей Мачерет по Jus Cogens.pdf",
+        "Expected":  "7AE39E80FC63226DAAB2FE09BCA097F15FF4B928379E8B58E24DE856F4124351",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Реестр апостилей Мачерет по Jus Cogens.signed.pdf",
+        "Expected":  "5BCC2E4262DC8C8222C896E0A33DED081E7CFEC4056B06EB313D8C5E9EEDFC6C",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Реестр апостилей.pdf",
+        "Expected":  "28F600A3D2A13516A15DDDE02E694980FD09EEF5C739FE5A78008116BB4AD582",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Технологии.pdf",
+        "Expected":  "22229208B6E65D31E0D6D1952FE02303A302120DAC70BF23C285D3F9D101CE2E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Фамилия.pdf",
+        "Expected":  "625A4294DFFE5B9B776ED883BC421E312E636E676D6EA5E150E2928A6BF90A39",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Фамилия.signed.signed.pdf",
+        "Expected":  "EE61C9FACC84D1FA764F5C4393E831E326DC62D0F5948919FB60CA6720B846D8",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Фамилия.signed.signed.signed.pdf",
+        "Expected":  "1003EA56C8A1DDFFB24C77452E0FDF4F90148A6F8CAFC2D375657ED2EFCCD423",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Фамилия.signed.signed.signed.signed.pdf",
+        "Expected":  "A68CA1338B94F7129E9A266DE62A6D3C4F3A0BAB5F8F6661EE7A7307574046D7",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Фото.pdf",
+        "Expected":  "61CAC61B34E29F6B51845C271AD14C0D2E7404A4E1C86C39D489767638DCF679",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Фото.signed.pdf",
+        "Expected":  "4C521369E398A43C09F673358E707FA09770E731F48AE7EA66878586471E597E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\alexeimacheret] Add files via upload (#1) (0277445).pdf",
+        "Expected":  "18EE1478B7D9CFC34E81836F2C14098F35DF30C473269D8729E32C0ED9CA9F36",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Apostille Archive - English Version.pdf",
+        "Expected":  "85D676A21EFED9848C54DC1039267C40E94310B5E5E6917534E3AAE13CE08FBA",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Apostille Archive - English Version.signed.pdf",
+        "Expected":  "EF7F23E5606CEACF0C881658E1EAAFD625759CFC78B41A5C3E7F2A19A2F0A9BA",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\apostille_links.json",
+        "Expected":  "C18D3A33BB32484DE7130A5E66A3E3E5DEDA376CD494F75A1ACEC162B8B521AC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Arhiva Apostilelor - Versiunea în limba romanie.signed.pdf",
+        "Expected":  "11B1E4866E302F2E6BA434F6298C261BB60A4823DC1A2C0611C4B41AF39CB02F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\combined_pdf_summaries_corrected.json",
+        "Expected":  "C4E05C44D3191BFFE77ACF4391CE93951EC1A879C50CF6F016A8534A3F6BEBF2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\combined_pdf_summaries.json",
+        "Expected":  "64B45A5713A9A5C8FB92DF1D691050BE4E90E60591ED973E1E8AEC8BAB355AB3",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Constitutionale.pdf",
+        "Expected":  "FF60B11DD78C10211138650CBE79203BF086B8A0E528992463D5D88C4FBE7B8E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\CRI_BAC_ron_UNK_HW_CRI_BAC_ron_UNK_HW_CRI_BAC_ron_UNK_HW_UNK_UNK_ron_.pdf",
+        "Expected":  "5F08852AB5A07D546F9E475F6EF272E0F2CC322CEBBCEDB6595DFDDF8FE12A62",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\CSM.pdf",
+        "Expected":  "6B45163EE63B087490C6A23AA0C820FC4ABA2C78CFC37213B992400AFF991106",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Curtea Suprema - Holban.pdf",
+        "Expected":  "F68F527608A8DD776BFDF541DF382A631C4219AB0549E7F84B34BDE0CE692099",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Curtea Suprema Stambol.pdf",
+        "Expected":  "39367090B190670136183C66DE514301A6F14D996697D4AF1887177D584F4D3F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Familia.signed.signet.pdf",
+        "Expected":  "B79C94529B692341FE68A5012A915BE562F50C2A2B04A85BBA6417B9D2EDE90D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Frimu Valeriu.crt",
+        "Expected":  "3B80F4D34472261BC2B65CDFF1415A7E5BE57482D8284438209D959913426674",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Global Reabilitation.pdf",
+        "Expected":  "61F298D3EA574088DF312EA26CA5542D74A77A5A53FF212ACFF0BC8AD92FFDD4",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Negru - falce.pdf",
+        "Expected":  "16A1A835E8611C49C35164A36F0167C14E8161228E56954DEED85CA541ABE7A9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Negru - falce.signed.pdf",
+        "Expected":  "961E8A6DE0BC9CE2547FECCF263A688CD9AB9CD7A5DCB8BB91B46FAA18106670",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\opencode_recovery.ps1",
+        "Expected":  "C24127B30DCBA1E05F414ABDA3A69B00D4D9A375E6631050F4B3A6727B9146F4",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\parse_apostille.ps1",
+        "Expected":  "34C65B0AE8F6FEDB1B8B34C28173876D91A5FA589098F918F9B14B175A1012D0",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-07_140647.pdf",
+        "Expected":  "AC6587A7311AF2CD71376B2095917E83748E8D1C77FC6451D4F4E49AB2EB9493",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-07_140700.pdf",
+        "Expected":  "2BE37C51984791889F38E345AA6E23CE0F8731605D5D37BA256BA53F991F1E8D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-08_221616.pdf",
+        "Expected":  "E37FE8298AF0BEB5D0A7EC6C2AE7B9B49DF43AB78B4867B2D197F22A80E379B7",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-15_124146.pdf",
+        "Expected":  "DAABDB5277E92199292412808E7289FA037F43ABFCFBCB056CC15D03989430CE",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223702.pdf",
+        "Expected":  "92D83DC275ECD4698AFE83881F3BD8CAEAA5B38217895FB7C9089093B5C15C37",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Secretariat Constitutionala.pdf",
+        "Expected":  "A8FE9EA786ACB8DCB3DF7ACBE0A9144D8998F3EE1F3093075F3C1BC5FB38D328",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\SUMMARY.pdf",
+        "Expected":  "CEC357CE9EA3D77DEFD02FA2561A808DA7B094F7995840DD6C08B6A1C2D5B53D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\target file has an error.pdf",
+        "Expected":  "39CC081C298A2BC7E96FAE39079DB8AF9657D5EDCBA0C7375A46E7D46CB4DEED",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\test_opencode.js",
+        "Expected":  "0A4CB69E58AAAFD290D9AF2FA2742A9DBCEF7F4E42F99606A498BD715E627FA4",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\test_opencode.ps1",
+        "Expected":  "6A3AD039269954B630EA926DF524BF0DADCD901B7C0760CE5EA5A3C6FB9358B3",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\ultra_mega_archive.json.txt",
+        "Expected":  "4881BCF3572A186E103C415E64F22B1E85306C3B4589BCBD6020C1119DF66331",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\unified_pdf_summaries.json",
+        "Expected":  "DF8719A017F47781CB1025524142AFABDE3F21273DE3D31C7A51600F8C116E3B",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Grigoras.pdf",
+        "Expected":  "76BD7E1BAF75BC836529826DA6768D9D1FC77A7A2B42687520EE05854B8553D2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_1.jpg",
+        "Expected":  "A53489BAC64E3BBB92C9B0510AFFDE2719C30CBD7EE6C47569585417476C3E00",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_2.jpg",
+        "Expected":  "714062EA04D1C184F1034584F998107FC215848CE9DD59BE0D96CB991BD663AF",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_3.jpg",
+        "Expected":  "2D3AA8359911519B182D31D8C9080B30F9B35869742BECD2454A2A11DA63339C",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_4.jpg",
+        "Expected":  "04F198485CD0D18E1AA3C6B7BC793FACD1ABB94A6028361F5BB1635F0C70A8A6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_5.jpg",
+        "Expected":  "F5476437742644B7BEC6BB918820CAD26B66E681B2B76DB20732B2217C1E753B",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_6.jpg",
+        "Expected":  "5787E770A3C6082EE8AB6630F389F8D71D653ABF8427BD53B793C49C7410C5A9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_7.jpg",
+        "Expected":  "CD53FEF7BA9C0E2110DF6C0E313BAED0E9DBAAEE490C0E43F38335779BEA12EF",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_8.jpg",
+        "Expected":  "E841D8B6654E0E18DD0A3E53F3D8CF00EF9C8589F3A5B5BAFCF41B6392731263",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\Scanner_X_2026-01-05_003919_9.jpg",
+        "Expected":  "439BAB3CB7FEC5E883D4637267697585F2FE2C2E81729813AA25510E654AC921",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_1.pdf",
+        "Expected":  "C6BB03926E86EAF51BC1D4988523280BA744D39B3A8419C87E76EF615B4A582F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_2.pdf",
+        "Expected":  "39C04B60FAFD151EE7137FD31227A55D56726B0458565BB4E292B6F006F31B1C",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_3.pdf",
+        "Expected":  "D215928226B36480C82E18C33196A69A290699E36787E82767F991FFB31DA487",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_4.pdf",
+        "Expected":  "93FC3387C8BC16ACDBCF945EE1981DC2E78F07ACBE16BA4D48CC9D810D516C89",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_5.pdf",
+        "Expected":  "F180DA359237254603EFD35CDF92A9C452B138615B99A3B83E88484115857F4E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_6.pdf",
+        "Expected":  "08085109737A1AA9D321FBFE43438BFA40D7929A3F6FA40AD190D3CB130079C7",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_7.pdf",
+        "Expected":  "542CE0D6BDB0B734BCB1ADF0A0B23ECC31A813002120EB4FCE27DA14760D354D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_8.pdf",
+        "Expected":  "63F37710082E961CDBFA996FC5FDBA0C349500951D9E803B1FD3C21048903413",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_003919\\ilovepdf-image-to-pdf\\Scanner_X_2026-01-05_003919_9.pdf",
+        "Expected":  "45765A137C0DF50B21FB978DC85DEC52D1DEA03999CCEF3BA622A1BF8F6C4196",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_222139\\Scanner_X_2026-01-05_222139_1.jpg",
+        "Expected":  "9E993C69EE321FE9C46711CE04A71BCB63039725ABF094F8ABA52A484E56502A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-05_222139\\Scanner_X_2026-01-05_222139_2.jpg",
+        "Expected":  "E8F81EF6504B1AC791553AAF0803F740600F8BD692AC209F1A0D51128B108759",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-07_140734\\Scanner_X_2026-01-07_140734_1.jpg",
+        "Expected":  "D4A0E892A6CEDAB150C84BE5FC9BE92FF3A9E766975FACA8CE276D861EE93488",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-07_140734\\Scanner_X_2026-01-07_140734_2.jpg",
+        "Expected":  "EA07319B20C9025959765AF1B78123C8E12BA6FED84AF9EC8A2227A3B16B3FA2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-07_140734\\Scanner_X_2026-01-07_140734_3.jpg",
+        "Expected":  "F19BFDFCDBD6E0B14C53112E91E4EF3ED013261D10600A08333A7DCCF5CEAA44",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-21_140315\\Scanner_X_2026-01-21_140315_1.jpg",
+        "Expected":  "FEC27785687D41B972C5AEA087DFB27906C1BC9FAEEA85A595DB912ABD5AA208",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-21_141934\\Scanner_X_2026-01-21_141934_1.jpg",
+        "Expected":  "C4DE7984A6EFD5E4F04B03D866E914B2636639B9130C9F40637ECE9B5CB015FC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-21_141934\\Scanner_X_2026-01-21_141934_2.jpg",
+        "Expected":  "D856AADA37828EA729DD7EA13855DCDFFE5FE74850BACAE99B5DE7B0ED3F8911",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-21_141934\\Scanner_X_2026-01-21_141934_3.jpg",
+        "Expected":  "04A47C6B04270469239D20E294B1C7CEF342590CB2622A7229C20305A72A1EFD",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-21_141934\\Scanner_X_2026-01-21_141934_4.jpg",
+        "Expected":  "0028AA882B469B4D7AD3B5ECD93CD3B6B1AEDC469A28E6FE6A04CBC55604DA24",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-21_150323\\Scanner_X_2026-01-21_150323_1.jpg",
+        "Expected":  "586E382C8F1640D50A04CC2D4AED019C34ADBE6B53A8D3CFB014AFA5282019DD",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Имена судей которые отвечают за гибель сотен и тысяч граждан _имена которые   должны знать.pdf",
+        "Expected":  "F7471782983FC9189467C2C76FDBE7ECE37A9100DD402C44595C410D7710A973",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Имена судей которые отвечают за гибель сотен и тысяч граждан _имена которые   должны знать.signed.pdf",
+        "Expected":  "B24A2EE355A114A0D588DA3FDD25CF5E7BDDC1467628AF9DC29CA06CB9DC03B1",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Неизбежный ВК.pdf",
+        "Expected":  "799656A361C155505FD6E0F9D1E0793733E9D04BB8DEA48D2F4C0295CB500638",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Файл для Суда сектор Центр и Буюканы.signed..pdf",
+        "Expected":  "0D3C322A83E3F2251D4BE3A9E9A53078EC444F26BCDFCF67657322E99276AE94",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_1-pdfa.pdf",
+        "Expected":  "DF894964A49FFFD6B80A6E2F752E2050D6A7228F7DF134A961CC6694CA88CDAC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_1.jpg",
+        "Expected":  "D3542B27E11C1853A9BCC5C124EF3C13708DAF453D8586BC3CE6FC58AA51B110",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_1.pdf",
+        "Expected":  "B486920A5BD19D701181302AFAA360602F19BF40185A4BF8475E8B235E263A28",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_10.jpg",
+        "Expected":  "64A3138BD07219219B49C99CB7B96D28600EB2CCDC263AAE8B5DD4D1E941EAC5",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_11.jpg",
+        "Expected":  "359D82DFE49AC2882F169D7E52B1040B529CD0B2D8A3652410960D573CF7D9D0",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_12.jpg",
+        "Expected":  "D31708081E1FB127E8CAB87CEFCE2453465CB2B535AB793014EFF7A369D5A67B",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_13.jpg",
+        "Expected":  "E05BAB5B3FA3A750AF1EC50D2A5B93A3964B9436AC95E9220576A1586AB67CC6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_14.jpg",
+        "Expected":  "EB504E558FDDC806D0A8135C8E85E1141BF95CD9655E72A4AFB33D4DF4E85A16",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_15.jpg",
+        "Expected":  "1D4D77E4201B791B807FF2726D15D53B6371E75A90881FC42CE831D85769B9B8",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_2.jpg",
+        "Expected":  "47B303FA11F1A5ACC2DB70E155791E213FE0953114ECA6C6FDD92BFF6CAAED53",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_3.jpg",
+        "Expected":  "D80E914510D273BEF66237BBB6EBD53299B11993B91125CDC353BE24B069DCE3",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_4.jpg",
+        "Expected":  "4961CDDE97677673E7A1525C57804E76DA08670719302845A47EB076AD60B2C7",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_5.jpg",
+        "Expected":  "53B11D66985D6ED28632C24DD851F44DD973AC5401D22F97A4D29D23BFD05DC2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_6.jpg",
+        "Expected":  "022A16ED75A806FC9F7E8E87728E69B686DED84E7BB09D572B49A0E447CC3E5E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_7.jpg",
+        "Expected":  "2EC3BA320582FFD2B404403AF1A0A6E14BED78E0943E33F8825E03B8D1E18230",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_8.jpg",
+        "Expected":  "F5CBA6FFDA76C55B00CC31022A243B6708DE9BD061EAA7A07C170700E9977F76",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_223745\\Scanner_X_2026-01-31_223745_9.jpg",
+        "Expected":  "CEE23B2AFD26AE8B44C24C018B8A58A2BED471CA3F454F26BC934A1FF70D3B84",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-01-31_230547\\Scanner_X_2026-01-31_230547_1.jpg",
+        "Expected":  "52853C82786B08AA15546F9CE6DF6558907A920872D6A8F0D5A1059CDA1C1C6A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-03_113120\\Scanner_X_2026-02-03_113120_1.png",
+        "Expected":  "A11CB780967048344E97272DDF238B6E275B92C84867B2167BFC2F397657DB69",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-03_114751\\Scanner_X_2026-02-03_114751_1.jpg",
+        "Expected":  "80F51F20C0880725212CF53A1CC293B961A933C86C24A702CE173DE549CFD574",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-03_114751\\Scanner_X_2026-02-03_114751_2.jpg",
+        "Expected":  "34FB658F4050B0BEF74F81A146A430D8B797B67F55B715B29CF32E00CE168BF0",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_141230\\Scanner_X_2026-02-05_141230_1.jpg",
+        "Expected":  "34700B56D38DDEA9339855F6D2B5A594C5974A88D3E73B34D86BD09504B24A90",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_141230\\Scanner_X_2026-02-05_141230_2.jpg",
+        "Expected":  "0E0B5A44585F6B79EDE996F8FE68D9A3AF99D7D9445C8BAFF785B3BA24B71CD5",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_141230\\Scanner_X_2026-02-05_141230_3.jpg",
+        "Expected":  "252F3F49D2BB51E17184A31017B501ABF0C274BF895A4DD0D9F59E6BD5B10970",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_141230\\Scanner_X_2026-02-05_141230_4.jpg",
+        "Expected":  "E92E73FFBD186511093AA21198CD31674DC6D21483EFC26136E2DC7719347742",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_141230\\Scanner_X_2026-02-05_141230_5.jpg",
+        "Expected":  "C978FE883485E9418FD79F76C7D8FF3DC5C3D375C4AF4FD9814C1C588C527035",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_1.pdf",
+        "Expected":  "C4D4E82EEA249BD8E5A00E06AC20B51FFDB431C1AA8FBC23A9D0B262D721DB84",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_1.png",
+        "Expected":  "6388DC735C74A3CE1F4F1249610201EF3721C85FD4FFCA6FE0E2F21955B39DA0",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_2.pdf",
+        "Expected":  "0D60A47BB625752442AAF43B82AF0FD8CA9BA1E5D907365AF3846BBCC1F961D1",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_2.png",
+        "Expected":  "E2B477B422CC53C5013FB7260016F2B779CACB7C267D72DF216CC02151E6F68F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_3.pdf",
+        "Expected":  "B7396B825164CE1C2E35D1D548C8DA656D42EDD3D3E06D0687A480E3E65C2BD9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_3.png",
+        "Expected":  "BE169651D856AD09E3D5720BE6F934A0E39121956EC8B846187297CB07090E3A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_4.png",
+        "Expected":  "4AFF1598EBE2E730B2E393E9A57EE7A8ED54ECFBBFE318C5E49E525BFF274920",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_5.pdf",
+        "Expected":  "7647D21411E1006561228D3D5D886F7385B1F57835EA467A3D1776717724B950",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_142102\\Scanner_X_2026-02-05_142102_5.png",
+        "Expected":  "ABC862AD48A0A7A15884E492B235752093318F9CC3EF818887C091BF88695A5E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_145949\\Scanner_X_2026-02-05_145949_1.jpg",
+        "Expected":  "34700B56D38DDEA9339855F6D2B5A594C5974A88D3E73B34D86BD09504B24A90",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_145949\\Scanner_X_2026-02-05_145949_2.jpg",
+        "Expected":  "0E0B5A44585F6B79EDE996F8FE68D9A3AF99D7D9445C8BAFF785B3BA24B71CD5",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_145949\\Scanner_X_2026-02-05_145949_3.jpg",
+        "Expected":  "252F3F49D2BB51E17184A31017B501ABF0C274BF895A4DD0D9F59E6BD5B10970",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_145949\\Scanner_X_2026-02-05_145949_4.jpg",
+        "Expected":  "E92E73FFBD186511093AA21198CD31674DC6D21483EFC26136E2DC7719347742",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_145949\\Scanner_X_2026-02-05_145949_5.jpg",
+        "Expected":  "C978FE883485E9418FD79F76C7D8FF3DC5C3D375C4AF4FD9814C1C588C527035",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_145949\\Scanner_X_2026-02-05_145949_6.jpg",
+        "Expected":  "BDE94741FEF5F066877CAEC6A6B83F8A8A4A178BCEEBC9A8AA66F4A9DC8C58D9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_222202\\Scanner_X_2026-02-05_222202_1.jpg",
+        "Expected":  "CF175EB94A9F70FE9BF5980C9D7EBA1B9D075F26138097D93FDE0F94EF1C927F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_222202\\Scanner_X_2026-02-05_222202_2.jpg",
+        "Expected":  "14803A962A8923704F92FBF564F59A080F43AFD638BAB522151768329692213D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-05_222552\\Scanner_X_2026-02-05_222552_1.jpg",
+        "Expected":  "A7AE180E7C587AC88CEFCE937670FD519F6244C30C045EFA7D5288EA5AE62180",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-06_003056\\Scanner_X_2026-02-06_003056_1.jpg",
+        "Expected":  "DEAA627CBC4ADCFC5524CC2D6BC8D9AE6BDD476B020E3923ACE62C21A07B05DF",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-06_003056\\Scanner_X_2026-02-06_003056_2.jpg",
+        "Expected":  "7F04DDD398459E2A17619E8E14E33CB17A8A30E9D97C2ECBA850834FCC9E553C",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-11_123117\\Scanner_X_2026-02-11_123117_1.jpg",
+        "Expected":  "5CB45666E55B7F2A7DB48F255F5590849AD757A88206762BF213579FEB455DD9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-11_123117\\Scanner_X_2026-02-11_123117_2.jpg",
+        "Expected":  "762089B00623B1F5F4045C7E8C86105A7CA977416BFAA64200C91172F2A9532D",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-11_123117\\ilovepdf-image-to-pdf\\Prin intermediul Curții de Apel, în conformitate cu limba utilizată într-unul dintre.signed.signed.pdf",
+        "Expected":  "A827ADDB384CB21B12A130F92F1F35D6656605BBA6F663322352787AEA9A7C20",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-11_123117\\ilovepdf-image-to-pdf\\Scanner_X_2026-02-11_123117_1.pdf",
+        "Expected":  "6DB64458D9AF34380871B84F8D2FD43CA4FD9512C9BF2EACB5FC3F93D96527D6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-11_123117\\ilovepdf-image-to-pdf\\Scanner_X_2026-02-11_123117_2.pdf",
+        "Expected":  "D8BCAE0F7A1CA5ED88C54540F692087E4D615DD716D5B41DC5BECD116D4C2C05",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\В отношении преследуемой Олейник Лица завяленной через КС.pdf",
+        "Expected":  "96B8A650B29F4A788E1E518F87D40E85FC42C23D6EFA04A12C9C1A1789202616",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\В отношении преследуемой Олейник Лица завяленной через КС.signed.pdf",
+        "Expected":  "685831843D01EDF40AC904D42FD8051CA621B5080019766AC56A051339B9D637",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_1.jpg",
+        "Expected":  "4CFDB832893CD9E5312084E2AF63C545A21DEF6FE8B13134847269C5DC87125A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_2.jpg",
+        "Expected":  "45B979B304E04780E79C4EAF35403DADC6B2DF4C739281D7332DEFB6763EB20A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_3.jpg",
+        "Expected":  "69CFD16F854B53B59C1A960E6F8BAAF08FE78CAB7A6C7EBD70546110CF129D5F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_4.jpg",
+        "Expected":  "4BDF0E5C141F6A2144F00F52E12B3D030CC8945A66265E4C0B9582B64D5A7C7E",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_5.jpg",
+        "Expected":  "8C3374D311A86A6B29111431CD5B4CF96B7184015F8291A66A2F4C084F385F54",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_6.jpg",
+        "Expected":  "CAA3891B1A2F0B9CA16F15108F19294F2C56ABEAF88D840EAD34F75CA79CD95F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-12_085518\\Scanner_X_2026-02-12_085518_7.jpg",
+        "Expected":  "BD06509056F4C560D8F36329C5AC45C50BC8604A6C7D3207FAA3D147B54D8CB5",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\26.03.2026.pdf",
+        "Expected":  "0742B1191BB1F6B41CF25852ABF0BD6E1009BF6AAFB139CF23755D3DB2AEE2A6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Citate.26.03.2026.pdf",
+        "Expected":  "E26976F1095149D6265629154A473CBB34CA2990861ADE710AB6648BFD099DEA",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Citate.26.03.2026.signed.pdf",
+        "Expected":  "A6DE6684A9A6B61EE5D74720852E3E91254924218BF55AE610077D872C947E34",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Scanner_X_2026-02-16_173826_1.png",
+        "Expected":  "01FB80673B372DB4ACC351D9DF68EE5DB8C0CEFB5720DF152CEE7C81CF23D2A9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Scanner_X_2026-02-16_173826_2.png",
+        "Expected":  "48245CC17113D95C0C7A041AF041A81ADBD1D9120E50CE55FB1E47A82C2A5DFC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Scanner_X_2026-02-16_173826_3.png",
+        "Expected":  "2F9E6D1C8F04F13C4F9432B2623F930064F1AA482F87E2CD4F65A6F54CDD9BD4",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Scanner_X_2026-02-16_173826_4.png",
+        "Expected":  "17937B18F27E31F0FEB73956C724F3A7C296F923DB60092C97FA3E9118F9DA87",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-16_173826\\Scanner_X_2026-02-16_173826_5.png",
+        "Expected":  "533B9C82F0CEB66601FB1E7B024400281BBBF073C905D63D891A237475AACAC9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_165528\\Către Judecătoria Chişinău, sediul Rîşcani mun. Chişinău.pdf",
+        "Expected":  "83E32C3E2C4CDD8F8DB6009E6D697992A277F24956CAAF5F0E51BCEA58AD9E86",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_165528\\Către Judecătoria Chişinău, sediul Rîşcani mun. Chişinău.signed.pdf",
+        "Expected":  "5F9EE4D657BF4C4A41194A95A609E98CC702A972DF752C97178284B07898949A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_165528\\Scanner_X_2026-02-17_165528_1.png",
+        "Expected":  "32515A3CB86AAF6D2ECCD63B963EBFA56AC730024A1B710C4A8FA7D494823594",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_165528\\Scanner_X_2026-02-17_165528_2.png",
+        "Expected":  "28A3950FD4D6E405D3A4EF42D4D4484F830CCA69045C626ED29B8FDDA1263200",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_171813\\Scanner_X_2026-02-17_171813_1.png",
+        "Expected":  "2A47ACD3C6B9043096F49A15806A54188D8666EEE421CA3904770B2542C0A507",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_171813\\Scanner_X_2026-02-17_171813_2.png",
+        "Expected":  "F9D2787061B6F2F93609062175BBFC1FFAC30365BFFFCD18A111FBBA6ACACCAE",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_171813\\Scanner_X_2026-02-17_171813_3.png",
+        "Expected":  "7E41237CCF044E76331E41E34763EACE51553AD7A734B4DAC4974CDACC60546B",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_171813\\Scanner_X_2026-02-17_171813_4.png",
+        "Expected":  "585A6105ABB5B8F1C4B7B8991F5B890DF20F7C59D27D6303AC13DA5888755C6B",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_171813\\We Have Received Your Message.pdf",
+        "Expected":  "E06BFFE0F979116DC449286F08FFB61F2637D8A49094A2F0A21DE28F056157A7",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Scanner_X_2026-02-17_171813\\We Have Received Your Message.signed.pdf",
+        "Expected":  "A5C9B40989525E728179402F53FA51750E011D99529B75A658C2D9304B6788F2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\{.txt.json",
+        "Expected":  "0FF67E13672ADA78E7398ED66EDB72DC4399E0AD746D87F2BC55A0842DAF1EAD",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\{.txt.txt",
+        "Expected":  "0FF67E13672ADA78E7398ED66EDB72DC4399E0AD746D87F2BC55A0842DAF1EAD",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\Суд Рышкановка суду Лупашку Наталье _com.signed.signed.txt",
+        "Expected":  "312A0AE91085BE71D5955A90545ED02ECB7A4229A1E70887F0C112964B5B4813",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\A_Negru_din_Macheret.pdf",
+        "Expected":  "A514170395974291F6F1CCE0EC17C19836C41D9470B0FE40CED533AE36628677",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\a_tor_protection_system.yaml",
+        "Expected":  "EB9D7B4DBF44E0C5073B80770E4CD0F1E447ED3C7369512A372C3EBC0FBC19F8",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\A©tor_Foundation.json",
+        "Expected":  "FDBD90C6355BF078CBECCECF0F633E021B0FF291AE5D7651615DF5E65EE31077",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\abbey_ocr_correction.py",
+        "Expected":  "BE5408B49D7058D7C8CAF2C32045EF237C6B22F3FCEB5605671B048023CAC5B4",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\abbey_ocr_corrector.py",
+        "Expected":  "F15A64E3D733442C6698318A74965379BEE9356DB1DBC4C2B43723463FFDECD9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\abbey_style_ocr_system.py",
+        "Expected":  "8A0EE7851ADAA802573C954CB6C05823C87F3500EA899287CBADED02B3A6E62C",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\abbyy_ocr_corrector.py",
+        "Expected":  "805A16AB31E64004AB3299B13C88DEFD511B86881063340E76ED474A423F1618",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\assemble.py",
+        "Expected":  "E177F8EA1AB809FFEEDA6B7B02D4BA0E5CCE7F6F4340C37C5B15E29E9708DE14",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\combined_correction_report_20260126_212244.md",
+        "Expected":  "1D7105C556B216809B1FE569EE4C3A8D1D5A5B9910271C3B4EBF29E3F00FA2AC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\combined_pdf_summaries_corrected_20260126_212243.json",
+        "Expected":  "1703A58C18AC3EAF8F8D59F720AEC49AA730CC0ECE931F3DC566C4B8C982791A",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\combined_pdf_summaries.json",
+        "Expected":  "64B45A5713A9A5C8FB92DF1D691050BE4E90E60591ED973E1E8AEC8BAB355AB3",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\FINAL_COMPLETION_REPORT.md",
+        "Expected":  "2832B9756671270ACD8ADD6907E28ACC500A00322BB5210DFC503534A9F4B178",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\fix_ocr_final.py",
+        "Expected":  "76AB77673DE01002CF39288B7802A40164E9158FBBD65ACC3074264A5A863383",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\json_viewer.py",
+        "Expected":  "4FFD57CBF5BEE5AE673D29E2C02932F917AAEC6EE46FDA0502807A2797449203",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\ocr_correction_dictionary.json",
+        "Expected":  "CF8D4551832C3F40AEB96A4053E5B24C754883A7CAB45EFDD078E53B89937BD8",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\OCR_Correction_Report.txt",
+        "Expected":  "F1D2AA3F1245DFC25BCE8236377D3D8C60F3D90258D93C6D3392219466A1480F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\process_ocr_corrections.py",
+        "Expected":  "0651BE75990B3367B23B9512372D57A027D20C72EA241F20F362079C913EF7F9",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\READABLE_CASE_ARCHIVE.json",
+        "Expected":  "3DBBF00021E2149A090CB301CE90866A1198B5080401CBB8A3BE1F6184BE0428",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\README_json_viewer.md",
+        "Expected":  "439EA3C74924DD3DD98213AE98632553C47ED4839EBCB8793038D5A295ED1004",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\README_OCR_CORRECTION.md",
+        "Expected":  "70C8425E0079D4B7E4F9DA02EB4C019134F0AE9CD3EAA824A49BE89299BFEB92",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\README_TI-ULA_A©tor.md",
+        "Expected":  "4FAC18EE0304C38A3C620E055AACFACD26F2316B5B6847E29671743EFAA41D66",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\restore_winget.ps1",
+        "Expected":  "1C129A1BF23B5F2765ED210E4740F84FE072422BB2B6B73CFDB96943427B00A6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\SAFE_LEGAL_ARCHIVE_CORRECTED_correction_log.json",
+        "Expected":  "2E17D66C9A7724A2616500C6E5B26A54CFF10FDAE27A890997FF8E53747441C5",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\SAFE_LEGAL_ARCHIVE_CORRECTED.json",
+        "Expected":  "BCAF5D9DB4FA2993F706804081D2B421788CC3225876934FE57A52727C5CD8F6",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\SAFE_LEGAL_ARCHIVE.json",
+        "Expected":  "85D67BAFC804D8C4790C7FA53212490ED28026A1873111405E90C166A03F1BED",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\setup_abbey_system.bat",
+        "Expected":  "A56E87C8311084705C2955044BFFB23BB2FA92A816610E3309EA424A8003693B",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\test_json_viewer.py",
+        "Expected":  "0D1322B5B0F8F5C2DCD2308A955FDA5CE1FFC2762777ADEE42BF37E594A66BDE",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\transformed_jus_cogens_case_backup_20260126_165959_annotated.json",
+        "Expected":  "6DB96D425C1D7F769B2593411EC1D2306FABF2D9084DE658589EBCACBD8D0A79",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\transformed_jus_cogens_case_backup_20260126_165959_structure_report.json",
+        "Expected":  "129CF199F754D3ED6BC65162C790A1F4F64EB33D23099A2F44AB57C5C730A967",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\transformed_jus_cogens_case_backup_20260126_165959.json",
+        "Expected":  "2C882D72E25B617D00E847C52654D10FE77B20A4D5FF0CE686A428F50DB99F4F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\ultimate_winget_recovery_fixed.ps1",
+        "Expected":  "259A64D8A47A386F621885E6DE6483AD3AA8705F1E32B8D683731F2195629E6F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\ultimate_winget_recovery.ps1",
+        "Expected":  "CB6C847F95A9F70A0200C2A34EC82EA81ACC1A0DB6D9EFE91E5A530EFBD6A8D1",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\ultra_mega_archive_streaming_report.json",
+        "Expected":  "55425602FEAA0933C82E02FBAA355F1734B6CFA669C621FA430983613AF4A3F7",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\winget_configuration.yaml",
+        "Expected":  "5C5724123CD6FABC2D4255DC1288FF147769C7F9791D33B9AC636961FC7D6BAC",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\winget_recovery.ps1",
+        "Expected":  "9D3C13D86B03CEBB85EF27B3D600844031283CE85ABDF13C7C19DCB26B79204F",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\.vscode\\settings.json",
+        "Expected":  "B849942F849BDF6313430DC7C3A0D6FB0ABC563831007F8D821BFB1D0C55A835",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\exports\\Фамилия_manual.txt",
+        "Expected":  "C26FBC89F4439EF947FA0929FBBDAB6A30B9A86C3E19E66771EAF73CC858DE44",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\exports\\Фамилия.txt",
+        "Expected":  "29756739B89532B6183CF1FEE14B663282CC81B21CFA493119FE9CC3EB0FCD58",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\exports\\test.txt",
+        "Expected":  "F2CA1BB6C7E907D06DAFE4687E579FCE76B37E4E93B7605022DA52E6CCC26FD2",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\__pycache__\\json_viewer.cpython-312.pyc",
+        "Expected":  "23465FCB69490363483711CCA83C8CA85EB494CF650322478A48015C090AD233",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    },
+    {
+        "File":  "Downloads\\Защиты\\__pycache__\\json_viewer.cpython-313.pyc",
+        "Expected":  "F110DC47DC04BD173F693D7A9AB6EB54B6ACB54E6D6FA54954CAEB8B1787CCE4",
+        "Actual":  "N/A",
+        "Status":  "MISSING"
+    }
+]

@@ -1,0 +1,25 @@
+investigation_config:
+  subject: "Investigation into death of Galina Marcova"
+  status: "Evidence_Chain_Integrity_Audit"
+  
+  target_anomalies:
+    - anomaly_id: "MISSING_IMPLANTS"
+      description: "Discrepancy between pre-mortem CT (3 metallic bolts) and post-mortem examination."
+      source_files: "DICOM_Archive_Local"
+      
+    - anomaly_id: "IDENTITY_SUBSTITUTION"
+      description: "Substitution of Galina Marcova (1953) with Timofei (1951)."
+      validation_method: "Cross_referencing_birth_dates_and_patronymics"
+      
+  operational_steps:
+    - step: 1
+      action: "Extract_metadata_from_all_DICOM_files"
+      focus: "Laparotomy_evidence_and_metallic_foreign_bodies"
+    - step: 2
+      action: "Compare_Document_Versioning"
+      focus: "Changes_between_initial_and_appealed_volumes"
+    - step: 3
+      action: "Detect_Conflict_of_Interest"
+      focus: "Ludmila_Nantoi_actions_vs_Judiciary_decisions"
+      
+  required_output: "Chronological_timeline_of_evidence_tampering"

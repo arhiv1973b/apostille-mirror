@@ -1,0 +1,8 @@
+{
+    "message":  "Пример ошибки",
+    "timestamp":  "2026-06-15T00:35:38.6791741+03:00",
+    "command":  null,
+    "session_id":  "31e00bcd-a451-4745-9fa3-8ce6130d461c",
+    "node_context":  "FIN-CASCADE-036-HUMANITARIAN-ANCHOR",
+    "status":  "INSTITUTIONAL_DENIAL_EVENT"
+}

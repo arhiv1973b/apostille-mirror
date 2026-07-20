@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "title": "Evidence Packet: прокурор",
+    "generated_at": "2026-04-29T21:04:29.199267+00:00",
+    "issuer": "A©tor",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "jurisdiction": [
+      "ECHR",
+      "UN",
+      "MD"
+    ],
+    "object_count": 43
+  },
+  "evidence_chain": [
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афана.pdf",
+      "uri": "https://drive.google.com/file/d/1vof_gJ6NvtrDst9cnGapto7cbNrlGP8A/view",
+      "integrity_id": "sha256:389b0f354c92c1f187e2a0dc35043a8e798a4a6427391f18e61976b519be2755",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос_Прокурору_Иванову._в_отношении_КПС.pdf_translated.pre.txt",
+      "uri": "https://drive.google.com/file/d/1xPJ8oJl292nb0pMr6PvRG-Ig0J5i1Mo6/view",
+      "integrity_id": "sha256:78f3ddd906e27a6d19a45665dfab958b7f57ee08776a2c35e78a59f2833bf3eb",
+      "size_bytes": 11730
+    },
+    {
+      "name": "Донос_Прокурору_Иванову._в_отношении_КПС.pdf_translated.meta.json",
+      "uri": "https://drive.google.com/file/d/1gkarnNTb-td5QeAhSWDMJMz3W6el-M-t/view",
+      "integrity_id": "sha256:ca7ea7ae44c33c8183787a56f70b2efb0458ac560e66442bd2f212e9282c8d21",
+      "size_bytes": 301
+    },
+    {
+      "name": "Важно_Суду_Чеканы_Без_ответа_к_Прокурору_сектор_Рышкановка_мун.._Кишинёв..pdf_translated.meta.json",
+      "uri": "https://drive.google.com/file/d/1t9Ng9wRfsef2vvMyvs_UeaEGU3ynLKTp/view",
+      "integrity_id": "sha256:a3153b8630b4ace192c8d836c59b1bbe03d4bf2d8d4c26e3c4923ab720310f50",
+      "size_bytes": 420
+    },
+    {
+      "name": "Важно_Суду_Чеканы_Без_ответа_к_Прокурору_сектор_Рышкановка_мун.._Кишинёв..pdf_translated.pre.txt",
+      "uri": "https://drive.google.com/file/d/15VSzUvMTCDDr8Z_dVpenhJAs9DxiSELU/view",
+      "integrity_id": "sha256:7adfcb99ec68f612806d6b2d3b92a93af96279c432af8b9cc19403f2bff08af7",
+      "size_bytes": 19756
+    },
+    {
+      "name": "actual_Прокурору_сектор_Рышкановка_мун.pdf_translated.meta.json",
+      "uri": "https://drive.google.com/file/d/1TbvfNVh1oJ-7S4YjFQg1Jj--4skWNWMi/view",
+      "integrity_id": "sha256:0b3a3af516df92395a7bd43ed376937b7fe4eca0a31e21c167d8d89ab30bb731",
+      "size_bytes": 285
+    },
+    {
+      "name": "actual_Прокурору_сектор_Рышкановка_мун.pdf_translated.pre.txt",
+      "uri": "https://drive.google.com/file/d/1fPEdqjFVz8mxQtZ_Y2YkhPonKi0HZihm/view",
+      "integrity_id": "sha256:aae2b1baad070819122f3f0bd3cb8f8c8971184eeab6a0a04a326cb37d74f91f",
+      "size_bytes": 5330
+    },
+    {
+      "name": "actual_Прокурору_и_Начальнику_КПС_страница_5__-_7_как_статья_274_УПК_РМ.pdf_translated.meta.json",
+      "uri": "https://drive.google.com/file/d/1U5grYPqS3DCT9Cj9V6WzjWJ-ebIyoZI7/view",
+      "integrity_id": "sha256:d3766b8e1ae4985435b148ceb72d2357450668c3794e1f8fafc0b9dc83e74d1b",
+      "size_bytes": 387
+    },
+    {
+      "name": "actual_Прокурору_и_Начальнику_КПС_страница_5__-_7_как_статья_274_УПК_РМ.pdf_translated.pre.txt",
+      "uri": "https://drive.google.com/file/d/1fNEwIb9jFf5MAT2urwATmk4SLsU37nAV/view",
+      "integrity_id": "sha256:e3e6102a5749d957b34e4ff4dc09d2dba2b9eb0312948a30da04b7a912df413e",
+      "size_bytes": 302562
+    },
+    {
+      "name": "actual_-_Права_Марковой_-_Мачерет__Прокурору_следователю_,_адвокату,_суду._секции_немедленных_и_неотложных_мерах.pdf_translated.meta.json",
+      "uri": "https://drive.google.com/file/d/1CWtR6tqbKR7-sie7ZWBbauyWCPkl9uhz/view",
+      "integrity_id": "sha256:3f1c20933ad72767a1bb477ddd712ddb6e285574d7504dd3179d9c6dd8bc5cad",
+      "size_bytes": 549
+    },
+    {
+      "name": "actual_-_Права_Марковой_-_Мачерет__Прокурору_следователю_,_адвокату,_суду._секции_немедленных_и_неотложных_мерах.pdf_translated.pre.txt",
+      "uri": "https://drive.google.com/file/d/1VWtyrCvnGWWsUdZWFepL0c45n8QfNhMV/view",
+      "integrity_id": "sha256:0444a6f676fe0670aa5d3f4a7d1a402adb01e1c5d4b57b2b57e451415e3240a1",
+      "size_bytes": 169644
+    },
+    {
+      "name": ".подписан_(1).pdf_Gmail_-_FW__Статья_313_-_Суду_Чеканы_-_после_срочной_-_отсылки_Прокурора_Братунова_-_все_дкйствия_-_в_стор.pdf_translated.meta.json",
+      "uri": "https://drive.google.com/file/d/1q6lUWlfvdjWbFJ2mK-y5rLmpnQMOp9nr/view",
+      "integrity_id": "sha256:c1d1243f7d3b2ad301a7569fb0e0a1b320feb6ea8dc7d385f8992c363bd8daab",
+      "size_bytes": 556
+    },
+    {
+      "name": ".подписан_(1).pdf_Gmail_-_FW__Статья_313_-_Суду_Чеканы_-_после_срочной_-_отсылки_Прокурора_Братунова_-_все_дкйствия_-_в_стор.pdf_translated.pre.txt",
+      "uri": "https://drive.google.com/file/d/1WBbE3GR36sqUfuKrR6HCnBRRYEgqoGUn/view",
+      "integrity_id": "sha256:3c816b33c88dda24fd02b73c4ac793e0d0b3e3e4e9c953080f8cfc106317fd73",
+      "size_bytes": 12236
+    },
+    {
+      "name": "Заявление Прокурор.pdf",
+      "uri": "https://drive.google.com/file/d/1gXP4cNu6tUdleuHYmLX8FYYeMPtEZJg8/view",
+      "integrity_id": "sha256:a99ee4b9d11a8670635b325551ae8e980381aa6802ef7d88c16fdea2173f62fb",
+      "size_bytes": 5089935
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_1.signed 2.pdf",
+      "uri": "https://drive.google.com/file/d/1GHa642SWCgtZFsuuUC6YKiNO8-emNxYY/view",
+      "integrity_id": "sha256:87b5b4a25aa09aa9b7a81270d4a1b4c62b5d74d86e60088919b8cd1517d4d34f",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_2.pdf",
+      "uri": "https://drive.google.com/file/d/1goInhvdGt46Z3Vf6dp6wXjVb3pN59T5H/view",
+      "integrity_id": "sha256:6c4dd55c5b443468ff06f178ebf690321ea5b9702e1fc7d301cff5164009c2cc",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_1_1.pdf",
+      "uri": "https://drive.google.com/file/d/1ggXbzBI26LL-aAfV5MsVYWwfGWoFEjln/view",
+      "integrity_id": "sha256:88a81a0c574db2debaca95b8bf3f08afd18205a260e621b3def78216476ca794",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3.pdf",
+      "uri": "https://drive.google.com/file/d/1aHm1edGg7DsgsDaUf00bmUrNgh-gGpVi/view",
+      "integrity_id": "sha256:d5de4ff68b5659bcf7df29c1550ceabce021c4da3aeaa93f30c7ca1842cd238a",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_1.pdf",
+      "uri": "https://drive.google.com/file/d/1juT8JdPUxiZHhthjy7w-Mak_1PhR6wuO/view",
+      "integrity_id": "sha256:06622044443f035789630eaf2c483c42783473562b2b1d7fda507a0eeabd5dcb",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2.pdf",
+      "uri": "https://drive.google.com/file/d/1qMT5pvtPA8xbd5K6GX-L6FlcyqqR49WW/view",
+      "integrity_id": "sha256:aaa73a93399fb3a687302ca8ab6d7730cc47eecdcc7edd0a0c7f69a88b3af61d",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_2.pdf",
+      "uri": "https://drive.google.com/file/d/1ZQOnHY-duiCNsFYjEVflXnTq1rQii8-j/view",
+      "integrity_id": "sha256:732deaf2d5f6cf60994ada9c3c1b0e1b29c67ebb004cfcc0c5c0743cac5f2a0d",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_3.pdf",
+      "uri": "https://drive.google.com/file/d/1HkJNIKkjBtDpLgnZ6NnJsfufSCE5k621/view",
+      "integrity_id": "sha256:ccb2ad1d443a0d236473debe7d8884169f93bbe3d2cb4b459250be323ffcf676",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_5.pdf",
+      "uri": "https://drive.google.com/file/d/1Cv4k6FXSxPjhmwhgLJGcEcZX092DGqhN/view",
+      "integrity_id": "sha256:168b72b6ddd3ad731fd9110e3c74f0d6b13e8cab35c1f655e52f29ef088c849d",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_1.pdf",
+      "uri": "https://drive.google.com/file/d/10m_ktlzz6iTo78pkjBizOQTQs8pPDnDi/view",
+      "integrity_id": "sha256:e2ed03cd38104cc7df6d7ed99958b4c93a23fed14429bf208616fd9bef8a6ca5",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_6.pdf",
+      "uri": "https://drive.google.com/file/d/1ysuMoj_Ly5wkMsZzSzjdRune-GrWzmmo/view",
+      "integrity_id": "sha256:92a3f185d3330db055f5a60948bd9de8c5990a6a551f78151625c77ddd83c789",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_2.signed 2_3_4.pdf",
+      "uri": "https://drive.google.com/file/d/1qw6pZZnkFFGpb1umX1YSdUKQDRQb24IK/view",
+      "integrity_id": "sha256:40c6267d4e7cd49e423968b44125b61c582ae819dc2e8220c94301386a789bf0",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1)_1.signed 2 (1).pdf",
+      "uri": "https://drive.google.com/file/d/1qefJz9lhekBZ55y4N04w_s7j6MioUsyq/view",
+      "integrity_id": "sha256:28db1a9be6f8965e7b9cc96bbbe12efbb991ce29dd6f7f9fc4015960efa54683",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "Донос вышестоящему Прокурору на Прокурора Афанасий -_USA Min finally got a chance that I can be there for you and your family is going to be able that would work for you guys are (1).signed 2.pdf",
+      "uri": "https://drive.google.com/file/d/1jiCvhr70Wp-nYuhcMbojAmq_srQzeDvX/view",
+      "integrity_id": "sha256:73bf58ea3fecbb7e969e57d440da50760d401c421754788e9726a0d970d61d67",
+      "size_bytes": 20530870
+    },
+    {
+      "name": "actual_-_Права_Марковой_-_Мачерет__Прокурору_следователю_,_адвокату,_суду._секции_немедленных_и_неотложных_мерах.pdf_translated.txt",
+      "uri": "https://drive.google.com/file/d/183ljnVCTuJgF_EL4N8-OBW31gzG4kN4H/view",
+      "integrity_id": "sha256:d6bfa11da364885d4633671bc61fabc2ed0d4329b7aef3739820b31d56d2ce2f",
+      "size_bytes": 165733
+    },
+    {
+      "name": "Донос_Прокурору_Иванову._в_отношении_КПС.pdf_translated.txt",
+      "uri": "https://drive.google.com/file/d/1bZ8PclO52cUy8n6su14umBwqMXhfeqv9/view",
+      "integrity_id": "sha256:20bc77dbf2306dd56a8251bdf68eca36fa27fccd4265415942b98f37d029747a",
+      "size_bytes": 9969
+    },
+    {
+      "name": "Важно_Суду_Чеканы_Без_ответа_к_Прокурору_сектор_Рышкановка_мун.._Кишинёв..pdf_translated.txt",
+      "uri": "https://drive.google.com/file/d/1yIjHPkH1PM9q-O0I6gDUNzo0aIx6lsee/view",
+      "integrity_id": "sha256:b4123af621e3c6c932d22eef21313b4cedcda360b976c77d7d0bdbbb375417c2",
+      "size_bytes": 19191
+    },
+    {
+      "name": "actual_Прокурору_сектор_Рышкановка_мун.pdf_translated.txt",
+      "uri": "https://drive.google.com/file/d/1aTzGeGh0DqCEiLtUPUadFhmKd2mLe3W9/view",
+      "integrity_id": "sha256:b401053dd56e6e31c05dad378dbb3fcc9df558454678cd5fd6b505351967ce93",
+      "size_bytes": 4646
+    },
+    {
+      "name": ".подписан_(1).pdf_Gmail_-_FW__Статья_313_-_Суду_Чеканы_-_после_срочной_-_отсылки_Прокурора_Братунова_-_все_дкйствия_-_в_стор.pdf_translated.txt",
+      "uri": "https://drive.google.com/file/d/1kdmPEZfXGg322n5STVQLxi4AKid9BE8U/view",
+      "integrity_id": "sha256:91d285376447e853a7f8df3ee71d07ac05e6f244ab6949e23bee9a02df65dc8f",
+      "size_bytes": 10891
+    },
+    {
+      "name": "actual_Прокурору_и_Начальнику_КПС_страница_5__-_7_как_статья_274_УПК_РМ.pdf_translated.txt",
+      "uri": "https://drive.google.com/file/d/1DMmmamnLHF0wCF2N53uIsvmd_CjBAoM1/view",
+      "integrity_id": "sha256:2272b2629bad8a6f99b99d893169bf063405f7a5dbbd43ef0cb91552f5418363",
+      "size_bytes": 290964
+    },
+    {
+      "name": "К_вышестоящему_Прокурору_нарушмвшксу_Протоол.pdf",
+      "uri": "https://drive.google.com/file/d/18UVxaWIyFvS2McuUzXtzcWZy2eKqyQh5/view",
+      "integrity_id": "sha256:7ed1b4cf5c8ed04f59a473b112dec111076291502ddd6eef500e510534cd0a78",
+      "size_bytes": 10843906
+    },
+    {
+      "name": "К вышестоящему Прокурору нарушмвшксу Протоол.pdf",
+      "uri": "https://drive.google.com/file/d/12UzvnlaIi8V3e7JL3KifmCFx_kUz89hD/view",
+      "integrity_id": "sha256:dbbbe47ec6a6e450e80b3527e323e91599eb911ecc9e2bf8b04bc0063d8834cd",
+      "size_bytes": 10843906
+    },
+    {
+      "name": "Вышестоящему_прокурору.pdf",
+      "uri": "https://drive.google.com/file/d/16N7wGxQoMCquKwMHX8glUEexzsBeHE8H/view",
+      "integrity_id": "sha256:bcdc103d9682b108c7a0c33a221caa8dd76ff2949fdc264e5b4c327cdfbe977c",
+      "size_bytes": 1524992
+    },
+    {
+      "name": "Вышестоящему прокурору.pdf",
+      "uri": "https://drive.google.com/file/d/1lf0UDFi6i2JdNgbu3R_pRR4WWicF7J8Y/view",
+      "integrity_id": "sha256:42eb74419c868e02564bb3007f7c15caf486f71f4986a38ebbe6211ec7256fe5",
+      "size_bytes": 1524992
+    },
+    {
+      "name": "Важно_Суду_Чеканы_Без_ответа_к_Прокурору_сектор_Рышкановка_мун.._Кишинёв..pdf",
+      "uri": "https://drive.google.com/file/d/1hign6BYQ9esc5cqkg5zMNT4gbX5yBdZB/view",
+      "integrity_id": "sha256:9827bbd0588062c3fa880bf5622e4c0e13d61bdb091b96ef38c3ce8de25845c2",
+      "size_bytes": 10448175
+    },
+    {
+      "name": "Важно Суду Чеканы Без ответа к Прокурору сектор Рышкановка мун.. Кишинёв..pdf",
+      "uri": "https://drive.google.com/file/d/1HWseli60xlgFtU3UGjmy_QgXJ9JtZeza/view",
+      "integrity_id": "sha256:070dbd57893965b490fe891ca3bc02237c629639fb161e27998e82f10412c489",
+      "size_bytes": 10448175
+    },
+    {
+      "name": "1_прокурора.pdf",
+      "uri": "https://drive.google.com/file/d/1OwOGyMGixISLQRc9CIVwcUfb_u7cI8NL/view",
+      "integrity_id": "sha256:d6d412ece5d4fb73e42493784b01f9bcf05f4f17a6a826b7749efa9c89cba656",
+      "size_bytes": 155320
+    },
+    {
+      "name": "1 прокурора.pdf",
+      "uri": "https://drive.google.com/file/d/1yb6aLswoWqmCLMYGrYWnfflMmpYFE56v/view",
+      "integrity_id": "sha256:aea3cbcdf34558fcbea59f52e10ce6b9712639eb4a0783fce2951d0c1bc50b78",
+      "size_bytes": 155320
+    },
+    {
+      "name": "Gmail - Automatic reply_ Вам предоставили доступ к объекту _Прокурору сектор Рышкановка и Суду Буюкань.pdf_.pdf",
+      "uri": "https://drive.google.com/file/d/11gUDicu8uo31poOSL5OJoYjROdXyFG96/view",
+      "integrity_id": "sha256:ea0023b139991ee0ca0beaac37bcc18314017d9f56c16e71ce8013db177eb3a1",
+      "size_bytes": 98561
+    }
+  ]
+}

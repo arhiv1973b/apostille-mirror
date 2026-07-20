@@ -1,0 +1,17 @@
+{
+  "normalization_parameters": {
+    "hounsfield_unit_calibration": {
+      "air_threshold": -1000,
+      "water_threshold": 0,
+      "bone_threshold": 1000,
+      "metal_implant_threshold": 3000
+    },
+    "coordinate_system": "Patient-based Coordinate System (ISO 12052)",
+    "alignment_method": "Cross-sectional Registration via ImagePositionPatient",
+    "identity_rules": {
+        "primary": "Marcova",
+        "aliases": ["Macarova", "Timofei"],
+        "fuzzy_match_threshold": 0.85
+    }
+  }
+}

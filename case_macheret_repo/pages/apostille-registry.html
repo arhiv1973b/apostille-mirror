@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реестр апостилей · 97 документов · CASE-MACHERET</title>
+<link rel="stylesheet" href="../assets/css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="../index.html" style="color:inherit;text-decoration:none">A©TOR<span> · CASE-MACHERET</span></a></div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <a href="apostille-registry.html" class="active">Реестр апостилей</a>
+      <a href="jus-cogens.html">Jus Cogens</a>
+      <a href="timeline.html">Хронология</a>
+      <a href="evidence.html">Доказательства</a>
+      <a href="pledoarie.html">Pledoarie</a>
+    </div>
+  </div>
+</nav>
+
+<div style="padding:3rem 0 1rem; background:var(--deep); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">Архив · Гаагская конвенция 05.10.1961</div>
+    <h1>Реестр апостилей</h1>
+    <p class="text-muted">97 апостилированных документов · CASE-MACHERET-1997-2026<br>
+    Подписано: Мачерет Алексей · 17.02.2026 · MoldSign · ИДНП 2000001159655</p>
+    <div class="alert alert-gold mt-3">
+      <span class="alert-icon">ℹ️</span>
+      <div class="alert-body">
+        Апостиль удостоверяет <strong>подлинность подписи должностного лица</strong> — не содержание. Содержание: уклонение от расследования пыток. Это не серия ошибок — <strong>системная имитация правосудия</strong> (ст. 17 Римского статута).
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="container" style="padding:2rem 1.5rem 4rem;">
+
+  <!-- STATS -->
+  <div class="hero-stats" style="justify-content:flex-start;margin:0 0 2rem;">
+    <div class="stat-box">
+      <span class="stat-num">97</span>
+      <span class="stat-lbl">Всего записей</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num" id="filtered-count">97</span>
+      <span class="stat-lbl">Показано</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">3</span>
+      <span class="stat-lbl">Ключевых</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">1998</span>
+      <span class="stat-lbl">Первый документ</span>
+    </div>
+  </div>
+
+  <!-- KEY DOCUMENTS HIGHLIGHT -->
+  <div class="alert alert-red">
+    <span class="alert-icon">🔑</span>
+    <div class="alert-body">
+      <strong>Ключевые документы:</strong>
+      №5 (код <code>7H2Q3790FZEI5</code>) — Дело 1-568/98, пытки 13.10.1998 ·
+      №6 (код <code>5GTUD58SJQ5N6</code>) — Признание невиновности 21.07.2009 ·
+      №56 (код <code>FL2VB340JYEG5</code>) — Дело 1-568/98 повторное
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-bar mt-3">
+    <input type="text" id="search-input" placeholder="🔍 Поиск по коду, делу, подписанту..." oninput="filterTable()">
+    <select id="year-filter" onchange="filterTable()">
+      <option value="">Все годы</option>
+      <option value="1998">1998</option>
+      <option value="2003">2003</option>
+      <option value="2009">2009</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+    </select>
+    <select id="key-filter" onchange="filterTable()">
+      <option value="">Все документы</option>
+      <option value="key">Только ключевые</option>
+    </select>
+    <button class="btn btn-outline btn-sm" onclick="clearFilters()">✕ Сброс</button>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap">
+    <table id="apostille-table">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Код апостиля</th>
+          <th>Код безопасности</th>
+          <th>Дело / Ссылка</th>
+          <th>Подписант</th>
+          <th>Дата документа</th>
+          <th>Дата апостиля</th>
+          <th>Верификация</th>
+        </tr>
+      </thead>
+      <tbody id="apostille-body">
+        <!-- JS заполняет -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- HASH BLOCK -->
+  <div class="hash-block mt-4">
+    <div class="hash-key">SHA-256 · APOSTILLE REGISTRY · SIGNED 17.02.2026</div>
+    <div class="hash-val">099efc0cb651f68880b638a2aa767945340689b6b02d440d0a0b539178d82c11</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      CASE-MACHERET-1997-2026 · A©tor · ИДНП 2000001159655 · JUS COGENS · ERGA OMNES · БЕЗ СРОКА ДАВНОСТИ
+    </div>
+  </div>
+</footer>
+
+<script>
+const BASE_URL = "https://apostila.gov.md/apostila/site/downloadApostila/apostileCode/";
+
+let allData = [];
+
+fetch('../assets/data/apostilles.json')
+  .then(r => r.json())
+  .then(data => {
+    allData = data.records;
+    renderTable(allData);
+  })
+  .catch(() => {
+    // fallback: встроенные данные если fetch недоступен
+    document.getElementById('apostille-body').innerHTML =
+      '<tr><td colspan="8" class="text-center text-muted" style="padding:2rem">⏳ Загрузка данных...</td></tr>';
+  });
+
+function renderTable(records) {
+  const tbody = document.getElementById('apostille-body');
+  document.getElementById('filtered-count').textContent = records.length;
+
+  if (!records.length) {
+    tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted" style="padding:2rem">Ничего не найдено</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = records.map(r => {
+    const verUrl = `${BASE_URL}${r.code}/securityCode/${r.sec}`;
+    const isKey = r.key ? 'style="background:rgba(232,184,75,.06)"' : '';
+    const keyBadge = r.key ? `<span class="badge badge-red">КЛЮЧЕВОЙ</span><br><small style="color:var(--muted)">${r.note||''}</small>` : '';
+    return `<tr ${isKey}>
+      <td class="mono">${r.n}${r.key ? ' 🔑' : ''}</td>
+      <td class="mono"><code>${r.code}</code></td>
+      <td class="mono" style="font-size:.75rem">${r.sec}</td>
+      <td>${r.case_ref ? `<code>${r.case_ref}</code>` : '<span class="text-muted">—</span>'}<br>${keyBadge}</td>
+      <td style="font-size:.82rem">${r.signatory}</td>
+      <td class="mono">${r.doc_date || '—'}</td>
+      <td class="mono text-accent">${r.apostille_date}</td>
+      <td><a href="${verUrl}" target="_blank" rel="noopener" class="btn btn-outline btn-sm">↗ Верифицировать</a></td>
+    </tr>`;
+  }).join('');
+}
+
+function filterTable() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const yr = document.getElementById('year-filter').value;
+  const keyOnly = document.getElementById('key-filter').value === 'key';
+
+  const filtered = allData.filter(r => {
+    const text = `${r.code} ${r.sec} ${r.case_ref} ${r.signatory} ${r.note||''}`.toLowerCase();
+    const matchQ = !q || text.includes(q);
+    const matchY = !yr || r.apostille_date.includes(yr) || r.doc_date.includes(yr);
+    const matchK = !keyOnly || r.key;
+    return matchQ && matchY && matchK;
+  });
+  renderTable(filtered);
+}
+
+function clearFilters() {
+  document.getElementById('search-input').value = '';
+  document.getElementById('year-filter').value = '';
+  document.getElementById('key-filter').value = '';
+  renderTable(allData);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gateway-controller": {
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "gateway-agent", "python", "proxy_logic.py"]
+    },
+    "audit-engine": {
+      "command": "python",
+      "args": ["harvester.py", "--audit"]
+    }
+  }
+}

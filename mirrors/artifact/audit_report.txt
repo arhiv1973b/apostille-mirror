@@ -1,0 +1,8 @@
+--- A©TŌR COURT REPORT (LUPAŞCU SESSION) | 2026-03-28 ---
+✅ VERIFIED | ROOT_JC | Delay: 0 days | Weight: 1.0
+✅ VERIFIED | IMWM44AZGX6N6 | Delay: 14 days | Weight: 1.0
+⚠️ TOXIC/ANOMALY | DR4Y1584JW9F4 | Delay: 6363 days | Weight: 0.05
+✅ VERIFIED | DLTP7B8ZHWGQ7 | Delay: 0 days | Weight: 1.0
+✅ VERIFIED | 4J20E98WFY7J2 | Delay: 0 days | Weight: 1.0
+
+--- GLOBAL INTEGRITY INDEX: 81.00% ---

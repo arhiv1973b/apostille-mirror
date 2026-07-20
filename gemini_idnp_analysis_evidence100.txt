@@ -1,0 +1,21 @@
+GEMINI FORENSIC ANALYSIS — EVIDENCE #100
+CASE: CASE-MACHERET-1997-2026
+DATE: 2026-04-25
+MODEL: gemini-3-flash-preview
+SUBJECT: IDNP ...555 to ...655 manipulation analysis
+
+QUALIFICATIONS:
+- Art. 332 CPC RM: Official forgery (IDNP correction without investigation)
+- Art. 327 CPC RM: Abuse of power by ASP registrars
+- Art. 190 CPC RM: Fraud in especially large amounts
+- Art. 243 CPC RM: Money laundering (25,210,256.15 MDL)
+- ECHR Art. 6 + Protocol 1: 8158 days denial of effective justice
+
+KEY FINDING:
+The 2020 ASP correction order is the ENTRY POINT proving deliberate
+legalization of the 2006 forgery. This document must be subpoenaed.
+
+CAUSAL CHAIN CONFIRMED:
+IDNP ...555 (2006) → VSM 2018 → ASP correction 2020
+→ No criminal case → Procedural vacuum → Theft 25,210,256.15 MDL (2026)
+SHA-256-COMMIT: 94b277b4 (idnp_555_evidence_trace.txt)
