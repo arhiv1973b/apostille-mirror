@@ -10,3 +10,4 @@ __pycache__/
 *.gdoc
 *.gsheet
 *.sig
+cloud_id_manifest_full.json
