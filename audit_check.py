@@ -29,4 +29,4 @@ def run_hard_audit(target_dir):
     print(f"--- AUDIT COMPLETE IN {target_dir}. FILES FOUND: {found_files} ---")
 
 if __name__ == "__main__":
-    run_hard_audit(r"C:\A\29 апр 2024\MARCOVAGALINA\DICOM")
+    run_hard_audit(r"sys.argv[1]апр 2024\MARCOVAGALINA\DICOM")

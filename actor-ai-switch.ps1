@@ -1,4 +1,4 @@
-﻿param(
+param(
     [string]$Model = "",
     [string]$Prompt = "",
     [switch]$List,

@@ -8,7 +8,7 @@ Write-Host "Иницианизация проверки финансового �
 
 if (-Not (Test-Path $CsvPath)) {
     Write-Host "Файл выписки $CsvPath не найден. Поместите CSV файл в директорию." -ForegroundColor Red
-    exit
+    return
 }
 
 $transactions = Import-Csv -Path $CsvPath -Delimiter "," # Настройте разделитель под формат вашего банка
@@ -17,7 +17,7 @@ $sabotageFlags = 0
 
 foreach ($tx in $transactions) {
     $amount = [decimal]$tx.Amount
-    $description = $tx.Description.ToLower()
+    $description = $description = if ($tx.Description) { $tx.Description.ToLower() } else { "" }; $description
     $date = $tx.Date
 
     # Проверка на саботаж (скрытые комиссии, штрафы, списания, маркеры 555)
