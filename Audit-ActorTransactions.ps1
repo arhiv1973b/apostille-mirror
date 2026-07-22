@@ -1,17 +1,21 @@
 # 🛡️ ФОРЕНЗИК-АУДИТ ТРАНЗАКЦИЙ: CASE-MACHERET-1997-2026
 param (
-    [string]$CsvPath = "C:\Users\arhiv\apostille-mirror-work\financial_logs\statement.csv",
-    [string]$OutPath = "C:\Users\arhiv\apostille-mirror-work\financial_logs\AUDIT_REPORT.json"
+    [string]$CsvPath = ".\financial_logs\statement.csv",
+    [string]$OutPath = ".\financial_logs\AUDIT_REPORT.json"
 )
 
 Write-Host "Иницианизация проверки финансового шлюза..." -ForegroundColor Cyan
 
-if (-Not (Test-Path $CsvPath)) {
-    Write-Host "Файл выписки $CsvPath не найден. Поместите CSV файл в директорию." -ForegroundColor Red
+# Resolve relative paths
+$FullPathCsv = Join-Path -Path $PSScriptRoot -ChildPath $CsvPath
+$FullPathOut = Join-Path -Path $PSScriptRoot -ChildPath $OutPath
+
+if (-Not (Test-Path $FullPathCsv)) {
+    Write-Host "Файл выписки $FullPathCsv не найден. Поместите CSV файл в указанную директорию." -ForegroundColor Red
     exit
 }
 
-$transactions = Import-Csv -Path $CsvPath -Delimiter "," # Настройте разделитель под формат вашего банка
+$transactions = Import-Csv -Path $FullPathCsv -Delimiter ","
 $auditResults = @()
 $sabotageFlags = 0
 
@@ -51,5 +55,5 @@ $finalReport = @{
     Records = $auditResults
 }
 
-$finalReport | ConvertTo-Json -Depth 5 | Out-File -FilePath $OutPath -Encoding UTF8
-Write-Host "Отчет об аудите сохранен: $OutPath" -ForegroundColor Cyan
+$finalReport | ConvertTo-Json -Depth 5 | Out-File -FilePath $FullPathOut -Encoding UTF8
+Write-Host "Отчет об аудите сохранен: $FullPathOut" -ForegroundColor Cyan

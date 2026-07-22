@@ -1,5 +1,6 @@
 import pydicom
 import os
+import argparse
 
 def run_hard_audit(target_dir):
     print(f"--- STARTING HARD AUDIT IN {target_dir} ---")
@@ -29,5 +30,8 @@ def run_hard_audit(target_dir):
     print(f"--- AUDIT COMPLETE IN {target_dir}. FILES FOUND: {found_files} ---")
 
 if __name__ == "__main__":
-    target_dir = os.getenv("TARGET_DIR", r"C:\A\29 апр 2024\MARCOVAGALINA\DICOM")
-    run_hard_audit(target_dir)
+    parser = argparse.ArgumentParser(description="DICOM Forensic Audit")
+    parser.add_argument("target_dir", help="Путь к директории с DICOM")
+    args = parser.parse_args()
+    
+    run_hard_audit(args.target_dir)
