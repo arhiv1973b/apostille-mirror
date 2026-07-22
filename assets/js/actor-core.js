@@ -2,9 +2,9 @@
  * A©t0r Forensic Core v15.5
  * Deep Content Audit & Metadata Explorer
  */
-let masterIndex = {};
+ let masterIndex = {};
 
-async function initForensicHub() {
+ async function initForensicHub() {
     console.log("A©t0r Hub v15.5 Deep Audit Active");
     try {
         const response = await fetch('dist/meta/UNIVERSAL_CAS_INDEX.json');
