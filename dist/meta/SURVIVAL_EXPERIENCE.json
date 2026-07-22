@@ -1,0 +1,9 @@
+﻿{
+    "message":  "Function response parts mismatch",
+    "hash":  "DB5A3DA6648D7FE6130EA537F471D4C3DED80C125A7ACBE1ED2C9A8E5E76942A",
+    "timestamp":  "2026-05-25T03:22:21Z",
+    "turn_id":  "Turn_20260525_01",
+    "polarization":  "API_SYNC_MISMATCH",
+    "code":  "400",
+    "status":  "COUPLED_INTO_GRAF"
+}

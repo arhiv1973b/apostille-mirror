@@ -1,0 +1,8 @@
+{
+    "message":  "Пример ошибки CASCADE_TRIGGER",
+    "timestamp":  "2026-06-15T00:44:43.9731669+03:00",
+    "command":  null,
+    "session_id":  "5d9b9b94-69f6-4a11-a266-123d55e19db0",
+    "node_context":  "FIN-CASCADE-036-HUMANITARIAN-ANCHOR",
+    "status":  "CASCADE_STEP_EVENT"
+}

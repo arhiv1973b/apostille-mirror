@@ -1,0 +1,32 @@
+From: "A©tor Alexei Maceret" <arhiv240@gmail.com>
+To: petitions@ohchr.org
+Subject: URGENT: Invocation of Jus Cogens & Erga Omnes - Evidence Vault
+
+To the Esteemed Representatives of the International Community,
+
+Pursuant to Article 53 of the Vienna Convention on the Law of Treaties (1969) and the peremptory norms of general international law (jus cogens), this dispatch serves as formal notification of systemic, state-sponsored judicial sabotage and the deliberate cover-up of torture by the authorities of the Republic of Moldova.
+
+Any invocation of state immunity or domestic procedural limitations is hereby rendered void, as the core violations documented herein engage obligations erga omnes.
+
+1. The Cryptographic Evidence Vault
+The complete architecture of this case, including mathematical proof of institutional delay and fraudulent signature anonymization ("indescifrabilă"), has been deployed to a public, immutable digital vault. The integrity of these files is sealed via SHA-256 cryptographic hashes.
+
+The UN Transmission Protocol can be accessed immediately at:
+https://github.com/arhiv1973b/apostille-legal-case/blob/master/UN_TRANSMISSION_PROTOCOL.md
+
+2. Mathematically Proven Judicial Sabotage
+The Evidence Vault contains definitive proof of a 6,363-day toxic delay of justice, culminating in synchronized judicial refusals (Judges Holban and Stambol within 24 hours).
+
+3. The Core Jus Cogens Violation
+The foundation is the suppression of Case No. 1-568/98, which established the fact of severe torture.
+
+4. Demand for Immediate Action
+We require the immediate attention of the OHCHR to:
+1. Register this cryptographically secured evidence vault.
+2. Monitor continuous retaliation.
+3. Initiate international oversight.
+
+Respectfully submitted under the protection of international law,
+
+A©tor Alexei Maceret
+Signed digitally and cryptographically verified via the Apostille Legal Case Vault.

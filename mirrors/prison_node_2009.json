@@ -1,0 +1,16 @@
+{
+  "event_id": "PRISON-NODE-2009",
+  "status": "NON-REHABILITATED_TORTURE_VICTIM_MARKER",
+  "official_identity": {
+    "name": "Genadii Morozan",
+    "position": "Director of PU-15 (High Security)",
+    "signature_status": "MANDATORY_IN_MOJ_DATABASE"
+  },
+  "verification_anomaly": {
+    "apostille_nr": "HQ7X9W62GUJL9",
+    "digital_tag": "semnatura indescifrabila",
+    "legal_impossibility": "Institutional Amnesia: Ministry of Justice fails to recognize the signature of its own Prison Director required for inmate transfer/release.",
+    "sabotage_type": "Identity Erasure / Procedural Blockade"
+  },
+  "jus_cogens_impact": "Violation of Art. 13 ECHR (Right to effective remedy) by creating a 'phantom' signature in the rehabilitation path."
+}

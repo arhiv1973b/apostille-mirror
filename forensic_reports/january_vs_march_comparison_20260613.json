@@ -1,0 +1,6991 @@
+{
+    "january_evidence": [],
+    "march_evidence": [
+        {
+            "path": "DICOM/D202203/DD1412/A2104625",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -870.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2105039",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1000.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2105458",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1130.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2105890",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1260.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2106333",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -878.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2106867",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -899.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2107239",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -920.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2107611",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -941.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2108185",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -961.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2108751",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -982.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2109393",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1003.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2109771",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1024.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2110150",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1045.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2110529",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1065.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2110911",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1086.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2111291",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1107.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2111867",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1128.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2112250",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1149.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2112629",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1169.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2113037",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1190.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2113590",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1211.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2113972",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1232.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2114360",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1253.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2114738",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1273.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/A2115122",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1294.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2104640",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -875.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2105052",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1005.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2105472",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1135.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2105910",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1265.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2106346",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -879.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2106881",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -900.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2107252",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -921.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2107625",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -941.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2108200",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -962.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2108766",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -983.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2109407",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1004.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2109786",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1025.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2110164",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1045.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2110543",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1066.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2110925",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1087.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2111305",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1108.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2111881",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1129.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2112265",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1149.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2112643",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1170.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2113051",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1191.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2113605",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1212.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2113988",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1233.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2114375",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1253.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2114752",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1274.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/B2115136",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1295.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2104655",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -880.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2105068",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1010.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2105489",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1140.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2105925",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1270.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2106361",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -880.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2106895",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -901.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2107267",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -921.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2107640",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -942.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2108213",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -963.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2108782",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -984.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2109422",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1005.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2109799",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1025.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2110177",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1046.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2110558",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1067.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2110939",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1088.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2111320",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1109.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2111895",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1129.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2112282",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1150.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2112658",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1171.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2113066",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1192.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2113620",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1213.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2114001",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1233.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2114388",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1254.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2114767",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1275.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/C2115151",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1296.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2104669",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -885.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2105086",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1015.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2105504",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1145.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2105942",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1275.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2106375",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -881.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2106910",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -901.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2107281",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -922.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2107654",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -943.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2108228",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -964.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2108796",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -985.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2109437",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1005.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2109814",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1026.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2110193",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1047.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2110572",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1068.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2110954",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1089.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2111333",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1109.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2111912",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1130.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2112295",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1151.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2112673",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1172.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2113080",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1193.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2113634",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1213.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2114017",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1234.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2114403",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1255.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2114782",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1276.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/D2115166",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1297.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2104701",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -890.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2105101",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1020.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2105520",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1150.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2105957",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1280.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2106390",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -881.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2106924",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -902.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2107295",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -923.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2107668",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -944.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2108433",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -965.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2108811",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -985.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2109451",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1006.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2109830",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1027.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2110208",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1048.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2110587",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1069.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2110968",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1089.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2111348",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1110.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2111927",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1131.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2112310",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1152.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2112717",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1173.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2113093",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1193.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2113650",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1214.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2114032",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1235.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2114417",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1256.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2114796",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1277.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/E2115179",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1297.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2104716",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -895.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2105116",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1025.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2105535",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1155.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2105972",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1285.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2106405",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -882.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2106939",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -903.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2107311",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -924.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2107881",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -945.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2108448",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -965.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2108825",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -986.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2109465",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1007.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2109843",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1028.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2110222",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1049.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2110601",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1069.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2110983",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1090.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2111365",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1111.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2111942",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1132.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2112324",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1153.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2112732",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1173.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2113108",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1194.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2113664",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1215.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2114047",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1236.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2114431",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1257.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2114812",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1277.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/F2115195",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1298.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2104731",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -900.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2105131",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1030.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2105549",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1160.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2105987",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1290.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2106418",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -883.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2106953",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -904.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2107326",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -925.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2107896",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -945.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2108461",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -966.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2108840",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -987.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2109480",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1008.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2109858",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1029.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2110236",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1049.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2110616",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1070.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2110997",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1091.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2111378",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1112.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2111957",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1133.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2112339",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1153.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2112747",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1174.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2113121",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1195.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2113677",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1216.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2114061",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1237.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2114445",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1257.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2114827",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1278.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/G2115209",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1299.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2104747",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -905.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2105146",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1035.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2105571",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1165.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2106002",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1295.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2106434",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -884.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2106966",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -905.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2107339",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -925.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2107911",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -946.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2108476",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -967.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2108854",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -988.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2109495",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1009.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2109873",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1029.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2110250",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1050.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2110631",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1071.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2111012",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1092.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2111394",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1113.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2111971",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1133.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2112353",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1154.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2112761",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1175.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2113135",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1196.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2113693",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1217.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2114076",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1237.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2114459",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1258.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2114840",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1279.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/H2115270",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": "MISSING",
+            "desc": "  5"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2104761",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -910.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2105162",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1040.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2105585",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1170.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2106018",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1300.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2106448",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -885.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2106981",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -905.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2107354",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -926.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2107924",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -947.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2108490",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -968.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2108869",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -989.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2109509",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1009.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2109887",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1030.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2110266",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1051.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2110645",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1072.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2111028",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1093.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2111410",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1113.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2111986",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1134.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2112368",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1155.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2112776",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1176.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2113149",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1197.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2113708",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1217.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2114091",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1238.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2114473",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1259.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/I2114856",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1280.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2104781",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -915.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2105177",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1045.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2105602",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1175.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2106088",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -865.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2106461",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -885.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2106996",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -906.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2107369",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -927.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2107939",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -948.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2108504",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -969.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2108882",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -989.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2109523",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1010.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2109902",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1031.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2110281",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1052.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2110660",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1073.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2111041",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1093.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2111423",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1114.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2112000",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1135.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2112382",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1156.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2112790",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1177.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2113163",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1197.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2113722",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1218.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2114106",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1239.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2114487",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1260.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/J2114871",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1281.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2104797",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -920.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2105206",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1050.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2105618",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1180.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2106103",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -865.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2106476",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -886.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2107010",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -907.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2107382",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -928.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2107953",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -949.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2108519",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -969.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2108897",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -990.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2109539",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1011.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2109916",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1032.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2110295",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1053.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2110674",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1073.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2111056",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1094.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2111625",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1115.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2112015",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1136.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2112397",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1157.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2112804",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1177.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2113177",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1198.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2113737",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1219.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2114121",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1240.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2114501",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1261.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/K2114885",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1281.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2104811",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -925.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2105221",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1055.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2105633",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1185.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2106117",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -866.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2106491",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -887.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2107025",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -908.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2107396",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -929.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2107968",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -949.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2108533",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -970.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2108911",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -991.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2109552",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1012.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2109931",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1033.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2110310",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1053.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2110690",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1074.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2111071",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1095.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2111639",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1116.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2112030",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1137.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2112411",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1157.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2112819",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1178.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2113192",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1199.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2113751",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1220.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2114136",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1241.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2114516",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1261.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/L2114901",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1282.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2104827",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -930.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2105237",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1060.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2105648",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1190.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2106131",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -867.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2106505",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -888.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2107039",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -909.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2107412",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -929.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2107982",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -950.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2108547",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -971.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2108924",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -992.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2109567",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1013.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2109945",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1033.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2110325",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1054.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2110706",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1075.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2111085",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1096.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2111654",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1117.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2112044",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1137.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2112424",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1158.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2112833",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1179.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2113207",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1200.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2113767",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1221.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2114151",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1241.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2114532",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1262.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/M2114915",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1283.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2104841",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -935.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2105255",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1065.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2105665",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1195.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2106146",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -868.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2106521",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -889.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2107052",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -909.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2107425",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -930.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2107997",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -951.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2108562",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -972.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2108938",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -993.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2109581",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1013.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2109959",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1034.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2110338",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1055.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2110720",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1076.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2111100",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1097.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2111668",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1117.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2112059",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1138.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2112439",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1159.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2112848",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1180.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2113222",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1201.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2113781",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1221.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2114165",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1242.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2114546",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1263.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/N2114929",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1284.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2104856",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -940.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2105271",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1070.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2105681",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1200.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2106160",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -869.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2106536",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -889.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2107066",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -910.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2107439",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -931.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2108012",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -952.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2108577",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -973.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2108954",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -993.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2109595",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1014.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2109974",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1035.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2110353",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1056.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2110736",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1077.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2111114",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1097.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2111684",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1118.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2112074",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1139.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2112455",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1160.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2112862",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1181.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2113236",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1201.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2113795",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1222.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2114180",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1243.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2114561",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1264.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/O2114943",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1285.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2104871",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -945.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2105286",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1075.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2105709",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1205.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2106173",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -869.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2106550",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -890.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2107081",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -911.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2107454",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -932.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2108026",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -953.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2108591",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -973.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2108967",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -994.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2109611",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1015.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2109989",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1036.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2110368",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1057.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2110750",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1077.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2111128",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1098.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2111698",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1119.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2112087",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1140.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2112469",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1161.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2112875",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1181.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2113251",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1202.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2113811",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1223.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2114196",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1244.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2114576",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1265.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/P2114958",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1285.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2104884",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -950.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2105300",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1080.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2105726",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1210.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2106189",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -870.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2106565",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -891.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2107095",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -912.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2107468",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -933.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2108041",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -953.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2108605",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -974.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2108982",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -995.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2109625",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1016.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2110002",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1037.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2110382",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1057.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2110765",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1078.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2111143",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1099.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2111712",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1120.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2112103",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1141.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2112484",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1161.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2112890",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1182.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2113372",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1203.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2113826",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1224.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2114210",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1245.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2114591",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1265.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Q2114973",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1286.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2104899",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -955.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2105316",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1085.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2105746",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1215.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2106203",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -871.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2106580",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -892.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2107109",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -913.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2107483",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -933.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2108054",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -954.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2108620",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -975.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2108997",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -996.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2109640",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1017.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2110017",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1037.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2110397",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1058.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2110780",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1079.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2111157",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1100.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2111727",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1121.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2112118",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1141.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2112499",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1162.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2112904",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1183.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2113386",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1204.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2113840",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1225.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2114225",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1245.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2114606",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1266.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/R2114988",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1287.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2104914",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -960.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2105332",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1090.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2105761",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1220.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2106218",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -872.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2106621",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -893.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2107124",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -913.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2107497",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -934.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2108070",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -955.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2108634",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -976.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2109175",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -997.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2109655",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1017.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2110032",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1038.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2110411",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1059.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2110794",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1080.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2111171",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1101.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2111743",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1121.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2112132",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1142.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2112513",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1163.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2112918",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1184.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2113401",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1205.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2113855",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1225.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2114240",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1246.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2114620",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1267.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/S2115002",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1288.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2104934",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -965.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2105346",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1095.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2105778",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1225.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2106232",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -873.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2106635",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -893.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2107138",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -914.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2107511",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -935.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2108083",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -956.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2108648",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -977.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2109190",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -997.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2109669",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1018.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2110047",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1039.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2110425",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1060.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2110810",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1081.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2111187",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1101.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2111757",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1122.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2112147",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1143.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2112528",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1164.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2112933",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1185.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2113416",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1205.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2113871",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1226.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2114254",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1247.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2114635",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1268.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/T2115017",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1289.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2104949",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -970.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2105361",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1100.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2105793",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1230.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2106247",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -873.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2106650",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -894.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2107152",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -915.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2107526",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -936.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2108097",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -957.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2108663",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -977.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2109204",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -998.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2109684",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1019.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2110062",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1040.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2110440",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1061.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2110824",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1081.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2111202",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1102.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2111772",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1123.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2112162",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1144.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2112541",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1165.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2112948",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1185.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2113430",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1206.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2113884",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1227.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2114269",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1248.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2114649",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1269.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/U2115032",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1289.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2104963",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -975.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2105375",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1105.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2105810",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1235.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2106261",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -874.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2106664",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -895.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2107166",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -916.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2107541",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -937.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2108113",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -957.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2108678",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -978.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2109218",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -999.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2109699",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1020.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2110077",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1041.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2110455",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1061.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2110838",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1082.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2111217",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1103.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2111788",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1124.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2112176",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1145.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2112557",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1165.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2112962",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1186.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2113445",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1207.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2113899",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1228.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2114286",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1249.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2114665",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1269.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/V2115047",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1290.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2104978",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -980.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2105391",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1110.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2105826",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1240.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2106275",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -875.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2106679",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -896.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2107180",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -917.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2107554",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -937.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2108127",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -958.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2108692",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -979.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2109232",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1000.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2109714",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1021.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2110091",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1041.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2110469",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1062.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2110853",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1083.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2111231",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1104.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2111803",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1125.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2112191",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1145.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2112571",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1166.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2112976",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1187.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2113459",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1208.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2113914",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1229.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2114300",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1249.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2114678",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1270.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/W2115061",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1291.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2103124",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -512.0,
+                0.00017,
+                -585.5
+            ],
+            "desc": "  2.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2104993",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -985.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2105411",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1115.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2105842",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1245.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2106290",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -876.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2106826",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -897.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2107196",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -917.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2107569",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -938.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2108142",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -959.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2108707",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -980.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2109350",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1001.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2109728",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1021.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2110106",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1042.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2110485",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1063.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2110868",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1084.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2111247",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1105.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2111820",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1125.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2112206",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1146.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2112586",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1167.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2112992",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1188.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2113474",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1209.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2113928",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1229.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2114315",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1250.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2114694",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1271.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/X2115078",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1292.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2104179",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                0.00017,
+                -512.0,
+                -585.5
+            ],
+            "desc": "  2.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2105008",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -990.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2105426",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1120.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2105858",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1250.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2106303",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -877.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2106839",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -897.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2107210",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -918.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2107583",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -939.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2108157",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -960.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2108721",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -981.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2109364",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1001.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2109743",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1022.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2110120",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1043.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2110499",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1064.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2110881",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1085.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2111261",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1105.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2111836",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1126.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2112221",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1147.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2112601",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1168.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2113007",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1189.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2113488",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1209.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2113943",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1230.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2114330",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1251.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2114708",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1272.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Y2115091",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1293.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2104610",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -865.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2105023",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -995.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2105441",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1125.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2105873",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1255.0
+            ],
+            "desc": " BODY 5.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2106318",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -877.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2106853",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -898.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2107225",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -919.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2107597",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -940.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2108171",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -961.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2108738",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -981.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2109378",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1002.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2109757",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1023.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2110134",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1044.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2110514",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1065.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2110896",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1085.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2111276",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1106.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2111852",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1127.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2112237",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1148.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2112615",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1169.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2113022",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1189.8
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2113576",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1210.6
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2113958",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1231.4
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2114344",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1252.2
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2114723",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1273.0
+            ],
+            "desc": " BODY 1.0"
+        },
+        {
+            "path": "DICOM/D202203/DD1412/Z2115107",
+            "name": "Marcova^Galina^ch colorectal",
+            "date": "20220314",
+            "pos": [
+                -218.317,
+                -221.2467,
+                -1293.8
+            ],
+            "desc": " BODY 1.0"
+        }
+    ],
+    "summary": {
+        "jan_count": 0,
+        "mar_count": 635,
+        "anomaly_detected": false
+    }
+}

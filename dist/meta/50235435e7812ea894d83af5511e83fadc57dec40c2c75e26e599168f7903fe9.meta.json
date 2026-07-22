@@ -1,0 +1,14 @@
+﻿{
+    "size_bytes":  1245908,
+    "gdrive_url":  "gdrive:ACTOR_EVIDENCE_VAULT/blobs/50235435e7812ea894d83af5511e83fadc57dec40c2c75e26e599168f7903fe9",
+    "github_raw_url":  "https://github.com/arhiv1973b/apostille-mirror/raw/main/dist/blobs/50235435e7812ea894d83af5511e83fadc57dec40c2c75e26e599168f7903fe9",
+    "context_name":  "ciocana_decision",
+    "type_hint":  "FORENSIC_DOC",
+    "document_id":  "PH-1997-DIV-RECT",
+    "legal_reference":  "Ciocana Court Decision — DADA ION",
+    "node_id":  "TI-012",
+    "sha256":  "50235435e7812ea894d83af5511e83fadc57dec40c2c75e26e599168f7903fe9",
+    "mime_type":  "application/pdf",
+    "status":  "INTEGRATED_GCP",
+    "timestamp":  "2026-05-22T21:59:25Z"
+}

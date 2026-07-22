@@ -1,0 +1,17 @@
+﻿{
+    "node_id":  "FIN-CASCADE-036-HUMANITARIAN-ANCHOR",
+    "timestamp":  "2026-05-07T16:02:55Z",
+    "subject":  "Medical Evidence of Irreparable Health Damage (Group I Disability)",
+    "medical_record":  {
+                           "duration":  "Permanent / Life-long (fara termen)",
+                           "status":  "Severe Disability (Group I)",
+                           "certificate_nr":  "C013564402308",
+                           "idnp_verified":  "2000001159655"
+                       },
+    "legal_link":  {
+                       "violation":  "Article 3 ECHR (Torture/Inhuman Treatment)",
+                       "financial_impact":  "Ongoing strangulation of social support (Node 025).",
+                       "consequence":  "Documented medical result of systemic justice denial since 1998."
+                   },
+    "integrity":  "SHA-256 Sealed by A©tor Key 7BEACB5463BA3007"
+}

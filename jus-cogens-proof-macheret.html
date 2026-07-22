@@ -481,10 +481,8 @@ body::after {
   </div>
 
   <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Ключевые <em>доказательные факты</em></div></div>
-  <div class="evidence-grid">
-    <div class="ev-card"><div class="ev-card-icon">⏱</div><div class="ev-card-title">ПРОЦЕССУАЛЬНЫЙ ВАКУУМ</div><div class="ev-card-body"><span class="num num-auto">10524</span>суток без расследования. Срок давности отсутствует.</div></div>
-    <div class="ev-card"><div class="ev-card-icon">📂</div><div class="ev-card-title">АПОСТИЛИРОВАННЫЙ АРХИВ</div><div class="ev-card-body"><span class="num">90</span>документов Гаагской конвенции. Апостиль удостоверяет подпись должностного лица.</div></div>
-    <div class="ev-card"><div class="ev-card-icon">🧬</div><div class="ev-card-title">ПОДЛОГ 15.03.2022</div><div class="ev-card-body"><strong>Факт:</strong> Нантой Людмила использовала личность Маркова И.М. для захвата имущества.</div></div>
+  <div class="evidence-grid" id="dynamic-evidence-grid">
+    <!-- Dynamically populated from manifest.json -->
   </div>
 
   <div class="verdict">
@@ -896,5 +894,7 @@ materializeRegistry();
 <!-- PORTAL_FOOTER_START -->
 <div class="portal-footer" style="text-align:center;padding:16px;margin-top:20px;border-top:1px solid #103c60;color:#8ab0cc;font-size:0.85em;font-family:monospace">SHA256: E8D77A5BB2061035E1F85619B27FB5EE1EC3C24268E452C9142BA524EFAE6811 | Verified: ✓ | Updated: 2026-07-04T08:01:15.833183Z</div>
 <!-- PORTAL_FOOTER_END -->
+<script src="app.js"></script>
 </body>
 </html>
+

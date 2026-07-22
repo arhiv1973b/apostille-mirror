@@ -1,0 +1,36 @@
+{
+  "suspect": "Maria Trandafilova",
+  "aliases": ["Maria Chirca"],
+  "procedural_role": "Investigator (Ofițer de urmărire penală) at IP Rîșcani",
+  "verified_actions": [
+    {
+      "date": "2022-03-16",
+      "document": "Proces-verbal de constatare (Death of Galina Markova)",
+      "signed_as": "Trandafilova Maria",
+      "status": "VERIFIED_IN_EXPERTIZA_4"
+    },
+    {
+      "date": "2022-08-29",
+      "action": "Proposal to NOT start criminal proceedings",
+      "signed_as": "Maria Trandafilova",
+      "status": "VERIFIED_IN_DOC_9F985319"
+    },
+    {
+      "date": "2022-11-11",
+      "action": "Report proposing non-initiation of prosecution",
+      "signed_as": "Maria Trandafilova",
+      "status": "VERIFIED_IN_DOC_9F985319"
+    }
+  ],
+  "allegation_identity_fraud": {
+    "mechanism": "Fictitious marriage with an officer of IP Rîșcani to change surname to Chirca.",
+    "purpose": "Hiding complicity in investigations led by Prosecutor Gureev and obscuring the chain of custody.",
+    "investigation_requirement": "Demand verification of marriage records (Starea Civilă) and signature comparison between Trandafilova and Chirca eras."
+  },
+  "associated_personnel": {
+    "Andrei Vacarciuc": "Chief of Police Inspectorate (IP Rîșcani)",
+    "Ion Coslet": "Investigator (IP Rîșcani)",
+    "Prosecutor Gureev": "Supervising Prosecutor"
+  },
+  "status": "PENDING_INTERNATIONAL_VERIFICATION"
+}

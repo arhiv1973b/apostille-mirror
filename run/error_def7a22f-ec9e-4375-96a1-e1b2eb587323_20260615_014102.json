@@ -1,0 +1,8 @@
+{
+    "message":  "Пример ошибки: unhandled exception (unauthorized access to node 025)",
+    "timestamp":  "2026-06-15T01:41:02.6274830+03:00",
+    "command":  null,
+    "session_id":  "def7a22f-ec9e-4375-96a1-e1b2eb587323",
+    "node_context":  "FIN-CASCADE-036-HUMANITARIAN-ANCHOR",
+    "status":  "INSTITUTIONAL_DENIAL_EVENT"
+}

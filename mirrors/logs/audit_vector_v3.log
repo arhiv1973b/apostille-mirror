@@ -1,0 +1,3 @@
+./docs/treasury/debt_substitution_fraud.md:**REF:** Ministerul Finanțelor № 12-25/1988 (02.09.2021)
+./docs/treasury/debt_substitution_fraud.md:**TEST_VECTOR_MARKER:** FRAUD_LINK_12-25/1988_ACTIVE
+./embassy-notification/send_notifications.py:ARIJ/Ministry of Justice acknowledged overpayment of 50 lei (letter No. 12-25/1988, 02.09.2021) but redirected execution to State Tax Service (SFS) without notifying the claimant. Ministry of Finance then issued notification of execution. Three different state bodies involved in a single obligation — constituting institutional fraud under Vienna Convention Art. 49 and denial of effective remedy under ECHR Art. 13.
