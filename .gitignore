@@ -1,4 +1,7 @@
-*.sock
-.docker/
-CASE-MACHERET-1997-2026/
-multilingual_export/
+*
+!index.html
+!app.js
+!manifest.json
+!.gitignore
+!*.css
+!jus-cogens-proof-macheret.html
