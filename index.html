@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A©t0r Forensic Interface | CASE-MACHERET</title>
     <style>
-        body { background: #121212; color: #e0e0e0; font-family: monospace; padding: 20px; }
-        #cas-explorer { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
-        .cas-card { border: 1px solid #333; padding: 15px; background: #1e1e1e; }
-        .btn-action { background: #00ff41; color: #000; border: none; padding: 5px 10px; cursor: pointer; }
-        #hub-search { width: 100%; padding: 10px; margin-bottom: 20px; background: #222; border: 1px solid #444; color: #fff; }
+        body { background: #121212; color: #e0e0e0; font-family: sans-serif; padding: 20px; }
+        #cas-explorer { display: grid; gap: 15px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 5px 0; }
+        a { color: #00ff41; text-decoration: none; }
     </style>
 </head>
 <body>
-    <h1>A©t0r Forensic Hub v15.5 | CASE-MACHERET-1997-2026</h1>
-    <input type="text" id="hub-search" placeholder="Поиск по хэшам или ID документов...">
-    
-    <div id="status-panel">
-        <p>Nodes: <span id="node-count">Загрузка...</span></p>
+    <h1>A©t0r Forensic Hub | CASE-MACHERET-1997-2026</h1>
+    <div id="cas-explorer">
+        <ul>
+            <li><a href="nodes/A©t0r arhiv si actual reestrf_4.html">A©t0r arhiv si actual reestrf_4</a></li>
+        </ul>
     </div>
-
-    <div id="cas-explorer"></div>
-
-    <div id="live-feed"></div>
-
     <script src="assets/js/actor-core.js"></script>
     <script src="script.js"></script>
 </body>
