@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TI-ULA: Матрица Доказательств</title>
+    <title>A©t0r Forensic Interface | CASE-MACHERET</title>
     <style>
-        body { background-color: #0d1117; color: #c9d1d9; font-family: -apple-system, monospace; padding: 20px; }
-        .header { border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 20px; }
-        .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
-        .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 15px; }
-        .btn { display: inline-block; background: #238636; color: #ffffff; padding: 8px 16px; text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; margin-top: 10px; width: 100%; box-sizing: border-box; border: 1px solid rgba(240,246,252,0.1); }
-        .btn:hover { background: #2ea043; }
-        .btn-alert { background: #da3633; }
-        .btn-alert:hover { background: #f85149; }
+        body { background: #121212; color: #e0e0e0; font-family: sans-serif; padding: 20px; }
+        #cas-explorer { display: grid; gap: 15px; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🏛️ База Доказательств: CASE-MACHERET-1997-2026</h1>
-        <p>Статус: JUS COGENS | Узлов в реестре: 44,650+</p>
-    </div>
-    <div class="dashboard">
-        <div class="card">
-            <h3>📑 Медицинские Аудиты и DICOM</h3>
-            <p>Доступ к извлеченным метаданным и криминалистическим отчетам сканирований.</p>
-            <a href="#" class="btn" onclick="alert('Функция поиска по узлам активирована. Переход к базе DICOM.')">Открыть реестр DICOM</a>
-        </div>
-        <div class="card">
-            <h3>⚖️ Судебные Акты и Апостили</h3>
-            <p>Защищенные HTML-капсулы с привязкой к облачным идентификаторам.</p>
-            <a href="#" class="btn btn-alert" onclick="alert('Переход к международным ордерам и апостилям.')">Документы JUS COGENS</a>
-        </div>
-        <div class="card">
-            <h3>🛡️ Манифест Системы (TI-ULA)</h3>
-            <p>Журналы неизменности, хэш-суммы SHA-256 и Ed25519 подписи.</p>
-            <a href="#" class="btn">Архив Целостности</a>
-        </div>
-    </div>
-    <script>
-        console.log("TI-ULA Router initialized. Nodes ready.");
-    </script>
+    <h1>A©t0r Forensic Hub | CASE-MACHERET-1997-2026</h1>
+    <div id="cas-explorer"></div>
+    <script src="assets/js/actor-core.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

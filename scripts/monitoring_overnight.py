@@ -137,11 +137,13 @@ def main():
         time.sleep(1)
 
     # write outputs
-    with open("report_link_results.json", "w", encoding='utf-8') as f:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+    with open(os.path.join(BASE_DIR, "report_link_results.json"), "w", encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
     if alerts:
-        with open("alerts.json", "w", encoding='utf-8') as f:
+        with open(os.path.join(BASE_DIR, "alerts.json"), "w", encoding='utf-8') as f:
             json.dump(alerts, f, ensure_ascii=False, indent=4)
         logging.info(f"Saved {len(alerts)} alerts to alerts.json")
 
