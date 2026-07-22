@@ -1,5 +1,6 @@
 import pydicom
 import os
+import sys
 
 def run_hard_audit(target_dir):
     print(f"--- STARTING HARD AUDIT IN {target_dir} ---")
@@ -29,4 +30,7 @@ def run_hard_audit(target_dir):
     print(f"--- AUDIT COMPLETE IN {target_dir}. FILES FOUND: {found_files} ---")
 
 if __name__ == "__main__":
-    run_hard_audit(r"sys.argv[1]апр 2024\MARCOVAGALINA\DICOM")
+    if len(sys.argv) > 1:
+        run_hard_audit(sys.argv[1])
+    else:
+        print("Please provide a target directory.")

@@ -1,7 +1,7 @@
 # 🛡️ ФОРЕНЗИК-АУДИТ ТРАНЗАКЦИЙ: CASE-MACHERET-1997-2026
 param (
-    [string]$CsvPath = "C:\Users\arhiv\apostille-mirror-work\financial_logs\statement.csv",
-    [string]$OutPath = "C:\Users\arhiv\apostille-mirror-work\financial_logs\AUDIT_REPORT.json"
+    [string]$CsvPath = "financial_logs\statement.csv",
+    [string]$OutPath = "financial_logs\AUDIT_REPORT.json"
 )
 
 Write-Host "Иницианизация проверки финансового шлюза..." -ForegroundColor Cyan
