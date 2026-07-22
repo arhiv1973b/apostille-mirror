@@ -35,6 +35,20 @@
       "icon": "🔴",
       "title": "ПОДЛОГ ИДНП №2 (1974/1995)",
       "num": "1974"
+    },
+    {
+      "icon": "⚠️",
+      "title": "CONFLICT-ANCHOR: Ордер кв. 64",
+      "body": "Конфликтующая копия, указывающая на подлог IDNP.",
+      "id": "conflict_node_1",
+      "num": "2023"
+    },
+    {
+      "icon": "⚠️",
+      "title": "CONFLICT-ANCHOR: Исполнение 2006",
+      "body": "Дублирующиеся записи исполнения наказания.",
+      "id": "conflict_node_2",
+      "num": "2006"
     }
   ],
   "forensicData": {
