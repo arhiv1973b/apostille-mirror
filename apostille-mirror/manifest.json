@@ -161,6 +161,13 @@
       "title": "SABOTAGE-NODE: Лингвистическая подмена 'Markov'",
       "body": "Систематическое незаконное склонение иностранной фамилии 'Markov' и замена 'ț'/'ts' на 'k', нарушающее нормы идентичности.",
       "icon": "🔤"
+    },
+    {
+      "num": "FORGERY-CHAIN",
+      "id": "identity_forgery_chain_variations",
+      "title": "SABOTAGE-NODE: Идентификационная цепочка вариаций",
+      "body": "Систематическое использование цепочки: Marcov < Macarova < Marcova < Maceret < Macieret < Maciret как SWIFT-эквивалентных ключей для обхода легальности владения и совершения хищений.",
+      "icon": "🔗"
     }
   ],
   "forensicData": {
