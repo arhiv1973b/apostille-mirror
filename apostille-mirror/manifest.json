@@ -119,6 +119,20 @@
       "num": "2009",
       "icon": "👣",
       "id": "illegal_registration_anchor"
+    },
+    {
+      "num": "ID",
+      "title": "SABOTAGE-NODE: Подмена фамилий (Буквенная)",
+      "id": "identity_forgery_substitution",
+      "body": "Систематические вставки/замены букв при сохранении заглавной инициальной буквы для обхода автоматической идентификации.",
+      "icon": "🔠"
+    },
+    {
+      "num": "ID",
+      "title": "SABOTAGE-NODE: Полная подмена фамилии",
+      "id": "identity_forgery_total",
+      "body": "Институциональный подлог личности субъекта при сохранении процессуальной формы.",
+      "icon": "👤"
     }
   ],
   "forensicData": {
