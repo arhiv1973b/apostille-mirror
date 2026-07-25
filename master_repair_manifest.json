@@ -1,0 +1,46 @@
+{
+  "phase": "Master Repair",
+  "timestamp": "2026-07-25T18:25:00Z",
+  "operator": "Alexei Arturovich Macheret",
+  "execution_environment": {
+    "os": "Windows PowerShell 7.6.3",
+    "primary_workdir": "H:\\ACTOR_DEV_ENV\\copilot-worktrees\\apostille-mirror\\arhiv1973b-automatic-invention",
+    "cloud_mount": "F:\\Мой диск"
+  },
+  "repositories": [
+    {
+      "name": "apostille-archive-english",
+      "path": "F:\\Projects\\apostille-archive-english",
+      "github_pages": "https://arhiv1973b.github.io/apostille-archive-english/",
+      "status": "synchronized_offline",
+      "actions": [
+        "apply_unified_theme",
+        "fix_broken_links",
+        "verify_index_routing"
+      ]
+    },
+    {
+      "name": "apostille-mirror",
+      "path": "H:\\ACTOR_DEV_ENV\\copilot-worktrees\\apostille-mirror\\arhiv1973b-automatic-invention",
+      "github_pages": "https://arhiv1973b.github.io/apostille-mirror/",
+      "status": "active_worktree",
+      "actions": [
+        "apply_unified_theme",
+        "link_jus_cogens_proof",
+        "generate_evidence_catalog",
+        "git_gc_optimize"
+      ]
+    }
+  ],
+  "critical_nodes": {
+    "portal_entry": "index.html",
+    "core_evidence": "jus-cogens-proof-macheret.html",
+    "evidence_catalog": "EVIDENCE_CATALOG.md",
+    "cas_index": "UNIVERSAL_CAS_INDEX.json"
+  },
+  "security_directives": {
+    "google_drive_sync": "paused",
+    "ignore_patterns": ["*.gdoc", "*.gsheet"],
+    "credential_protection": "environment_variables_only"
+  }
+}
