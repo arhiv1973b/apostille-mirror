@@ -6,7 +6,7 @@ Applies: OG metadata, support badge, copy-clipboard functions, and footers
 to all language versions.
 Run: python3 create_multilingual_export.py
 """
-import os, io, zipfile, hashlib, datetime
+import os, io, zipfile, hashlib, datetime, unicodedata
 
 PORTAL_FOOTER_START = '<!-- PORTAL_FOOTER_START -->'
 PORTAL_FOOTER_END = '<!-- PORTAL_FOOTER_END -->'
@@ -29,9 +29,11 @@ LANG_META = {
            'desc': '证据门户 — 马切雷特案 1997–2026'},
 }
 
-def compute_file_hash(content_bytes):
+def compute_file_hash(text):
+    # Normalize Unicode NFC and unify line endings
+    normalized_text = unicodedata.normalize('NFC', text).replace('\r\n', '\n').replace('\r', '\n')
     h = hashlib.sha256()
-    h.update(content_bytes)
+    h.update(normalized_text.encode('utf-8'))
     return h.hexdigest().upper()
 
 def strip_existing_footer(text):
@@ -73,7 +75,7 @@ def add_footer_hash(html_content):
     
     # Compute hash of stripped content
     stripped = strip_existing_footer(html_content)
-    h = compute_file_hash(stripped.encode('utf-8'))
+    h = compute_file_hash(stripped)
     ts = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
     
     footer = f'\n{PORTAL_FOOTER_START}\n<div class="portal-footer">SHA256: {h} | Verified: ✓ | Updated: {ts}</div>\n{PORTAL_FOOTER_END}\n'
