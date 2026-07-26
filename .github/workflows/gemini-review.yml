@@ -1,0 +1,63 @@
+name: Gemini CLI PR Review
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  gemini-review:
+    runs-on: ubuntu-latest
+
+    services:
+      gemini-proxy:
+        image: myorg/gemini-proxy:latest
+        ports:
+          - 8080:8080
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Gemini CLI
+        run: npm install -g @google/gemini-cli
+
+      - name: Run Gemini CLI analysis
+        id: gemini
+        run: |
+          gemini -m gemini-1.5-flash -p "Проанализируй изменения в pull request и укажи критические ошибки, если они есть. Для каждой найденной проблемы используй формат:
+          CRITICAL_ERROR: <описание>
+          WARNING: <описание>
+          INFO: <описание>" > gemini_output.txt
+        env:
+          GEMINI_API_BASE_URL: http://localhost:8080/v1
+          GEMINI_API_KEY: ${{ secrets.MY_LOCAL_KEY }}
+
+      - name: Check for critical errors
+        id: check
+        run: |
+          if grep -q "CRITICAL_ERROR" gemini_output.txt; then
+            echo "found=true" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Post Gemini analysis to PR
+        if: always()
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## 🤖 Gemini CLI Analysis
+            ```
+            $(cat gemini_output.txt)
+            ```
+
+      - name: Set PR status
+        if: steps.check.outputs.found == 'true'
+        run: exit 1
