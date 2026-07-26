@@ -26,6 +26,8 @@ import time
 import logging
 from datetime import datetime
 import os
+import re
+from bs4 import BeautifulSoup, Comment
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -121,16 +123,49 @@ def main():
 
         # OG check
         elif args.check_og and res.get("text"):
-            html_lower = res["text"].lower()
-            if 'property="og:title"' in html_lower and 'property="og:description"' in html_lower:
-                report_item["og_ok"] = True
-            else:
-                report_item["og_ok"] = False
+            soup = BeautifulSoup(res["text"], 'html.parser')
+            
+            # Helper: Basic CSS hiding check
+            def is_hidden(element):
+                if not element: return True
+                style = element.get('style', '').lower()
+                return 'display: none' in style or 'visibility: hidden' in style
+
+            # 1. Structural OG Check
+            og_title = soup.find("meta", property="og:title")
+            og_desc = soup.find("meta", property="og:description")
+            report_item["og_ok"] = bool(og_title and og_desc and not is_hidden(og_title) and not is_hidden(og_desc))
+            
+            if not report_item["og_ok"]:
                 alerts.append({
-                    "subject": f"[WARN] OG missing: {url}",
-                    "body": "Meta tags absent. Action: confirm OG injected in build pipeline."
+                    "subject": f"[WARN] OG missing or hidden: {url}",
+                    "body": "Meta tags absent or tampered with via CSS. Action: confirm OG integrity."
                 })
-                logging.warning(f"OG MISSING: {url}")
+                logging.warning(f"OG MISSING/HIDDEN: {url}")
+            
+            # 2. Temporal Integrity Check (Using Comment Markers)
+            start_comment = soup.find(text=lambda text: isinstance(text, Comment) and 'PORTAL_FOOTER_START' in text)
+            if start_comment:
+                footer_text = ""
+                for sibling in start_comment.next_siblings:
+                    if isinstance(sibling, Comment) and 'PORTAL_FOOTER_END' in sibling:
+                        break
+                    footer_text += str(sibling)
+                
+                match = re.search(r'Updated: (\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)', footer_text)
+                if match:
+                    report_item["footer_timestamp"] = match.group(1)
+                else:
+                    alerts.append({
+                        "subject": f"[WARN] Footer timestamp missing: {url}",
+                        "body": "Footer block exists but timestamp absent."
+                    })
+            else:
+                alerts.append({
+                    "subject": f"[ALERT] Footer markers missing: {url}",
+                    "body": "Portal footer structural check failed (comment markers not found)."
+                })
+                logging.error(f"FOOTER MARKERS MISSING: {url}")
 
         results.append(report_item)
         # polite delay
