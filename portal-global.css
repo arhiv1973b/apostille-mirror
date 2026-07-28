@@ -1,0 +1,13 @@
+/* portal-global.css - Case Maceret Architecture */
+:root {
+    --bg-main: linear-gradient(135deg, #0a0e1a 0%, #1a0f2e 100%);
+    --color-gold: #c8960a;
+    --color-blue: #00b8e8;
+    --color-red: #cc1133;
+    --color-text: #c0d8ec;
+    --font-mono: 'Share Tech Mono', monospace;
+}
+body { background: var(--bg-main); color: var(--color-text); font-family: var(--font-mono); line-height: 1.8; }
+.btn-nav { display: inline-block; padding: 10px 16px; border: 1px solid var(--color-blue); color: var(--color-blue); text-decoration: none; border-radius: 4px; transition: all 0.3s; }
+.btn-nav:hover { background: rgba(0, 184, 232, 0.1); }
+a { color: var(--color-blue); }

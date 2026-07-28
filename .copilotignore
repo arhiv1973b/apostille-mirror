@@ -1,0 +1,13 @@
+# Copilot ignore file
+# Exclude large data files
+*.zip
+*.log
+*.bin
+*.db
+# Exclude sensitive folders/files
+.git/
+.docker/
+CASE-MACHERET-1997-2026/
+multilingual_export/
+# Exclude system-specific temp files
+*crdownload
