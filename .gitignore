@@ -24,3 +24,10 @@
 *.key
 gemini-api-config.json
 config.json
+*.ldf
+credentials*.json
+report.*.json
+Session.json
+test_external_account_*.json
+audit_*.json
+cloud_id_manifest_full*.json
