@@ -8,6 +8,7 @@
 !*.py
 !*.ps1
 !*.json
+!*.example
 !Dockerfile
 !Dockerfile.hardened
 !docker-compose.yml
@@ -22,6 +23,7 @@
 *.asc
 .env
 *.key
+protocol.json
 gemini-api-config.json
 config.json
 *.ldf
@@ -31,3 +33,4 @@ Session.json
 test_external_account_*.json
 audit_*.json
 cloud_id_manifest_full*.json
+"credentials.json" 
