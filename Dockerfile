@@ -19,13 +19,11 @@ RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Copy and install Python dependencies
-COPY requirements-locked.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir \
     --upgrade pip setuptools wheel && \
     pip install --no-cache-dir \
-    --require-hashes \
-    --prefer-binary \
-    -r requirements-locked.txt
+    -r requirements.txt
 
 # ==============================================================================
 # STAGE 2: Runtime (Alpine Hardened)
