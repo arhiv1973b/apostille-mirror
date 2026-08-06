@@ -1,23 +1,27 @@
 name: AIPS-2025 Integrity Tunnel
-
 on:
   push:
     branches: [ main ]
     tags: [ 'v*' ]
-
 jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Verify Jus Cogens Integrity
         run: |
-          sha256sum Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf > current_manifest.txt
-          diff Jus_Cogens_AIPS-2025_Manifest.txt current_manifest.txt \
-            || (echo "CRITICAL: Integrity Compromised" && exit 1)
+          # Robustly compare only the hash
+          EXPECTED_HASH=$(awk '{print $1}' Jus_Cogens_AIPS-2025_Manifest.txt)
+          ACTUAL_HASH=$(sha256sum Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf | awk '{print $1}')
+          
+          if [ "$EXPECTED_HASH" != "$ACTUAL_HASH" ]; then
+            echo "CRITICAL: Integrity Compromised"
+            echo "Expected: $EXPECTED_HASH"
+            echo "Actual:   $ACTUAL_HASH"
+            exit 1
+          fi
           echo "Integrity Validated: Erga Omnes Lock Active"
-
+  
   release:
     needs: verify
     if: startsWith(github.ref, 'refs/tags/')
@@ -26,7 +30,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-
       - name: Create Immutable Evidence Release
         uses: softprops/action-gh-release@v2
         with:
