@@ -34,11 +34,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          NOTES="Immutable evidence snapshot. Case-Macheret-1997-2026. SHA-256 integrity verified by CI before publication. Reference: UN OHCHR / ECHR Ref tw571ryb"
           gh release create "${{ github.ref_name }}" \
             --title "AIPS-2025 Evidence Lock ${{ github.ref_name }}" \
-            --notes "Immutable evidence snapshot. Case-Macheret-1997-2026.
-SHA-256 integrity verified by CI before publication.
-Reference: UN OHCHR / ECHR Ref tw571ryb" \
+            --notes "$NOTES" \
             Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf \
             Jus_Cogens_AIPS-2025_Manifest.txt \
             || echo "Release already exists, skipping."
