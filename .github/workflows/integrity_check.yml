@@ -43,3 +43,58 @@ jobs:
             Jus_Cogens_AIPS-2025_Manifest.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  zenodo:
+    needs: verify
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload to Zenodo and obtain DOI
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          TAG="${{ github.ref_name }}"
+          HASH=$(awk '{print $1}' Jus_Cogens_AIPS-2025_Manifest.txt)
+
+          # 1. Create deposition
+          RESPONSE=$(curl -s -X POST \
+            "https://zenodo.org/api/deposit/depositions" \
+            -H "Authorization: Bearer $ZENODO_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "metadata": {
+                "title": "AIPS-2025 Evidence Lock '"$TAG"': Case-Macheret-1997-2026",
+                "upload_type": "other",
+                "description": "Integrity-locked evidence archive. SHA-256: '"$HASH"'. Reference: UN OHCHR / ECHR Ref tw571ryb",
+                "creators": [{"name": "Macheret, Alexei Arturovich"}],
+                "keywords": ["jus cogens","evidence","Case-Macheret-1997-2026","ECHR","OHCHR"],
+                "notes": "SHA-256 hash verified by GitHub Actions CI before this upload."
+              }
+            }')
+
+          DEPOSITION_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin)['id'])")
+          BUCKET_URL=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin)['links']['bucket'])")
+          echo "Deposition ID: $DEPOSITION_ID"
+
+          # 2. Upload PDF
+          curl -s -X PUT \
+            "$BUCKET_URL/Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf" \
+            -H "Authorization: Bearer $ZENODO_TOKEN" \
+            --upload-file Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf
+
+          # 3. Upload manifest
+          curl -s -X PUT \
+            "$BUCKET_URL/Jus_Cogens_AIPS-2025_Manifest.txt" \
+            -H "Authorization: Bearer $ZENODO_TOKEN" \
+            --upload-file Jus_Cogens_AIPS-2025_Manifest.txt
+
+          # 4. Publish (получаем DOI)
+          PUB=$(curl -s -X POST \
+            "https://zenodo.org/api/deposit/depositions/$DEPOSITION_ID/actions/publish" \
+            -H "Authorization: Bearer $ZENODO_TOKEN")
+
+          DOI=$(echo "$PUB" | python3 -c "import sys,json; print(json.load(sys.stdin).get('doi','NOT_FOUND'))")
+          echo "DOI: $DOI"
+          echo "DOI=$DOI" >> $GITHUB_OUTPUT
