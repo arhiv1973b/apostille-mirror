@@ -1,0 +1,42 @@
+name: AIPS-2025 Integrity Tunnel
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify Jus Cogens Integrity
+        run: |
+          sha256sum Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf > current_manifest.txt
+          diff Jus_Cogens_AIPS-2025_Manifest.txt current_manifest.txt \
+            || (echo "CRITICAL: Integrity Compromised" && exit 1)
+          echo "Integrity Validated: Erga Omnes Lock Active"
+
+  release:
+    needs: verify
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create Immutable Evidence Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: "AIPS-2025 Evidence Lock ${{ github.ref_name }}"
+          body: |
+            Immutable evidence snapshot. Case-Macheret-1997-2026.
+            SHA-256 integrity verified by CI before publication.
+            Reference: UN OHCHR / ECHR Ref tw571ryb
+          files: |
+            Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf
+            Jus_Cogens_AIPS-2025_Manifest.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
