@@ -10,14 +10,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify Jus Cogens Integrity
         run: |
-          # Robustly compare only the hash
-          EXPECTED_HASH=$(awk '{print $1}' Jus_Cogens_AIPS-2025_Manifest.txt)
-          ACTUAL_HASH=$(sha256sum Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf | awk '{print $1}')
-          
+          # Strip CR, BOM and whitespace before comparing
+          EXPECTED_HASH=$(awk 'NR==1{print $1}' Jus_Cogens_AIPS-2025_Manifest.txt | tr -d '\r\n ')
+          ACTUAL_HASH=$(sha256sum Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf | awk '{print $1}' | tr -d '\r\n ')
+          echo "Expected: ${#EXPECTED_HASH} chars: $EXPECTED_HASH"
+          echo "Actual:   ${#ACTUAL_HASH} chars: $ACTUAL_HASH"
           if [ "$EXPECTED_HASH" != "$ACTUAL_HASH" ]; then
             echo "CRITICAL: Integrity Compromised"
-            echo "Expected: $EXPECTED_HASH"
-            echo "Actual:   $ACTUAL_HASH"
             exit 1
           fi
           echo "Integrity Validated: Erga Omnes Lock Active"
