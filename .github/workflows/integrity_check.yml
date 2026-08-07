@@ -71,7 +71,14 @@ jobs:
               }
             }')
 
-          DEPOSITION_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin)['id'])")
+          echo "Zenodo create response: $RESPONSE"
+          DEPOSITION_ID=$(echo "$RESPONSE" | python3 -c "
+import sys, json
+data = json.load(sys.stdin)
+if 'id' not in data:
+    print('ERROR: ' + str(data), file=sys.stderr)
+    sys.exit(1)
+print(data['id'])")
           BUCKET_URL=$(echo "$RESPONSE" | python3 -c "import sys,json; print(json.load(sys.stdin)['links']['bucket'])")
           echo "Deposition ID: $DEPOSITION_ID"
 
