@@ -96,3 +96,23 @@ jobs:
           DOI=$(echo "$PUB" | python3 -c "import sys,json; print(json.load(sys.stdin).get('doi','NOT_FOUND'))")
           echo "DOI: $DOI"
           echo "DOI=$DOI" >> $GITHUB_OUTPUT
+
+  zenodo-verify:
+    needs: zenodo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check DOI release on Zenodo
+        run: |
+          DOI_URL="https://zenodo.org/record/${{ secrets.ZENODO_RECORD }}/files"
+          curl -L -s "$DOI_URL/Raport_Jus_Cogens_Macheret_Auto-Deconspirare_Final.pdf" -o Raport_Zenodo.pdf
+          curl -L -s "$DOI_URL/Jus_Cogens_AIPS-2025_Manifest.txt" -o Manifest_Zenodo.txt
+          hash_pdf=$(sha256sum Raport_Zenodo.pdf | awk '{print tolower($1)}')
+          hash_manifest=$(head -n 1 Manifest_Zenodo.txt | awk '{print tolower($1)}')
+          echo "Zenodo PDF hash:    $hash_pdf"
+          echo "Manifest expected:  $hash_manifest"
+          if [ "$hash_pdf" == "$hash_manifest" ]; then
+              echo "✅ Хэши совпадают — целостность подтверждена."
+          else
+              echo "❌ Несовпадение хэшей — проверьте файлы."
+              exit 1
+          fi
