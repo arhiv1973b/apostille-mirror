@@ -1,11 +1,11 @@
 # CASE-MACHERET-1997-2026: Объединенная хронология и фактология
 
 ## Commit-style summary
-* **docs(release):** подготовлен публичный Markdown-релиз, объединяющий материалы дела CASE-MACHERET-1997-2026 в единый обзорный документ для открытого распространения, архивирования и независимого изучения
-* **docs(timeline):** структурирована консолидированная процессуальная хронология, показывающая последовательность жалоб, отказов, перенаправлений и повторных закрытий, которые формируют картину процессуального блокирования
-* **docs(evidence):** сведены ключевые фактические обстоятельства, включая блокировку наследственной массы, подмену идентификационных данных, спорные действия с объектом недвижимости и последующие финансовые ограничения
-* **docs(legal):** сформулирована правовая рамка документа с акцентом на предполагаемое нарушение гарантий уголовного процесса, права на эффективное средство защиты и необходимость официальной регистрации процессуальных актов
-* **docs(accessibility):** оформлено краткое вступление в формате, понятном для журналистов, аудиторов, правозащитников, юристов и международных наблюдателей, которым нужен быстрый вход в содержание дела без изучения внутреннего архива целиком
+* **docs(release):** prepared a public Markdown release that consolidates the CASE-MACHERET-1997-2026 materials into a single overview document for open distribution, archiving, and independent review
+* **docs(timeline):** structured a consolidated procedural timeline showing the sequence of complaints, refusals, referrals, and repeated closures that together indicate a pattern of procedural blockage
+* **docs(evidence):** summarized the central factual circumstances, including the freezing of inherited assets, manipulation of identification data, disputed real-estate actions, and subsequent financial restrictions
+* **docs(legal):** framed the document around the alleged violation of core criminal-procedure guarantees, the right to an effective remedy, and the need for formally registered procedural acts
+* **docs(accessibility):** added an accessible opening summary for journalists, auditors, human-rights defenders, lawyers, and international observers who need a rapid entry point without reviewing the full internal archive
 
 ## 1. Основные факты и доказательная база
 * **Хищение наследственной массы:** Блокировка и принудительное обнуление баланса на сумму 25 210 256,15 MDL в системе FinComPay (апрель 2026).
