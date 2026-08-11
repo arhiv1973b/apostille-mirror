@@ -34,3 +34,4 @@
 * Follow-up needed: identify the exact deployment target and required secrets before any deploy command is attempted.
 * Exact handoff file for the next agent: `C:\Users\arhiv\.copilot\session-state\e4960773-80ae-4bc5-97e2-45e432513833\files\handshake_for_agent.md`
 * Handoff points: review this release file, confirm the target, confirm the secrets, then add only target-specific deployment instructions.
+* Hard stop: if target or runtime secrets remain unconfirmed, do not change deployment notes, do not push, and do not infer infrastructure from generic DEPLOYMENT.md files in other worktrees.
