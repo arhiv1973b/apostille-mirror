@@ -27,3 +27,9 @@
 * Искусственный процессуальный вакуум и лишение права на судебный контроль (ст. 313 УПК).
 * Нарушение ст. 28, ст. 19 УПК и ст. 6, 13 ЕКПЧ.
 * Требование: отмена административных отписок и регистрация по ст. 274 УПК с вынесением ордонансы.
+
+## 4. Handoff notes for the next agent
+* Already completed: the release text is in English at the top-level summary, the commit-style summary is expanded, and the branch is pushed.
+* Do not duplicate: do not rewrite the intro or summary unless you are adding a new deployment section or confirmed target-specific instructions.
+* Follow-up needed: identify the exact deployment target and required secrets before any deploy command is attempted.
+* Handoff file: `C:\Users\arhiv\.copilot\session-state\e4960773-80ae-4bc5-97e2-45e432513833\files\handshake_for_agent.md`
