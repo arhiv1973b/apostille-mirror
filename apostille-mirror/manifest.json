@@ -205,5 +205,52 @@
     "method": "Принудительная смена карты + обнуление баланса",
     "timestamp": "2026-04-25T13:37Z",
     "merkleRoot": "CFC 9a2465bd...e77"
-  }
+  },
+  "projectionNodes": [
+    {
+      "id": "projection-jus-cogens-proof",
+      "title": "JUS COGENS PROOF STREAM",
+      "kind": "html",
+      "source": "jus-cogens-proof-macheret.html",
+      "preview": "Open the proof stream and legal-equation view.",
+      "download": null,
+      "badge": "STREAM"
+    },
+    {
+      "id": "projection-registry-fixed",
+      "title": "APOSTILLE REGISTRY",
+      "kind": "html",
+      "source": "apostille-registry-fixed.html",
+      "preview": "Registry of 90 apostilled records.",
+      "download": null,
+      "badge": "90"
+    },
+    {
+      "id": "projection-timeline",
+      "title": "FORENSIC TIMELINE",
+      "kind": "html",
+      "source": "timeline.html",
+      "preview": "Chronological evidence walk-through.",
+      "download": null,
+      "badge": "1997–2026"
+    },
+    {
+      "id": "projection-pdf-sample",
+      "title": "PDF SAMPLE STREAM",
+      "kind": "pdf",
+      "source": "SEZISARE.pdf",
+      "preview": "Heavy file streamed from Google Drive mirror.",
+      "download": "SEZISARE.pdf",
+      "badge": "PDF"
+    },
+    {
+      "id": "projection-image-sample",
+      "title": "IMAGE LAYER SAMPLE",
+      "kind": "image",
+      "source": "page1.jpg",
+      "preview": "Raster proof frame for text-layer verification.",
+      "download": "page1.jpg",
+      "badge": "IMG"
+    }
+  ]
 }
