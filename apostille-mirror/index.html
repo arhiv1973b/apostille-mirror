@@ -274,33 +274,43 @@
 
   <nav>
     <div style="font-weight: bold; color: var(--gold-bright);">⚖️ A©t0r Integrity Engine v6.9</div>
-    <div style="display: flex; gap: 15px;">
-      <a href="index.html">[Core Vault]</a>
-      <a href="timeline.html">[Chronology]</a>
-      <a href="jus-cogens-proof-macheret.html">[Jus Cogens]</a>
-      <a href="forensic-lock-theft-evidence.html">[Theft Evidence]</a>
+    <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+      <a href="index.html" data-i18n="nav-core">[Core Vault]</a>
+      <a href="timeline.html" data-i18n="nav-chronology">[Chronology]</a>
+      <a href="jus-cogens-proof-macheret.html" data-i18n="nav-jus">[Jus Cogens]</a>
+      <a href="forensic-lock-theft-evidence.html" data-i18n="nav-theft">[Theft Evidence]</a>
+      <a href="google-drive-mirror.html">[Google Drive Mirror]</a>
+      <a href="evidence-mosaic.html" data-i18n="nav-mosaic">[HTML Mosaic]</a>
     </div>
   </nav>
+
+  <div style="display:flex; justify-content:flex-end; margin: 0 0 16px; gap: 8px; flex-wrap: wrap;">
+    <span style="font-family: 'Share Tech Mono', monospace; color: var(--text-muted);" data-i18n="lang">Language</span>
+    <button type="button" data-lang-switch="ru" aria-pressed="true" style="padding:6px 10px; background:#07151d; color:#fff; border:1px solid #0c2e4a; cursor:pointer;">RU</button>
+    <button type="button" data-lang-switch="ro" aria-pressed="false" style="padding:6px 10px; background:#07151d; color:#fff; border:1px solid #0c2e4a; cursor:pointer;">RO</button>
+    <button type="button" data-lang-switch="en" aria-pressed="false" style="padding:6px 10px; background:#07151d; color:#fff; border:1px solid #0c2e4a; cursor:pointer;">EN</button>
+  </div>
 
   <div class="container">
     <header>
       <div class="subtitle">// CASE-MACHERET-1997-2026</div>
-      <h1>EVIDENCE PORTAL & <em>MASTER VAULT</em></h1>
-      <p style="color: var(--text-muted); margin-top: 10px;">Криптографическая фиксация и защита Jus Cogens / Erga Omnes норм.</p>
+      <h1 data-i18n="portal-title">EVIDENCE PORTAL & <em>MASTER VAULT</em></h1>
+      <p style="color: var(--text-muted); margin-top: 10px;" data-i18n="portal-subtitle">Криптографическая фиксация и защита Jus Cogens / Erga Omnes норм.</p>
     </header>
 
     <div class="main-grid">
       <div class="panel">
-        <div class="panel-title">📂 EVIDENCE NODES (Доказательные узлы)</div>
+        <div class="panel-title" data-i18n="evidence-nodes">📂 EVIDENCE NODES (Доказательные узлы)</div>
         <ul class="evidence-list" id="dynamic-node-list"></ul>
       </div>
 
       <div class="side-panel">
         <div class="panel">
-          <div class="panel-title">🧭 НАВИГАЦИЯ</div>
+          <div class="panel-title" data-i18n="navigation">🧭 НАВИГАЦИЯ</div>
           <div class="side-links">
             <a href="timeline.html">⏰ ХРОНОЛОГИЯ (1997–2026)</a>
             <a href="jus-cogens-proof-macheret.html">⚖️ JUS COGENS PROOF</a>
+            <a href="projection-stream.html">🎞️ PROJECTION STREAM</a>
             <a href="forensic-lock-theft-evidence.html">🔒 FORENSIC LOCK: THEFT</a>
             <a href="apostille-registry-fixed.html">📂 РЕЕСТР АПОСТИЛЕЙ (90)</a>
             <a href="evidence-roadmap.html">🗺️ ROADMAP РЕАБИЛИТАЦИИ</a>
@@ -308,10 +318,10 @@
         </div>
 
         <div class="panel" style="border-color: var(--gold);">
-          <div class="panel-title" style="color: var(--gold-bright);">🔒 INTEGRITY VERIFICATION</div>
+          <div class="panel-title" style="color: var(--gold-bright);" data-i18n="integrity">🔒 INTEGRITY VERIFICATION</div>
           <p style="font-size: 0.8em; font-family: var(--font-mono); color: var(--text-muted); word-break: break-all;">
             SHA256: 73791BBA234EDD342CC807CABE3D45238E81ACBCD91B89909980A5D4E2B73A04<br><br>
-            Status: Verified ✓<br>
+            <span data-i18n="site-status">Status: Verified ✓</span><br>
             Updated: 2026-07-04
           </p>
         </div>
@@ -319,12 +329,13 @@
     </div>
 
     <footer class="footer">
-      <p>CASE-MACHERET-1997-2026 | Master Evidence Archive</p>
+      <p data-i18n="portal-foot">CASE-MACHERET-1997-2026 | Master Evidence Archive</p>
     </footer>
   </div>
 
   <div id="dynamic-projection" style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin: 8px 0 28px;"></div>
   <script src="wrappers/portal-enhancements.js"></script>
   <script src="app.js"></script>
+  <script src="lang.js"></script>
 </body>
 </html>
