@@ -17,4 +17,3 @@ jobs:
           git config user.email 'aips@aips-2025.local'
           git add .aips-manifests/
           git commit -m 'chore(aips): forensic lock updated' || true
-          git push origin main
