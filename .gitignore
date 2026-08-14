@@ -34,6 +34,10 @@ audit_*.json
 cloud_id_manifest_full*.json
 "credentials.json"
 
+# CI manifests (written by forensic-lock workflow)
+!.aips-manifests/
+!.aips-manifests/*.sha256
+
 # Runtime artifacts
 *.sock
 .docker/
