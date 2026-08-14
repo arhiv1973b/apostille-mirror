@@ -1,3 +1,44 @@
+﻿# Сначала игнорируем всё
+*
+
+# Но разрешаем нужные файлы и типы
+!/.gitignore
+!/apostille-mirror/
+!/run/
+!*.py
+!*.ps1
+!*.json
+!*.example
+!Dockerfile
+!Dockerfile.hardened
+!docker-compose.yml
+!requirements.txt
+!requirements-locked.txt
+!*.md
+
+# Блокировка секретов
+.env.local
+.keys/
+*.key
+*.asc
+.env
+protocol.json
+gemini-api-config.json
+config.json
+*.ldf
+credentials*.json
+report.*.json
+Session.json
+test_external_account_*.json
+audit_*.json
+cloud_id_manifest_full*.json
+"credentials.json"
+
+# CI manifests (written by forensic-lock workflow)
+!.aips-manifests/
+!.aips-manifests/*.sha256
+
+# Runtime artifacts
 *.sock
 .docker/
 CASE-MACHERET-1997-2026/

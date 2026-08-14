@@ -1,0 +1,27 @@
+{"timestamp": 1782384338.4624863, "file": "H:\\INBOX\\audit_test_001.txt", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"}
+{"timestamp": 1782384608.1339636, "file": "H:\\ARCHIVE\\Ordonan\u021b\u0103\\ordonan\u021b\u0103_test.pdf", "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "category": "Ordonan\u021b\u0103"}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1785932665.18807",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1785964129.86336",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1786006414.69397",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1786120902.89124",
+    "event":  "system_reboot"
+}
+{
+    "message":  "System rebooted. Gemini CLI auto-audit activated.",
+    "timestamp":  "1786214491.39969",
+    "event":  "system_reboot"
+}
