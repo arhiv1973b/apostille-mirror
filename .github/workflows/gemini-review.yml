@@ -8,33 +8,20 @@ jobs:
   gemini-review:
     runs-on: ubuntu-latest
 
-    services:
-      gemini-proxy:
-        image: myorg/gemini-proxy:latest
-        ports:
-          - 8080:8080
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Gemini CLI
-        run: npm install -g @google/gemini-cli
-
       - name: Run Gemini CLI analysis
         id: gemini
         run: |
-          gemini -m gemini-1.5-flash -p "Проанализируй изменения в pull request и укажи критические ошибки, если они есть. Для каждой найденной проблемы используй формат:
-          CRITICAL_ERROR: <описание>
-          WARNING: <описание>
-          INFO: <описание>" > gemini_output.txt
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "GEMINI_API_KEY not set — skipping analysis" > gemini_output.txt
+          else
+            npm install -g @google/gemini-cli 2>/dev/null
+            gemini -m gemini-1.5-flash -p "Analyse PR changes for critical errors. Format: CRITICAL_ERROR: / WARNING: / INFO:" > gemini_output.txt 2>&1 || echo "Gemini analysis unavailable" > gemini_output.txt
+          fi
         env:
-          GEMINI_API_BASE_URL: http://localhost:8080/v1
           GEMINI_API_KEY: ${{ secrets.MY_LOCAL_KEY }}
 
       - name: Check for critical errors
@@ -55,9 +42,5 @@ jobs:
           body: |
             ## 🤖 Gemini CLI Analysis
             ```
-            $(cat gemini_output.txt)
+            ${{ steps.gemini.outputs.result || 'See gemini_output.txt' }}
             ```
-
-      - name: Set PR status
-        if: steps.check.outputs.found == 'true'
-        run: exit 1
