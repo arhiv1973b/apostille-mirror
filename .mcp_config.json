@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "gemini-cli-docker": {
+      "command": "docker",
+      "args": [
+        "exec",
+        "-i",
+        "gemini-cli",
+        "bash",
+        "-c",
+        "cat > /tmp/mcp-server.js && node /tmp/mcp-server.js"
+      ],
+      "env": {
+        "DOCKER_HOST": "unix:///var/run/docker.sock"
+      }
+    },
+    "docker": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "/var/run/docker.sock:/var/run/docker.sock",
+        "mcp/docker"
+      ]
+    }
+  }
+}
