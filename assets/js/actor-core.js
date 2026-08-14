@@ -2,9 +2,9 @@
  * A©t0r Forensic Core v15.5
  * Deep Content Audit & Metadata Explorer
  */
- let masterIndex = {};
+let masterIndex = {};
 
- async function initForensicHub() {
+async function initForensicHub() {
     console.log("A©t0r Hub v15.5 Deep Audit Active");
     try {
         const response = await fetch('dist/meta/UNIVERSAL_CAS_INDEX.json');
@@ -21,27 +21,27 @@
 function renderRegistry(index) {
     const container = document.getElementById('cas-explorer');
     if (!container) return;
-    let html = `<h2>Forensic Evidence Explorer (Deep Audit v15.5)</h2>`;
+    let html = '<h2>Forensic Evidence Explorer (Deep Audit v15.5)</h2>';
     for (const [hash, node] of Object.entries(index)) {
         const deep = node.deep_meta ? 
-            `<div class="deep-meta-box">
-                <small><strong>Embedded Title:</strong> ${node.deep_meta.title}</small><br>
-                <small><strong>Author:</strong> ${node.deep_meta.author}</small><br>
-                <small><strong>Created:</strong> ${node.deep_meta.created}</small>
-            </div>` : '';
+            <div class="deep-meta-box">
+                <small><strong>Embedded Title:</strong> \</small><br>
+                <small><strong>Author:</strong> \</small><br>
+                <small><strong>Created:</strong> \</small>
+            </div> : '';
             
-        html += `<div class="cas-card">
-                <div class="cas-hash">${hash.substring(0, 8)}...</div>
+        html += <div class="cas-card">
+                <div class="cas-hash">\...</div>
                 <div class="cas-meta">
-                    <strong>Node:</strong> ${node.node_id} | <strong>Doc:</strong> ${node.doc_id}
+                    <strong>Node:</strong> \ | <strong>Doc:</strong> \
                 </div>
-                ${deep}
+                \
                 <div class="cas-links">
-                    <a href="${node.git_url}" target="_blank" class="hash-link">GIT</a>
-                    <a href="${node.cloud_url}" target="_blank" class="hash-link">CLOUD</a>
-                    <button class="btn-action" onclick="alert('Metadata Verified for ${hash}')">VERIFY_CONTENT</button>
+                    <a href="\" target="_blank" class="hash-link">GIT</a>
+                    <a href="\" target="_blank" class="hash-link">CLOUD</a>
+                    <button class="btn-action" onclick="alert('Metadata Verified for \')">VERIFY_CONTENT</button>
                 </div>
-            </div>`;
+            </div>;
     }
     container.innerHTML = html;
 }
