@@ -12,7 +12,7 @@ jobs:
             iconv -f UTF-8 -t UTF-8 "$f" >/dev/null || exit 1
           done
           mkdir -p .aips-manifests
-          sha256sum $(find . -type f \( -name '*.html' -o -name '*.json' -o -name '*.md' \)) > .aips-manifests/latest.sha256
+          sha256sum $(find . -type f \( -name '*.html' -o -name '*.json' -o -name '*.md' \) ! -path './.github/workflows/aips-integrity-lock.yml') > .aips-manifests/latest.sha256
           git config user.name 'A©tor'
           git config user.email 'aips@aips-2025.local'
           git add .aips-manifests/
