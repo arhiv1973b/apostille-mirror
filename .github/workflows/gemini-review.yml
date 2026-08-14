@@ -33,14 +33,3 @@ jobs:
           else
             echo "found=false" >> $GITHUB_OUTPUT
           fi
-
-      - name: Post Gemini analysis to PR
-        if: always()
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            ## 🤖 Gemini CLI Analysis
-            ```
-            ${{ steps.gemini.outputs.result || 'See gemini_output.txt' }}
-            ```
