@@ -22,7 +22,6 @@
 *.key
 *.asc
 .env
-*.key
 protocol.json
 gemini-api-config.json
 config.json
@@ -33,4 +32,10 @@ Session.json
 test_external_account_*.json
 audit_*.json
 cloud_id_manifest_full*.json
-"credentials.json" 
+"credentials.json"
+
+# Runtime artifacts
+*.sock
+.docker/
+CASE-MACHERET-1997-2026/
+multilingual_export/

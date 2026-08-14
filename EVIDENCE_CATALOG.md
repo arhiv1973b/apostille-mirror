@@ -213,27 +213,7 @@ session-state/74d2ad9b-7423-42ea-a2f4-348b4548717b/files/
 
 ---
 
-#### [UN - Actor 2.jpg] — OFFICIAL COMPLAINT TO GPO (UN OHCHR REGISTRY)
-**Date:** 27.10.2014
-**Type:** FORENSIC_DOC
-**Status:** ✓ Verified
-**Related Facts:** torture-1997, state-duty-breach, impunity-mechanism
-
-**Description:**
-**Level 2 (Content Index):**
-- Date: Mentioned 2014, 209 (Likely 2019/2026 typo), mentions OHCHR Registry.
-- Parties: Maceret Alexei (Plaintiff).
-- Key Terms: Torture, illegal arrest, UN OHCHR, criminal procedure code (UPK RM), abuse of power.
-
-**Level 3 (Semantic Index):**
-- Role: Official complaint to the General Prosecutor's Office concerning violation of human rights and tortures, citing international conventions.
-- Status: Confirmed evidence of systemic identity distortion and legal evasion.
-
-**Links:**
-- Source: UN - Actor 2.jpg
-
----
-
+## 📖 HOW TO USE THIS CATALOG
 
 1. **Start at [index.html](index.html)** — Interactive main portal with all facts
 2. **Click fact cards** → Detailed fact pages with sources
