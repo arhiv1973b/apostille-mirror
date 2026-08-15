@@ -1,0 +1,58 @@
+/* Accessibility and usability hardening for the evidence portal */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: #ffffff;
+  color: #08131e;
+  font-weight: 700;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid #00b8e8;
+  outline-offset: 2px;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #08131e;
+}
+
+.status-ready {
+  background: #76e0A4;
+  color: #0b2017;
+}
+
+.status-warning {
+  background: #f0c040;
+  color: #1d1400;
+}
+
+nav a,
+.side-links a,
+.evidence-list a,
+.hash-link {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
