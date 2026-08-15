@@ -434,6 +434,16 @@ body::after {
 <!-- End Portal OpenGraph metadata -->
 <link rel="stylesheet" href="/portal-global.css"></head>
 <body>
+    <nav class="portal-nav" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #0c2e4a; margin-bottom: 30px; background-color: #051421; padding: 15px;">
+        <div class="breadcrumb">
+            <a href="index.html" style="color: #00b8e8; text-decoration: none; font-family: 'Share Tech Mono', monospace;">← PORTAL HUB</a>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 15px;">
+            <a href="timeline.html" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">⏱️ Chronology</a>
+            <a href="EVIDENCE_CATALOG.md" class="nav-btn" style="color: #00b8e8; text-decoration: none; padding: 8px 12px; border: 1px solid #00b8e8; border-radius: 4px; font-family: 'Share Tech Mono', monospace; font-size: 0.85em;">📂 Evidence Catalog</a>
+        </div>
+    </nav>
+
 <!-- A©TOR NAVIGATOR v3.0-SECURE [STABILIZED TDCH-3] -->
 <nav id="actor-navigator" style="background:#070e16; border-bottom:2px solid #b8960c; padding:12px 20px; font-family:'Courier New', monospace; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 20px rgba(0,0,0,0.5); position: sticky; top: 0; z-index: 9999;">
   <div style="display:flex; align-items:center; gap:15px;">
@@ -481,10 +491,8 @@ body::after {
   </div>
 
   <div class="sec-hd"><span class="sec-num">§ 03</span><div class="sec-title">Ключевые <em>доказательные факты</em></div></div>
-  <div class="evidence-grid">
-    <div class="ev-card"><div class="ev-card-icon">⏱</div><div class="ev-card-title">ПРОЦЕССУАЛЬНЫЙ ВАКУУМ</div><div class="ev-card-body"><span class="num num-auto">10524</span>суток без расследования. Срок давности отсутствует.</div></div>
-    <div class="ev-card"><div class="ev-card-icon">📂</div><div class="ev-card-title">АПОСТИЛИРОВАННЫЙ АРХИВ</div><div class="ev-card-body"><span class="num">90</span>документов Гаагской конвенции. Апостиль удостоверяет подпись должностного лица.</div></div>
-    <div class="ev-card"><div class="ev-card-icon">🧬</div><div class="ev-card-title">ПОДЛОГ 15.03.2022</div><div class="ev-card-body"><strong>Факт:</strong> Нантой Людмила использовала личность Маркова И.М. для захвата имущества.</div></div>
+  <div class="evidence-grid" id="dynamic-evidence-grid">
+    <!-- Dynamically populated from manifest.json -->
   </div>
 
   <div class="verdict">
@@ -861,6 +869,17 @@ materializeRegistry();
     </div>
   </div>
 
+  <!-- PDF STREAMING BLOCK (ZERO-COPY-TO-GITHUB) -->
+  <div class="f-idnp" style="background: #060f1a; border-color: var(--cyan);">
+    <h3 style="color: var(--cyan);">📄 ОСНОВНОЙ ДОКАЗАТЕЛЬНЫЙ АКТ (JUS COGENS PROOF / APOSTILLE)</h3>
+    <div style="position: relative; width: 100%; height: 600px; margin-bottom: 12px; border: 1px solid var(--border);">
+      <iframe src="https://drive.google.com/file/d/1uvDjj5wUk2hKCWPj2pO2CHsDXLc2ApmQ/preview" width="100%" height="600px" allow="autoplay" style="border:none;"></iframe>
+    </div>
+    <div style="font-size: 0.8em; text-align: center; color: var(--muted); font-family: var(--font-mono);">
+      Резервная ссылка для скачивания: <a href="https://drive.google.com/file/d/1uvDjj5wUk2hKCWPj2pO2CHsDXLc2ApmQ/view" target="_blank" style="color: var(--cyan);">Скачать файл с Google Диска</a> (на случай сбоя отображения)
+    </div>
+  </div>
+
   <!-- LINKS -->
   <div class="f-links">
     <a href="https://arhiv1973b.github.io/apostille-mirror/forensic-lock-theft-evidence.html" target="_blank">
@@ -896,6 +915,7 @@ materializeRegistry();
 <!-- PORTAL_FOOTER_START -->
 <div class="portal-footer" style="text-align:center;padding:16px;margin-top:20px;border-top:1px solid #103c60;color:#8ab0cc;font-size:0.85em;font-family:monospace">SHA256: E8D77A5BB2061035E1F85619B27FB5EE1EC3C24268E452C9142BA524EFAE6811 | Verified: ✓ | Updated: 2026-07-04T08:01:15.833183Z</div>
 <!-- PORTAL_FOOTER_END -->
+<script src="app.js"></script>
 </body>
 </html>
 
