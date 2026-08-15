@@ -1,15 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     fetch('manifest.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
         .then(data => {
+            if (!data || !data.evidenceNodes) {
+                console.warn('Empty or invalid manifest data');
+                return;
+            }
             const nodes = Array.isArray(data.evidenceNodes) ? data.evidenceNodes : [];
 
             // Render evidence grid
             const grid = document.getElementById('dynamic-evidence-grid');
             if (grid) {
                 grid.innerHTML = nodes.map(node => `
-                    <div class="ev-card">
-                        <div class="ev-card-icon">${node.icon}</div>
+                    <div class="ev-card" tabindex="0" role="article" aria-label="${node.title}">
+                        <div class="ev-card-icon" aria-hidden="true">${node.icon}</div>
                         <div class="ev-card-title">${node.title}</div>
                         <div class="ev-card-body">
                             ${node.num ? `<span class="num">${node.num}</span>` : ''}
@@ -24,34 +31,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 nodeList.innerHTML = nodes.map(node => {
                     const slug = String(node.id || node.title || '').trim();
                     const href = slug ? `nodes/${encodeURI(slug)}.html` : '#';
-                    return `<li><a href="${href}">${node.icon ? node.icon + ' ' : ''}${node.title}</a></li>`;
+                    return `<li><a href="${href}">${node.icon ? `<span aria-hidden="true">${node.icon}</span> ` : ''}${node.title}</a></li>`;
                 }).join('');
             }
 
             // Render forensic data
-            const updateField = (id, value, className = '') => {
-                const el = document.getElementById(id);
-                if (el) {
-                    el.textContent = value;
-                    if (className) el.className = 'val ' + className;
-                }
-            };
+            if (data.forensicData) {
+                const updateField = (id, value, className = '') => {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        el.textContent = value;
+                        if (className) el.className = 'val ' + className;
+                    }
+                };
 
-            updateField('f-subject', data.forensicData.subject, 'gold');
-            updateField('f-theftAmount', data.forensicData.theftAmount, 'red');
-            updateField('f-subjects', data.forensicData.subjects, 'red');
-            updateField('f-method', data.forensicData.method);
-            updateField('f-timestamp', data.forensicData.timestamp, 'green');
-            updateField('f-merkleRoot', data.forensicData.merkleRoot, 'green');
+                updateField('f-subject', data.forensicData.subject, 'gold');
+                updateField('f-theftAmount', data.forensicData.theftAmount, 'red');
+                updateField('f-subjects', data.forensicData.subjects, 'red');
+                updateField('f-method', data.forensicData.method);
+                updateField('f-timestamp', data.forensicData.timestamp, 'green');
+                updateField('f-merkleRoot', data.forensicData.merkleRoot, 'green');
+            }
 
             const projection = document.getElementById('dynamic-projection');
-            if (projection) {
+            if (projection && data.projectionNodes) {
                 const projections = Array.isArray(data.projectionNodes) ? data.projectionNodes : [];
                 projection.innerHTML = projections.map(item => {
                     const href = item.kind === 'html' ? item.source : item.source;
                     const download = item.download ? ` download="${item.download}"` : '';
                     return `
-                        <div class="proj-card">
+                        <div class="proj-card" role="region" aria-label="${item.title}">
                             <div class="proj-badge">${item.badge || item.kind}</div>
                             <div class="proj-title">${item.title}</div>
                             <div class="proj-preview">${item.preview || ''}</div>
@@ -64,5 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }).join('');
             }
         })
-        .catch(err => console.error('Error loading manifest:', err));
+        .catch(err => {
+            console.error('Error loading manifest:', err);
+            const grid = document.getElementById('dynamic-evidence-grid');
+            if (grid) grid.innerHTML = '<p>Не удалось загрузить данные доказательств.</p>';
+        });
 });
