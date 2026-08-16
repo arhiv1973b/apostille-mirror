@@ -1,0 +1,9 @@
+{
+    "timestamp": "2026-08-16T23:58:44.427864",
+    "files": {
+        "evidence_registry\\victoriabank_events.json": "6669783e633819ae73e94eb0d7b2f96e7c5fde39f1094ace439566014d177c6a",
+        "apostille-mirror\\FORENSIC_TIMELINE_20260615.json": "63951bd368c7bc45e841c74f25c85e92a28a1f35b6969a2a96f3f50c20b408b3",
+        "entity_graph.json": "db6b84a5cfd9170c72aaf9e52afcc6455c434392c3c66fe8e32c66a87077d087",
+        "legal_analysis\\victoriabank_blockade_analysis.md": "18b9831f6c6c13029369bd5954d6b4877ee91a5ed2da1ad898279fbca04abe01"
+    }
+}

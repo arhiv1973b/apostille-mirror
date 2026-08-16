@@ -1,0 +1,30 @@
+{
+    "nodes": [
+        {
+            "id": "ACTOR_MACHERET",
+            "label": "Alexei Macheret",
+            "type": "PERSON"
+        },
+        {
+            "id": "ORG_VICTORIABANK",
+            "label": "Victoriabank",
+            "type": "ORGANIZATION"
+        }
+    ],
+    "edges": [
+        {
+            "id": "ACTOR_MACHERET--ORG_VICTORIABANK--VB_EVENT_ATM_20260807",
+            "source": "ACTOR_MACHERET",
+            "target": "ORG_VICTORIABANK",
+            "relation": "FINANCIAL_INTERACTION",
+            "reference": "VB_EVENT_ATM_20260807"
+        },
+        {
+            "id": "ACTOR_MACHERET--ORG_VICTORIABANK--VB_EVENT_INHERITANCE_RETENTION",
+            "source": "ACTOR_MACHERET",
+            "target": "ORG_VICTORIABANK",
+            "relation": "FINANCIAL_INTERACTION",
+            "reference": "VB_EVENT_INHERITANCE_RETENTION"
+        }
+    ]
+}
