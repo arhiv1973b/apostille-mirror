@@ -1,0 +1,13 @@
+# CORRELATION REPORT: SYSTEMIC INTERFERENCE
+
+## 1. HEATMAP (MONTHLY DISTRIBUTION)
+
+| Month | FINANCIAL | MEDICAL | ADMINISTRATIVE |
+|-------|-----------|---------|----------------|
+| 2022-03 | 0 | 3 | 0 |
+| 2026-06 | 0 | 0 | 24661 |
+| 2026-08 | 2 | 0 | 0 |
+
+
+## 2. DETECTED CLUSTERS (PROXIMITY ANALYSIS)
+
