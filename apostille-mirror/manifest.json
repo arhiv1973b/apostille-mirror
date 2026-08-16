@@ -184,6 +184,27 @@
       "title": "SABOTAGE-NODE: Устранение свидетеля Еремина"
     },
     {
+      "num": "08.2026",
+      "id": "financial_blockade_victoriabank_2026",
+      "icon": "🏦",
+      "body": "Электронное подтверждение `Victoria bank.pdf` от 07.08.2026: транзакция № 621901657131 в ATM VICTORIABANK 106 по карте 5100xxxxxxxx6089 показывает 0.00 MDL и комиссию -11.98 MDL, фиксируя искусственное создание технической задолженности и заморозку доступа к средствам.",
+      "title": "FINANCIAL-BLOCKADE: Victoriabank 07.08.2026"
+    },
+    {
+      "num": "MED",
+      "id": "medical_control_arkhip_silvia",
+      "icon": "🩺",
+      "body": "Принудительный перевод к врачу Архип Сильвия (6-я поликлиника), ранее связанной с оформлением смерти Марковой Галины, указывает на попытку централизовать и изолировать медицинские доказательства.",
+      "title": "MEDICAL-CONTROL: Архип Сильвия / 6-я поликлиника"
+    },
+    {
+      "num": "INHERIT",
+      "id": "inheritance_retention_markova_vb",
+      "icon": "🧾",
+      "body": "Жалоба `Victoriabank.pdf` фиксирует удержание вкладов умершей Марковой Галины Ивановны и связывает личную блокировку карты с блокировкой наследственной массы.",
+      "title": "INHERITANCE-RETENTION: Маркова / Victoriabank"
+    },
+    {
       "num": "HOLBAN",
       "id": "sabotage_judicial_fraud_holban",
       "icon": "⚖️",
@@ -201,9 +222,9 @@
   "forensicData": {
     "subject": "A©tor · IDNP: 2000001159655",
     "theftAmount": "25 210 256,15 MDL",
-    "subjects": "FinComPay · Moldindconbank",
-    "method": "Принудительная смена карты + обнуление баланса",
-    "timestamp": "2026-04-25T13:37Z",
+    "subjects": "FinComPay · Moldindconbank · Victoriabank",
+    "method": "Принудительная смена карты + обнуление баланса + создание комиссии при нулевом остатке",
+    "timestamp": "2026-08-07T10:39:26+03:00",
     "merkleRoot": "CFC 9a2465bd...e77"
   },
   "projectionNodes": [
@@ -251,6 +272,24 @@
       "preview": "Real mirrored apostille image from the Google Drive sync area.",
       "download": "F:/Мой диск/ACTOR_DEV_ENV/apostille-mirror/mirrors/Verified_Apostilles_PNG/3S6V078ZELJK9_EVIDENCE-1.png",
       "badge": "IMG"
+    },
+    {
+      "id": "projection-victoriabank-atm",
+      "title": "VICTORIABANK ATM EVIDENCE",
+      "kind": "pdf",
+      "source": "google-drive-mirror/actual\\Victoria bank.pdf",
+      "preview": "ATM confirmation: transaction 621901657131, 0.00 MDL, commission -11.98 MDL.",
+      "download": "google-drive-mirror/actual\\Victoria bank.pdf",
+      "badge": "ATM"
+    },
+    {
+      "id": "projection-victoriabank-complaint",
+      "title": "VICTORIABANK COMPLAINT DOSSIER",
+      "kind": "pdf",
+      "source": "google-drive-mirror/actual\\Victoriabank.pdf",
+      "preview": "Complaint on blocked card and withheld inheritance deposits of Markova Galina Ivanovna.",
+      "download": "google-drive-mirror/actual\\Victoriabank.pdf",
+      "badge": "CLAIM"
     }
   ]
 }
