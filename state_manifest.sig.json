@@ -1,0 +1,8 @@
+{
+    "meta": {
+        "protocol": "TI-ULA",
+        "algorithm": "Ed25519",
+        "description": "Cryptographic signature for state_manifest.json"
+    },
+    "signature_base64": "l9CLcsjP77sq5WqadxmSGW2Gn7t9aFuBCgjZ9KEuk3tgwj4ECTVWRv6i1tkGzIh9CSoF3Wl9h0Oqos5vpe4kAg=="
+}
