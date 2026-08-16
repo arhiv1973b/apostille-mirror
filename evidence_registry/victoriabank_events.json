@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "description": "Registry of Victoriabank-related events",
+    "last_updated": "2026-08-16T21:00:00Z"
+  },
+  "events": [
+    {
+      "id": "VB_EVENT_ATM_20260807",
+      "title": "FINANCIAL-BLOCKADE: Victoriabank 07.08.2026",
+      "timestamp": "2026-08-07T07:39:26Z",
+      "body": "Электронное подтверждение Victoria bank.pdf от 07.08.2026: транзакция № 621901657131 в ATM VICTORIABANK 106 по карте 5100xxxxxxxx6089 показывает 0.00 MDL и комиссию -11.98 MDL, фиксируя искусственное создание технической задолженности и заморозку доступа к средствам.",
+      "icon": "🏦"
+    },
+    {
+      "id": "VB_EVENT_INHERITANCE_RETENTION",
+      "title": "INHERITANCE-RETENTION: Маркова / Victoriabank",
+      "timestamp": "2026-08-07T00:00:00Z",
+      "body": "Жалоба Victoriabank.pdf фиксирует удержание вкладов умершей Марковой Галины Ивановны и связывает личную блокировку карты с блокировкой наследственной массы.",
+      "icon": "🧾"
+    }
+  ]
+}
