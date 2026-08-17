@@ -187,7 +187,8 @@
       "num": "08.2026",
       "id": "financial_blockade_victoriabank_2026",
       "icon": "🏦",
-      "body": "Электронное подтверждение `Victoria bank.pdf` от 07.08.2026: транзакция № 621901657131 в ATM VICTORIABANK 106 по карте 5100xxxxxxxx6089 показывает 0.00 MDL и комиссию -11.98 MDL, фиксируя искусственное создание технической задолженности и заморозку доступа к средствам.",
+      "body": "Централизованные данные.",
+      "registry_ref": "evidence_registry/victoriabank_events.json#VB_EVENT_ATM_20260807",
       "title": "FINANCIAL-BLOCKADE: Victoriabank 07.08.2026"
     },
     {
@@ -201,7 +202,8 @@
       "num": "INHERIT",
       "id": "inheritance_retention_markova_vb",
       "icon": "🧾",
-      "body": "Жалоба `Victoriabank.pdf` фиксирует удержание вкладов умершей Марковой Галины Ивановны и связывает личную блокировку карты с блокировкой наследственной массы.",
+      "body": "Централизованные данные.",
+      "registry_ref": "evidence_registry/victoriabank_events.json#VB_EVENT_INHERITANCE_RETENTION",
       "title": "INHERITANCE-RETENTION: Маркова / Victoriabank"
     },
     {
@@ -305,7 +307,7 @@
       "id": "projection-victoriabank-atm",
       "title": "VICTORIABANK ATM EVIDENCE",
       "kind": "pdf",
-      "source": "google-drive-mirror/actual/Victoria bank.pdf",
+      "registry_ref": "evidence_registry/victoriabank_events.json#VB_EVENT_ATM_20260807",
       "preview": "ATM confirmation: transaction 621901657131, 0.00 MDL, commission -11.98 MDL.",
       "download": "google-drive-mirror/actual/Victoria bank.pdf",
       "badge": "ATM"
@@ -314,7 +316,7 @@
       "id": "projection-victoriabank-complaint",
       "title": "VICTORIABANK COMPLAINT DOSSIER",
       "kind": "pdf",
-      "source": "google-drive-mirror/actual/Victoriabank.pdf",
+      "registry_ref": "evidence_registry/victoriabank_events.json#VB_EVENT_INHERITANCE_RETENTION",
       "preview": "Complaint on blocked card and withheld inheritance deposits of Markova Galina Ivanovna.",
       "download": "google-drive-mirror/actual/Victoriabank.pdf",
       "badge": "CLAIM"
