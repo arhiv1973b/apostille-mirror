@@ -184,6 +184,13 @@
       "title": "SABOTAGE-NODE: Устранение свидетеля Еремина"
     },
     {
+      "id": "nbm_audit_claim_aug2026",
+      "icon": "⚖️",
+      "title": "NBM AUDIT CLAIM - ERGA OMNES (AUG 2026)",
+      "body": "Единый портфель доказательств (SHA256: d44d5f53a406ba5fe3db0d39772ccaff5cf01c319b792c1766d0ae2caac21c76).",
+      "num": "2026"
+    },
+    {
       "num": "08.2026",
       "id": "financial_blockade_victoriabank_2026",
       "icon": "🏦",
