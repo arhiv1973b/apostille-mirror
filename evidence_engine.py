@@ -21,26 +21,17 @@ class EvidenceDAG:
         self._edges: Set[Tuple[str, str]] = set()
 
     def add_fact(self, node: EvidenceNode, depends_on: Optional[str] = None):
-        # 1. Применяем императивную норму ПЕРЕД добавлением
         ImperativeNormGuard.enforce(node, self._nodes)
-        
-        # 2. Если норма пройдена, добавляем
         self._nodes[node.node_id] = node
         if depends_on: self._edges.add((depends_on, node.node_id))
 
-# Инициализация графа фактами дела
 graph = EvidenceDAG()
 
-# Узел: Финансовая блокада
-graph.add_fact(EvidenceNode(
-    node_id="VICTORIABANK_BLOCKADE_2026",
-    fact_data="Искусственная генерация задолженности -11.98 MDL при балансе 0.00 MDL",
-    node_type="FACT"
-))
+# Добавление первичных доказательств (Anchors)
+graph.add_fact(EvidenceNode("DOC_NEURO_PROTOCOL_1125", "NEURO-PROTOCOL A@t0r/SC-1125-2025", node_type="DOC_ORIGINAL"))
+graph.add_fact(EvidenceNode("DOC_PRESIDENTIAL_MEMO", "Nota Verbale - Presidential Memorandum", node_type="DOC_ORIGINAL"))
+graph.add_fact(EvidenceNode("DOC_PASSPORT_MACERET", "Passport and Aviz for MACERET ALEXEI", node_type="DOC_ORIGINAL"))
 
-# Узел: Наследство
-graph.add_fact(EvidenceNode(
-    node_id="MARKOVA_INHERITANCE_RETENTION",
-    fact_data="Удержание депозитов Марковой Г.И.",
-    node_type="FACT"
-))
+# Факты из дела
+graph.add_fact(EvidenceNode("VICTORIABANK_BLOCKADE_2026", "Блокировка счета", node_type="FACT"), depends_on="DOC_NEURO_PROTOCOL_1125")
+graph.add_fact(EvidenceNode("MARKOVA_INHERITANCE_RETENTION", "Удержание депозитов", node_type="FACT"), depends_on="DOC_PRESIDENTIAL_MEMO")
