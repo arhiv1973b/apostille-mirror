@@ -8,9 +8,10 @@ class EvidenceNode:
     node_id: str
     fact_data: str
     parent_hash: Optional[str] = None
+    node_type: str = "FACT" # Добавлено для классификации
 
     def compute_hash(self) -> str:
-        content = f"{self.node_id}:{self.fact_data}:{self.parent_hash}"
+        content = f"{self.node_id}:{self.fact_data}:{self.parent_hash}:{self.node_type}"
         return hashlib.sha256(content.encode()).hexdigest()
 
 class EvidenceDAG:
@@ -21,3 +22,20 @@ class EvidenceDAG:
     def add_fact(self, node: EvidenceNode, depends_on: Optional[str] = None):
         self._nodes[node.node_id] = node
         if depends_on: self._edges.add((depends_on, node.node_id))
+
+# Инициализация графа фактами дела
+graph = EvidenceDAG()
+
+# Узел: Финансовая блокада
+graph.add_fact(EvidenceNode(
+    node_id="VICTORIABANK_BLOCKADE_2026",
+    fact_data="Искусственная генерация задолженности -11.98 MDL при балансе 0.00 MDL",
+    node_type="FACT"
+))
+
+# Узел: Наследство
+graph.add_fact(EvidenceNode(
+    node_id="MARKOVA_INHERITANCE_RETENTION",
+    fact_data="Удержание депозитов Марковой Г.И.",
+    node_type="FACT"
+))
