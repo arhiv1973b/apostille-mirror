@@ -1,0 +1,25 @@
+{
+  "judicial_submission": {
+    "case_id": "CASE-MACHERET-1997-2026",
+    "submission_date": "2026-08-22",
+    "parties": {
+      "applicant": "Alexei Macheret",
+      "respondent": "FinComBank S.A."
+    },
+    "evidence_inventory": [
+      {
+        "id": "VISUAL_EVENT_1401_FINCOMBANK",
+        "reference_hash": "sha256_verified_cascade"
+      },
+      {
+        "id": "FINCOMBANK_RESPONSE_6387_20260817",
+        "reference_hash": "sha256_verified_cascade"
+      }
+    ],
+    "requested_actions": [
+      "Independent IT audit of transaction logs",
+      "Disclosure of system logs for the specified IBANs",
+      "Formal recognition of digital chain of custody artifacts"
+    ]
+  }
+}
