@@ -43,6 +43,20 @@
       "evidence_file": "temp_page1.jpg",
       "amount_mdl": 25210256.15,
       "status": "Contested"
+    },
+    {
+      "node_id": "VISUAL_EVENT_1401_FINCOMBANK",
+      "category": "Visual_Evidence",
+      "timestamp": "2026-08-09T14:01:00",
+      "description": "Mobile app screenshot (FinComPay) showing balance of 25.210.256,15 MDL",
+      "evidence_source": "extracted_annot_page1-000.jpg",
+      "linked_events": [
+        "FINCOMBANK_RESPONSE_6387_20260817"
+      ],
+      "contradictions": {
+        "bank_issuance_claim": "Card reported issued 06.04.2026, yet balance displayed on screenshot implies active state",
+        "balance_match": "Displayed balance of 25.210.256,15 MDL denied by bank backend systems"
+      }
     }
   ],
   "edges": [

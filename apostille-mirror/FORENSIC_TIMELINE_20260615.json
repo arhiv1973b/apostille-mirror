@@ -148003,5 +148003,12 @@
     "evidence_file": "temp_page1.jpg",
     "amount_mdl": 25210256.15,
     "status": "Contested"
+  },
+  {
+    "node_id": "VISUAL_EVENT_1401_FINCOMBANK",
+    "date": "2026-08-09",
+    "title": "FinComPay Balance Display (14:01)",
+    "description": "Visual fix of mobile balance 25.210.256,15 MDL",
+    "linked_to": "FINCOMBANK_RESPONSE_6387_20260817"
   }
 ]
