@@ -1,0 +1,21 @@
+# Changelog for Automated Report 2026-08-22 16:43:44
+- 1b8d334e chore(release): formalize jus cogens evidence release for case-macheret-2026
+- c44465dc Added Fincombank criminal compressed PDF for analysis
+- 9889d635 Added Ministry of Finance PDF document
+- 80080c05 Renamed and added Fincombank judicial notice files
+- c8094fc3 feat(evidence): add FinComBank cover-up attempt evidence
+- 18d2b739 feat(analysis): finalize correlation analysis for medical identity hijacking and anchor dates in medical_identity_events.json
+- 5732b885 feat(cas): release v1.1 - integrate medical identity hijacking episode and update TI-ULA signatures
+- 9d5eec42 feat(cas): complete TI-ULA cryptographic signature for state release
+- abb35abf feat(cas): complete Victoriabank pipeline integration, enable state manifestation, and deploy entity graph visualization
+- 9da6783b Merge main into fictional-fiesta and resolve portal index conflict
+- 4cd0a1e9 fix: evidence portal HTML audit — broken links, paths, registry URLs
+- c4761b8b Sync approved portal pages and assets (#18)
+- a054df3e Fix: move shared stylesheet into <head> and normalize portal URLs per review
+- bb44c629 Update docs and content for Fictional Fiesta
+- 3d7ee5e7 JUS COGENS VIVUS | PAYMENT STATUS VERIFIED: FinComBank xxxx6089
+- e367cf68 Add example URLs list for monitoring (scripts/urls.txt)
+- 322754a3 Add monitoring script for overnight checks
+- 781bf32e chore: Add overnight monitoring script (zero API quota usage)
+- e42303cd feat: Add Release Report Generator v2.1 with automated link tester
+- b4b3acca Fix donate page buttons, add SHA256 footers to all HTML files, improve button testing

@@ -1,0 +1,17 @@
+[
+    {
+        "entity": "entityA",
+        "status": "blocked",
+        "timestamp": "2026-08-22T16:43:47.189849"
+    },
+    {
+        "entity": "entityB",
+        "status": "blocked",
+        "timestamp": "2026-08-22T16:43:47.189892"
+    },
+    {
+        "entity": "entityC",
+        "status": "blocked",
+        "timestamp": "2026-08-22T16:43:47.189897"
+    }
+]
