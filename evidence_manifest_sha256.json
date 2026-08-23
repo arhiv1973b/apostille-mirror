@@ -1,9 +1,10 @@
 {
-  "manifest_date": "2026-08-23T17:15:00Z",
+  "manifest_date": "2026-08-23T17:30:00Z",
   "files": {
     "Sabotage_Timeline.md": "120628c6e0d85e1b2762d4ec15d74a914dedefbbfbca1d9e5036596d1e06eadc",
     "entity_graph.json": "a225aee446e11707d43f1ae30e0d01b8bf861ee52cc4ed86f5f7f86ecdd18cd1",
     "LEGAL_ANALYSIS_JUS_COGENS_2026.md": "aee84206d8eb44c461225ae7a59fda64e7fbaebd15880201423f553b0a3a18d3",
-    "ANALYTICAL_MEMORANDUM_20260823.md": "070384c0fc4eab87bbe5e5ddda475b4d8741667bd8c6671ac9b28ec565cb4c33"
+    "ANALYTICAL_MEMORANDUM_20260823.md": "070384c0fc4eab87bbe5e5ddda475b4d8741667bd8c6671ac9b28ec565cb4c33",
+    "ACTION_REQUEST_NBM_ECHR_20260823.md": "7a04736260e48e95d5cebd90e43279e5d02521ded1c9310b17bb0b0270536f6b"
   }
 }
