@@ -1,0 +1,56 @@
+name: Deploy TI-ULA Evidence Graph
+
+on:
+  push:
+    branches:
+      - master  # или main, в зависимости от вашей основной ветки
+    paths:
+      - 'registry_chunks/**'
+      - 'build_visual_graph.py'
+      - '.github/workflows/deploy_graph.yml'
+  workflow_dispatch: # Позволяет запускать обновление вручную
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Критически важно: загружаем всю историю Git, чтобы git show мог читать старые коммиты
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build Visual Graph
+        run: |
+          python build_visual_graph.py
+          mkdir -p public_html
+          # Переименовываем в index.html для автоматического открытия при переходе по ссылке
+          mv evidence_map.html public_html/index.html
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public_html'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
