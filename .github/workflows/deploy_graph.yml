@@ -3,15 +3,16 @@ name: Deploy TI-ULA Evidence Graph
 on:
   push:
     branches:
-      - master  # или main, в зависимости от вашей основной ветки
+      - master
+      - temp-audit-remote-master
     paths:
       - 'registry_chunks/**'
       - 'build_visual_graph.py'
       - '.github/workflows/deploy_graph.yml'
-  workflow_dispatch: # Позволяет запускать обновление вручную
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # Права write нужны для создания релизов (gh release create)
   pages: write
   id-token: write
 
@@ -29,7 +30,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Критически важно: загружаем всю историю Git, чтобы git show мог читать старые коммиты
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -40,8 +41,14 @@ jobs:
         run: |
           python build_visual_graph.py
           mkdir -p public_html
-          # Переименовываем в index.html для автоматического открытия при переходе по ссылке
-          mv evidence_map.html public_html/index.html
+          cp evidence_map.html public_html/index.html
+
+      - name: Snapshot to GitHub Releases (DAG Integration)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TIMESTAMP=$(date +'%Y%m%d-%H%M%S')
+          gh release create "evidence-snapshot-$TIMESTAMP" public_html/index.html --title "TI-ULA Graph Snapshot $TIMESTAMP" --notes "Automated forensic graph snapshot from branch temp-audit-remote-master. Legal Foundation: Jus Cogens."
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
