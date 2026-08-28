@@ -1,0 +1,31 @@
+[
+  {
+    "previous_hash": "GENESIS_NODE",
+    "payload": {
+      "case_id": "CASE-MACHERET-1997-2026",
+      "document_ref": "Документ (162).pdf",
+      "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+      "event_date": "2026-04-21T00:00:00Z",
+      "registration_date": "2026-08-28T08:14:20.193527+00:00",
+      "protocol": "A©tor Key / TI-ULA",
+      "summary": "Открытое уведомление о выявлении мошенничества и криптографическая фиксация",
+      "findings": {
+        "fraud_type": [
+          "Подлог идентификаторов",
+          "Незаконная блокировка активов",
+          "Фальсификация записей"
+        ],
+        "financial_impact_mdl": 25210256.15,
+        "target_idnp": "...655...555...455",
+        "evidence_count": 90,
+        "legal_articles_md": [
+          "191",
+          "332",
+          "349"
+        ]
+      }
+    },
+    "node_hash": "ed536471b0d865c17e73b281167289ac21c0d35f26d281be845365be29876782",
+    "signature_ed25519": "116e8c0cccf77a32be4a26ae3155520d6056dc869e97fadd14d2dac246dd93ef261a7f4afb98a0dc01783618ecdfd8b095c018bdfa3ed28e3e65989d3102290a"
+  }
+]
