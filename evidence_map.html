@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TI-ULA Evidence Graph: CASE-MACHERET-1997-2026</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <style type="text/css">
+    body { background-color: #1e1e1e; color: white; font-family: sans-serif; margin: 0; }
+    #mynetwork { width: 100vw; height: 100vh; border: none; }
+    #legend { position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 15px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+<div id="legend">
+    <h3>CASE-MACHERET-1997-2026</h3>
+    <p><span style="color:#cc0000;">■</span> Detention (Root Cause: 1-568/98)</p>
+    <p><span style="color:#ff8c00;">■</span> Financial Blockade (Fincombank)</p>
+    <p><span style="color:#0000cc;">■</span> Jus Cogens / Erga Omnes</p>
+</div>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+  var nodes = new vis.DataSet([{id: 'NODE-031', label: '[NODE-031]
+Memorandum_JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-032', label: '[NODE-032]
+MEMORANDUM_JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-033', label: '[NODE-033]
+Memorandum_JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-036', label: '[NODE-036]
+MEMORANDUM JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-048', label: '[NODE-048]
+MEMORANDUM JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-051', label: '[NODE-051]
+Memorandum_JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-053', label: '[NODE-053]
+Дело № 1-568_98.апостилированн...', color: '#cc0000', shape: 'box'},{id: 'NODE-058', label: '[NODE-058]
+Memorandum_JUS_COGENS_PRIORITY...', color: '#0000cc', shape: 'box'},{id: 'NODE-1416', label: '[NODE-1416]
+Дело № 1-568_98.апостилированн...', color: '#cc0000', shape: 'box'},{id: 'NODE-1617', label: '[NODE-1617]
+Ознакомительная для Судьи Диак...', color: '#cc0000', shape: 'box'},{id: 'NODE-1630', label: '[NODE-1630]
+Дело Дулча Апелляци или жалоба...', color: '#cc0000', shape: 'box'},{id: 'NODE-1647', label: '[NODE-1647]
+Дело № 1-568_98.апостилированн...', color: '#cc0000', shape: 'box'},{id: 'NODE-2894', label: '[NODE-2894]
+Svodnaya_tablitsa_jus_cogens_A...', color: '#0000cc', shape: 'box'},{id: 'NODE-2914', label: '[NODE-2914]
+CRIMINAL_MANIFEST_FINCOMBANK_R...', color: '#ff8c00', shape: 'box'},{id: 'NODE-2973', label: '[NODE-2973]
+CRIMINAL_MANIFEST_FINCOMBANK_2...', color: '#ff8c00', shape: 'box'},{id: 'NODE-3177', label: '[NODE-3177]
+UN_OHCHR_Manifest_tw571ryb_JUS...', color: '#0000cc', shape: 'box'},{id: 'NODE-3246', label: '[NODE-3246]
+CRIMINAL_MANIFEST_FINCOMBANK_R...', color: '#ff8c00', shape: 'box'},{id: 'NODE-3316', label: '[NODE-3316]
+CRIMINAL_MANIFEST_FINCOMBANK_2...', color: '#ff8c00', shape: 'box'},{id: 'NODE-3338', label: '[NODE-3338]
+Fincombank.pdf...', color: '#ff8c00', shape: 'box'}]);
+  var edges = new vis.DataSet([]);
+  var container = document.getElementById('mynetwork');
+  var data = { nodes: nodes, edges: edges };
+  var options = { edges: { arrows: 'to', color: '#aaaaaa' }, physics: { stabilization: false, barnesHut: { springLength: 200 } } };
+  var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
