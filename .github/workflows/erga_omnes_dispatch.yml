@@ -1,0 +1,31 @@
+name: Erga Omnes Legal Dispatch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dispatch-notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Read Notification Content
+        id: notification
+        run: |
+          echo "CONTENT<<EOF" >> $GITHUB_OUTPUT
+          cat ERGA_OMNES_NOTIFICATION_2026.md >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Send Erga Omnes Notification via SMTP
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "ERGA OMNES LEGAL DISPATCH 2026 - CASE-MACHERET CONTINUUM"
+          to: "oversight@un.org,echr@echr.coe.int,fatf@fatf-gafi.org,interpol@interpol.int"
+          from: "Erga Omnes Dispatch <noreply@actor-protocol.org>"
+          body: ${{ steps.notification.outputs.CONTENT }}
+          convert_markdown: true
