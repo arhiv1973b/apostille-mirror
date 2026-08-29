@@ -1,0 +1,36 @@
+name: Erga Omnes International Dispatch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dispatch-notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Read Notification Document
+        id: notification
+        run: |
+          if [ -f "ERGA_OMNES_NOTIFICATION_2026.md" ]; then
+            echo "content<<EOF" >> $GITHUB_OUTPUT
+            cat ERGA_OMNES_NOTIFICATION_2026.md >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "Notification document not found!"
+            exit 1
+          fi
+
+      - name: Send Erga Omnes Legal Notification via SMTP
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "ERGA OMNES LEGAL NOTIFICATION: Impunity Continuum & Jus Cogens Violations (1997-2026)"
+          to: "oversight@un.org,echr-registry@echr.coe.int,secretariat@fatf-gafi.org,interpolsgs@interpol.int"
+          from: "Legal Counsel <arhiv1973b@outlook.com>"
+          body: ${{ steps.notification.outputs.content }}
+          content_type: text/markdown
