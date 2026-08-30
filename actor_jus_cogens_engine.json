@@ -1,62 +1,56 @@
 {
-  "timestamp": "2026-08-30T18:15:00+03:00",
+  "timestamp": "2026-08-30T18:45:00+03:00",
   "pipeline_stage": "build-entity-graph",
+  "methodology": "Official Romanian Baseline (Maceret) vs Russian Variable Markers with Absolute Weights",
   "nodes": [
     {
       "id": "doc_actor_declaration_2026",
       "type": "Evidence",
       "priority": "Jus Cogens",
+      "canonical_ro": "Maceret Alexei",
       "file": "[⚖ A©tor Declaration] .pdf",
       "description": "Первичный правообладатель, фиксация абсолютных гарантий защиты"
     },
     {
-      "id": "inst_moldova_courts",
-      "type": "Institution",
-      "entities": ["Буюканы", "Центр", "Высшая судебная палата", "Конституционный суд"],
-      "status": "Nullified_ab_initio",
-      "legal_basis": "VCLT Art. 53/64"
-    },
-    {
-      "id": "trace_financial_deprivation",
-      "type": "Financial_Vector",
-      "institutions": ["Fincombank", "Victoriabank", "CreditPrime"],
-      "indicators": ["Дубликаты кодов 2.555/2.455/2.666", "Хищение активов", "Блокировка счетов"]
-    },
-    {
-      "id": "event_miron_costin_forgery_2022",
-      "type": "Property_Seizure_and_Forgery",
-      "date": "2022-03-15",
-      "location": "str. Miron Costin 13/3, ap. 64, Chisinau",
-      "actors": ["Oazu Nantoi", "Ludmila Nantoi", "Simion Roșca", "Galina Markova", "Vakarchuk", "Alexei Macheret"],
-      "legal_basis": "ECHR Art. 1 Prot. 1, Criminal Code RM Art. 190/191, 332",
-      "connection_to_cascade": "Звено № 27 в цепи безнаказанности (после 1997-2003 гг., предваряет цифровой подлог FinComBank 2026 г.)",
-      "description": "Захват и манипуляция с недвижимостью через фальсификацию документов, нотариальный подлог и сокрытие персональных данных при соучастии комиссара Вакарчука."
+      "id": "identity_variable_graph",
+      "type": "Identity_Distortion_Registry",
+      "canonical_baseline": "Maceret",
+      "absolute_weight": 1.0,
+      "markers": [
+        {
+          "official_ro": "Maceret",
+          "variable_marker": "$VAR_MACERET",
+          "variants_ru": ["Мачерет", "Мачиретт", "Мачкпкт", "Макеирет", "Macheret"],
+          "priority_weight": 1.0,
+          "status": "Canonical Baseline"
+        },
+        {
+          "official_ro": "Cristina Cheptăn",
+          "variable_marker": "$VAR_CHEPTAN",
+          "variants_ru": ["Кептя", "Keptya", "Cthnia", "Cheptia"],
+          "priority_weight": 0.9
+        },
+        {
+          "official_ro": "Maria Trandafirova → Maria Chirca",
+          "variable_marker": "$VAR_TRANDAFIROVA_CHIRCA",
+          "variants_ru": ["Трандафирова", "Чирка"],
+          "priority_weight": 0.9
+        },
+        {
+          "official_ro": "Simion Roșca",
+          "variable_marker": "$VAR_ROSCA",
+          "variants_ru": ["Рошка", "Рожка"],
+          "priority_weight": 0.9
+        }
+      ]
     }
   ],
   "edges": [
     {
-      "source": "doc_actor_declaration_2026",
-      "target": "inst_moldova_courts",
-      "relation": "OVERRIDES_IMMUNITY",
-      "mechanism": "Erga Omnes"
-    },
-    {
-      "source": "inst_moldova_courts",
-      "target": "trace_financial_deprivation",
-      "relation": "FACILITATED_BY",
-      "violation": "ECHR Art. 5 (Произвольное лишение), ECHR Art. 6"
-    },
-    {
-      "source": "trace_financial_deprivation",
+      "source": "identity_variable_graph",
       "target": "doc_actor_declaration_2026",
-      "relation": "TRIGGERED_CONTINUING_CONSEQUENCES",
-      "violation": "ECHR Art. 3 (Отказ в реабилитации)"
-    },
-    {
-      "source": "event_miron_costin_forgery_2022",
-      "target": "trace_financial_deprivation",
-      "relation": "ESCALATED_TO",
-      "violation": "ECHR Art. 1 Prot. 1, Criminal Code RM Art. 332"
+      "relation": "ESTABLISHES_CANONICAL_IDENTITY",
+      "mechanism": "Romanian Baseline Maceret vs Russian Variable Markers (Art. 332 Penal Code RM)"
     }
   ]
 }
