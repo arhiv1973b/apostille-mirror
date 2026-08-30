@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-08-30T17:41:58+03:00",
+  "pipeline_stage": "build-entity-graph",
+  "nodes": [
+    {
+      "id": "doc_actor_declaration_2026",
+      "type": "Evidence",
+      "priority": "Jus Cogens",
+      "file": "[⚖ A©tor Declaration] .pdf",
+      "description": "Первичный правообладатель, фиксация абсолютных гарантий защиты"
+    },
+    {
+      "id": "inst_moldova_courts",
+      "type": "Institution",
+      "entities": ["Буюканы", "Центр", "Высшая судебная палата", "Конституционный суд"],
+      "status": "Nullified_ab_initio",
+      "legal_basis": "VCLT Art. 53/64"
+    },
+    {
+      "id": "trace_financial_deprivation",
+      "type": "Financial_Vector",
+      "institutions": ["Fincombank", "Victoriabank", "CreditPrime"],
+      "indicators": ["Дубликаты кодов 2.555/2.455/2.666", "Хищение активов", "Блокировка счетов"]
+    }
+  ],
+  "edges": [
+    {
+      "source": "doc_actor_declaration_2026",
+      "target": "inst_moldova_courts",
+      "relation": "OVERRIDES_IMMUNITY",
+      "mechanism": "Erga Omnes"
+    },
+    {
+      "source": "inst_moldova_courts",
+      "target": "trace_financial_deprivation",
+      "relation": "FACILITATED_BY",
+      "violation": "ECHR Art. 5 (Произвольное лишение), ECHR Art. 6"
+    },
+    {
+      "source": "trace_financial_deprivation",
+      "target": "doc_actor_declaration_2026",
+      "relation": "TRIGGERED_CONTINUING_CONSEQUENCES",
+      "violation": "ECHR Art. 3 (Отказ в реабилитации)"
+    }
+  ]
+}
