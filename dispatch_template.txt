@@ -21,14 +21,13 @@ Content-Type: text/plain; charset=utf-8
 * Последствие: Создание фиктивного основания для наложения незаконного штрафа в размере 25,000 MDL судьей Дада Ион (Суд Чеканы) и присвоение получателю (Ирина Олейник) статуса «иноагента».
 * Нарушения: Ст. 3 и ст. 5 ЕКПЧ, Ст. 191 и 332 УК РМ.
 
-КРИПТОГРАФИЧЕСКОЕ ДОКАЗАТЕЛЬСТВО (Ed25519/SHA-256):
-Целостность доказательств закреплена в манифесте (ti_ula_crypto_manifest.json):
-- FORENSIC_FINCOM_ANALYSIS.md (SHA-256: 3175fd5c6d872a8e9b5bfe9a12e6248fa00f22554e45509a713feabacf0f5513)
-- [⚖ A©tor Declaration] .pdf (SHA-256: 5f1f6bdfdd5e13224e117ddffcc05320b9cbdda11e324c85d2dbf2cea17c937b)
+КРИПТОГРАФИЧЕСКИЕ ДОКАЗАТЕЛЬСТВА И ПРЯМЫЕ ССЫЛКИ (Ed25519/SHA-256):
+Целостность доказательств закреплена в крипто-манифесте и доступна по прямым ссылкам:
+- Криминалистический анализ: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/FORENSIC_FINCOM_ANALYSIS.md
+- Декларация A©tor: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/%F0%9F%8F%9B%EF%B8%8F%20EVIDENCE/New_Submissions/%5B%E2%9A%96%20A%C2%A9tor%20Declaration%5D%20.pdf
+- Крипто-манифест: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/ti_ula_crypto_manifest.json
 
 ТРЕБОВАНИЕ (ERGA OMNES):
 Любое государство или международный институт, получившие данное уведомление, обязаны отреагировать на факт атаки на активы международной помощи и продолжающееся бесчеловечное обращение (ECHR Art. 3), преодолевая суверенный иммунитет локальных судов.
-
-Полный архив доказательств и графы сущностей доступны в публичном репозитории: https://github.com/arhiv1973b/apostille-mirror (branch: evidence/fincombank-financial-traces).
 
 Подписано: A©tor (Алексей Мачерет) [# A©tor Declaration]

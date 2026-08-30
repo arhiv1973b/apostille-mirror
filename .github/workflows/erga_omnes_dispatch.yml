@@ -1,31 +1,51 @@
-name: Erga Omnes Legal Dispatch
+name: Erga Omnes Automated Dispatch
 
 on:
   workflow_dispatch:
 
 jobs:
-  dispatch-notification:
+  dispatch:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Read Notification Content
-        id: notification
-        run: |
-          echo "CONTENT<<EOF" >> $GITHUB_OUTPUT
-          cat ERGA_OMNES_NOTIFICATION_2026.md >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: Send Erga Omnes Notification via SMTP
-        uses: dawidd6/action-send-mail@v3
         with:
-          server_address: ${{ secrets.SMTP_SERVER }}
-          server_port: 587
-          username: ${{ secrets.SMTP_USERNAME }}
-          password: ${{ secrets.SMTP_PASSWORD }}
-          subject: "ERGA OMNES LEGAL DISPATCH 2026 - CASE-MACHERET CONTINUUM"
-          to: "oversight@un.org,echr@echr.coe.int,fatf@fatf-gafi.org,interpol@interpol.int"
-          from: "Erga Omnes Dispatch <noreply@actor-protocol.org>"
-          body: ${{ steps.notification.outputs.CONTENT }}
-          convert_markdown: true
+          ref: evidence/fincombank-financial-traces
+
+      - name: Install msmtp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y msmtp msmtp-mta
+
+      - name: Configure msmtp
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          cat << EOF > ~/.msmtprc
+          defaults
+          auth on
+          tls on
+          tls_trust_file /etc/ssl/certs/ca-certificates.crt
+          logfile ~/.msmtp.log
+
+          account default
+          host $SMTP_HOST
+          port 587
+          from $SMTP_USER
+          user $SMTP_USER
+          password $SMTP_PASSWORD
+          EOF
+          chmod 600 ~/.msmtprc
+
+      - name: Run Erga Omnes Dispatch Script
+        run: |
+          chmod +x send_dispatch.sh
+          ./send_dispatch.sh
+
+      - name: Upload Dispatch Logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: msmtp-dispatch-logs
+          path: msmtp_dispatch_log.txt
