@@ -1,0 +1,22 @@
+{
+    "timestamp": "2026-08-30T14:52:13.136335Z",
+    "case_id": "CASE-MACHERET-1997-2026",
+    "legal_basis": "Jus Cogens / Erga Omnes",
+    "anchors": [
+        {
+            "file": "FORENSIC_FINCOM_ANALYSIS.md",
+            "sha256": "3175fd5c6d872a8e9b5bfe9a12e6248fa00f22554e45509a713feabacf0f5513",
+            "ed25519_signature": "935ddcd01cea947b5bfab9cffdee5885cb1574d008ff1d0f2ec1325002dbe1c33d787817a600766e4ef7af8dddc556fb5cd148d54acf76ed495a2079a7078b03"
+        },
+        {
+            "file": "actor_jus_cogens_engine.json",
+            "sha256": "e99966d0c34219f4cccaa61d0504990cb1efe348eff3cba7a16ed26f91583975",
+            "ed25519_signature": "d19e8e8b654584178e6486b2a40e5aa4f5b6fdff5907d8d526f174aa2833b59e685b213b1a16f447c50563619a1817c1d8a59a8fd13175635190314d26ffcd0b"
+        },
+        {
+            "file": "\ud83c\udfdb\ufe0f EVIDENCE/New_Submissions/[\u2696 A\u00a9tor Declaration] .pdf",
+            "sha256": "5f1f6bdfdd5e13224e117ddffcc05320b9cbdda11e324c85d2dbf2cea17c937b",
+            "ed25519_signature": "50126a71743b96d45d4de463a1a4aec8621c93245d73893fc49ced31c2e75cbdee5016bd7412d823dfacd9629e3905396c4453191a02d6d7b405e74b6676bc0f"
+        }
+    ]
+}
