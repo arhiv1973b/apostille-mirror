@@ -9,8 +9,11 @@ from cryptography.hazmat.primitives import serialization
 # Целевые файлы для крипто-фиксации (content-addressing)
 FILES_TO_ANCHOR = [
     "FORENSIC_FINCOM_ANALYSIS.md",
+    "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
+    "IDENTITY_DISTORTION_GRAPH.md",
     "actor_jus_cogens_engine.json",
     "🏛️ EVIDENCE/New_Submissions/[⚖ A©tor Declaration] .pdf",
+    "🏛️ EVIDENCE/New_Submissions/Навстречу к Справедливому Возврату - последнее предупреждение в досудебном порядке.pdf",
 ]
 
 
