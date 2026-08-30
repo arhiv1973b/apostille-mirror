@@ -1,23 +1,24 @@
 To: [TARGET_EMAILS]
-Subject: URGENT: JUS COGENS SUPREMACY / CASE-MACHERET-1997-2026 (Exposing Impunity Network & Res Judicata Fraud)
+Subject: URGENT: JUS COGENS SUPREMACY / CASE-MACHERET-1997-2026 (Exposing Impunity Network & 25M MDL Theft Mechanism)
 Content-Type: text/plain; charset=utf-8
 
-ОФИЦИАЛЬНОЕ УВЕДОМЛЕНИЕ О ВЕРХОВЕНСТВЕ ИМПЕРАТИВНЫХ НОРМ (JUS COGENS) НАД RES JUDICATA И РАЗОБЛАЧЕНИИ СИСТЕМЫ СОКРЫТИЯ ПРЕСТУПЛЕНИЙ
+ОФИЦИАЛЬНОЕ УВЕДОМЛЕНИЕ О ВЕРХОВЕНСТВЕ ИМПЕРАТИВНЫХ НОРМ (JUS COGENS) НАД RES JUDICATA И РАЗОБЛАЧЕНИИ СИСТЕМЫ СОКРЫТИЯ ПРЕСТУПЛЕНИЙ И ХИЩЕНИЯ 25 МЛН ЛЕЕВ
 
-Настоящее официальное уведомление направляется в рамках дела CASE-MACHERET-1997-2026 для пресечения попыток должностных лиц (включая Вакарчука, Кристину Кептя, псевдо-нотариуса Симиона Рошку и др.) подменить императивные нормы международного права фиктивными ссылками на законную силу судебных решений (Res Judicata).
+Настоящее официальное уведомление направляется в рамках дела CASE-MACHERET-1997-2026 для пресечения попыток должностных лиц (включая комиссара Вакарчука, судебного исполнителя Александра Фокшу, псевдо-полицейского Симиона Рошку и др.) подменить императивные нормы международного права фиктивными ссылками на законную силу судебных решений (Res Judicata).
 
 КЛЮЧЕВЫЕ РАЗОБЛАЧЕНИЯ И ФАКТЫ (TI-ULA Evidence Matrix):
-1. **Симион Рошка (Simion Roșca):** Никогда не был нотариусом. Действуя как сотрудник полиции под руководством комиссара Вакарчука, фабриковал фальшивые протоколы для сокрытия убийства Галины Марковой и рейдерского захвата недвижимости (ул. Мирон Костин 13/3, 15.03.2022).
-2. **Мария Трандафирова → Мария Чирка (Maria Chirca):** По приказу комиссара Вакарчука изменила фамилию на фамилию мужа с целью сокрытия соучастия в фальсификациях и покушениях на правопреемника Алексея Мачерета (A©tor).
-3. **Финансово-процессуальный узел:** Связка штрафа в 300 леев (судебный исполнитель Александр Фокша и Кристина Кептя) с Решением КС № 10r-1009/2019 и хищением 25 миллионов леев, направленная на блокирование уголовной судебной реабилитации жертвы пыток.
+1. **Симион Рошка (Simion Roșca):** Сотрудник полиции, участвовавший в опознании трупа Галины Марковой. Создал ловушку со сфабрикованным штрафом, пытаясь превратить жертву (Maceret) в «грабителя магазина» (объект вневедомственной охраны под пультом Рошки и Вакарчука).
+2. **Механизм хищения 25 млн леев (1.1 млн USD):** Поскольку Алексей Maceret отказался платить сфабрикованный штраф, преступная группа использовала аресты счетов, наложенные судебным исполнителем Александром Фокшей (Alexandru Focșa) под прямым контролем комиссара Вакарчука, для скрытого («невидимого») вывода средств международной помощи.
+3. **Идентификационные подлоги:** Использование смены фамилий (Мария Трандафирова → Мария Чирка) и искажения имени Maceret для сокрытия соучастников.
 
 ПРАВОВОЙ ПРИОРИТЕТ (VCLT ART. 53 & 64):
-Согласно статьям 53 и 64 Венской конвенции о праве международных договоров 1969 года, нормы **Jus Cogens** обладают высшей юридической силой. Попытки Кристины Кептя и Вакарчука провозгласить внутреннюю Res Judicata выше международного права являются ничтожными ab initio.
+Согласно статьям 53 и 64 Венской конвенции о праве международных договоров 1969 года, нормы **Jus Cogens** обладают высшей юридической силой над любыми попытками прикрыться Res Judicata или сроками давности.
 
-ПРЯМЫЕ ССЫЛКИ НА ДОКАЗАТЕЛЬСТВА:
-- Магистральный синтез и анализ: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md
-- Криминалистический анализ FinComBank: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/FORENSIC_FINCOM_ANALYSIS.md
+ЗАЩИЩЕННЫЕ ПРЯМЫЕ ССЫЛКИ НА ДОКАЗАТЕЛЬСТВА (SHA-256 / Ed25519 Verified):
+- Магистральный синтез (Jus Cogens vs Res Judicata): https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md
+- Криминалистический анализ FinComBank & Metadata Forgery: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/FORENSIC_FINCOM_ANALYSIS.md
+- Граф искажений идентичности: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/IDENTITY_DISTORTION_GRAPH.md
 - Декларация A©tor: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/%F0%9F%8F%9B%EF%B8%8F%20EVIDENCE/New_Submissions/%5B%E2%9A%96%20A%C2%A9tor%20Declaration%5D%20.pdf
-- Крипто-манифест (SHA-256/Ed25519): https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/ti_ula_crypto_manifest.json
+- Криптографический манифест (Ed25519/SHA-256): https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/evidence/fincombank-financial-traces/ti_ula_crypto_manifest.json
 
-Подписано: A©tor (Алексей Мачерет) [# A©tor Declaration]
+Подписано: A©tor (Алексей Maceret) [# A©tor Declaration]
