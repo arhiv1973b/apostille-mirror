@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-30T18:45:00+03:00",
+  "timestamp": "2026-08-30T19:00:00+03:00",
   "pipeline_stage": "build-entity-graph",
   "methodology": "Official Romanian Baseline (Maceret) vs Russian Variable Markers with Absolute Weights",
   "nodes": [
@@ -10,6 +10,17 @@
       "canonical_ro": "Maceret Alexei",
       "file": "[⚖ A©tor Declaration] .pdf",
       "description": "Первичный правообладатель, фиксация абсолютных гарантий защиты"
+    },
+    {
+      "id": "rosca_vakarchuk_trap_mechanism",
+      "type": "Police_Trap_and_Corpse_Identification_Forgery",
+      "actors": [
+        {"official_ro": "Simion Roșca", "role": "Police officer, participated in Markova's corpse identification, operated security console, fabricated fine trap"},
+        {"official_ro": "Vakarchuk", "role": "Police Commissioner, supervisor of security console and Simion Roșca"},
+        {"official_ro": "Maceret", "role": "Victim of torture targeted by the fine-to-robbery frame-up"}
+      ],
+      "mechanism": "Fabricated fine payment trap designed to transform the torture victim into a store robber (store under the police security console managed by Roșca and Vakarchuk) while covering up Markova's death.",
+      "legal_basis": "ECHR Art. 3, Art. 5, Criminal Code RM Art. 332"
     },
     {
       "id": "identity_variable_graph",
@@ -25,21 +36,15 @@
           "status": "Canonical Baseline"
         },
         {
-          "official_ro": "Cristina Cheptăn",
-          "variable_marker": "$VAR_CHEPTAN",
-          "variants_ru": ["Кептя", "Keptya", "Cthnia", "Cheptia"],
-          "priority_weight": 0.9
-        },
-        {
-          "official_ro": "Maria Trandafirova → Maria Chirca",
-          "variable_marker": "$VAR_TRANDAFIROVA_CHIRCA",
-          "variants_ru": ["Трандафирова", "Чирка"],
-          "priority_weight": 0.9
-        },
-        {
           "official_ro": "Simion Roșca",
           "variable_marker": "$VAR_ROSCA",
-          "variants_ru": ["Рошка", "Рожка"],
+          "variants_ru": ["Рошка Симон", "Рожка"],
+          "priority_weight": 0.9
+        },
+        {
+          "official_ro": "Vakarchuk",
+          "variable_marker": "$VAR_VAKARCHUK",
+          "variants_ru": ["Вакарчук"],
           "priority_weight": 0.9
         }
       ]
@@ -47,10 +52,10 @@
   ],
   "edges": [
     {
-      "source": "identity_variable_graph",
+      "source": "rosca_vakarchuk_trap_mechanism",
       "target": "doc_actor_declaration_2026",
-      "relation": "ESTABLISHES_CANONICAL_IDENTITY",
-      "mechanism": "Romanian Baseline Maceret vs Russian Variable Markers (Art. 332 Penal Code RM)"
+      "relation": "EXPOSES_STATE_FABRICATION_TRAP",
+      "mechanism": "Jus Cogens Supremacy over Res Judicata (VCLT Art. 53/64)"
     }
   ]
 }
