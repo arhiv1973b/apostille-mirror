@@ -2,10 +2,12 @@ import urllib.request
 import urllib.error
 
 TARGET_URLS = [
-    "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/dispatch_template.txt",
-    "https://arhiv1973b.github.io/apostille-mirror/",
+    "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
+    "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/FORENSIC_FINCOM_ANALYSIS.md",
+    "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/IDENTITY_DISTORTION_GRAPH.md",
     "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/LEGAL_MEMORANDUM_ECHR.md",
     "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/ROOT_MANIFEST_2026.md",
+    "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/ti_ula_crypto_manifest.json",
 ]
 
 
@@ -21,7 +23,7 @@ def check_url(url):
 
 
 def main():
-    print("=== TARGETED TUNNEL LINK AUDIT (MASTER BRANCH) ===")
+    print("=== TARGETED TUNNEL LINK AUDIT (DOCUMENT SYNCHRONIZATION) ===")
     for url in TARGET_URLS:
         code = check_url(url)
         print(f"[{code}] {url}")

@@ -16,9 +16,12 @@ Content-Type: text/plain; charset=utf-8
 - Нарушение ст. 13 ЕКПЧ (право на эффективное средство правовой защиты) и ст. 3 ЕКПЧ (запрет бесчеловечного обращения и длящиеся последствия непредоставления реабилитации).
 - Отсутствие доступа к правосудию и длящийся характер процессуального саботажа.
 
-ЗАЩИЩЕННЫЕ ПРЯМЫЕ ССЫЛКИ НА ДОКАЗАТЕЛЬСТВА (SHA-256 Verified):
+ЗАЩИЩЕННЫЕ ПРЯМЫЕ ССЫЛКИ НА ДОКАЗАТЕЛЬСТВА (SHA-256 / Ed25519 Verified):
+- Магистральный синтез (Jus Cogens vs Res Judicata): https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md
+- Криминалистический анализ FinComBank & Metadata Forgery: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/FORENSIC_FINCOM_ANALYSIS.md
+- Граф искажений идентичности: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/IDENTITY_DISTORTION_GRAPH.md
 - Юридический меморандум ЕСПЧ / КПЧ ООН: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/LEGAL_MEMORANDUM_ECHR.md
 - Реестр улик и доказательный граф (1997–2026): https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/ROOT_MANIFEST_2026.md
-- Декларация A©tor: https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/%F0%9F%8F%9B%EF%B8%8F%20EVIDENCE/New_Submissions/%5B%E2%9A%96%20A%C2%A9tor%20Declaration%5D%20.pdf
+- Криптографический манифест (Ed25519/SHA-256): https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/master/ti_ula_crypto_manifest.json
 
 Подписано: A©tor (Алексей Maceret)
