@@ -2,7 +2,7 @@ import os
 import sys
 
 
-def check_environment():
+def verify_and_run():
     print("=== MULTIMODAL SEMANTIC EXTRACTION ENGINE ===")
     print("Languages supported: Russian (ru), Romanian (ro)")
     print("Available Engines:")
@@ -13,4 +13,4 @@ def check_environment():
 
 
 if __name__ == "__main__":
-    check_environment()
+    verify_and_run()
