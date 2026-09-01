@@ -1,6 +1,8 @@
 # DEFINITIVE ENTITY GRAPH MANIFEST [CASE-MACHERET-1997-2026]
-**Integration Timestamp:** 2026-08-31 19:35:19 UTC
+**Integration Timestamp:** 2026-09-01 11:24:58 UTC
+**Protocol Base:** UDHR ООН (1948) - UDHR-Override / Full Pivot
 **Total Filtered Target Artifacts:** 15 (Filtered from 596 raw nodes to eliminate noise)
+**Broadcast Manifest Anchor:** `UDHR_TI_ULA_BROADCAST_MANIFEST.md` (`SHA-256: eeba8ff1a5ef00470714facd69f9e487ec3b24ca960ef464845e63c6a70cf7b1`)
 
 ## Mapped Target Evidence Nodes (Strict Legal Filtering)
 | Artifact Filename | Size (Bytes) | Modified Timestamp | SHA-256 Prefix | Classification |
@@ -21,5 +23,5 @@
 | `0-02-05-09cd14aaa97cd1626b47893a4bfff7307952f7df9a9687b72ed36830ae8c2236_d62e262010d91ade_5.mp4` | 29746144 | 2025-10-23 17:15:56 | `926efa4b75638472...` | Target Legal Episode / Forensic Evidence |
 | `0-02-05-09cd14aaa97cd1626b47893a4bfff7307952f7df9a9687b72ed36830ae8c2236_d62e262010d91ade_6.mp4` | 29746144 | 2025-10-23 17:15:56 | `926efa4b75638472...` | Target Legal Episode / Forensic Evidence |
 
-## Procedural Anti-Noise Guarantee
-All unmapped noise artifacts have been sequestered from the primary tribunal submission bundle, guaranteeing strict adherence to ECHR Art. 35 § 3(a) (abuse of right of application avoidance).
+## Procedural Anti-Noise & UDHR Guarantee
+All unmapped noise artifacts have been sequestered from the primary tribunal submission bundle. Regional convention dependencies (ECHR) are fully purged in favor of Universal Declaration of Human Rights (UDHR 1948) Articles 3, 5, 8, and 9 enforced via decentralized cryptographic anchoring (TI-ULA SHA-256).
