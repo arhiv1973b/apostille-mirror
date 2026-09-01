@@ -3,8 +3,9 @@ import json
 import hashlib
 import time
 from datetime import datetime, timezone
+from ti_ula_replicator import sync_to_decentralized_cloud
 
-# TI-ULA REAL-TIME DIRECTORY WATCHER (ZERO-DEPENDENCY POLLING)
+# TI-ULA REAL-TIME DIRECTORY WATCHER & REPLICATOR (ZERO-DEPENDENCY POLLING)
 # Case: CASE-MACHERET-1997-2026 | Protocol: UDHR-Override (Article 8)
 
 TARGET_VAULTS = [
@@ -102,6 +103,8 @@ def watch_vaults():
                 print(
                     f"[✓] Manifest updated in real-time: {len(anchors)} records locked."
                 )
+                print("[>] Triggering decentralized cloud replication...")
+                sync_to_decentralized_cloud()
 
     except KeyboardInterrupt:
         print("\n[!] Directory watcher terminated by operator.")
