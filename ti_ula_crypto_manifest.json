@@ -1,5 +1,5 @@
 {
-    "timestamp": "2026-08-30T19:55:12.894800Z",
+    "timestamp": "2026-09-01T14:00:21.431934Z",
     "case_id": "CASE-MACHERET-1997-2026",
     "legal_basis": "Jus Cogens / Erga Omnes",
     "anchors": [
@@ -10,8 +10,8 @@
         },
         {
             "file": "JUS_COGENS_ERGA_OMNES_MASTER_SYNTHESIS.md",
-            "sha256": "1f1156795ea7bbdeb806d5ed6f671c1c20cd2a348ccec6879d0a7d8430bd8708",
-            "ed25519_signature": "66d4937e6d93ef3cc0dc4caafce065f603f4e0b36c4159164d68c6b22bd8a36b47ecba11ab55a1b29fb9d63affd9ae9d6ba021086f01fe3d60b97732fa413a05"
+            "sha256": "53d6620de1c36fe5127ec673c9cb9b22e86c222d22811541f376217762b50b14",
+            "ed25519_signature": "817f2c2f8675646b4b44fca227d74f573d7acef04592563f032586a32a96b29933d294a650889f8e92e78a6063a153fba1a304d781e623032d28eb64b8ae6104"
         },
         {
             "file": "IDENTITY_DISTORTION_GRAPH.md",
