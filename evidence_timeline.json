@@ -37,6 +37,15 @@
       ],
       "sha256": "b4186acaa38713b49b38b6720fc33762c829d3dfa5b01f5f7e287fbc4cb54d87",
       "status": "official_incident_recorded"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Тестирование и верификация технологии сырого хэш-имени (Raw Hash Naming) и неизменности даты снимка для файлов доказательств",
+      "documents": [
+        "hash_technology_test_report.json"
+      ],
+      "sha256": "67f36f33ff1ac3d7918128fa504231b7692f620673169d7f3a8dd1cb8bce81f5",
+      "status": "hash_technology_verified"
     }
   ]
 }
