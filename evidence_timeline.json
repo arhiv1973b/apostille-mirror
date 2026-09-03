@@ -19,6 +19,15 @@
       ],
       "sha256": "0522340820d57a0a823c063ce5d1ef818d9338e5fe8bc959293deb4e9559aeb2",
       "status": "ready_for_court"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Массовая рассылка официальных обращений и меморандума по Финкомбанку в Прокуратуру, Суды, НБМ, МФ, СФС, CNAJGS, Посольство США и Белый дом",
+      "documents": [
+        "DISPATCH_LOG_03092026.md"
+      ],
+      "sha256": "da5be663bf005226f5e3ac937ccd9179406f79e77f0d3cf65dadf0da372c8f80",
+      "status": "dispatched_and_recorded"
     }
   ]
 }

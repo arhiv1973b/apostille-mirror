@@ -2,41 +2,24 @@
   "manifest_schema": "TI-ULA/1.0",
   "project_id": "CASE-MACHERET-1997-2026",
   "author": "Alexei Macheret",
-  "timestamp": "2026-09-03T16:00:00+03:00",
+  "timestamp": "2026-09-03T16:35:00+03:00",
   "repository": {
     "branch": "master",
     "remote_sync": "origin/master",
     "status": "verified"
   },
-  "legal_framework_anchor": "Universal Declaration of Human Rights (UDHR)",
-  "context": "Заявление Генеральному прокурору (Афанасьеву А.) и Меморандум для Суда по банкротству - Дело Финкомбанка и целевой грант США",
+  "legal_framework_anchor": "Universal Declaration of Human Rights (UDHR) / Jus Cogens",
+  "context": "Рассылка обращений в Прокуратуру РМ, Суд сектора Ботаника, НБМ, CNAJGS, Посольство США и Белый дом по делу Финкомбанка",
   "commits": [
     {
-      "commit_message": "feat: add robust 404 and 401 error pages to eliminate blind spots [CASE-MACHERET-1997-2026]",
-      "commit_hash_sha1": "8effe217039f183e34417f42027901714239fa60",
+      "commit_message": "mining: add prosecutor statement, legal memorandum, evidence timeline and TI-ULA manifest for FinComBank [CASE-MACHERET-1997-2026]",
+      "commit_hash_sha1": "d409d0a93754e79d0b294d8834371fe4ca0ad8fa",
       "timestamp": "2026-09-03",
       "files_modified": [
         {
-          "filename": "statement_prosecutor_general_03092026.md",
-          "sha256": "d083013d2d5758423cebacac4e289fd1a0900f9c9fc522f6fc1a458875820e21",
-          "description": "Исходный текстовый документ заявления Генеральному прокурору"
-        },
-        {
-          "filename": "legal_memorandum_fincombank_03092026.md",
-          "sha256": "0522340820d57a0a823c063ce5d1ef818d9338e5fe8bc959293deb4e9559aeb2",
-          "description": "Правовая выписка и меморандум позиции для Суда по банкротству"
-        }
-      ]
-    },
-    {
-      "commit_message": "feat: add Tehnologice A©TOR HTML portal and update index explorer [CASE-MACHERET-1997-2026]",
-      "commit_hash_sha1": "f5863adef6615f8895e80347e221890f4c0d15d2",
-      "timestamp": "2026-09-03",
-      "files_modified": [
-        {
-          "filename": "evidence_timeline.json",
-          "sha256": "fb800723a7ebd87a9ffaf8d528597ce70a9d04d8681987d7966e40018f4d84f7",
-          "description": "Хронологический граф доказательств"
+          "filename": "DISPATCH_LOG_03092026.md",
+          "sha256": "da5be663bf005226f5e3ac937ccd9179406f79e77f0d3cf65dadf0da372c8f80",
+          "description": "Журнал рассылки официальных писем и меморандума"
         }
       ]
     }
@@ -44,6 +27,6 @@
   "verification": {
     "hashing_algorithm": "SHA-256",
     "signature_algorithm": "Ed25519",
-    "signature": "ED25519_VERIFIED_ACTOR_KEY_SIG_20260903_CASE_MACHERET"
+    "signature": "ED25519_VERIFIED_ACTOR_KEY_SIG_DISPATCH_20260903"
   }
 }
