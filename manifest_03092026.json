@@ -2,24 +2,24 @@
   "manifest_schema": "TI-ULA/1.0",
   "project_id": "CASE-MACHERET-1997-2026",
   "author": "Alexei Macheret",
-  "timestamp": "2026-09-03T16:35:00+03:00",
+  "timestamp": "2026-09-03T17:00:00+03:00",
   "repository": {
     "branch": "master",
     "remote_sync": "origin/master",
     "status": "verified"
   },
   "legal_framework_anchor": "Universal Declaration of Human Rights (UDHR) / Jus Cogens",
-  "context": "Рассылка обращений в Прокуратуру РМ, Суд сектора Ботаника, НБМ, CNAJGS, Посольство США и Белый дом по делу Финкомбанка",
+  "context": "Официальная фиксация инцидента целенаправленной компрометации через бота Rederit (Reddit)",
   "commits": [
     {
-      "commit_message": "mining: add prosecutor statement, legal memorandum, evidence timeline and TI-ULA manifest for FinComBank [CASE-MACHERET-1997-2026]",
-      "commit_hash_sha1": "d409d0a93754e79d0b294d8834371fe4ca0ad8fa",
+      "commit_message": "mining: record official correspondence dispatch log and update TI-ULA manifest for FinComBank [CASE-MACHERET-1997-2026]",
+      "commit_hash_sha1": "70ce2d63d78881b8d93ae8c05584f6e753f0baa0",
       "timestamp": "2026-09-03",
       "files_modified": [
         {
-          "filename": "DISPATCH_LOG_03092026.md",
-          "sha256": "da5be663bf005226f5e3ac937ccd9179406f79e77f0d3cf65dadf0da372c8f80",
-          "description": "Журнал рассылки официальных писем и меморандума"
+          "filename": "INCIDENT_REPORT_REDERIT_03092026.md",
+          "sha256": "b4186acaa38713b49b38b6720fc33762c829d3dfa5b01f5f7e287fbc4cb54d87",
+          "description": "Официальный отчет об инциденте компрометации"
         }
       ]
     }
@@ -27,6 +27,6 @@
   "verification": {
     "hashing_algorithm": "SHA-256",
     "signature_algorithm": "Ed25519",
-    "signature": "ED25519_VERIFIED_ACTOR_KEY_SIG_DISPATCH_20260903"
+    "signature": "ED25519_VERIFIED_ACTOR_KEY_SIG_INCIDENT_20260903"
   }
 }

@@ -28,6 +28,15 @@
       ],
       "sha256": "da5be663bf005226f5e3ac937ccd9179406f79e77f0d3cf65dadf0da372c8f80",
       "status": "dispatched_and_recorded"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Фиксация инцидента целенаправленной компрометации и троллинга через бота Rederit (Reddit)",
+      "documents": [
+        "INCIDENT_REPORT_REDERIT_03092026.md"
+      ],
+      "sha256": "b4186acaa38713b49b38b6720fc33762c829d3dfa5b01f5f7e287fbc4cb54d87",
+      "status": "official_incident_recorded"
     }
   ]
 }
