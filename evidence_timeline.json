@@ -1,0 +1,24 @@
+{
+  "project": "CASE-MACHERET-1997-2026",
+  "timeline_date": "2026-09-03",
+  "events": [
+    {
+      "date": "2026-09-03",
+      "title": "Заявление Генеральному прокурору Афанасьеву А. по делу Финкомбанка и гранта США для GitHub проекта",
+      "documents": [
+        "statement_prosecutor_general_03092026.md"
+      ],
+      "sha256": "d083013d2d5758423cebacac4e289fd1a0900f9c9fc522f6fc1a458875820e21",
+      "status": "filed_and_registered"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Правовая выписка и меморандум позиции для Суда по банкротству Республики Молдова (Финкомбанк)",
+      "documents": [
+        "legal_memorandum_fincombank_03092026.md"
+      ],
+      "sha256": "0522340820d57a0a823c063ce5d1ef818d9338e5fe8bc959293deb4e9559aeb2",
+      "status": "ready_for_court"
+    }
+  ]
+}
