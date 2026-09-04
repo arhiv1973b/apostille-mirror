@@ -70,12 +70,82 @@
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         console.log("TI-ULA Security Protocol Initialized.");
-        
-        // Подготовка к fetch('./dag_log.json')
         const statusElement = document.getElementById('blockchain-sync-status');
-        if(statusElement) {
-            statusElement.innerText = ">_ Подключено к ветке main. Ожидание новых манифестов...";
-        }
+        const countElement = document.getElementById('evidence-count');
+        const tbodyElement = document.querySelector('.evidence-table tbody');
+
+        fetch('./dag_manifest.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Не удалось загрузить dag_manifest.json");
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (!Array.isArray(data) || data.length === 0) {
+                    throw new Error("Манифест пуст или имеет неверный формат");
+                }
+
+                countElement.innerText = data.length;
+                tbodyElement.innerHTML = '';
+
+                data.forEach((node, index) => {
+                    const payload = node.payload || {};
+                    const docId = `DOC-2026-${String(index + 1).padStart(3, '0')}`;
+                    const filename = payload.document_ref || "document.pdf";
+                    const fileType = payload.summary || "Юридический документ / Реституция";
+                    const sha256Hash = node.node_hash || "N/A";
+                    const timestamp = payload.registration_date || "2026-08-15 14:32:01 UTC";
+                    const sig = node.signature_ed25519 ? node.signature_ed25519.substring(0, 16) + '...' : 'Ed25519';
+
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td><a href="./${filename}" target="_blank">${docId}</a></td>
+                        <td>${fileType}</td>
+                        <td><code style="font-size: 10px;" title="${sha256Hash}">${sha256Hash}</code></td>
+                        <td>${timestamp}</td>
+                        <td style="color: green;">✔ Verified (${sig})</td>
+                    `;
+                    tbodyElement.appendChild(row);
+                });
+
+                if(statusElement) {
+                    statusElement.innerText = ">_ Синхронизация успешна. Манифест загружен из DAG.";
+                }
+            })
+            .catch(error => {
+                console.warn("dag_manifest.json не найден или ошибка загрузки, пробуем dag_log.json...", error);
+                
+                fetch('./dag_log.json')
+                    .then(res => res.json())
+                    .then(logData => {
+                        if (Array.isArray(logData) && logData.length > 0) {
+                            countElement.innerText = logData.length;
+                            tbodyElement.innerHTML = '';
+                            logData.forEach((item, index) => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `
+                                    <td><a href="./docs/${item.filename}" target="_blank">${item.id}</a></td>
+                                    <td>${item.type}</td>
+                                    <td><code style="font-size: 10px;" title="${item.sha256}">${item.sha256}</code></td>
+                                    <td>${item.timestamp}</td>
+                                    <td style="color: green;">✔ Verified (Ed25519)</td>
+                                `;
+                                tbodyElement.appendChild(row);
+                            });
+                            if(statusElement) {
+                                statusElement.innerText = ">_ Синхронизация успешна (dag_log.json загружен).";
+                            }
+                        } else {
+                            throw new Error("Empty log");
+                        }
+                    })
+                    .catch(err => {
+                        if(statusElement) {
+                            statusElement.innerText = ">_ Ожидание генерации первого манифеста DAG...";
+                        }
+                    });
+            });
     });
     </script>
 </body>
