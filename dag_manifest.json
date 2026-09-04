@@ -114,5 +114,34 @@
     },
     "node_hash": "b73ceae5d2c2261461e43e5a0dbd8cdfcaff5f997fad0d401675a2337ecfb99b",
     "signature_ed25519": "f9000f4fae5ccbdf29961678afa32b691ab0a04c89f27ec759ffada399fe3f3396739a661c43b01b46a1a9c2ff220a7c05177f753d83b72438739f09d5df8c0b"
+  },
+  {
+    "previous_hash": "b73ceae5d2c2261461e43e5a0dbd8cdfcaff5f997fad0d401675a2337ecfb99b",
+    "payload": {
+      "case_id": "CASE-MACHERET-1997-2026",
+      "document_ref": "Документ (162).pdf",
+      "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+      "event_date": "2026-04-21T00:00:00Z",
+      "registration_date": "2026-09-04T23:55:32.713666+00:00",
+      "protocol": "A©tor Key / TI-ULA",
+      "summary": "Открытое уведомление о выявлении мошенничества и криптографическая фиксация",
+      "findings": {
+        "fraud_type": [
+          "Подлог идентификаторов",
+          "Незаконная блокировка активов",
+          "Фальсификация записей"
+        ],
+        "financial_impact_mdl": 25210256.15,
+        "target_idnp": "...655...555...455",
+        "evidence_count": 90,
+        "legal_articles_md": [
+          "191",
+          "332",
+          "349"
+        ]
+      }
+    },
+    "node_hash": "8202ee042b9af8ef2e0e1db05c497685a3aeb03e678a8778a28441d179d0521c",
+    "signature_ed25519": "a5f69b71eb5edc8dc09326fe590e91c8772e514d6e7e0d3238a58e9ab461459b70880ed4f7b68bb22cb3b71001f52ca306cf92fa69a3306b8686b6febcddde0e"
   }
 ]
