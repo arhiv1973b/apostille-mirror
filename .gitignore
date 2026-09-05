@@ -1,5 +1,7 @@
 # Security - Sensitive files to ignore
+*.pdf
 .env*
+*secret*
 *.pem
 *.key
 *.db
