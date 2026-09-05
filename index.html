@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audit-Hub: Case Explorer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CASE-MACHERET-1997-2026 — Evidence index</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 820px; margin: 2rem auto; padding: 0 1rem; line-height: 1.45; }
+    h1 { font-size: 1.35rem; }
+    .note { border: 1px solid #333; padding: .8rem 1rem; margin: 1rem 0; }
+    nav a { display: block; margin: .25rem 0; }
+    .hyp { opacity: .95; border-top: 1px dashed #999; margin-top: 2rem; padding-top: 1rem; }
+    .hyp h2 { font-size: 1.05rem; color: #444; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Audit-Hub Case Explorer</h1>
-        <div style="margin: 15px 0;">
-            <a href="tehnologice_portal.html" style="background: #238636; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">⚖ Открыть Tehnologice A©TOR Portal</a>
-        </div>
-        <input type="text" id="searchBox" placeholder="Поиск по ID или описанию...">
-    </header>
-    <main id="tileGrid" class="grid"></main>
+  <h1>CASE-MACHERET-1997-2026</h1>
+  <p>Индекс доказательств. Главная содержит только акты, реестр и хронологию.</p>
 
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <iframe id="modalIframe" src="" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <div class="note">
+    <strong>Слой A — доказательства.</strong>
+    Реестр, хеши, судебные акты, дело 1-568/98.
+    Аналитика и неподтверждённые суммы вынесены вниз, в слой B.
+  </div>
 
-    <script src="app.js"></script>
+  <h2>1. Реестр и целостность</h2>
+  <nav>
+    <a href="apostille-registry.html">Реестр апостилей / документов</a>
+    <a href="integrity.json">integrity.json (SHA-256)</a>
+    <a href="timeline.html">Хронология (даты и номера дел)</a>
+  </nav>
+
+  <h2>2. Судебные акты (как есть)</h2>
+  <nav>
+    <a href="acts/csj-1-834-09-2009-07-21.pdf">CSJ 1-834/09, 21.07.2009</a>
+    <a href="acts/incheiere-stambol-2025-12-23.pdf">Încheiere Stambol, 23.12.2025 — отказ в пересмотре и реабилитации</a>
+    <a href="acts/holban-2025-12-22.pdf">Hotărâre Holban, 22.12.2025</a>
+  </nav>
+  <p>Отказ 23.12.2025 остаётся в слое A: это акт суда, не «победа» и не «поражение сайта».</p>
+
+  <h2>3. Дело 1-568/98 — сухая хронология</h2>
+  <ol>
+    <li>1997–1998 — заявленные пытки; капитан Victor Dulce; dosar 1-568/98.</li>
+    <li>Переквалификация ст. 119 УК 1961 → ст. 217/219.</li>
+    <li>08.11.2006 — приговор Judecătoria Rîșcani, ст. 217 ч.2 и 219 ч.1, 1 год условно.</li>
+    <li>21.07.2009 — CSJ 1-834/09: отмена / признание дефекта обвинения (текст акта).</li>
+    <li>23.12.2025 — Stambol: пересмотр и судебная реабилитация отклонены; апелляция 15 дней.</li>
+  </ol>
+  <nav>
+    <a href="dossiers/1-568-98.html">Материалы 1-568/98</a>
+    <a href="dossiers/dulce.html">Эпизод Dulce (по актам и показаниям в деле)</a>
+  </nav>
+
+  <div class="hyp">
+    <h2>Слой B — версия автора (не доказательная база)</h2>
+    <p>Гипотезы. Не смешивать со слоем A в письмах прокурору.</p>
+    <nav>
+      <a href="author/fincombank-hypothesis.html">FinComBank / отображаемый остаток / грант США — гипотеза</a>
+      <a href="author/swift-imf.html">SWIFT / МВФ — рассуждение автора</a>
+      <a href="author/nota-verbale.html">Nota Verbale и входящие штампы (регистрация ≠ решение)</a>
+    </nav>
+    <p>Сумма 25 210 256,15 MDL на этой главной не утверждается как грант США.</p>
+  </div>
 </body>
 </html>
