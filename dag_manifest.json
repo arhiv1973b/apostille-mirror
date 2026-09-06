@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-05T08:47:33.548408+00:00",
-  "total_entries": 323,
+  "updated_at": "2026-09-05T15:29:06.085455+00:00",
+  "total_entries": 325,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3137,6 +3137,74 @@
       "node_hash": "5a84b4afdefcf0d97b9276b61d9ed97eaf233978c59a4b9163866d5d60ed4e21",
       "signature_ed25519": "c7307a35fc34bcad22b9fe631956b6d4b4641f672f0a096ee211fab8f27f9d6281d55fc631d0acc11032ee42b46ee0c2c86e975b46473cf75ca5f7613e3f500b",
       "human_approval_edge": "VERIFIED_BY_OWNER_KEY"
+    },
+    {
+      "previous_hash": "5a84b4afdefcf0d97b9276b61d9ed97eaf233978c59a4b9163866d5d60ed4e21",
+      "payload": {
+        "id": "DOC-20260905-151703",
+        "document_ref": "dossiers/1-568-98.html",
+        "sha256": "45f364439f3048f4c1a752bc3190682e0720e8cc9b23eabd090c25588a38484c",
+        "timestamp": "2026-09-05T15:17:03.557296+00:00",
+        "extraction": {
+          "parser_status": "SUCCESS",
+          "format": ".html",
+          "extracted_tokens_count": 1250
+        },
+        "temporal": {
+          "case_anchor": "CASE-MACHERET-1997-2026",
+          "dossier_ref": "1-568/98",
+          "temporal_range": "1997-2026"
+        },
+        "findings": {
+          "fraud_type": [
+            "Незаконная блокировка активов"
+          ],
+          "financial_impact_mdl": 0,
+          "legal_articles_md": [
+            "191",
+            "332"
+          ]
+        },
+        "jus_cogens_status": "VERIFIED_COMPLIANT",
+        "verification_verdict": "PASSED_JUS_COGENS_GATE",
+        "action": "REGISTER_DAG"
+      },
+      "node_hash": "6d08963c0bac7093a5f5c5dd8b83def5ca76a15c301f4b434991e30bcd3c2638",
+      "signature_ed25519": "21d10d6f9f8fa05cf0dcfc6cf33df5c60db8b63e3e94e8ef1fbc87c71732525b8b26d71953f29101ee80cefb3520173e562d4f67d580db70f90fa7668bc26605"
+    },
+    {
+      "previous_hash": "6d08963c0bac7093a5f5c5dd8b83def5ca76a15c301f4b434991e30bcd3c2638",
+      "payload": {
+        "id": "DOC-20260905-152906",
+        "document_ref": "PROCEDURAL_REQUIREMENT_JUS_COGENS.md",
+        "sha256": "0102bf5fff47706f33d45801d90972468899ebef6c73747027fb47bddfcbc1f6",
+        "timestamp": "2026-09-05T15:29:06.064725+00:00",
+        "extraction": {
+          "parser_status": "SUCCESS",
+          "format": ".md",
+          "extracted_tokens_count": 1250
+        },
+        "temporal": {
+          "case_anchor": "CASE-MACHERET-1997-2026",
+          "dossier_ref": "1-568/98",
+          "temporal_range": "1997-2026"
+        },
+        "findings": {
+          "fraud_type": [
+            "Незаконная блокировка активов"
+          ],
+          "financial_impact_mdl": 0,
+          "legal_articles_md": [
+            "191",
+            "332"
+          ]
+        },
+        "jus_cogens_status": "VERIFIED_COMPLIANT",
+        "verification_verdict": "PASSED_JUS_COGENS_GATE",
+        "action": "REGISTER_DAG"
+      },
+      "node_hash": "95cca4b7c6d1ce5784348b6dc8dae35c9bc02ff173594f4d709716877694732c",
+      "signature_ed25519": "5d1fee6aedfed37195be4f33ce94f74caeffd4ac559eb7021068043c11a36d6f01b9023bbf6cd394cab950697680e5bc0a5e17ec486254270a5eb8b5b5e9eb06"
     }
   ]
 }
