@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup historical log archive
+      - name: Setup historical log archive & generate index
         run: |
           mkdir -p public/logs/archive
           
@@ -30,48 +30,62 @@ jobs:
             cp public/logs/swarm-deploy.log "public/logs/archive/$LOG_NAME"
           fi
 
-          # Generate archive index page listing all historical logs
-          cat << 'EOF' > public/logs/index.html
-          <!DOCTYPE html>
-          <html lang="ro">
-          <head>
-          <meta charset="UTF-8">
-          <title>Swarm Deployment Logs Archive — Tiula & Case Macheret</title>
-          <style>
-            body { background: #050a0f; color: #c0d8ec; font-family: 'Share Tech Mono', monospace, sans-serif; padding: 20px; line-height: 1.6; }
-            h1 { color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }
-            pre { background: #071220; border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; }
-            .meta { color: #00b8e8; margin-bottom: 15px; }
-            ul { list-style: none; padding: 0; }
-            li { margin: 8px 0; background: #071220; padding: 10px; border: 1px solid #0c2e4a; border-radius: 4px; }
-            a { color: #40d4ff; text-decoration: none; }
-            a:hover { text-decoration: underline; }
-          </style>
-          </head>
-          <body>
-            <h1>🏛️ Swarm Orchestration Log Archive & Viewer</h1>
-            <div class="meta">Branch: <strong>${{ github.ref_name }}</strong> | Latest Commit: ${{ github.sha }}</div>
-            
-            <h3>Current Run Log:</h3>
-            <pre><code id="log-content">Loading current log...</code></pre>
+          # Generate archive index HTML with a complete file listing of all historical logs
+          python3 -c '
+import os
+import glob
 
-            <h3>Historical Log Archive:</h3>
-            <ul id="archive-list">Loading archive list...</ul>
+archive_dir = "public/logs/archive"
+log_files = sorted(glob.glob(os.path.join(archive_dir, "*.log")), reverse=True)
 
-            <script>
-              // Load current log
-              fetch('swarm-deploy.log')
-                .then(res => res.text())
-                .then(text => { document.getElementById('log-content').textContent = text; })
-                .catch(() => { document.getElementById('log-content').textContent = 'Log not available'; });
+list_items = ""
+for f in log_files:
+    basename = os.path.basename(f)
+    size = os.path.getsize(f)
+    list_items += f"<li><a href=\"archive/{basename}\">{basename}</a> ({size} bytes)</li>\n"
 
-              // List archive files (using GitHub Pages directory listing or static list generation)
-              // For static deployment, we can fetch an index or display recent runs
-              document.getElementById('archive-list').innerHTML = '<li><a href="archive/">📁 Browse Full Archive Directory</a></li>';
-            </script>
-          </body>
-          </html>
-          EOF
+html = f"""<!DOCTYPE html>
+<html lang=\"ro\">
+<head>
+<meta charset=\"UTF-8\">
+<title>Swarm Deployment Logs Archive — Tiula & Case Macheret</title>
+<style>
+  body {{ background: #050a0f; color: #c0d8ec; font-family: '\''Share Tech Mono'\'', monospace, sans-serif; padding: 20px; line-height: 1.6; }}
+  h1 {{ color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }}
+  pre {{ background: #071220; border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; }}
+  .meta {{ color: #00b8e8; margin-bottom: 15px; }}
+  ul {{ list-style: none; padding: 0; max-height: 400px; overflow-y: auto; border: 1px solid #0c2e4a; padding: 10px; background: #060f1a; }}
+  li {{ margin: 6px 0; background: #071220; padding: 8px 12px; border: 1px solid #0c2e4a; border-radius: 4px; }}
+  a {{ color: #40d4ff; text-decoration: none; }}
+  a:hover {{ text-decoration: underline; }}
+</style>
+</head>
+<body>
+  <h1>🏛️ Swarm Orchestration Log Archive & Viewer</h1>
+  <div class="meta">Branch: <strong>${{ github.ref_name }}</strong> | Latest Commit: ${{ github.sha }}</div>
+  
+  <h3>Current Run Log (swarm-deploy.log):</h3>
+  <pre><code id="log-content">Loading current log...</code></pre>
+
+  <h3>Historical Log Archive ({len(log_files)} snapshots):</h3>
+  <ul>
+    {list_items}
+  </ul>
+
+  <script>
+    fetch("swarm-deploy.log")
+      .then(res => res.text())
+      .then(text => {{ document.getElementById("log-content").textContent = text; }})
+      .catch(() => {{ document.getElementById("log-content").textContent = "Log not available"; }});
+  </script>
+</body>
+</html>
+"""
+
+with open("public/logs/index.html", "w", encoding="utf-8") as out:
+    out.write(html)
+print("[*] Generated complete HTML archive index with", len(log_files), "entries.")
+'
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
