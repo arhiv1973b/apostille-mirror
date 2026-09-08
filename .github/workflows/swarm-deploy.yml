@@ -1,30 +1,56 @@
-name: Swarm Deploy Logs
+name: Swarm Deploy Logs Across All Branches
 
 on:
   push:
-  pull_request:
-  workflow_dispatch:
+    branches:
+      - "**"
 
 jobs:
   publish-logs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Prepare public folder
+      - name: Prepare log and public directory
         run: |
           mkdir -p public/logs
-          if [ -f "apostille-mirror/logs/swarm-deploy.log" ]; then
-            cp apostille-mirror/logs/swarm-deploy.log public/logs/swarm-deploy.log
+          # Ensure swarm-deploy.log exists or create a placeholder if missing
+          if [ -f "swarm-deploy.log" ]; then
+            cp swarm-deploy.log public/logs/swarm-deploy.log
           else
-            echo "Swarm deploy log initialized at $(date -u)" > public/logs/swarm-deploy.log
+            echo "[$(date -u)] Swarm initialized on branch ${{ github.ref_name }}" > public/logs/swarm-deploy.log
           fi
-          
-          # Generate a nice index.html for logs
-          echo "<html><head><title>Swarm Deployment Logs</title></head><body><h1>Swarm Deployment Logs</h1><pre>" > public/logs/index.html
-          cat public/logs/swarm-deploy.log >> public/logs/index.html
-          echo "</pre></body></html>" >> public/logs/index.html
+
+          # Generate an interactive HTML log viewer index
+          cat << 'EOF' > public/logs/index.html
+          <!DOCTYPE html>
+          <html lang="ro">
+          <head>
+          <meta charset="UTF-8">
+          <title>Swarm Deployment Logs — Tiula & Case Macheret</title>
+          <style>
+            body { background: #050a0f; color: #c0d8ec; font-family: 'Share Tech Mono', monospace, sans-serif; padding: 20px; }
+            h1 { color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }
+            pre { background: #071220; border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; }
+            .meta { color: #00b8e8; margin-bottom: 15px; }
+          </style>
+          </head>
+          <body>
+            <h1>🏛️ Swarm Orchestration Log Viewer</h1>
+            <div class="meta">Branch: <strong>${{ github.ref_name }}</strong> | Commit: ${{ github.sha }}</div>
+            <pre><code id="log-content">Loading deployment log...</code></pre>
+            <script>
+              fetch('swarm-deploy.log')
+                .then(response => response.text())
+                .then(text => { document.getElementById('log-content').textContent = text; })
+                .catch(err => { document.getElementById('log-content').textContent = 'Failed to load swarm-deploy.log'; });
+            </script>
+          </body>
+          </html>
+          EOF
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -32,4 +58,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          commit_message: "Auto-publish swarm deploy logs [skip ci]"
+          force_orphan: true
