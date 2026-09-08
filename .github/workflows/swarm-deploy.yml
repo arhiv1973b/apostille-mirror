@@ -1,0 +1,35 @@
+name: Swarm Deploy Logs
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  publish-logs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Prepare public folder
+        run: |
+          mkdir -p public/logs
+          if [ -f "apostille-mirror/logs/swarm-deploy.log" ]; then
+            cp apostille-mirror/logs/swarm-deploy.log public/logs/swarm-deploy.log
+          else
+            echo "Swarm deploy log initialized at $(date -u)" > public/logs/swarm-deploy.log
+          fi
+          
+          # Generate a nice index.html for logs
+          echo "<html><head><title>Swarm Deployment Logs</title></head><body><h1>Swarm Deployment Logs</h1><pre>" > public/logs/index.html
+          cat public/logs/swarm-deploy.log >> public/logs/index.html
+          echo "</pre></body></html>" >> public/logs/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          commit_message: "Auto-publish swarm deploy logs [skip ci]"
