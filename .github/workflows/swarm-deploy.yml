@@ -1,4 +1,4 @@
-name: Swarm Deploy Logs Across All Branches
+name: Swarm Deploy & Historical Log Archive
 
 on:
   push:
@@ -14,39 +14,60 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Prepare log and public directory
+      - name: Setup historical log archive
         run: |
-          mkdir -p public/logs
-          # Ensure swarm-deploy.log exists or create a placeholder if missing
+          mkdir -p public/logs/archive
+          
+          # Current log snapshot
+          TIMESTAMP=$(date -u +"%Y%m%dT%H%M%SZ")
+          LOG_NAME="swarm-deploy-${{ github.ref_name }}-${{ github.sha }}-$TIMESTAMP.log"
+          
           if [ -f "swarm-deploy.log" ]; then
+            cp swarm-deploy.log "public/logs/archive/$LOG_NAME"
             cp swarm-deploy.log public/logs/swarm-deploy.log
           else
             echo "[$(date -u)] Swarm initialized on branch ${{ github.ref_name }}" > public/logs/swarm-deploy.log
+            cp public/logs/swarm-deploy.log "public/logs/archive/$LOG_NAME"
           fi
 
-          # Generate an interactive HTML log viewer index
+          # Generate archive index page listing all historical logs
           cat << 'EOF' > public/logs/index.html
           <!DOCTYPE html>
           <html lang="ro">
           <head>
           <meta charset="UTF-8">
-          <title>Swarm Deployment Logs — Tiula & Case Macheret</title>
+          <title>Swarm Deployment Logs Archive — Tiula & Case Macheret</title>
           <style>
-            body { background: #050a0f; color: #c0d8ec; font-family: 'Share Tech Mono', monospace, sans-serif; padding: 20px; }
+            body { background: #050a0f; color: #c0d8ec; font-family: 'Share Tech Mono', monospace, sans-serif; padding: 20px; line-height: 1.6; }
             h1 { color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }
             pre { background: #071220; border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; }
             .meta { color: #00b8e8; margin-bottom: 15px; }
+            ul { list-style: none; padding: 0; }
+            li { margin: 8px 0; background: #071220; padding: 10px; border: 1px solid #0c2e4a; border-radius: 4px; }
+            a { color: #40d4ff; text-decoration: none; }
+            a:hover { text-decoration: underline; }
           </style>
           </head>
           <body>
-            <h1>🏛️ Swarm Orchestration Log Viewer</h1>
-            <div class="meta">Branch: <strong>${{ github.ref_name }}</strong> | Commit: ${{ github.sha }}</div>
-            <pre><code id="log-content">Loading deployment log...</code></pre>
+            <h1>🏛️ Swarm Orchestration Log Archive & Viewer</h1>
+            <div class="meta">Branch: <strong>${{ github.ref_name }}</strong> | Latest Commit: ${{ github.sha }}</div>
+            
+            <h3>Current Run Log:</h3>
+            <pre><code id="log-content">Loading current log...</code></pre>
+
+            <h3>Historical Log Archive:</h3>
+            <ul id="archive-list">Loading archive list...</ul>
+
             <script>
+              // Load current log
               fetch('swarm-deploy.log')
-                .then(response => response.text())
+                .then(res => res.text())
                 .then(text => { document.getElementById('log-content').textContent = text; })
-                .catch(err => { document.getElementById('log-content').textContent = 'Failed to load swarm-deploy.log'; });
+                .catch(() => { document.getElementById('log-content').textContent = 'Log not available'; });
+
+              // List archive files (using GitHub Pages directory listing or static list generation)
+              // For static deployment, we can fetch an index or display recent runs
+              document.getElementById('archive-list').innerHTML = '<li><a href="archive/">📁 Browse Full Archive Directory</a></li>';
             </script>
           </body>
           </html>
