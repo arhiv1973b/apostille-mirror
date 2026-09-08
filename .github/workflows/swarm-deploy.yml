@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup historical log archive & generate index
+      - name: Setup historical log archive & generate index with search
         run: |
           mkdir -p public/logs/archive
           
@@ -30,7 +30,7 @@ jobs:
             cp public/logs/swarm-deploy.log "public/logs/archive/$LOG_NAME"
           fi
 
-          # Generate archive index HTML with a complete file listing of all historical logs
+          # Generate archive index HTML with search/filter capabilities
           python3 -c '
 import os
 import glob
@@ -42,7 +42,7 @@ list_items = ""
 for f in log_files:
     basename = os.path.basename(f)
     size = os.path.getsize(f)
-    list_items += f"<li><a href=\"archive/{basename}\">{basename}</a> ({size} bytes)</li>\n"
+    list_items += f"<li class=\"log-item\"><a href=\"archive/{basename}\">{basename}</a> ({size} bytes)</li>\n"
 
 html = f"""<!DOCTYPE html>
 <html lang=\"ro\">
@@ -54,6 +54,7 @@ html = f"""<!DOCTYPE html>
   h1 {{ color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }}
   pre {{ background: #071220; border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; }}
   .meta {{ color: #00b8e8; margin-bottom: 15px; }}
+  .search-box {{ width: 100%; padding: 10px; background: #071220; border: 1px solid #0c2e4a; color: #f0c040; font-family: inherit; font-size: 14px; margin-bottom: 15px; border-radius: 4px; }}
   ul {{ list-style: none; padding: 0; max-height: 400px; overflow-y: auto; border: 1px solid #0c2e4a; padding: 10px; background: #060f1a; }}
   li {{ margin: 6px 0; background: #071220; padding: 8px 12px; border: 1px solid #0c2e4a; border-radius: 4px; }}
   a {{ color: #40d4ff; text-decoration: none; }}
@@ -68,7 +69,8 @@ html = f"""<!DOCTYPE html>
   <pre><code id="log-content">Loading current log...</code></pre>
 
   <h3>Historical Log Archive ({len(log_files)} snapshots):</h3>
-  <ul>
+  <input type="text" id="logSearch" class="search-box" placeholder="🔍 Search logs by branch, commit SHA, or date..." onkeyup="filterLogs()">
+  <ul id="logList">
     {list_items}
   </ul>
 
@@ -77,6 +79,15 @@ html = f"""<!DOCTYPE html>
       .then(res => res.text())
       .then(text => {{ document.getElementById("log-content").textContent = text; }})
       .catch(() => {{ document.getElementById("log-content").textContent = "Log not available"; }});
+
+    function filterLogs() {{
+      let input = document.getElementById("logSearch").value.toLowerCase();
+      let items = document.getElementsByClassName("log-item");
+      for (let i = 0; i < items.length; i++) {{
+        let text = items[i].textContent.toLowerCase();
+        items[i].style.display = text.includes(input) ? "" : "none";
+      }}
+    }}
   </script>
 </body>
 </html>
@@ -84,7 +95,7 @@ html = f"""<!DOCTYPE html>
 
 with open("public/logs/index.html", "w", encoding="utf-8") as out:
     out.write(html)
-print("[*] Generated complete HTML archive index with", len(log_files), "entries.")
+print("[*] Generated HTML archive index with search feature for", len(log_files), "entries.")
 '
 
       - name: Deploy to GitHub Pages
