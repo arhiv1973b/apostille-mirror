@@ -1,0 +1,107 @@
+name: Swarm Deploy & Historical Log Archive
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  publish-logs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup historical log archive & generate index with search
+        run: |
+          mkdir -p public/logs/archive
+          
+          # Current log snapshot
+          TIMESTAMP=$(date -u +"%Y%m%dT%H%M%SZ")
+          LOG_NAME="swarm-deploy-${{ github.ref_name }}-${{ github.sha }}-$TIMESTAMP.log"
+          
+          if [ -f "swarm-deploy.log" ]; then
+            cp swarm-deploy.log "public/logs/archive/$LOG_NAME"
+            cp swarm-deploy.log public/logs/swarm-deploy.log
+          else
+            echo "[$(date -u)] Swarm initialized on branch ${{ github.ref_name }}" > public/logs/swarm-deploy.log
+            cp public/logs/swarm-deploy.log "public/logs/archive/$LOG_NAME"
+          fi
+
+          # Generate archive index HTML with search/filter capabilities
+          python3 -c '
+import os
+import glob
+
+archive_dir = "public/logs/archive"
+log_files = sorted(glob.glob(os.path.join(archive_dir, "*.log")), reverse=True)
+
+list_items = ""
+for f in log_files:
+    basename = os.path.basename(f)
+    size = os.path.getsize(f)
+    list_items += f"<li class=\"log-item\"><a href=\"archive/{basename}\">{basename}</a> ({size} bytes)</li>\n"
+
+html = f"""<!DOCTYPE html>
+<html lang=\"ro\">
+<head>
+<meta charset=\"UTF-8\">
+<title>Swarm Deployment Logs Archive — Tiula & Case Macheret</title>
+<style>
+  body {{ background: #050a0f; color: #c0d8ec; font-family: '\''Share Tech Mono'\'', monospace, sans-serif; padding: 20px; line-height: 1.6; }}
+  h1 {{ color: #f0c040; border-bottom: 1px solid #103c60; padding-bottom: 10px; }}
+  pre {{ background: #071220; border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; }}
+  .meta {{ color: #00b8e8; margin-bottom: 15px; }}
+  .search-box {{ width: 100%; padding: 10px; background: #071220; border: 1px solid #0c2e4a; color: #f0c040; font-family: inherit; font-size: 14px; margin-bottom: 15px; border-radius: 4px; }}
+  ul {{ list-style: none; padding: 0; max-height: 400px; overflow-y: auto; border: 1px solid #0c2e4a; padding: 10px; background: #060f1a; }}
+  li {{ margin: 6px 0; background: #071220; padding: 8px 12px; border: 1px solid #0c2e4a; border-radius: 4px; }}
+  a {{ color: #40d4ff; text-decoration: none; }}
+  a:hover {{ text-decoration: underline; }}
+</style>
+</head>
+<body>
+  <h1>🏛️ Swarm Orchestration Log Archive & Viewer</h1>
+  <div class="meta">Branch: <strong>${{ github.ref_name }}</strong> | Latest Commit: ${{ github.sha }}</div>
+  
+  <h3>Current Run Log (swarm-deploy.log):</h3>
+  <pre><code id="log-content">Loading current log...</code></pre>
+
+  <h3>Historical Log Archive ({len(log_files)} snapshots):</h3>
+  <input type="text" id="logSearch" class="search-box" placeholder="🔍 Search logs by branch, commit SHA, or date..." onkeyup="filterLogs()">
+  <ul id="logList">
+    {list_items}
+  </ul>
+
+  <script>
+    fetch("swarm-deploy.log")
+      .then(res => res.text())
+      .then(text => {{ document.getElementById("log-content").textContent = text; }})
+      .catch(() => {{ document.getElementById("log-content").textContent = "Log not available"; }});
+
+    function filterLogs() {{
+      let input = document.getElementById("logSearch").value.toLowerCase();
+      let items = document.getElementsByClassName("log-item");
+      for (let i = 0; i < items.length; i++) {{
+        let text = items[i].textContent.toLowerCase();
+        items[i].style.display = text.includes(input) ? "" : "none";
+      }}
+    }}
+  </script>
+</body>
+</html>
+"""
+
+with open("public/logs/index.html", "w", encoding="utf-8") as out:
+    out.write(html)
+print("[*] Generated HTML archive index with search feature for", len(log_files), "entries.")
+'
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true
