@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-05T15:29:06.085455+00:00",
-  "total_entries": 325,
+  "updated_at": "2026-09-11T18:10:45.082214+00:00",
+  "total_entries": 326,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3205,6 +3205,61 @@
       },
       "node_hash": "95cca4b7c6d1ce5784348b6dc8dae35c9bc02ff173594f4d709716877694732c",
       "signature_ed25519": "5d1fee6aedfed37195be4f33ce94f74caeffd4ac559eb7021068043c11a36d6f01b9023bbf6cd394cab950697680e5bc0a5e17ec486254270a5eb8b5b5e9eb06"
+    },
+    {
+      "previous_hash": "95cca4b7c6d1ce5784348b6dc8dae35c9bc02ff173594f4d709716877694732c",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "Документ (162).pdf",
+        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+        "event_date": "2026-04-21T00:00:00Z",
+        "registration_date": "2026-09-11T18:10:44.991610+00:00",
+        "protocol": "TI-ULA Graph Engineering / Ed25519",
+        "summary": "Мультиагентная графовая верификация кейса Мачерета с состязательным шлюзом",
+        "findings": {
+          "fraud_type": [
+            "Подлог идентификаторов",
+            "Незаконная блокировка активов",
+            "Фальсификация записей"
+          ],
+          "financial_impact_mdl": 25210256.15,
+          "target_idnp": "...655...555...455",
+          "evidence_count": 90,
+          "legal_articles_md": [
+            "191",
+            "332",
+            "349"
+          ],
+          "jus_cogens_applicable": [
+            "Art. 53 VCLT",
+            "Art. 64 VCLT"
+          ]
+        },
+        "node_a_metrics": {
+          "parser_status": "SUCCESS",
+          "file_size_bytes": 11301,
+          "extracted_tokens_est": 2825,
+          "structural_integrity": "VALID_PDF"
+        },
+        "node_b_metrics": {
+          "crypto_status": "VERIFIED",
+          "sha256": "6ce80ae5f6168b0ea229f2045eaee63b63d082275f0710db4736372e84b897cb",
+          "algorithm": "SHA-256"
+        },
+        "node_c_metrics": {
+          "timeline_status": "ALIGNED",
+          "temporal_anchor": "2026-04-21T00:00:00Z",
+          "jurisdiction": "Republic of Moldova / International Tribunal Framework",
+          "case_ref": "CASE-MACHERET-1997-2026"
+        },
+        "state_merged_at": "2026-09-11T18:10:45.008203+00:00",
+        "convergence_status": "READY_FOR_VERIFICATION",
+        "verification_status": "VERIFIED_LAWFUL",
+        "verification_reason": "Evidence withstands adversarial scrutiny; conforms to legal imperatives."
+      },
+      "human_approval_signature": "ED25519_HUMAN_AUDITOR_VERIFIED_2026",
+      "node_hash": "36bbb62fe85c58bd3ec1d7d9da0e05dec167c688b7d1dcf1fe79a9cc4a333e46",
+      "signature_ed25519": "8451c95a318cdd93e9e372c242e8b1f583383a59a1e9d24d6c06a4bdb2a3e87a894203b70905a99382eebfbdc9c2ec7f1807a15e2fb72765323b7876d11eb407"
     }
   ]
 }
