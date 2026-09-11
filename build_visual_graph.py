@@ -1,82 +1,108 @@
 import json
-import subprocess
+import os
+import glob
 
+print("Чтение локальных файлов и реестров для построения графа доказательств...")
 
-def read_git_json(filepath):
-    try:
-        res = subprocess.run(
-            ["git", "show", f"d4e1da34291bcf92d29fe2af51d2b29c89634a6f:{filepath}"],
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-        )
-        return json.loads(res.stdout) if res.returncode == 0 else None
-    except Exception:
-        return None
-
-
-print("Чтение структуры связей (edges)...")
-edges_data = read_git_json("registry_chunks/edges.json")
-edges = edges_data.get("edges", []) if edges_data else []
-
-print("Чтение узлов доказательств (nodes)...")
 vis_nodes = []
 vis_edges = []
-keywords = ["1-568", "fincombank", "nbm", "jus_cogens", "venice"]
 
-# Читаем чанки (1-7)
+# Добавляем ключевые якорные узлы текущей сессии
+anchors = [
+    {
+        "id": "ets-nr-2-anchor",
+        "label": "[ets-nr-2-anchor]\nHistorical Defect of ECHR - ETS nr. 2",
+        "color": "#c8960a",  # Gold
+        "desc": "ETS nr. 2 (02.09.1949) vs Jus Cogens / UDHR 1948",
+    },
+    {
+        "id": "un-petition-s22-anchor",
+        "label": "[un-petition-s22-anchor]\nUN Petition & S-22 Anchor",
+        "color": "#9933cc",  # Purple
+        "desc": "S-22 (1998) torture finding and UN 2022 Petition",
+    },
+]
+
+for a in anchors:
+    vis_nodes.append(
+        f"{{id: '{a['id']}', label: \"{a['label']}\", color: '{a['color']}', shape: 'box'}}"
+    )
+
+# Связываем якоря с ключевыми концептами
+vis_edges.append(
+    "{from: 'ets-nr-2-anchor', to: 'un-petition-s22-anchor', label: 'activates jus cogens'}"
+)
+
+# Читаем локальные чанки если они есть
 for i in range(1, 8):
-    chunk = read_git_json(f"registry_chunks/registry_chunk_{i}.json")
-    if not chunk:
-        continue
+    chunk_path = f"registry_chunks/registry_chunk_{i}.json"
+    if os.path.exists(chunk_path):
+        try:
+            with open(chunk_path, "r", encoding="utf-8") as f:
+                chunk = json.load(f)
+            for node in chunk.get("evidence_nodes", []):
+                node_id = node.get("node_id")
+                doc_ref = node.get("document_ref", "").lower()
 
-    for node in chunk.get("evidence_nodes", []):
-        node_id = node.get("node_id")
-        doc_ref = node.get("document_ref", "").lower()
+                color = "#4a4a4a"
+                if "1-568" in doc_ref:
+                    color = "#cc0000"
+                elif "fincombank" in doc_ref or "nbm" in doc_ref:
+                    color = "#ff8c00"
+                elif (
+                    "jus_cogens" in doc_ref
+                    or "venice" in doc_ref
+                    or "ets" in doc_ref
+                    or "s-22" in doc_ref
+                ):
+                    color = "#0000cc"
 
-        # Определяем категорию и цвет
-        color = "#4a4a4a"  # Default
-        if "1-568" in doc_ref:
-            color = "#cc0000"  # Detention (Красный)
-        elif "fincombank" in doc_ref or "nbm" in doc_ref:
-            color = "#ff8c00"  # Blockade (Оранжевый)
-        elif "jus_cogens" in doc_ref or "venice" in doc_ref:
-            color = "#0000cc"  # Jus Cogens (Синий)
+                if color != "#4a4a4a":
+                    label = (
+                        f"[{node_id}]\n{node.get('document_ref', 'Unknown')[:30]}..."
+                    )
+                    vis_nodes.append(
+                        f"{{id: '{node_id}', label: \"{label}\", color: '{color}', shape: 'box'}}"
+                    )
+        except Exception:
+            pass
 
-        # Добавляем узел, если он ключевой
-        if color != "#4a4a4a":
-            label = f"[{node_id}]\n{node.get('document_ref', 'Unknown')[:30]}..."
-            vis_nodes.append(
-                f"{{id: '{node_id}', label: '{label}', color: '{color}', shape: 'box'}}"
-            )
-
-# Формируем связи только для найденных ключевых узлов
+# Читаем edges.json если есть
+edges_path = "registry_chunks/edges.json"
 node_ids = [n.split("id: '")[1].split("'")[0] for n in vis_nodes]
-for edge in edges:
-    if edge["source"] in node_ids or edge["target"] in node_ids:
-        vis_edges.append(
-            f"{{from: '{edge['source']}', to: '{edge['target']}', label: '{edge.get('relation', '')}'}}"
-        )
+if os.path.exists(edges_path):
+    try:
+        with open(edges_path, "r", encoding="utf-8") as f:
+            edges_data = json.load(f)
+        for edge in edges_data.get("edges", []):
+            if edge["source"] in node_ids or edge["target"] in node_ids:
+                vis_edges.append(
+                    f"{{from: '{edge['source']}', to: '{edge['target']}', label: '{edge.get('relation', '')}'}}"
+                )
+    except Exception:
+        pass
 
 html_content = f"""
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TI-ULA Evidence Graph: CASE-MACHERET-1997-2026</title>
+  <title>TI-ULA Evidence Graph: CASE-MACHERET-1997-2026 (Updated)</title>
   <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <style type="text/css">
-    body {{ background-color: #1e1e1e; color: white; font-family: sans-serif; margin: 0; }}
+    body {{ background-color: #050a0f; color: #c0d8ec; font-family: 'Rajdhani', sans-serif; margin: 0; }}
     #mynetwork {{ width: 100vw; height: 100vh; border: none; }}
-    #legend {{ position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 15px; border-radius: 5px; }}
+    #legend {{ position: absolute; top: 10px; left: 10px; background: rgba(6,15,26,0.9); border: 1px solid #0c2e4a; padding: 15px; border-radius: 4px; z-index: 10; font-family: 'Share Tech Mono', monospace; font-size: 13px; }}
   </style>
 </head>
 <body>
 <div id="legend">
-    <h3>CASE-MACHERET-1997-2026</h3>
+    <h3 style="color:#f0c040; margin-bottom: 10px;">CASE-MACHERET 1997–2026</h3>
     <p><span style="color:#cc0000;">■</span> Detention (Root Cause: 1-568/98)</p>
     <p><span style="color:#ff8c00;">■</span> Financial Blockade (Fincombank)</p>
-    <p><span style="color:#0000cc;">■</span> Jus Cogens / Erga Omnes</p>
+    <p><span style="color:#0000cc;">■</span> Jus Cogens / Venice / ETS</p>
+    <p><span style="color:#c8960a;">■</span> ETS nr. 2 Anchor (1949)</p>
+    <p><span style="color:#9933cc;">■</span> UN Petition S-22 Anchor</p>
 </div>
 <div id="mynetwork"></div>
 <script type="text/javascript">
@@ -84,7 +110,7 @@ html_content = f"""
   var edges = new vis.DataSet([{",".join(vis_edges)}]);
   var container = document.getElementById('mynetwork');
   var data = {{ nodes: nodes, edges: edges }};
-  var options = {{ edges: {{ arrows: 'to', color: '#aaaaaa' }}, physics: {{ stabilization: false, barnesHut: {{ springLength: 200 }} }} }};
+  var options = {{ edges: {{ arrows: 'to', color: '#8ab0cc' }}, physics: {{ stabilization: false, barnesHut: {{ springLength: 200 }} }} }};
   var network = new vis.Network(container, data, options);
 </script>
 </body>
@@ -93,4 +119,4 @@ html_content = f"""
 
 with open("evidence_map.html", "w", encoding="utf-8") as f:
     f.write(html_content)
-print("Успех! Граф сохранен в файл: evidence_map.html. Откройте его в любом браузере.")
+print("Успех! Обновленный граф сохранен в файл: evidence_map.html")
