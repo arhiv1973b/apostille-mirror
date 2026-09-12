@@ -1,44 +1,70 @@
 {
-  "id": "ECHR_IMPUNITY_DAG",
-  "type": "graph",
-  "title": "Topography of the Architecture of Impunity",
+  "metadata": {
+    "schema_version": "1.0",
+    "project": "CASE-MACHERET-1997-2026",
+    "module": "ECHR_IMPUNITY_DAG",
+    "description": "Структурный граф доказательств (DAG), связывающий императивные нормы Jus Cogens, институциональные фильтры иммунитетов (ETS nr. 2) и эмпирическую проекцию непрерывных последствий."
+  },
   "nodes": [
     {
       "id": "Jus_Cogens_Invariant",
-      "label": "Jus Cogens Invariant",
-      "description": "Переменные нормы международного права (jus cogens) действуют как топологический инвариант: любая попытка процедурного обхода фиксируется как доказательство вины и переводит субъект в состояние необратимого коллапса."
+      "type": "normative_invariant",
+      "title": "Jus Cogens Invariant",
+      "description": "Фиксирует императивность норм (включая запрет пыток, произвольного задержания и право на справедливое судебное разбирательство) и превращает любое институциональное нарушение в прямое доказательство деликта.",
+      "legal_basis": [
+        "Статьи 53 и 64 Венской конвенции о праве международных договоров 1969 г.",
+        "Выводы Комиссии международного права ООН (ILC) № 10, 21, 23"
+      ]
     },
     {
       "id": "ETS_nr_2_Anchor",
-      "label": "ETS nr. 2 Anchor",
-      "description": "Юридический якорь: процессуальные фильтры и иммунитеты, легализующие континуитет элит и защищающие государственные кадры от прямой ответственности."
+      "type": "institutional_anchor",
+      "title": "ETS nr. 2 Anchor",
+      "description": "Юридический якорь иммунитетов и процессуальных фильтров Совета Европы (1949 г.), используемый для изоляции контура ответственности.",
+      "legal_basis": [
+        "Генеральное соглашение о привилегиях и иммунитетах Совета Европы (ETS № 2, 1949 г.)"
+      ]
     },
     {
       "id": "Geopolitical_Genesis_of_Impunity",
-      "label": "Geopolitical Genesis of Impunity",
-      "description": "Геополитический контекст: институциональные корни фильтров ЕКПЧ, колониальная оговорка и коммерциализация прав человека через 'Just Satisfaction'."
+      "type": "structural_design",
+      "title": "Geopolitical Genesis of Impunity",
+      "description": "Геополитический и институциональный контекст, объясняющий встроенный дизайн защитных механизмов и колониальные/ведомственные оговорки.",
+      "legal_basis": [
+        "Практика применения конвенционных механизмов с учетом оговорок и суверенного иммунитета"
+      ]
+    },
+    {
+      "id": "Case_Macheret_Projection",
+      "type": "empirical_projection",
+      "title": "CASE-MACHERET-1997-2026",
+      "description": "Эмпирическая проекция: Республика Молдова, приговор S-22, ратификация ETS nr. 2, системное затягивание процедур до 2025–2026 гг., проявление доктрины непрерывных последствий (continuing consequences)."
     }
   ],
   "edges": [
     {
-      "from": "Jus_Cogens_Invariant",
-      "to": "ETS_nr_2_Anchor",
-      "relation": "Violation attempts reinforce proof"
+      "source": "Jus_Cogens_Invariant",
+      "target": "ETS_nr_2_Anchor",
+      "relation": "collision_and_strengthening",
+      "description": "Попытка прикрытия иммунитетом по ETS № 2 вступает в противоречие с Jus Cogens, что автоматически усиливает доказательную линию незаконности такого щита."
     },
     {
-      "from": "Jus_Cogens_Invariant",
-      "to": "Geopolitical_Genesis_of_Impunity",
-      "relation": "Procedural bypass strengthens context"
+      "source": "Jus_Cogens_Invariant",
+      "target": "Geopolitical_Genesis_of_Impunity",
+      "relation": "procedural_bypass",
+      "description": "Процессуальный обход императивных обязательств подтверждает изначальный исторический и геополитический замысел встроенной безнаказанности."
     },
     {
-      "from": "ETS_nr_2_Anchor",
-      "to": "Geopolitical_Genesis_of_Impunity",
-      "relation": "Legal construct supports geopolitical design"
+      "source": "ETS_nr_2_Anchor",
+      "target": "Geopolitical_Genesis_of_Impunity",
+      "relation": "institutional_realization",
+      "description": "Юридическая машина иммунитетов реализует на практике заданный геополитический дизайн изоляции правоприменителей."
+    },
+    {
+      "source": "ETS_nr_2_Anchor",
+      "target": "Case_Macheret_Projection",
+      "relation": "applied_projection",
+      "description": "Институциональный фильтр проецируется на национальный контур (Молдова), порождая приговор S-22 и многолетнее затягивание."
     }
-  ],
-  "projection": {
-    "country": "Republic of Moldova",
-    "case": "CASE-MACHERET-1997-2026",
-    "effect": "Приговор S‑22 (1998) зафиксировал факт пытки. Ратификация ETS nr. 2 в 1997 встроила молдавскую систему в западный механизм безнаказанности. Все последующие апелляции лишь усилили доказательную линию, подтверждая институциональный замысел."
-  }
+  ]
 }
