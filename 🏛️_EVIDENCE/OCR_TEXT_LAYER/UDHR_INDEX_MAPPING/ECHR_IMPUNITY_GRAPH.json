@@ -1,0 +1,44 @@
+{
+  "id": "ECHR_IMPUNITY_DAG",
+  "type": "graph",
+  "title": "Архитектура безнаказанности: ETS nr. 2 и Genesis",
+  "nodes": [
+    {
+      "id": "Jus_Cogens_Invariant",
+      "label": "Jus Cogens Invariant",
+      "description": "Императивность jus cogens действует как топологический инвариант: любое нарушение фиксируется как доказательство вины и переводит субъект в состояние необратимого коллапса."
+    },
+    {
+      "id": "ETS_nr_2_Anchor",
+      "label": "ETS nr. 2 Anchor",
+      "description": "Юридический якорь: процессуальные фильтры и иммунитеты, легализующие континуитет элит."
+    },
+    {
+      "id": "Geopolitical_Genesis_of_Impunity",
+      "label": "Geopolitical Genesis of Impunity",
+      "description": "Геополитический контекст: институциональные корни фильтров ЕКПЧ, защита колониальных и финансовых аппаратов."
+    }
+  ],
+  "edges": [
+    {
+      "from": "Jus_Cogens_Invariant",
+      "to": "ETS_nr_2_Anchor",
+      "relation": "Violation attempts reinforce proof"
+    },
+    {
+      "from": "Jus_Cogens_Invariant",
+      "to": "Geopolitical_Genesis_of_Impunity",
+      "relation": "Procedural bypass strengthens context"
+    },
+    {
+      "from": "ETS_nr_2_Anchor",
+      "to": "Geopolitical_Genesis_of_Impunity",
+      "relation": "Legal construct supports geopolitical design"
+    }
+  ],
+  "projection": {
+    "country": "Republic of Moldova",
+    "case": "CASE-MACHERET-1997-2026",
+    "effect": "Попытка процедурного обхода UDHR в деле S‑22 усилила доказательную линию: ETS nr. 2 и ЕКПЧ стали не защитой, а подтверждением институционального замысла безнаказанности."
+  }
+}
