@@ -38,47 +38,46 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-udhr-index-matrix-v1-
 
-      - name: Verify UDHR Cache Integrity (Canonical Manifest)
+      - name: Verify UDHR Cache Integrity (Structured Manifest)
         if: steps.udhr-cache.outputs.cache-hit == 'true'
         run: |
           set -euo pipefail
-          MANIFEST="🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING/_MANIFEST.sha256"
+          MANIFEST="🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING/_MANIFEST.json"
           
           if [ ! -f "$MANIFEST" ]; then
-            echo "[-] Manifest missing — cannot verify integrity"
+            echo "[-] Structured manifest missing — cannot verify integrity"
             exit 1
           fi
           
-          EXPECTED_HASH=$(tr -d '[:space:]' < "$MANIFEST")
-          
-          ACTUAL_HASH=$(python3 -c '
-          import os, hashlib
+          ACTUAL_ROOT=$(python3 -c '
+          import os, json, hashlib
           out_dir = "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING"
-          files = []
-          for root, _, filenames in os.walk(out_dir):
-              for fn in filenames:
-                  if fn == "_MANIFEST.sha256":
-                      continue
-                  files.append(os.path.join(root, fn))
-          files.sort()
+          manifest_path = os.path.join(out_dir, "_MANIFEST.json")
+          with open(manifest_path, "r", encoding="utf-8") as f:
+              m = json.load(f)
+          
           hasher = hashlib.sha256()
-          for fpath in files:
-              with open(fpath, "rb") as f:
-                  content = f.read()
-              rel_path = os.path.relpath(fpath, out_dir).replace("\\", "/")
-              hasher.update(rel_path.encode("utf-8"))
-              hasher.update(b"\0")
-              hasher.update(hashlib.sha256(content).digest())
+          for fn in sorted(m["files"].keys()):
+              fpath = os.path.join(out_dir, fn)
+              if os.path.exists(fpath):
+                  with open(fpath, "rb") as f:
+                      content = f.read()
+                  rel_path = fn.replace("\\", "/")
+                  hasher.update(rel_path.encode("utf-8"))
+                  hasher.update(b"\0")
+                  hasher.update(hashlib.sha256(content).digest())
           print(hasher.hexdigest())
           ')
+          
+          EXPECTED_ROOT=$(python3 -c 'import json; print(json.load(open("🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING/_MANIFEST.json"))["root"])')
 
-          if [ "$ACTUAL_HASH" != "$EXPECTED_HASH" ]; then
-            echo "[-] Integrity failure — possible cache poisoning"
-            echo "Expected (manifest): $EXPECTED_HASH"
-            echo "Actual:              $ACTUAL_HASH"
+          if [ "$ACTUAL_ROOT" != "$EXPECTED_ROOT" ]; then
+            echo "[-] Integrity failure — root mismatch (possible cache poisoning or file tampering)"
+            echo "Expected Root: $EXPECTED_ROOT"
+            echo "Actual Root:   $ACTUAL_ROOT"
             exit 1
           fi
-          echo "[+] UDHR Index Matrix integrity confirmed via canonical manifest"
+          echo "[+] UDHR Index Matrix integrity confirmed via structured root manifest"
 
       - name: Guard against banned paths
         run: |

@@ -12,33 +12,48 @@ def update_udhr_index_manifest():
     out_dir = "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING"
     os.makedirs(out_dir, exist_ok=True)
 
-    files = []
-    for root, _, filenames in os.walk(out_dir):
-        for fn in filenames:
-            if fn == "_MANIFEST.sha256":
-                continue
-            files.append(os.path.join(root, fn))
-    files.sort()
-
+    file_hashes = {}
     hasher = hashlib.sha256()
-    for fpath in files:
-        with open(fpath, "rb") as f:
-            content = f.read()
-        rel_path = os.path.relpath(fpath, out_dir).replace("\\", "/")
-        hasher.update(rel_path.encode("utf-8"))
-        hasher.update(b"\0")
-        hasher.update(hashlib.sha256(content).digest())
 
-    collective_hash = hasher.hexdigest()
+    # Собираем все JSON файлы, исключая старые артефакты
+    all_items = sorted(os.listdir(out_dir))
+    for fn in all_items:
+        if fn.endswith(".json") and fn != "_MANIFEST.json":
+            fpath = os.path.join(out_dir, fn)
+            with open(fpath, "rb") as f:
+                content = f.read()
+            file_sha = hashlib.sha256(content).hexdigest()
+            file_hashes[fn] = file_sha
 
-    manifest_path = os.path.join(out_dir, "_MANIFEST.sha256")
+            # Каноническое обновление общего корня
+            rel_path = fn.replace("\\", "/")
+            hasher.update(rel_path.encode("utf-8"))
+            hasher.update(b"\0")
+            hasher.update(hashlib.sha256(content).digest())
+
+    collective_root = hasher.hexdigest()
+
+    manifest_data = {
+        "version": 2,
+        "algorithm": "sha256",
+        "baseline": "UDHR 1948 (Jus Cogens)",
+        "files": file_hashes,
+        "root": collective_root,
+    }
+
+    manifest_path = os.path.join(out_dir, "_MANIFEST.json")
     with open(manifest_path, "w", encoding="utf-8") as f:
-        f.write(collective_hash + "\n")
+        json.dump(manifest_data, f, indent=4, ensure_ascii=False)
+
+    # Удаляем старый .sha256 файл, если остался
+    old_sha_path = os.path.join(out_dir, "_MANIFEST.sha256")
+    if os.path.exists(old_sha_path):
+        os.remove(old_sha_path)
 
     print(
-        f"[+] UDHR Index Manifest updated: {manifest_path} | Collective SHA256: {collective_hash}"
+        f"[+] Structured UDHR Manifest updated: {manifest_path} | Root SHA256: {collective_root}"
     )
-    return collective_hash
+    return collective_root
 
 
 def process_ocr_to_udhr_pointer(
