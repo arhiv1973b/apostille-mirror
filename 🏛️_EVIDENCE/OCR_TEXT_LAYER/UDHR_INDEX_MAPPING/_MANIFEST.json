@@ -3,7 +3,8 @@
     "algorithm": "sha256",
     "baseline": "UDHR 1948 (Jus Cogens)",
     "files": {
+        "NODE_ETS_2_ANCHOR.json": "f821bd5df28ecd28eb79bf3f36947aa380a7880575c37dc700f9469b1051cfb9",
         "NODE_EVIDENCE_X.json": "f08066c7c68749b43cde0994556430458477bb83b437e96e1cd9c02b88aebbfe"
     },
-    "root": "5f4201b9bda5c5f9ba0b8a129a7b118015f698af733fa2aec693c6f9a8297e9d"
+    "root": "b99a5485bed47192d9fa03557d9bf4c85713a8e840a01f4373e42f483fd8373b"
 }
