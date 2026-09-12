@@ -42,8 +42,11 @@ jobs:
         if: steps.udhr-cache.outputs.cache-hit == 'true'
         run: |
           set -euo pipefail
-          # TODO: заменить на зафиксированный эталонный хеш из ledger / apostille
-          EXPECTED_HASH="${{ vars.UDHR_INDEX_EXPECTED_HASH || 'PUT-YOUR-REFERENCE-HERE' }}"
+          if [ ! -f "UDHR_INDEX_MANIFEST.json" ]; then
+            echo "[-] Error: UDHR_INDEX_MANIFEST.json not found"
+            exit 1
+          fi
+          EXPECTED_HASH=$(python3 -c "import json; print(json.load(open('UDHR_INDEX_MANIFEST.json'))['collective_sha256'])")
           ACTUAL_HASH=$(find "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING" -type f -print0 | sort -z | xargs -0 sha256sum | sha256sum | awk '{print $1}')
           if [ "$ACTUAL_HASH" != "$EXPECTED_HASH" ]; then
             echo "[-] Cache integrity failure — possible poisoning"

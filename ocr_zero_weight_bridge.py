@@ -8,6 +8,42 @@ def extract_defect_fingerprint(text):
     return hashlib.sha256(str(anomalies).encode("utf-8")).hexdigest()[:16]
 
 
+def update_udhr_index_manifest():
+    out_dir = "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING"
+    if not os.path.exists(out_dir):
+        return None
+
+    files = []
+    for root, dirs, filenames in os.walk(out_dir):
+        for fn in filenames:
+            if fn.endswith(".json"):
+                files.append(os.path.join(root, fn))
+    files.sort()
+
+    sub_hasher = hashlib.sha256()
+    for fpath in files:
+        with open(fpath, "rb") as f:
+            content = f.read()
+        file_sha = hashlib.sha256(content).hexdigest()
+        sub_hasher.update(file_sha.encode("utf-8"))
+
+    collective_hash = sub_hasher.hexdigest()
+
+    manifest = {
+        "baseline": "UDHR 1948 (Jus Cogens)",
+        "mapping_directory": out_dir,
+        "total_nodes": len(files),
+        "collective_sha256": collective_hash,
+    }
+
+    manifest_path = "UDHR_INDEX_MANIFEST.json"
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=4, ensure_ascii=False)
+
+    print(f"[+] UDHR Index Manifest updated. Collective SHA256: {collective_hash}")
+    return collective_hash
+
+
 def process_ocr_to_udhr_pointer(
     drive_link, raw_text_file, output_name, target_lang="en"
 ):
@@ -35,3 +71,6 @@ def process_ocr_to_udhr_pointer(
         json.dump(udhr_mapping, f, indent=4, ensure_ascii=False)
 
     print(f"[+] Advanced Node created: {out_path} | Defect Key: {defect_fingerprint}")
+
+    # Automatically update collective index manifest for dynamic CI/CD verification
+    update_udhr_index_manifest()
