@@ -10,8 +10,7 @@ def extract_defect_fingerprint(text):
 
 def update_udhr_index_manifest():
     out_dir = "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING"
-    if not os.path.exists(out_dir):
-        return None
+    os.makedirs(out_dir, exist_ok=True)
 
     files = []
     for root, dirs, filenames in os.walk(out_dir):
@@ -29,18 +28,13 @@ def update_udhr_index_manifest():
 
     collective_hash = sub_hasher.hexdigest()
 
-    manifest = {
-        "baseline": "UDHR 1948 (Jus Cogens)",
-        "mapping_directory": out_dir,
-        "total_nodes": len(files),
-        "collective_sha256": collective_hash,
-    }
-
-    manifest_path = "UDHR_INDEX_MANIFEST.json"
+    manifest_path = os.path.join(out_dir, "_MANIFEST.sha256")
     with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=4, ensure_ascii=False)
+        f.write(collective_hash + "\n")
 
-    print(f"[+] UDHR Index Manifest updated. Collective SHA256: {collective_hash}")
+    print(
+        f"[+] UDHR Index Manifest updated: {manifest_path} | Collective SHA256: {collective_hash}"
+    )
     return collective_hash
 
 
