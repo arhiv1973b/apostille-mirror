@@ -38,32 +38,47 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-udhr-index-matrix-v1-
 
-      - name: Verify UDHR Cache Integrity (Dynamic Manifest)
+      - name: Verify UDHR Cache Integrity (Canonical Manifest)
         if: steps.udhr-cache.outputs.cache-hit == 'true'
         run: |
           set -euo pipefail
           MANIFEST="🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING/_MANIFEST.sha256"
-
+          
           if [ ! -f "$MANIFEST" ]; then
             echo "[-] Manifest missing — cannot verify integrity"
             exit 1
           fi
-
+          
           EXPECTED_HASH=$(tr -d '[:space:]' < "$MANIFEST")
-          ACTUAL_HASH=$(find "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING" \
-            -type f ! -name '_MANIFEST.sha256' -print0 \
-            | sort -z \
-            | xargs -0 sha256sum \
-            | sha256sum \
-            | awk '{print $1}')
+          
+          ACTUAL_HASH=$(python3 -c '
+          import os, hashlib
+          out_dir = "🏛️_EVIDENCE/OCR_TEXT_LAYER/UDHR_INDEX_MAPPING"
+          files = []
+          for root, _, filenames in os.walk(out_dir):
+              for fn in filenames:
+                  if fn == "_MANIFEST.sha256":
+                      continue
+                  files.append(os.path.join(root, fn))
+          files.sort()
+          hasher = hashlib.sha256()
+          for fpath in files:
+              with open(fpath, "rb") as f:
+                  content = f.read()
+              rel_path = os.path.relpath(fpath, out_dir).replace("\\", "/")
+              hasher.update(rel_path.encode("utf-8"))
+              hasher.update(b"\0")
+              hasher.update(hashlib.sha256(content).digest())
+          print(hasher.hexdigest())
+          ')
 
           if [ "$ACTUAL_HASH" != "$EXPECTED_HASH" ]; then
-            echo "[-] Integrity failure — possible cache poisoning or missing manifest update"
+            echo "[-] Integrity failure — possible cache poisoning"
             echo "Expected (manifest): $EXPECTED_HASH"
             echo "Actual:              $ACTUAL_HASH"
             exit 1
           fi
-          echo "[+] UDHR Index Matrix integrity confirmed via local manifest"
+          echo "[+] UDHR Index Matrix integrity confirmed via canonical manifest"
 
       - name: Guard against banned paths
         run: |

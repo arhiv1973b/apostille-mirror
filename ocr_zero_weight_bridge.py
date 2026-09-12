@@ -13,20 +13,23 @@ def update_udhr_index_manifest():
     os.makedirs(out_dir, exist_ok=True)
 
     files = []
-    for root, dirs, filenames in os.walk(out_dir):
+    for root, _, filenames in os.walk(out_dir):
         for fn in filenames:
-            if fn.endswith(".json"):
-                files.append(os.path.join(root, fn))
+            if fn == "_MANIFEST.sha256":
+                continue
+            files.append(os.path.join(root, fn))
     files.sort()
 
-    sub_hasher = hashlib.sha256()
+    hasher = hashlib.sha256()
     for fpath in files:
         with open(fpath, "rb") as f:
             content = f.read()
-        file_sha = hashlib.sha256(content).hexdigest()
-        sub_hasher.update(file_sha.encode("utf-8"))
+        rel_path = os.path.relpath(fpath, out_dir).replace("\\", "/")
+        hasher.update(rel_path.encode("utf-8"))
+        hasher.update(b"\0")
+        hasher.update(hashlib.sha256(content).digest())
 
-    collective_hash = sub_hasher.hexdigest()
+    collective_hash = hasher.hexdigest()
 
     manifest_path = os.path.join(out_dir, "_MANIFEST.sha256")
     with open(manifest_path, "w", encoding="utf-8") as f:
