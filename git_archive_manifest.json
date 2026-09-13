@@ -1,0 +1,93 @@
+{
+  "created": "2026-08-02T14:59:52.9369067+03:00",
+  "backups": [
+    {
+      "Repo": "C:\\Users\\arhiv\\apostille-analyzer",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\apostille-analyzer_20260802_143730.zip",
+      "SHA256": "8BAA18A4D0B62F28CA7F3A98D46A63B054676ABC6820FC807958F9B00D732A7E",
+      "Commit": "e1f75347a5e862ad59703e667cd4b38faa2109ee",
+      "Branch": "main",
+      "Status": "archived"
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\apostille-legal-case",
+      "ArchivePath": "",
+      "SHA256": "",
+      "Commit": "",
+      "Branch": "",
+      "Status": "error: Exception calling \"Write\" with \"3\" argument(s): \"Stream was too long.\""
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\apostille-mirror-work",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\apostille-mirror-work_20260802_144142.zip",
+      "SHA256": "FCFD8674B57C04204A52595842A33AC9B894F1B3472679CE2DC5AD0D599F925A",
+      "Commit": "4b9ba793add70eba94399fa7c6a0fc3483874735",
+      "Branch": "main",
+      "Status": "archived"
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\Evidence",
+      "ArchivePath": "",
+      "SHA256": "",
+      "Commit": "",
+      "Branch": "",
+      "Status": "error: Exception calling \"Write\" with \"3\" argument(s): \"Exception of type 'System.OutOfMemoryException' was thrown.\""
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\maceret-legal-documents",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\maceret-legal-documents_20260802_145513.zip",
+      "SHA256": "BCEA7D198CA34169238B4C6F58EC034528A74339FFA701DE9D49FF98C853D645",
+      "Commit": "HEAD",
+      "Branch": "HEAD",
+      "Status": "archived"
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\mcp-servers",
+      "ArchivePath": "",
+      "SHA256": "",
+      "Commit": "",
+      "Branch": "",
+      "Status": "error: Exception calling \".ctor\" with \"1\" argument(s): \"Stream was not readable.\""
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\multi-container-app",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\multi-container-app_20260802_145521.zip",
+      "SHA256": "9FAD6251A6077523815F4B42D7E57AF3C3C43CE24341CDF2705AE99241755B75",
+      "Commit": "244c4022238786c39a946d5c0faeb1237c8f01cf",
+      "Branch": "main",
+      "Status": "archived"
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\surf-forensic-browser",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\surf-forensic-browser_20260802_145521.zip",
+      "SHA256": "8E59EFF305A3366D8276B1B9029501B924F9E057D4B111323DE0FF52733F6F51",
+      "Commit": "48517e586cdc98bc1af7115674b554cc70c8bc2e",
+      "Branch": "surf-webkit2",
+      "Status": "archived"
+    },
+    {
+      "Repo": "C:\\Users\\arhiv\\test-project",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\test-project_20260802_145522.zip",
+      "SHA256": "38EFB2F9F514AD36DC19E6E1B77974726049BB2FF27777364BD722FBA6D4C453",
+      "Commit": "HEAD",
+      "Branch": "HEAD",
+      "Status": "archived"
+    },
+    {
+      "Repo": "H:\\ACTOR_DEV_ENV\\mcp-servers",
+      "ArchivePath": "",
+      "SHA256": "",
+      "Commit": "",
+      "Branch": "",
+      "Status": "error: Exception calling \".ctor\" with \"1\" argument(s): \"Stream was not readable.\""
+    },
+    {
+      "Repo": "H:\\merged_ubuntu_upper\\home\\arhiv\\gemini-cli",
+      "ArchivePath": "H:\\ACTOR_DEV_ENV\\Backups\\gemini-cli_20260802_145736.zip",
+      "SHA256": "34BA60EFBEE0754ACDB326003A48AF5BB870308D3A59D8679252CCFB673AA62B",
+      "Commit": "049a299b9214521fb441e4f8fb247f4db6b54045",
+      "Branch": "main",
+      "Status": "archived"
+    }
+  ]
+}
