@@ -1,5 +1,5 @@
 {
-  "ti_ula_version": "1.3.0",
+  "ti_ula_version": "1.4.0",
   "node_id": "concealment_hub_case_1_272_2003",
   "node_type": "critical_concealment_anomaly",
   "dag_pointers": {
@@ -20,5 +20,11 @@
     "document_id": "case_1_272_2003_verdict",
     "sha256_hash": "85851c0d1ff96449038ab9ed9d2e63b94e324ef4e91b7512b8dad1270ee07e54",
     "storage_uri": "local_secure_archive/case_1_272_2003.pdf"
+  },
+  "legal_consequence": {
+    "status": "prolonged_prosecution_without_rehabilitation",
+    "jus_cogens_violation": true,
+    "continuing_offense": true,
+    "nullity_basis": "VCLT Article 53 & UDHR (1948) baseline - artificial prolongation of criminal record via institutional concealment"
   }
 }

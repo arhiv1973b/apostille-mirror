@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-11T18:10:45.082214+00:00",
-  "total_entries": 326,
+  "updated_at": "2026-09-16T23:24:33.819312+00:00",
+  "total_entries": 329,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3260,6 +3260,184 @@
       "human_approval_signature": "ED25519_HUMAN_AUDITOR_VERIFIED_2026",
       "node_hash": "36bbb62fe85c58bd3ec1d7d9da0e05dec167c688b7d1dcf1fe79a9cc4a333e46",
       "signature_ed25519": "8451c95a318cdd93e9e372c242e8b1f583383a59a1e9d24d6c06a4bdb2a3e87a894203b70905a99382eebfbdc9c2ec7f1807a15e2fb72765323b7876d11eb407"
+    },
+    {
+      "previous_hash": "36bbb62fe85c58bd3ec1d7d9da0e05dec167c688b7d1dcf1fe79a9cc4a333e46",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "apostille_registry_working_13.signed.pdf",
+        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+        "event_date": "1998-10-13T00:00:00Z",
+        "registration_date": "2026-09-13T23:10:47.672268+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
+        "summary": "Фиксация базового узла дела 1-568/98 с апостилями 2021 года (Continuing Consequences & Actus Nullus)",
+        "evidence_anchor": {
+          "schema_version": "1.1",
+          "node_id": "apostille_anchor_1_568_98",
+          "node_type": "evidence_anchor",
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ],
+          "documents": [
+            {
+              "source_file": "apostille_registry_working_13.signed.pdf",
+              "case_reference": "1-568/98",
+              "apostilles": [
+                {
+                  "apostille_id": "7H2Q3790FZEI5",
+                  "signatory": "Мирон Алёна",
+                  "original_date": "13.10.1998",
+                  "apostille_date": "18.05.2021"
+                },
+                {
+                  "apostille_id": "FL2VB340JYEG5",
+                  "signatory": "Miron Aliona",
+                  "apostille_date": "21.07.2021"
+                }
+              ]
+            }
+          ]
+        },
+        "findings": {
+          "fraud_type": [
+            "Подлог идентификаторов",
+            "Незаконная блокировка активов",
+            "Фальсификация записей",
+            "Длящиеся последствия (Continuing Consequences)",
+            "Акт вопреки Jus Cogens (Actus Nullus)"
+          ],
+          "financial_impact_mdl": 25210256.15,
+          "target_idnp": "...655...555...455",
+          "evidence_count": 91,
+          "legal_articles_md": [
+            "191",
+            "332",
+            "349"
+          ],
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ]
+        }
+      },
+      "node_hash": "6ae240a2ec05260231845f9e1a9faf3f5a2f826e40081a5987c33f06c56deded",
+      "signature_ed25519": "d64951e7e64da5f2766896c18062ef36c94d5c4fa117510f4c234f320d80e587d45895f8cf6938aec6026d06f608d72ff6bee6359e22286b8acf05906c65f10c"
+    },
+    {
+      "previous_hash": "6ae240a2ec05260231845f9e1a9faf3f5a2f826e40081a5987c33f06c56deded",
+      "payload": {
+        "pipeline_execution": {
+          "target_agent": "CLI / Terminal AI (Ollama / Crush / Gemini CLI)",
+          "action_sequence": [
+            {
+              "step": 1,
+              "document_type": "LETTER_TO_DONALD_TRUMP",
+              "date": "2026-09-15",
+              "subject": "Systemic violations, asset/banking pressure, and targeted attacks correlating with state-corporate actions",
+              "key_elements": [
+                "Chronological alignment of attacks on Maceret",
+                "Bank demands and compliance coercion",
+                "PEP status verification and legal implications"
+              ]
+            },
+            {
+              "step": 2,
+              "evidence_correlation": {
+                "critical_date": "2026-04-03",
+                "event": "Passport issuance under direct bank demand",
+                "participants": [
+                  "Alexei Maceret",
+                  "Irina Oleinic"
+                ],
+                "legal_qualification": "Moment of theft / coerced documentation acquisition / institutional pressure"
+              }
+            },
+            {
+              "step": 3,
+              "dag_logging": {
+                "action": "Register log to DAG",
+                "script": "register_log_to_dag.py",
+                "integrity": "SHA-256 / Ed25519 signing"
+              }
+            }
+          ]
+        },
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "LETTER_TO_DONALD_TRUMP_2026-09-15.md",
+        "registration_date": "2026-09-15T20:53:57.555017+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
+        "summary": "Formal communication to Donald Trump and evidence correlation for passport coercion on 2026-04-03"
+      },
+      "node_hash": "ad9414c73be2d8c72b724d23373a1d07b717e4e9a93c37a6a748d46a83e98d5d",
+      "signature_ed25519": "e73ca5092fa108fab4bb9f69bc39510b1c9e6f9c9e94381e61d60853fdd874a27e4f8fc32911e771a75f7a0248a18051f0b0886d6810064b503d449f9b6e510a"
+    },
+    {
+      "previous_hash": "ad9414c73be2d8c72b724d23373a1d07b717e4e9a93c37a6a748d46a83e98d5d",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "apostille_registry_working_13.signed.pdf",
+        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+        "event_date": "1998-10-13T00:00:00Z",
+        "registration_date": "2026-09-16T23:24:33.797325+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
+        "summary": "Фиксация базового узла дела 1-568/98 с апостилями 2021 года (Continuing Consequences & Actus Nullus)",
+        "evidence_anchor": {
+          "schema_version": "1.1",
+          "node_id": "apostille_anchor_1_568_98",
+          "node_type": "evidence_anchor",
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ],
+          "documents": [
+            {
+              "source_file": "apostille_registry_working_13.signed.pdf",
+              "case_reference": "1-568/98",
+              "apostilles": [
+                {
+                  "apostille_id": "7H2Q3790FZEI5",
+                  "signatory": "Мирон Алёна",
+                  "original_date": "13.10.1998",
+                  "apostille_date": "18.05.2021"
+                },
+                {
+                  "apostille_id": "FL2VB340JYEG5",
+                  "signatory": "Miron Aliona",
+                  "apostille_date": "21.07.2021"
+                }
+              ]
+            }
+          ]
+        },
+        "findings": {
+          "fraud_type": [
+            "Подлог идентификаторов",
+            "Незаконная блокировка активов",
+            "Фальсификация записей",
+            "Длящиеся последствия (Continuing Consequences)",
+            "Акт вопреки Jus Cogens (Actus Nullus)"
+          ],
+          "financial_impact_mdl": 25210256.15,
+          "target_idnp": "...655...555...455",
+          "evidence_count": 91,
+          "legal_articles_md": [
+            "191",
+            "332",
+            "349"
+          ],
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ]
+        }
+      },
+      "node_hash": "c862180d8868e124b2620b1a759bd10ba442bf7cded8dadeac626160f13cd94b",
+      "signature_ed25519": "e701b936a7dbf9fcb320e6b8da0b3c336d1a4ca036e840492e48211e7689873307263949bf036d95dd31caca9d4c746c11bea97d3aff19c1a6d36c4816509406"
     }
   ]
 }

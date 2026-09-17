@@ -35,15 +35,26 @@
 - аналитической работы с доктринальным текстом;  
 - демонстрации непрерывных последствий (*continuing consequences*) на примере CASE‑MACHERET‑1997‑2026.  
 
-## 📊 Визуализация DAG
-Для наглядного представления структуры можно использовать Graphviz:
+## 📊 Архитектура доказательного графа (DAG)
+
+Ниже представлена визуализация топологии **ECHR_IMPUNITY_DAG**, отражающая взаимосвязь между императивными нормами *Jus Cogens*, институциональными щитами иммунитетов и эмпирической проекцией:
+
+![Архитектура безнаказанности и иммунитетов](dag.png)
+
+> *Граф сгенерирован автоматически на основе файла `ECHR_IMPUNITY_DAG.dot` с помощью утилиты Graphviz.*
+
+Для наглядного представления структуры также можно использовать исходный код Graphviz:
 
 ```dot
 digraph ECHR_IMPUNITY_DAG {
-    Jus_Cogens_Invariant [label="Jus Cogens Invariant"];
-    ETS_nr_2_Anchor [label="ETS nr. 2 Anchor"];
-    Geopolitical_Genesis_of_Impunity [label="Geopolitical Genesis of Impunity"];
-    Case_Macheret_Projection [label="CASE-MACHERET-1997-2026"];
+    rankdir=TB;
+    node [shape=box, style="filled,rounded", fontname="Arial", fillcolor="#f0f4f8", color="#cbd5e1"];
+    edge [fontname="Arial", fontsize=10, color="#64748b"];
+
+    Jus_Cogens_Invariant [label="Jus Cogens Invariant", fillcolor="#fee2e2", color="#fca5a5"];
+    ETS_nr_2_Anchor [label="ETS nr. 2 Anchor", fillcolor="#e0f2fe", color="#7dd3fc"];
+    Geopolitical_Genesis_of_Impunity [label="Geopolitical Genesis of Impunity", fillcolor="#fef3c7", color="#fde047"];
+    Case_Macheret_Projection [label="CASE-MACHERET-1997-2026", fillcolor="#dcfce7", color="#86efac"];
 
     Jus_Cogens_Invariant -> ETS_nr_2_Anchor [label="collision_and_strengthening"];
     Jus_Cogens_Invariant -> Geopolitical_Genesis_of_Impunity [label="procedural_bypass"];
@@ -53,3 +64,14 @@ digraph ECHR_IMPUNITY_DAG {
 ```
 
 Эта схема позволяет сразу увидеть, как императивные нормы (*jus cogens*) взаимодействуют с институциональными фильтрами ETS № 2 и проецируются на национальный контур (Молдова).
+
+### Инструкция по генерации графического изображения
+Чтобы быстро построить PNG или SVG изображение графа с помощью Graphviz (`dot`), выполните в терминале следующие команды:
+
+```bash
+# Генерация PNG
+dot -Tpng ECHR_IMPUNITY_DAG.dot -o dag.png
+
+# Генерация SVG (векторная графика)
+dot -Tsvg ECHR_IMPUNITY_DAG.dot -o dag.svg
+```

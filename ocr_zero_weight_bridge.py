@@ -1,5 +1,31 @@
 # ocr_zero_weight_bridge.py
 import os, json, hashlib, re
+from pathlib import Path
+
+
+def safe_read_immutable_source(f_path: str, fallback_manifest: str = None):
+    """
+    Безопасно читает файл с потокового диска F:. При недоступности тома
+    использует локальный манифест-кеш, защищая zero-weight контур.
+    """
+    try:
+        path_obj = Path(f_path)
+        if path_obj.exists() and path_obj.is_file():
+            with open(path_obj, "r", encoding="utf-8") as f:
+                return f.read(), "LIVE_F_DRIVE"
+    except (OSError, PermissionError, FileNotFoundError):
+        pass
+
+    if fallback_manifest and os.path.exists(fallback_manifest):
+        print(
+            f"[!] Warning: Immutable source F: unreachable. Falling back to local manifest cache."
+        )
+        with open(fallback_manifest, "r", encoding="utf-8") as f:
+            return f.read(), "LOCAL_MANIFEST_FALLBACK"
+
+    raise RuntimeError(
+        f"[-] Critical: Immutable source {f_path} is unreachable and no fallback exists."
+    )
 
 
 def extract_defect_fingerprint(text):
@@ -15,7 +41,6 @@ def update_udhr_index_manifest():
     file_hashes = {}
     hasher = hashlib.sha256()
 
-    # Собираем все JSON файлы, исключая старые артефакты
     all_items = sorted(os.listdir(out_dir))
     for fn in all_items:
         if fn.endswith(".json") and fn != "_MANIFEST.json":
@@ -25,7 +50,6 @@ def update_udhr_index_manifest():
             file_sha = hashlib.sha256(content).hexdigest()
             file_hashes[fn] = file_sha
 
-            # Каноническое обновление общего корня
             rel_path = fn.replace("\\", "/")
             hasher.update(rel_path.encode("utf-8"))
             hasher.update(b"\0")
@@ -45,7 +69,6 @@ def update_udhr_index_manifest():
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest_data, f, indent=4, ensure_ascii=False)
 
-    # Удаляем старый .sha256 файл, если остался
     old_sha_path = os.path.join(out_dir, "_MANIFEST.sha256")
     if os.path.exists(old_sha_path):
         os.remove(old_sha_path)
@@ -83,6 +106,4 @@ def process_ocr_to_udhr_pointer(
         json.dump(udhr_mapping, f, indent=4, ensure_ascii=False)
 
     print(f"[+] Advanced Node created: {out_path} | Defect Key: {defect_fingerprint}")
-
-    # Automatically update collective index manifest for dynamic CI/CD verification
     update_udhr_index_manifest()

@@ -1,26 +1,45 @@
 # Topography of the Architecture of Impunity
 
-The formalization of the `ECHR_IMPUNITY_DAG` model establishes a rigorous structural and topological framework for analyzing how international human rights instruments interact with institutional mechanisms of state self-preservation. By mapping the relations between peremptory legal norms, historical-genesis vectors, and regional treaty architectures, this graph exposes the underlying mechanics that convert normative prohibitions into bureaucratic loops of administrative evasion.
+## Введение
 
-## Node Analysis: Structural Constants and Functional Vectors
+Настоящий доктринальный документ представляет собой аналитическое ядро пакета `ECHR_IMPUNITY_DAG`, развертываемого в рамках непрерывного контура **CASE-MACHERET-1997-2026**. Цель исследования — вскрыть структурную механику взаимодействия между императивными нормами международного права (*Jus Cogens*), институциональными щитами иммунитетов (на примере стандартов Совета Европы 1949 года, включая ETS № 2) и реальной правоприменительной практикой на национальном уровне (на примере юрисдикции Республики Молдова, приговора S-22 и последующих системных затягиваний).
 
-### 1. Jus Cogens Invariant (`Jus_Cogens_Invariant`)
-Within international jurisprudence, peremptory norms (*jus cogens*), as codified under Articles 53 and 64 of the Vienna Convention on the Law of Treaties, operate as non-derogable structural constants. They do not depend on state consent for their validity; rather, they constitute the absolute ontological baseline of the international legal order.
-* **Topological Behavior:** A true invariant maintains its core properties under continuous deformation. When a state apparatus attempts to deform, bypass, or dilute a *jus cogens* violation through procedural filters, statutes of limitation, or jurisdictional immunities, the norm does not break. Instead, the procedural evasion functions as an automatic feedback loop that authenticates the systemic breach.
-* **Subject Collapse:** The acting judicial or administrative subject attempting the procedural bypass enters a state of legal incoherence, where every subsequent act of denial serves as self-incriminating proof of institutional bad faith.
+---
 
-### 2. ETS nr. 2 Anchor (`ETS_nr_2_Anchor`)
-The General Agreement on Privileges and Immunities of the Council of Europe (ETS nr. 2, 1949) functions as the primary operational anchor providing structural insulation to state functionaries.
-* **Institutional Firewall:** While the Universal Declaration of Human Rights (1948) demands direct, universal, and unconditional accountability, ETS nr. 2 and its companion administrative instruments establish functional immunities, jurisdictional boundaries, and evidentiary shields.
-* **Continuity of Cadres:** Historically designed to secure administrative stability during post-war integration by protecting compromised state actors, this framework translates into a post-totalitarian context as an unyielding defense mechanism for bureaucratic hierarchies.
+## Анализ узлов матрицы
 
-### 3. Geopolitical Genesis of Impunity (`Geopolitical_Genesis_of_Impunity`)
-The institutional design of the regional human rights system (centered on the ECHR, 1950) was shaped by specific geopolitical imperatives that conflicted directly with universalist humanitarian mandates.
-* **Structural Engineering:** The inclusion of the Colonial Clause (Article 56 ECHR) and the financialization of human rights violations through Article 41 ("Just Satisfaction") demonstrate that the system was intentionally structured to protect metropolitan state apparatuses.
-* **Design Parameter:** Impunity is an intrinsic design parameter engineered to preserve state authority against the disruptive force of universal human rights imperatives.
+### 1. Jus Cogens как топологический инвариант (`Jus_Cogens_Invariant`)
 
-## Empirical Projection: CASE-MACHERET-1997-2026
-The trajectory of `CASE-MACHERET-1997-2026` within the Republic of Moldova demonstrates the empirical validity of this topological model:
-1. **The Evidentiary Singularity:** The hand-written, apostillized judicial verdict S-22 of October 13, 1998, definitively fixed the commission of torture under Article 185 part 3, establishing an unshakeable evidentiary singularity (*"a fost torturat"*).
-2. **The Reception Vector:** Moldova’s ratification of ETS nr. 2 in 1997, immediately preceding this adjudication, served as the local reception vector.
-3. **The Systemic Inversion:** Through successive procedural denials, forgeries, and invocations of national limitation statutes up to the 2025 appellate decisions, the national judicial system attempted to neutralize the UDHR baseline, locking itself into an irreversible structural feedback loop.
+В соответствии со статьей 53 Венской конвенции о праве международных договоров 1969 года, любой договор или норма, противоречащая императивной норме общего международного права (*jus cogens*), является ничтожной. Согласно выводам Комиссии международного права ООН (ILC Conclusions № 10, 21, 23), серьезные нарушения норм *jus cogens* (включая запрет произвольного лишения свободы и пыток) порождают для государств строгие обязательства:
+
+* Обязанность не признавать противоправное положение и не оказывать содействие в его сохранении (Вывод № 21).
+* Неприменимость функционального или должностного иммунитета (*immunite ratione materiae*) к тяжким правонарушениям, запрещенным *jus cogens* (Вывод № 23).
+
+В нашей матрице этот узел выполняет роль **инварианта**: он превращает любое процессуальное ухищрение или ссылку на ведомственный иммунитет в прямое доказательство деликта.
+
+### 2. ETS nr. 2 как институциональный щит (`ETS_nr_2_Anchor`)
+
+Генеральное соглашение о привилегиях и иммунитетах Совета Европы (ETS № 2), принятое в развитие институциональной архитектуры 1949 года, исторически создавалось для защиты независимости международной организации. Однако на практике этот и сопряженные с ним механизмы нередко трансформируются в непроницаемые процессуальные фильтры («щиты»), используемые национальными и наднациональными структурами для блокирования исков о возмещении вреда и избежания ответственности за системные нарушения прав человека.
+
+### 3. Genesis как встроенный параметр дизайна (`Geopolitical_Genesis_of_Impunity`)
+
+Архитектура европейских и национальных процессуальных гарантий содержит встроенные предохранители (колониальные оговорки, узкие критерии *Just Satisfaction*, ограниченные мандаты органов контроля), которые образуют системный геополитический дизайн безнаказанности. Этот дизайн обеспечивает бесшовную передачу ответственности между национальным суверенитетом и международными инстанциями без реального восстановления прав потерпевшего.
+
+---
+
+## Динамика рёбер: Взаимодействие элементов
+
+1. **Jus Cogens → ETS nr. 2 (`collision_and_strengthening`):** Попытка прикрыть деликт иммунитетами ETS № 2 создает правовую коллизию. Согласно доктрине иерархии норм, *jus cogens* обладает высшей юридической силой, поэтому иммунитет не может служить индульгенцией за нарушение базовых прав. Само применение иммунитета в данном случае фиксируется как отягчающее обстоятельство.
+2. **Jus Cogens → Genesis (`procedural_bypass`):** Процессуальный обход императивных норм подтверждает, что дефекты системы заложены на уровне ее исторического и институционального проектирования.
+3. **ETS nr. 2 → Genesis (`institutional_realization`):** Юридическая машина иммунитетов технически реализует геополитическую задачу изоляции властных институтов от прямой ответственности перед индивидом.
+4. **ETS nr. 2 → Case Macheret Projection (`applied_projection`):** Институциональный фильтр проецируется на национальный контур (Молдова), порождая приговор S-22 и многолетнее затягивание.
+
+---
+
+## Эмпирическая проекция: CASE-MACHERET-1997-2026
+
+Проекция на конкретный кейс демонстрирует действие модели в реальном времени:
+
+* **Локализация:** Республика Молдова (Кишинёв).
+* **Маркеры:** Приговор S-22, ратификация конвенционных механизмов Совета Европы, затягивание процессуальных сроков и исполнение решений на протяжении почти трех десятилетий (1997–2026 гг.).
+* **Доктринальный вывод:** Затягивание рассмотрения и отказ в эффективной правовой защите порождают феномен *continuing consequences* (непрерывных последствий), при котором первоначальное нарушение не затухает со временем, а непрерывно воспроизводится за счет институционального бездействия, полностью подтверждая предложенную матричную топологию.

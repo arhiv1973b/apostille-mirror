@@ -17,6 +17,11 @@
       "id": "Geopolitical_Genesis_of_Impunity",
       "label": "Geopolitical Genesis of Impunity",
       "description": "Геополитический контекст: институциональные корни фильтров ЕКПЧ, колониальная оговорка и коммерциализация прав человека через 'Just Satisfaction'."
+    },
+    {
+      "id": "UNCAT_1984_Anchor",
+      "label": "UNCAT 1984 Anchor",
+      "description": "Конвенция против пыток (UNCAT Art. 12-14, 2.2): абсолютный запрет пыток как императивная норма jus cogens, требующая незамедлительного расследования и блокирующая национальные иммунитеты."
     }
   ],
   "edges": [
@@ -34,6 +39,21 @@
       "from": "ETS_nr_2_Anchor",
       "to": "Geopolitical_Genesis_of_Impunity",
       "relation": "Legal construct supports geopolitical design"
+    },
+    {
+      "from": "Jus_Cogens_Invariant",
+      "to": "UNCAT_1984_Anchor",
+      "relation": "Erga omnes obligation of torture prohibition"
+    },
+    {
+      "from": "UNCAT_1984_Anchor",
+      "to": "ETS_nr_2_Anchor",
+      "relation": "institutional_override"
+    },
+    {
+      "from": "UNCAT_1984_Anchor",
+      "to": "Geopolitical_Genesis_of_Impunity",
+      "relation": "continuing consequences of uninvestigated torture"
     }
   ],
   "projection": {
