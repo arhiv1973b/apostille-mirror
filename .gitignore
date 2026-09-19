@@ -13,3 +13,28 @@ __pycache__/
 *.gsheet
 *.sig
 cloud_id_manifest_full.json
+
+# Temporary and download artifacts
+*.crdownload
+temp_*
+*.tmp
+*.bak
+
+# Logs and local history
+logs/
+Backups/
+ConsoleHost_history.txt
+
+# OS specific files
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+
+# Local caches & worktrees
+model_cache/
+analysis_temp/
+temp_analysis/
+copilot-worktrees/
+evidence_backup/
+temp-apostille-site/
