@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T16:44:17.967717+00:00",
-  "total_entries": 338,
+  "updated_at": "2026-09-19T17:00:12.822548+00:00",
+  "total_entries": 343,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3789,6 +3789,121 @@
       },
       "node_hash": "f68721689f67b1276a2210ad1747dc28264ea8531644802e0f24345bc16c34c5",
       "signature_ed25519": "3ef8459850dfc262c4e88210288881d4296b6ac2967fc63d8200fbd6233d0224c30458e36626b0b56af1d1d21b5b940c76f9e2cd4c43c1ffa0ba22fbe8254409"
+    },
+    {
+      "previous_hash": "f68721689f67b1276a2210ad1747dc28264ea8531644802e0f24345bc16c34c5",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_8948bbce.json",
+        "registration_date": "2026-09-19T17:00:11.495999+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "H:\\Загрузки\\Документ (1) (46).pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_8948bbce_Документ (1) (46).pdf",
+          "FileHash": "8948bbcec6817bd75330838a7ebbd59ff8da1dccebe5db6a0e6b1e36b7417339",
+          "FileSize": 206363,
+          "DateTime": "2026-09-19T16:58:29.577322+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "f75808362d3a552b5be70b2684a870d903e9b271b234c3fe37db1a2bdc8576a0",
+      "signature_ed25519": "10d934f5aa2bb7db556bac2a9dee7aace35127a365adeed33bf57ebd031f394e94124d69809183ed91bb7e4a4b29a79a8586b6da1149531ff709d18690afab0f"
+    },
+    {
+      "previous_hash": "f75808362d3a552b5be70b2684a870d903e9b271b234c3fe37db1a2bdc8576a0",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_29705e62.json",
+        "registration_date": "2026-09-19T17:00:11.846934+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "H:\\ACTOR_DEV_ENV\\Болокан_сжатый.pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_29705e62_Болокан_сжатый.pdf",
+          "FileHash": "29705e62a5cb689533998afffe1faba23017c8581c31f7e4c15b507d7b5e63ed",
+          "FileSize": 18339889,
+          "DateTime": "2026-09-19T16:58:29.822444+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "867c1496a0d575f2434e3502a68ba5546eddd3357c04d0a1657bb7f99eff3223",
+      "signature_ed25519": "9dabe41e8ca42c7bb7855e546453be3c65ebae5812c57a33d4cbec2ce18721c12ed334a3ef2f0da14bad06a429bee291a923a84871cd540189778f765ef30005"
+    },
+    {
+      "previous_hash": "867c1496a0d575f2434e3502a68ba5546eddd3357c04d0a1657bb7f99eff3223",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_faeff89c.json",
+        "registration_date": "2026-09-19T17:00:12.187091+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "C:\\Users\\arhiv\\OneDrive\\Документы\\ViberDownloads\\0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_faeff89c_0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg",
+          "FileHash": "faeff89ceff24cb3870f43e7cf1bbc7ace1dd45b74822a237bf874ade4ce11c0",
+          "FileSize": 232220,
+          "DateTime": "2026-09-19T16:58:29.826408+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "98aa19a93fb92dcad656b98ac921d87eff971d51daf9d76ae719693fa1eb4c1b",
+      "signature_ed25519": "d26f7688657c7c0e4a376a110520211ced71afd39a548addc8e3f175937b451442581ee44a439a61153c62c71f79412c6a80dfe7f0a846b865b29f7824c9f80b"
+    },
+    {
+      "previous_hash": "98aa19a93fb92dcad656b98ac921d87eff971d51daf9d76ae719693fa1eb4c1b",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_0dbe7fd3.json",
+        "registration_date": "2026-09-19T17:00:12.494854+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "H:\\Загрузки\\CERERE_scutire_taxa_timbru_Maceret_Alexei_2r-1026-26_v6_apostile.pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_0dbe7fd3_CERERE_scutire_taxa_timbru_Maceret_Alexei_2r-1026-26_v6_apostile.pdf",
+          "FileHash": "0dbe7fd37ffb9e919345ebf174483b2eccb419d549e85902f1b7ee5e5b3d59a9",
+          "FileSize": 1555875,
+          "DateTime": "2026-09-19T16:58:29.838862+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "27ea4db0dbb3bc68514a630799834c8e53422d08ac6a3ee47ac4b83543ad1481",
+      "signature_ed25519": "0719654a38d404cfaf014782c099a308197bbb9845441b45fbeb17991a2e7304a9b65857bd3731f18169a479a37f8190c07d052174a741e6cd5eb3993bb64103"
+    },
+    {
+      "previous_hash": "27ea4db0dbb3bc68514a630799834c8e53422d08ac6a3ee47ac4b83543ad1481",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_9f050edd.json",
+        "registration_date": "2026-09-19T17:00:12.820484+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "C:\\Users\\arhiv\\OneDrive\\Документы\\ViberDownloads\\чеканы дело о 25 милионаз.pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_9f050edd_чеканы дело о 25 милионаз.pdf",
+          "FileHash": "9f050edd0cf235342e40cc07f7eb1c42ea570e4025180691496d24ac79c63a6c",
+          "FileSize": 78488,
+          "DateTime": "2026-09-19T16:58:29.841881+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "ea311a19ae50a673fece7b3f835eab4b19ff711cb3c92d19dd9d29a223ee6b1c",
+      "signature_ed25519": "4684748044177baddf117e14d960088cca0d89bf39ecb5a00a9bed4bde6c7db9d3f2c11ac25bc72231ce3f5f23275a6ff904b0dc2bd139cc33212f67b18bd70d"
     }
   ]
 }
