@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T15:47:06.882364+00:00",
-  "total_entries": 336,
+  "updated_at": "2026-09-19T16:29:15.927249+00:00",
+  "total_entries": 337,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3688,6 +3688,61 @@
       },
       "node_hash": "ea4b6f59991f2ae211fb081b860d21c6baf555241418d66c7b4077f3bb081d02",
       "signature_ed25519": "ffe24fa6d1a5f3c9bf5b364777424f17e96d52400b2ed8a66bc3202ab19cf6d2b63039a0a7018ffd9640411e24dc021067687ad8d5d52c9d3640f1bfbe21a70f"
+    },
+    {
+      "previous_hash": "ea4b6f59991f2ae211fb081b860d21c6baf555241418d66c7b4077f3bb081d02",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_kebes_complaint.json",
+        "registration_date": "2026-09-19T16:29:15.908077+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "$schema": "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/schemas/ti-ula-manifest.json",
+          "Case": "MACHERET-1997-2026",
+          "DocumentDetails": {
+            "Title": "Plângere în baza art. 298 CPP (Alexei Kebeș / Maceret Alexei)",
+            "OriginalFilename": "Кебеш в отношении кражи.pdf",
+            "SourcePath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\Кебеш в отношении кражи.pdf",
+            "Author": "Avocat Alexei Kebeș",
+            "Recipient": "Procuratura municipiului Chișinău, Oficiul Râșcani (Proc. Oxana Cazacu)",
+            "FilingDate": "2026-08-09",
+            "TargetSubject": "Sustragerea mijloacelor financiare în sumă de 25.210.256,15 MDL",
+            "TargetTransaction": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce"
+          },
+          "CryptographicIntegrity": {
+            "Algorithm": "SHA-256",
+            "FileHash": "c4ebd16c1e5f27976571a9757968b19e45381e6041bcad3baf03968c4e8e8440",
+            "FileSizeBytes": 26090
+          },
+          "LegalFrameworkMapping": {
+            "Doctrines": [
+              "Continuing Consequences",
+              "Erga Omnes",
+              "Non-Rehabilitation"
+            ],
+            "UDHR_Violations": [
+              {
+                "Article": "Статья 8",
+                "Description": "Право на эффективное восстановление в правах компетентными национальными судами (отказ в регистрации и рассмотрении уголовного дела по существу, подмена процессуальных решений простой административной перепиской)."
+              },
+              {
+                "Article": "Статья 10",
+                "Description": "Право на справедливое и гласное судебное рассмотрение независимым судом (лишение возможности судебного контроля через уклонение от вынесения мотивированных постановлений по ст. 274 УПК РМ)."
+              }
+            ]
+          },
+          "RecordMetadata": {
+            "DateTimeUTC": "2026-09-19T17:24:28Z",
+            "EvidenceType": "Forensic Legal Complaint & Procedural Evidence",
+            "RecordStatus": "VERIFIED_LEGAL_SOURCE",
+            "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+            "IntegrityLock": "AIPS-2025"
+          }
+        }
+      },
+      "node_hash": "650355ab048e813dc510c400236ad463bdd338dfcaa9bab68bec70ded8b747b9",
+      "signature_ed25519": "c0bd1f5779a8f77181e96fa1e50a462cce1ea9eceb8c43b22c5987ab967cf503e387a4d2559e353e0a8e45cd6d75c8359f5bc2413c17a2b7d7de619e4fa69a0d"
     }
   ]
 }
