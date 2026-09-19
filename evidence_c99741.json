@@ -1,11 +1,43 @@
 {
-  "Case": "MACHERET-1997-2026",
-  "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
-  "DateTime": "2026-04-03T10:55:00",
-  "WalletToken": "MD-APPLEPAY-6089-20260403",
-  "BankParticipationStatus": "RECORDED_IN_SOURCE",
-  "LegalCharacterization": "Disputed Theft – US Funds Only",
-  "RecordStatus": "USER_ASSERTED / DISPUTED",
-  "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
-  "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+  "ForensicGraphEntry": {
+    "Case": "MACHERET-1997-2026",
+    "IDNP": "2000001159655",
+    "Transaction": {
+      "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+      "HashAlgorithm": "SHA-256",
+      "DateTime": "2026-04-03T10:55:00",
+      "Sender": { "Institution": "FinComBank S.A.", "Source": "Apple Wallet transaction record" },
+      "Receiver": { "Institution": "Moldindconbank S.A.", "Source": "Apple Wallet transaction record" },
+      "AmountMDL": "25210256.15",
+      "AmountUSD": "1400000",
+      "WalletToken": "MD-APPLEPAY-6089-20260403"
+    },
+    "FundsProvenance": { "SourceFunds": "US/IMF tranche", "Status": "USER_ASSERTED / DISPUTED" },
+    "CardConflict": {
+      "PreviousCard": "5929",
+      "NewCard": "6089",
+      "ReportedEffect": "old card retained/displayed funds while new card displayed a pending/stuck balance",
+      "Status": "USER_REPORTED / REQUIRES_PRIMARY_SOURCE_VERIFICATION"
+    },
+    "EvidenceLinks": [
+      "GitHub: JUS_COGENS_REPORT.md",
+      "GitHub: ti_ula_crypto_manifest.json",
+      "FinComPay Wallet screenshot",
+      "Victoria bank.pdf ATM log"
+    ],
+    "Verification": {
+      "IntegrityLock": "AIPS-2025",
+      "DigitalSignature": "MoldSign SHA-256 (claimed, not independently verified)",
+      "VerificationStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK"
+    },
+    "ForensicStatus": {
+      "RECORD_STATUS": "USER_ASSERTED / DISPUTED",
+      "GRAPH_WRITE_STATUS": "NOT_PERFORMED",
+      "CLAIM_STATUS": "DISPUTED",
+      "EVIDENCE_STATUS": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+      "BANK_PARTICIPATION_STATUS": "RECORDED_IN_SOURCE",
+      "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
+    },
+    "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+  }
 }
