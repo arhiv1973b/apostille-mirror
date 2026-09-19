@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T13:00:22.393926+00:00",
-  "total_entries": 332,
+  "updated_at": "2026-09-19T13:06:47.767465+00:00",
+  "total_entries": 333,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3514,6 +3514,49 @@
       },
       "node_hash": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
       "signature_ed25519": "1569ee7d2f508f656d3930f86ab23e24b52bc8ce72b0de566c1d16123558272aa58b192a25b2e94955296945da1f29a36171c7a91e4128d339cd73339cd3400b"
+    },
+    {
+      "previous_hash": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_amount_correlation_batch.json",
+        "registration_date": "2026-09-19T13:06:47.748924+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+          "DateTime": "2026-09-19T13:06:47.411116+00:00",
+          "MatchedEvidenceFiles": [
+            "H:\\ACTOR_DEV_ENV\\APPEAL_TO_PRESIDENT_TRUMP_2026.md",
+            "H:\\ACTOR_DEV_ENV\\APPEAL_TO_PRESIDENT_TRUMP_2026_CANONICAL.json",
+            "H:\\ACTOR_DEV_ENV\\CASE_TRUMP_APPEAL_CANONICAL.json",
+            "H:\\ACTOR_DEV_ENV\\COVER_LETTER_ERGA_OMNES.md",
+            "H:\\ACTOR_DEV_ENV\\dag_manifest.json",
+            "H:\\ACTOR_DEV_ENV\\ERGA_OMNES_MASTER_REPORT.md",
+            "H:\\ACTOR_DEV_ENV\\evidence_c99741.json",
+            "H:\\ACTOR_DEV_ENV\\evidence_c99741_faecfcd8_linked.json",
+            "H:\\ACTOR_DEV_ENV\\evidence_dag.json",
+            "H:\\ACTOR_DEV_ENV\\FINAL_RESTITUTION_CLAIM_2026.md",
+            "H:\\ACTOR_DEV_ENV\\FINCOMBANK_REFUSAL_6387.md",
+            "H:\\ACTOR_DEV_ENV\\FINCOMBANK_SWIFT_MSMTP_ANCHOR.md",
+            "H:\\ACTOR_DEV_ENV\\FORENSIC_AUDIT_REPORT.md",
+            "H:\\ACTOR_DEV_ENV\\gemini-code-1779643197946.json",
+            "H:\\ACTOR_DEV_ENV\\international_sanctions_matrix.json",
+            "H:\\ACTOR_DEV_ENV\\LEGAL_DRAFT_ECHR_BRIEF.md",
+            "H:\\ACTOR_DEV_ENV\\manifest.json",
+            "H:\\ACTOR_DEV_ENV\\ofac_magnitsky_petition_2026.md",
+            "H:\\ACTOR_DEV_ENV\\ROOT_MANIFEST_2026.md",
+            "H:\\ACTOR_DEV_ENV\\ti_ula_graph_export.json",
+            "H:\\ACTOR_DEV_ENV\\UNIVERSAL_LEGAL_PACKAGE_UDHR_2026.md",
+            "H:\\ACTOR_DEV_ENV\\UNIVERSAL_NOTEBOOK_CASE_MACHERET.md"
+          ],
+          "Protocol": "TI-ULA Forensic Anchor & Amount Correlation [AIPS-2025]",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "2bdc8219dadc553364592f6aaa642afdbcca9c3126b10701c5d85eb8aa01b8e6",
+      "signature_ed25519": "7e871cf73c8c84b439853ff207e74d502bc92dc99c643e3203c39e1363ea7690dd0487808588f52efe9914e268e23081c7b49507c34211ac454f0d3b5913f904"
     }
   ]
 }
