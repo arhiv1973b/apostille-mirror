@@ -2,6 +2,7 @@ import json
 import hashlib
 import datetime
 import os
+import argparse
 from cryptography.hazmat.primitives.asymmetric import ed25519
 from cryptography.hazmat.primitives import serialization
 
@@ -81,6 +82,13 @@ def save_dag(dag_container):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Register log to DAG")
+    parser.add_argument(
+        "--input", default="evidence_c99741.json", help="Input JSON manifest"
+    )
+    parser.add_argument("--case", default="MACHERET-1997-2026", help="Case ID")
+    args = parser.parse_args()
+
     dag_container = load_dag()
     entries = dag_container["entries"]
 
@@ -88,39 +96,18 @@ def main():
     if len(entries) > 0:
         prev_hash = entries[-1].get("node_hash", "UNKNOWN")
 
-    anchor_path = os.path.join(r"H:\ACTOR_DEV_ENV\🏛️_EVIDENCE\LEGAL_DOCTRINE", "apostille_anchor_1_568_98.json")
-    anchor_data = {}
-    if os.path.exists(anchor_path):
-        with open(anchor_path, "r", encoding="utf-8") as f:
-            anchor_data = json.load(f)
+    input_data = {}
+    if os.path.exists(args.input):
+        with open(args.input, "r", encoding="utf-8") as f:
+            input_data = json.load(f)
 
     payload = {
-        "case_id": "CASE-MACHERET-1997-2026",
-        "document_ref": "apostille_registry_working_13.signed.pdf",
-        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
-        "event_date": "1998-10-13T00:00:00Z",
+        "case_id": args.case,
+        "manifest_file": args.input,
         "registration_date": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
-        "summary": "Фиксация базового узла дела 1-568/98 с апостилями 2021 года (Continuing Consequences & Actus Nullus)",
-        "evidence_anchor": anchor_data,
-        "findings": {
-            "fraud_type": [
-                "Подлог идентификаторов",
-                "Незаконная блокировка активов",
-                "Фальсификация записей",
-                "Длящиеся последствия (Continuing Consequences)",
-                "Акт вопреки Jus Cogens (Actus Nullus)"
-            ],
-            "financial_impact_mdl": 25210256.15,
-            "target_idnp": "...655...555...455",
-            "evidence_count": 91,
-            "legal_articles_md": ["191", "332", "349"],
-            "legal_basis": [
-                "VCLT_Art_71_1a",
-                "Actus_Nullus",
-                "ECHR_Continuing_Consequences"
-            ],
-        },
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": f"DAG registration for Wallet transaction log, Case {args.case}",
+        "manifest_data": input_data,
     }
 
     new_node = {"previous_hash": prev_hash, "payload": payload}
