@@ -20,10 +20,16 @@ temp_*
 *.tmp
 *.bak
 
-# Logs and local history
+# Logs, outputs, and local history
 logs/
+ti_ula_logs/
 Backups/
 ConsoleHost_history.txt
+analysis_results/
+analysis_temp/
+temp_analysis/
+temp_data/
+storage/
 
 # OS specific files
 Thumbs.db
@@ -31,10 +37,9 @@ desktop.ini
 $RECYCLE.BIN/
 System Volume Information/
 
-# Local caches & worktrees
+# Local caches & worktrees & archives
 model_cache/
-analysis_temp/
-temp_analysis/
 copilot-worktrees/
 evidence_backup/
+recovered_evidence/
 temp-apostille-site/
