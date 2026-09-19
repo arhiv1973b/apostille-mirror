@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-16T23:24:33.819312+00:00",
-  "total_entries": 329,
+  "updated_at": "2026-09-19T11:40:45.394802+00:00",
+  "total_entries": 330,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3438,6 +3438,29 @@
       },
       "node_hash": "c862180d8868e124b2620b1a759bd10ba442bf7cded8dadeac626160f13cd94b",
       "signature_ed25519": "e701b936a7dbf9fcb320e6b8da0b3c336d1a4ca036e840492e48211e7689873307263949bf036d95dd31caca9d4c746c11bea97d3aff19c1a6d36c4816509406"
+    },
+    {
+      "previous_hash": "c862180d8868e124b2620b1a759bd10ba442bf7cded8dadeac626160f13cd94b",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_c99741.json",
+        "registration_date": "2026-09-19T11:40:45.370137+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+          "DateTime": "2026-04-03T10:55:00",
+          "WalletToken": "MD-APPLEPAY-6089-20260403",
+          "BankParticipationStatus": "RECORDED_IN_SOURCE",
+          "LegalCharacterization": "Disputed Theft – US Funds Only",
+          "RecordStatus": "USER_ASSERTED / DISPUTED",
+          "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "16879cc7b1138d5638e1edcaaf08f036ec7994d576d1c30eaa746cb40c022767",
+      "signature_ed25519": "ea3fb0757c107825f8c9311bd4d3ba7a07b481f590fffc0eb3cb0270dde2d5e66b77a4e1dd8b75020163d4aed4b1d7508e1af3e30c565ff8ec5e039d5fcc6901"
     }
   ]
 }
