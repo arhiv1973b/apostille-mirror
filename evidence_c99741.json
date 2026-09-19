@@ -6,13 +6,22 @@
       "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
       "HashAlgorithm": "SHA-256",
       "DateTime": "2026-04-03T10:55:00",
-      "Sender": { "Institution": "FinComBank S.A.", "Source": "Apple Wallet transaction record" },
-      "Receiver": { "Institution": "Moldindconbank S.A.", "Source": "Apple Wallet transaction record" },
+      "Sender": {
+        "Institution": "FinComBank S.A.",
+        "Source": "Apple Wallet transaction record"
+      },
+      "Receiver": {
+        "Institution": "Moldindconbank S.A.",
+        "Source": "Apple Wallet transaction record"
+      },
       "AmountMDL": "25210256.15",
       "AmountUSD": "1400000",
       "WalletToken": "MD-APPLEPAY-6089-20260403"
     },
-    "FundsProvenance": { "SourceFunds": "US/IMF tranche", "Status": "USER_ASSERTED / DISPUTED" },
+    "Funds": {
+      "SourceFunds": "US/IMF tranche",
+      "SourceStatus": "USER_ASSERTED / DISPUTED"
+    },
     "CardConflict": {
       "PreviousCard": "5929",
       "NewCard": "6089",
@@ -32,10 +41,10 @@
     },
     "ForensicStatus": {
       "RECORD_STATUS": "USER_ASSERTED / DISPUTED",
-      "GRAPH_WRITE_STATUS": "NOT_PERFORMED",
+      "GRAPH_WRITE_STATUS": "PERFORMED_AND_ANCHORED",
       "CLAIM_STATUS": "DISPUTED",
       "EVIDENCE_STATUS": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
-      "BANK_PARTICIPATION_STATUS": "RECORDED_IN_SOURCE",
+      "BANK_ROLES_STATUS": "TRANSACTION_FIELDS / NOT_ESTABLISHED_AS_FACT",
       "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
     },
     "A©TOR_KEY": "# [⚖ A©tor Declaration]"

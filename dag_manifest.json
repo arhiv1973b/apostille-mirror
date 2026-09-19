@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T17:00:12.822548+00:00",
-  "total_entries": 343,
+  "updated_at": "2026-09-19T17:57:43.170966+00:00",
+  "total_entries": 344,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3904,6 +3904,70 @@
       },
       "node_hash": "ea311a19ae50a673fece7b3f835eab4b19ff711cb3c92d19dd9d29a223ee6b1c",
       "signature_ed25519": "4684748044177baddf117e14d960088cca0d89bf39ecb5a00a9bed4bde6c7db9d3f2c11ac25bc72231ce3f5f23275a6ff904b0dc2bd139cc33212f67b18bd70d"
+    },
+    {
+      "previous_hash": "ea311a19ae50a673fece7b3f835eab4b19ff711cb3c92d19dd9d29a223ee6b1c",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_c99741.json",
+        "registration_date": "2026-09-19T17:57:43.154128+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "ForensicGraphEntry": {
+            "Case": "MACHERET-1997-2026",
+            "IDNP": "2000001159655",
+            "Transaction": {
+              "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+              "HashAlgorithm": "SHA-256",
+              "DateTime": "2026-04-03T10:55:00",
+              "Sender": {
+                "Institution": "FinComBank S.A.",
+                "Source": "Apple Wallet transaction record"
+              },
+              "Receiver": {
+                "Institution": "Moldindconbank S.A.",
+                "Source": "Apple Wallet transaction record"
+              },
+              "AmountMDL": "25210256.15",
+              "AmountUSD": "1400000",
+              "WalletToken": "MD-APPLEPAY-6089-20260403"
+            },
+            "Funds": {
+              "SourceFunds": "US/IMF tranche",
+              "SourceStatus": "USER_ASSERTED / DISPUTED"
+            },
+            "CardConflict": {
+              "PreviousCard": "5929",
+              "NewCard": "6089",
+              "ReportedEffect": "old card retained/displayed funds while new card displayed a pending/stuck balance",
+              "Status": "USER_REPORTED / REQUIRES_PRIMARY_SOURCE_VERIFICATION"
+            },
+            "EvidenceLinks": [
+              "GitHub: JUS_COGENS_REPORT.md",
+              "GitHub: ti_ula_crypto_manifest.json",
+              "FinComPay Wallet screenshot",
+              "Victoria bank.pdf ATM log"
+            ],
+            "Verification": {
+              "IntegrityLock": "AIPS-2025",
+              "DigitalSignature": "MoldSign SHA-256 (claimed, not independently verified)",
+              "VerificationStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK"
+            },
+            "ForensicStatus": {
+              "RECORD_STATUS": "USER_ASSERTED / DISPUTED",
+              "GRAPH_WRITE_STATUS": "PERFORMED_AND_ANCHORED",
+              "CLAIM_STATUS": "DISPUTED",
+              "EVIDENCE_STATUS": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+              "BANK_ROLES_STATUS": "TRANSACTION_FIELDS / NOT_ESTABLISHED_AS_FACT",
+              "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
+            },
+            "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+          }
+        }
+      },
+      "node_hash": "890fd87ad197e6158c8e184bed0250bb58f96b7c70556d65e4b58474ab99ade4",
+      "signature_ed25519": "560a2d8d7b2f78225ba052762ab27b79e3693151a69c668f7f63bfc916a153cccf0c9568e1c68046b299d19a0f93cf1667681ced0705185518fd0f6465b1cf0f"
     }
   ]
 }
