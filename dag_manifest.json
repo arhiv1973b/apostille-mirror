@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T16:29:15.927249+00:00",
-  "total_entries": 337,
+  "updated_at": "2026-09-19T16:44:17.967717+00:00",
+  "total_entries": 338,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3743,6 +3743,52 @@
       },
       "node_hash": "650355ab048e813dc510c400236ad463bdd338dfcaa9bab68bec70ded8b747b9",
       "signature_ed25519": "c0bd1f5779a8f77181e96fa1e50a462cce1ea9eceb8c43b22c5987ab967cf503e387a4d2559e353e0a8e45cd6d75c8359f5bc2413c17a2b7d7de619e4fa69a0d"
+    },
+    {
+      "previous_hash": "650355ab048e813dc510c400236ad463bdd338dfcaa9bab68bec70ded8b747b9",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "doctrine_bypass_echr_manifest.json",
+        "registration_date": "2026-09-19T16:44:17.964944+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "NodeId": "doctrine_bypass_echr_corporate_model",
+          "NodeType": "Strategic_Legal_Shift",
+          "Subject": "Disarming EU Treaty Bodies via RM Constitution Art 4 & 8",
+          "CoreArguments": [
+            {
+              "Argument": "Rejection of Human Rights Commodification",
+              "Description": "Invalidates ECHR precedents that treat fundamental rights as tradable commodities generated via corporate AI protocols and data manipulation."
+            },
+            {
+              "Argument": "Constitutional Supremacy Override",
+              "Articles": [
+                "Constitution_RM_Art_4",
+                "Constitution_RM_Art_8",
+                "UN_Charter"
+              ],
+              "Description": "Direct application of UN Charter and UDHR overrides European bureaucratic jurisprudence and procedural limits (like Art 85 CPC RM)."
+            },
+            {
+              "Argument": "Absolute Restitutio in Integrum",
+              "Articles": [
+                "Constitution_RM_Art_53",
+                "Jus_Cogens"
+              ],
+              "Description": "Demands total restitution, rejecting the ECHR's limited 'just satisfaction' model as fundamentally unconstitutional."
+            }
+          ],
+          "LinkedNodes": [
+            "cassation_doctrine_s22_art85",
+            "medical_apostille_anchor_870_883"
+          ],
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+          "IntegrityLock": "AIPS-2025"
+        }
+      },
+      "node_hash": "f68721689f67b1276a2210ad1747dc28264ea8531644802e0f24345bc16c34c5",
+      "signature_ed25519": "3ef8459850dfc262c4e88210288881d4296b6ac2967fc63d8200fbd6233d0224c30458e36626b0b56af1d1d21b5b940c76f9e2cd4c43c1ffa0ba22fbe8254409"
     }
   ]
 }
