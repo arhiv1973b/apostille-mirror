@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-19T13:20:33.818171+00:00",
-  "total_entries": 334,
+  "updated_at": "2026-09-19T14:50:15.860350+00:00",
+  "total_entries": 335,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3597,6 +3597,33 @@
       },
       "node_hash": "dcb7849379e2995dfd8f1e45eba6d4cca6f211c84ad663ae0ffd04ef92de9fc3",
       "signature_ed25519": "2ff7f25a7f5b10d4d89a70e8fd46a3e34c0dafd44f76aa508a361b24367dfcf6327a8392499eb8bd8a971c612d01d2531a948675fa826dffc7d4362f8c1f2e07"
+    },
+    {
+      "previous_hash": "dcb7849379e2995dfd8f1e45eba6d4cca6f211c84ad663ae0ffd04ef92de9fc3",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_0ab9ee12.json",
+        "registration_date": "2026-09-19T14:50:15.822824+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "SourcePath": "C:\\Users\\arhiv\\Downloads\\Downolde\\0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65.zip",
+          "FileHash": "c4ebd16c1e5f27976571a9757968b19e45381e6041bcad3baf03968c4e8e8440",
+          "FileSize": 26090,
+          "ZipContents": [
+            "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/",
+            "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/diagnostics.txt",
+            "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/github-app.18620.log"
+          ],
+          "DateTime": "2026-09-19T14:49:07.455568+00:00",
+          "EvidenceType": "Forensic Archive Zip",
+          "RecordStatus": "VERIFIED_SOURCE_ARCHIVE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "d39b5c80dbfc6345304439e890d8a3ebf5787dafbc871c1ce45cd51289629634",
+      "signature_ed25519": "6d25e6ca9d61935a84278be13c24b3845c22b9f92f39561dcf8da27dce33e3731207e28ac34da955faa7dd5106cafdf7fb6d7165019756635426b4534d7abe04"
     }
   ]
 }
