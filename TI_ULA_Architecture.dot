@@ -33,16 +33,16 @@ digraph TI_ULA_Architecture {
     }
 
     subgraph cluster_repression {
-        label = "Системный террор и саботаж (1997–2024)";
+        label = "Системный террор и каскадный демонтаж (1997–2024)";
         style=filled;
         fillcolor="#FADBD8";
 
         TORMENT_1997 [label="Уголовное преследование и пытки (1997)\nМедицинские и ВВК заключения\n(Негоден к службе, психопатизация)", fillcolor="#F5B7B1"];
-        GRIGORAS_SABOTAGE [label="Саботаж реабилитации (Судья В. Григораш)\nПризнание пыток при отказе в реабилитации\n(Блокировка Restitutio in Integrum)", fillcolor="#F5B7B1"];
-        ECONOMIC_MARAUDING [label="Экономическое мародерство и рейдерство\nЗахват недвижимости через отказ в реституции\nГибель ключевого свидетеля (Г. Маркова, 2022)", fillcolor="#F5B7B1"];
+        GRIGORAS_CASCADE_TRIGGER [label="Запуск каскадного контура отмен\nсудебных решений (судья В. Григораш)\nДемонтаж барьеров Стамбула, Негру и Гурьева", fillcolor="#F5B7B1"];
+        ECONOMIC_MARAUDING [label="Экономическое мародерство и рейдерство\nВскрытие истинного мотива захвата активов\nГибель ключевого свидетеля (Г. Маркова, 2022)", fillcolor="#F5B7B1"];
 
         DEFENSE_2003 -> TORMENT_1997;
-        TORMENT_1997 -> GRIGORAS_SABOTAGE;
-        GRIGORAS_SABOTAGE -> ECONOMIC_MARAUDING [label="Истинный мотив:\nрейдерский захват активов"];
+        TORMENT_1997 -> GRIGORAS_CASCADE_TRIGGER [label="Уголовное преследование\n→ каскад отмен"];
+        GRIGORAS_CASCADE_TRIGGER -> ECONOMIC_MARAUDING [label="Крах барьеров\n→ обнажение рейдерства"];
     }
 }
