@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-21 01:24:01 (Europe/Chisinau)
+**Generated on:** 2026-09-21 01:35:44 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -74,6 +74,20 @@ vector: comprehensive_evidence_block (genealogical foundation 1973-1976 -> Odess
   adoption 1977 -> ZhSK-39 property chain 1987-2003 -> Riscani search order 2007 by
   Judge Gheorghe Morozan -> Hasdeu Institute linguistic conclusion 2023 -> Closed
   Neuroprotocol 2025)
+```
+
+---
+
+## Node: NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 3, 5, 8, 9, 17; VCLT (1969) Art. 53; ARSIWA (State Responsibility);
+  Moldovan Constitution Art. 53
+vector: familial_persecution (Irina Oleinik, Ivan Markov) -> fruit_of_poisonous_tree
+  (Judge S. Iorgov 2008 -> CSJ 1ra-834/09) -> financial_blockade_and_plunder (FinComBank,
+  Victoriabank, Moldindconbank, bailiff Alexandru Foxa, 25,210,256.15 MDL frozen)
+  -> international_erga_omnes_action
 ```
 
 ---
