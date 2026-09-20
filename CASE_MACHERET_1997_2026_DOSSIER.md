@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-21 02:15:17 (Europe/Chisinau)
+**Generated on:** 2026-09-21 02:26:05 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -47,6 +47,53 @@ universal_declaration_of_human_rights:
     principle: Right to property and prohibition of arbitrary deprivation
   year: 1948
 ```
+
+---
+
+## Node: ADOPTION_REASONING_1977
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: Family Code of MSSR / Ukrainian SSR, UDHR Art. 6, 12, 16
+vector: adoption_reasoning_1977 (Odessa Executive Committee Decision No. 61 -> Chisinau
+  Birth Entry No. 4057, 1973)
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `adoption_reasoning_search_prompt.yaml`
+  - **SHA-256:** `adoption_search_anchor_2026`
+  - **Role:** Strict search prompt explaining why adoption was processed in Odessa while birth registration remained in Chisinau (entry
+
+---
+
+## Node: DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: Civil Status Registry (Starea Civilă) verification standards, UDHR Art. 6,
+  12
+vector: divorce_record_search (Stanislav Matiuk & Galina Ivanovna Matiuk/Markova,
+  1975-1977, Chisinau)
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `divorce_matiuk_search_prompt.yaml`
+  - **SHA-256:** `divorce_search_anchor_2026`
+  - **Role:** Strict search prompt and verification anchor for the divorce record of Stanislav Matiuk and Galina Markova.
+
+---
+
+## Node: MARRIAGE_CERTIFICATE_GALINA_MACHERET
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: Civil Status Registry (Starea Civilă) verification standards, UDHR Art. 6,
+  16
+vector: marriage_record_search (Galina Ivanovna Markova/Matiuk & Artur Borisovich
+  Macheret, 1976-1977, Chisinau)
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `marriage_macheret_search_prompt.yaml`
+  - **SHA-256:** `marriage_search_anchor_2026`
+  - **Role:** Strict search prompt and verification anchor for the marriage record of Galina Markova and Artur Macheret.
 
 ---
 
@@ -366,6 +413,21 @@ doctrine: 'Institutional terror and neo-Nazi bureaucracy: Venice Commission ''De
 
 ---
 
+## Node: ORDER_RISCANI_24JUL2007
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 9, 17; UN CAT Art. 2, 12, 13, 14
+vector: search_warrant_legitimation -> asset_deprivation -> non_rehabilitation ->
+  continuing_violation
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `Доказательства Суду Холбан.pdf`
+  - **SHA-256:** `cad22878e52a79c4a8613665dc2cca169a8f04cca34132edfbbff7a89ebd5e56`
+  - **Role:** Judicial order No. 337/07 (July 24, 2007) by Judge Gheorghe Morozan validating search at Miron Costin 13/3, apt. 64 (Translated by Natalia Lasco, 24.11.2023)
+
+---
+
 ## Node: SUBNODE_PROPERTY_RESTITUTION_1977_2026
 **Type:** property_restitution_subnode
 ### Legal Framework
@@ -450,6 +512,19 @@ moral_damage:
       status: provisional
 ```
 **Total Provisional Claim:** 1098500 EUR
+
+---
+
+## Node: CASCADE_CANCELLATION_MATRIX
+**Type:** cancellation_matrix_node
+### Legal Framework
+```yaml
+basis: VCLT (1969) Art. 53 & 71, UDHR Art. 8, Moldovan Constitution Art. 53, UN GA
+  Resolution 40/34
+doctrine: 'Cascade Cancellation Matrix: Systematic nullification (void ab initio)
+  of legacy fraudulent rulings maintaining the victim''s criminalized status and blocking
+  restitution.'
+```
 
 ---
 

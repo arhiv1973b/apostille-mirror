@@ -18,6 +18,28 @@ VALID_NODE_IDS = {
     "LINK_NON_REHABILITATION_JUS_COGENS",
     "LINK_ACCOUNTABILITY_TO_CONSEQUENCES",
     "NODE_ENTITY_ACCOUNTABILITY_NETWORK",
+    "ORDER_RISCANI_24JUL2007",
+    "NODE_CSJ_DECISION_2009",
+    "NODE_APOSTILLE_REGISTRY_MASTER",
+    "NODE_SEMNATURA_INDESCIFRABILA_TRAP",
+    "NODE_FICTITIOUS_ISSUANCE_TRAP",
+    "NODE_ECHR_OVERRIDE_VCLT_UNRES4034",
+    "NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE",
+    "NODE_GERMANY_HAGUE_SABOTAGE",
+    "NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY",
+    "NODE_ECONOMIC_MAUROUDING_GRIGORAS",
+    "NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE",
+    "DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA",
+    "MARRIAGE_CERTIFICATE_GALINA_MACHERET",
+    "ADOPTION_REASONING_1977",
+    "NODE_TI_ULA_MASTER_TOPOLOGY",
+    "CASCADE_CANCELLATION_MATRIX",
+    "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026",
+    "NODE_COMPREHENSIVE_FINANCIAL_AND_FAMILY_TERROR_2026",
+    "NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2",
+    "NODE_APOSTILLE_REGISTRY_FIXED_HTML",
+    "NODE_AVIZ_INSTiintare_2023",
+    "NODE_OPERATIONAL_DEPLOYMENT_v15",
 }
 
 
@@ -50,8 +72,10 @@ def load_nodes():
                 or filename.startswith("SUBNODE_")
                 or filename.startswith("FINANCIAL_")
                 or filename.startswith("TI_ULA_")
+                or filename.startswith("CASCADE_")
             ):
-                nodes.append(data)
+                if data not in nodes:
+                    nodes.append(data)
     return nodes
 
 
@@ -73,8 +97,9 @@ def generate_markdown_dossier(nodes):
         "entity_mapping_node": 5,
         "damage_calculation_node": 6,
         "economic_restitution_model": 6,
-        "causation_link": 7,
-        "master_registry": 8,
+        "cancellation_matrix_node": 7,
+        "causation_link": 8,
+        "master_registry": 9,
     }
 
     sorted_nodes = sorted(nodes, key=lambda x: order.get(x.get("type", ""), 99))

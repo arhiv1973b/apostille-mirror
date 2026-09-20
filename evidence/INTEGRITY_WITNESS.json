@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-09-21 02:15:19 UTC",
-  "total_verified_nodes_and_artifacts": 244,
+  "timestamp": "2026-09-21 02:26:06 UTC",
+  "total_verified_nodes_and_artifacts": 246,
   "artifacts": [
     {
       "filename": ".mcp_config.json",
@@ -507,8 +507,8 @@
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 57770,
-      "sha256": "d0ecc1f7e094ca3fa140c18778d70dd0f1fdbef7e15f7c43f3446170fa45ed3b"
+      "size_bytes": 59295,
+      "sha256": "e201690fd65b21fbdebdb1432e0d4b8930672e8045b4c5e13ed319be769e6d76"
     },
     {
       "filename": "international_sanctions_matrix.json",
@@ -737,6 +737,12 @@
       "path": "evidence\\NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
       "size_bytes": 942,
       "sha256": "d259708df197285f43d79830653e614aef22916d2eb8a09face6b7c6577a8484"
+    },
+    {
+      "filename": "NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "path": "evidence\\NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "size_bytes": 862,
+      "sha256": "b61bce17578f3fc09474ce5ba303870b9dcbe6e784523e9b346120c1991a1591"
     },
     {
       "filename": "NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
@@ -1357,6 +1363,12 @@
       "sha256": "d259708df197285f43d79830653e614aef22916d2eb8a09face6b7c6577a8484"
     },
     {
+      "filename": "NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "path": "artifacts/reabilitare\\NODE_OPERATIONAL_DEPLOYMENT_v15.yaml",
+      "size_bytes": 862,
+      "sha256": "b61bce17578f3fc09474ce5ba303870b9dcbe6e784523e9b346120c1991a1591"
+    },
+    {
       "filename": "NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
       "path": "artifacts/reabilitare\\NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
       "size_bytes": 1453,
@@ -1431,14 +1443,14 @@
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.md",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.md",
-      "size_bytes": 20498,
-      "sha256": "a984ffcfc7f44053a35c567e56a84b69128bbcaa14a4968ed6f559a1bcea92db"
+      "size_bytes": 23281,
+      "sha256": "861cb5b0e36a25ad881c4d41758c36b8b4e155e4bedade99aeee1a60725dee08"
     },
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.pdf",
-      "size_bytes": 24520,
-      "sha256": "a4969d01df3674b6a2fa2ea175bba7887fe766ee6dfe7469d5fcf73c4fe298cf"
+      "size_bytes": 27649,
+      "sha256": "3e3b6038148c3244933aaa507762c8cf85eb751d80fae01ebfd265d4391a85d5"
     },
     {
       "filename": "UN_CAT_COVER_LETTER_2026.md",
