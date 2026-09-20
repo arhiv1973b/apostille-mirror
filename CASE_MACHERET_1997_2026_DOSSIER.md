@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 16:14:11 (Europe/Chisinau)
+**Generated on:** 2026-09-20 17:44:49 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -47,6 +47,21 @@ universal_declaration_of_human_rights:
     principle: Right to property and prohibition of arbitrary deprivation
   year: 1948
 ```
+
+---
+
+## Node: NODE_CSJ_DECISION_2009
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 10, 11; UN CAT Art. 2, 7, 15
+vector: csj_decision_1ra_834_09 (21.07.2009) -> apostille (19.05.2021, No. 5GTUD58SJQ5N6)
+  -> non_rehabilitation -> continuing_violation
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `apostila (6).pdf`
+  - **SHA-256:** `df921c3fabbdd0cc382b6e70cefab38a55e9e0fffdb2ba29e17b3e172c0b9ac4`
+  - **Role:** Supreme Court of Justice Decision No. 1ra-834/09 (July 21, 2009) with Hague Apostille No. 5GTUD58SJQ5N6 (May 19, 2021, Valeriu Frimu / Judge Guzun Corneliu)
 
 ---
 
