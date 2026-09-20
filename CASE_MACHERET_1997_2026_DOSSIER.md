@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 17:44:49 (Europe/Chisinau)
+**Generated on:** 2026-09-20 18:10:07 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -47,6 +47,20 @@ universal_declaration_of_human_rights:
     principle: Right to property and prohibition of arbitrary deprivation
   year: 1948
 ```
+
+---
+
+## Node: NODE_APOSTILLE_REGISTRY_MASTER
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8; Hague Convention of 5 October 1961; UN CAT Art. 12, 13
+vector: apostille_registry_verification -> cryptographic_anchoring -> chain_of_custody
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `apostille_registry_working_14.signed.pdf`
+  - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
+  - **Role:** Master Apostille Registry (97 verified entries including key Case 1-568/98, 1ra-834/09, and Stambol/illegible signature records)
 
 ---
 
