@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 22:17:09 (Europe/Chisinau)
+**Generated on:** 2026-09-20 22:33:08 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -76,6 +76,21 @@ vector: csj_decision_1ra_834_09 (21.07.2009) -> apostille (19.05.2021, No. 5GTUD
 - **File:** `apostila (6).pdf`
   - **SHA-256:** `df921c3fabbdd0cc382b6e70cefab38a55e9e0fffdb2ba29e17b3e172c0b9ac4`
   - **Role:** Supreme Court of Justice Decision No. 1ra-834/09 (July 21, 2009) with Hague Apostille No. 5GTUD58SJQ5N6 (May 19, 2021, Valeriu Frimu / Judge Guzun Corneliu)
+
+---
+
+## Node: NODE_ECONOMIC_MAUROUDING_GRIGORAS
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 17; Moldovan Constitution Art. 53; UN GA Resolution 40/34
+vector: property_chronology (1976-1992) -> asset_protection_actions (2003, Galina
+  Markova) -> economic_motive_rehabilitation_denial (Judge Viorelia Grigoraș) -> state_marauding
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `Grigoras.pdf`
+  - **SHA-256:** `76bd7e1baf75bc836529826da6768d9d1fc77a7a2b42687520ee05854b8553d2`
+  - **Role:** Documenting the economic marauding, property expropriation chronology, and Judge Viorelia Grigoraș's refusal of full rehabilitation to protect raider beneficiaries.
 
 ---
 
