@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 16:05:18 (Europe/Chisinau)
+**Generated on:** 2026-09-20 16:14:11 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -47,6 +47,21 @@ universal_declaration_of_human_rights:
     principle: Right to property and prohibition of arbitrary deprivation
   year: 1948
 ```
+
+---
+
+## Node: NODE_FABRICATION_AND_LANGUAGE_DEPRIVATION_2007
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 9, 10, 11; UN CAT Art. 2, 7, 15; CPC RM Art. 16
+vector: nighttime_search (23.07.2007) -> retroactive_legitimation (24.07.2007, Judge
+  Gheorghe Morozan) -> language_deprivation -> ongoing_denial_of_defense
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `Доказательства Суду Холбан.pdf`
+  - **SHA-256:** `cad22878e52a79c4a8613665dc2cca169a8f04cca34132edfbbff7a89ebd5e56`
+  - **Role:** Night search (23.07.2007, 22:40) and retroactive validation (24.07.2007)
 
 ---
 
