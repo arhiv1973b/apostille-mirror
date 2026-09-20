@@ -49,6 +49,20 @@ digraph TI_ULA_Master {
         GRIGORAS_CASCADE_TRIGGER -> ECONOMIC_MARAUDING;
     }
 
+    // --- Матрица каскадных отмен ---
+    subgraph cluster_cancellation_matrix {
+        label = "Матрица каскадных отмен (Cascade Cancellation Matrix)";
+        style=filled;
+        fillcolor="#EAFAF1";
+
+        VOID_RULINGS [label="Аннулирование прецедентов (Void ab initio)\nСтамбул (2025), Негру (2023), Морозан (2007)\nУстранение плодов отравленного дерева", fillcolor="#A9DFBF"];
+        FINANCIAL_ENFORCEMENT [label="Интеграция с финмоделью (1,098,500 EUR)\nПринудительная реституция ЖСК-39 кв. 64\nОтветственность Государства по ARSIWA", fillcolor="#A9DFBF"];
+
+        VOID_RULINGS -> FINANCIAL_ENFORCEMENT [label="Каскадный сброс\n→ Разблокировка выплат"];
+    }
+
+    GRIGORAS_CASCADE_TRIGGER -> VOID_RULINGS [label="Процессуальный триггер\n→ Матрица отмен"];
+
     // --- Поисковые и архивные векторы ---
     subgraph cluster_prompts {
         label = "Поисковые и архивные векторы (1973–1977)";
