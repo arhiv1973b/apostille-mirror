@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 14:57:36 (Europe/Chisinau)
+**Generated on:** 2026-09-20 16:05:18 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -130,6 +130,21 @@ vector: property_confiscation -> fraudulent_registration -> non_restitution -> r
   - **Mapping:** VCLT Art. 53 (Acts conflicting with Jus Cogens are void)
   - **Violation:** Denial of justice by Judge Negru. Subversion of Erga Omnes obligations.
   - **Status:** `verified_violation`
+
+---
+
+## Node: NODE_ENTITY_ACCOUNTABILITY_NETWORK
+**Type:** entity_mapping_node
+### Legal Framework
+```yaml
+basis: Universal Jurisdiction / Individual Responsibility for Jus Cogens violations
+```
+### Entity Accountability Network
+- **Gheorghe Morozan** (Investigative Judge (Judecătoria Rîșcani)): Issued Judicial Order No. 337/07 on July 24, 2007, validating the fabricated search at Miron Costin 13/3, apt. 64 as the initial procedural fabrication step
+- **Alexandru Negru** (Judge): Formal denial of rehabilitation / Obstruction of effective remedy (UDHR Art. 8)
+- **Viorelia Grigoraș** (Judge): Issuing citations and procedural orders maintaining procedural barriers while processing rehabilitation claims
+- **Tudor Stambol** (Judge): Issued rulings intentionally confusing review (revizuire, CPC Art. 458) with rehabilitation (CP Art. 112), ignoring res judicata of torture judgment No. 1-568/98
+- **Tatiana Postolachi (Pastulaci)** (Judge (Judecătoria Chișinău, sediul Buiucani)): Processing sham rehabilitation applications under CPC RM Arts. 250-251 while enforcing administrative preclusion and blocking full exoneration
 
 ---
 

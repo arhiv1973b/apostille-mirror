@@ -2,9 +2,14 @@ id: NODE_ENTITY_ACCOUNTABILITY_NETWORK
 type: entity_mapping_node
 parent_nodes:
   - LINK_NON_REHABILITATION_JUS_COGENS
+  - ORDER_RISCANI_24JUL2007
 legal_framework:
   basis: Universal Jurisdiction / Individual Responsibility for Jus Cogens violations
 entities:
+  - name: "Gheorghe Morozan"
+    role: "Investigative Judge (Judecătoria Rîșcani)"
+    action: "Issued Judicial Order No. 337/07 on July 24, 2007, validating the fabricated search at Miron Costin 13/3, apt. 64 as the initial procedural fabrication step"
+    linked_evidence: "Доказательства Суду Холбан.pdf"
   - name: "Alexandru Negru"
     role: "Judge"
     action: "Formal denial of rehabilitation / Obstruction of effective remedy (UDHR Art. 8)"
