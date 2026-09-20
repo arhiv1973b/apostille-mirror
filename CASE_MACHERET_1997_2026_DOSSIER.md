@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 22:33:08 (Europe/Chisinau)
+**Generated on:** 2026-09-20 23:31:56 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -197,6 +197,21 @@ vector: language_deprivation (CPC RM Art. 16) -> institutional_sabotage (semnăt
 - **File:** `apostille_registry_working_14.signed.pdf`
   - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
   - **Role:** Documenting the institutional trap of marking valid physical signatures as 'semnătura indescifrabilă' while binding them with MoldSign state cryptographic certificates.
+
+---
+
+## Node: NODE_TI_ULA_GRAPHVIZ_ARCHITECTURE
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 17; Moldovan Constitution Art. 53; UN GA Resolution 40/34
+vector: genealogy (1953-1977) -> property_defense (1976-2003) -> systematic_repression_and_sabotage
+  (1997-2024, Judge Viorelia Grigoraș) -> economic_marauding
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `TI_ULA_Architecture.dot`
+  - **SHA-256:** `computed_from_dot`
+  - **Role:** Graphviz architectural topology uniting genealogical foundation, property chain, and systematic repression/economic marauding.
 
 ---
 
