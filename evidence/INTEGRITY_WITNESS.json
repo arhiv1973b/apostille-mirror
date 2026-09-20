@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-09-21 00:04:37 UTC",
-  "total_verified_nodes_and_artifacts": 229,
+  "timestamp": "2026-09-21 01:24:03 UTC",
+  "total_verified_nodes_and_artifacts": 234,
   "artifacts": [
     {
       "filename": ".mcp_config.json",
@@ -155,6 +155,12 @@
       "path": "evidence\\CANONICAL_JUS_COGENS_MASTER_2026.json",
       "size_bytes": 683,
       "sha256": "ffa93354fb77c2e982a666e6718e99b4870d0dc784aac204e50c047c955758ff"
+    },
+    {
+      "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
+      "path": "evidence\\CASCADE_CANCELLATION_MATRIX.yaml",
+      "size_bytes": 1794,
+      "sha256": "95f2b40b3cbfe21ecc24631c48e8c62e511eda4cba1f08be2f7edf55f86420d0"
     },
     {
       "filename": "CASE_TRUMP_APPEAL_CANONICAL.json",
@@ -499,6 +505,12 @@
       "sha256": "56d3c43ed3541885f8a33c6dd15fc3d26875d3cab41fc167ba6d5de1bbccd0a6"
     },
     {
+      "filename": "INTEGRITY_WITNESS.json",
+      "path": "evidence\\INTEGRITY_WITNESS.json",
+      "size_bytes": 54808,
+      "sha256": "8205bc1fa5b0d1f0f3d4498fc8ee10f40e46c19c80ef79c8039be9e931ae5cf9"
+    },
+    {
       "filename": "international_sanctions_matrix.json",
       "path": "evidence\\international_sanctions_matrix.json",
       "size_bytes": 3019,
@@ -629,6 +641,12 @@
       "path": "evidence\\NODE_APOSTILLE_REGISTRY_MASTER.yaml",
       "size_bytes": 1193,
       "sha256": "2b7bb139f33674d56de0dd41605be861030506723516bcda1aaf274d7babc0f4"
+    },
+    {
+      "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "path": "evidence\\NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "size_bytes": 2018,
+      "sha256": "f074db0251a94fb11c2321805dec0074070405404a93ca35dc9192a244d6738a"
     },
     {
       "filename": "NODE_CSJ_DECISION_2009.yaml",
@@ -1171,6 +1189,12 @@
       "sha256": "2dcb427099efe55418a813fa2430cfb99bb3bc86f4734551ff2e7ac97d9e387f"
     },
     {
+      "filename": "CASCADE_CANCELLATION_MATRIX.yaml",
+      "path": "artifacts/reabilitare\\CASCADE_CANCELLATION_MATRIX.yaml",
+      "size_bytes": 1794,
+      "sha256": "95f2b40b3cbfe21ecc24631c48e8c62e511eda4cba1f08be2f7edf55f86420d0"
+    },
+    {
       "filename": "DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
       "path": "artifacts/reabilitare\\DIVORCE_CERTIFICATE_MATIUK_STANISLAV_GALINA.yaml",
       "size_bytes": 1011,
@@ -1205,6 +1229,12 @@
       "path": "artifacts/reabilitare\\NODE_APOSTILLE_REGISTRY_MASTER.yaml",
       "size_bytes": 1193,
       "sha256": "2b7bb139f33674d56de0dd41605be861030506723516bcda1aaf274d7babc0f4"
+    },
+    {
+      "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "path": "artifacts/reabilitare\\NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
+      "size_bytes": 2018,
+      "sha256": "f074db0251a94fb11c2321805dec0074070405404a93ca35dc9192a244d6738a"
     },
     {
       "filename": "NODE_CSJ_DECISION_2009.yaml",
@@ -1323,8 +1353,8 @@
     {
       "filename": "TI_ULA_Master.dot",
       "path": "H:\\ACTOR_DEV_ENV\\TI_ULA_Master.dot",
-      "size_bytes": 4486,
-      "sha256": "4bdb0522409b09dce4e452592fdcb0f2a2287ebfe67779aceff5da93c1957a74"
+      "size_bytes": 5525,
+      "sha256": "096541df48c289831cc5d0914f34189ff802ad0f1defbafea6da393058359fa4"
     },
     {
       "filename": "TI_ULA_Architecture.dot",
@@ -1341,14 +1371,14 @@
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.md",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.md",
-      "size_bytes": 16387,
-      "sha256": "6db455acd7491d3851114d80eb09c12aa9d51b27d7b4d556f8931662bae1d1ee"
+      "size_bytes": 16892,
+      "sha256": "c568ca8d562c3fe43a45fd4adb9ce34c200dbd1e5b6278b80cf8b34ac288f081"
     },
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.pdf",
-      "size_bytes": 20355,
-      "sha256": "79842243c5ab96c3b26336cec30b68c855397fadb8ffef138ac8873c758ac6e6"
+      "size_bytes": 20639,
+      "sha256": "831aa4fe790e284d9ef7563316693901c155432e89257d30a2a4194dc4d7c8fe"
     },
     {
       "filename": "UN_CAT_COVER_LETTER_2026.md",

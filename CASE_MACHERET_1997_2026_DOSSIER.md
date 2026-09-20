@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-21 01:17:39 (Europe/Chisinau)
+**Generated on:** 2026-09-21 01:24:01 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -61,6 +61,20 @@ vector: apostille_registry_verification -> cryptographic_anchoring -> chain_of_c
 - **File:** `apostille_registry_working_14.signed.pdf`
   - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
   - **Role:** Master Apostille Registry (97 verified entries including key Case 1-568/98, 1ra-834/09, and Stambol/illegible signature records)
+
+---
+
+## Node: NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 6, 8, 9, 12, 17; VCLT (1969) Art. 53; Moldovan Constitution Art.
+  53; UN GA Resolution 40/34
+vector: comprehensive_evidence_block (genealogical foundation 1973-1976 -> Odessa
+  adoption 1977 -> ZhSK-39 property chain 1987-2003 -> Riscani search order 2007 by
+  Judge Gheorghe Morozan -> Hasdeu Institute linguistic conclusion 2023 -> Closed
+  Neuroprotocol 2025)
+```
 
 ---
 
