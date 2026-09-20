@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 23:42:58 (Europe/Chisinau)
+**Generated on:** 2026-09-20 23:49:49 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -212,6 +212,22 @@ vector: genealogy (1953-1977) -> property_defense (1976-2003) -> systematic_repr
 - **File:** `TI_ULA_Architecture.dot`
   - **SHA-256:** `computed_from_dot`
   - **Role:** Graphviz architectural topology uniting genealogical foundation, property chain, and systematic repression/economic marauding.
+
+---
+
+## Node: NODE_TI_ULA_MASTER_TOPOLOGY
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR, Jus Cogens, Erga Omnes, Moldovan Constitution Art. 53, UN GA Resolution
+  40/34
+vector: unified_master_topology (genetics 1953-1977 -> property defense 1976-2003
+  -> systematic terror & cascade dismantling -> search prompts)
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `TI_ULA_Master.dot`
+  - **SHA-256:** `master_topology_hash_2026`
+  - **Role:** Unified Master Graphviz DOT topology uniting all four subgraphs (genetics, property, repression, and search prompts).
 
 ---
 
