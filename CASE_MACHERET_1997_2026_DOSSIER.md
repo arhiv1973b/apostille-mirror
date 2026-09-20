@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 22:10:13 (Europe/Chisinau)
+**Generated on:** 2026-09-20 22:17:09 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -204,6 +204,23 @@ vector: arbitrary_detention (05.08.1997) -> torture_interrogation (18.08.1997) -
 - **File:** `Искажение Фамилии из Мачкпкт в Макеирет.signed.pdf`
   - **SHA-256:** `7fc3be1b8698954b7fca035a092441e76f902448df9437378e64317471ed943c`
   - **Role:** t0-anchor Decizie Ciachir 06.08.1997 (arbitrary detention)
+
+---
+
+## Node: NODE_VENICE_COMMISSION_TERROR_AND_IMMUNITY
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR, Jus Cogens, VCLT (1969) Arts. 53 & 64, UN Convention Against Torture
+doctrine: 'Institutional terror and neo-Nazi bureaucracy: Venice Commission ''Democracy
+  through Law'' doctrine, Judge T. Avasiloaie ruling (30.12.2021) shielding CoE/Venice
+  Commission immunities, HUDOC privatization as Supreme Court IP, and physical elimination/murder
+  of key witness Galina Markova to silence Jus Cogens enforcement.'
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `CASE_MACHERET_1997_2026_DOSSIER.md`
+  - **SHA-256:** `bcd4927701824031535df4983ffb8c4891d817794a58b39366f27df157fd303a`
+  - **Role:** Master Legal Dossier incorporating the Venice Commission terror and witness elimination vector.
 
 ---
 
