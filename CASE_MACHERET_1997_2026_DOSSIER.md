@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-21 01:35:44 (Europe/Chisinau)
+**Generated on:** 2026-09-21 01:52:50 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -149,6 +149,29 @@ vector: fictitious_issuance -> language_reform_sabotage (2018) -> ghost_document
 - **File:** `10r_1632_26 Pislariuc Vitalie_1.pdf`
   - **SHA-256:** `e9eb07be601a03247af4c4941299e99520342be399a2fd2b6dec1459270053fd`
   - **Role:** Parallel judicial case file demonstrating systematic state-sponsored procedural formatting and signature obfuscation.
+
+---
+
+## Node: NODE_FINANCIAL_AND_DIGITAL_CONSOLIDATION_v2
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 17; VCLT Art. 53; ARSIWA (State Responsibility); Moldovan Constitution
+  Art. 53
+vector: digital_asset_fixation (FinComPay, Apple Wallet, 25,210,256.15 MDL) -> official_bank_denials
+  (FinComBank S.A., Victoriabank, Moldindconbank) -> inheritance_and_identity_nexus
+  (Galina Markova, Pavlina Baskova) -> integrity_witness_v2
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `fincombank_25m_trace.json`
+  - **SHA-256:** `fincom_trace_anchor_2026`
+  - **Role:** Cryptographic trace of the 25,210,256.15 MDL financial asset blockade and decoupling incident.
+- **File:** `Legal_Reply_FinComBank.pdf`
+  - **SHA-256:** `fincom_legal_reply_anchor`
+  - **Role:** Official bank reply denying operations while maintaining administrative asset freeze.
+- **File:** `.подписан.pdf_Справка_о_смерти_Басковой.подписан.pdf`
+  - **SHA-256:** `baskova_death_anchor`
+  - **Role:** Death certificate and inheritance nexus for Pavlina Baskova.
 
 ---
 
