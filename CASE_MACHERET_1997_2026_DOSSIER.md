@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 21:49:44 (Europe/Chisinau)
+**Generated on:** 2026-09-20 22:10:13 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -106,6 +106,39 @@ vector: fictitious_issuance -> language_reform_sabotage (2018) -> ghost_document
 - **File:** `10r_1632_26 Pislariuc Vitalie_1.pdf`
   - **SHA-256:** `e9eb07be601a03247af4c4941299e99520342be399a2fd2b6dec1459270053fd`
   - **Role:** Parallel judicial case file demonstrating systematic state-sponsored procedural formatting and signature obfuscation.
+
+---
+
+## Node: NODE_GEOPOLITICAL_JUS_COGENS_SABOTAGE
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR, Jus Cogens, Erga Omnes, ICJ Jurisdictional Immunities precedent (2012),
+  VCLT Art. 53
+doctrine: Geopolitical sabotage of Jus Cogens via institutional immunity abuse, originating
+  from the 2012 Germany v. Italy ICJ precedent and Brussels bureaucratic mechanisms.
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `20251112151930106.semnat.pdf`
+  - **SHA-256:** `80c5993deb1437a40c96391176fc8df495b440564803b20b96f87b21c10eee0d`
+  - **Role:** Restricted Report NP-A©t0r/SC-1125-2025 documenting institutional inaction blocking Jus Cogens and erga omnes violations.
+
+---
+
+## Node: NODE_GERMANY_HAGUE_SABOTAGE
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UN Charter Art. 2 (Sovereign Equality), Hague Convention of 5 October 1961,
+  UDHR, Jus Cogens
+doctrine: Financial and legal colonialism via German sabotage of the 1961 Hague Apostille
+  Convention for Moldova, imposing consular legalization, financial tribute, and political
+  filtration of evidence.
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `apostille_registry_working_14.signed.pdf`
+  - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
+  - **Role:** Validating cryptographically anchored MoldSign apostilles against external consular sabotage.
 
 ---
 
