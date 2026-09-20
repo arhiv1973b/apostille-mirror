@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 19:10:26 (Europe/Chisinau)
+**Generated on:** 2026-09-20 21:49:44 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -276,6 +276,18 @@ mechanism: perpetuation_of_harm_through_denial_of_justice
 - **Entity Group:** State of Moldova
   - **Action:** Failure to provide effective remedy and correct acts of its agents
   - **Effect:** Full State Liability for the total provisional claim of 1,098,500 EUR + ongoing monthly accruals.
+
+---
+
+## Node: NODE_ECHR_OVERRIDE_VCLT_UNRES4034
+**Type:** legal_framework_anchor
+### Legal Framework
+```yaml
+basis: UDHR (1948), VCLT (1969) Arts. 27 & 53, UN GA Resolution 40/34, Moldovan Constitution
+  Arts. 4, 8, 53
+doctrine: Bypassing regional ECHR restrictive models (App. 41929/11) via absolute
+  Jus Cogens, Erga Omnes obligations, and direct UDHR restitution.
+```
 
 ---
 
