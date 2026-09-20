@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "protocol": "TI-ULA Cryptographic Cross-Verification",
   "scope": "CASE-MACHERET-1997-2026",
-  "timestamp": "2026-09-21 01:52:51 UTC",
-  "total_verified_nodes_and_artifacts": 238,
+  "timestamp": "2026-09-21 02:15:19 UTC",
+  "total_verified_nodes_and_artifacts": 244,
   "artifacts": [
     {
       "filename": ".mcp_config.json",
@@ -507,8 +507,8 @@
     {
       "filename": "INTEGRITY_WITNESS.json",
       "path": "evidence\\INTEGRITY_WITNESS.json",
-      "size_bytes": 56662,
-      "sha256": "c45880a9fb9cffb9991d600b95aa0ea973b0e5a81eb4a68c2219df1193f1b5f8"
+      "size_bytes": 57770,
+      "sha256": "d0ecc1f7e094ca3fa140c18778d70dd0f1fdbef7e15f7c43f3446170fa45ed3b"
     },
     {
       "filename": "international_sanctions_matrix.json",
@@ -637,10 +637,22 @@
       "sha256": "4c0605a53787e381fe24d1cc7ccae09eaa6f3e155eaa1a1aa1dbb6b2df3df779"
     },
     {
+      "filename": "NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "path": "evidence\\NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "size_bytes": 653,
+      "sha256": "2b4d6558d078d5401fb5b0a2de65953a81a8a2bef077ddf17faa13a7464afb79"
+    },
+    {
       "filename": "NODE_APOSTILLE_REGISTRY_MASTER.yaml",
       "path": "evidence\\NODE_APOSTILLE_REGISTRY_MASTER.yaml",
       "size_bytes": 1193,
       "sha256": "2b7bb139f33674d56de0dd41605be861030506723516bcda1aaf274d7babc0f4"
+    },
+    {
+      "filename": "NODE_AVIZ_INSTiintare_2023.yaml",
+      "path": "evidence\\NODE_AVIZ_INSTiintare_2023.yaml",
+      "size_bytes": 963,
+      "sha256": "650bd87f688b2c588a5a348b7252dba4ee777067fbc349c9a4f27766a939e7dc"
     },
     {
       "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
@@ -719,6 +731,12 @@
       "path": "evidence\\NODE_LEGAL_BASIS_JUS_COGENS.json",
       "size_bytes": 2182,
       "sha256": "4a25cfc2441cd08bdbe5cb4ee1883abfdb76026103729a6bc1425b9d4176f98d"
+    },
+    {
+      "filename": "NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
+      "path": "evidence\\NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
+      "size_bytes": 942,
+      "sha256": "d259708df197285f43d79830653e614aef22916d2eb8a09face6b7c6577a8484"
     },
     {
       "filename": "NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
@@ -1237,10 +1255,22 @@
       "sha256": "b40160dba91eac1b76f43221d87d5dc32e7ef153dc051f49f7ac5864e534a9fe"
     },
     {
+      "filename": "NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "path": "artifacts/reabilitare\\NODE_APOSTILLE_REGISTRY_FIXED_HTML.yaml",
+      "size_bytes": 653,
+      "sha256": "2b4d6558d078d5401fb5b0a2de65953a81a8a2bef077ddf17faa13a7464afb79"
+    },
+    {
       "filename": "NODE_APOSTILLE_REGISTRY_MASTER.yaml",
       "path": "artifacts/reabilitare\\NODE_APOSTILLE_REGISTRY_MASTER.yaml",
       "size_bytes": 1193,
       "sha256": "2b7bb139f33674d56de0dd41605be861030506723516bcda1aaf274d7babc0f4"
+    },
+    {
+      "filename": "NODE_AVIZ_INSTiintare_2023.yaml",
+      "path": "artifacts/reabilitare\\NODE_AVIZ_INSTiintare_2023.yaml",
+      "size_bytes": 963,
+      "sha256": "650bd87f688b2c588a5a348b7252dba4ee777067fbc349c9a4f27766a939e7dc"
     },
     {
       "filename": "NODE_COMPREHENSIVE_EVIDENCE_BLOCK_2026.yaml",
@@ -1321,6 +1351,12 @@
       "sha256": "4a25cfc2441cd08bdbe5cb4ee1883abfdb76026103729a6bc1425b9d4176f98d"
     },
     {
+      "filename": "NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
+      "path": "artifacts/reabilitare\\NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026.yaml",
+      "size_bytes": 942,
+      "sha256": "d259708df197285f43d79830653e614aef22916d2eb8a09face6b7c6577a8484"
+    },
+    {
       "filename": "NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
       "path": "artifacts/reabilitare\\NODE_REABILITARE_MACHERET_OLEINIK_NEGRU_2026.yaml",
       "size_bytes": 1453,
@@ -1395,14 +1431,14 @@
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.md",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.md",
-      "size_bytes": 18564,
-      "sha256": "5080f997327d036cc87c29b15327b846530799846a76f9f4aebea5bd4e2ab230"
+      "size_bytes": 20498,
+      "sha256": "a984ffcfc7f44053a35c567e56a84b69128bbcaa14a4968ed6f559a1bcea92db"
     },
     {
       "filename": "CASE_MACHERET_1997_2026_DOSSIER.pdf",
       "path": "H:\\ACTOR_DEV_ENV\\CASE_MACHERET_1997_2026_DOSSIER.pdf",
-      "size_bytes": 22590,
-      "sha256": "a9a31ba0951eab39e04a6d388e0829a61943bc4d8a9f46e49a492b4f3ad21241"
+      "size_bytes": 24520,
+      "sha256": "a4969d01df3674b6a2fa2ea175bba7887fe766ee6dfe7469d5fcf73c4fe298cf"
     },
     {
       "filename": "UN_CAT_COVER_LETTER_2026.md",

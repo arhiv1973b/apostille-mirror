@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-21 01:52:50 (Europe/Chisinau)
+**Generated on:** 2026-09-21 02:15:17 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -50,6 +50,20 @@ universal_declaration_of_human_rights:
 
 ---
 
+## Node: NODE_APOSTILLE_REGISTRY_FIXED_HTML
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8; Hague Convention of 5 October 1961
+vector: apostille_registry_fixed_html -> cryptographic_anchoring
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `apostille-registry-fixed.html`
+  - **SHA-256:** `7339c486009893699e525abbb05a760a6a29fe68865f2a6c80ea71eef1666d89`
+  - **Role:** Corrected and verified HTML apostille registry mirror eliminating dead links and restoring chain of custody.
+
+---
+
 ## Node: NODE_APOSTILLE_REGISTRY_MASTER
 **Type:** evidence_node
 ### Legal Framework
@@ -61,6 +75,21 @@ vector: apostille_registry_verification -> cryptographic_anchoring -> chain_of_c
 - **File:** `apostille_registry_working_14.signed.pdf`
   - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
   - **Role:** Master Apostille Registry (97 verified entries including key Case 1-568/98, 1ra-834/09, and Stambol/illegible signature records)
+
+---
+
+## Node: NODE_AVIZ_INSTiintare_2023
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 10; Moldovan CPC Art. 106-108
+vector: aviz_de_instiintare (18.10.2023, Judecătoria Chișinău, sediul Centru) -> procedural_trace_and_notice
+  -> continuing_violation
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `Aviz_de_instiintare_18.10.2023.pdf`
+  - **SHA-256:** `aviz_instiintare_anchor_2023`
+  - **Role:** Official court notice (Aviz de înștiințare) dated October 18, 2023 from Chisinau Court (Center HQ) tracking ongoing procedural correspondence and denial of justice.
 
 ---
 
@@ -205,6 +234,22 @@ doctrine: Financial and legal colonialism via German sabotage of the 1961 Hague 
 - **File:** `apostille_registry_working_14.signed.pdf`
   - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
   - **Role:** Validating cryptographically anchored MoldSign apostilles against external consular sabotage.
+
+---
+
+## Node: NODE_OPERATIONAL_DEPLOYMENT_ROADMAP_2026
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR, VCLT (1969) Arts. 27 & 53, ARSIWA, UN CAT Article 22
+vector: operational_deployment_roadmap (Root of Trust -> Consolidated Evidence Vault
+  -> Entity Accountability -> Economic Restitution Model -> 3-Vector International
+  & National Deployment)
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `TI_ULA_Operational_Roadmap.mmd`
+  - **SHA-256:** `mermaid_roadmap_anchor_2026`
+  - **Role:** Mermaid.js operational deployment flowchart linking the root of trust, evidence vault, entity accountability network, economic valuation (1,098,500 EUR), and the three deployment vectors (UN CAT, Special Rapporteurs, National Prosecutor General).
 
 ---
 
