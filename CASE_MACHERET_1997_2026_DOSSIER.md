@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 18:10:07 (Europe/Chisinau)
+**Generated on:** 2026-09-20 18:43:59 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -119,6 +119,21 @@ vector: detention -> non-rehabilitation -> continuing-consequences -> restitutio
 - **File:** `A_Negru_25.04.2023.pdf`
   - **SHA-256:** `7fa67dff9a4e79bcdb959a4adc5fb4b68c85c679b9e036be59d81b834e4f9bd0`
   - **Role:** Documents linked to Judge Negru
+
+---
+
+## Node: NODE_SEMNATURA_INDESCIFRABILA_TRAP
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 10, 11; UN CAT Art. 2, 7, 12, 13, 14; VCLT Art. 53
+vector: language_deprivation (CPC RM Art. 16) -> institutional_sabotage (semnătura
+  indescifrabilă) -> moldsign_state_binding -> ti_ula_cryptographic_override
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `apostille_registry_working_14.signed.pdf`
+  - **SHA-256:** `de54c36210e4df65d61475c48fd5f3e0ffe60d606041bcbf393affb71e510050`
+  - **Role:** Documenting the institutional trap of marking valid physical signatures as 'semnătura indescifrabilă' while binding them with MoldSign state cryptographic certificates.
 
 ---
 
