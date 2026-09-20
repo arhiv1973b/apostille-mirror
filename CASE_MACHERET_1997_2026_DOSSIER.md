@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 18:43:59 (Europe/Chisinau)
+**Generated on:** 2026-09-20 19:10:26 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
@@ -91,6 +91,21 @@ vector: nighttime_search (23.07.2007) -> retroactive_legitimation (24.07.2007, J
 - **File:** `Доказательства Суду Холбан.pdf`
   - **SHA-256:** `cad22878e52a79c4a8613665dc2cca169a8f04cca34132edfbbff7a89ebd5e56`
   - **Role:** Night search (23.07.2007, 22:40) and retroactive validation (24.07.2007)
+
+---
+
+## Node: NODE_FICTITIOUS_ISSUANCE_TRAP
+**Type:** evidence_node
+### Legal Framework
+```yaml
+basis: UDHR Art. 8, 10, 11; UN CAT Art. 2, 7, 12, 13, 14; CPC RM Art. 16
+vector: fictitious_issuance -> language_reform_sabotage (2018) -> ghost_document_2022
+  (semnătura indescifrabilă) -> moldsign_cryptographic_override
+```
+### Cryptographic Anchors (Master Files)
+- **File:** `10r_1632_26 Pislariuc Vitalie_1.pdf`
+  - **SHA-256:** `e9eb07be601a03247af4c4941299e99520342be399a2fd2b6dec1459270053fd`
+  - **Role:** Parallel judicial case file demonstrating systematic state-sponsored procedural formatting and signature obfuscation.
 
 ---
 
