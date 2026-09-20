@@ -1,5 +1,5 @@
 # LEGAL DOSSIER: CASE-MACHERET-1997-2026
-**Generated on:** 2026-09-20 23:34:43 (Europe/Chisinau)
+**Generated on:** 2026-09-20 23:42:58 (Europe/Chisinau)
 **Legal Framework:** Universal Declaration of Human Rights (UDHR), Jus Cogens, Erga Omnes
 **Verification Protocol:** TI-ULA (Cryptographic Hashing & Pointer Isolation)
 ---
