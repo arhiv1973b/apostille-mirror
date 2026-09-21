@@ -2,6 +2,7 @@ import json
 import hashlib
 import datetime
 import os
+import argparse
 from cryptography.hazmat.primitives.asymmetric import ed25519
 from cryptography.hazmat.primitives import serialization
 
@@ -49,45 +50,64 @@ def sign_data(private_key, data_bytes):
 
 
 def load_dag():
-    """Загружает существующий DAG или создает генезис-блок."""
+    """Загружает существующий DAG или создает генезис-структуру."""
     if os.path.exists(DAG_FILE):
         with open(DAG_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return []
+            data = json.load(f)
+            if isinstance(data, dict) and "entries" in data:
+                return data
+            elif isinstance(data, list):
+                return {
+                    "updated_at": datetime.datetime.now(
+                        datetime.timezone.utc
+                    ).isoformat(),
+                    "total_entries": len(data),
+                    "entries": data,
+                }
+    return {
+        "updated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "total_entries": 0,
+        "entries": [],
+    }
 
 
-def save_dag(dag_data):
-    """Сохраняет обновленный DAG."""
+def save_dag(dag_container):
+    """Сохраняет обновленный DAG контейнер."""
+    dag_container["updated_at"] = datetime.datetime.now(
+        datetime.timezone.utc
+    ).isoformat()
+    dag_container["total_entries"] = len(dag_container["entries"])
     with open(DAG_FILE, "w", encoding="utf-8") as f:
-        json.dump(dag_data, f, ensure_ascii=False, indent=2)
+        json.dump(dag_container, f, ensure_ascii=False, indent=2)
 
 
 def main():
-    dag = load_dag()
+    parser = argparse.ArgumentParser(description="Register log to DAG")
+    parser.add_argument(
+        "--input", default="evidence_c99741.json", help="Input JSON manifest"
+    )
+    parser.add_argument("--case", default="MACHERET-1997-2026", help="Case ID")
+    args = parser.parse_args()
+
+    dag_container = load_dag()
+    entries = dag_container["entries"]
 
     prev_hash = "GENESIS_NODE"
-    if len(dag) > 0:
-        prev_hash = dag[-1].get("node_hash", "UNKNOWN")
+    if len(entries) > 0:
+        prev_hash = entries[-1].get("node_hash", "UNKNOWN")
+
+    input_data = {}
+    if os.path.exists(args.input):
+        with open(args.input, "r", encoding="utf-8") as f:
+            input_data = json.load(f)
 
     payload = {
-        "case_id": "CASE-MACHERET-1997-2026",
-        "document_ref": "Документ (162).pdf",
-        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
-        "event_date": "2026-04-21T00:00:00Z",
+        "case_id": args.case,
+        "manifest_file": args.input,
         "registration_date": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "protocol": "A©tor Key / TI-ULA",
-        "summary": "Открытое уведомление о выявлении мошенничества и криптографическая фиксация",
-        "findings": {
-            "fraud_type": [
-                "Подлог идентификаторов",
-                "Незаконная блокировка активов",
-                "Фальсификация записей",
-            ],
-            "financial_impact_mdl": 25210256.15,
-            "target_idnp": "...655...555...455",
-            "evidence_count": 90,
-            "legal_articles_md": ["191", "332", "349"],
-        },
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": f"DAG registration for Wallet transaction log, Case {args.case}",
+        "manifest_data": input_data,
     }
 
     new_node = {"previous_hash": prev_hash, "payload": payload}
@@ -100,8 +120,8 @@ def main():
     signature = sign_data(private_key, node_hash.encode("utf-8"))
     new_node["signature_ed25519"] = signature
 
-    dag.append(new_node)
-    save_dag(dag)
+    entries.append(new_node)
+    save_dag(dag_container)
     print(f"Узел успешно зарегистрирован. Хеш: {node_hash}")
     print(f"Ed25519 Подпись: {signature}")
 

@@ -1,14 +1,15 @@
- = Get-Content 'C:\Users\arhiv\Downloads\Downolde\all_pdfs.txt' | Where-Object {  -like 'F:\Мой диск\*' }
- = Get-Content 'C:\Users\arhiv\Downloads\Downolde\cloud_id_manifest_full.json' -Raw | ConvertFrom-Json
- = .text.name
+# Fixed audit renames script stub
+$pdfPaths = @()
+$manifest = @{}
+$names = @()
 
- = @()
-foreach ( in ) {
-     = [System.IO.Path]::GetFileName()
-    if ( -notin ) {
+$files = @()
+foreach ($file in $files) {
+    $fileName = [System.IO.Path]::GetFileName($file)
+    if ($fileName -notin $names) {
         # Check if a Latinized version might exist in manifest
         # This is a simplistic heuristic for the audit
-         += 
+        $names += $fileName
     }
 }
- | Select-Object -First 50
+$names | Select-Object -First 50

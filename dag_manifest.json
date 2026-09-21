@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-11T18:10:45.082214+00:00",
-  "total_entries": 326,
+  "updated_at": "2026-09-19T17:57:43.170966+00:00",
+  "total_entries": 344,
   "entries": [
     {
       "previous_hash": "GENESIS_NODE",
@@ -3260,6 +3260,714 @@
       "human_approval_signature": "ED25519_HUMAN_AUDITOR_VERIFIED_2026",
       "node_hash": "36bbb62fe85c58bd3ec1d7d9da0e05dec167c688b7d1dcf1fe79a9cc4a333e46",
       "signature_ed25519": "8451c95a318cdd93e9e372c242e8b1f583383a59a1e9d24d6c06a4bdb2a3e87a894203b70905a99382eebfbdc9c2ec7f1807a15e2fb72765323b7876d11eb407"
+    },
+    {
+      "previous_hash": "36bbb62fe85c58bd3ec1d7d9da0e05dec167c688b7d1dcf1fe79a9cc4a333e46",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "apostille_registry_working_13.signed.pdf",
+        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+        "event_date": "1998-10-13T00:00:00Z",
+        "registration_date": "2026-09-13T23:10:47.672268+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
+        "summary": "Фиксация базового узла дела 1-568/98 с апостилями 2021 года (Continuing Consequences & Actus Nullus)",
+        "evidence_anchor": {
+          "schema_version": "1.1",
+          "node_id": "apostille_anchor_1_568_98",
+          "node_type": "evidence_anchor",
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ],
+          "documents": [
+            {
+              "source_file": "apostille_registry_working_13.signed.pdf",
+              "case_reference": "1-568/98",
+              "apostilles": [
+                {
+                  "apostille_id": "7H2Q3790FZEI5",
+                  "signatory": "Мирон Алёна",
+                  "original_date": "13.10.1998",
+                  "apostille_date": "18.05.2021"
+                },
+                {
+                  "apostille_id": "FL2VB340JYEG5",
+                  "signatory": "Miron Aliona",
+                  "apostille_date": "21.07.2021"
+                }
+              ]
+            }
+          ]
+        },
+        "findings": {
+          "fraud_type": [
+            "Подлог идентификаторов",
+            "Незаконная блокировка активов",
+            "Фальсификация записей",
+            "Длящиеся последствия (Continuing Consequences)",
+            "Акт вопреки Jus Cogens (Actus Nullus)"
+          ],
+          "financial_impact_mdl": 25210256.15,
+          "target_idnp": "...655...555...455",
+          "evidence_count": 91,
+          "legal_articles_md": [
+            "191",
+            "332",
+            "349"
+          ],
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ]
+        }
+      },
+      "node_hash": "6ae240a2ec05260231845f9e1a9faf3f5a2f826e40081a5987c33f06c56deded",
+      "signature_ed25519": "d64951e7e64da5f2766896c18062ef36c94d5c4fa117510f4c234f320d80e587d45895f8cf6938aec6026d06f608d72ff6bee6359e22286b8acf05906c65f10c"
+    },
+    {
+      "previous_hash": "6ae240a2ec05260231845f9e1a9faf3f5a2f826e40081a5987c33f06c56deded",
+      "payload": {
+        "pipeline_execution": {
+          "target_agent": "CLI / Terminal AI (Ollama / Crush / Gemini CLI)",
+          "action_sequence": [
+            {
+              "step": 1,
+              "document_type": "LETTER_TO_DONALD_TRUMP",
+              "date": "2026-09-15",
+              "subject": "Systemic violations, asset/banking pressure, and targeted attacks correlating with state-corporate actions",
+              "key_elements": [
+                "Chronological alignment of attacks on Maceret",
+                "Bank demands and compliance coercion",
+                "PEP status verification and legal implications"
+              ]
+            },
+            {
+              "step": 2,
+              "evidence_correlation": {
+                "critical_date": "2026-04-03",
+                "event": "Passport issuance under direct bank demand",
+                "participants": [
+                  "Alexei Maceret",
+                  "Irina Oleinic"
+                ],
+                "legal_qualification": "Moment of theft / coerced documentation acquisition / institutional pressure"
+              }
+            },
+            {
+              "step": 3,
+              "dag_logging": {
+                "action": "Register log to DAG",
+                "script": "register_log_to_dag.py",
+                "integrity": "SHA-256 / Ed25519 signing"
+              }
+            }
+          ]
+        },
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "LETTER_TO_DONALD_TRUMP_2026-09-15.md",
+        "registration_date": "2026-09-15T20:53:57.555017+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
+        "summary": "Formal communication to Donald Trump and evidence correlation for passport coercion on 2026-04-03"
+      },
+      "node_hash": "ad9414c73be2d8c72b724d23373a1d07b717e4e9a93c37a6a748d46a83e98d5d",
+      "signature_ed25519": "e73ca5092fa108fab4bb9f69bc39510b1c9e6f9c9e94381e61d60853fdd874a27e4f8fc32911e771a75f7a0248a18051f0b0886d6810064b503d449f9b6e510a"
+    },
+    {
+      "previous_hash": "ad9414c73be2d8c72b724d23373a1d07b717e4e9a93c37a6a748d46a83e98d5d",
+      "payload": {
+        "case_id": "CASE-MACHERET-1997-2026",
+        "document_ref": "apostille_registry_working_13.signed.pdf",
+        "declaration_ref": "A©TOR_KEY=_# [⚖ A©tor Declaration]_.pdf",
+        "event_date": "1998-10-13T00:00:00Z",
+        "registration_date": "2026-09-16T23:24:33.797325+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor",
+        "summary": "Фиксация базового узла дела 1-568/98 с апостилями 2021 года (Continuing Consequences & Actus Nullus)",
+        "evidence_anchor": {
+          "schema_version": "1.1",
+          "node_id": "apostille_anchor_1_568_98",
+          "node_type": "evidence_anchor",
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ],
+          "documents": [
+            {
+              "source_file": "apostille_registry_working_13.signed.pdf",
+              "case_reference": "1-568/98",
+              "apostilles": [
+                {
+                  "apostille_id": "7H2Q3790FZEI5",
+                  "signatory": "Мирон Алёна",
+                  "original_date": "13.10.1998",
+                  "apostille_date": "18.05.2021"
+                },
+                {
+                  "apostille_id": "FL2VB340JYEG5",
+                  "signatory": "Miron Aliona",
+                  "apostille_date": "21.07.2021"
+                }
+              ]
+            }
+          ]
+        },
+        "findings": {
+          "fraud_type": [
+            "Подлог идентификаторов",
+            "Незаконная блокировка активов",
+            "Фальсификация записей",
+            "Длящиеся последствия (Continuing Consequences)",
+            "Акт вопреки Jus Cogens (Actus Nullus)"
+          ],
+          "financial_impact_mdl": 25210256.15,
+          "target_idnp": "...655...555...455",
+          "evidence_count": 91,
+          "legal_articles_md": [
+            "191",
+            "332",
+            "349"
+          ],
+          "legal_basis": [
+            "VCLT_Art_71_1a",
+            "Actus_Nullus",
+            "ECHR_Continuing_Consequences"
+          ]
+        }
+      },
+      "node_hash": "c862180d8868e124b2620b1a759bd10ba442bf7cded8dadeac626160f13cd94b",
+      "signature_ed25519": "e701b936a7dbf9fcb320e6b8da0b3c336d1a4ca036e840492e48211e7689873307263949bf036d95dd31caca9d4c746c11bea97d3aff19c1a6d36c4816509406"
+    },
+    {
+      "previous_hash": "c862180d8868e124b2620b1a759bd10ba442bf7cded8dadeac626160f13cd94b",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_c99741.json",
+        "registration_date": "2026-09-19T11:40:45.370137+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+          "DateTime": "2026-04-03T10:55:00",
+          "WalletToken": "MD-APPLEPAY-6089-20260403",
+          "BankParticipationStatus": "RECORDED_IN_SOURCE",
+          "LegalCharacterization": "Disputed Theft – US Funds Only",
+          "RecordStatus": "USER_ASSERTED / DISPUTED",
+          "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "16879cc7b1138d5638e1edcaaf08f036ec7994d576d1c30eaa746cb40c022767",
+      "signature_ed25519": "ea3fb0757c107825f8c9311bd4d3ba7a07b481f590fffc0eb3cb0270dde2d5e66b77a4e1dd8b75020163d4aed4b1d7508e1af3e30c565ff8ec5e039d5fcc6901"
+    },
+    {
+      "previous_hash": "16879cc7b1138d5638e1edcaaf08f036ec7994d576d1c30eaa746cb40c022767",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_faecfcd8.json",
+        "registration_date": "2026-09-19T12:56:15.656935+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "SourcePath": "C:\\Users\\arhiv\\OneDrive\\Документы\\ViberDownloads\\0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+          "FileHash": "2dc2fcf5f5ac90dd2dbed76789cf6edd37eac0be7fb10f9d186ed43418dc42ac",
+          "FileSize": 247438,
+          "DateTime": "2026-09-19T12:55:10.040274+00:00",
+          "EvidenceType": "Viber Photo Evidence",
+          "RecordStatus": "VERIFIED_SOURCE_MEDIA",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "c658111cb41591f3e8a3553cffe25ce107bf228f1d3b5a57dc3279cb275ca1de",
+      "signature_ed25519": "511b052d7ae9735fac2d568cb42081064454b44a9d4333eaea2bf3a8ca36cac7944a2e374cd36f3e144d193ea9bfc2ca0fc33fb594f7cfbe0394e05631bc1c0a"
+    },
+    {
+      "previous_hash": "c658111cb41591f3e8a3553cffe25ce107bf228f1d3b5a57dc3279cb275ca1de",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_c99741_faecfcd8_linked.json",
+        "registration_date": "2026-09-19T13:00:22.390843+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+          "DateTime": "2026-04-03T10:55:00",
+          "Sender": "FinComBank S.A.",
+          "Receiver": "Moldindconbank S.A.",
+          "Amount": "25,210,256.15 MDL (~1,400,000 USD)",
+          "CardConflict": "5929 (blocked) / 6089 (new, displayed balance)",
+          "WalletToken": "MD-APPLEPAY-6089-20260403",
+          "ViberImageEvidence": {
+            "SourcePath": "C:\\Users\\arhiv\\OneDrive\\Документы\\ViberDownloads\\0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+            "FileHash": "2dc2fcf5f5ac90dd2dbed76789cf6edd37eac0be7fb10f9d186ed43418dc42ac"
+          },
+          "BankParticipationStatus": "RECORDED_IN_SOURCE",
+          "LegalCharacterization": "Disputed Theft – US Funds Only",
+          "RecordStatus": "USER_ASSERTED / DISPUTED",
+          "EvidenceStatus": "VERIFIED_LINKED_TO_TRANSACTION",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
+      "signature_ed25519": "1569ee7d2f508f656d3930f86ab23e24b52bc8ce72b0de566c1d16123558272aa58b192a25b2e94955296945da1f29a36171c7a91e4128d339cd73339cd3400b"
+    },
+    {
+      "previous_hash": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_amount_correlation_batch.json",
+        "registration_date": "2026-09-19T13:06:47.748924+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+          "DateTime": "2026-09-19T13:06:47.411116+00:00",
+          "MatchedEvidenceFiles": [
+            "H:\\ACTOR_DEV_ENV\\APPEAL_TO_PRESIDENT_TRUMP_2026.md",
+            "H:\\ACTOR_DEV_ENV\\APPEAL_TO_PRESIDENT_TRUMP_2026_CANONICAL.json",
+            "H:\\ACTOR_DEV_ENV\\CASE_TRUMP_APPEAL_CANONICAL.json",
+            "H:\\ACTOR_DEV_ENV\\COVER_LETTER_ERGA_OMNES.md",
+            "H:\\ACTOR_DEV_ENV\\dag_manifest.json",
+            "H:\\ACTOR_DEV_ENV\\ERGA_OMNES_MASTER_REPORT.md",
+            "H:\\ACTOR_DEV_ENV\\evidence_c99741.json",
+            "H:\\ACTOR_DEV_ENV\\evidence_c99741_faecfcd8_linked.json",
+            "H:\\ACTOR_DEV_ENV\\evidence_dag.json",
+            "H:\\ACTOR_DEV_ENV\\FINAL_RESTITUTION_CLAIM_2026.md",
+            "H:\\ACTOR_DEV_ENV\\FINCOMBANK_REFUSAL_6387.md",
+            "H:\\ACTOR_DEV_ENV\\FINCOMBANK_SWIFT_MSMTP_ANCHOR.md",
+            "H:\\ACTOR_DEV_ENV\\FORENSIC_AUDIT_REPORT.md",
+            "H:\\ACTOR_DEV_ENV\\gemini-code-1779643197946.json",
+            "H:\\ACTOR_DEV_ENV\\international_sanctions_matrix.json",
+            "H:\\ACTOR_DEV_ENV\\LEGAL_DRAFT_ECHR_BRIEF.md",
+            "H:\\ACTOR_DEV_ENV\\manifest.json",
+            "H:\\ACTOR_DEV_ENV\\ofac_magnitsky_petition_2026.md",
+            "H:\\ACTOR_DEV_ENV\\ROOT_MANIFEST_2026.md",
+            "H:\\ACTOR_DEV_ENV\\ti_ula_graph_export.json",
+            "H:\\ACTOR_DEV_ENV\\UNIVERSAL_LEGAL_PACKAGE_UDHR_2026.md",
+            "H:\\ACTOR_DEV_ENV\\UNIVERSAL_NOTEBOOK_CASE_MACHERET.md"
+          ],
+          "Protocol": "TI-ULA Forensic Anchor & Amount Correlation [AIPS-2025]",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "2bdc8219dadc553364592f6aaa642afdbcca9c3126b10701c5d85eb8aa01b8e6",
+      "signature_ed25519": "7e871cf73c8c84b439853ff207e74d502bc92dc99c643e3203c39e1363ea7690dd0487808588f52efe9914e268e23081c7b49507c34211ac454f0d3b5913f904"
+    },
+    {
+      "previous_hash": "2bdc8219dadc553364592f6aaa642afdbcca9c3126b10701c5d85eb8aa01b8e6",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "transaction_image_map.json",
+        "registration_date": "2026-09-19T13:20:33.790950+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+          "DateTime": "2026-04-03T10:55:00",
+          "Sender": "FinComBank S.A.",
+          "Receiver": "Moldindconbank S.A.",
+          "Amount": {
+            "MDL": 25210256.15,
+            "USD": 1400000
+          },
+          "WalletToken": "MD-APPLEPAY-6089-20260403",
+          "CardConflict": {
+            "Blocked": "5929",
+            "Displayed": "6089"
+          },
+          "Image": {
+            "FileName": "0-02-05-16ff2207bac47ccc430dc4cb26edbf9a852ffe2d797d8e6f9d48db130705d607_faecfcd82230d698.jpg",
+            "LocalPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\viber_faecfcd8_2dc2fcf5.jpg",
+            "SHA256": "2dc2fcf5f5ac90dd2dbed76789cf6edd37eac0be7fb10f9d186ed43418dc42ac",
+            "SizeBytes": 247438
+          },
+          "DAGNode": "b5b9f5cc13267dfa7aa7de63a66abd576d60ba42060dc813b80817853a01b983",
+          "GitHubRelease": "https://github.com/arhiv1973b/apostille-mirror/releases/tag/evidence-linked-c99741-faecfcd8-20260403",
+          "Case": "MACHERET-1997-2026",
+          "LegalCharacterization": "Disputed Theft – US Funds Only",
+          "RecordStatus": "USER_ASSERTED / DISPUTED",
+          "EvidenceStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+          "IntegrityLock": "AIPS-2025"
+        }
+      },
+      "node_hash": "dcb7849379e2995dfd8f1e45eba6d4cca6f211c84ad663ae0ffd04ef92de9fc3",
+      "signature_ed25519": "2ff7f25a7f5b10d4d89a70e8fd46a3e34c0dafd44f76aa508a361b24367dfcf6327a8392499eb8bd8a971c612d01d2531a948675fa826dffc7d4362f8c1f2e07"
+    },
+    {
+      "previous_hash": "dcb7849379e2995dfd8f1e45eba6d4cca6f211c84ad663ae0ffd04ef92de9fc3",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_0ab9ee12.json",
+        "registration_date": "2026-09-19T14:50:15.822824+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "SourcePath": "C:\\Users\\arhiv\\Downloads\\Downolde\\0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65.zip",
+          "FileHash": "c4ebd16c1e5f27976571a9757968b19e45381e6041bcad3baf03968c4e8e8440",
+          "FileSize": 26090,
+          "ZipContents": [
+            "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/",
+            "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/diagnostics.txt",
+            "0ab9ee12a1d7941e0693116f0613f98f-ba467af3dd773b3aaed2d5605ef830c92f2dcb65/github-app.18620.log"
+          ],
+          "DateTime": "2026-09-19T14:49:07.455568+00:00",
+          "EvidenceType": "Forensic Archive Zip",
+          "RecordStatus": "VERIFIED_SOURCE_ARCHIVE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "d39b5c80dbfc6345304439e890d8a3ebf5787dafbc871c1ce45cd51289629634",
+      "signature_ed25519": "6d25e6ca9d61935a84278be13c24b3845c22b9f92f39561dcf8da27dce33e3731207e28ac34da955faa7dd5106cafdf7fb6d7165019756635426b4534d7abe04"
+    },
+    {
+      "previous_hash": "d39b5c80dbfc6345304439e890d8a3ebf5787dafbc871c1ce45cd51289629634",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_c99741.json",
+        "registration_date": "2026-09-19T15:47:06.861564+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "ForensicGraphEntry": {
+            "Case": "MACHERET-1997-2026",
+            "IDNP": "2000001159655",
+            "Transaction": {
+              "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+              "HashAlgorithm": "SHA-256",
+              "DateTime": "2026-04-03T10:55:00",
+              "Sender": {
+                "Institution": "FinComBank S.A.",
+                "Source": "Apple Wallet transaction record"
+              },
+              "Receiver": {
+                "Institution": "Moldindconbank S.A.",
+                "Source": "Apple Wallet transaction record"
+              },
+              "AmountMDL": "25210256.15",
+              "AmountUSD": "1400000",
+              "WalletToken": "MD-APPLEPAY-6089-20260403"
+            },
+            "FundsProvenance": {
+              "SourceFunds": "US/IMF tranche",
+              "Status": "USER_ASSERTED / DISPUTED"
+            },
+            "CardConflict": {
+              "PreviousCard": "5929",
+              "NewCard": "6089",
+              "ReportedEffect": "old card retained/displayed funds while new card displayed a pending/stuck balance",
+              "Status": "USER_REPORTED / REQUIRES_PRIMARY_SOURCE_VERIFICATION"
+            },
+            "EvidenceLinks": [
+              "GitHub: JUS_COGENS_REPORT.md",
+              "GitHub: ti_ula_crypto_manifest.json",
+              "FinComPay Wallet screenshot",
+              "Victoria bank.pdf ATM log"
+            ],
+            "Verification": {
+              "IntegrityLock": "AIPS-2025",
+              "DigitalSignature": "MoldSign SHA-256 (claimed, not independently verified)",
+              "VerificationStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK"
+            },
+            "ForensicStatus": {
+              "RECORD_STATUS": "USER_ASSERTED / DISPUTED",
+              "GRAPH_WRITE_STATUS": "NOT_PERFORMED",
+              "CLAIM_STATUS": "DISPUTED",
+              "EVIDENCE_STATUS": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+              "BANK_PARTICIPATION_STATUS": "RECORDED_IN_SOURCE",
+              "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
+            },
+            "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+          }
+        }
+      },
+      "node_hash": "ea4b6f59991f2ae211fb081b860d21c6baf555241418d66c7b4077f3bb081d02",
+      "signature_ed25519": "ffe24fa6d1a5f3c9bf5b364777424f17e96d52400b2ed8a66bc3202ab19cf6d2b63039a0a7018ffd9640411e24dc021067687ad8d5d52c9d3640f1bfbe21a70f"
+    },
+    {
+      "previous_hash": "ea4b6f59991f2ae211fb081b860d21c6baf555241418d66c7b4077f3bb081d02",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_kebes_complaint.json",
+        "registration_date": "2026-09-19T16:29:15.908077+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "$schema": "https://raw.githubusercontent.com/arhiv1973b/apostille-mirror/main/schemas/ti-ula-manifest.json",
+          "Case": "MACHERET-1997-2026",
+          "DocumentDetails": {
+            "Title": "Plângere în baza art. 298 CPP (Alexei Kebeș / Maceret Alexei)",
+            "OriginalFilename": "Кебеш в отношении кражи.pdf",
+            "SourcePath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\Кебеш в отношении кражи.pdf",
+            "Author": "Avocat Alexei Kebeș",
+            "Recipient": "Procuratura municipiului Chișinău, Oficiul Râșcani (Proc. Oxana Cazacu)",
+            "FilingDate": "2026-08-09",
+            "TargetSubject": "Sustragerea mijloacelor financiare în sumă de 25.210.256,15 MDL",
+            "TargetTransaction": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce"
+          },
+          "CryptographicIntegrity": {
+            "Algorithm": "SHA-256",
+            "FileHash": "c4ebd16c1e5f27976571a9757968b19e45381e6041bcad3baf03968c4e8e8440",
+            "FileSizeBytes": 26090
+          },
+          "LegalFrameworkMapping": {
+            "Doctrines": [
+              "Continuing Consequences",
+              "Erga Omnes",
+              "Non-Rehabilitation"
+            ],
+            "UDHR_Violations": [
+              {
+                "Article": "Статья 8",
+                "Description": "Право на эффективное восстановление в правах компетентными национальными судами (отказ в регистрации и рассмотрении уголовного дела по существу, подмена процессуальных решений простой административной перепиской)."
+              },
+              {
+                "Article": "Статья 10",
+                "Description": "Право на справедливое и гласное судебное рассмотрение независимым судом (лишение возможности судебного контроля через уклонение от вынесения мотивированных постановлений по ст. 274 УПК РМ)."
+              }
+            ]
+          },
+          "RecordMetadata": {
+            "DateTimeUTC": "2026-09-19T17:24:28Z",
+            "EvidenceType": "Forensic Legal Complaint & Procedural Evidence",
+            "RecordStatus": "VERIFIED_LEGAL_SOURCE",
+            "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+            "IntegrityLock": "AIPS-2025"
+          }
+        }
+      },
+      "node_hash": "650355ab048e813dc510c400236ad463bdd338dfcaa9bab68bec70ded8b747b9",
+      "signature_ed25519": "c0bd1f5779a8f77181e96fa1e50a462cce1ea9eceb8c43b22c5987ab967cf503e387a4d2559e353e0a8e45cd6d75c8359f5bc2413c17a2b7d7de619e4fa69a0d"
+    },
+    {
+      "previous_hash": "650355ab048e813dc510c400236ad463bdd338dfcaa9bab68bec70ded8b747b9",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "doctrine_bypass_echr_manifest.json",
+        "registration_date": "2026-09-19T16:44:17.964944+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "NodeId": "doctrine_bypass_echr_corporate_model",
+          "NodeType": "Strategic_Legal_Shift",
+          "Subject": "Disarming EU Treaty Bodies via RM Constitution Art 4 & 8",
+          "CoreArguments": [
+            {
+              "Argument": "Rejection of Human Rights Commodification",
+              "Description": "Invalidates ECHR precedents that treat fundamental rights as tradable commodities generated via corporate AI protocols and data manipulation."
+            },
+            {
+              "Argument": "Constitutional Supremacy Override",
+              "Articles": [
+                "Constitution_RM_Art_4",
+                "Constitution_RM_Art_8",
+                "UN_Charter"
+              ],
+              "Description": "Direct application of UN Charter and UDHR overrides European bureaucratic jurisprudence and procedural limits (like Art 85 CPC RM)."
+            },
+            {
+              "Argument": "Absolute Restitutio in Integrum",
+              "Articles": [
+                "Constitution_RM_Art_53",
+                "Jus_Cogens"
+              ],
+              "Description": "Demands total restitution, rejecting the ECHR's limited 'just satisfaction' model as fundamentally unconstitutional."
+            }
+          ],
+          "LinkedNodes": [
+            "cassation_doctrine_s22_art85",
+            "medical_apostille_anchor_870_883"
+          ],
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]",
+          "IntegrityLock": "AIPS-2025"
+        }
+      },
+      "node_hash": "f68721689f67b1276a2210ad1747dc28264ea8531644802e0f24345bc16c34c5",
+      "signature_ed25519": "3ef8459850dfc262c4e88210288881d4296b6ac2967fc63d8200fbd6233d0224c30458e36626b0b56af1d1d21b5b940c76f9e2cd4c43c1ffa0ba22fbe8254409"
+    },
+    {
+      "previous_hash": "f68721689f67b1276a2210ad1747dc28264ea8531644802e0f24345bc16c34c5",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_8948bbce.json",
+        "registration_date": "2026-09-19T17:00:11.495999+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "H:\\Загрузки\\Документ (1) (46).pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_8948bbce_Документ (1) (46).pdf",
+          "FileHash": "8948bbcec6817bd75330838a7ebbd59ff8da1dccebe5db6a0e6b1e36b7417339",
+          "FileSize": 206363,
+          "DateTime": "2026-09-19T16:58:29.577322+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "f75808362d3a552b5be70b2684a870d903e9b271b234c3fe37db1a2bdc8576a0",
+      "signature_ed25519": "10d934f5aa2bb7db556bac2a9dee7aace35127a365adeed33bf57ebd031f394e94124d69809183ed91bb7e4a4b29a79a8586b6da1149531ff709d18690afab0f"
+    },
+    {
+      "previous_hash": "f75808362d3a552b5be70b2684a870d903e9b271b234c3fe37db1a2bdc8576a0",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_29705e62.json",
+        "registration_date": "2026-09-19T17:00:11.846934+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "H:\\ACTOR_DEV_ENV\\Болокан_сжатый.pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_29705e62_Болокан_сжатый.pdf",
+          "FileHash": "29705e62a5cb689533998afffe1faba23017c8581c31f7e4c15b507d7b5e63ed",
+          "FileSize": 18339889,
+          "DateTime": "2026-09-19T16:58:29.822444+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "867c1496a0d575f2434e3502a68ba5546eddd3357c04d0a1657bb7f99eff3223",
+      "signature_ed25519": "9dabe41e8ca42c7bb7855e546453be3c65ebae5812c57a33d4cbec2ce18721c12ed334a3ef2f0da14bad06a429bee291a923a84871cd540189778f765ef30005"
+    },
+    {
+      "previous_hash": "867c1496a0d575f2434e3502a68ba5546eddd3357c04d0a1657bb7f99eff3223",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_faeff89c.json",
+        "registration_date": "2026-09-19T17:00:12.187091+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "C:\\Users\\arhiv\\OneDrive\\Документы\\ViberDownloads\\0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_faeff89c_0-02-05-8d1b22d5f50347b3a4ed0e93a812ceb2ea0bde8ad25251a419c0d8a52b407fbf_3b75ce28b8552c97.jpg",
+          "FileHash": "faeff89ceff24cb3870f43e7cf1bbc7ace1dd45b74822a237bf874ade4ce11c0",
+          "FileSize": 232220,
+          "DateTime": "2026-09-19T16:58:29.826408+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "98aa19a93fb92dcad656b98ac921d87eff971d51daf9d76ae719693fa1eb4c1b",
+      "signature_ed25519": "d26f7688657c7c0e4a376a110520211ced71afd39a548addc8e3f175937b451442581ee44a439a61153c62c71f79412c6a80dfe7f0a846b865b29f7824c9f80b"
+    },
+    {
+      "previous_hash": "98aa19a93fb92dcad656b98ac921d87eff971d51daf9d76ae719693fa1eb4c1b",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_0dbe7fd3.json",
+        "registration_date": "2026-09-19T17:00:12.494854+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "H:\\Загрузки\\CERERE_scutire_taxa_timbru_Maceret_Alexei_2r-1026-26_v6_apostile.pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_0dbe7fd3_CERERE_scutire_taxa_timbru_Maceret_Alexei_2r-1026-26_v6_apostile.pdf",
+          "FileHash": "0dbe7fd37ffb9e919345ebf174483b2eccb419d549e85902f1b7ee5e5b3d59a9",
+          "FileSize": 1555875,
+          "DateTime": "2026-09-19T16:58:29.838862+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "27ea4db0dbb3bc68514a630799834c8e53422d08ac6a3ee47ac4b83543ad1481",
+      "signature_ed25519": "0719654a38d404cfaf014782c099a308197bbb9845441b45fbeb17991a2e7304a9b65857bd3731f18169a479a37f8190c07d052174a741e6cd5eb3993bb64103"
+    },
+    {
+      "previous_hash": "27ea4db0dbb3bc68514a630799834c8e53422d08ac6a3ee47ac4b83543ad1481",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "H:\\ACTOR_DEV_ENV\\evidence_9f050edd.json",
+        "registration_date": "2026-09-19T17:00:12.820484+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "Case": "MACHERET-1997-2026",
+          "OriginalPath": "C:\\Users\\arhiv\\OneDrive\\Документы\\ViberDownloads\\чеканы дело о 25 милионаз.pdf",
+          "VaultPath": "H:\\ACTOR_DEV_ENV\\evidence_vault\\evidence_9f050edd_чеканы дело о 25 милионаз.pdf",
+          "FileHash": "9f050edd0cf235342e40cc07f7eb1c42ea570e4025180691496d24ac79c63a6c",
+          "FileSize": 78488,
+          "DateTime": "2026-09-19T16:58:29.841881+00:00",
+          "EvidenceType": "Forensic Document / Appeal / Taxa de Timbru / Case File",
+          "RecordStatus": "VERIFIED_SOURCE_EVIDENCE",
+          "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+        }
+      },
+      "node_hash": "ea311a19ae50a673fece7b3f835eab4b19ff711cb3c92d19dd9d29a223ee6b1c",
+      "signature_ed25519": "4684748044177baddf117e14d960088cca0d89bf39ecb5a00a9bed4bde6c7db9d3f2c11ac25bc72231ce3f5f23275a6ff904b0dc2bd139cc33212f67b18bd70d"
+    },
+    {
+      "previous_hash": "ea311a19ae50a673fece7b3f835eab4b19ff711cb3c92d19dd9d29a223ee6b1c",
+      "payload": {
+        "case_id": "MACHERET-1997-2026",
+        "manifest_file": "evidence_c99741.json",
+        "registration_date": "2026-09-19T17:57:43.154128+00:00",
+        "protocol": "A©tor Key / TI-ULA / Evidence Anchor [AIPS-2025]",
+        "summary": "DAG registration for Wallet transaction log, Case MACHERET-1997-2026",
+        "manifest_data": {
+          "ForensicGraphEntry": {
+            "Case": "MACHERET-1997-2026",
+            "IDNP": "2000001159655",
+            "Transaction": {
+              "TransactionHash": "c99741a242c72ac62a4725d13a494aac2568aa10917cc2d9be689bcf889053ce",
+              "HashAlgorithm": "SHA-256",
+              "DateTime": "2026-04-03T10:55:00",
+              "Sender": {
+                "Institution": "FinComBank S.A.",
+                "Source": "Apple Wallet transaction record"
+              },
+              "Receiver": {
+                "Institution": "Moldindconbank S.A.",
+                "Source": "Apple Wallet transaction record"
+              },
+              "AmountMDL": "25210256.15",
+              "AmountUSD": "1400000",
+              "WalletToken": "MD-APPLEPAY-6089-20260403"
+            },
+            "Funds": {
+              "SourceFunds": "US/IMF tranche",
+              "SourceStatus": "USER_ASSERTED / DISPUTED"
+            },
+            "CardConflict": {
+              "PreviousCard": "5929",
+              "NewCard": "6089",
+              "ReportedEffect": "old card retained/displayed funds while new card displayed a pending/stuck balance",
+              "Status": "USER_REPORTED / REQUIRES_PRIMARY_SOURCE_VERIFICATION"
+            },
+            "EvidenceLinks": [
+              "GitHub: JUS_COGENS_REPORT.md",
+              "GitHub: ti_ula_crypto_manifest.json",
+              "FinComPay Wallet screenshot",
+              "Victoria bank.pdf ATM log"
+            ],
+            "Verification": {
+              "IntegrityLock": "AIPS-2025",
+              "DigitalSignature": "MoldSign SHA-256 (claimed, not independently verified)",
+              "VerificationStatus": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK"
+            },
+            "ForensicStatus": {
+              "RECORD_STATUS": "USER_ASSERTED / DISPUTED",
+              "GRAPH_WRITE_STATUS": "PERFORMED_AND_ANCHORED",
+              "CLAIM_STATUS": "DISPUTED",
+              "EVIDENCE_STATUS": "UNVERIFIED_UNTIL_PRIMARY_SOURCE_CHECK",
+              "BANK_ROLES_STATUS": "TRANSACTION_FIELDS / NOT_ESTABLISHED_AS_FACT",
+              "LEGAL_CHARACTERIZATION": "Disputed Theft – US Funds Only"
+            },
+            "A©TOR_KEY": "# [⚖ A©tor Declaration]"
+          }
+        }
+      },
+      "node_hash": "890fd87ad197e6158c8e184bed0250bb58f96b7c70556d65e4b58474ab99ade4",
+      "signature_ed25519": "560a2d8d7b2f78225ba052762ab27b79e3693151a69c668f7f63bfc916a153cccf0c9568e1c68046b299d19a0f93cf1667681ced0705185518fd0f6465b1cf0f"
     }
   ]
 }
