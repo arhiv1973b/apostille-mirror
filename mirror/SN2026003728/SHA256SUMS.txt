@@ -1,0 +1,5 @@
+# SHA-256 of the immutable original ASP-signed PDF
+# Replace after copying the real file:
+#   sha256sum raw/SN2026003728_original.pdf
+#
+PASTE_SHA256_OF_ORIGINAL_PDF_HERE  raw/SN2026003728_original.pdf
