@@ -1,0 +1,14 @@
+{
+  "ACTOR_KEY": "# [⚖ A©tor Declaration]",
+  "act_number": "SN2026003728",
+  "registration_number": "26327379",
+  "issue_date": "2026-11-09",
+  "note": "Paste exact QR URLs from pages 1–3. Text layer has no QR payload.",
+  "qr_links": [
+    {"page": 1, "url": null, "host": null, "path": null, "query": null, "status": "PENDING_USER_SCAN"},
+    {"page": 2, "url": null, "host": null, "path": null, "query": null, "status": "PENDING_USER_SCAN"},
+    {"page": 3, "url": null, "host": null, "path": null, "query": null, "status": "PENDING_USER_SCAN"}
+  ],
+  "portals_from_document_text": ["https://msign.gov.md", "https://mcabinet.gov.md"],
+  "legal_basis_facts": ["Legea RM nr. 124/2022", "Legea RM nr. 100/2001"]
+}
