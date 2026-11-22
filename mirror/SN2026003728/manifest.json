@@ -18,9 +18,9 @@
     "msign_portal": "https://msign.gov.md",
     "mcabinet_portal": "https://mcabinet.gov.md",
     "original_pdf_path": "raw/SN2026003728_original.pdf",
-    "sha256_placeholder": "PASTE_SHA256_OF_ORIGINAL_PDF_HERE",
+    "sha256": "eaab385cfd10739bf3f7a76169b6dbb5fa115052dfcc494d3d4bc5a3515e5afd",
     "qr_url": null,
-    "qr_expiry_note": "Public QR preview on MCabinet/EVO is time-limited (practice: often 15\u201390 days depending on channel). Qualified e-signature validity is indefinite under Law 124/2022 \u2014 verify via MSign, not QR.",
+    "qr_expiry_note": "Public QR preview on MCabinet/EVO is time-limited. Qualified e-signature under Law 124/2022 is verified via MSign, not QR.",
     "legal_basis": [
       "Legea RM nr. 124/2022 privind identificarea electronic\u0103 \u0219i serviciile de \u00eencredere",
       "Legea RM nr. 100/2001 privind actele de stare civil\u0103"
@@ -29,6 +29,8 @@
   "archive": {
     "created_at": "2026-11-22",
     "label": "ARCHIVAL FALLBACK MIRROR",
+    "sha256": "eaab385cfd10739bf3f7a76169b6dbb5fa115052dfcc494d3d4bc5a3515e5afd",
+    "original_bytes": 1653420,
     "immutable_original_rule": "raw/SN2026003728_original.pdf must remain byte-identical to the ASP-signed file; never re-export or re-sign"
   }
 }
