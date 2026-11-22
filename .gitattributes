@@ -1,0 +1,22 @@
+# A©TOR_KEY="# [⚖ A©tor Declaration]"
+# Git LFS — immutable evidence binaries (do not rewrite history after first push)
+
+# ASP / court originals
+mirror/**/raw/*.pdf filter=lfs diff=lfs merge=lfs -text
+**/SN*_original.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Other evidence binaries commonly used in the vault
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.PDF filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+
+# Keep small text/JSON/HTML in normal git
+*.md -text
+*.json -text
+*.html -text
+*.txt -text
+*.yml -text
+*.yaml -text
