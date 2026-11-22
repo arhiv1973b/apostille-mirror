@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SN2026003728 — Court Fallback Archive | A©tor</title>
+<style>
+body{font-family:system-ui,Arial,sans-serif;margin:0;padding:16px;background:#f0f2f5;color:#111}
+.banner{background:#fff3cd;border:1px solid #e6c200;padding:12px;border-radius:6px;margin-bottom:16px;font-size:13px}
+.sheet{max-width:900px;margin:0 auto;background:#fff;padding:24px;border:1px solid #d0d7de;border-radius:8px}
+h1{font-size:15px;color:#003366;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:14px;font-weight:600;margin:16px 0 8px;border-bottom:1px solid #ddd;padding-bottom:4px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{border:1px solid #8c959f;padding:7px 9px;text-align:left;vertical-align:top}
+th{background:#f6f8fa;width:42%}
+code{font-size:11px;word-break:break-all;background:#f6f8fa;padding:2px 4px}
+.meta{font-size:12px;background:#f8f9fa;padding:10px;margin-top:12px;border-left:3px solid #003366}
+.btn{display:inline-block;margin:6px 8px 0 0;padding:9px 12px;background:#003366;color:#fff;text-decoration:none;border-radius:4px;font-size:13px}
+.btn2{background:#24292f}
+.fact{color:#0a0}.hyp{color:#666;font-style:italic;font-size:12px}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="banner">
+    <strong>ARCHIVAL MIRROR — НЕЗАВИСИМОЕ АРХИВНОЕ ЗЕРКАЛО</strong><br/>
+    A©TOR_KEY="# [⚖ A©tor Declaration]" · CASE-MACHERET-1997-2026<br/>
+    Не является сайтом .gov.md. Юридическая сила — у оригинального PDF с КЭП АСП
+    (<a href="https://msign.gov.md" target="_blank" rel="noopener">msign.gov.md</a>, Legea nr. 124/2022).
+  </div>
+  <h1>Agenția Servicii Publice (EVO) — Extras schimbare nume/prenume</h1>
+  <p><strong>Nr. înregistrare:</strong> 26327379 · <strong>Act:</strong> SN2026003728 · <strong>Data:</strong> 09.11.2026</p>
+  <h2>1. Facte din extras</h2>
+  <table>
+    <tr><th>Numele până la schimbare</th><td>MACERET</td></tr>
+    <tr><th>Prenumele până la schimbare</th><td>ALEXEI</td></tr>
+    <tr><th>Numele după schimbare</th><td><strong>MACHERET</strong></td></tr>
+    <tr><th>Prenumele după schimbare</th><td><strong>ALEXEI</strong></td></tr>
+    <tr><th>Data nașterii</th><td>23.06.1973</td></tr>
+    <tr><th>Locul nașterii</th><td>CHIȘINĂU</td></tr>
+    <tr><th>IDNP</th><td>2000001159655</td></tr>
+    <tr><th>Data emiterii</th><td>09.11.2026</td></tr>
+  </table>
+  <h2>2. Integritate original PDF</h2>
+  <div class="meta">
+    <span class="fact">FACT:</span> SHA-256 =<br/>
+    <code>eaab385cfd10739bf3f7a76169b6dbb5fa115052dfcc494d3d4bc5a3515e5afd</code><br/>
+    bytes = 1653420 · path = <code>raw/SN2026003728_original.pdf</code><br/>
+    KЭП: <a href="https://msign.gov.md" target="_blank" rel="noopener">msign.gov.md</a>
+  </div>
+  <h2>3. QR sources</h2>
+  <div id="qr" class="meta">PENDING_USER_SCAN — run court_qr_check.sh with 3 URLs</div>
+  <h2>4. Court status log</h2>
+  <div id="log" class="meta"><span class="hyp">Hypothesis only:</span> к дате суда QR/портал может быть недоступен. Лог = проверки до заседания.</div>
+  <p style="margin-top:16px">
+    <a class="btn" href="../raw/SN2026003728_original.pdf">PDF original</a>
+    <a class="btn btn2" href="https://msign.gov.md" target="_blank" rel="noopener">MSign</a>
+    <a class="btn btn2" href="qr_sources.json">qr_sources.json</a>
+    <a class="btn btn2" href="court_status_log.json">court_status_log.json</a>
+  </p>
+</div>
+<script>
+function load(path, render){fetch(path).then(r=>r.ok?r.json():null).then(d=>{if(d)render(d);}).catch(()=>{});}
+load('qr_sources.json', d=>{
+  let h='ACTOR_KEY: '+(d.ACTOR_KEY||'')+'<br/>';
+  (d.qr_links||[]).forEach(l=>{h+='Page '+l.page+': '+(l.url?('<code>'+l.url+'</code>'):'<em>PENDING</em>')+'<br/>';});
+  document.getElementById('qr').innerHTML=h;
+});
+load('court_status_log.json', d=>{
+  let h=(d.hypothesis_risk||'')+'<br/><br/>';
+  (d.checks||[]).slice(-6).forEach(c=>{h+='p'+c.page+' HTTP '+(c.http_status??'—')+' '+(c.ok?'OK':'FAIL')+' · '+c.checked_at+'<br/>';});
+  if(!(d.checks||[]).length) h+='<em>No checks yet.</em>';
+  document.getElementById('log').innerHTML=h;
+});
+</script>
+</body>
+</html>
